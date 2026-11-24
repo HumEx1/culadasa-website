@@ -2,7 +2,7 @@
    Plain CSS, no build step.  Colours sampled from the cover of
    The Mind Illuminated; contrast checked against WCAG AA. */
 :root{
-  --ground:#f7f6f2; --panel:#fbfaf6; --white:#fff; --eyes:#f7f7f5;
+  --ground:#f5efe2; --panel:#f9f4e9; --white:#fff; --eyes:#f7f7f5;
   --ink:#2a241c; --body:#4a4033; --label:#6b5332; --muted:#6f6656;
   --line:#e4dccb; --line-2:#d8ccb2;
   --teal:#226a7e; --teal-dark:#174e5d; --teal-2:#4d94ae; --teal-pale:#dcebef;
@@ -374,7 +374,7 @@ body[data-section="teachers"] .banner .lead{max-width:none}
    under it, then the menu between two thin gold rules.  Same on every page. */
 .masthead{background-color:#f5efe2;padding:44px 20px 12px;border:0}
 .wordmark,.masthead.compact .wordmark{font-family:'Josefin Sans','Jost',system-ui,sans-serif;font-weight:600;font-size:clamp(30px,4.6vw,52px);letter-spacing:.32em;text-indent:.32em;color:var(--ink);line-height:1}
-.masthead .tagline{display:block;margin:20px 0 0;font:400 clamp(12.5px,1.5vw,16px)/1.5 'Source Sans 3',system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#8a6a22}
+.masthead .tagline{display:block;margin:20px 0 0;font:400 clamp(12.5px,1.5vw,16px)/1.5 'Source Sans 3',system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#7d5f1f}
 .nav{background:#f5efe2;border-bottom:0;backdrop-filter:none}
 .nav .wrap{border-top:1px solid #c4972f;border-bottom:1px solid #c4972f;min-height:60px}
 .menu a,.menu .group,.menu button.group{font:600 14px/1.2 'Source Sans 3',system-ui,sans-serif;letter-spacing:.14em;padding:18px 12px 16px}

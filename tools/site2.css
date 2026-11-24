@@ -4,8 +4,8 @@
    banners, faded at the edges.  Pop: a short terracotta rule on every banner.
    The book page alone keeps the cover's clouds and cubes. */
 :root{
-  --ground:#f8f5ee; --panel:#fdfbf7; --white:#fff; --eyes:#f8f5ee;
-  --ink:#1e2a33; --body:#3a464f; --label:#8a6a22; --muted:#5b6670;
+  --ground:#f5efe2; --panel:#f9f4e9; --white:#fff; --eyes:#f8f5ee;
+  --ink:#1e2a33; --body:#3a464f; --label:#7d5f1f; --muted:#5b6670;
   --line:#e6dfcf; --line-2:#d9cfba;
   --teal:#1d6f6b; --teal-dark:#14524f; --teal-2:#2a8f89; --teal-pale:#dfeeec;
   --gold-line:#c4972f; --pop:#a84f33; --pop-pale:#f6e6de;
