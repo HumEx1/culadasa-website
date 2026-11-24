@@ -330,25 +330,28 @@ mark{background:#f3e3a8;color:inherit;padding:0 2px;border-radius:2px}
 
 .filters .muted{margin-left:6px;color:inherit;opacity:.7}
 
-/* ---- banner colours by purpose (D, 24 Nov 2026) ----
-   Four groups, each colour meaning one thing, repeated in the banner and the
-   active menu tab.  Read left to right the menu runs teal, slate, sand, rust.
-     guide    Start here, Learn, Topics            cover teal
-     library  Writings, Audio, Videos, Q&A, essays slate blue
-     book     The Mind Illuminated, reviews        sand (redesign 2) / cover (redesign 1)
-     people   Teachers, Conversations, About       deep rust */
-body{--group:#1d5f6c;--group-rule:#e59a78}
-body[data-group="guide"]{--group:#1d5f6c;--group-rule:#e59a78}
-body[data-group="library"]{--group:#2c4a63;--group-rule:#e59a78}
-body[data-group="people"]{--group:#7a3a27;--group-rule:#ecd39f}
-body[data-group="book"]{--group:#c4972f}
+/* ---- banner colours: one spectrum across the menu (D, 24 Nov 2026) ----
+   Like a paint-sample strip, left to right in menu order: teal, sea green,
+   green, olive, (The Book: its sand block, D 24 Nov 2026),
+   amber, rust, brick.  Each tab has its own step; all
+   seven sit at the same lightness and strength (OKLCH L about .53, C .095)
+   so white text reads at 5:1 or better on every one.  Hues evenly spaced
+   (218, 190, 160, 128, 92, 62, 40, 20 degrees) so no two neighbours match. */
+body{--group:#017890}
+body[data-section="start-here"]{--group:#017890}
+body[data-section="learn"]{--group:#007b76}
+body[data-section="topics"]{--group:#307c58}
+body[data-section="library"]{--group:#5c7637}
+body[data-section="book"]{--group:#c4972f}
+body[data-section="teachers"]{--group:#976230}
+body[data-section="conversations"]{--group:#a05d46}
+body[data-section="about"]{--group:#a25a5a}
 .menu a[aria-current="page"],.menu button.group[aria-current="page"]{border-bottom-color:var(--group)}
-body:not([data-group="book"]) .banner{position:relative;overflow:hidden;background:var(--group);color:#e6eef0;border:0;padding:64px 0 52px}
+body:not([data-group="book"]) .banner{position:relative;overflow:hidden;background:var(--group);color:#fff;border:0;padding:64px 0 52px}
 body:not([data-group="book"]) .banner>.wrap{position:relative}
-body:not([data-group="book"]) .banner h1{color:#fff}
-body:not([data-group="book"]) .banner .label{color:#ecd39f}
-body:not([data-group="book"]) .banner .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:var(--group-rule)}
-body:not([data-group="book"]) .banner .lead,body:not([data-group="book"]) .banner p{color:#e8eef0}
+body:not([data-group="book"]) .banner h1,body:not([data-group="book"]) .banner .label{color:#fff}
+body:not([data-group="book"]) .banner .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:rgba(255,255,255,.7)}
+body:not([data-group="book"]) .banner .lead,body:not([data-group="book"]) .banner p{color:#fff}
 body:not([data-group="book"]) .banner a{color:#fff}
 body:not([data-group="book"]) .banner .btn.ghost,body:not([data-group="book"]) .banner .btn.light{border-color:#fff;color:#fff;background:transparent}
 body:not([data-group="book"]) .banner .btn.ghost:hover,body:not([data-group="book"]) .banner .btn.light:hover{background:#fff;color:var(--ink)}

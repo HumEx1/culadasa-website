@@ -86,3 +86,6 @@ a.card:hover{border-color:var(--line-2)}
 /* every banner (except The Book) carries the same faint lattice, on its right side only */
 body:not([data-group="book"]) .banner::before{content:"";position:absolute;inset:0;background-image:var(--lattice-light);opacity:1;
   -webkit-mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%);mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%)}
+/* spectrum banners (see site.css): white rule on every coloured banner */
+body:not([data-group="book"]) .banner .label::after{background:rgba(255,255,255,.7)}
+body:not([data-group="book"]) .banner .label{color:#fff}
