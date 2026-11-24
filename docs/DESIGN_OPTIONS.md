@@ -61,3 +61,53 @@ Motivation: the most restful; colour is almost absent so the one point of persim
 ## How a chosen option gets applied
 
 Replace the `:root` tokens and the font `<link>` in `site/assets/style.css` and `tools/migrate.py` (the template), re-run the migration, and review the 14 pages side by side. The home-page "teachings" row is an addition to the content and needs the group's agreement before it goes live.
+
+---
+
+## Options built from the cover of *The Mind Illuminated* (added 24 November 2026)
+
+Darin asked for two more directions that use the actual cover image, one heavily and one lightly. Source: a high-resolution cover scan (2244 × 2775 px) from the maintainers' Dropbox. Six pieces were cut from it, avoiding all printed text:
+
+| Piece | Cut from the cover | Size used |
+|---|---|---|
+| Gold cloud band | top edge, full width | 2244 × 195 |
+| Teal cube band | the cube row between "The" and "MIND", clouds at both ends | 2244 × 177 |
+| Glowing cube band | the cube row under "ILLUMINATED", with the peach glow | 2244 × 165 |
+| The eyes | the Buddha's closed eyes, full width | 2000 × 518 |
+| Cloud corners | two cloud patches from the left and right margins | 344 × 480, 330 × 820 |
+
+Colours sampled from the cover: gold ground `#E7D7AE`, cloud-line brown `#9E7B52`, cube teal `#61A0B4` (darker `#4D94AE`), eyes ground `#F7F7F5`.
+
+**Rights.** The cover artwork belongs to the book's publisher. These crops are used only in the private mock-ups and are **not committed to this public repository**. Using them on the live site needs the publisher's permission, or the family's confirmation that it is covered. Option E leans on the art least, so it is the easiest to swap to an original texture if permission is not given.
+
+### Option D · The Cover (heavy)
+
+| Token | Value |
+|---|---|
+| Header | Gold cloud band as the full header background; teal cube band directly below as its lower edge |
+| Hero | The cover's own composition: legacy quote in large serif, then the eyes full width, faded top and bottom into `#F7F7F5` |
+| Dividers | Glowing cube band between hero and the teachings row |
+| Footer | Gold cloud band again |
+| Ink | `#2A241C`; body `#4A4033`; labels `#6B5332` (5.1:1 on gold, 6.6:1 on cream) |
+| Links | `#226A7E` (5.6:1); card rule `#4D94AE` |
+| Wordmark and labels | Cormorant SC 700 / 600, echoing the cover's small-caps author line |
+| Headings | Cormorant Garamond 500: h1 54px, h2 36px |
+| Body | Crimson Pro 19px / 1.65 |
+| Nav | Jost 600, 13px uppercase, .16em, a nod to the cover's geometric title face |
+| Portraits | Framed with an 8px cream mat and a 1px rule |
+
+Motivation: unmistakably the book; anyone who has read it recognises the site at once. Tradeoff: the most image-heavy (about 0.6 MB of cover art on the home page) and the most dependent on the publisher's permission.
+
+### Option E · Dawn (light)
+
+| Token | Value |
+|---|---|
+| Colour | A single 18px strip of the glowing cube band under the header is the only colour on the page |
+| Hero | One light serif line, then the eyes at 720px wide, faded at every edge with a radial mask so they float on the page |
+| Footer | Gold cloud band at 22% opacity behind the footer text |
+| Ground | `#FAF8F4`; ink `#24211D`; body `#45413B`; muted `#6F6A61` (5.0:1) |
+| Links | `#226A7E` teal with a pale `#A9CDD8` underline |
+| Type | Newsreader (300 display, 400 body, 19px / 1.7) with Jost 500 for nav and labels |
+| Layout | Left-rail section labels as in Option B; a three-line entry list (Read, Listen, Watch) |
+
+Motivation: the calmest option that still carries the book's identity, in two quiet places. Tradeoff: someone who does not know the book may read the eyes as generic; the cube strip is thin enough to look like a coloured rule at a glance.
