@@ -346,7 +346,7 @@ body[data-section="library"]{--group:#ccb069;--on:#141c21;--rule:rgba(20,28,33,.
 body[data-section="book"]{--group:#dbc9ad;--on:#141c21;--rule:#b6835d}
 body[data-section="teachers"]{--group:#b6835d;--on:#141c21;--rule:rgba(20,28,33,.6)}
 body[data-section="conversations"]{--group:#8f5f3f;--on:#fff;--rule:rgba(255,255,255,.7)}
-body[data-section="about"]{--group:#3f4b4c;--on:#fff;--rule:rgba(255,255,255,.7)}
+body[data-section="about"]{--group:#dbc9ad;--on:#141c21;--rule:#b6835d}
 .menu a[aria-current="page"],.menu button.group[aria-current="page"]{border-bottom-color:var(--group)}
 body[data-section="book"] .menu a[aria-current="page"]{border-bottom-color:#b6835d}
 body:not([data-group="book"]) .banner{position:relative;overflow:hidden;background:var(--group);color:var(--on);border:0;padding:64px 0 52px}

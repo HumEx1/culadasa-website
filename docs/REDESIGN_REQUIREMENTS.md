@@ -40,3 +40,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 20. **The CULADASA masthead is the same size on every page (D, 24 Nov 2026).** "Its confusing seeing it change size from home page to tabs." The home page now uses the same compact masthead as the tabs, in both redesigns. The masthead tagline it used to show on home is dropped; the hero's own label says the same thing.
 
 21. **Banners the same height on every tab (D, 24 Nov 2026).** "Make teachers writing box wider to the right so the color banner doesn't grow in height compared to others." The Teachers banner text now runs the full width. Every banner is also at least 305px tall on desktop, so tabs with one line of text match tabs with two. On phones the text has to wrap, so heights still differ there.
+
+22. **About banner in the palette's sand (D, 24 Nov 2026).** "Make about banner sandy as in swatch and change text colors so the text is readable." About is now sand #dbc9ad with deep ink #141c21 text (about 9:1), a terracotta rule and, in Redesign 2, the dark lattice. It replaces the deep slate of item 19.
