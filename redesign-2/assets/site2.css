@@ -10,6 +10,7 @@
   --teal:#1d6f6b; --teal-dark:#14524f; --teal-2:#2a8f89; --teal-pale:#dfeeec;
   --gold-line:#c4972f; --pop:#a84f33; --pop-pale:#f6e6de;
   --slate:#2c4a63;
+  --lattice-light:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104' height='60' viewBox='0 0 104 60'%3E%3Cpath d='M52 0 104 30 52 60 0 30Z M52 0V60 M0 30H104' fill='none' stroke='%23ffffff' stroke-opacity='.16' stroke-width='1'/%3E%3C/svg%3E");
   --lattice:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104' height='60' viewBox='0 0 104 60'%3E%3Cpath d='M52 0 104 30 52 60 0 30Z M52 0V60 M0 30H104' fill='none' stroke='%23c4972f' stroke-opacity='.28' stroke-width='1'/%3E%3C/svg%3E");
 }
 body{background:var(--ground)}
@@ -75,3 +76,7 @@ a.card:hover{border-color:var(--line-2)}
   .masthead.lattice{padding:24px 16px 18px}
   .lead-hero .wrap{padding-top:32px;padding-bottom:48px}
 }
+
+/* every banner (except The Book) carries the same faint lattice, on its right side only */
+body:not([data-section="book"]) .banner::before{content:"";position:absolute;inset:0;background-image:var(--lattice-light);opacity:1;
+  -webkit-mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%);mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%)}

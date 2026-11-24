@@ -329,3 +329,28 @@ mark{background:#f3e3a8;color:inherit;padding:0 2px;border-radius:2px}
 .card.tone-ink{border-top-color:var(--pop)}
 
 .filters .muted{margin-left:6px;color:inherit;opacity:.7}
+
+/* ---- one banner system for every page except The Book (D, 24 Nov 2026) ----
+   A single deep teal-to-slate family; each section a step along the menu order,
+   so pages vary a little but read as one design.  Same type, gold label and
+   terracotta rule on every banner. */
+body{--banner-bg:#1d5f6c}
+body[data-section="start-here"]{--banner-bg:#1d5f6c}
+body[data-section="learn"]{--banner-bg:#215a6d}
+body[data-section="library"]{--banner-bg:#24556c}
+body[data-section="topics"]{--banner-bg:#27506a}
+body[data-section="teachers"]{--banner-bg:#2a4b67}
+body[data-section="conversations"]{--banner-bg:#2d4763}
+body[data-section="about"]{--banner-bg:#30435e}
+body:not([data-section="book"]) .banner{position:relative;overflow:hidden;background:var(--banner-bg);color:#e6eef0;border:0;padding:64px 0 52px}
+body:not([data-section="book"]) .banner>.wrap{position:relative}
+body:not([data-section="book"]) .banner h1{color:#fff}
+body:not([data-section="book"]) .banner .label{color:#ecd39f}
+body:not([data-section="book"]) .banner .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:#e59a78}
+body:not([data-section="book"]) .banner .lead,body:not([data-section="book"]) .banner p{color:#e3ebee}
+body:not([data-section="book"]) .banner a{color:#fff}
+body:not([data-section="book"]) .banner .btn.ghost,body:not([data-section="book"]) .banner .btn.light{border-color:#fff;color:#fff;background:transparent}
+body:not([data-section="book"]) .banner .btn.ghost:hover,body:not([data-section="book"]) .banner .btn.light:hover{background:#fff;color:var(--ink)}
+body:not([data-section="book"]) .banner :focus-visible{outline-color:#fff;box-shadow:0 0 0 4px var(--banner-bg)}
+body:not([data-section="book"]) .banner::after{content:none}
+@media (max-width:760px){body:not([data-section="book"]) .banner{padding:44px 0 40px}}

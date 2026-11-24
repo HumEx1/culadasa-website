@@ -70,6 +70,11 @@ def social_html(r=''):
 def page(path, title, body, *, description='', compact=True, extra_head='', extra_js='', cover_band=False):
     depth = 0 if path == '' else path.strip('/').count('/') + 1
     r = rel(depth)
+    first = path.split('/')[0]
+    LIBRARY = {'writings', 'audio', 'videos', 'online-meetings', 'meditation-manual-introduction', 'mindful-awareness-vs-dullness',
+               'amount-of-concentration-needed-for-awakening', 'daily-life-practice', 'cultivating-mindfulness-in-daily-life'}
+    section = ('home' if not first else 'library' if first in LIBRARY else 'about' if first in ('about', 'testimonials', 'student-testimonials')
+               else 'book' if first in ('the-book', 'book-reviews') else first)
     full = 'Culadasa — the teachings of John Yates' if path == '' else f'{title} — Culadasa'
     OLD = {'', 'writings/', 'audio/', 'videos/', 'online-meetings/', 'teachers/', 'testimonials/', 'student-testimonials/', 'book-reviews/',
            'meditation-manual-introduction/', 'mindful-awareness-vs-dullness/', 'amount-of-concentration-needed-for-awakening/',
@@ -95,7 +100,7 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
 <link rel="stylesheet" href="{r}assets/site.css">
 {f'<link rel="stylesheet" href="{r}assets/site2.css">' if V2 else ''}
 {extra_head}</head>
-<body>
+<body data-section="{section}">
 <a class="skip" href="#main">Skip to content</a>
 <div class="preview-bar">{'Draft redesign (2) for review' if V2 else 'Draft redesign for review'}</div>
 <header class="masthead{' compact' if compact else ''}{' lattice' if V2 else ''}">
