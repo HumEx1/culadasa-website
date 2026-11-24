@@ -42,3 +42,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 21. **Banners the same height on every tab (D, 24 Nov 2026).** "Make teachers writing box wider to the right so the color banner doesn't grow in height compared to others." The Teachers banner text now runs the full width. Every banner is also at least 305px tall on desktop, so tabs with one line of text match tabs with two. On phones the text has to wrap, so heights still differ there.
 
 22. **About banner in the palette's sand (D, 24 Nov 2026).** "Make about banner sandy as in swatch and change text colors so the text is readable." About is now sand #dbc9ad with deep ink #141c21 text (about 9:1), a terracotta rule and, in Redesign 2, the dark lattice. It replaces the deep slate of item 19.
+
+23. **Conversations redder, About dark green slate (D, 24 Nov 2026).** "Redder brown/rust for conversations and dark green slate for Culadasa (adjust text as needed)." Conversations is now rust #8f4a36 and About (whose banner reads "Culadasa") is dark green slate #3d5048, both with white text (6:1 or better and 8.6:1). This replaces About's sand from item 22.
