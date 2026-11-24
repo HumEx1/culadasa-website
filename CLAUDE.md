@@ -2,6 +2,7 @@
 
 Instructions for any Claude session working in this repository.
 
+0. **RULE (Darin, 24 Nov 2026): the initial migration is a MIRROR of the live culadasa.com.** Same look, same layout, same text, same menus, same players, same links, same footer, same quirks and errors. Do not change anything, do not fix anything, do not add or remove anything, and do not make decisions about what would be better. Improvements and redesigns come later, only when the group asks for them, as separate changes. The point of the mirror is to show the group a faithful job has been done.
 1. **Read `PRIVACY.md` first and follow it as a hard rule.** No private information about anyone using or editing this code base goes into the repository; no credentials of any kind; when in doubt, ask before writing it. This repository is shared and will be public.
 2. **Read `docs/PROJECT_BRIEF.md`** for the background, decisions, site inventory and open items.
 3. **Nothing on the live culadasa.com is changed from here.** This repository is a sandbox for the replacement site. The domain, hosting and WordPress admin are controlled by people, not by this code, and no DNS or hosting change happens without the owner's explicit confirmation.
