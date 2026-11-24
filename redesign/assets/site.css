@@ -327,3 +327,5 @@ mark{background:#f3e3a8;color:inherit;padding:0 2px;border-radius:2px}
 .map-wrap summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font:500 13px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
 .card.tone-gold{border-top-color:var(--gold-line)}
 .card.tone-ink{border-top-color:var(--pop)}
+
+.filters .muted{margin-left:6px;color:inherit;opacity:.7}

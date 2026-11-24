@@ -7,13 +7,16 @@ WordPress export, the saved galleries, the Q&A index and verified web sources).
 Every page sits at the same path as on the old site where one existed, so the
 redesign can later replace the mirror without breaking links.
 
-Usage:  python3 tools/build_redesign.py
+Usage:  python3 tools/build_redesign.py        -> redesign/    (A2 + D2: portrait leads, cover textures)
+        python3 tools/build_redesign.py 2      -> redesign-2/  (A2 sans base: more open and minimal; lattice
+                                                   texture in the masthead; cover graphics only on The Book)
 """
-import json, re, html, pathlib, datetime, urllib.parse
+import json, re, html, pathlib, datetime, urllib.parse, shutil, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-OUT = ROOT / 'redesign'
-D = OUT / 'data'
+V2 = len(sys.argv) > 1 and sys.argv[1] == '2'
+OUT = ROOT / ('redesign-2' if V2 else 'redesign')
+D = ROOT / 'redesign' / 'data'   # one set of data for both variants
 content = json.loads((D / 'content.json').read_text())
 videos = json.loads((D / 'videos.json').read_text())
 topics = json.loads((D / 'topics.json').read_text())
@@ -64,7 +67,7 @@ def social_html(r=''):
     return ''.join(f'<a href="{u}" rel="noopener" aria-label="Culadasa on {n}"><svg viewBox="0 0 24 24" aria-hidden="true">{p}</svg></a>' for n, u, p in SOCIAL)
 
 
-def page(path, title, body, *, description='', compact=True, extra_head='', extra_js=''):
+def page(path, title, body, *, description='', compact=True, extra_head='', extra_js='', cover_band=False):
     depth = 0 if path == '' else path.strip('/').count('/') + 1
     r = rel(depth)
     full = 'Culadasa — the teachings of John Yates' if path == '' else f'{title} — Culadasa'
@@ -90,15 +93,16 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
 <link rel="stylesheet" href="{r}assets/site.css">
+{f'<link rel="stylesheet" href="{r}assets/site2.css">' if V2 else ''}
 {extra_head}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar">Draft redesign for review</div>
-<header class="masthead{' compact' if compact else ''}">
+<div class="preview-bar">{'Draft redesign (2) for review' if V2 else 'Draft redesign for review'}</div>
+<header class="masthead{' compact' if compact else ''}{' lattice' if V2 else ''}">
   <a class="wordmark" href="{r or './'}">Culadasa</a>
   <p class="tagline">Upasaka Culadasa · John Yates, Ph.D. · 1945–2021</p>
 </header>
-<img class="cubes" src="{r}assets/img/tmi-cubes-band.jpg" alt="">
+{'' if (V2 and not cover_band) else f'<img class="cubes" src="{r}assets/img/tmi-cubes-band.jpg" alt="">'}
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <button type="button" class="nav-button" aria-expanded="false" aria-controls="menu">Menu</button>
@@ -150,6 +154,8 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
 
 
 def banner(label, h1, lead='', tone='teal', extra=''):
+    if V2:
+        tone = {'ink': 'slate'}.get(tone, tone)
     return f'''<header class="banner {tone}"><div class="wrap">
   <p class="label">{label}</p><h1>{h1}</h1>{f'<p class="lead">{lead}</p>' if lead else ''}{extra}
 </div></header>'''
@@ -244,6 +250,13 @@ def clean_essay(raw):
     return '\n'.join(out)
 
 
+EYES = '''<section class="eyes-band" aria-label="Closing">
+  <img src="assets/img/tmi-eyes.jpg" alt="The closed eyes of the Buddha, from the cover of The Mind Illuminated" loading="lazy">
+  <p>All of Culadasa’s students are his successors.</p>
+  <p class="small muted" style="font-family:var(--text);font-size:15px;margin-top:6px">— The Yates family</p>
+</section>'''
+
+
 def build():
     vid_by_id = {v['id']: v for v in videos}
     global WORDS
@@ -267,7 +280,7 @@ def build():
     </div>
   </div>
 </section>
-<img class="glow" src="assets/img/tmi-cubes-glow.jpg" alt="">
+{'' if V2 else '<img class="glow" src="assets/img/tmi-cubes-glow.jpg" alt="">'}
 <section class="section">
   <div class="wrap">
     <h2 class="label">Find your way in</h2>
@@ -295,7 +308,7 @@ def build():
     <div class="grid">{''.join(video_tile(v, '') for v in feat)}</div>
   </div>
 </section>
-<section class="section banner-section ink">
+<section class="section banner-section {"slate" if V2 else "ink"}">
   <div class="wrap two">
     <div><img class="framed" src="assets/img/the-mind-illuminated-cover.jpg" alt="Cover of The Mind Illuminated" width="320" loading="lazy"></div>
     <div>
@@ -315,11 +328,7 @@ def build():
     <p style="margin-top:20px"><a href="conversations/">All conversations →</a></p>
   </div>
 </section>
-<section class="eyes-band" aria-label="Closing">
-  <img src="assets/img/tmi-eyes.jpg" alt="The closed eyes of the Buddha, from the cover of The Mind Illuminated" loading="lazy">
-  <p>All of Culadasa’s students are his successors.</p>
-  <p class="small muted" style="font-family:var(--text);font-size:15px;margin-top:6px">— The Yates family</p>
-</section>'''
+{'' if V2 else EYES}'''
     page('', 'Home', body, compact=False,
          description='The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: writings, talks, Q&A recordings, topics and teachers.')
 
@@ -396,7 +405,9 @@ def build():
 <ol class="stages">{''.join(f'<li><span><small>{lvl}</small>{esc(n)}</span></li>' for n, lvl in STAGES)}</ol>
 <p class="muted small" style="margin-top:18px">Milestones: continuous attention to the meditation object (after stage 3); sustained exclusive focus of attention (after stage 6); effortless stability of attention (after stage 7); persistence of the mental qualities of an adept (after stage 10).</p></div></section>
 <section class="section" id="reviews"><div class="wrap"><p class="label">Reviews</p><h2>What teachers and authors say</h2><div class="quotes">{''.join(f'<figure class="quote"><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>' for q in content['reviews'])}</div></div></section>'''
-    page('the-book/', 'The Mind Illuminated', body, description='The Mind Illuminated by Culadasa (John Yates, Ph.D.): the ten stages of meditative development.')
+    if V2:
+        body = body.replace('<header class="banner gold">', '<header class="banner cover">', 1)
+    page('the-book/', 'The Mind Illuminated', body, description='The Mind Illuminated by Culadasa (John Yates, Ph.D.): the ten stages of meditative development.', cover_band=True)
 
     # ---------------------------------------------------------------- writings (old path)
     body = banner('Read', 'Writings', 'Twenty-six handouts and essays, free to read and download.', 'teal') + '<section class="section"><div class="wrap measure">' + ''.join(
@@ -525,8 +536,15 @@ def build():
         out = page(f'teachers/{t["slug"]}/', t['name'], body, description=f'{t["name"]}, a teacher of The Mind Illuminated method certified by Culadasa.')
         # these pages sit two levels down: page() computed depth from the path, so links are already right
 
+    if V2:  # shared assets and data come from redesign/; site2.css is variant 2's own layer
+        for sub in ('img', 'vendor'):
+            shutil.copytree(ROOT / 'redesign' / 'assets' / sub, OUT / 'assets' / sub, dirs_exist_ok=True)
+        for f in ('site.css', 'site.js', 'topics.js', 'teachers.js'):
+            shutil.copy2(ROOT / 'redesign' / 'assets' / f, OUT / 'assets' / f)
+        shutil.copy2(ROOT / 'tools' / 'site2.css', OUT / 'assets' / 'site2.css')
+        shutil.copytree(D, OUT / 'data', dirs_exist_ok=True)
     n = sum(1 for _ in OUT.rglob('index.html'))
-    print(f'{n} pages written in redesign/')
+    print(f'{n} pages written in {OUT.name}/')
 
 
 if __name__ == '__main__':

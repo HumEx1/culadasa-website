@@ -98,7 +98,7 @@
   });
 
   function drawCloud() {
-    var max = DATA.cloud[0][1], min = DATA.cloud[DATA.cloud.length - 1][1];
+    var nums = DATA.cloud.map(function (w) { return w[1]; }), max = Math.max.apply(null, nums), min = Math.min.apply(null, nums);
     var words = DATA.cloud.slice().sort(function (a, b) { return a[0].localeCompare(b[0]); });
     cloudEl.innerHTML = words.map(function (w) {
       var t = (Math.sqrt(w[1]) - Math.sqrt(min)) / (Math.sqrt(max) - Math.sqrt(min));

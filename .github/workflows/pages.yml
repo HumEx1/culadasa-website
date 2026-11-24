@@ -1,12 +1,13 @@
 # Publishes to GitHub Pages on every push to main:
 #   site/      -> the root (the exact mirror of culadasa.com)
-#   redesign/  -> /redesign/ (the redesign draft, for side-by-side review)
+#   redesign/  -> /redesign/   (redesign draft: A2 + D2)
+#   redesign-2/ -> /redesign-2/ (redesign draft 2: A2 sans base, more minimal)
 # No build step: both folders are served exactly as committed.
 name: Publish site
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'redesign/**', '.github/workflows/pages.yml']
+    paths: ['site/**', 'redesign/**', 'redesign-2/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -31,6 +32,7 @@ jobs:
           mkdir -p _site
           cp -a site/. _site/
           cp -a redesign _site/redesign
+          cp -a redesign-2 _site/redesign-2
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site

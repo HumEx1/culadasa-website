@@ -178,6 +178,7 @@ def main(qna_md, interviews_dir):
     for w in top:
         pat = re.compile(r'(?<![a-z0-9\u00c0-\u024f\u1e00-\u1eff])' + re.escape(fold(w)) + r'[a-z0-9\u00c0-\u024f\u1e00-\u1eff]*')
         cloud.append((w, sum(len(pat.findall(t)) for t in texts)))
+    cloud.sort(key=lambda x: -x[1])
     for d in docs:  # account emails printed in his handouts are not repeated in the search index
         d['text'] = re.sub(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}', '[email]', d['text'])
     data = {'built': __import__('datetime').date.today().isoformat(),

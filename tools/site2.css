@@ -1,0 +1,77 @@
+/* Redesign (2): A2 sans as the base, more open and minimal.
+   Loaded after site.css and overrides it.  Texture: one structured cube
+   lattice (from the book's geometry) behind the masthead title and on light
+   banners, faded at the edges.  Pop: a short terracotta rule on every banner.
+   The book page alone keeps the cover's clouds and cubes. */
+:root{
+  --ground:#f8f5ee; --panel:#fdfbf7; --white:#fff; --eyes:#f8f5ee;
+  --ink:#1e2a33; --body:#3a464f; --label:#8a6a22; --muted:#5b6670;
+  --line:#e6dfcf; --line-2:#d9cfba;
+  --teal:#1d6f6b; --teal-dark:#14524f; --teal-2:#2a8f89; --teal-pale:#dfeeec;
+  --gold-line:#c4972f; --pop:#a84f33; --pop-pale:#f6e6de;
+  --slate:#2c4a63;
+  --lattice:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104' height='60' viewBox='0 0 104 60'%3E%3Cpath d='M52 0 104 30 52 60 0 30Z M52 0V60 M0 30H104' fill='none' stroke='%23c4972f' stroke-opacity='.28' stroke-width='1'/%3E%3C/svg%3E");
+}
+body{background:var(--ground)}
+
+/* masthead: parchment with the lattice behind the title, faded towards the edges */
+.masthead.lattice{position:relative;background:var(--ground);border-bottom:1px solid var(--line);padding:40px 20px 30px;overflow:hidden}
+.masthead.lattice::before{content:"";position:absolute;inset:0;background-image:var(--lattice);background-position:center;
+  -webkit-mask-image:radial-gradient(ellipse 46% 120% at 50% 50%,#000 0,#000 35%,transparent 75%);mask-image:radial-gradient(ellipse 46% 120% at 50% 50%,#000 0,#000 35%,transparent 75%)}
+.masthead.lattice>*{position:relative}
+.masthead.lattice.compact{padding:22px 20px 18px}
+.masthead.lattice .tagline{color:var(--label)}
+.nav{background:rgba(253,251,247,.96)}
+
+/* banners: colour, never black; a terracotta rule under every label */
+.banner .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:var(--pop)}
+.banner.teal,.banner.slate{border-bottom:0}
+.banner.teal::after,.banner.slate::after{content:none}
+.banner.slate{background:var(--slate);color:#eef3f6}
+.banner.slate h1{color:#fff}
+.banner.slate .label{color:#e9cf9a}
+.banner.slate .lead{color:#e4ecf1}
+.banner.slate a{color:#fff}
+.banner.slate .label::after,.banner.teal .label::after{background:#e59a78}
+.banner.slate :focus-visible{outline-color:#fff;box-shadow:0 0 0 4px var(--slate)}
+.banner.gold{position:relative;background:var(--panel);border-bottom:1px solid var(--line);overflow:hidden}
+.banner.gold::before{content:"";position:absolute;inset:0;background-image:var(--lattice);opacity:.8;
+  -webkit-mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.6) 30%,transparent 62%);mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.6) 30%,transparent 62%)}
+.banner.gold>.wrap{position:relative}
+.banner.gold .label{color:var(--label)}
+.banner.panel .label::after{background:var(--pop)}
+
+/* the book page keeps the cover's graphics */
+.banner.cover{background:#e7d7ae url("img/tmi-clouds-band.jpg") center/cover;border:0}
+.banner.cover .label{color:#5a4a36}
+.banner.cover .lead{color:#3d3326}
+
+/* home: more open */
+.lead-hero .wrap{padding-top:84px;padding-bottom:84px}
+.banner-section.slate{background:var(--slate);color:#eef3f6}
+.banner-section.slate h2{color:#fff}
+.banner-section.slate .label{color:#e9cf9a}
+.banner-section.slate .stages li{border-color:rgba(255,255,255,.18)}
+.banner-section.slate .stages li::before{color:#e59a78}
+.banner-section.slate :focus-visible{outline-color:#fff;box-shadow:0 0 0 4px var(--slate)}
+.band-panel{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.card{background:var(--white);border:1px solid var(--line);border-top:2px solid var(--teal-2)}
+a.card:hover{border-color:var(--line-2)}
+.section + .section{border-top:0}
+.section{padding:80px 0}
+
+/* footer: deep ink, gold wordmark (A2) */
+.signup{background:var(--panel)}
+.footer{background:var(--ink);color:#c9c2b2}
+.footer .wordmark{color:#e3b84a}
+.footer a{color:#f3eee3}
+.footer a:hover{color:#fff}
+.social a{background:rgba(255,255,255,.08);color:#f3eee3}
+.social a:hover{background:rgba(255,255,255,.18);color:#fff}
+.footer :focus-visible{outline-color:#fff;box-shadow:0 0 0 4px var(--ink)}
+
+@media (max-width:760px){
+  .section{padding:56px 0}
+  .masthead.lattice{padding:24px 16px 18px}
+  .lead-hero .wrap{padding-top:32px;padding-bottom:48px}
+}
