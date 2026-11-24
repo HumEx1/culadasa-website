@@ -50,3 +50,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 25. **Teachers a lighter apricot (D, 24 Nov 2026).** "Teachers apricot a little lighter." Teachers is now #c4926c (was the palette terracotta #b6835d), with dark ink text at 6.3:1.
 
 26. **Conversations a little redder, still dark (D, 24 Nov 2026).** "Brown/rust a little redder still with dark tones tho." Conversations is now #8c3e31 (was #8f4a36), with white text at 7.4:1.
+
+27. **The large masthead on every page (D, 24 Nov 2026).** "Try the reverse - make all the page tops bigger like the original A2 CULADASA universal banner." Every page, home included, now uses the large masthead: CULADASA at 40px with the line "Upasaka Culadasa · John Yates, Ph.D. · 1945–2021" under it on desktop. On phones the wordmark is 26px and the line is hidden. This reverses the compact choice of item 20; all pages still match.

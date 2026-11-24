@@ -67,7 +67,7 @@ def social_html(r=''):
     return ''.join(f'<a href="{u}" rel="noopener" aria-label="Culadasa on {n}"><svg viewBox="0 0 24 24" aria-hidden="true">{p}</svg></a>' for n, u, p in SOCIAL)
 
 
-def page(path, title, body, *, description='', compact=True, extra_head='', extra_js='', cover_band=False):
+def page(path, title, body, *, description='', compact=False, extra_head='', extra_js='', cover_band=False):
     depth = 0 if path == '' else path.strip('/').count('/') + 1
     r = rel(depth)
     first = path.split('/')[0]
