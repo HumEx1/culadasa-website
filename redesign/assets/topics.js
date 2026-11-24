@@ -7,8 +7,8 @@
   var $ = function (id) { return document.getElementById(id); };
   var form = $('topic-form'), input = $('q'), cloudEl = $('cloud'), statusEl = $('status'), resultsEl = $('results'), filtersEl = $('filters');
   var DATA = null, KIND = 'all', LIMIT = 60;
-  var KINDS = [['all', 'All'], ['handout', 'Handouts'], ['essay', 'Essays'], ['qa', 'Q&A'], ['interview', 'Interviews'], ['about', 'About'], ['video', 'Videos']];
-  var TYPE_OF = { 'Handout': 'handout', 'Essay': 'essay', 'Q&A': 'qa', 'Interview': 'interview', 'About': 'about', 'Video': 'video' };
+  var KINDS = [['all', 'All'], ['handout', 'Handouts'], ['essay', 'Essays'], ['qa', 'Q&A'], ['interview', 'Interviews'], ['about', 'Lineage'], ['video', 'Videos']];
+  var TYPE_OF = { 'Handout': 'handout', 'Essay': 'essay', 'Q&A': 'qa', 'Interview': 'interview', 'Lineage': 'about', 'Video': 'video' };
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   // Fold accents and apostrophes, one character in, one out, so positions stay aligned with the original text.

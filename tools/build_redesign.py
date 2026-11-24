@@ -33,7 +33,7 @@ NAV = [  # grouped by purpose: guidance, library, the book, people (banner colou
     ('The Book', 'the-book/', None),
     ('Teachers', 'teachers/', None),
     ('Conversations', 'conversations/', None),
-    ('About', 'about/', None),
+    ('Lineage', 'lineage/', None),
 ]
 SOCIAL = [
     ('YouTube', 'https://www.youtube.com/@Culadasa',
@@ -86,10 +86,10 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
     first = path.split('/')[0]
     LIBRARY = {'writings', 'audio', 'videos', 'online-meetings', 'meditation-manual-introduction', 'mindful-awareness-vs-dullness',
                'amount-of-concentration-needed-for-awakening', 'daily-life-practice', 'cultivating-mindfulness-in-daily-life'}
-    section = ('home' if not first else 'library' if first in LIBRARY else 'about' if first in ('about', 'testimonials', 'student-testimonials')
+    section = ('home' if not first else 'library' if first in LIBRARY else 'lineage' if first in ('lineage', 'about', 'testimonials', 'student-testimonials')
                else 'book' if first in ('the-book', 'book-reviews') else first)
     group = {'start-here': 'guide', 'learn': 'guide', 'topics': 'guide', 'library': 'library', 'book': 'book',
-             'teachers': 'people', 'conversations': 'people', 'about': 'people'}.get(section, 'home')
+             'teachers': 'people', 'conversations': 'people', 'lineage': 'people'}.get(section, 'home')
     full = 'Culadasa — the teachings of John Yates' if path == '' else f'{title} — Culadasa'
     OLD = {'', 'writings/', 'audio/', 'videos/', 'online-meetings/', 'teachers/', 'testimonials/', 'student-testimonials/', 'book-reviews/',
            'meditation-manual-introduction/', 'mindful-awareness-vs-dullness/', 'amount-of-concentration-needed-for-awakening/',
@@ -156,7 +156,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
         <li><a href="{r}start-here/">Start here</a></li><li><a href="{r}learn/">Learn</a></li><li><a href="{r}writings/">Writings</a></li><li><a href="{r}audio/">Audio</a></li>
         <li><a href="{r}videos/">Videos</a></li><li><a href="{r}online-meetings/">Q&amp;A archive</a></li><li><a href="{r}topics/">Topics</a></li>
         <li><a href="{r}the-book/">The Mind Illuminated</a></li><li><a href="{r}teachers/">Teachers</a></li><li><a href="{r}conversations/">Conversations</a></li>
-        <li><a href="{r}testimonials/">Testimonials</a></li><li><a href="{r}about/">About</a></li>
+        <li><a href="{r}testimonials/">Testimonials</a></li><li><a href="{r}lineage/">Lineage</a></li>
       </ul></nav>
     </div>
     <div class="social">{social_html(r)}</div>
@@ -494,17 +494,42 @@ def build():
     body = banner('In conversation', 'Conversations', 'Interviews, podcasts and talks with Culadasa, from across the web.', 'gold') + f'<section class="section"><div class="wrap measure">{items}{f'<p class="small muted" style="margin-top:24px">{esc(convos["note"])}</p>' if convos["note"] else ''}</div></section>'
     page('conversations/', 'Conversations', body, description='Interviews, podcasts and talks with Culadasa from across the web.')
 
-    # ---------------------------------------------------------------- about
+    # ---------------------------------------------------------------- lineage (was About; D, 24 Nov 2026)
+    # Order: the lineage first, then his wishes, then the obituary.  Text is the live site's, unchanged;
+    # the lineage chain repeats only what that text says.  Photos: Namgyal Rinpoche from wangapeka.org,
+    # Kema Ananda from arrowriver.ca (top photo), both chosen by D; permission still to confirm.
     about = content['about_html']
-    about = re.sub(r'<a href="https://culadasa\.com/wp-content[^"]*"><img[^>]*Culadasa-photo[^>]*/></a>', '', about)
-    about = re.sub(r'<a href="https://culadasa\.com/wp-content[^"]*"><img[^>]*Screen-Shot[^>]*/></a>', '', about)
-    about = re.sub(r'\s(style|class|id|title)="[^"]*"', '', about)
-    about = re.sub(r'<b>\s*</b>', '', about)
-    about = re.sub(r'<p><strong>([^<]{3,60})</strong></p>', r'<h2>\1</h2>', about)
-    body = banner('About', 'Culadasa', 'Upasaka Culadasa, John Yates Ph.D., 1945–2021. Meditation master, retired professor of neuroscience, author.', 'gold') + f'''
-<section class="section"><div class="wrap two"><div><img class="framed" src="{r}assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" loading="lazy"><img class="framed" style="margin-top:28px;max-width:260px" src="{r}assets/img/culadasa-robes.jpg" alt="Culadasa laughing, seated in robes" loading="lazy"></div>
-<div class="prose measure">{about}</div></div></section>'''
-    page('about/', 'About Culadasa', body, description='Culadasa (John Yates, Ph.D.): his wishes and legacy, obituary, biography and Buddhist lineage.')
+    def clean(h):
+        h = re.sub(r'<a href="https://culadasa\.com/wp-content[^"]*"><img[^>]*/></a>', '', h)
+        h = re.sub(r'\s(style|class|id|title)="[^"]*"', '', h)
+        h = re.sub(r'<b>\s*</b>', '', h)
+        h = re.sub(r'<p>\s*(&nbsp;|\xa0)?\s*</p>', '', h)
+        return re.sub(r'<p><strong>([^<]{3,60})</strong></p>', r'<h2>\1</h2>', h)
+    i_wish = about.index("<p><strong>Culadasa's wishes")
+    i_obit = about.index('<p><strong>Obituary</strong></p>')
+    i_line = about.index('<h2>The Buddhist Lineage')
+    wishes, obit, lineage = clean(about[i_wish:i_obit]), clean(about[i_obit:i_line]), clean(about[i_line:])
+    lineage = re.sub(r'<h2>The Buddhist Lineage of Upasaka Culadasa</h2>', '', lineage)
+    chain = [
+        ('namgyal-rinpoche.jpg', 'Namgyal Rinpoche', 'Ananda Bodhi', 'Ordained by His Holiness the 16th Gyalwa Karmapa', 'Photo: wangapeka.org', 300, 400),
+        ('kema-ananda.jpg', 'Upasaka Kema Ananda', '', 'Ordained by Namgyal Rinpoche', 'Photo: arrowriver.ca', 300, 400),
+        ('culadasa-robes.jpg', 'Upasaka Culadasa', 'John Yates, Ph.D.', 'Ordained by Upasaka Kema Ananda', '', 300, 400),
+    ]
+    chain_html = ''.join(f'''<li><figure><img src="{r}assets/img/{img}" alt="{esc(name)}" width="{w}" height="{h}" loading="lazy">
+<figcaption><strong>{esc(name)}</strong>{f'<em>{esc(alt)}</em>' if alt else ''}<span>{esc(note)}</span>{f'<small>{esc(credit)}</small>' if credit else ''}</figcaption></figure></li>''' for img, name, alt, note, credit, w, h in chain)
+    body = banner('Lineage', 'Upasaka Culadasa', 'His Buddhist lineage, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021.', 'gold') + f'''
+<section class="section" id="lineage"><div class="wrap">
+<h2>The Buddhist lineage of Upasaka Culadasa</h2>
+<p class="muted">Ordination passed from teacher to student, in a lineage traced to the Buddha.</p>
+<ol class="lineage">{chain_html}</ol>
+<div class="prose measure">{lineage}</div>
+</div></section>
+<section class="section band-panel" id="wishes"><div class="wrap two"><div><img class="framed" src="{r}assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" width="400" height="602" loading="lazy"></div>
+<div class="prose measure">{wishes}</div></div></section>
+<section class="section" id="obituary"><div class="wrap"><div class="prose measure">{obit}</div></div></section>'''
+    page('lineage/', 'The lineage of Upasaka Culadasa', body, description='The Buddhist lineage of Upasaka Culadasa (John Yates, Ph.D., 1945–2021), his wishes for his teachings, and his obituary.')
+    redirect = '<meta http-equiv="refresh" content="0; url=../lineage/">\n<link rel="canonical" href="../lineage/">\n'
+    page('about/', 'About Culadasa', '<section class="section"><div class="wrap"><p>This page is now <a href="../lineage/">Lineage</a>.</p></div></section>', extra_head=redirect)
 
     # ---------------------------------------------------------------- testimonials (old path) + book reviews (old path)
     body = banner('Testimonials', 'Praise for Culadasa as a teacher', '', 'teal') + f'<section class="section"><div class="wrap"><div class="quotes">{"".join(f"<figure class=quote><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>" for q in content["testimonials"])}</div><p><a href="{r}the-book/#reviews">Reviews of The Mind Illuminated →</a></p></div></section>'

@@ -148,7 +148,7 @@ def main(qna_md, interviews_dir):
         if slug in ESSAYS:
             docs.append({'id': 'essay-' + slug, 'type': 'Essay', 'title': ESSAYS[slug], 'url': f'../{slug}/', 'text': html_text(body)})
         if slug == 'about':
-            docs.append({'id': 'about', 'type': 'About', 'title': 'About Culadasa: biography and lineage', 'url': '../about/', 'text': html_text(body)})
+            docs.append({'id': 'about', 'type': 'Lineage', 'title': 'Lineage: the lineage, wishes and life of Culadasa', 'url': '../lineage/', 'text': html_text(body)})
     for fname, marker, title, url, credit in []:
         t = (pathlib.Path(interviews_dir) / fname).read_text()
         turns = re.split(r'\n\s*\n|(?=\b(?:Rick|Michael Taft|Culadasa|John Yates):)', t)

@@ -346,7 +346,7 @@ body[data-section="library"]{--group:#ccb069;--on:#141c21;--rule:rgba(20,28,33,.
 body[data-section="book"]{--group:#dbc9ad;--on:#141c21;--rule:#b6835d}
 body[data-section="teachers"]{--group:#c4926c;--on:#141c21;--rule:rgba(20,28,33,.6)}
 body[data-section="conversations"]{--group:#b15549;--on:#fff;--rule:rgba(255,255,255,.7)}
-body[data-section="about"]{--group:#8fa087;--on:#141c21;--rule:rgba(20,28,33,.6)}
+body[data-section="lineage"]{--group:#8fa087;--on:#141c21;--rule:rgba(20,28,33,.6)}
 .menu a[aria-current="page"],.menu button.group[aria-current="page"]{border-bottom-color:var(--group)}
 body[data-section="book"] .menu a[aria-current="page"]{border-bottom-color:#b6835d}
 body:not([data-group="book"]) .banner{position:relative;overflow:hidden;background:var(--group);color:var(--on);border:0;padding:64px 0 52px}
@@ -386,4 +386,20 @@ body[data-section="teachers"] .banner .lead{max-width:none}
   .nav .wrap{border-top:1px solid #c4972f;border-bottom:1px solid #c4972f;margin:0 16px;padding:0}
   .menu a,.menu .group,.menu button.group{padding:13px 4px}
   .sub a{padding:10px 4px}
+}
+
+/* Lineage page: teacher to student, left to right (D, 24 Nov 2026) */
+.lineage{list-style:none;margin:28px 0 44px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;max-width:860px}
+.lineage li{position:relative;margin:0}
+.lineage li+li::before{content:"→";position:absolute;left:-34px;top:38%;font-size:22px;color:var(--muted)}
+.lineage figure{margin:0}
+.lineage img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center top;border:6px solid var(--panel);box-shadow:0 0 0 1px var(--line)}
+.lineage figcaption{margin-top:14px;font-size:15px;line-height:1.5;color:var(--body)}
+.lineage figcaption strong{display:block;font-family:var(--display);font-weight:400;font-size:20px;line-height:1.3;color:var(--ink)}
+.lineage figcaption em{display:block;color:var(--muted)}
+.lineage figcaption span{display:block;margin-top:6px}
+.lineage figcaption small{display:block;margin-top:6px;font-size:12.5px;color:var(--muted)}
+@media (max-width:760px){
+  .lineage{grid-template-columns:1fr;gap:44px;max-width:300px}
+  .lineage li+li::before{content:"↓";left:0;top:-38px}
 }
