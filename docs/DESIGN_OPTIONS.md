@@ -60,7 +60,7 @@ Motivation: the most restful; colour is almost absent so the one point of persim
 
 ## How a chosen option gets applied
 
-Replace the `:root` tokens and the font `<link>` in `site/assets/style.css` and `tools/migrate.py` (the template), re-run the migration, and review the 14 pages side by side. The home-page "teachings" row is an addition to the content and needs the group's agreement before it goes live.
+Only after the group agrees to a redesign. The live look is kept as an exact mirror until then (Darin's rule, 24 Nov 2026). A redesign would be a new set of pages built from the mirror's content, reviewed side by side with it. The home-page "teachings" row is an addition to the content and needs the group's agreement before it goes live.
 
 ---
 

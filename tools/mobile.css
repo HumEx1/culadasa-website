@@ -1,0 +1,19 @@
+/*
+ * Phone-only readability fix (added 24 Nov 2026, not on the WordPress site).
+ *
+ * On the live site, the two photos on the About page float left at 250px wide
+ * even on a phone, which squeezes the text beside them into a column one or
+ * two words wide.  Below 545px (the Astra theme's own phone breakpoint) the
+ * photo stops floating, so the text runs underneath it at full width.  The
+ * photo keeps its size and left alignment.  Wider screens are unaffected:
+ * the desktop and tablet pages are pixel-identical to the live site.
+ *
+ * To undo, delete this file and the <link> to it in each page's <head>.
+ */
+@media (max-width: 544px) {
+  .elementor-widget-text-editor img.alignleft {
+    float: none;
+    display: block;
+    margin: 0 0 1.5em 0;
+  }
+}

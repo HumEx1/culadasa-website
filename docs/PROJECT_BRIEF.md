@@ -132,7 +132,7 @@ External links in page content: Creative Commons, patreon.com/culadasa, 24x7wpsu
 
 ## 7. How it will be rebuilt
 
-- **Plain HTML and CSS**, one shared header and footer, same design, no Elementor, no PHP, no database. Nothing on the site takes input, so finished pages are served as they are.
+- **Superseded on 24 Nov 2026 by the mirror rule (see 7b).** The original plan here was a plain-HTML rebuild; the site is now an exact static copy of the WordPress pages, with no PHP and no database. Nothing on the site takes input, so finished pages are served as they are.
 - **Hosting: GitHub Pages**, the same as Darin's Between The Silence site (GitHub Pages from a public repository with the custom domain pointed at it). Limits checked in the chat: 1 GB site size, 100 GB/month soft bandwidth, no commercial use; all comfortably met. A free account must publish from a **public** repository, which matches the family's CC BY wishes.
 - **Alternative considered:** Cloudflare Pages (uncapped bandwidth, 25 MiB per-file limit). Rejected as the first choice because GitHub Pages keeps the site in the same repository as its source.
 - **Same addresses.** Pages keep their paths (e.g. `/writings/`), and the PDFs are placed in folders named `wp-content/uploads/2021/09/` so every old link, bookmark and search result still works. Only WordPress's admin and login pages disappear.
@@ -142,11 +142,13 @@ External links in page content: Creative Commons, patreon.com/culadasa, 24x7wpsu
 - **Where the servers are.** GitHub's own servers behind the Fastly content delivery network, so visitors are served from a cache near them.
 - **Infrastructure note.** From Claude's cloud container, culadasa.com is blocked by the network allowlist; the media download needs an allowlist change or D's machine.
 
-## 7b. Status, 24 November 2026
+## 7b. Status, 24 November 2026 (night)
 
-- The faithful static rebuild of all 14 pages is in `site/`, with the 28 media files at their original paths, a sitemap, robots.txt and a 404 page. `tools/migrate.py` is the conversion script.
-- `.github/workflows/pages.yml` publishes `site/` to GitHub Pages on every push to main. It runs once GitHub Pages is switched on in the repository settings (Settings → Pages → Source: GitHub Actions); until the domain moves, the address is humex1.github.io/culadasa-website/.
-- Three refresh directions are documented in `docs/DESIGN_OPTIONS.md`.
+- **Darin's rule: the initial migration is a mirror of the live site.** The first rebuild (plain HTML with fixes and a new stylesheet) was replaced the same day by an exact copy of the live pages and their files, because the group needs to see a faithful job first. Fixes and redesigns come later as separate changes.
+- `site/` is that mirror, built by `tools/mirror_build.py` from a full copy of culadasa.com. Every page matches the live site pixel for pixel at desktop, tablet and phone width, except one phone-only readability fix on the About page. Everything that differs under the hood is listed in `docs/MIRROR_NOTES.md`.
+- Both video galleries page through all their videos (Online Meetings: 61 videos on 7 pages; Videos: 10 on 2) from saved files instead of WordPress.
+- `.github/workflows/pages.yml` publishes `site/` to https://humex1.github.io/culadasa-website/ on every push to main.
+- The design directions for a later refresh (A to E) are in `docs/DESIGN_OPTIONS.md`.
 
 ## 8. Open items
 
