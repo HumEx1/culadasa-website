@@ -23,9 +23,21 @@
     });
   });
 
-  // Phone menu: close it after choosing a page.
-  var toggle = document.getElementById('nav-toggle');
-  if (toggle) document.querySelectorAll('.menu a').forEach(function (a) {
-    a.addEventListener('click', function () { toggle.checked = false; });
+  // Phone menu: a real button, with Escape to close.
+  var nav = document.querySelector('.nav'), btn = document.querySelector('.nav-button');
+  function setMenu(open) { nav.classList.toggle('open', open); btn.setAttribute('aria-expanded', open); }
+  if (btn) btn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
+  // "Library" dropdown: opens on click or keyboard as well as hover.
+  document.querySelectorAll('.menu button.group').forEach(function (g) {
+    g.addEventListener('click', function () {
+      var li = g.parentNode, open = !li.classList.contains('open');
+      li.classList.toggle('open', open); g.setAttribute('aria-expanded', open);
+    });
   });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (nav && nav.classList.contains('open')) { setMenu(false); btn.focus(); }
+    document.querySelectorAll('.has-sub.open').forEach(function (li) { li.classList.remove('open'); li.querySelector('button').setAttribute('aria-expanded', false); });
+  });
+  document.querySelectorAll('.menu a').forEach(function (a) { a.addEventListener('click', function () { if (nav) setMenu(false); }); });
 })();

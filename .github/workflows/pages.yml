@@ -14,7 +14,7 @@ permissions:
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -31,7 +31,6 @@ jobs:
           mkdir -p _site
           cp -a site/. _site/
           cp -a redesign _site/redesign
-          rm -rf _site/redesign/data/*.md
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site

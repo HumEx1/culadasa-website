@@ -1,5 +1,5 @@
 {
- "note": "Names and certification years are from the 2021 teachers page. Profiles, photos and locations are to be added from each teacher’s public profile once confirmed with them; the two sample profiles show the finished layout and contain no real details.",
+ "note": "Names and certification years are from the current culadasa.com Teachers page. Profiles, photos and locations will be added from each teacher’s public profile once confirmed with them. Two sample profiles show the finished layout: an in-person teacher and an online teacher.",
  "teachers": [
   {
    "slug": "sample-profile-in-person",
@@ -14,7 +14,8 @@
    "bio": [
     "[Sample text. Each teacher writes this in their own words: how they came to practice, their years with Culadasa, and how they teach The Mind Illuminated.]",
     "[A second paragraph: who their classes suit, what a first session looks like, and how to get in touch through their own website.]"
-   ]
+   ],
+   "hidden": true
   },
   {
    "slug": "sample-profile-online",
@@ -26,7 +27,8 @@
    "teaches": "One-to-one meditation coaching by video call",
    "bio": [
     "[Sample text for a teacher who works online: their background, their approach to the ten stages, and the times and languages they teach in.]"
-   ]
+   ],
+   "hidden": true
   },
   {
    "slug": "stephen-greg-ascue",

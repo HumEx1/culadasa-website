@@ -8,8 +8,8 @@ Sources (all real Culadasa material):
   * the Culadasa Q&A Index by Alex (transcendentmind.github.io): every question
     asked in the 61 Patreon Q&A sessions, Oct 2017 to May 2021, with keywords,
     quotes and links to the exact moment in each YouTube video;
-  * two interview transcripts, counting only Culadasa's own words:
-    Buddha at the Gas Pump #394 (2017) and Deconstructing Yourself DY 022 (2018);
+  (interview transcripts are not indexed: they belong to the sites that made them;
+   the Conversations page links to them instead)
   * the titles of every video on his YouTube channel that the old site showed.
 
 Search rule (Darin, 24 Nov 2026): rank purely by how many times the searched
@@ -21,7 +21,7 @@ common English words (the list is below and in the decisions log).
 Usage:
   python3 tools/build_topics.py <qna-index.md> <interviews-dir>
 """
-import json, re, sys, subprocess, pathlib, html, collections
+import json, re, sys, subprocess, pathlib, html, collections, unicodedata
 import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -58,7 +58,7 @@ ESSAYS = {  # export slug -> title as listed on the Writings page
     'daily-life-practice': 'How to Maintain Practice in One’s Daily Life',
     'cultivating-mindfulness-in-daily-life': 'Cultivating Mindfulness in Daily Life',
 }
-INTERVIEWS = [
+INTERVIEWS_OFF = [
     ('batgap-394.txt', 'Culadasa:', 'Buddha at the Gas Pump #394 — interview with Rick Archer (2017)',
      'https://batgap.com/culadasa-john-yates-interview-transcript/', 'Transcript: batgap.com'),
     ('deconstructing-yourself-dy022.txt', 'John Yates:', 'Deconstructing Yourself DY 022 — Culadasa on Stream Entry, with Michael Taft (2018)',
@@ -149,7 +149,7 @@ def main(qna_md, interviews_dir):
             docs.append({'id': 'essay-' + slug, 'type': 'Essay', 'title': ESSAYS[slug], 'url': f'../{slug}/', 'text': html_text(body)})
         if slug == 'about':
             docs.append({'id': 'about', 'type': 'About', 'title': 'About Culadasa: biography and lineage', 'url': '../about/', 'text': html_text(body)})
-    for fname, marker, title, url, credit in INTERVIEWS:
+    for fname, marker, title, url, credit in []:
         t = (pathlib.Path(interviews_dir) / fname).read_text()
         turns = re.split(r'\n\s*\n|(?=\b(?:Rick|Michael Taft|Culadasa|John Yates):)', t)
         own = [x.split(':', 1)[1].strip() for x in turns if x.strip().startswith(marker)]
@@ -168,7 +168,18 @@ def main(qna_md, interviews_dir):
     for s in qna:
         for i in s['items']:
             counts.update(w.lower().replace('’', "'").strip("'-") for w in WORD.findall(i['text']))
-    cloud = [(w, c) for w, c in counts.most_common(2000) if len(w) > 3 and w not in STOP and not w.isdigit()][:90]
+    top = [w for w, c in counts.most_common(2000) if len(w) > 3 and w not in STOP and not w.isdigit()][:90]
+    # show each word with the count a search for it returns (same rule as the Topics page: word start, accents folded)
+    def fold(t):
+        return unicodedata.normalize('NFD', t.replace('’', "'")).encode('ascii', 'ignore').decode().lower() if False else ''.join(
+            (unicodedata.normalize('NFD', ch)[0] if ch not in '’‘' else "'") for ch in t).lower()
+    texts = [fold(d['text']) for d in docs] + [fold(i['text']) for s in qna for i in s['items']]
+    cloud = []
+    for w in top:
+        pat = re.compile(r'(?<![a-z0-9\u00c0-\u024f\u1e00-\u1eff])' + re.escape(fold(w)) + r'[a-z0-9\u00c0-\u024f\u1e00-\u1eff]*')
+        cloud.append((w, sum(len(pat.findall(t)) for t in texts)))
+    for d in docs:  # account emails printed in his handouts are not repeated in the search index
+        d['text'] = re.sub(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}', '[email]', d['text'])
     data = {'built': __import__('datetime').date.today().isoformat(),
             'credit': {'qna': {'name': 'Culadasa Q&A Index by Alex', 'url': 'https://transcendentmind.github.io/html/culadasa_qna_index.html'}},
             'docs': docs, 'qna': qna, 'cloud': cloud}

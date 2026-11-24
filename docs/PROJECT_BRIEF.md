@@ -40,16 +40,16 @@
 | WordPress site and hosting | 24x7 WP Support | Elizabeth (site admin and hosting account) |
 | SoundCloud | soundcloud.com, user 111086538 | Elizabeth; login to be passed to D |
 | SoundCloud audio files, offline | Physical backup drive mailed by Paulin Elley to Elizabeth | Elizabeth; untested, very large |
-| YouTube channel | Culadasa's personal Google account | **Nobody.** His Gmail and phone were the logins; the phone account is closed and Gmail access is lost. His sister Claire Yates is the family contact and best chance of recovery |
-| Patreon (patreon.com/culadasa) | Culadasa's personal Google account | **Nobody.** Set to collect no money. Holds past financial data, so it may need to stay with the estate. Its videos are all on YouTube; Patreon only had links and comments |
+| YouTube channel | Culadasa's personal Google account | **Nobody in the group.** Recovery would go through his family |
+| Patreon (patreon.com/culadasa) | Culadasa's personal Google account | **Nobody in the group.** Set to collect no money; may need to stay with his estate |
 
-The site only embeds public YouTube playlists and SoundCloud players, so the migration does not need those logins. Handoffs from Elizabeth will mostly need confirmation codes sent to her phone or email, so D and Elizabeth need to coordinate a time.
+The site only embeds public YouTube playlists and SoundCloud players, so the migration does not need those logins.
 
 ## 4. Ongoing maintenance group — D's proposal (22 November 2026)
 
 Not yet built. No objections raised.
 
-- **A new shared Google account** (e.g. [email removed]) as the contact and login email for everything below; password shared with the group. All passwords in a Google Sheet on that account, shared only with group members; two-factor backup codes in a "Culadasa Website Info" sheet.
+- **A new shared Google account** as the contact and login email for everything below; password shared with the group. All passwords in a Google Sheet on that account, shared only with group members; two-factor backup codes in a "Culadasa Website Info" sheet.
 - **Domain:** every group member added as a user on the registrar account, auto-renew on (needs a credit card). If GoDaddy's access levels don't allow it, move the name to Namecheap under the new Gmail.
 - **Website source:** a free GitHub organisation "Culadasa". GitHub does not allow shared logins, so each member creates a free GitHub account and is added as an owner.
 - **YouTube:** every member given owner-level access (blocked until the Google account is recovered).
@@ -72,7 +72,7 @@ Not yet built. No objections raised.
 | Ollie Bray | On the thread (changed email address) |
 | Alexandra (Ali) Tataryn | Asked to be included |
 | Paulin Elley | Made the SoundCloud backup drive; added 23 Nov |
-| Claire Yates | Culadasa's sister; family contact for his Google account and Patreon |
+| A family member | Contact for his Google account and Patreon, through Elizabeth |
 
 The recipient list varied from message to message and needs sorting into a defined group. D moved non-commenters to bcc on 21 Nov.
 
@@ -163,6 +163,6 @@ External links in page content: Creative Commons, patreon.com/culadasa, 24x7wpsu
 | Build the static site and verify every URL in §6b | D / Claude |
 | Point culadasa.com at the new host; then Elizabeth asks 24x7 WP Support about a refund | D, then Elizabeth |
 | Decide what to do with culadasa.resources | Elizabeth |
-| Approach Claire Yates about recovering Culadasa's Google account (YouTube, Patreon) once the group knows what it needs | Elizabeth with D |
+| Approach his family about recovering Culadasa's Google account (YouTube, Patreon) once the group knows what it needs | Elizabeth with D |
 | Tidy the recipient list into a defined maintenance group | D / Elizabeth |
 | Later: add the Patreon Q&As to the website | D |

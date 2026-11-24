@@ -1,7 +1,9 @@
 /* Teachers: filter by name or place, by year or online, sort by distance, and a map.
    The map uses Leaflet (in assets/vendor) and OpenStreetMap tiles; no API key.
-   Location is only read if the visitor presses "Near me", and is never sent anywhere. */
+   Location is only read if the visitor presses "Near me". It is used in the browser to sort by distance;
+   the site never sends it anywhere, though centring the map loads map tiles for that area from OpenStreetMap. */
 (function () {
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   var list = document.getElementById('tlist'), q = document.getElementById('tq'), near = document.getElementById('near');
   var filters = document.getElementById('tfilters'), statusEl = document.getElementById('tstatus');
   var cards = Array.prototype.slice.call(list.querySelectorAll('.tcard'));
@@ -16,7 +18,7 @@
     var term = (q.value || '').trim().toLowerCase(), shown = 0;
     cards.forEach(function (c) {
       var ok = (!term || c.dataset.name.indexOf(term) >= 0 || c.dataset.place.indexOf(term) >= 0) &&
-               (F === 'all' || (F === 'online' ? c.dataset.online === '1' : c.dataset.year === F));
+               (F === 'all' || (F === 'online' ? c.dataset.online === '1' : F === 'inperson' ? c.dataset.inperson === '1' : c.dataset.year === F));
       c.hidden = !ok; if (ok) shown++;
     });
     if (here) {
@@ -41,6 +43,7 @@
     statusEl.textContent = 'Finding teachers near you…';
     navigator.geolocation.getCurrentPosition(function (p) {
       here = [p.coords.latitude, p.coords.longitude];
+      if (box && !box.open) { box.open = true; }
       if (map) { map.setView(here, 6); window.L.circleMarker(here, { radius: 7, color: '#2a241c', fillColor: '#f3e3a8', fillOpacity: 1 }).addTo(map).bindPopup('You are here'); }
       apply();
     }, function () { statusEl.textContent = 'Location was not shared. Search by town or country instead.'; }, { timeout: 10000 });
@@ -55,10 +58,12 @@
       if (!c.dataset.lat) return;
       var a = c.querySelector('a');
       var m = window.L.marker([+c.dataset.lat, +c.dataset.lng], { icon: icon, title: a.querySelector('.tname').textContent })
-        .addTo(map).bindPopup('<a href="' + a.getAttribute('href') + '">' + a.querySelector('.tname').textContent + '</a><br>' + a.querySelector('.tmeta').textContent);
+        .addTo(map).bindPopup('<a href="' + esc(a.getAttribute('href')) + '">' + esc(a.querySelector('.tname').textContent) + '</a><br>' + esc(a.querySelector('.tmeta').textContent));
       markers.push(m);
     });
   }
-  if (document.readyState === 'complete') initMap(); else window.addEventListener('load', initMap);
+  // The map is folded away while few teachers have a location; it is built when first opened.
+  var box = document.getElementById('mapbox');
+  if (box) box.addEventListener('toggle', function () { if (box.open && !map) initMap(); else if (map) map.invalidateSize(); });
   apply();
 })();

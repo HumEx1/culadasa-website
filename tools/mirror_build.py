@@ -145,6 +145,7 @@ def main(mirror, epyt):
             t = re.sub(r'(<script[^>]*youtube-embed-plus/scripts/ytprefs\.min\.js[^>]*></script>)',
                        r'\1\n<script src="' + prefix + 'assets/epyt-static.js"></script>', t, count=1)
         t = t.replace('</head>', '<link rel="stylesheet" href="' + prefix + 'assets/mobile.css">\n</head>', 1)
+        t = re.sub(r'(<head[^>]*>)', r'\1\n<meta name="robots" content="noindex"><!-- preview copy only: remove when culadasa.com points here -->', t, count=1)
         page.write_text(t)
     # the live 404 page, served for any missing address at any depth: absolute URLs
     t = get('no-such-page-mirror-404/', allow_404=True).decode()

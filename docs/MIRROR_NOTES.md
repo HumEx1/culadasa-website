@@ -20,6 +20,7 @@
 | The video galleries' Next / Prev buttons read saved pages instead of asking WordPress | WordPress answered those requests; a static site cannot. All pages of both galleries were saved on 24 Nov 2026 (`epyt-pages/`) and `assets/epyt-static.js` serves them. The galleries look and behave the same | Online Meetings, Videos |
 | Ten Elementor files that load while a page runs (lightbox, dialog, slider styles, small script chunks) were fetched separately | The copying tool only follows tags; these are requested by scripts. Found by recording a browser on every live page | `wp-content/plugins/elementor/` |
 | Font files lost a `@version` suffix in their names | GitHub Pages decides file types from names | Elementor and Font Awesome fonts |
+| Every page carries `<meta name="robots" content="noindex">` | So search engines do not list the github.io preview as a duplicate of culadasa.com. **Remove at cutover** (one line per page, marked with a comment). Not visible | every page |
 | The 404 page loads its styles from `https://culadasa.com/` | It is served for any missing address at any folder depth, so relative addresses would break. Once culadasa.com points here, those addresses are this site | `404.html` |
 
 ## The one visible difference

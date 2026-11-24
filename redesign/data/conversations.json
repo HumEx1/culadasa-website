@@ -1,6 +1,22 @@
 {
- "note": "Every item here was opened and checked on 24 November 2026. Items found only in search results, and items about the 2019 Dharma Treasure board decision, are left out for the maintainers to decide.",
+ "note": "",
  "items": [
+  {
+   "title": "Pandemic – Culadasa",
+   "show": "Guru Viking Podcast: Pandemic Series, episode 35",
+   "host": "Guru Viking",
+   "date": "2020-03-20",
+   "date_label": "March 2020",
+   "url": "https://www.guruviking.com/podcast/ep35-culadasa-pandemic-edition-guru-viking-podcast",
+   "cta": "Listen",
+   "description": "Culadasa as the featured guest of the Guru Viking Podcast’s pandemic series, published 20 March 2020.",
+   "links": [
+    [
+     "Listen at Guru Viking",
+     "https://www.guruviking.com/podcast/ep35-culadasa-pandemic-edition-guru-viking-podcast"
+    ]
+   ]
+  },
   {
    "title": "Mind Illuminated – Culadasa",
    "show": "Guru Viking Podcast, episode 13",
@@ -41,7 +57,7 @@
    "date_label": "April 2017",
    "url": "https://batgap.com/culadasa-john-yates/",
    "cta": "Watch or read",
-   "description": "The mechanics of meditation and consciousness: attention and awareness, the stages of practice, and insight, in a wide-ranging video interview.",
+   "description": "A wide-ranging video interview on the mechanics of meditation and consciousness, with a full transcript on the site.",
    "links": [
     [
      "Watch at BatGap",
@@ -54,30 +70,14 @@
    ]
   },
   {
-   "title": "Pandemic – Culadasa",
-   "show": "Guru Viking Podcast: Pandemic Series, episode 35",
-   "host": "Guru Viking",
-   "date": "2020-03-20",
-   "date_label": "March 2020",
-   "url": "https://www.guruviking.com/podcast/ep35-culadasa-pandemic-edition-guru-viking-podcast",
-   "cta": "Listen",
-   "description": "Recorded as the pandemic began: Culadasa as the featured guest of the Guru Viking pandemic series.",
-   "links": [
-    [
-     "Listen at Guru Viking",
-     "https://www.guruviking.com/podcast/ep35-culadasa-pandemic-edition-guru-viking-podcast"
-    ]
-   ]
-  },
-  {
    "title": "Meditation Illuminated: Integrating Buddhist Wisdom and Brain Science",
    "show": "Tricycle Dharma Talks",
-   "host": "with Matthew Immergut, Ph.D.",
+   "host": "Matthew Immergut, Ph.D.",
    "date": "2016-03",
    "date_label": "March 2016",
    "url": "https://tricycle.org/dharmatalks/meditation-illuminated-integrating-buddhist-wisdom-and-brain-science/",
    "cta": "Watch",
-   "description": "A Tricycle Dharma Talk with his co-author on getting to know your own mind, drawn from The Mind Illuminated.",
+   "description": "An online retreat for Tricycle, given with his co-author, on getting to know your own mind.",
    "links": [
     [
      "Watch at Tricycle (may need membership)",

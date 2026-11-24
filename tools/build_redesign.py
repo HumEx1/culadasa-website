@@ -25,7 +25,7 @@ YEAR = datetime.date.today().year
 NAV = [
     ('Start here', 'start-here/', None),
     ('Learn', 'learn/', None),
-    ('Teachings', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Q&A archive', 'online-meetings/')]),
+    ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Q&A archive', 'online-meetings/')]),
     ('Topics', 'topics/', None),
     ('The Book', 'the-book/', None),
     ('Teachers', 'teachers/', None),
@@ -54,7 +54,7 @@ def nav_html(current, r):
         if sub:
             cur = any(h == current for _, h in sub)
             subs = ''.join(f'<li><a href="{r}{h}"{" aria-current=\"page\"" if h == current else ""}>{esc(l)}</a></li>' for l, h in sub)
-            out.append(f'<li class="has-sub"><span class="group" tabindex="0"{" aria-current=\"page\"" if cur else ""}>{label}</span><ul class="sub">{subs}</ul></li>')
+            out.append(f'<li class="has-sub"><button type="button" class="group" aria-expanded="false" aria-controls="sub-{label.lower()}"{" aria-current=\"page\"" if cur else ""}>{label}</button><ul class="sub" id="sub-{label.lower()}">{subs}</ul></li>')
         else:
             out.append(f'<li><a href="{r}{href}"{" aria-current=\"page\"" if href == current else ""}>{label}</a></li>')
     return ''.join(out)
@@ -93,7 +93,7 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
 {extra_head}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar">Draft redesign for review · <a href="{mirror}">{mirror_label}</a> · <a href="{r}compare/">Compare side by side</a></div>
+<div class="preview-bar">Draft redesign for review</div>
 <header class="masthead{' compact' if compact else ''}">
   <a class="wordmark" href="{r or './'}">Culadasa</a>
   <p class="tagline">Upasaka Culadasa · John Yates, Ph.D. · 1945–2021</p>
@@ -101,9 +101,8 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
 <img class="cubes" src="{r}assets/img/tmi-cubes-band.jpg" alt="">
 <nav class="nav" aria-label="Main">
   <div class="wrap">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-button">Menu</label>
-    <ul class="menu">{nav_html(path, r)}</ul>
+    <button type="button" class="nav-button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul class="menu" id="menu">{nav_html(path, r)}</ul>
     <a class="subscribe" href="#signup">Newsletter</a>
   </div>
 </nav>
@@ -137,7 +136,7 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
       </ul></nav>
     </div>
     <div class="social">{social_html(r)}</div>
-    <p class="licence">The teachings of Culadasa are offered freely under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">Creative Commons Attribution 4.0</a> licence, as he wished. © 2021–{YEAR}.</p>
+    <p class="licence">The teachings of Culadasa are offered freely under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">Creative Commons Attribution 4.0</a> license, as he wished. © 2021–{YEAR}.</p>
   </div>
 </footer>
 <script src="{r}assets/site.js" defer></script>
@@ -236,6 +235,8 @@ def clean_essay(raw):
     s = s.replace('develping', 'developing')
     s = re.sub(r'<br\s*/?>\s*</', '</', s)
     s = s.replace('https://culadasa.com/', '../')
+    s = re.sub(r'<a[^>]*(justanotherwp|dacremabotanicals)[^>]*>.*?</a>', '', s, flags=re.S)  # host spam on the old pages
+    s = re.sub(r'<p>\s*(Powered by WooCommerce error)?\s*</p>', '', s)
     paras = [p.strip() for p in re.split(r'\n\s*\n', s) if p.strip()]
     out = []
     for p in paras:
@@ -245,6 +246,8 @@ def clean_essay(raw):
 
 def build():
     vid_by_id = {v['id']: v for v in videos}
+    global WORDS
+    WORDS = sum(len(d['text'].split()) for d in topics['docs']) + sum(len(i['text'].split()) for s in topics['qna'] for i in s['items'])
     qna = topics['qna']
     talks = [v for v in videos if v['group'] == 'talks']
 
@@ -256,9 +259,9 @@ def build():
   <div class="wrap">
     <div class="portrait-frame"><img src="assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" width="440" height="587"></div>
     <div>
-      <p class="label">His wishes and his legacy</p>
+      <p class="label">The teachings of Culadasa, free for everyone</p>
       <h1>That his work be freely and equally available to all students.</h1>
-      <p class="by">— Culadasa, in his final days</p>
+      <p class="by">— The Yates family, on his wishes in his final days</p>
       <p class="lead">Culadasa, John Yates Ph.D., spent four decades in the Tibetan and Theravādin traditions and taught physiology and neuroscience. His book <em>The Mind Illuminated</em> joins the two. Everything he taught is here, free.</p>
       <div class="actions"><a class="btn" href="start-here/">Start here</a><a class="btn ghost" href="topics/">Search the teachings</a></div>
     </div>
@@ -267,12 +270,12 @@ def build():
 <img class="glow" src="assets/img/tmi-cubes-glow.jpg" alt="">
 <section class="section">
   <div class="wrap">
-    <p class="label">Find your way in</p>
+    <h2 class="label">Find your way in</h2>
     <div class="grid cols-4">
       <a class="card" href="start-here/"><span class="meta">New to meditation</span><h3>Start here</h3><p>Seven steps from your first sit to a daily practice, using his own handouts and guided meditations.</p><span class="more">Begin →</span></a>
       <a class="card" href="learn/"><span class="meta">The basics</span><h3>Learn the method</h3><p>Attention and awareness, the ten stages, insight, and practice in daily life, in his words.</p><span class="more">Learn →</span></a>
-      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Topics</h3><p>Search 190,000 words of handouts, essays, interviews and 439 recorded questions and answers.</p><span class="more">Search →</span></a>
-      <a class="card" href="teachers/"><span class="meta">Practise with someone</span><h3>Find a teacher</h3><p>The 48 teachers he certified in The Mind Illuminated method, on a map.</p><span class="more">Find →</span></a>
+      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Topics</h3><p>Search over {round(WORDS/1000)},000 words of his handouts, essays and 439 recorded questions and answers.</p><span class="more">Search →</span></a>
+      <a class="card" href="teachers/"><span class="meta">Practice with someone</span><h3>Find a teacher</h3><p>The 48 teachers certified in The Mind Illuminated Teacher Training Program, by name and place.</p><span class="more">Find →</span></a>
     </div>
   </div>
 </section>
@@ -288,7 +291,7 @@ def build():
 </section>
 <section class="section">
   <div class="wrap">
-    <p class="label">Watch</p><h2>From the archive</h2><p class="muted">Talks from his YouTube channel, and his last recorded question-and-answer session. <a href="videos/">All videos</a> · <a href="online-meetings/">Q&amp;A archive</a></p>
+    <p class="label">Watch</p><h2>From the archive</h2><p class="muted">Talks from his YouTube channel, and the May 2021 question-and-answer session. <a href="videos/">All videos</a> · <a href="online-meetings/">Q&amp;A archive</a></p>
     <div class="grid">{''.join(video_tile(v, '') for v in feat)}</div>
   </div>
 </section>
@@ -375,7 +378,7 @@ def build():
     sec = ''
     for name, tone, items in tracks:
         sec += f'''<section class="section"><div class="wrap"><div class="track-head {tone}"><h2>{name}</h2></div>
-<div class="grid cols-4">{''.join(f'<a class="card" href="{u}"><h3>{esc(t)}</h3><p>{esc(d)}</p><span class="more">{"Search" if "topics/?q=" in u else "Open"} →</span></a>' for t, d, u in items)}</div></div></section>'''
+<div class="grid cols-4">{''.join(f'<a class="card tone-{tone}" href="{u}"><h3>{esc(t)}</h3><p>{esc(d)}</p><span class="more">{"Search" if "topics/?q=" in u else "Open"} →</span></a>' for t, d, u in items)}</div></div></section>'''
     body = banner('The basics, then deeper', 'Learn', 'His teaching arranged as a journey: the basics, the method, the science of mind, going deeper, and daily life.', 'ink') + sec
     page('learn/', 'Learn', body, description='Culadasa’s teaching arranged as a journey: basics, method, science of mind, going deeper, daily life.')
 
@@ -418,11 +421,12 @@ def build():
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and Q&A recordings on SoundCloud.')
 
     # ---------------------------------------------------------------- videos (old path)
-    body = banner('Watch', 'Videos', f'{len(talks)} talks and discussions, and {len(qna)} recorded question-and-answer sessions.', 'teal',
+    body = banner('Watch', 'Videos', f'{len(videos)} videos: talks, discussions and {len(qna)} recorded question-and-answer sessions.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
 <section class="section"><div class="wrap"><h2>Question-and-answer sessions</h2><p class="muted">Each session’s questions are listed, with links to the moment he answers, in the <a href="{r}online-meetings/">Q&amp;A archive</a>.</p>
-<div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f"{len(s['items'])} questions") for s in reversed(qna))}</div></div></section>'''
+<div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f"{len(s['items'])} questions") for s in list(reversed(qna))[:6])}</div>
+<details class="map-wrap" style="margin-top:24px"><summary>Show all {len(qna)} sessions</summary><div class="grid" style="margin-top:16px">{''.join(video_tile(vid_by_id[s['video']], r, f"{len(s['items'])} questions") for s in list(reversed(qna))[6:])}</div></details></div></section>'''
     page('videos/', 'Videos', body, description='Talks, discussions and Q&A sessions by Culadasa on YouTube.')
 
     # ---------------------------------------------------------------- Q&A archive (old path: online-meetings)
@@ -432,7 +436,7 @@ def build():
         items = ''.join(f'<li><a class="t" href="{esc(i["url"])}" rel="noopener">{i["t"]}</a> {esc(i["text"][:400])}{"…" if len(i["text"]) > 400 else ""}</li>' for i in s['items'])
         sess += f'''<details class="session"><summary><h3>{esc(s['month'])}</h3><span class="count">{len(s['items'])} questions</span></summary>
 <div class="body"><div>{video_tile(v, r)}</div><ol class="qlist">{items}</ol></div></details>'''
-    body = banner('Online meetings', 'Q&amp;A archive', esc(content['online_meetings_intro']), 'teal',
+    body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(content['online_meetings_intro']), 'teal',
                   f'<p class="small">Questions transcribed by Alex in the <a href="{topics["credit"]["qna"]["url"]}" rel="noopener">Culadasa Q&amp;A Index</a>. Each time links to the moment the question is asked.</p>') + f'''
 <section class="section"><div class="wrap"><form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {sum(len(s['items']) for s in qna)} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
 {sess}</div></section>
@@ -440,14 +444,14 @@ def build():
     page('online-meetings/', 'Q&A archive', body, description='Every question from Culadasa’s 61 recorded Q&A sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics
-    body = banner('Every teaching, searchable', 'Topics', f'Search {round(sum(len(d["text"].split()) for d in topics["docs"]) / 1000) + round(sum(len(i["text"].split()) for s in qna for i in s["items"]) / 1000)},000 words: handouts, essays, two long interviews, and {sum(len(s["items"]) for s in qna)} recorded questions. Results are ranked by how often they mention what you search for.', 'ink') + f'''
+    body = banner('Every teaching, searchable', 'Topics', f'Search over {round(WORDS / 1000)},000 words: handouts, essays and {sum(len(s["items"]) for s in qna)} recorded questions. Results are ranked by how often they mention what you search for.', 'ink') + f'''
 <section class="section"><div class="wrap">
   <form class="search" id="topic-form" role="search"><label class="sr" for="q">Search the teachings</label><input id="q" name="q" type="search" placeholder="Try: compassion, dullness, jhāna, craving" autocomplete="off"><button class="btn" type="submit">Search</button></form>
   <div class="filters" id="filters" aria-label="Filter by kind"></div>
   <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>
   <p class="status" id="status" role="status">Loading the teachings…</p>
   <div class="results" id="results"></div>
-  <p class="small muted">Sources: his handouts and essays; the Culadasa Q&amp;A Index by Alex; interview transcripts from Buddha at the Gas Pump and Deconstructing Yourself (his words only). Common English words are left out of the word cloud.</p>
+  <p class="small muted">Sources: his handouts and essays, the About page, video titles, and the Culadasa Q&amp;A Index by Alex. Spellings with and without accents match each other. Common English words are left out of the word cloud.</p>
 </div></section>'''
     page('topics/', 'Topics', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
          extra_js=f'<script src="{r}assets/topics.js" defer></script>\n')
@@ -456,7 +460,7 @@ def build():
     items = ''.join(f'''<article class="convo"><div class="when">{esc(c['date_label'])}</div><div>
 <h3><a href="{esc(c['url'])}" rel="noopener">{esc(c['title'])}</a></h3><p class="show">{esc(c['show'])}{f" · with {esc(c['host'])}" if c.get('host') else ''}</p>
 <p>{esc(c['description'])}</p><p class="small">{' · '.join(f'<a href="{esc(u)}" rel="noopener">{esc(l)}</a>' for l, u in c.get('links', []))}</p></div></article>''' for c in convos['items'])
-    body = banner('In conversation', 'Conversations', 'Interviews, podcasts and talks with Culadasa, from across the web.', 'gold') + f'<section class="section"><div class="wrap measure">{items}<p class="small muted" style="margin-top:24px">{esc(convos["note"])}</p></div></section>'
+    body = banner('In conversation', 'Conversations', 'Interviews, podcasts and talks with Culadasa, from across the web.', 'gold') + f'<section class="section"><div class="wrap measure">{items}{f'<p class="small muted" style="margin-top:24px">{esc(convos["note"])}</p>' if convos["note"] else ''}</div></section>'
     page('conversations/', 'Conversations', body, description='Interviews, podcasts and talks with Culadasa from across the web.')
 
     # ---------------------------------------------------------------- about
@@ -466,7 +470,7 @@ def build():
     about = re.sub(r'\s(style|class|id|title)="[^"]*"', '', about)
     about = re.sub(r'<b>\s*</b>', '', about)
     about = re.sub(r'<p><strong>([^<]{3,60})</strong></p>', r'<h2>\1</h2>', about)
-    body = banner('About', 'Culadasa', 'Upasaka Culadasa, John Yates Ph.D., 1945–2021. Meditation master, neuroscientist, author.', 'gold') + f'''
+    body = banner('About', 'Culadasa', 'Upasaka Culadasa, John Yates Ph.D., 1945–2021. Meditation master, retired professor of neuroscience, author.', 'gold') + f'''
 <section class="section"><div class="wrap two"><div><img class="framed" src="{r}assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" loading="lazy"><img class="framed" style="margin-top:28px;max-width:260px" src="{r}assets/img/culadasa-robes.jpg" alt="Culadasa laughing, seated in robes" loading="lazy"></div>
 <div class="prose measure">{about}</div></div></section>'''
     page('about/', 'About Culadasa', body, description='Culadasa (John Yates, Ph.D.): his wishes and legacy, obituary, biography and Buddhist lineage.')
@@ -482,23 +486,25 @@ def build():
     # ---------------------------------------------------------------- teachers directory + map
     cards = ''
     for t in teachers['teachers']:
+        if t.get('hidden'):
+            continue
         initials = ''.join(w[0] for w in re.sub(r'\(.*?\)|".*?"', '', t['name']).split()[:2])
         has = t.get('profile') == 'sample'
         photo = (f'<img src="{r}{t["photo"]}" alt="" loading="lazy">' if t.get('photo') else f'<span class="initials" aria-hidden="true">{esc(initials)}</span>')
-        loc = esc(t.get('place') or 'Location to come')
-        cards += f'''<li class="tcard" data-name="{esc(t['name'].lower())}" data-place="{esc((t.get('place') or '').lower())}" data-year="{t['year']}" data-online="{1 if t.get('online') else 0}" {f'data-lat="{t["lat"]}" data-lng="{t["lng"]}"' if t.get('lat') else ''}>
-<a href="{r}teachers/{t['slug']}/">{photo}<span class="tname">{esc(t['name'])}</span><span class="tmeta">Certified {t['year']} · {loc}{' · Online' if t.get('online') else ''}</span>{'<span class="badge">Sample profile</span>' if has else ''}</a></li>'''
-    body = banner('Practise with a teacher', 'Teachers', esc(content['teachers_intro'][0]), 'gold') + f'''
+        loc = esc(t.get('place') or '')
+        cards += f'''<li class="tcard" data-name="{esc(t['name'].lower())}" data-place="{esc((t.get('place') or '').lower())}" data-year="{t['year']}" data-online="{1 if t.get('online') else 0}" data-inperson="{1 if t.get('lat') else 0}" {f'data-lat="{t["lat"]}" data-lng="{t["lng"]}"' if t.get('lat') else ''}>
+<a href="{r}teachers/{t['slug']}/">{photo}<span class="tname">{esc(t['name'])}</span><span class="tmeta">Certified {t['year']}{'*' if t['year'] == 2022 else ''}{' · ' + loc if loc else ''}{' · Online' if t.get('online') else ''}</span>{'<span class="badge">Sample profile</span>' if has else ''}</a></li>'''
+    body = banner('Practice with a teacher', 'Teachers', esc(content['teachers_intro'][0]), 'gold') + f'''
 <section class="section"><div class="wrap">
   <div class="finder">
     <form class="search" id="teacher-form" role="search"><label class="sr" for="tq">Find a teacher by name or place</label><input id="tq" type="search" placeholder="Name, town or country"><button class="btn ghost" type="button" id="near">Near me</button></form>
-    <div class="filters" id="tfilters"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="online" aria-pressed="false">Teaches online</button>{''.join(f'<button type="button" data-f="{y["year"]}" aria-pressed="false">{y["year"]}</button>' for y in content['teacher_years'])}</div>
-    <div id="map" class="map" role="region" aria-label="Map of teachers"></div>
+    <div class="filters" id="tfilters"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="online" aria-pressed="false">Teaches online</button><button type="button" data-f="inperson" aria-pressed="false">In person</button></div>
     <p class="status small" id="tstatus" role="status"></p>
   </div>
   <ul class="tgrid" id="tlist">{cards}</ul>
-  <p class="small muted">{esc(teachers['note'])}</p>
-  <hr><div class="measure small muted"><p>{esc(content['teachers_intro'][1])}</p><p>{esc(content['teachers_intro'][2])}</p></div>
+  <details class="map-wrap" id="mapbox"><summary>Show the map</summary><div id="map" class="map" role="region" aria-label="Map of teachers"></div></details>
+  <p class="small muted">{esc(teachers['note'])} <a href="{r}teachers/sample-profile-in-person/">In-person sample</a> · <a href="{r}teachers/sample-profile-online/">Online sample</a></p>
+  <hr><div class="measure small muted"><p>{esc(content['teachers_intro'][1])}</p><p>{esc(content['teachers_intro'][2])}</p><p>* 2022 graduates were certified to have completed <em>The Mind Illuminated Teacher Training Program</em> under the direct and personal guidance of Upāsaka Culadasa/John Yates PhD and graduates of the program.</p></div>
 </div></section>'''
     page('teachers/', 'Teachers', body, description='Find a teacher certified by Culadasa in The Mind Illuminated method, by name, place or map.',
          extra_head=f'<link rel="stylesheet" href="{r}assets/vendor/leaflet/leaflet.css">\n',
@@ -519,24 +525,6 @@ def build():
         out = page(f'teachers/{t["slug"]}/', t['name'], body, description=f'{t["name"]}, a teacher of The Mind Illuminated method certified by Culadasa.')
         # these pages sit two levels down: page() computed depth from the path, so links are already right
 
-    # ---------------------------------------------------------------- compare (mirror vs redesign)
-    pairs = [('Home / About', '', ''), ('Writings', 'writings/', 'writings/'), ('Audio', 'audio/', 'audio/'), ('Videos', 'videos/', 'videos/'),
-             ('Online meetings', 'online-meetings/', 'online-meetings/'), ('Teachers', 'teachers/', 'teachers/'), ('Testimonials', 'testimonials/', 'testimonials/'),
-             ('Book reviews', 'book-reviews/', 'book-reviews/'), ('Mindful Awareness vs Dullness', 'mindful-awareness-vs-dullness/', 'mindful-awareness-vs-dullness/')]
-    opts = ''.join(f'<option value="{m}|{n}">{esc(l)}</option>' for l, m, n in pairs)
-    doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Compare: current site and redesign — Culadasa</title><meta name="robots" content="noindex"><link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"><link rel="stylesheet" href="../assets/site.css"></head>
-<body><div class="compare-bar"><label for="pick">Page</label><select id="pick">{opts}</select><span>Left: the current site (exact mirror). Right: the redesign draft.</span><a href="../">Open the redesign</a><a href="../../">Open the current site</a></div>
-<div class="panes"><section><h2>Current site</h2><iframe id="left" title="Current site" src="../../"></iframe></section><section><h2>Redesign draft</h2><iframe id="right" title="Redesign draft" src="../"></iframe></section></div>
-<script>
-const pick=document.getElementById('pick'),L=document.getElementById('left'),R=document.getElementById('right');
-function go(){{const [m,n]=pick.value.split('|');L.src='../../'+m;R.src='../'+n;try{{history.replaceState(null,'','#'+encodeURIComponent(pick.value))}}catch(e){{}}}}
-const h=decodeURIComponent(location.hash.slice(1));if(h&&[...pick.options].some(o=>o.value===h)){{pick.value=h;go()}}
-pick.addEventListener('change',go);
-</script></body></html>'''
-    (OUT / 'compare').mkdir(parents=True, exist_ok=True)
-    (OUT / 'compare' / 'index.html').write_text(doc)
     n = sum(1 for _ in OUT.rglob('index.html'))
     print(f'{n} pages written in redesign/')
 
