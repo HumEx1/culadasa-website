@@ -1,0 +1,320 @@
+{
+ "note": "Names and certification years are from the 2021 teachers page. Profiles, photos and locations are to be added from each teacher’s public profile once confirmed with them; the two sample profiles show the finished layout and contain no real details.",
+ "teachers": [
+  {
+   "slug": "sample-profile-in-person",
+   "name": "Sample Teacher (in person)",
+   "year": 2020,
+   "profile": "sample",
+   "place": "Tucson, Arizona, United States",
+   "lat": 32.2226,
+   "lng": -110.9747,
+   "online": false,
+   "teaches": "Weekly sitting group and weekend workshops",
+   "bio": [
+    "[Sample text. Each teacher writes this in their own words: how they came to practice, their years with Culadasa, and how they teach The Mind Illuminated.]",
+    "[A second paragraph: who their classes suit, what a first session looks like, and how to get in touch through their own website.]"
+   ]
+  },
+  {
+   "slug": "sample-profile-online",
+   "name": "Sample Teacher (online)",
+   "year": 2021,
+   "profile": "sample",
+   "place": "Online, worldwide",
+   "online": true,
+   "teaches": "One-to-one meditation coaching by video call",
+   "bio": [
+    "[Sample text for a teacher who works online: their background, their approach to the ten stages, and the times and languages they teach in.]"
+   ]
+  },
+  {
+   "slug": "stephen-greg-ascue",
+   "name": "Stephen \"Greg\" Ascue",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "blake-barton",
+   "name": "Blake Barton",
+   "year": 2018,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "oliver-bray",
+   "name": "Oliver Bray",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "junot-castelyn",
+   "name": "Junot Castelyn",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "robin-craig",
+   "name": "Robin Craig",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "rachel-cronin",
+   "name": "Rachel Cronin",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "michael-dunn",
+   "name": "Michael Dunn",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "terry-dushenko",
+   "name": "Terry Dushenko",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "paulin-elley",
+   "name": "Paulin Elley",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "jesse-fallon",
+   "name": "Jesse Fallon",
+   "year": 2018,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "chris-gagne",
+   "name": "Chris Gagné",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "ivan-ganza",
+   "name": "Ivan Ganza",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "anna-knutson-geller",
+   "name": "Anna Knutson Geller",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "josh-geller",
+   "name": "Josh Geller",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "nick-grabovac",
+   "name": "Nick Grabovac",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "jeremy-graves",
+   "name": "Jeremy Graves",
+   "year": 2018,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "babette-haemmerle",
+   "name": "Babette Haemmerle",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "jordan-hill",
+   "name": "Jordan Hill",
+   "year": 2018,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "mary-hill",
+   "name": "Mary Hill",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "matthew-immergut",
+   "name": "Matthew Immergut",
+   "year": 2018,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "tom-kennedy",
+   "name": "Tom Kennedy",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "nick-van-kleeck",
+   "name": "Nick Van Kleeck",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "dor-konforty",
+   "name": "Dor Konforty",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "jon-krop",
+   "name": "Jon Krop",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "andrea-lemon",
+   "name": "Andrea Lemon",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "ted-lemon",
+   "name": "Ted Lemon",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "eric-lindo",
+   "name": "Eric Lindo",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "anne-lindsey",
+   "name": "Anne Lindsey (Chukyi)",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "darin-mcfadyen",
+   "name": "Darin McFadyen",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "mark-miller",
+   "name": "Mark Miller",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "terry-moody",
+   "name": "Terry Moody",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "wayne-hayden-moreland",
+   "name": "Wayne Hayden Moreland",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "henrik-norberg",
+   "name": "Henrik Norberg",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "mark-pirtle",
+   "name": "Mark Pirtle",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "elizabeth-pugh",
+   "name": "Elizabeth Pugh",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "jaye-ring",
+   "name": "Jaye Ring",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "gabriel-rocheleau",
+   "name": "Gabriel Rocheleau",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "ricardo-sasaki",
+   "name": "Ricardo Sasaki",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "david-schultz",
+   "name": "David Schultz",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "andrew-sherbrooke",
+   "name": "Andrew Sherbrooke",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "eve-smith",
+   "name": "Eve Smith",
+   "year": 2019,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "li-anne-tang",
+   "name": "Li-Anne Tang",
+   "year": 2022,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "alexandra-tataryn",
+   "name": "Alexandra Tataryn",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "darlene-tataryn",
+   "name": "Darlene Tataryn",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "douglas-tataryn",
+   "name": "Douglas Tataryn",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "cliff-walshein",
+   "name": "Cliff Walshein",
+   "year": 2020,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "kim-weeber",
+   "name": "Kim Weeber",
+   "year": 2021,
+   "profile": "placeholder"
+  },
+  {
+   "slug": "jeff-wooley",
+   "name": "Jeff Wooley",
+   "year": 2020,
+   "profile": "placeholder"
+  }
+ ]
+}

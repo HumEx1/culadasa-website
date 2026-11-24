@@ -1,10 +1,12 @@
-# Publishes the contents of site/ to GitHub Pages on every push to main.
-# No build step: site/ is served exactly as committed.
+# Publishes to GitHub Pages on every push to main:
+#   site/      -> the root (the exact mirror of culadasa.com)
+#   redesign/  -> /redesign/ (the redesign draft, for side-by-side review)
+# No build step: both folders are served exactly as committed.
 name: Publish site
 on:
   push:
     branches: [main]
-    paths: ['site/**', '.github/workflows/pages.yml']
+    paths: ['site/**', 'redesign/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,8 +26,14 @@ jobs:
       - uses: actions/configure-pages@v6
         with:
           enablement: true
+      - name: Assemble mirror and redesign
+        run: |
+          mkdir -p _site
+          cp -a site/. _site/
+          cp -a redesign _site/redesign
+          rm -rf _site/redesign/data/*.md
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: site
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v5
