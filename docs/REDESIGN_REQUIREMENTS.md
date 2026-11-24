@@ -80,3 +80,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 40. **Lineage banner text (D, 24 Nov 2026).** The sentence under the Lineage banner now reads, as D wrote it: "His Buddhist lineage, his career in physiology and neuroscience, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021."
 
 41. **16th Karmapa as the first lineage link (D, 24 Nov 2026).** "Add 16th Karmapa photo (with Namgyal Rinpoche) as first link in lineage." The "From teacher to student" row now begins with His Holiness the 16th Gyalwa Karmapa, captioned "with Namgyal Rinpoche" and "Whose lineage is traced to the Buddha" (the lineage text's own words). The photo of the two of them together comes from the Ven. Namgyal Rinpoche page on wangapeka.org and is credited under it. Permission is still to be confirmed. There are four links, left to right on desktop and tablet, and stacked with down-arrows on phones.
+
+42. **Teacher profile details aligned (D, 24 Nov 2026).** "Align text." On every teacher page the small labels (Certified, Based in, Teaches, Website) now share a baseline with their values, so each label sits level with its line of text.
