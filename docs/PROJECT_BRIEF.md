@@ -142,6 +142,12 @@ External links in page content: Creative Commons, patreon.com/culadasa, 24x7wpsu
 - **Where the servers are.** GitHub's own servers behind the Fastly content delivery network, so visitors are served from a cache near them.
 - **Infrastructure note.** From Claude's cloud container, culadasa.com is blocked by the network allowlist; the media download needs an allowlist change or D's machine.
 
+## 7b. Status, 24 November 2026
+
+- The faithful static rebuild of all 14 pages is in `site/`, with the 28 media files at their original paths, a sitemap, robots.txt and a 404 page. `tools/migrate.py` is the conversion script.
+- `.github/workflows/pages.yml` publishes `site/` to GitHub Pages on every push to main. It runs once GitHub Pages is switched on in the repository settings (Settings → Pages → Source: GitHub Actions); until the domain moves, the address is humex1.github.io/culadasa-website/.
+- Three refresh directions are documented in `docs/DESIGN_OPTIONS.md`.
+
 ## 8. Open items
 
 | Item | Owner |
