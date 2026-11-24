@@ -368,3 +368,22 @@ body[data-group="book"] .banner.gold .label{color:#141c21}
 body[data-section="teachers"] .banner .lead{max-width:none}
 /* every banner the same height on desktop, whether its text runs to one line or two (D, 24 Nov 2026) */
 @media (min-width:761px){.banner{min-height:305px;box-sizing:border-box}}
+
+/* ---- header as in Option A2 (D, 24 Nov 2026: "Like this") ----
+   One parchment band: CULADASA large and widely spaced, the name and dates
+   under it, then the menu between two thin gold rules.  Same on every page. */
+.masthead{background-color:#f5efe2;padding:44px 20px 12px;border:0}
+.wordmark,.masthead.compact .wordmark{font-family:'Josefin Sans','Jost',system-ui,sans-serif;font-weight:600;font-size:clamp(30px,4.6vw,52px);letter-spacing:.32em;text-indent:.32em;color:var(--ink);line-height:1}
+.masthead .tagline{display:block;margin:20px 0 0;font:400 clamp(12.5px,1.5vw,16px)/1.5 'Source Sans 3',system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#8a6a22}
+.nav{background:#f5efe2;border-bottom:0;backdrop-filter:none}
+.nav .wrap{border-top:1px solid #c4972f;border-bottom:1px solid #c4972f;min-height:60px}
+.menu a,.menu .group,.menu button.group{font:600 14px/1.2 'Source Sans 3',system-ui,sans-serif;letter-spacing:.14em;padding:18px 12px 16px}
+.menu a[aria-current="page"],.menu button.group[aria-current="page"]{color:var(--teal)}
+.sub a{font-weight:400;letter-spacing:.02em;font-size:15px;padding:10px 18px}
+@media (max-width:760px){
+  .masthead{padding:26px 16px 10px}
+  .masthead .tagline,.masthead:not(.compact) .tagline{display:block;margin-top:12px;font-size:11px;letter-spacing:.16em}
+  .nav .wrap{border-top:1px solid #c4972f;border-bottom:1px solid #c4972f;margin:0 16px;padding:0}
+  .menu a,.menu .group,.menu button.group{padding:13px 4px}
+  .sub a{padding:10px 4px}
+}
