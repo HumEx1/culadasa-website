@@ -340,7 +340,7 @@ mark{background:#f3e3a8;color:inherit;padding:0 2px;border-radius:2px}
    #141c21 on the light ones, whichever reads at 4.5:1 or better. */
 body{--group:#546263;--on:#fff;--rule:rgba(255,255,255,.7)}
 body[data-section="start-here"]{--group:#546263;--on:#fff;--rule:rgba(255,255,255,.7)}
-body[data-section="learn"]{--group:#859891;--on:#141c21;--rule:rgba(20,28,33,.6)}
+body[data-section="learn"]{--group:#3b5a38;--on:#fff;--rule:rgba(255,255,255,.7)}
 body[data-section="topics"]{--group:#888c65;--on:#141c21;--rule:rgba(20,28,33,.6)}
 body[data-section="library"]{--group:#ccb069;--on:#141c21;--rule:rgba(20,28,33,.6)}
 body[data-section="book"]{--group:#dbc9ad;--on:#141c21;--rule:#b6835d}

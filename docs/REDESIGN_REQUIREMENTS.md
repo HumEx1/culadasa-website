@@ -44,3 +44,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 22. **About banner in the palette's sand (D, 24 Nov 2026).** "Make about banner sandy as in swatch and change text colors so the text is readable." About is now sand #dbc9ad with deep ink #141c21 text (about 9:1), a terracotta rule and, in Redesign 2, the dark lattice. It replaces the deep slate of item 19.
 
 23. **Conversations redder, About dark green slate (D, 24 Nov 2026).** "Redder brown/rust for conversations and dark green slate for Culadasa (adjust text as needed)." Conversations is now rust #8f4a36 and About (whose banner reads "Culadasa") is dark green slate #3d5048, both with white text (6:1 or better and 8.6:1). This replaces About's sand from item 22.
+
+24. **Learn in a deep mid-century green (D, 24 Nov 2026).** "Instead of grey for LEARN use a deeper mid century modern green … deeper." Learn is now deep green #3b5a38 with white text (about 7.5:1), in place of the sage of item 19. It is a truer green than About's blue-leaning slate, so the two stay distinct.
