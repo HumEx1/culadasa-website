@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 1186 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 1188 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -25,13 +25,13 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | The Book (old address, redirects) | 2 |
 | Teachers | 72 |
 | Conversations | 33 |
-| Lineage | 11 |
+| Lineage | 13 |
 | Lineage (old About address, redirects) | 3 |
 | Footer › Testimonials | 6 |
 | Footer › Testimonials (old address, redirects) | 2 |
 | Teachers › individual profile pages | 208 |
 | Messages shown by the search and map scripts | 24 |
-| **Total** | **1186** |
+| **Total** | **1188** |
 
 ## Every page: header, menu, newsletter box and footer (23)
 
@@ -1939,7 +1939,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Open the index"  
   Conversations (`redesign-2/conversations/index.html` line 53), under "Culadasa Q&A Index"
 
-## Lineage (11)
+## Lineage (13)
 
 - [ ] **Page title (browser tab):** "The lineage of Upasaka Culadasa — Culadasa"  
   Lineage (`redesign-2/lineage/index.html` line 6)
@@ -1953,16 +1953,20 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Lineage (`redesign-2/lineage/index.html` line 48), under "From teacher to student"
 - [ ] **Paragraph:** "Ordination passed from teacher to student, in a lineage traced to the Buddha."  
   Lineage (`redesign-2/lineage/index.html` line 49), under "From teacher to student"
-- [ ] **Image description (alt text):** "Namgyal Rinpoche"  
+- [ ] **Image description (alt text):** "His Holiness the 16th Gyalwa Karmapa with Namgyal Rinpoche"  
   Lineage (`redesign-2/lineage/index.html` line 50), under "From teacher to student"
+- [ ] **Photo caption:** "His Holiness the 16th Gyalwa Karmapa with Namgyal Rinpoche Whose lineage is traced to the Buddha Photo: wangapeka.org"  
+  Lineage (`redesign-2/lineage/index.html` line 51), under "From teacher to student"
+- [ ] **Image description (alt text):** "Namgyal Rinpoche"  
+  Lineage (`redesign-2/lineage/index.html` line 51), under "From teacher to student"
 - [ ] **Photo caption:** "Namgyal Rinpoche Ananda Bodhi Ordained by His Holiness the 16th Gyalwa Karmapa Photo: wangapeka.org"  
-  Lineage (`redesign-2/lineage/index.html` line 51), under "From teacher to student"
-- [ ] **Image description (alt text):** "Upasaka Kema Ananda"  
-  Lineage (`redesign-2/lineage/index.html` line 51), under "From teacher to student"
-- [ ] **Photo caption:** "Upasaka Kema Ananda Ordained by Namgyal Rinpoche Photo: arrowriver.ca"  
   Lineage (`redesign-2/lineage/index.html` line 52), under "From teacher to student"
-- [ ] **Photo caption:** "Upasaka Culadasa John Yates, Ph.D. Ordained by Upasaka Kema Ananda"  
+- [ ] **Image description (alt text):** "Upasaka Kema Ananda"  
+  Lineage (`redesign-2/lineage/index.html` line 52), under "From teacher to student"
+- [ ] **Photo caption:** "Upasaka Kema Ananda Ordained by Namgyal Rinpoche Photo: arrowriver.ca"  
   Lineage (`redesign-2/lineage/index.html` line 53), under "From teacher to student"
+- [ ] **Photo caption:** "Upasaka Culadasa John Yates, Ph.D. Ordained by Upasaka Kema Ananda"  
+  Lineage (`redesign-2/lineage/index.html` line 54), under "From teacher to student"
 
 ## Lineage (old About address, redirects) (3)
 

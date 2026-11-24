@@ -497,7 +497,8 @@ def build():
     # ---------------------------------------------------------------- lineage (was About; D, 24 Nov 2026)
     # Order: the lineage first, then his wishes, then the obituary.  Text is the live site's, unchanged;
     # the lineage chain repeats only what that text says.  Photos: Namgyal Rinpoche from wangapeka.org,
-    # Kema Ananda from arrowriver.ca (top photo), both chosen by D; permission still to confirm.
+    # Kema Ananda from arrowriver.ca (top photo), the 16th Karmapa with Namgyal Rinpoche from wangapeka.org;
+    # all chosen by D; permission still to confirm.
     about = content['about_html']
     def clean(h):
         h = re.sub(r'<a href="https://culadasa\.com/wp-content[^"]*"><img[^>]*/></a>', '', h)
@@ -522,11 +523,12 @@ def build():
                 'teachings of the Buddha with an emerging, scientific understanding of the mind to give students a rich and rare '
                 'opportunity for rapid progress and profound insight.</p>')
     chain = [
+        ('karmapa-namgyal-rinpoche.jpg', 'His Holiness the 16th Gyalwa Karmapa', 'with Namgyal Rinpoche', 'Whose lineage is traced to the Buddha', 'Photo: wangapeka.org', 319, 252),
         ('namgyal-rinpoche.jpg', 'Namgyal Rinpoche', 'Ananda Bodhi', 'Ordained by His Holiness the 16th Gyalwa Karmapa', 'Photo: wangapeka.org', 300, 400),
         ('kema-ananda.jpg', 'Upasaka Kema Ananda', '', 'Ordained by Namgyal Rinpoche', 'Photo: arrowriver.ca', 300, 400),
         ('culadasa-robes.jpg', 'Upasaka Culadasa', 'John Yates, Ph.D.', 'Ordained by Upasaka Kema Ananda', '', 300, 400),
     ]
-    chain_html = ''.join(f'''<li><figure><img src="{r}assets/img/{img}" alt="{esc(name)}" width="{w}" height="{h}" loading="lazy">
+    chain_html = ''.join(f'''<li><figure><img src="{r}assets/img/{img}" alt="{esc(name + (' ' + alt if alt.startswith('with ') else ''))}" width="{w}" height="{h}" loading="lazy">
 <figcaption><strong>{esc(name)}</strong>{f'<em>{esc(alt)}</em>' if alt else ''}<span>{esc(note)}</span>{f'<small>{esc(credit)}</small>' if credit else ''}</figcaption></figure></li>''' for img, name, alt, note, credit, w, h in chain)
     body = banner('Lineage', 'Upasaka Culadasa', 'His Buddhist lineage, his career in physiology and neuroscience, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021.', 'gold') + f'''
 <section class="section" id="lineage"><div class="wrap">

@@ -388,18 +388,26 @@ body[data-section="teachers"] .banner .lead{max-width:none}
   .sub a{padding:10px 4px}
 }
 
-/* Lineage page: teacher to student, left to right (D, 24 Nov 2026) */
-.lineage{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;max-width:860px}
+/* Lineage page: teacher to student, left to right (D, 24 Nov 2026).  Four links: the first photo is
+   landscape (the Karmapa with Namgyal Rinpoche), so its column is wider; all photos share one height. */
+.lineage{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:48px}
 .lineage li{position:relative;margin:0}
-.lineage li+li::before{content:"→";position:absolute;left:-34px;top:38%;font-size:22px;color:var(--muted)}
+.lineage li+li::before{content:"→";position:absolute;left:-34px;top:125px;font-size:22px;color:var(--muted)}
 .lineage figure{margin:0}
-.lineage img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center top;border:6px solid var(--panel);box-shadow:0 0 0 1px var(--line)}
+.lineage img{display:block;width:100%;height:270px;object-fit:cover;object-position:center top;border:6px solid var(--panel);box-shadow:0 0 0 1px var(--line)}
 .lineage figcaption{margin-top:14px;font-size:15px;line-height:1.5;color:var(--body)}
 .lineage figcaption strong{display:block;font-family:var(--display);font-weight:400;font-size:20px;line-height:1.3;color:var(--ink)}
 .lineage figcaption em{display:block;color:var(--muted)}
 .lineage figcaption span{display:block;margin-top:6px}
 .lineage figcaption small{display:block;margin-top:6px;font-size:12.5px;color:var(--muted)}
+@media (max-width:1000px){
+  .lineage{gap:28px}
+  .lineage li+li::before{left:-22px;top:95px;font-size:18px}
+  .lineage img{height:210px}
+  .lineage figcaption strong{font-size:17px}
+}
 @media (max-width:760px){
-  .lineage{grid-template-columns:1fr;gap:44px;max-width:300px}
-  .lineage li+li::before{content:"↓";left:0;top:-38px}
+  .lineage{grid-template-columns:1fr;gap:44px;max-width:320px}
+  .lineage img{height:auto}
+  .lineage li+li::before{content:"↓";left:0;top:-38px;font-size:22px}
 }
