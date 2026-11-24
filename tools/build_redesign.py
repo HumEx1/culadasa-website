@@ -509,7 +509,18 @@ def build():
     i_obit = about.index('<p><strong>Obituary</strong></p>')
     i_line = about.index('<h2>The Buddhist Lineage')
     wishes, obit, lineage = clean(about[i_wish:i_obit]), clean(about[i_obit:i_line]), clean(about[i_line:])
-    lineage = re.sub(r'<h2>The Buddhist Lineage of Upasaka Culadasa</h2>', '', lineage)
+    # D moved this paragraph from the biography to sit under the lineage (24 Nov 2026), so it appears once
+    obit, n_moved = re.subn(r'<p>For many years, Culadasa taught physiology and neuroscience.*?</p>', '', obit, count=1, flags=re.S)
+    assert n_moved == 1, 'paragraph to move not found in the obituary text'
+    lineage = re.sub(r'<h2>The Buddhist Lineage of Upasaka Culadasa</h2>', '', lineage).strip()
+    if not lineage.startswith('<p'):
+        lineage = f'<p>{lineage}</p>'
+    # second paragraph supplied by D, 24 Nov 2026 (text as given)
+    lineage += ('<p>For many years, Culadasa taught physiology and neuroscience and worked at the forefront of the new fields of '
+                'complementary healthcare education, physical medicine, and therapeutic massage. His unique lineage allows Culadasa '
+                'to provide his students with a broad and in-depth perspective on the Buddha Dharma. He combines the original '
+                'teachings of the Buddha with an emerging, scientific understanding of the mind to give students a rich and rare '
+                'opportunity for rapid progress and profound insight.</p>')
     chain = [
         ('namgyal-rinpoche.jpg', 'Namgyal Rinpoche', 'Ananda Bodhi', 'Ordained by His Holiness the 16th Gyalwa Karmapa', 'Photo: wangapeka.org', 300, 400),
         ('kema-ananda.jpg', 'Upasaka Kema Ananda', '', 'Ordained by Namgyal Rinpoche', 'Photo: arrowriver.ca', 300, 400),
@@ -525,8 +536,8 @@ def build():
 <div class="prose measure">{lineage}</div></div></div>
 <ol class="lineage">{chain_html}</ol>
 </div></section>
-<section class="section band-panel" id="wishes"><div class="wrap"><div class="prose measure">{wishes}</div></div></section>
-<section class="section" id="obituary"><div class="wrap"><div class="prose measure">{obit}</div></div></section>'''
+<section class="section band-panel" id="wishes"><div class="wrap measure prose">{wishes}</div></section>
+<section class="section" id="obituary"><div class="wrap measure prose">{obit}</div></section>'''
     page('lineage/', 'The lineage of Upasaka Culadasa', body, description='The Buddhist lineage of Upasaka Culadasa (John Yates, Ph.D., 1945–2021), his wishes for his teachings, and his obituary.')
     redirect = '<meta http-equiv="refresh" content="0; url=../lineage/">\n<link rel="canonical" href="../lineage/">\n'
     page('about/', 'About Culadasa', '<section class="section"><div class="wrap"><p>This page is now <a href="../lineage/">Lineage</a>.</p></div></section>', extra_head=redirect)
