@@ -338,8 +338,8 @@ mark{background:#f3e3a8;color:inherit;padding:0 2px;border-radius:2px}
    slate, sage, olive, mustard, sand (The Book), terracotta, burnt
    terracotta, deep slate.  Text is white on the dark steps and deep ink
    #141c21 on the light ones, whichever reads at 4.5:1 or better. */
-body{--group:#546263;--on:#fff;--rule:rgba(255,255,255,.7)}
-body[data-section="start-here"]{--group:#546263;--on:#fff;--rule:rgba(255,255,255,.7)}
+body{--group:#3d7088;--on:#fff;--rule:rgba(255,255,255,.7)}
+body[data-section="start-here"]{--group:#3d7088;--on:#fff;--rule:rgba(255,255,255,.7)}
 body[data-section="learn"]{--group:#4a5d48;--on:#fff;--rule:rgba(255,255,255,.7)}
 body[data-section="topics"]{--group:#888c65;--on:#141c21;--rule:rgba(20,28,33,.6)}
 body[data-section="library"]{--group:#ccb069;--on:#141c21;--rule:rgba(20,28,33,.6)}

@@ -58,3 +58,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 29. **Page background as warm as A2 (D, 24 Nov 2026).** "The whole background was a slightly richer gold/beige too - match that … don't overdo it but match the warmth." The page background in both redesigns is now A2's own #f5efe2 (was #f8f5ee in Redesign 2, #f7f6f2 in Redesign 1); lighter bands use #f9f4e9. Redesign 2's gold labels and the header's name line are darkened a touch, to #7d5f1f, so they still read at 4.5:1 or better on the warmer ground.
 
 30. **Name and dates line lighter, more gold-tan (D, 24 Nov 2026).** "Slightly lighter text and more gold/tan for name and birth/death dates too." The line under CULADASA is now A2's own gold #a07a1f in both redesigns. On the #f5efe2 background it reads at about 3.3:1, below the 4.5:1 guideline for text this size; D chose the look. Other gold labels stay at #7d5f1f.
+
+31. **Start here in a more inviting mid-century modern blue (D, 24 Nov 2026).** "Start here needs a more inviting color. Blue mid century modern?" Start here is now #3d7088 (was slate #546263), with white text at 5.4:1.
