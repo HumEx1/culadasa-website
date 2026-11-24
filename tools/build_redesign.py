@@ -532,12 +532,15 @@ def build():
 <section class="section" id="lineage"><div class="wrap">
 <div class="two"><div><img class="framed" src="{r}assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" width="400" height="602"></div>
 <div><h2>The Buddhist lineage of Upasaka Culadasa</h2>
-<p class="muted">Ordination passed from teacher to student, in a lineage traced to the Buddha.</p>
 <div class="prose measure">{lineage}</div></div></div>
+</div></section>
+<section class="section band-panel" id="teachers-of-culadasa"><div class="wrap">
+<h2>From teacher to student</h2>
+<p class="muted">Ordination passed from teacher to student, in a lineage traced to the Buddha.</p>
 <ol class="lineage">{chain_html}</ol>
 </div></section>
-<section class="section band-panel" id="wishes"><div class="wrap measure prose">{wishes}</div></section>
-<section class="section" id="obituary"><div class="wrap measure prose">{obit}</div></section>'''
+<section class="section" id="wishes"><div class="wrap measure prose">{wishes}</div></section>
+<section class="section band-panel" id="obituary"><div class="wrap measure prose">{obit}</div></section>'''
     page('lineage/', 'The lineage of Upasaka Culadasa', body, description='The Buddhist lineage of Upasaka Culadasa (John Yates, Ph.D., 1945–2021), his wishes for his teachings, and his obituary.')
     redirect = '<meta http-equiv="refresh" content="0; url=../lineage/">\n<link rel="canonical" href="../lineage/">\n'
     page('about/', 'About Culadasa', '<section class="section"><div class="wrap"><p>This page is now <a href="../lineage/">Lineage</a>.</p></div></section>', extra_head=redirect)
