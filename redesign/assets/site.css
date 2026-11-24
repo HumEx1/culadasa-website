@@ -363,3 +363,8 @@ body:not([data-group="book"]) .banner::after{content:none}
 /* The Book (V1): the cover's clouds under a wash of the palette's sand */
 body[data-group="book"] .banner.gold{background:linear-gradient(rgba(219,201,173,.9),rgba(219,201,173,.9)),url("img/tmi-clouds-band.jpg") center/cover}
 body[data-group="book"] .banner.gold .label{color:#141c21}
+
+/* Teachers: the banner text runs the full width so the banner keeps the same height as the other tabs (D, 24 Nov 2026) */
+body[data-section="teachers"] .banner .lead{max-width:none}
+/* every banner the same height on desktop, whether its text runs to one line or two (D, 24 Nov 2026) */
+@media (min-width:761px){.banner{min-height:305px;box-sizing:border-box}}
