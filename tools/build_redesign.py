@@ -517,9 +517,9 @@ def build():
     <div class="filters" id="tfilters"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="online" aria-pressed="false">Teaches online</button><button type="button" data-f="inperson" aria-pressed="false">In person</button></div>
     <p class="status small" id="tstatus" role="status"></p>
   </div>
+  <details class="map-wrap" id="mapbox" open><summary>Map</summary><div id="map" class="map" role="region" aria-label="Map of teachers"></div></details>
   <ul class="tgrid" id="tlist">{cards}</ul>
-  <details class="map-wrap" id="mapbox"><summary>Show the map</summary><div id="map" class="map" role="region" aria-label="Map of teachers"></div></details>
-  <p class="small muted">{esc(teachers['note'])} <a href="{r}teachers/sample-profile-in-person/">In-person sample</a> · <a href="{r}teachers/sample-profile-online/">Online sample</a></p>
+  <p class="small muted">{esc(teachers['note'])}</p>
   <hr><div class="measure small muted"><p>{esc(content['teachers_intro'][1])}</p><p>{esc(content['teachers_intro'][2])}</p><p>* 2022 graduates were certified to have completed <em>The Mind Illuminated Teacher Training Program</em> under the direct and personal guidance of Upāsaka Culadasa/John Yates PhD and graduates of the program.</p></div>
 </div></section>'''
     page('teachers/', 'Teachers', body, description='Find a teacher certified by Culadasa in The Mind Illuminated method, by name, place or map.',

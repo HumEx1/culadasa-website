@@ -8,6 +8,8 @@
   var filters = document.getElementById('tfilters'), statusEl = document.getElementById('tstatus');
   var cards = Array.prototype.slice.call(list.querySelectorAll('.tcard'));
   var F = 'all', here = null, map = null, markers = [];
+  var box = document.getElementById('mapbox');
+  if (box) box.open = true;  // sample locations exist, so show the map
 
   function km(a, b) {
     var R = 6371, r = Math.PI / 180, dLat = (b[0] - a[0]) * r, dLng = (b[1] - a[1]) * r;
@@ -50,7 +52,7 @@
   });
 
   function initMap() {
-    if (!window.L) return;
+    if (!window.L || map) return;
     map = window.L.map('map', { scrollWheelZoom: false, worldCopyJump: true }).setView([30, -40], 2);
     window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
     var icon = window.L.divIcon({ className: 'pin', html: '<span></span>', iconSize: [18, 18], iconAnchor: [9, 9] });
@@ -62,8 +64,7 @@
       markers.push(m);
     });
   }
-  // The map is folded away while few teachers have a location; it is built when first opened.
-  var box = document.getElementById('mapbox');
   if (box) box.addEventListener('toggle', function () { if (box.open && !map) initMap(); else if (map) map.invalidateSize(); });
+  if (document.readyState === 'complete') initMap(); else window.addEventListener('load', initMap);
   apply();
 })();
