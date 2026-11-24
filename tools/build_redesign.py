@@ -262,7 +262,7 @@ def clean_essay(raw):
     s = re.sub(r'<br\s*/?>\s*</', '</', s)
     s = s.replace('https://culadasa.com/', '../')
     s = re.sub(r'<a[^>]*(justanotherwp|dacremabotanicals)[^>]*>.*?</a>', '', s, flags=re.S)  # host spam on the old pages
-    s = re.sub(r'<p>\s*(Powered by WooCommerce error)?\s*</p>', '', s)
+    s = re.sub(r'<p>\s*(Powered by WooCommerce error|Powered by)?\s*</p>', '', s)  # the words left over from the hidden spam advert
     paras = [p.strip() for p in re.split(r'\n\s*\n', s) if p.strip()]
     out = []
     for p in paras:
