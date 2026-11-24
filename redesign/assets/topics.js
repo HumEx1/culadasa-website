@@ -22,6 +22,8 @@
     }
     return out;
   }
+  // Links that leave the site, and PDFs, open in a new tab (D, 24 Nov 2026).
+  function nt(u) { return /^https?:/.test(u) || /\.pdf$/i.test(u) ? ' target="_blank" rel="noopener"' : ''; }
   function isLetter(ch) { return /[a-z0-9À-ɏḀ-ỿ]/i.test(ch || ''); }
   // Find matches in folded text: word-start boundary checked by hand (no lookbehind, so older Safari works).
   function matcher(q) {
@@ -79,10 +81,10 @@
     statusEl.textContent = items.length ? total + ' mentions of “' + clean + '” in ' + items.length + ' sources, most mentions first.' : 'No mentions of “' + clean + '”. Try a shorter or different word.';
     resultsEl.innerHTML = shown.slice(0, LIMIT).map(function (i) {
       var body = i.qa
-        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '" rel="noopener">' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '')
+        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '')
         : i.snips.map(function (s) { return '<p>' + s + '</p>'; }).join('');
       return '<article class="result"><div class="meta"><span>' + esc(i.label) + '</span><span class="hits">' + i.n + (i.n === 1 ? ' mention' : ' mentions') + '</span>' + (i.credit ? '<span>' + esc(i.credit) + '</span>' : '') + '</div>' +
-        '<h3><a href="' + esc(i.url) + '"' + (/^https?:/.test(i.url) ? ' rel="noopener"' : '') + '>' + esc(i.title) + '</a></h3>' + body + '</article>';
+        '<h3><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(i.title) + '</a></h3>' + body + '</article>';
     }).join('') + (shown.length > LIMIT ? '<p><button type="button" class="btn ghost" id="more">Show all ' + shown.length + ' sources</button></p>' : '');
     var more = $('more'); if (more) more.addEventListener('click', function () { LIMIT = 100000; search(clean); });
   }

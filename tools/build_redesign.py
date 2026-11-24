@@ -67,6 +67,19 @@ def social_html(r=''):
     return ''.join(f'<a href="{u}" rel="noopener" aria-label="Culadasa on {n}"><svg viewBox="0 0 24 24" aria-hidden="true">{p}</svg></a>' for n, u, p in SOCIAL)
 
 
+def new_tab(html):
+    """Links that leave the site, PDFs and the 'current site' comparison link open in a new tab (D, 24 Nov 2026).
+    Moving between pages of this site stays in the same tab."""
+    def fix(m):
+        tag, href = m.group(0), m.group(1)
+        leaves = re.match(r'https?://', href) or href.lower().endswith('.pdf') or 'class="mirror-link"' in tag
+        if not leaves or 'target=' in tag:
+            return tag
+        tag = re.sub(r'\s+rel="[^"]*"', '', tag)
+        return tag[:-1] + ' target="_blank" rel="noopener">'
+    return re.sub(r'<a\s[^>]*?href="([^"]+)"[^>]*>', fix, html)
+
+
 def page(path, title, body, *, description='', compact=False, extra_head='', extra_js='', cover_band=False):
     depth = 0 if path == '' else path.strip('/').count('/') + 1
     r = rel(depth)
@@ -156,7 +169,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
 '''
     out = OUT / (path + 'index.html' if path else 'index.html')
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(doc)
+    out.write_text(new_tab(doc))
     return out
 
 
