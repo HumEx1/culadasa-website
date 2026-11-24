@@ -45,4 +45,4 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 
 23. **Conversations redder, About dark green slate (D, 24 Nov 2026).** "Redder brown/rust for conversations and dark green slate for Culadasa (adjust text as needed)." Conversations is now rust #8f4a36 and About (whose banner reads "Culadasa") is dark green slate #3d5048, both with white text (6:1 or better and 8.6:1). This replaces About's sand from item 22.
 
-24. **Learn in a deep mid-century green (D, 24 Nov 2026).** "Instead of grey for LEARN use a deeper mid century modern green … deeper." Learn is now deep green #3b5a38 with white text (about 7.5:1), in place of the sage of item 19. It is a truer green than About's blue-leaning slate, so the two stay distinct.
+24. **Learn in a deep mid-century green (D, 24 Nov 2026).** "Instead of grey for LEARN use a deeper mid century modern green … deeper." Learn is now a grey-green #4a5d48 with white text (7.1:1), in place of the sage of item 19. D then asked for "a little grey in it so the tabs flow from left to right … a little greyer": it sits between the slate of Start here and the olive of Topics.
