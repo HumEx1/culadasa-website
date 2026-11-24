@@ -78,6 +78,14 @@ def autop(soup, container):
             txt = str(node)
             sep = r'\n\s*\n' if re.search(r'\n\s*\n', txt) else r'\n'
             parts = [p.strip() for p in re.split(sep, txt) if p.strip()]
+            if sep == r'\n':  # single newlines: only break where a sentence ends
+                merged = []
+                for p in parts:
+                    if merged and not re.search(r'[.!?:”"’)\]]$', merged[-1]):
+                        merged[-1] += ' ' + p
+                    else:
+                        merged.append(p)
+                parts = merged
             new = []
             for p in parts:
                 tag = soup.new_tag('p'); tag.string = re.sub(r'\s*\n\s*', ' ', p); new.append(tag)
@@ -231,22 +239,28 @@ def inner_html(root):
     return out.strip()
 
 # ---- templates ----------------------------------------------------------------
-def nav_html(current):
+def rel(prefix, href):
+    return prefix + href.lstrip('/') if href.startswith('/') else href
+
+def nav_html(current, prefix):
     items = []
     for label, href, sub in NAV:
         cur = ' aria-current="page"' if href == current else ''
         if sub:
-            subs = ''.join(f'<li><a href="{h}"{" aria-current=\"page\"" if h == current else ""}>{l}</a></li>' for l, h in sub)
+            subs = ''.join(f'<li><a href="{rel(prefix, h)}"{" aria-current=\"page\"" if h == current else ""}>{l}</a></li>' for l, h in sub)
             if href:
-                head = f'<a href="{href}"{cur}>{label}</a>'
+                head = f'<a href="{rel(prefix, href)}"{cur}>{label}</a>'
             else:
                 head = f'<span class="sub-label" tabindex="0">{label}</span>'
             items.append(f'<li class="has-sub"{cur}>{head}<ul class="sub">{subs}</ul></li>')
         else:
-            items.append(f'<li{cur}><a href="{href}">{label}</a></li>')
+            items.append(f'<li{cur}><a href="{rel(prefix, href)}">{label}</a></li>')
     return ''.join(items)
 
-def page(slug, title, body, description, path, extra_class=''):
+def page(slug, title, body, description, path, extra_class='', prefix=None):
+    if prefix is None:
+        prefix = '' if path == '/' else '../' * (path.strip('/').count('/') + 1)
+    body = re.sub(r'(href|src)="/(?!/)', lambda m: f'{m.group(1)}="{prefix}', body)
     full_title = 'Culadasa' if slug == 'about' else f'{title} – Culadasa'
     canonical = DOMAIN + path
     return f'''<!doctype html>
@@ -263,21 +277,21 @@ def page(slug, title, body, description, path, extra_class=''):
 <meta property="og:url" content="{canonical}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="{DOMAIN}/wp-content/uploads/2021/09/Culadasa-photo-from-book-cover-2-MB-scaled.jpg">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="{prefix}assets/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <p class="site-title"><a href="/">Culadasa</a></p>
+    <p class="site-title"><a href="{prefix}">Culadasa</a></p>
     <nav class="site-nav" aria-label="Main">
       <input type="checkbox" id="menu-toggle" class="menu-toggle">
       <label for="menu-toggle" class="menu-button">Menu</label>
-      <ul class="menu">{nav_html(path)}</ul>
+      <ul class="menu">{nav_html(path, prefix)}</ul>
     </nav>
   </div>
 </header>
@@ -317,7 +331,7 @@ def main():
         print(f'{out.relative_to(ROOT)}  {len(body)} chars')
     # 404
     body = '<h1>Page not found</h1><p>That address does not exist on this site. Try the menu above, or start from the <a href="/">About page</a>.</p>'
-    (SITE / '404.html').write_text(page('404', 'Page not found', body, 'Page not found', '/404.html'), encoding='utf-8')
+    (SITE / '404.html').write_text(page('404', 'Page not found', body, 'Page not found', '/404.html', prefix='/'), encoding='utf-8')
     (SITE / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n')
     today = datetime.date.today().isoformat()
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + \
