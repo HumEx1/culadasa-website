@@ -21,7 +21,7 @@ body{background:var(--ground)}
   -webkit-mask-image:radial-gradient(ellipse 46% 120% at 50% 50%,#000 0,#000 35%,transparent 75%);mask-image:radial-gradient(ellipse 46% 120% at 50% 50%,#000 0,#000 35%,transparent 75%)}
 .masthead.lattice>*{position:relative}
 .masthead.lattice.compact{padding:22px 20px 18px}
-.masthead.lattice .tagline{color:var(--label)}
+.masthead.lattice .tagline{color:#a07a1f}
 .nav{background:#f5efe2}
 
 /* banners: colour, never black; a terracotta rule under every label */
