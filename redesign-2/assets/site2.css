@@ -42,10 +42,16 @@ body{background:var(--ground)}
 .banner.gold .label{color:var(--label)}
 .banner.panel .label::after{background:var(--pop)}
 
-/* the book page keeps the cover's graphics */
-.banner.cover{background:#e7d7ae url("img/tmi-clouds-band.jpg") center/cover;border:0}
-.banner.cover .label{color:#5a4a36}
+/* the book: a sand block with the same lattice as every other banner, in gold */
+.banner.cover{position:relative;overflow:hidden;background:#eadfc6;border:0;padding:64px 0 52px}
+.banner.cover::before{content:"";position:absolute;inset:0;background-image:var(--lattice);opacity:1;
+  -webkit-mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%);mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%)}
+.banner.cover>.wrap{position:relative}
+.banner.cover h1{color:var(--ink)}
+.banner.cover .label{color:#6b4f1d}
+.banner.cover .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:var(--pop)}
 .banner.cover .lead{color:#3d3326}
+@media (max-width:760px){.banner.cover{padding:44px 0 40px}}
 
 /* home: more open */
 .lead-hero .wrap{padding-top:84px;padding-bottom:84px}
@@ -78,5 +84,5 @@ a.card:hover{border-color:var(--line-2)}
 }
 
 /* every banner (except The Book) carries the same faint lattice, on its right side only */
-body:not([data-section="book"]) .banner::before{content:"";position:absolute;inset:0;background-image:var(--lattice-light);opacity:1;
+body:not([data-group="book"]) .banner::before{content:"";position:absolute;inset:0;background-image:var(--lattice-light);opacity:1;
   -webkit-mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%);mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%)}

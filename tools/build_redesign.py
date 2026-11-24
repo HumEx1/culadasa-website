@@ -25,11 +25,11 @@ convos = json.loads((D / 'conversations.json').read_text())
 esc = html.escape
 YEAR = datetime.date.today().year
 
-NAV = [
+NAV = [  # grouped by purpose: guidance, library, the book, people (banner colours follow the groups)
     ('Start here', 'start-here/', None),
     ('Learn', 'learn/', None),
-    ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Q&A archive', 'online-meetings/')]),
     ('Topics', 'topics/', None),
+    ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Q&A archive', 'online-meetings/')]),
     ('The Book', 'the-book/', None),
     ('Teachers', 'teachers/', None),
     ('Conversations', 'conversations/', None),
@@ -75,6 +75,8 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
                'amount-of-concentration-needed-for-awakening', 'daily-life-practice', 'cultivating-mindfulness-in-daily-life'}
     section = ('home' if not first else 'library' if first in LIBRARY else 'about' if first in ('about', 'testimonials', 'student-testimonials')
                else 'book' if first in ('the-book', 'book-reviews') else first)
+    group = {'start-here': 'guide', 'learn': 'guide', 'topics': 'guide', 'library': 'library', 'book': 'book',
+             'teachers': 'people', 'conversations': 'people', 'about': 'people'}.get(section, 'home')
     full = 'Culadasa — the teachings of John Yates' if path == '' else f'{title} — Culadasa'
     OLD = {'', 'writings/', 'audio/', 'videos/', 'online-meetings/', 'teachers/', 'testimonials/', 'student-testimonials/', 'book-reviews/',
            'meditation-manual-introduction/', 'mindful-awareness-vs-dullness/', 'amount-of-concentration-needed-for-awakening/',
@@ -100,7 +102,7 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
 <link rel="stylesheet" href="{r}assets/site.css">
 {f'<link rel="stylesheet" href="{r}assets/site2.css">' if V2 else ''}
 {extra_head}</head>
-<body data-section="{section}">
+<body data-section="{section}" data-group="{group}">
 <a class="skip" href="#main">Skip to content</a>
 <div class="preview-bar">{'Draft redesign (2) for review' if V2 else 'Draft redesign for review'}</div>
 <header class="masthead{' compact' if compact else ''}{' lattice' if V2 else ''}">
