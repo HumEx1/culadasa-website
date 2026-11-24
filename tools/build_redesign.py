@@ -519,13 +519,13 @@ def build():
 <figcaption><strong>{esc(name)}</strong>{f'<em>{esc(alt)}</em>' if alt else ''}<span>{esc(note)}</span>{f'<small>{esc(credit)}</small>' if credit else ''}</figcaption></figure></li>''' for img, name, alt, note, credit, w, h in chain)
     body = banner('Lineage', 'Upasaka Culadasa', 'His Buddhist lineage, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021.', 'gold') + f'''
 <section class="section" id="lineage"><div class="wrap">
-<h2>The Buddhist lineage of Upasaka Culadasa</h2>
+<div class="two"><div><img class="framed" src="{r}assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" width="400" height="602"></div>
+<div><h2>The Buddhist lineage of Upasaka Culadasa</h2>
 <p class="muted">Ordination passed from teacher to student, in a lineage traced to the Buddha.</p>
+<div class="prose measure">{lineage}</div></div></div>
 <ol class="lineage">{chain_html}</ol>
-<div class="prose measure">{lineage}</div>
 </div></section>
-<section class="section band-panel" id="wishes"><div class="wrap two"><div><img class="framed" src="{r}assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" width="400" height="602" loading="lazy"></div>
-<div class="prose measure">{wishes}</div></div></section>
+<section class="section band-panel" id="wishes"><div class="wrap"><div class="prose measure">{wishes}</div></div></section>
 <section class="section" id="obituary"><div class="wrap"><div class="prose measure">{obit}</div></div></section>'''
     page('lineage/', 'The lineage of Upasaka Culadasa', body, description='The Buddhist lineage of Upasaka Culadasa (John Yates, Ph.D., 1945–2021), his wishes for his teachings, and his obituary.')
     redirect = '<meta http-equiv="refresh" content="0; url=../lineage/">\n<link rel="canonical" href="../lineage/">\n'

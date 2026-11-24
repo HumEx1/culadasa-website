@@ -389,7 +389,7 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 }
 
 /* Lineage page: teacher to student, left to right (D, 24 Nov 2026) */
-.lineage{list-style:none;margin:28px 0 44px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;max-width:860px}
+.lineage{list-style:none;margin:64px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;max-width:860px}
 .lineage li{position:relative;margin:0}
 .lineage li+li::before{content:"→";position:absolute;left:-34px;top:38%;font-size:22px;color:var(--muted)}
 .lineage figure{margin:0}
