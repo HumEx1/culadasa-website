@@ -48,3 +48,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 24. **Learn in a deep mid-century green (D, 24 Nov 2026).** "Instead of grey for LEARN use a deeper mid century modern green … deeper." Learn is now a grey-green #4a5d48 with white text (7.1:1), in place of the sage of item 19. D then asked for "a little grey in it so the tabs flow from left to right … a little greyer": it sits between the slate of Start here and the olive of Topics.
 
 25. **Teachers a lighter apricot (D, 24 Nov 2026).** "Teachers apricot a little lighter." Teachers is now #c4926c (was the palette terracotta #b6835d), with dark ink text at 6.3:1.
+
+26. **Conversations a little redder, still dark (D, 24 Nov 2026).** "Brown/rust a little redder still with dark tones tho." Conversations is now #8c3e31 (was #8f4a36), with white text at 7.4:1.
