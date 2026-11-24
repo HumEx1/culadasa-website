@@ -60,3 +60,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 30. **Name and dates line lighter, more gold-tan (D, 24 Nov 2026).** "Slightly lighter text and more gold/tan for name and birth/death dates too." The line under CULADASA is now A2's own gold #a07a1f in both redesigns. On the #f5efe2 background it reads at about 3.3:1, below the 4.5:1 guideline for text this size; D chose the look. Other gold labels stay at #7d5f1f.
 
 31. **Start here in a more inviting mid-century modern blue (D, 24 Nov 2026).** "Start here needs a more inviting color. Blue mid century modern?" Start here is now #3d7088 (was slate #546263), with white text at 5.4:1.
+
+32. **About in green heather sage (D, 24 Nov 2026).** "More green heather sage rather than slate in Culadasa at the end." About is now sage #8fa087 with dark ink text at 6.2:1 and, in Redesign 2, the dark lattice. It replaces the dark green slate of item 23. White text was not used because it reads at only 2.8:1 on this sage.
