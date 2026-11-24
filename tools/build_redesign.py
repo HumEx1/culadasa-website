@@ -336,7 +336,7 @@ def build():
   </div>
 </section>
 {'' if V2 else EYES}'''
-    page('', 'Home', body, compact=False,
+    page('', 'Home', body,
          description='The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: writings, talks, Q&A recordings, topics and teachers.')
 
     # ---------------------------------------------------------------- start here
