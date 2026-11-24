@@ -528,7 +528,7 @@ def build():
     ]
     chain_html = ''.join(f'''<li><figure><img src="{r}assets/img/{img}" alt="{esc(name)}" width="{w}" height="{h}" loading="lazy">
 <figcaption><strong>{esc(name)}</strong>{f'<em>{esc(alt)}</em>' if alt else ''}<span>{esc(note)}</span>{f'<small>{esc(credit)}</small>' if credit else ''}</figcaption></figure></li>''' for img, name, alt, note, credit, w, h in chain)
-    body = banner('Lineage', 'Upasaka Culadasa', 'His Buddhist lineage, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021.', 'gold') + f'''
+    body = banner('Lineage', 'Upasaka Culadasa', 'His Buddhist lineage, his career in physiology and neuroscience, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021.', 'gold') + f'''
 <section class="section" id="lineage"><div class="wrap">
 <div class="two"><div><img class="framed" src="{r}assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" width="400" height="602"></div>
 <div><h2>The Buddhist lineage of Upasaka Culadasa</h2>

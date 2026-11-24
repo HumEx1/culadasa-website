@@ -1947,7 +1947,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Lineage (`redesign-2/lineage/index.html` line 7)
 - [ ] **Page heading:** "Upasaka Culadasa"  
   Lineage (`redesign-2/lineage/index.html` line 36), under "Upasaka Culadasa"; also on 1 more place
-- [ ] **Paragraph:** "His Buddhist lineage, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021."  
+- [ ] **Paragraph:** "His Buddhist lineage, his career in physiology and neuroscience, his wishes for his teachings, and his life. John Yates, Ph.D., 1945–2021."  
   Lineage (`redesign-2/lineage/index.html` line 36), under "Upasaka Culadasa"
 - [ ] **Section heading:** "From teacher to student"  
   Lineage (`redesign-2/lineage/index.html` line 48), under "From teacher to student"
