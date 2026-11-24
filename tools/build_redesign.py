@@ -9,7 +9,7 @@ redesign can later replace the mirror without breaking links.
 
 Usage:  python3 tools/build_redesign.py
 """
-import json, re, html, pathlib, datetime
+import json, re, html, pathlib, datetime, urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / 'redesign'
@@ -68,7 +68,12 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
     depth = 0 if path == '' else path.strip('/').count('/') + 1
     r = rel(depth)
     full = 'Culadasa — the teachings of John Yates' if path == '' else f'{title} — Culadasa'
-    mirror = r + '../' + (path if path else '')
+    OLD = {'', 'writings/', 'audio/', 'videos/', 'online-meetings/', 'teachers/', 'testimonials/', 'student-testimonials/', 'book-reviews/',
+           'meditation-manual-introduction/', 'mindful-awareness-vs-dullness/', 'amount-of-concentration-needed-for-awakening/',
+           'daily-life-practice/', 'cultivating-mindfulness-in-daily-life/'}
+    counterpart = path if path in OLD else ('teachers/' if path.startswith('teachers/') else ('book-reviews/' if path == 'the-book/' else ('online-meetings/' if path == 'topics/' else '')))
+    mirror = r + '../' + counterpart
+    mirror_label = 'See this page on the current site' if path in OLD else 'See the nearest page on the current site'
     doc = f'''<!doctype html>
 <html lang="en">
 <head>
@@ -88,7 +93,7 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
 {extra_head}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar">Draft redesign for review · <a href="{mirror}">See this page on the current site</a> · <a href="{r}compare/">Compare side by side</a></div>
+<div class="preview-bar">Draft redesign for review · <a href="{mirror}">{mirror_label}</a> · <a href="{r}compare/">Compare side by side</a></div>
 <header class="masthead{' compact' if compact else ''}">
   <a class="wordmark" href="{r or './'}">Culadasa</a>
   <p class="tagline">Upasaka Culadasa · John Yates, Ph.D. · 1945–2021</p>
@@ -278,7 +283,7 @@ def build():
       <input id="home-q" name="q" type="search" placeholder="Search the teachings, for example: compassion">
       <button class="btn" type="submit">Search</button>
     </form>
-    <p class="small muted" style="margin:14px 0 0">Most discussed: {" · ".join(f'<a href="topics/?q={w}">{w}</a>' for w in cloud_top)}</p>
+    <p class="small muted" style="margin:14px 0 0">Most discussed: {" · ".join(f'<a href="topics/?q={urllib.parse.quote(w)}">{esc(w)}</a>' for w in cloud_top)}</p>
   </div>
 </section>
 <section class="section">
@@ -327,11 +332,14 @@ def build():
         ('Ask your question', 'Someone has probably asked it already. Search 439 recorded questions and jump to his answer.', f'<a class="btn" href="{r}topics/">Search the teachings</a>'),
     ]
     body = banner('New to meditation', 'Start here', 'Seven steps through his own handouts, essays and recordings, from your first sit to a daily practice.', 'teal') + f'''
-<section class="section"><div class="wrap measure"><ol class="steps">{''.join(f'<li><div><h3>{t}</h3><p>{d}</p>{a}</div></li>' for t, d, a in steps)}</ol></div></section>'''
+<section class="section"><div class="wrap measure"><ol class="steps">{''.join(f'<li><div><h3>{t}</h3><p>{d}</p>{a}</div></li>' for t, d, a in steps)}</ol></div></section>
+<section class="section band-panel" id="asked"><div class="wrap measure"><p class="label">Frequently asked</p><h2>What people asked him most</h2>
+<p class="muted">From the 439 questions put to him in his Q&amp;A sessions, 2017–2021. Each link opens his answers, most-discussed first.</p>
+<ul class="doclist">{''.join(f'<li><a href="{r}topics/?q={urllib.parse.quote(f["q"])}&amp;type=Q%26A"><span>{esc(f["label"])}</span><span class="kind">{f["n"]} questions</span></a></li>' for f in content['faq'])}</ul></div></section>'''
     page('start-here/', 'Start here', body, description='A seven-step beginning path through Culadasa’s own handouts, guided meditations and essays.')
 
     # ---------------------------------------------------------------- learn hub (journey by level)
-    def qlink(q): return f'{r}topics/?q={q}'
+    def qlink(q): return f'{r}topics/?q={urllib.parse.quote(q)}'
     tracks = [
         ('The basics', 'teal', [
             ('What meditation trains', 'Attention and peripheral awareness, and how they work together.', qlink('peripheral awareness')),
