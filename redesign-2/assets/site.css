@@ -330,31 +330,36 @@ mark{background:#f3e3a8;color:inherit;padding:0 2px;border-radius:2px}
 
 .filters .muted{margin-left:6px;color:inherit;opacity:.7}
 
-/* ---- banner colours: one spectrum across the menu (D, 24 Nov 2026) ----
-   Like a paint-sample strip, left to right in menu order: teal, sea green,
-   green, olive, (The Book: its sand block, D 24 Nov 2026),
-   amber, rust, brick.  Each tab has its own step; all
-   seven sit at the same lightness and strength (OKLCH L about .53, C .095)
-   so white text reads at 5:1 or better on every one.  Hues evenly spaced
-   (218, 190, 160, 128, 92, 62, 40, 20 degrees) so no two neighbours match. */
-body{--group:#017890}
-body[data-section="start-here"]{--group:#017890}
-body[data-section="learn"]{--group:#007b76}
-body[data-section="topics"]{--group:#307c58}
-body[data-section="library"]{--group:#5c7637}
-body[data-section="book"]{--group:#c4972f}
-body[data-section="teachers"]{--group:#976230}
-body[data-section="conversations"]{--group:#a05d46}
-body[data-section="about"]{--group:#a25a5a}
+/* ---- banner colours: D's mid-century palette (D, 24 Nov 2026) ----
+   Six tones sampled from D's swatch card: slate #546263, sage #859891,
+   olive #888c65, mustard #ccb069, sand #dbc9ad, terracotta #b6835d.  Eight
+   tabs need eight steps, so two are deeper shades of the same family:
+   burnt terracotta #8f5f3f and deep slate #3f4b4c.  Menu order runs
+   slate, sage, olive, mustard, sand (The Book), terracotta, burnt
+   terracotta, deep slate.  Text is white on the dark steps and deep ink
+   #141c21 on the light ones, whichever reads at 4.5:1 or better. */
+body{--group:#546263;--on:#fff;--rule:rgba(255,255,255,.7)}
+body[data-section="start-here"]{--group:#546263;--on:#fff;--rule:rgba(255,255,255,.7)}
+body[data-section="learn"]{--group:#859891;--on:#141c21;--rule:rgba(20,28,33,.6)}
+body[data-section="topics"]{--group:#888c65;--on:#141c21;--rule:rgba(20,28,33,.6)}
+body[data-section="library"]{--group:#ccb069;--on:#141c21;--rule:rgba(20,28,33,.6)}
+body[data-section="book"]{--group:#dbc9ad;--on:#141c21;--rule:#b6835d}
+body[data-section="teachers"]{--group:#b6835d;--on:#141c21;--rule:rgba(20,28,33,.6)}
+body[data-section="conversations"]{--group:#8f5f3f;--on:#fff;--rule:rgba(255,255,255,.7)}
+body[data-section="about"]{--group:#3f4b4c;--on:#fff;--rule:rgba(255,255,255,.7)}
 .menu a[aria-current="page"],.menu button.group[aria-current="page"]{border-bottom-color:var(--group)}
-body:not([data-group="book"]) .banner{position:relative;overflow:hidden;background:var(--group);color:#fff;border:0;padding:64px 0 52px}
+body[data-section="book"] .menu a[aria-current="page"]{border-bottom-color:#b6835d}
+body:not([data-group="book"]) .banner{position:relative;overflow:hidden;background:var(--group);color:var(--on);border:0;padding:64px 0 52px}
 body:not([data-group="book"]) .banner>.wrap{position:relative}
-body:not([data-group="book"]) .banner h1,body:not([data-group="book"]) .banner .label{color:#fff}
-body:not([data-group="book"]) .banner .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:rgba(255,255,255,.7)}
-body:not([data-group="book"]) .banner .lead,body:not([data-group="book"]) .banner p{color:#fff}
-body:not([data-group="book"]) .banner a{color:#fff}
-body:not([data-group="book"]) .banner .btn.ghost,body:not([data-group="book"]) .banner .btn.light{border-color:#fff;color:#fff;background:transparent}
-body:not([data-group="book"]) .banner .btn.ghost:hover,body:not([data-group="book"]) .banner .btn.light:hover{background:#fff;color:var(--ink)}
-body:not([data-group="book"]) .banner :focus-visible{outline-color:#fff;box-shadow:0 0 0 4px var(--group)}
+body:not([data-group="book"]) .banner h1,body:not([data-group="book"]) .banner .label{color:var(--on)}
+body:not([data-group="book"]) .banner .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:var(--rule)}
+body:not([data-group="book"]) .banner .lead,body:not([data-group="book"]) .banner p{color:var(--on)}
+body:not([data-group="book"]) .banner a{color:var(--on)}
+body:not([data-group="book"]) .banner .btn.ghost,body:not([data-group="book"]) .banner .btn.light{border-color:var(--on);color:var(--on);background:transparent}
+body:not([data-group="book"]) .banner .btn.ghost:hover,body:not([data-group="book"]) .banner .btn.light:hover{background:var(--on);color:var(--group)}
+body:not([data-group="book"]) .banner :focus-visible{outline-color:var(--on);box-shadow:0 0 0 4px var(--group)}
 body:not([data-group="book"]) .banner::after{content:none}
 @media (max-width:760px){body:not([data-group="book"]) .banner{padding:44px 0 40px}}
+/* The Book (V1): the cover's clouds under a wash of the palette's sand */
+body[data-group="book"] .banner.gold{background:linear-gradient(rgba(219,201,173,.9),rgba(219,201,173,.9)),url("img/tmi-clouds-band.jpg") center/cover}
+body[data-group="book"] .banner.gold .label{color:#141c21}

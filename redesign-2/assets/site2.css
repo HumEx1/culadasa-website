@@ -43,14 +43,14 @@ body{background:var(--ground)}
 .banner.panel .label::after{background:var(--pop)}
 
 /* the book: a sand block with the same lattice as every other banner, in gold */
-.banner.cover{position:relative;overflow:hidden;background:#eadfc6;border:0;padding:64px 0 52px}
+.banner.cover{position:relative;overflow:hidden;background:#dbc9ad;border:0;padding:64px 0 52px}
 .banner.cover::before{content:"";position:absolute;inset:0;background-image:var(--lattice);opacity:1;
   -webkit-mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%);mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%)}
 .banner.cover>.wrap{position:relative}
 .banner.cover h1{color:var(--ink)}
-.banner.cover .label{color:#6b4f1d}
-.banner.cover .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:var(--pop)}
-.banner.cover .lead{color:#3d3326}
+.banner.cover .label{color:#141c21}
+.banner.cover .label::after{content:"";display:block;width:36px;height:2px;margin-top:12px;background:#b6835d}
+.banner.cover .lead{color:#141c21}
 @media (max-width:760px){.banner.cover{padding:44px 0 40px}}
 
 /* home: more open */
@@ -86,6 +86,10 @@ a.card:hover{border-color:var(--line-2)}
 /* every banner (except The Book) carries the same faint lattice, on its right side only */
 body:not([data-group="book"]) .banner::before{content:"";position:absolute;inset:0;background-image:var(--lattice-light);opacity:1;
   -webkit-mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%);mask-image:linear-gradient(to left,#000 0,rgba(0,0,0,.55) 28%,transparent 60%)}
-/* spectrum banners (see site.css): white rule on every coloured banner */
-body:not([data-group="book"]) .banner .label::after{background:rgba(255,255,255,.7)}
-body:not([data-group="book"]) .banner .label{color:#fff}
+/* palette banners (see site.css): rule and label follow the text colour;
+   the lattice is white on dark steps and deep ink on light ones */
+body:not([data-group="book"]) .banner .label::after{background:var(--rule)}
+body:not([data-group="book"]) .banner .label{color:var(--on)}
+body{--lat:var(--lattice-light)}
+body[data-section="learn"],body[data-section="topics"],body[data-section="library"],body[data-section="teachers"]{--lat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104' height='60' viewBox='0 0 104 60'%3E%3Cpath d='M52 0 104 30 52 60 0 30Z M52 0V60 M0 30H104' fill='none' stroke='%23141c21' stroke-opacity='.13' stroke-width='1'/%3E%3C/svg%3E")}
+body:not([data-group="book"]) .banner::before{background-image:var(--lat)}
