@@ -107,7 +107,7 @@ def page(path, title, body, *, description='', compact=True, extra_head='', extr
   <a class="wordmark" href="{r or './'}">Culadasa</a>
   <p class="tagline">Upasaka Culadasa · John Yates, Ph.D. · 1945–2021</p>
 </header>
-{'' if (V2 and not cover_band) else f'<img class="cubes" src="{r}assets/img/tmi-cubes-band.jpg" alt="">'}
+{'' if V2 else f'<img class="cubes" src="{r}assets/img/tmi-cubes-band.jpg" alt="">'}
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <button type="button" class="nav-button" aria-expanded="false" aria-controls="menu">Menu</button>
