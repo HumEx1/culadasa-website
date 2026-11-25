@@ -648,3 +648,5 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 /* book page: the search follows the cover and text without a large gap (D, 25 Nov 2026) */
 body[data-section="book"] .section:has(> .wrap.two){padding-bottom:44px}
 body[data-section="book"] .section.book-finder{padding-top:0;border-top:0}
+/* the quote box reaches out to the left so its text lines up with the paragraphs above (D, 25 Nov 2026) */
+@media (min-width:761px){.book-lead-quote{margin-left:-27px}}
