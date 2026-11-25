@@ -645,3 +645,6 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .book-cover img{display:block;width:100%;height:auto;box-sizing:border-box}
 .book-buy{margin:24px 0 0}
 .book-lead-quote{margin-bottom:0}
+/* book page: the search follows the cover and text without a large gap (D, 25 Nov 2026) */
+body[data-section="book"] .section:has(> .wrap.two){padding-bottom:44px}
+body[data-section="book"] .section.book-finder{padding-top:0;border-top:0}
