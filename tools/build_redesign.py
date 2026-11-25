@@ -603,6 +603,7 @@ def build():
     def audio_body(a_):
         parts = []
         for line in a_['text'].splitlines():
+            line = re.sub(r'[\u200b\u200c\u200d\ufeff\u00a0]', ' ', line)   # invisible characters some descriptions carry
             m_ = re.match(r'^\s*\(?((?:\d{1,2}:)?\d{1,2}:\d{2})\)?\s*[-–—:]?\s*(.*)$', line)
             if m_ and a_['url']:
                 parts.append(f'<p class="tline">{play(a_["url"] + "#t=" + m_.group(1), m_.group(1))} {esc(m_.group(2))}</p>')
