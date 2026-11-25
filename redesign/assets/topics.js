@@ -7,7 +7,7 @@
   var $ = function (id) { return document.getElementById(id); };
   var form = $('topic-form'), input = $('q'), cloudEl = $('cloud'), statusEl = $('status'), resultsEl = $('results'), filtersEl = $('filters');
   var DATA = null, KIND = 'all', LIMIT = 60;
-  var KINDS = [['all', 'All'], ['handout', 'Handouts'], ['essay', 'Essays'], ['qa', 'Q&A'], ['interview', 'Interviews'], ['about', 'Lineage'], ['video', 'Videos']];
+  var KINDS = [['all', 'All'], ['handout', 'Handouts'], ['essay', 'Essays'], ['qa', 'AMA'], ['interview', 'Interviews'], ['about', 'Lineage'], ['video', 'Videos']];
   var TYPE_OF = { 'Handout': 'handout', 'Essay': 'essay', 'Q&A': 'qa', 'Interview': 'interview', 'Lineage': 'about', 'Video': 'video' };
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
@@ -71,7 +71,7 @@
     DATA.qna.forEach(function (s) {
       var list = [], n = 0;
       s.items.forEach(function (it) { var h = find(it.text, it.f); if (h.length) { n += h.length; list.push({ it: it, hits: h }); } });
-      if (n) items.push({ kind: 'qa', label: 'Q&A', title: s.title, url: s.url, n: n, qa: list });
+      if (n) items.push({ kind: 'qa', label: 'AMA', title: s.title, url: s.url, n: n, qa: list });
     });
     items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });

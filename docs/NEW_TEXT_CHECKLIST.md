@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2013 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2012 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -18,7 +18,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Topics | 8 |
 | Library › Writings | 33 |
 | Library › Audio | 7 |
-| Library › Videos | 26 |
+| Library › Videos | 25 |
 | Library › Q&A archive | 1368 |
 | Library › Writings › essay | 17 |
 | The Book | 21 |
@@ -31,7 +31,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Footer › Testimonials (old address, redirects) | 2 |
 | Teachers › individual profile pages | 208 |
 | Messages shown by the search and map scripts | 24 |
-| **Total** | **2013** |
+| **Total** | **2012** |
 
 ## Every page: header, menu, newsletter box and footer (30)
 
@@ -47,8 +47,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 30), in the menu; also on 163 more places (81 pages)
 - [ ] **Button:** "Library"  
   Home (`redesign-2/index.html` line 30), in the menu; also on 80 more places (81 pages)
-- [ ] **List item:** "Q&A archive"  
-  Home (`redesign-2/index.html` line 30), in the menu; also on 162 more places (81 pages)
+- [ ] **List item:** "Culadasa AMA sessions"  
+  Home (`redesign-2/index.html` line 30), in the menu; also on 163 more places (81 pages)
 - [ ] **List item:** "The Book"  
   Home (`redesign-2/index.html` line 30), in the menu; also on 82 more places (81 pages)
 - [ ] **List item:** "Conversations"  
@@ -81,7 +81,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 133), in the footer; also on 80 more places (81 pages)
 - [ ] **Paragraph:** "The teachings of Culadasa are offered freely under a Creative Commons Attribution 4.0 license, as he wished. © 2021–2026."  
   Home (`redesign-2/index.html` line 134), in the footer; also on 80 more places (81 pages)
-- [ ] **Section heading:** "All 61 Patreon Q&A sessions organized by year"  
+- [ ] **Section heading:** "All 61 Patreon AMA sessions organized by year"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 39), in the menu
 - [ ] **Paragraph:** "Choose one to go to it."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 39), in the menu
@@ -132,7 +132,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 54), under "Learn the method"
 - [ ] **Short label:** "Every teaching, searchable"  
   Home (`redesign-2/index.html` line 55), under "Learn the method"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "Search over 172,000 words of his handouts, essays and 439 recorded questions and answers."  
+- [ ] **Paragraph:** "Search over 172,000 words of his handouts, essays and 441 recorded questions and answers."  
   Home (`redesign-2/index.html` line 55), under "Topics"
 - [ ] **Short label:** "Practice with someone"  
   Home (`redesign-2/index.html` line 56), under "Topics"
@@ -150,7 +150,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 72), under "Find a teacher"; also on 1 more place (2 pages)
 - [ ] **Section heading:** "From the archive"  
   Home (`redesign-2/index.html` line 72), under "From the archive"
-- [ ] **Paragraph:** "Talks from his YouTube channel, and the May 2021 question-and-answer session. All videos · Q&A archive"  
+- [ ] **Paragraph:** "Talks from his YouTube channel, and the May 2021 AMA session. All videos · Culadasa AMA sessions"  
   Home (`redesign-2/index.html` line 72), under "From the archive"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa -The 5 ultimate insights that lead to direct awakening."  
   Home (`redesign-2/index.html` line 74), under "From the archive"; also on 1 more place (2 pages)
@@ -239,13 +239,13 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Start here (`redesign-2/start-here/index.html` line 38), under "Take it into daily life"
 - [ ] **Sub-heading:** "Ask your question"  
   Start here (`redesign-2/start-here/index.html` line 38), under "Ask your question"
-- [ ] **Paragraph:** "Someone has probably asked it already. Search 439 recorded questions and jump to his answer."  
+- [ ] **Paragraph:** "Someone has probably asked it already. Search 441 recorded questions and jump to his answer."  
   Start here (`redesign-2/start-here/index.html` line 38), under "Ask your question"
 - [ ] **Paragraph:** "Frequently asked"  
   Start here (`redesign-2/start-here/index.html` line 39), under "Ask your question"
 - [ ] **Section heading:** "What people asked him most"  
   Start here (`redesign-2/start-here/index.html` line 39), under "What people asked him most"
-- [ ] **Paragraph:** "From the 439 questions put to him in his Q&A sessions, 2017–2021. Each link opens his answers, most-discussed first."  
+- [ ] **Paragraph:** "From the 441 questions put to him in his AMA sessions, 2017–2021. Each link opens his answers, most-discussed first."  
   Start here (`redesign-2/start-here/index.html` line 40), under "What people asked him most"
 - [ ] **List item:** "Which stage am I at? 130 questions"  
   Start here (`redesign-2/start-here/index.html` line 41), under "What people asked him most"
@@ -375,7 +375,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Topics (`redesign-2/topics/index.html` line 41), under "Topics"
 - [ ] **Paragraph:** "Loading the teachings…"  
   Topics (`redesign-2/topics/index.html` line 42), under "Topics"
-- [ ] **Paragraph:** "Sources: his handouts and essays, the About page, video titles, and the Culadasa Q&A Index by Alex. Spellings with and without accents match each other. Common English words are left out of the word cloud."  
+- [ ] **Paragraph:** "Sources: his handouts and essays, the Lineage page, video titles, and the Culadasa Q&A Index (the questions from his AMA sessions). Spellings with and without accents match each other. Common English words are left out of the word cloud."  
   Topics (`redesign-2/topics/index.html` line 44), under "Topics"
 
 ## Library › Writings (33)
@@ -464,13 +464,13 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "All 401 recordings, newest first."  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Every recording"
 
-## Library › Videos (26)
+## Library › Videos (25)
 
 - [ ] **Page title (browser tab):** "Videos — Culadasa"  
   Library › Videos (`redesign-2/videos/index.html` line 6)
-- [ ] **Search description (hidden):** "Talks, discussions and Q&A sessions by Culadasa on YouTube."  
+- [ ] **Search description (hidden):** "Talks, discussions and AMA sessions by Culadasa on YouTube."  
   Library › Videos (`redesign-2/videos/index.html` line 7)
-- [ ] **Paragraph:** "68 videos: talks, discussions and 61 recorded question-and-answer sessions."  
+- [ ] **Paragraph:** "68 videos: talks, discussions and 61 recorded AMA (ask me anything) sessions."  
   Library › Videos (`redesign-2/videos/index.html` line 36), under "Videos"
 - [ ] **Paragraph:** "Open YouTube"  
   Library › Videos (`redesign-2/videos/index.html` line 36), under "Videos"
@@ -486,10 +486,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Videos (`redesign-2/videos/index.html` line 48), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
 - [ ] **Screen-reader label (hidden):** "Play: Engaged Compassion, Part 1; Gloucester MA, July 1, 2016"  
   Library › Videos (`redesign-2/videos/index.html` line 63), under "Culadasa April 2019 Patreon Q&A"
-- [ ] **Section heading:** "Question-and-answer sessions"  
-  Library › Videos (`redesign-2/videos/index.html` line 75), under "Question-and-answer sessions"
-- [ ] **Paragraph:** "Each session’s questions are listed, with links to the moment he answers, in the Q&A archive ."  
-  Library › Videos (`redesign-2/videos/index.html` line 75), under "Question-and-answer sessions"
+- [ ] **Paragraph:** "Each session’s questions are listed, with links to the moment he answers, in Culadasa AMA sessions ."  
+  Library › Videos (`redesign-2/videos/index.html` line 75), under "Culadasa AMA sessions"
 - [ ] **Paragraph:** "3 questions"  
   Library › Videos (`redesign-2/videos/index.html` line 78), under "Culadasa May 2021 Patreon Q&A No1"; also on 2 more places
 - [ ] **Paragraph:** "9 questions"  
@@ -521,18 +519,18 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Library › Q&A archive (1368)
 
-- [ ] **Page title (browser tab):** "Q&A archive — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa AMA sessions — Culadasa"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 6)
-- [ ] **Search description (hidden):** "Every question from Culadasa’s 61 recorded Q&A sessions, 2017–2021, with links to his answers."  
+- [ ] **Search description (hidden):** "Every question from Culadasa’s 61 recorded AMA sessions, 2017–2021, with links to his answers."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 7)
 - [ ] **Paragraph:** "Recorded online meetings, 2017–2021"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 36)
 - [ ] **Paragraph:** "Culadasa held monthly video AMA / question and answer meetings on Patreon. The videos from these sessions are available on his YouTube site and can be viewed and listened to below."  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 36), under "Q&A archive"
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 36), under "Culadasa AMA sessions"
 - [ ] **Screen-reader label (hidden):** "Sessions by year"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 39), under "Q&A archive"
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 39), under "Culadasa AMA sessions"
 - [ ] **Button:** "Transcription information"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 40), under "Q&A archive"; also on 1 more place
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 40), under "Culadasa AMA sessions"; also on 1 more place
 - [ ] **Screen-reader label (hidden):** "Close"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 42), under "Transcription information"
 - [ ] **Paragraph:** "The questions, keywords and quotes on this page come from the Culadasa Q&A Index , shown here in full and as written. Each time links to the moment the question is asked. Corrections go to the original index. Its introduction follows."  
@@ -571,7 +569,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"
 - [ ] **Sub-heading:** "May 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 65), under "May 2021 #1"
-- [ ] **Link text:** "Return to Q&A list"  
+- [ ] **Link text:** "Return to AMA list"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 65), under "May 2021 #1"; also on 60 more places
 - [ ] **Paragraph:** "You had a video about five ultimate insights on YouTube, and there you talk about left-brain dominance. You said, “There is a neurophysiological basis for Awakening. What happened to you is that you came into this world,…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 66), under "May 2021 #1"
@@ -3584,7 +3582,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Conversations (`redesign-2/conversations/index.html` line 52), under "Culadasa Q&A Index"
 - [ ] **Paragraph:** "Community archive by Alex"  
   Conversations (`redesign-2/conversations/index.html` line 52), under "Culadasa Q&A Index"
-- [ ] **Paragraph:** "Every question asked in his 61 Q&A sessions from October 2017 to May 2021, transcribed with keywords and links to the exact moment in each video. It powers this site’s Q&A archive and Topics search."  
+- [ ] **Paragraph:** "Every question asked in his 61 Q&A sessions from October 2017 to May 2021, transcribed with keywords and links to the exact moment in each video. It powers this site’s Culadasa AMA sessions page and Topics search."  
   Conversations (`redesign-2/conversations/index.html` line 53), under "Culadasa Q&A Index"
 - [ ] **Paragraph:** "Open the index"  
   Conversations (`redesign-2/conversations/index.html` line 53), under "Culadasa Q&A Index"
@@ -4078,7 +4076,7 @@ These appear while using Topics search and the Teachers map; they are not in the
   `redesign-2/assets/topics.js` line 10
 - [ ] "Essays"  
   `redesign-2/assets/topics.js` line 10
-- [ ] "Q&A"  
+- [ ] "AMA"  
   `redesign-2/assets/topics.js` line 10
 - [ ] "Interviews"  
   `redesign-2/assets/topics.js` line 10

@@ -138,3 +138,12 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
     Opened, the questions run down the right while the video stays in view on the left. On phones the video sits above the text.
 
 53. **"Close all N questions" at the end of each open session too (D, 25 Nov 2026).** When a session's questions are open, a second "Close all N questions" sits under the last question. Clicking it closes the list and brings the reader back to the top of that session. D: keep the sessions as banners for now.
+
+54. **"Q&A archive" renamed "Culadasa AMA sessions" (D, 25 Nov 2026).** The new name is used for:
+    - the Library menu item, the footer link, the page heading and the browser tab;
+    - the year index heading, now "All 61 Patreon AMA sessions organized by year";
+    - each session's "Return to AMA list";
+    - the links and headings on Home, Videos, Learn and Conversations;
+    - the Topics filter and result labels, now "AMA".
+
+    The address stays /online-meetings/. Alex's own title, "Culadasa Q&A Index", and the YouTube video titles keep "Q&A", because they are other people's names for their work. The hard-coded "439 questions" on Home and Start here now count from the data (441).

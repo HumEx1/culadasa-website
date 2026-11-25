@@ -10,7 +10,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 | Original page (old menu) | In the redesign | Missing | Edited slightly | Hidden or search-only |
 |---|---|---|---|---|
 | `/` About (the old home page) | Home page | 0 | 0 | 0 |
-| `/online-meetings/` Online Meetings | Main menu › Library › Q&A archive | 0 | 0 | 1 |
+| `/online-meetings/` Online Meetings | Main menu › Library › Culadasa AMA sessions | 0 | 0 | 1 |
 | `/writings/` Teachings › Writings | Main menu › Library › Writings | 0 | 0 | 0 |
 | `/audio/` Teachings › Audio | Main menu › Library › Audio | 0 | 0 | 0 |
 | `/videos/` Teachings › Videos | Main menu › Library › Videos | 0 | 0 | 0 |
@@ -36,7 +36,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 
 ### `/online-meetings/` Online Meetings
 
-- [ ] **How to find it now:** Main menu › Library › Q&A archive
+- [ ] **How to find it now:** Main menu › Library › Culadasa AMA sessions
 - [ ] **Only findable through Topics search**, not shown on any page (line 285): "Culadasa held monthly video AMA / question and answer meetings on Patreon , a crowdsourcing platform. The videos from these sessions are available on his YouTube site and can be viewed and listened to below."
 
 ### `/writings/` Teachings › Writings
@@ -121,7 +121,7 @@ They are still kept at their old addresses, so old links and bookmarks work.
 
 - [ ] Old menu item **Culadasa**: now the CULADASA name at the top of every page, which links to Home
 - [ ] Old menu item **About**: now split in two: Home (portrait, his wishes, the way in) and the Lineage tab (lineage, wishes, obituary)
-- [ ] Old menu item **Online Meetings**: now Library › Q&A archive (same address, /online-meetings/)
+- [ ] Old menu item **Online Meetings**: now Library › Culadasa AMA sessions (same address, /online-meetings/)
 - [ ] Old menu item **Teachings**: now renamed Library; it holds Writings, Audio, Videos and the Q&A archive
 - [ ] Old menu item **Writings**: in the new menu
 - [ ] Old menu item **Audio**: in the new menu

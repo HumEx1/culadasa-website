@@ -86,7 +86,7 @@ GALLERY_UI = ('playhover', 'gallery-page-loader')
 OLD_MENU_NOW = {
     'culadasa': 'the CULADASA name at the top of every page, which links to Home',
     'about': 'split in two: Home (portrait, his wishes, the way in) and the Lineage tab (lineage, wishes, obituary)',
-    'online meetings': 'Library › Q&A archive (same address, /online-meetings/)',
+    'online meetings': 'Library › Culadasa AMA sessions (same address, /online-meetings/)',
     'teachings': 'renamed Library; it holds Writings, Audio, Videos and the Q&A archive',
     'student testimonials': 'merged into Testimonials (old address forwards there)',
     'book reviews': 'merged into The Book page, section "What teachers and authors say" (old address forwards there)',

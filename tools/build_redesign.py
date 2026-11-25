@@ -30,7 +30,7 @@ NAV = [  # grouped by purpose: guidance, library, the book, people (banner colou
     ('Start here', 'start-here/', None),
     ('Learn', 'learn/', None),
     ('Topics', 'topics/', None),
-    ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Q&A archive', 'online-meetings/')]),
+    ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Culadasa AMA sessions', 'online-meetings/')]),
     ('The Book', 'the-book/', None),
     ('Teachers', 'teachers/', None),
     ('Conversations', 'conversations/', None),
@@ -155,7 +155,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
       <a class="wordmark" href="{r or './'}">Culadasa</a>
       <nav aria-label="Footer"><ul>
         <li><a href="{r}start-here/">Start here</a></li><li><a href="{r}learn/">Learn</a></li><li><a href="{r}writings/">Writings</a></li><li><a href="{r}audio/">Audio</a></li>
-        <li><a href="{r}videos/">Videos</a></li><li><a href="{r}online-meetings/">Q&amp;A archive</a></li><li><a href="{r}topics/">Topics</a></li>
+        <li><a href="{r}videos/">Videos</a></li><li><a href="{r}online-meetings/">Culadasa AMA sessions</a></li><li><a href="{r}topics/">Topics</a></li>
         <li><a href="{r}the-book/">The Mind Illuminated</a></li><li><a href="{r}teachers/">Teachers</a></li><li><a href="{r}conversations/">Conversations</a></li>
         <li><a href="{r}testimonials/">Testimonials</a></li><li><a href="{r}lineage/">Lineage</a></li>
       </ul></nav>
@@ -308,7 +308,7 @@ def build():
     <div class="grid cols-4">
       <a class="card" href="start-here/"><span class="meta">New to meditation</span><h3>Start here</h3><p>Seven steps from your first sit to a daily practice, using his own handouts and guided meditations.</p><span class="more">Begin →</span></a>
       <a class="card" href="learn/"><span class="meta">The basics</span><h3>Learn the method</h3><p>Attention and awareness, the ten stages, insight, and practice in daily life, in his words.</p><span class="more">Learn →</span></a>
-      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Topics</h3><p>Search over {round(WORDS/1000)},000 words of his handouts, essays and 439 recorded questions and answers.</p><span class="more">Search →</span></a>
+      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Topics</h3><p>Search over {round(WORDS/1000)},000 words of his handouts, essays and {sum(len(s_["items"]) for s_ in topics["qna"])} recorded questions and answers.</p><span class="more">Search →</span></a>
       <a class="card" href="teachers/"><span class="meta">Practice with someone</span><h3>Find a teacher</h3><p>The 48 teachers certified in The Mind Illuminated Teacher Training Program, by name and place.</p><span class="more">Find →</span></a>
     </div>
   </div>
@@ -325,7 +325,7 @@ def build():
 </section>
 <section class="section">
   <div class="wrap">
-    <p class="label">Watch</p><h2>From the archive</h2><p class="muted">Talks from his YouTube channel, and the May 2021 question-and-answer session. <a href="videos/">All videos</a> · <a href="online-meetings/">Q&amp;A archive</a></p>
+    <p class="label">Watch</p><h2>From the archive</h2><p class="muted">Talks from his YouTube channel, and the May 2021 AMA session. <a href="videos/">All videos</a> · <a href="online-meetings/">Culadasa AMA sessions</a></p>
     <div class="grid">{''.join(video_tile(v, '') for v in feat)}</div>
   </div>
 </section>
@@ -362,12 +362,12 @@ def build():
         ('Learn the map', 'The ten stages show where you are and what to work on next. Read the introduction to the meditation manual, then the stages.', f'<div class="actions"><a class="btn ghost" href="{r}meditation-manual-introduction/">Introduction to the manual</a><a class="btn ghost" href="{r}the-book/">The ten stages</a></div>'),
         ('Understand attention and awareness', 'The two kinds of knowing the whole method trains. His essay on dullness explains why vividness matters.', f'<a class="btn ghost" href="{r}mindful-awareness-vs-dullness/">Mindful Awareness vs Dullness</a>'),
         ('Take it into daily life', 'Practice does not end when you stand up. His handout and essays on daily life.', f'<div class="actions"><a class="btn ghost" href="{r}{UP}Awakening-in-Daily-Life-Handout.pdf">The Path to Awakening in Daily Life (PDF)</a><a class="btn ghost" href="{r}daily-life-practice/">Maintaining practice in daily life</a></div>'),
-        ('Ask your question', 'Someone has probably asked it already. Search 439 recorded questions and jump to his answer.', f'<a class="btn" href="{r}topics/">Search the teachings</a>'),
+        ('Ask your question', 'Someone has probably asked it already. Search ' + str(sum(len(s_['items']) for s_ in topics['qna'])) + ' recorded questions and jump to his answer.', f'<a class="btn" href="{r}topics/">Search the teachings</a>'),
     ]
     body = banner('New to meditation', 'Start here', 'Seven steps through his own handouts, essays and recordings, from your first sit to a daily practice.', 'teal') + f'''
 <section class="section"><div class="wrap measure"><ol class="steps">{''.join(f'<li><div><h3>{t}</h3><p>{d}</p>{a}</div></li>' for t, d, a in steps)}</ol></div></section>
 <section class="section band-panel" id="asked"><div class="wrap measure"><p class="label">Frequently asked</p><h2>What people asked him most</h2>
-<p class="muted">From the 439 questions put to him in his Q&amp;A sessions, 2017–2021. Each link opens his answers, most-discussed first.</p>
+<p class="muted">From the 441 questions put to him in his AMA sessions, 2017–2021. Each link opens his answers, most-discussed first.</p>
 <ul class="doclist">{''.join(f'<li><a href="{r}topics/?q={urllib.parse.quote(f["q"])}&amp;type=Q%26A"><span>{esc(f["label"])}</span><span class="kind">{f["n"]} questions</span></a></li>' for f in content['faq'])}</ul></div></section>'''
     page('start-here/', 'Start here', body, description='A seven-step beginning path through Culadasa’s own handouts, guided meditations and essays.')
 
@@ -462,13 +462,13 @@ def build():
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and Q&A recordings on SoundCloud.')
 
     # ---------------------------------------------------------------- videos (old path)
-    body = banner('Watch', 'Videos', f'{len(videos)} videos: talks, discussions and {len(qna)} recorded question-and-answer sessions.', 'teal',
+    body = banner('Watch', 'Videos', f'{len(videos)} videos: talks, discussions and {len(qna)} recorded AMA (ask me anything) sessions.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
-<section class="section"><div class="wrap"><h2>Question-and-answer sessions</h2><p class="muted">Each session’s questions are listed, with links to the moment he answers, in the <a href="{r}online-meetings/">Q&amp;A archive</a>.</p>
+<section class="section"><div class="wrap"><h2>Culadasa AMA sessions</h2><p class="muted">Each session’s questions are listed, with links to the moment he answers, in <a href="{r}online-meetings/">Culadasa AMA sessions</a>.</p>
 <div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f"{len(s['items'])} questions") for s in list(reversed(qna))[:6])}</div>
 <details class="map-wrap" style="margin-top:24px"><summary>Show all {len(qna)} sessions</summary><div class="grid" style="margin-top:16px">{''.join(video_tile(vid_by_id[s['video']], r, f"{len(s['items'])} questions") for s in list(reversed(qna))[6:])}</div></details></div></section>'''
-    page('videos/', 'Videos', body, description='Talks, discussions and Q&A sessions by Culadasa on YouTube.')
+    page('videos/', 'Videos', body, description='Talks, discussions and AMA sessions by Culadasa on YouTube.')
 
     # ---------------------------------------------------------------- Q&A archive (old path: online-meetings)
     # The whole of Alex's Culadasa Q&A Index, in the site's design (D, 25 Nov 2026): his introduction, every question
@@ -506,14 +506,14 @@ def build():
         first_q = re.sub(r'<[^>]+>', '', s_['questions'][0]['question'][0]) if s_['questions'] and s_['questions'][0]['question'] else ''
         n_ = len(s_['questions'])
         sess += f'''<article class="scard" id="s-{esc(s_['video'])}"><div class="scard-media">{tile}</div>
-<div class="scard-main"><div class="scard-top"><h3>{esc(s_['title'])}</h3><a class="scard-back" href="#sessions">Return to Q&amp;A list</a></div>
+<div class="scard-main"><div class="scard-top"><h3>{esc(s_['title'])}</h3><a class="scard-back" href="#sessions">Return to AMA list</a></div>
 <p class="scard-first">{esc(first_q[:220])}{'…' if len(first_q) > 220 else ''}</p>
 <details class="scard-q"><summary><span class="when-closed">Open all {n_} question{'s' if n_ != 1 else ''}</span><span class="when-open">Close all {n_} question{'s' if n_ != 1 else ''}</span></summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol><p class="scard-close"><button type="button" class="close-q">Close all {n_} question{'s' if n_ != 1 else ''}</button></p></details></div></article>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
-    body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''
+    body = banner('Recorded online meetings, 2017–2021', 'Culadasa AMA sessions', esc(om_intro), 'teal') + f'''
 <section class="section"><div class="wrap">
-<nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} Patreon Q&amp;A sessions organized by year</h2><p class="muted">Choose one to go to it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+<nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} Patreon AMA sessions organized by year</h2><p class="muted">Choose one to go to it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
 <p class="tinfo-open"><button type="button" class="linklike" id="tinfo-btn" aria-haspopup="dialog" aria-controls="tinfo">Transcription information</button></p>
 <dialog id="tinfo" class="tinfo" aria-labelledby="tinfo-h">
   <div class="tinfo-head"><h2 id="tinfo-h">Transcription information</h2><button type="button" class="tinfo-close" id="tinfo-close" aria-label="Close">×</button></div>
@@ -548,7 +548,7 @@ def build():
 }})();
 </script>
 </div></section>'''
-    page('online-meetings/', 'Q&A archive', body, description='Every question from Culadasa’s 61 recorded Q&A sessions, 2017–2021, with links to his answers.')
+    page('online-meetings/', 'Culadasa AMA sessions', body, description='Every question from Culadasa’s 61 recorded AMA sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics
     body = banner('Every teaching, searchable', 'Topics', f'Search over {round(WORDS / 1000)},000 words: handouts, essays and {sum(len(s["items"]) for s in qna)} recorded questions. Results are ranked by how often they mention what you search for.', 'ink') + f'''
@@ -558,7 +558,7 @@ def build():
   <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>
   <p class="status" id="status" role="status">Loading the teachings…</p>
   <div class="results" id="results"></div>
-  <p class="small muted">Sources: his handouts and essays, the About page, video titles, and the Culadasa Q&amp;A Index by Alex. Spellings with and without accents match each other. Common English words are left out of the word cloud.</p>
+  <p class="small muted">Sources: his handouts and essays, the Lineage page, video titles, and the Culadasa Q&amp;A Index (the questions from his AMA sessions). Spellings with and without accents match each other. Common English words are left out of the word cloud.</p>
 </div></section>'''
     page('topics/', 'Topics', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
          extra_js=f'<script src="{r}assets/topics.js" defer></script>\n')
