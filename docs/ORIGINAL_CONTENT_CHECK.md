@@ -96,7 +96,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 ### `/amount-of-concentration-needed-for-awakening/` Essay: Amount of Concentration Needed for Awakening
 
 - [ ] **How to find it now:** Not in the menu; reached only through links inside pages (Home › /writings/ › /amount-of-concentration-needed-for-awakening/)
-- [ ] All of its text, links and media are in the redesign.
+- [ ] **Removed on purpose** (`site/amount-of-concentration-needed-for-awakening/index.html` line 298): "For those of you who are familiar with the physics of light, it has the characteristics of both a wave and a particle simultaneously. If you design an experiement to reveal its wave-like properties, t". Corrected on purpose: the original misspelling "experiement" is spelled "experiment" in the redesign.
 
 ### `/daily-life-practice/` Essay: How to Maintain Practice in Daily Life
 

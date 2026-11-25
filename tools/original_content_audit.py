@@ -79,6 +79,10 @@ HREFS_JOINED = ' '.join(RED_HREFS) + ' ' + DATA_TEXT
 KNOWN = [
     (r'^powered by', 'Removed on purpose: left over from hidden spam adverts on the old WordPress pages.'),
     (r'develping', 'Corrected on purpose: the original typo "develping" is spelled "developing" in the redesign.'),
+    (r'experiement', 'Corrected on purpose: the original misspelling "experiement" is spelled "experiment" in the redesign.'),
+    (r'occuring', 'Corrected on purpose: the original misspelling "occuring" is spelled "occurring" in the redesign.'),
+    (r'noticieable', 'Corrected on purpose: the original misspelling "noticieable" is spelled "noticeable" in the redesign.'),
+    (r'indispensible', 'Corrected on purpose: the original misspelling "indispensible" is spelled "indispensable" in the redesign.'),
     (r'^cultivating-mindfulness-in-daily-life$', 'Removed on purpose: a stray web-address slug shown as a heading on the original page.'),
 ]
 RENAMED_IMAGES = {'culadasa-photo-from-book-cover': 'culadasa-portrait.jpg', 'screen-shot-2014-10-06': 'culadasa-robes.jpg'}

@@ -11,6 +11,10 @@ Usage:  python3 tools/build_redesign.py        -> redesign/    (A2 + D2: portrai
         python3 tools/build_redesign.py 2      -> redesign-2/  (A2 sans base: more open and minimal; lattice
                                                    texture in the masthead; cover graphics only on The Book)
 """
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from spelling import fix_spelling
+
 import json, re, html, pathlib, datetime, urllib.parse, shutil, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -275,6 +279,7 @@ def clean_essay(raw):
     s = re.sub(r'\s(style|class|id)="[^"]*"', '', raw)
     s = re.sub(r'<h2[^>]*>.*?</h2>', '', s, count=1, flags=re.S)
     s = s.replace('develping', 'developing')
+    s = fix_spelling(s)   # plain misspellings in the essays (tools/spelling.py; D, 25 Nov 2026)
     s = re.sub(r'<br\s*/?>\s*</', '</', s)
     s = s.replace('https://culadasa.com/', '../')
     s = re.sub(r'<a[^>]*(justanotherwp|dacremabotanicals)[^>]*>.*?</a>', '', s, flags=re.S)  # host spam on the old pages

@@ -89,6 +89,23 @@ for h2 in h2s:
             q['question'].append(' '.join('• ' + inline(li) for li in el.find_all('li')))
     sessions.append(s)
 
+# Corrections (D, 25 Nov 2026): plain misspellings in the questions, keywords and quotes (tools/spelling.py), and one
+# link in Alex's introduction that misses GitHub's /blob/master/ path (the file itself is named "contibuting" in his repository).
+sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(__file__)))
+from spelling import fix_spelling
+BROKEN = 'https://github.com/transcendentmind/transcendentmind.github.io/culadasa_qna_index_contibuting.md'
+FIXED = 'https://github.com/transcendentmind/transcendentmind.github.io/blob/master/culadasa_qna_index_contibuting.md'
+for p in intro_out:
+    p['html'] = p['html'].replace(BROKEN, FIXED)
+    p['links'] = [(t, FIXED if u == BROKEN else u) for t, u in p['links']]
+for s in sessions:
+    for q in s['questions']:
+        q['question'] = [fix_spelling(x) for x in q['question']]
+        for k in q['keywords']:
+            k['text'] = fix_spelling(k['text'])
+        for qt in q['quotes']:
+            qt['text'] = [fix_spelling(x) for x in qt['text']]
+
 out = {'source': 'https://transcendentmind.github.io/html/culadasa_qna_index.html', 'author': 'Alex',
        'intro': intro_out, 'sessions': sessions}
 print(json.dumps(out, ensure_ascii=False, indent=1))
