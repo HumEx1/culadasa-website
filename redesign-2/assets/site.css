@@ -443,3 +443,10 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 @media (max-width:760px){.qlist li{grid-template-columns:1fr}.qlist a.t{padding:6px 0}}
 .qlist .qquote,.qlist .qquote p{font:italic 400 15.5px/1.6 var(--text)}
 .qlist .qquote .qtime{font:400 13px/1.5 var(--text)}
+/* Q&A archive: the session index leads the page; notes at the foot (D, 25 Nov 2026) */
+.jump-main{margin:0 0 32px;padding:0;border:0}
+.jump-main h2{margin:0 0 6px}
+.jump-main p{font-size:17px;line-height:1.9}
+.jump-main strong{font-size:19px;min-width:3.4em}
+.footnotes .small-prose{font-size:14.5px}
+.footnotes h2{font-size:24px}

@@ -501,13 +501,11 @@ def build():
         sess += f'''<details class="session" id="s-{esc(s_['video'])}"><summary><h3>{esc(s_['title'])}</h3><span class="count">{len(s_['questions'])} questions</span></summary>
 <div class="body"><div>{tile}</div><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></div></details>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
-    body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(content['online_meetings_intro']), 'teal',
-                  f'<p class="small">The <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a> by Alex, shown here in full. Each time links to the moment the question is asked.</p>') + f'''
-<section class="section band-panel" id="about-the-index"><div class="wrap two"><div><p class="label">About this index</p><h2>By Alex, who transcribed it</h2>
-<p class="small muted">Shown here as Alex wrote it. The <a href="{esc(qindex["source"])}" rel="noopener">original index</a> is where corrections go.</p></div>
-<div class="prose measure small-prose">{intro_html}</div></div></section>
-<section class="section"><div class="wrap"><form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
-<nav class="jump" aria-label="Sessions by year"><p class="label">All {len(isess)} sessions by year</p><p class="small muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to open it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(re.sub(r",? ?(19|20)[0-9][0-9]", "", x["title"]).strip() or x["title"])}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+    om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
+    body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''
+<section class="section"><div class="wrap">
+<nav class="jump jump-main" aria-label="Sessions by year"><h2>All {len(isess)} sessions by year</h2><p class="muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to open it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(re.sub(r",? ?(19|20)[0-9][0-9]", "", x["title"]).strip() or x["title"])}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+<form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
 {sess}</div></section>
 <script>
 /* open a session when its link (or the page address) points at it */
@@ -516,7 +514,10 @@ def build():
   window.addEventListener('hashchange', openFromHash); openFromHash();
 }})();
 </script>
-<section class="section"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>'''
+<section class="section"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>
+<section class="section band-panel footnotes" id="about-the-index"><div class="wrap two"><div><p class="label">Notes</p><h2>About this index</h2>
+<p class="small muted">The questions, keywords and quotes on this page are the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a> by Alex, shown here in full and as he wrote it. Each time links to the moment the question is asked. Corrections go to the original index.</p></div>
+<div class="prose measure small-prose">{intro_html}</div></div></section>'''
     page('online-meetings/', 'Q&A archive', body, description='Every question from Culadasa’s 61 recorded Q&A sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics
