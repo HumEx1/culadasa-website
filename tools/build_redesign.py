@@ -49,6 +49,19 @@ if LIBRARY_STYLE == 'side':
     NAV = [('Library', 'videos/', None) if n == 'Library' else (n, h, sub) for n, h, sub in NAV]
 
 
+def stamp_assets(doc):
+    """Add a version stamp (part of a hash of the file) to every stylesheet and script link, so browsers load the new
+    file as soon as it changes instead of a saved copy for up to 10 minutes (D, 25 Nov 2026)."""
+    import hashlib
+    def stamp(m):
+        f = m.group(1)
+        src = ROOT / 'tools' / 'site2.css' if f == 'site2.css' else ROOT / 'redesign' / 'assets' / f
+        if not src.exists():
+            return m.group(0)
+        return f'assets/{f}?v={hashlib.md5(src.read_bytes()).hexdigest()[:8]}"'
+    return re.sub(r'assets/([\w./-]+\.(?:css|js))"', stamp, doc)
+
+
 def library_layout(path, body, r):
     """Put a Library page in the side-menu layout: the gold Library banner on top, the four pages down the left."""
     m = re.match(r'\s*(<header class="banner) [a-z]+(">.*?</header>)(.*)', body, re.S)
@@ -194,6 +207,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
 {extra_js}</body>
 </html>
 '''
+    doc = stamp_assets(doc)
     doc = doc.replace('His principle teachers', 'His principal teachers')   # spelling (D, 25 Nov 2026); the mirror keeps the original
     out = OUT / (path + 'index.html' if path else 'index.html')
     out.parent.mkdir(parents=True, exist_ok=True)
