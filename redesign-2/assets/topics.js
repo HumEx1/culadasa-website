@@ -29,7 +29,7 @@
   // for a set list of teaching terms also the chapter, heading, paragraph and line, and at most three short phrases,
   // one per page (the limits of Google Books' snippet view). Loaded only when a search covers the book.
   var BOOK = null, bookLoading = false;
-  var OPEN = {}, lastQ = '';   // sections the reader opened; kept when late data (book, transcripts) redraws the same search
+  var OPEN = {}, OPENROW = {}, lastQ = '';   // sections the reader opened; kept when late data (book, transcripts) redraws the same search
   var GROUP = { video: [0, 'Videos'], ama: [1, 'AMA sessions'], writings: [2, 'Writings'], about: [2, 'Writings'], all: [2, 'Writings'], audio: [3, 'Audio'], book: [4, 'The Book'] };   // the same kinds as the lozenges
   var TR = null, trLoading = false;   // the video transcripts: loaded only when a search needs them
   var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video', 'Audio': 'audio' };
@@ -200,13 +200,19 @@
     // Nested results (D, 25 Nov 2026): one section per kind, the same kinds as the lozenges, in the order videos, AMA sessions,
     // writings, audio, the book. Each shows its three strongest results; its title or "See all" opens the rest, and
     // "Show fewer" at the bottom closes it again. With one kind chosen, its section opens in full.
+    // Each source is one title row (D, 25 Nov 2026): click it to see where the word appears in it, click again to close.
+    // The link to the source itself sits inside, as the title now opens and closes the row.
+    var OPEN_LABEL = { video: 'Open the video', ama: 'Open the session', writings: 'Open', about: 'Open the page', all: 'Open', audio: 'Open the recording', book: 'About the book' };
     function card(i) {
       var said = (i.snips || []).map(function (s) { return '<p>' + s + '</p>'; }).join('');
       var body = i.qa
         ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
         : (i.html || said);
-      return '<article class="result' + (i.kind === 'book' ? ' result-book' : '') + '"><div class="meta"><span>' + esc(i.label) + '</span><span class="hits">' + i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + '</span>' + (i.credit ? '<span>' + esc(i.credit) + '</span>' : '') + '</div>' +
-        '<h3><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(i.title) + '</a></h3>' + body + '</article>';
+      var key = i.kind + '|' + i.title, open = !!OPENROW[key];
+      var meta = i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + (i.credit ? ' · ' + i.credit : '');
+      return '<article class="result rrow' + (i.kind === 'book' ? ' result-book' : '') + (open ? ' open' : '') + '" data-key="' + esc(key) + '">' +
+        '<h3><button type="button" class="rr-title" aria-expanded="' + open + '"><span class="rr-name">' + esc(i.title) + '</span><span class="rr-meta">' + esc(meta) + '</span></button></h3>' +
+        '<div class="rr-body">' + body + '<p class="rr-open"><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(OPEN_LABEL[i.kind] || 'Open') + ' →</a></p></div></article>';
     }
     var groups = [];
     shown.forEach(function (i) {
@@ -216,13 +222,13 @@
       last.items.push(i);
     });
     var single = selected().length === 1;
-    if (clean !== lastQ) { OPEN = {}; lastQ = clean; }
+    if (clean !== lastQ) { OPEN = {}; OPENROW = {}; lastQ = clean; }
     resultsEl.innerHTML = groups.map(function (g, gi) {
-      var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 3, open = single || extra <= 0 || !!OPEN[g.name];
+      var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 4, open = single || extra <= 0 || !!OPEN[g.name];
       return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
         '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? ' places' : ' mentions') + '</span></button></h2>' +
-        g.items.map(function (i, k) { return k < 3 ? card(i) : '<div class="rg-more">' + card(i) + '</div>'; }).join('') +
-        (extra > 0 ? '<p class="rg-foot"><button type="button" class="linklike rg-all">See all ' + g.items.length + ' results in ' + esc(g.name.split(' · ')[0]) + '</button><button type="button" class="linklike rg-less">Show fewer</button></p>' : '') +
+        g.items.map(function (i, k) { return k < 4 ? card(i) : '<div class="rg-more">' + card(i) + '</div>'; }).join('') +
+        (extra > 0 ? '<p class="rg-foot"><button type="button" class="linklike rg-all">Show all ' + g.items.length + ' in ' + esc(g.name) + '</button><button type="button" class="linklike rg-less">Show fewer</button></p>' : '') +
         '</section>';
     }).join('');
   }
@@ -298,6 +304,8 @@
   }
 
   resultsEl.addEventListener('click', function (e) {
+    var t = e.target.closest('.rr-title');
+    if (t) { var row = t.closest('.rrow'), o = !row.classList.contains('open'); row.classList.toggle('open', o); t.setAttribute('aria-expanded', o); OPENROW[row.getAttribute('data-key')] = o; return; }
     var b = e.target.closest('.rg-toggle, .rg-all, .rg-less'); if (!b) return;
     var sec = b.closest('.rgroup'), open = b.classList.contains('rg-less') ? false : b.classList.contains('rg-all') ? true : !sec.classList.contains('open');
     sec.classList.toggle('open', open);

@@ -684,9 +684,9 @@ def build():
   <form class="search" id="topic-form" role="search"><label class="sr" for="q">Search the teachings</label><input id="q" name="q" type="search" placeholder="Try: compassion, dullness, jhāna, craving" autocomplete="off"><button class="btn" type="submit">Search</button></form>
   <div class="filters" id="filters" aria-label="Filter by kind"></div>
   </div>
-  <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>
   <p class="status" id="status" role="status">Loading the teachings…</p>
   <div class="results" id="results"></div>
+  <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>   <!-- below the results, so a search shows its results first (D, 25 Nov 2026) -->
   <p class="small muted">Sources: his handouts and essays, the Lineage page, the Culadasa Q&amp;A Index (the questions from his AMA sessions), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. You can also type a whole question. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
 </div></section>'''
     page('topics/', 'Search', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
