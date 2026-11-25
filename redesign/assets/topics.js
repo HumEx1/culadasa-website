@@ -29,6 +29,7 @@
   // for a set list of teaching terms also the chapter, heading, paragraph and line, and at most three short phrases,
   // one per page (the limits of Google Books' snippet view). Loaded only when a search covers the book.
   var BOOK = null, bookLoading = false;
+  var OPEN = {}, lastQ = '';   // sections the reader opened; kept when late data (book, transcripts) redraws the same search
   var GROUP = { video: [0, 'Videos'], ama: [1, 'AMA sessions'], writings: [2, 'Writings'], about: [2, 'Writings'], all: [2, 'Writings'], audio: [3, 'Audio'], book: [4, 'The Book'] };   // the same kinds as the lozenges
   var TR = null, trLoading = false;   // the video transcripts: loaded only when a search needs them
   var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video', 'Audio': 'audio' };
@@ -215,9 +216,10 @@
       last.items.push(i);
     });
     var single = selected().length === 1;
+    if (clean !== lastQ) { OPEN = {}; lastQ = clean; }
     resultsEl.innerHTML = groups.map(function (g, gi) {
-      var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 3, open = single || extra <= 0;
-      return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '">' +
+      var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 3, open = single || extra <= 0 || !!OPEN[g.name];
+      return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
         '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? ' places' : ' mentions') + '</span></button></h2>' +
         g.items.map(function (i, k) { return k < 3 ? card(i) : '<div class="rg-more">' + card(i) + '</div>'; }).join('') +
         (extra > 0 ? '<p class="rg-foot"><button type="button" class="linklike rg-all">See all ' + g.items.length + ' results in ' + esc(g.name.split(' · ')[0]) + '</button><button type="button" class="linklike rg-less">Show fewer</button></p>' : '') +
@@ -299,6 +301,7 @@
     var b = e.target.closest('.rg-toggle, .rg-all, .rg-less'); if (!b) return;
     var sec = b.closest('.rgroup'), open = b.classList.contains('rg-less') ? false : b.classList.contains('rg-all') ? true : !sec.classList.contains('open');
     sec.classList.toggle('open', open);
+    OPEN[sec.getAttribute('data-name')] = open;
     sec.querySelector('.rg-toggle').setAttribute('aria-expanded', open);
     if (!open) sec.scrollIntoView({ block: 'start', behavior: 'smooth' });
   });
