@@ -651,4 +651,4 @@ body[data-section="book"] .section.book-finder{padding-top:0;border-top:0}
 /* the quote box reaches out to the left so its text lines up with the paragraphs above (D, 25 Nov 2026) */
 @media (min-width:761px){.book-lead-quote{margin-left:-27px}}
 /* Buy from Publisher spans the cover width, so it reads as part of the cover rather than floating beside it (D, 25 Nov 2026) */
-.book-buy .btn{display:flex;justify-content:center;width:100%;box-sizing:border-box}
+.book-buy{text-align:center}   /* its normal width, centred under the cover (D, 25 Nov 2026) */
