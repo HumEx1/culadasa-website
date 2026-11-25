@@ -232,7 +232,7 @@
     });
     var single = selected().length === 1;
     if (clean !== lastQ) { OPEN = {}; OPENROW = {}; lastQ = clean; }
-    resultsEl.innerHTML = (groups.length ? '<p class="rr-hint">Click a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
+    resultsEl.innerHTML = stageLink(clean) + (groups.length ? '<p class="rr-hint">Click a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
       var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 4, open = single || extra <= 0 || !!OPEN[g.name];
       return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
         '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? ' places' : ' mentions') + '</span></button></h2>' +
@@ -240,6 +240,27 @@
         (extra > 0 ? '<p class="rg-foot"><button type="button" class="linklike rg-all">Show all ' + g.items.length + ' in ' + esc(g.name) + '</button><button type="button" class="linklike rg-less">Show fewer</button></p>' : '') +
         '</section>';
     }).join('');
+  }
+
+  // A search for a stage ("stage 4", "stage four", "fourth stage") or for "ten stages" first offers that stage's page,
+  // with a video to start with and everything he said about it (D, 25 Nov 2026)
+  var STAGE_NAMES = ['Establishing a practice', 'Interrupted attention and overcoming mind-wandering', 'Extended attention and overcoming forgetting',
+    'Continuous attention and overcoming gross distraction and strong dullness', 'Overcoming subtle dullness and increasing mindfulness',
+    'Subduing subtle distraction', 'Exclusive attention and unifying the mind', 'Mental pliancy and pacifying the senses',
+    'Mental and physical pliancy and calming the intensity of meditative joy', 'Tranquility and equanimity'];
+  var SW = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+  var SO = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'];
+  function stageLink(q) {
+    var f = fold(q).replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim(), n = 0, m;
+    if ((m = /^stage (10|[1-9]|[a-z]+)$/.exec(f))) n = /\d/.test(m[1]) ? +m[1] : SW.indexOf(m[1]) + 1;
+    else if ((m = /^(?:the )?([a-z]+) stage$/.exec(f))) n = SO.indexOf(m[1]) + 1;
+    var base = location.pathname.indexOf('/topics/') >= 0 || location.pathname.indexOf('/the-book/') >= 0 ? '../' : '';
+    if (n >= 1 && n <= 10) {
+      var W = SW[n - 1].charAt(0).toUpperCase() + SW[n - 1].slice(1);
+      return '<p class="stage-callout"><a href="' + base + 'ten-stages/stage-' + n + '/"><strong>Stage ' + W + ': ' + esc(STAGE_NAMES[n - 1]) + '</strong> — a video to start with and everything he said about this stage →</a></p>';
+    }
+    if (/^(the )?(10|ten) stages?$/.test(f)) return '<p class="stage-callout"><a href="' + base + 'ten-stages/"><strong>The ten stages</strong> — each stage with a video to start with and everything he said about it →</a></p>';
+    return '';
   }
 
   function hms(s) { var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + (m < 10 ? '0' : '') : '') + m + ':' + (x < 10 ? '0' : '') + x; }

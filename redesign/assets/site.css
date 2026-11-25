@@ -704,3 +704,8 @@ a.play:focus-visible, a.tstamp:focus-visible, li > a.t:focus-visible, p.qtime a:
 .learn-stages .stages.compact-grid{margin:18px 0 6px}
 .learn-stages .stages.compact-grid a{padding:10px 0}
 .learn-stages h2{margin-top:6px}
+/* a search for a stage first offers that stage's page (D, 25 Nov 2026) */
+.stage-callout{margin:16px 0 4px;padding:14px 18px;border:1px solid var(--line-2);border-left:3px solid var(--gold-line,#c4972f);background:#fff;font:400 16px/1.5 var(--display)}
+.stage-callout a{color:var(--ink);text-decoration:none}
+.stage-callout a:hover strong,.stage-callout a:focus-visible strong{color:var(--teal)}
+.stage-callout strong{font-weight:500}
