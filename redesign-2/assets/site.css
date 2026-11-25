@@ -570,59 +570,14 @@ body[data-section="teachers"] .banner .lead{max-width:none}
   .lib-side a[aria-current]{border-color:var(--gold-line,#c4972f);box-shadow:0 0 0 1px var(--gold-line,#c4972f)}
 }
 .lineage-link{margin:-6px 0 22px;font:500 15px/1.4 var(--display);letter-spacing:.02em}
-/* Library banner at half height, so more of the media and the side menu sit above the fold (D, 25 Nov 2026) */
-@media (min-width:761px){body:not([data-group="book"]) .banner.lib-banner{min-height:0;padding:30px 0 28px}}
-body:not([data-group="book"]) .banner.lib-banner .label{margin-bottom:8px}
-body:not([data-group="book"]) .banner.lib-banner h1{margin:0 0 .15em}
-.banner.lib-banner .wrap > p:last-child{margin-top:14px;margin-bottom:0}
-.lib-main > .section:first-child{padding-top:28px}
-.lib-side{padding-top:28px}
-@media (max-width:760px){body:not([data-group="book"]) .banner.lib-banner{padding:24px 0 22px}}
-@media (min-width:761px){
-  .banner.lib-banner .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:32px;align-items:end}
-  .banner.lib-banner .wrap > *{grid-column:1}
-  .banner.lib-banner .wrap > p:last-child:not(.lead){grid-column:2;grid-row:1 / span 3;align-self:end;margin:0}
-  .banner.lib-banner h1{font-size:44px;line-height:1.1}
-  .banner.lib-banner .lead{font-size:17px;line-height:1.5}
-}
-@media (min-width:761px){body:not([data-group="book"]) .banner.lib-banner{padding:20px 0 18px}}
-.banner.lib-banner .label::after{margin-top:6px}
-.lib-main > .section{padding-top:32px;padding-bottom:32px}
-.lib-main > .section:first-child{padding-top:24px}
-.lib-side{padding-top:24px}
-@media (min-width:761px){.banner.lib-banner .label{display:none}}   /* the side menu and main menu already say Library */
-@media (max-width:760px){
-  .banner.lib-banner .label{display:none}
-  .banner.lib-banner h1{font-size:34px;margin-bottom:.1em}
-  .banner.lib-banner .lead{font-size:16px;line-height:1.45}
-  .banner.lib-banner .wrap > p:last-child:not(.lead){margin:12px 0 0}
-  .lib-side{padding-top:16px}
-}
-/* all four Library banners the same height (D, 25 Nov 2026) */
-@media (min-width:761px){body:not([data-group="book"]) .banner.lib-banner{min-height:160px;display:flex;align-items:center}
-  .banner.lib-banner > .wrap{width:100%}}
-@media (max-width:760px){body:not([data-group="book"]) .banner.lib-banner{min-height:240px;display:flex;align-items:center}.banner.lib-banner > .wrap{width:100%}}
-/* Library banners: title, description and button in exactly the same place on all four pages, so moving down
-   the side menu doesn't make anything jump (D, 25 Nov 2026). Fixed height, content from the top, same type sizes. */
-@media (min-width:761px){
-  body:not([data-group="book"]) .banner.lib-banner{height:160px;min-height:0;padding:26px 0 0;display:block}
-  .banner.lib-banner .wrap{align-items:start}
-  .banner.lib-banner .wrap > p:last-child:not(.lead){grid-row:1;align-self:center}
-  .banner.lib-banner h1{font-size:44px;line-height:52px;margin:0 0 6px}
-  .banner.lib-banner .lead{font-size:17px;line-height:25px;margin:0;max-width:var(--measure)}
-}
-@media (max-width:760px){
-  body:not([data-group="book"]) .banner.lib-banner{height:240px;min-height:0;padding:22px 0 0;display:block}
-  .banner.lib-banner h1{font-size:34px;line-height:40px;margin:0 0 6px}
-  .banner.lib-banner .lead{font-size:16px;line-height:23px;margin:0}
-  .banner.lib-banner .wrap > p:last-child:not(.lead){margin:12px 0 0}
-}
-body:not([data-group="book"]) .banner.lib-banner .wrap > p.lead{margin:0}
-body:not([data-group="book"]) .banner.lib-banner h1{margin:0 0 8px}
-@media (min-width:761px){
-  .banner.lib-banner .wrap{display:block;position:relative}
-  .banner.lib-banner .wrap > p:last-child:not(.lead){position:absolute;right:24px;top:3px;margin:0}
-}
+/* Library banners at the site's standard size, with their label and short rule (D, 25 Nov 2026). Every banner line
+   sits in the same place on all four pages, and the banner is one fixed height, so nothing moves between tabs. */
+.lib-side{padding-top:48px}
+@media (min-width:761px){body:not([data-group="book"]) .banner.lib-banner{height:305px;min-height:0}}
+@media (max-width:760px){body:not([data-group="book"]) .banner.lib-banner{height:363px;min-height:0}}
+.lib-main > .section:first-child{padding-top:48px}   /* the search box starts at the same height on all four pages */
+.lib-side{padding-top:48px}
+@media (max-width:900px){.lib-side{padding-top:24px}}
 
 /* The search unit framed as one tool wherever it appears (D, 25 Nov 2026): box, pills and Clear inside a soft panel */
 .search-panel,.search.scoped{border:1px solid var(--line-2);border-radius:24px;background:rgba(255,255,255,.5);padding:20px}
@@ -630,3 +585,9 @@ body:not([data-group="book"]) .banner.lib-banner h1{margin:0 0 8px}
 .search-panel .filters{margin-top:14px}
 .search.scoped{margin:0 0 28px}
 @media (max-width:760px){.search-panel,.search.scoped{padding:14px;border-radius:20px}}
+/* on desktop the Library banner's button (Open YouTube / Open SoundCloud) sits to the right of the title, so the banner keeps
+   the site's standard height without the button spilling out */
+@media (min-width:761px){
+  .banner.lib-banner .wrap{position:relative}
+  .banner.lib-banner .wrap > p:last-child:not(.lead){position:absolute;right:24px;top:51px;margin:0}
+}

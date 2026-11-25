@@ -67,7 +67,7 @@ def library_layout(path, body, r):
     m = re.match(r'\s*(<header class="banner) [a-z]+(">.*?</header>)(.*)', body, re.S)
     if not m:
         return body
-    head = m.group(1) + ' teal lib-banner' + re.sub(r'<p class="label">.*?</p>', '<p class="label">Library</p>', m.group(2), count=1, flags=re.S)
+    head = m.group(1) + ' teal lib-banner' + m.group(2)   # each page keeps its own label (Watch, Listen, Read…) and rule
     items = ''.join(f'<li><a href="{r}{h}"{" aria-current=\"page\"" if h == path else ""}>{esc(l)}</a></li>' for l, h in LIB_PAGES)
     side = f'<nav class="lib-side" aria-label="Library"><p class="label">Library</p><ul>{items}</ul></nav>'
     return f'{head}<div class="lib-layout wrap">{side}<div class="lib-main">{m.group(3)}</div></div>'
