@@ -26,8 +26,11 @@ for it in re.findall(r'<item>(.*?)</item>', src, re.S):
         date = parsedate_to_datetime(tag('pubDate', it)).date().isoformat()
     except Exception:
         date = ''
+    # every link in the description is kept (D, 25 Nov 2026), so handouts and other files can later be attached to the listing
+    raw = tag('description', it)
+    links = list(dict.fromkeys(re.sub(r'[).,;]+$', '', u) for u in re.findall(r'(?:https?://|www\.)[^\s<>"]+', raw)))
     out.append({'title': tag('title', it), 'url': tag('link', it), 'date': date,
-                'duration': tag('itunes:duration', it), 'text': '\n'.join(keep)})
+                'duration': tag('itunes:duration', it), 'text': '\n'.join(keep), 'links': links})
 print(json.dumps({'source': 'https://feeds.soundcloud.com/users/soundcloud:users:111086538/sounds.rss',
                   'count': len(out), 'recordings': out}, ensure_ascii=False, indent=1))
 print(f'{len(out)} recordings, {sum(1 for r in out if r["text"])} with descriptions kept', file=sys.stderr)
