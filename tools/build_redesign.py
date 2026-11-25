@@ -26,15 +26,15 @@ qindex = json.loads((D / 'qna_index.json').read_text())   # Alex's Q&A index, pa
 esc = html.escape
 YEAR = datetime.date.today().year
 
-NAV = [  # grouped by purpose: guidance, library, the book, people (banner colours follow the groups)
+NAV = [  # order and names (D, 25 Nov 2026): Start here · Learn · Library · The Book · Teachers · Conversations · Lineage · Search
     ('Start here', 'start-here/', None),
     ('Learn', 'learn/', None),
-    ('Topics', 'topics/', None),
     ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Culadasa AMA sessions', 'online-meetings/')]),
     ('The Book', 'the-book/', None),
     ('Teachers', 'teachers/', None),
     ('Conversations', 'conversations/', None),
     ('Lineage', 'lineage/', None),
+    ('Search', 'topics/', None),   # the Topics page, renamed; its address stays /topics/ so old links keep working
 ]
 SOCIAL = [
     ('YouTube', 'https://www.youtube.com/@Culadasa',
@@ -155,7 +155,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
       <a class="wordmark" href="{r or './'}">Culadasa</a>
       <nav aria-label="Footer"><ul>
         <li><a href="{r}start-here/">Start here</a></li><li><a href="{r}learn/">Learn</a></li><li><a href="{r}writings/">Writings</a></li><li><a href="{r}audio/">Audio</a></li>
-        <li><a href="{r}videos/">Videos</a></li><li><a href="{r}online-meetings/">Culadasa AMA sessions</a></li><li><a href="{r}topics/">Topics</a></li>
+        <li><a href="{r}videos/">Videos</a></li><li><a href="{r}online-meetings/">Culadasa AMA sessions</a></li><li><a href="{r}topics/">Search</a></li>
         <li><a href="{r}the-book/">The Mind Illuminated</a></li><li><a href="{r}teachers/">Teachers</a></li><li><a href="{r}conversations/">Conversations</a></li>
         <li><a href="{r}testimonials/">Testimonials</a></li><li><a href="{r}lineage/">Lineage</a></li>
       </ul></nav>
@@ -323,7 +323,7 @@ def build():
     <div class="grid cols-4">
       <a class="card" href="start-here/"><span class="meta">New to meditation</span><h3>Start here</h3><p>Seven steps from your first sit to a daily practice, using his own handouts and guided meditations.</p><span class="more">Begin →</span></a>
       <a class="card" href="learn/"><span class="meta">The basics</span><h3>Learn the method</h3><p>Attention and awareness, the ten stages, insight, and practice in daily life, in his words.</p><span class="more">Learn →</span></a>
-      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Topics</h3><p>Search over {round(WORDS/1000)},000 words of his handouts, essays and {sum(len(s_["items"]) for s_ in topics["qna"])} recorded questions and answers.</p><span class="more">Search →</span></a>
+      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Search</h3><p>Search over {round(WORDS/1000)},000 words of his handouts, essays and {sum(len(s_["items"]) for s_ in topics["qna"])} recorded questions and answers.</p><span class="more">Search →</span></a>
       <a class="card" href="teachers/"><span class="meta">Practice with someone</span><h3>Find a teacher</h3><p>The 48 teachers certified in The Mind Illuminated Teacher Training Program, by name and place.</p><span class="more">Find →</span></a>
     </div>
   </div>
@@ -605,7 +605,7 @@ def build():
     page('online-meetings/', 'Culadasa AMA sessions', body, description='Every question from Culadasa’s 61 recorded AMA sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics
-    body = banner('Every teaching, searchable', 'Topics', f'Search over {round(WORDS / 1000)},000 words: handouts, essays and {sum(len(s["items"]) for s in qna)} recorded questions. Results are ranked by how often they mention what you search for.', 'ink') + f'''
+    body = banner('Every teaching, searchable', 'Search', f'Search over {round(WORDS / 1000)},000 words: handouts, essays and {sum(len(s["items"]) for s in qna)} recorded questions. Results are ranked by how often they mention what you search for.', 'ink') + f'''
 <section class="section"><div class="wrap">
   <form class="search" id="topic-form" role="search"><label class="sr" for="q">Search the teachings</label><input id="q" name="q" type="search" placeholder="Try: compassion, dullness, jhāna, craving" autocomplete="off"><button class="btn" type="submit">Search</button></form>
   <div class="filters" id="filters" aria-label="Filter by kind"></div>
@@ -614,7 +614,7 @@ def build():
   <div class="results" id="results"></div>
   <p class="small muted">Sources: his handouts and essays, the Lineage page, the Culadasa Q&amp;A Index (the questions from his AMA sessions), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
 </div></section>'''
-    page('topics/', 'Topics', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
+    page('topics/', 'Search', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
          extra_js=f'<script src="{r}assets/topics.js" defer></script>\n')
 
     # ---------------------------------------------------------------- conversations (blog)
