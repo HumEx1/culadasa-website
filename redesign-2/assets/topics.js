@@ -47,7 +47,8 @@
     }
     return out;
   }
-  // AMA results open the session on the Culadasa AMA sessions page (opened, outlined, marked in its list); their times still go to the video (D, 25 Nov 2026).
+  // AMA results say "Open the video" and open it on YouTube, at the first mention when the transcript has one (D, 25 Nov 2026);
+  // a second link opens the session's questions on the AMA sessions page.
   // Links that leave the site, and PDFs, open in a new tab (D, 24 Nov 2026).
   function nt(u) { return /^https?:/.test(u) || /\.pdf$/i.test(u) ? ' target="_blank" rel="noopener"' : ''; }
   function isLetter(ch) { return /[a-z0-9À-ɏḀ-ỿ]/i.test(ch || ''); }
@@ -163,8 +164,8 @@
         var first = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + timeAt(v, hits[0][0]) + 's';
         if (amaTitle[v.id]) {
           var a = amaItem[v.id];
-          if (a) { a.n += cnt(hits); a.snips = snips; }
-          else items.push({ kind: 'ama', label: 'AMA', title: amaTitle[v.id], url: '../online-meetings/#s-' + v.id, n: cnt(hits), credit: 'Transcript', snips: snips });
+          if (a) { a.n += cnt(hits); a.snips = snips; a.first = first; }
+          else items.push({ kind: 'ama', label: 'AMA', title: amaTitle[v.id], url: '../online-meetings/#s-' + v.id, n: cnt(hits), credit: 'Transcript', snips: snips, first: first });
           return;
         }
         var it = byVid[v.id];
@@ -202,17 +203,25 @@
     // "Show fewer" at the bottom closes it again. With one kind chosen, its section opens in full.
     // Each source is one title row (D, 25 Nov 2026): click it to see where the word appears in it, click again to close.
     // The link to the source itself sits inside, as the title now opens and closes the row.
-    var OPEN_LABEL = { video: 'Open the video', ama: 'Open the session', writings: 'Open', about: 'Open the page', all: 'Open', audio: 'Open the recording', book: 'About the book' };
+    var OPEN_LABEL = { video: 'Open the video', ama: 'Open the video', writings: 'Open', about: 'Open the page', all: 'Open', audio: 'Open the recording', book: 'About the book' };
+    function openLinks(i) {
+      var m = i.kind === 'ama' && /#s-([\w-]{11})$/.exec(i.url || '');
+      if (m) {
+        var v = i.first || 'https://www.youtube.com/watch?v=' + m[1];
+        return '<a href="' + esc(v) + '" target="_blank" rel="noopener">Open the video →</a><a href="' + esc(i.url) + '">All questions in this session →</a>';
+      }
+      return '<a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(OPEN_LABEL[i.kind] || 'Open') + ' →</a>';
+    }
     function card(i) {
       var said = (i.snips || []).map(function (s) { return '<p>' + s + '</p>'; }).join('');
       var body = i.qa
-        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
+        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> <span class="qsnip">' + snippet(x.it.text, x.hits, 0) + '</span></li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
         : (i.html || said);
       var key = i.kind + '|' + i.title, open = !!OPENROW[key];
       var meta = i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + (i.credit ? ' · ' + i.credit : '');
       return '<article class="result rrow' + (i.kind === 'book' ? ' result-book' : '') + (open ? ' open' : '') + '" data-key="' + esc(key) + '">' +
         '<h3><button type="button" class="rr-title" aria-expanded="' + open + '"><span class="rr-name">' + esc(i.title) + '</span><span class="rr-meta">' + esc(meta) + '</span></button></h3>' +
-        '<div class="rr-body">' + body + '<p class="rr-open"><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(OPEN_LABEL[i.kind] || 'Open') + ' →</a></p></div></article>';
+        '<div class="rr-body">' + body + '<p class="rr-open">' + openLinks(i) + '</p></div></article>';
     }
     var groups = [];
     shown.forEach(function (i) {
@@ -223,7 +232,7 @@
     });
     var single = selected().length === 1;
     if (clean !== lastQ) { OPEN = {}; OPENROW = {}; lastQ = clean; }
-    resultsEl.innerHTML = groups.map(function (g, gi) {
+    resultsEl.innerHTML = (groups.length ? '<p class="rr-hint">Click a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
       var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 4, open = single || extra <= 0 || !!OPEN[g.name];
       return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
         '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? ' places' : ' mentions') + '</span></button></h2>' +

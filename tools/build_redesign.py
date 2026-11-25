@@ -644,7 +644,7 @@ def build():
           ('Intensive Meditation Retreats', '283729524'), ('Patreon Q&As', '967729615')]
     body = banner('Listen', 'Audio', 'Guided meditations, teaching retreats and questions and answers: 401 recordings in 26 collections on his SoundCloud.', 'ink',
                   '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section tight"><div class="wrap">' + scoped_search(r, 'audio', 'Search the titles and notes of 401 recordings', 'a-q') + '</div></section><section class="section"><div class="wrap"><div class="grid">' + ''.join(
-        f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All {len(audio_all)} recordings, grouped by retreat or series. Open one for its notes, the handouts that go with it, and the moments in it.</p>{row_groups(audio_groups)}</div></section>'
+        f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All {len(audio_all)} recordings, grouped by retreat or series. Open one for its notes, the handouts that go with it, and the moments in it.</p><p class="rr-hint">Click a title to open it.</p>{row_groups(audio_groups)}</div></section>'
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud.')
 
     # ---------------------------------------------------------------- videos (old path)
@@ -673,7 +673,7 @@ def build():
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
 <section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search what he says in the videos', 'v-q')}</div></section>
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
-<section class="section"><div class="wrap"><h2>Every video</h2><p class="muted">All {len(all_vids)} of his videos on YouTube: talks first, then the AMA sessions by year. Open one to play it here.</p>{row_groups(video_groups)}</div></section>'''
+<section class="section"><div class="wrap"><h2>Every video</h2><p class="muted">All {len(all_vids)} of his videos on YouTube: talks first, then the AMA sessions by year. Open one to play it here.</p><p class="rr-hint">Click a title to open it.</p>{row_groups(video_groups)}</div></section>'''
     page('videos/', 'Videos', body, description='Talks, discussions and AMA sessions by Culadasa on YouTube.')
 
     # ---------------------------------------------------------------- Q&A archive (old path: online-meetings)

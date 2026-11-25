@@ -674,3 +674,15 @@ a.play:focus-visible, a.tstamp:focus-visible, li > a.t:focus-visible, p.qtime a:
 .lrow .video-card{max-width:560px;margin-bottom:8px}
 .rgroup .result-group{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 0 6px;margin:28px 0 0;border-top:2px solid var(--gold-line,#c4972f);font:500 14px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
 .rgroup .result-group .rg-count{font-size:12px;letter-spacing:.08em;color:var(--muted)}
+
+/* Lists of titles read as lists (D, 25 Nov 2026): under each section heading the titles are indented, each with a small
+   teal bullet, and one short line says a title opens. The same on the search results and the Audio and Videos lists. */
+.rgroup > .rrow, .rgroup > .rg-more > .rrow, .rgroup > .lrow, .rgroup > .rg-more > .lrow, .rgroup > .rg-foot{margin-left:26px}
+.rgroup .rr-name{position:relative}
+.rgroup .rr-name::before{content:"";position:absolute;left:-17px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.rr-hint{margin:14px 0 0;padding:6px 12px;border-left:3px solid var(--teal);background:var(--teal-pale);font:500 14px/1.4 var(--display);color:var(--ink);width:max-content;max-width:100%;box-sizing:border-box}
+.rr-open a + a{margin-left:22px}
+@media (max-width:760px){.rgroup > .rrow, .rgroup > .rg-more > .rrow, .rgroup > .lrow, .rgroup > .rg-more > .lrow, .rgroup > .rg-foot{margin-left:18px}.rgroup .rr-name::before{left:-13px}}
+/* AMA questions in search results: the time button, then the question as one block beside it (the matched word no longer breaks onto its own line) */
+.rrow .qlist li{grid-template-columns:max-content minmax(0,1fr)}
+@media (max-width:760px){.rrow .qlist li{grid-template-columns:1fr}}
