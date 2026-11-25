@@ -29,8 +29,11 @@
         return da - db;
       }).forEach(function (c) { list.appendChild(c); });
     }
-    var located = cards.filter(function (c) { return c.dataset.lat; }).length;
-    statusEl.textContent = shown + ' of ' + cards.length + ' teachers shown. ' + located + (located === 1 ? ' has' : ' have') + ' a location on the map so far.' + (here ? ' Nearest first.' : '');
+    // the "Sample Teacher" mock-ups are not counted as teachers: the count is of real, certified teachers only
+    var real = function (c) { return c.dataset.name.indexOf('sample teacher') !== 0; };
+    var shownReal = cards.filter(function (c) { return !c.hidden && real(c); }).length, total = cards.filter(real).length;
+    var samples = cards.filter(function (c) { return !c.hidden && !real(c); }).length;
+    statusEl.textContent = shownReal + ' of ' + total + ' teachers shown.' + (samples ? ' The ' + samples + ' sample profile' + (samples === 1 ? '' : 's') + ' on the map ' + (samples === 1 ? 'is a mock-up' : 'are mock-ups') + ' until teachers send their details.' : '') + (here ? ' Nearest first.' : '');
   }
   q.addEventListener('input', apply);
   document.getElementById('teacher-form').addEventListener('submit', function (e) { e.preventDefault(); apply(); });
