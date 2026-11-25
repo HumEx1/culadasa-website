@@ -60,6 +60,50 @@
       return hits;
     };
   }
+  // All the words close together (within about 200 characters), in any order. Each place counts once.
+  var STOP = {};
+  ('a an the and or but of to in on at for with from by as is are was were be been am it its this that these those what which ' +
+   'how why when where who whom do does did doing i you he she we they me my your his her our their can could would should ' +
+   'will about if not no so there here than then just very into out up any some all more most such have has had').split(' ').forEach(function (w) { STOP[w] = 1; });
+  function nearMatcher(q) {
+    var all = fold(q).split(/\s+/).filter(Boolean), words = all.filter(function (w) { return !STOP[w.replace(/['’]/g, '')]; });
+    if (!words.length) words = all;
+    if (words.length < 2) { var one = matcher(words.join(' ')); one.words = words; return words.length ? one : null; }
+    var res = words.map(function (w) { return new RegExp(alts(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')) + "[a-z0-9À-ɏḀ-ỿ]*", 'g'); });
+    var W = 200;
+    var f = function (text, folded) {
+      var lists = [];
+      for (var i = 0; i < res.length; i++) {
+        var l = [], m; res[i].lastIndex = 0;
+        while ((m = res[i].exec(folded))) { if (m[0] === '') { res[i].lastIndex++; continue; } if (!isLetter(folded[m.index - 1])) l.push([m.index, m.index + m[0].length]); }
+        if (!l.length) return [];
+        lists.push(l);
+      }
+      lists.sort(function (a, b) { return a.length - b.length; });   // walk the rarest word
+      var flat = [], count = 0, lastEnd = -1;
+      lists[0].forEach(function (a) {
+        if (a[0] < lastEnd) return;
+        var win = [a];
+        for (var j = 1; j < lists.length; j++) {
+          var L = lists[j], lo = 0, hi = L.length - 1;   // nearest by binary search: the lists are in text order
+          while (lo < hi) { var mid = (lo + hi) >> 1; if (L[mid][0] < a[0]) lo = mid + 1; else hi = mid; }
+          var best = null;
+          [L[lo - 1], L[lo]].forEach(function (h) { if (h && Math.abs(h[0] - a[0]) <= W && (!best || Math.abs(h[0] - a[0]) < Math.abs(best[0] - a[0]))) best = h; });
+          if (!best) return;
+          win.push(best);
+        }
+        count++;
+        lastEnd = Math.max.apply(null, win.map(function (h) { return h[1]; }));
+        flat = flat.concat(win);
+      });
+      flat.sort(function (a, b) { return a[0] - b[0]; });
+      flat = flat.filter(function (h, i) { return !i || h[0] !== flat[i - 1][0]; });
+      flat.count = count;
+      return count ? flat : [];
+    };
+    f.words = words;
+    return f;
+  }
   function snippet(text, hits, at) {
     var a = Math.max(0, hits[at][0] - 110), b = Math.min(text.length, hits[at][1] + 140), out = a > 0 ? '…' : '', pos = a;
     hits.forEach(function (h) {
@@ -78,19 +122,16 @@
     return out;
   }
 
-  function search(q) {
-    resultsEl.innerHTML = '';
-    var clean = (q || '').trim();
-    if (!clean) { statusEl.textContent = 'Type a word, or choose one from the cloud.'; drawFilters({}); return; }
-    if (!/[A-Za-zÀ-ɏḀ-ỿ]/.test(clean) || fold(clean).replace(/[^a-z0-9]/g, '').length < 2) { statusEl.textContent = 'Type at least two letters.'; drawFilters({}); return; }
-    var find = matcher(clean), items = [];
+  function cnt(h) { return h.count != null ? h.count : h.length; }
+  function collect(find) {
+    var items = [];
     DATA.docs.forEach(function (d) {
       var hits = find(d.text, d.f);
-      if (hits.length) items.push({ kind: TYPE_OF[d.type], label: d.type === 'Q&A' ? 'AMA' : d.type, title: d.title, url: d.url, n: hits.length, credit: d.credit, snips: snippets(d.text, hits, 3) });
+      if (hits.length) items.push({ kind: TYPE_OF[d.type], label: d.type === 'Q&A' ? 'AMA' : d.type, title: d.title, url: d.url, n: cnt(hits), credit: d.credit, snips: snippets(d.text, hits, 3) });
     });
     DATA.qna.forEach(function (s) {
       var list = [], n = 0;
-      s.items.forEach(function (it) { var h = find(it.text, it.f); if (h.length) { n += h.length; list.push({ it: it, hits: h }); } });
+      s.items.forEach(function (it) { var h = find(it.text, it.f); if (h.length) { n += cnt(h); list.push({ it: it, hits: h }); } });
       if (n) items.push({ kind: 'ama', label: 'AMA', title: s.title, url: s.video ? '../online-meetings/#s-' + s.video : s.url, n: n, qa: list });
     });
     // Video transcripts (YouTube's automatic captions, Pāli terms corrected): each result links into the video at the moment it is said.
@@ -111,22 +152,36 @@
         }
         var first = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + timeAt(v, hits[0][0]) + 's';
         var it = byVid[v.id];
-        if (it) { it.n += hits.length; it.snips = snips; it.label = 'Video'; it.url = first; }
-        else items.push({ kind: 'video', label: 'Video', title: v.title, url: first, n: hits.length, credit: 'Transcript', snips: snips });
+        if (it) { it.n += cnt(hits); it.snips = snips; it.label = 'Video'; it.url = first; }
+        else items.push({ kind: 'video', label: 'Video', title: v.title, url: first, n: cnt(hits), credit: 'Transcript', snips: snips });
       });
     }
+    return items;
+  }
+
+  function search(q) {
+    resultsEl.innerHTML = '';
+    var clean = (q || '').trim();
+    if (!clean) { statusEl.textContent = 'Type a word, or choose one from the cloud.'; drawFilters({}); return; }
+    if (!/[A-Za-zÀ-ɏḀ-ỿ]/.test(clean) || fold(clean).replace(/[^a-z0-9]/g, '').length < 2) { statusEl.textContent = 'Type at least two letters.'; drawFilters({}); return; }
+    // Several words: first the exact phrase; if that finds nothing anywhere, passages where all the words
+    // (common ones like "what" and "the" left out) appear close together (D, 25 Nov 2026). Punctuation is ignored.
+    var qm = clean.replace(/[^\p{L}\p{N}\s'’\-]/gu, ' ').replace(/\s+/g, ' ').trim() || clean;
+    var items = collect(matcher(qm)), near = null;
+    if (!items.length && qm.split(' ').length > 1) { near = nearMatcher(qm); if (near) items = collect(near); }
+    var wantVideo = !selected().length || SEL.video;
     items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });
     drawFilters(counts);
     var on = selected(), shown = on.length ? items.filter(function (i) { return SEL[i.kind]; }) : items;
     var total = shown.reduce(function (s, i) { return s + i.n; }, 0);
-    statusEl.textContent = shown.length ? (wantVideo && !TR ? 'Searching the video transcripts too… ' : '') + total + ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '” in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + ', most mentions first.'
-      : (wantVideo && !TR ? 'Searching the video transcripts… ' : '') + 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.');
+    statusEl.textContent = (near && shown.length ? 'The exact words “' + clean + '” are not in the teachings, so these are passages where ' + near.words.map(function (w) { return '“' + w + '”'; }).join(', ') + ' all appear close together. ' : '') + (shown.length ? (wantVideo && !TR ? 'Searching the video transcripts too… ' : '') + total + (near ? ' place' + (total === 1 ? '' : 's') : ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '”') + ' in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + (near ? ', most first.' : ', most mentions first.')
+      : (wantVideo && !TR ? 'Searching the video transcripts… ' : '') + 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.'));
     resultsEl.innerHTML = shown.slice(0, LIMIT).map(function (i) {
       var body = i.qa
         ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '')
         : i.snips.map(function (s) { return '<p>' + s + '</p>'; }).join('');
-      return '<article class="result"><div class="meta"><span>' + esc(i.label) + '</span><span class="hits">' + i.n + (i.n === 1 ? ' mention' : ' mentions') + '</span>' + (i.credit ? '<span>' + esc(i.credit) + '</span>' : '') + '</div>' +
+      return '<article class="result"><div class="meta"><span>' + esc(i.label) + '</span><span class="hits">' + i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + '</span>' + (i.credit ? '<span>' + esc(i.credit) + '</span>' : '') + '</div>' +
         '<h3><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(i.title) + '</a></h3>' + body + '</article>';
     }).join('') + (shown.length > LIMIT ? '<p><button type="button" class="btn ghost" id="more">Show all ' + shown.length + ' sources</button></p>' : '');
     var more = $('more'); if (more) more.addEventListener('click', function () { LIMIT = 100000; search(clean); });
