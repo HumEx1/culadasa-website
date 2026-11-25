@@ -15,7 +15,10 @@
      "Listen at Guru Viking",
      "https://www.guruviking.com/podcast/ep35-culadasa-pandemic-edition-guru-viking-podcast"
     ]
-   ]
+   ],
+   "image": "assets/img/conversations/guru-viking-35.jpg",
+   "image_alt": "Guru Viking Podcast episode 35 cover: Culadasa, Pandemic Series",
+   "image_credit": "Image: guruviking.com"
   },
   {
    "title": "Mind Illuminated – Culadasa",
@@ -31,7 +34,10 @@
      "Listen at Guru Viking",
      "https://guruviking.com/podcast/ep13-culadasa-guru-viking-interviews"
     ]
-   ]
+   ],
+   "image": "assets/img/conversations/guru-viking-13.jpg",
+   "image_alt": "Guru Viking Podcast episode 13 cover: The Mind Illuminated with Culadasa",
+   "image_credit": "Image: guruviking.com"
   },
   {
    "title": "Culadasa on Stream Entry",
@@ -47,7 +53,10 @@
      "Listen and read the transcript",
      "https://deconstructingyourself.com/culadasa-stream-entry.html"
     ]
-   ]
+   ],
+   "image": "assets/img/conversations/deconstructing-yourself-22.jpg",
+   "image_alt": "Culadasa speaking beside a Buddha statue",
+   "image_credit": "Image: deconstructingyourself.com"
   },
   {
    "title": "Culadasa (John Yates)",
@@ -67,7 +76,10 @@
      "Read the transcript",
      "https://batgap.com/culadasa-john-yates-interview-transcript/"
     ]
-   ]
+   ],
+   "image": "assets/img/conversations/batgap-394.jpg",
+   "image_alt": "Buddha at the Gas Pump: Mind Illuminated, with Culadasa",
+   "image_credit": "Image: Buddha at the Gas Pump on YouTube"
   },
   {
    "title": "Meditation Illuminated: Integrating Buddhist Wisdom and Brain Science",
@@ -83,7 +95,10 @@
      "Watch at Tricycle (may need membership)",
      "https://tricycle.org/dharmatalks/meditation-illuminated-integrating-buddhist-wisdom-and-brain-science/"
     ]
-   ]
+   ],
+   "image": "assets/img/conversations/tricycle-dharma-talk.jpg",
+   "image_alt": "Culadasa, from the Tricycle Dharma Talks page for this course",
+   "image_credit": "Image: tricycle.org"
   },
   {
    "title": "The 5 ultimate insights that lead to direct awakening",
@@ -99,7 +114,10 @@
      "Watch on YouTube",
      "https://www.youtube.com/watch?v=2LYa1YCdZH8"
     ]
-   ]
+   ],
+   "image": "https://i.ytimg.com/vi/2LYa1YCdZH8/hqdefault.jpg",
+   "image_alt": "Video still from the talk",
+   "image_credit": ""
   },
   {
    "title": "How do you know what’s true?",
@@ -115,7 +133,10 @@
      "Watch on YouTube",
      "https://www.youtube.com/watch?v=vtWoFpEHTBs"
     ]
-   ]
+   ],
+   "image": "https://i.ytimg.com/vi/vtWoFpEHTBs/hqdefault.jpg",
+   "image_alt": "Video still from the talk",
+   "image_credit": ""
   },
   {
    "title": "Culadasa Q&A Index",

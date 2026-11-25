@@ -82,3 +82,16 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 41. **16th Karmapa as the first lineage link (D, 24 Nov 2026).** "Add 16th Karmapa photo (with Namgyal Rinpoche) as first link in lineage." The "From teacher to student" row now begins with His Holiness the 16th Gyalwa Karmapa, captioned "with Namgyal Rinpoche" and "Whose lineage is traced to the Buddha" (the lineage text's own words). The photo of the two of them together comes from the Ven. Namgyal Rinpoche page on wangapeka.org and is credited under it. Permission is still to be confirmed. There are four links, left to right on desktop and tablet, and stacked with down-arrows on phones.
 
 42. **Teacher profile details aligned (D, 24 Nov 2026).** "Align text." On every teacher page the small labels (Certified, Based in, Teaches, Website) now share a baseline with their values, so each label sits level with its line of text.
+
+43. **Fixes for missing or hard-to-find content (D, 25 Nov 2026)**, from `docs/ORIGINAL_CONTENT_CHECK.md`:
+    1. Student testimonials now also sit on The Book page, in their own panel band under the reviews, headed "What his students say about the Mind Illuminated method". The footer link and /testimonials/ page stay.
+    2. The Teachers page has the heading "Certified Teachers" above the search and map.
+    3. Teacher year groups: left as they are (each teacher shows "Certified <year>").
+    4. Writings uses the original group headings again: "Teaching Retreats Handouts" and "Selected Writings from the Jhana_Insight Yahoo discussion board".
+    5. The Book reviews heading stays "What teachers and authors say" (a deliberate change from "HERE'S WHAT PEOPLE ARE SAYING ABOUT THE MIND ILLUMINATED").
+    6. Essays show their original sub-heading under the title where it differs from the title: "Meditation Manual — Introduction" and "Exactly how much concentration is needed to attain Awakening?".
+    7. Writings uses the original link title "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue".
+    8. The Q&A archive lists all 61 sessions by year at the top. Each link opens its session. (60 of the 61 are Patreon Q&As, so a Patreon-only list would have repeated the whole archive.)
+    9. Writings opens with an "Essays" list of all five essays.
+
+44. **Episode images on Conversations (D, 25 Nov 2026).** Each conversation shows the show's own image for Culadasa's episode, linked to the episode and credited: Guru Viking episodes 35 and 13 (guruviking.com), Deconstructing Yourself DY 022 (deconstructingyourself.com), Buddha at the Gas Pump 394 (its YouTube video's thumbnail), Tricycle Dharma Talks (tricycle.org). The two YouTube talks use their video thumbnails. Alex's Q&A index has no image. Permission to use the show images is still to be confirmed.

@@ -11,16 +11,16 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 |---|---|---|---|---|
 | `/` About (the old home page) | Home page | 0 | 0 | 0 |
 | `/online-meetings/` Online Meetings | Main menu › Library › Q&A archive | 0 | 0 | 7 |
-| `/writings/` Teachings › Writings | Main menu › Library › Writings | 2 | 0 | 1 |
+| `/writings/` Teachings › Writings | Main menu › Library › Writings | 0 | 0 | 0 |
 | `/audio/` Teachings › Audio | Main menu › Library › Audio | 0 | 0 | 0 |
 | `/videos/` Teachings › Videos | Main menu › Library › Videos | 0 | 0 | 0 |
 | `/teachers/` Teachings › Teachers | Main menu › Teachers | 6 | 0 | 0 |
 | `/testimonials/` Teachings › Testimonials | Footer link only (bottom of every page); not in the menu | 0 | 3 | 0 |
 | `/student-testimonials/` Teachings › Student testimonials | Address kept; it forwards to `/testimonials/` (Footer link only (bottom of every page); not in the menu) | 0 | 3 | 0 |
 | `/book-reviews/` Teachings › Book reviews | Address kept; it forwards to `/the-book/` (Main menu › The Book) | 1 | 0 | 0 |
-| `/meditation-manual-introduction/` Essay: Introduction to the Meditation Manual | Not in the menu; reached only through links inside pages (Home › /start-here/ › /meditation-manual-introduction/) | 0 | 0 | 1 |
+| `/meditation-manual-introduction/` Essay: Introduction to the Meditation Manual | Not in the menu; reached only through links inside pages (Home › /start-here/ › /meditation-manual-introduction/) | 0 | 0 | 0 |
 | `/mindful-awareness-vs-dullness/` Essay: Mindful Awareness vs Dullness | Not in the menu; reached only through links inside pages (Home › /start-here/ › /mindful-awareness-vs-dullness/) | 0 | 0 | 0 |
-| `/amount-of-concentration-needed-for-awakening/` Essay: Amount of Concentration Needed for Awakening | Not in the menu; reached only through links inside pages (Home › /writings/ › /amount-of-concentration-needed-for-awakening/) | 0 | 0 | 1 |
+| `/amount-of-concentration-needed-for-awakening/` Essay: Amount of Concentration Needed for Awakening | Not in the menu; reached only through links inside pages (Home › /writings/ › /amount-of-concentration-needed-for-awakening/) | 0 | 0 | 0 |
 | `/daily-life-practice/` Essay: How to Maintain Practice in Daily Life | Not in the menu; reached only through links inside pages (Home › /start-here/ › /daily-life-practice/) | 0 | 0 | 0 |
 | `/cultivating-mindfulness-in-daily-life/` Essay: Cultivating Mindfulness in Daily Life | Not in the menu; reached only through links inside pages (Home › /learn/ › /cultivating-mindfulness-in-daily-life/) | 0 | 0 | 0 |
 
@@ -48,9 +48,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 ### `/writings/` Teachings › Writings
 
 - [ ] **How to find it now:** Main menu › Library › Writings
-- [ ] **Text not in the redesign** (`site/writings/index.html` line 312): "Teaching Retreats Handouts"
-- [ ] **Text not in the redesign** (`site/writings/index.html` line 341): "Selected Writings from the Jhana_Insight Yahoo discussion board"
-- [ ] **Only findable through Topics search**, not shown on any page (line 338): "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue"
+- [ ] All of its text, links and media are in the redesign.
 
 ### `/audio/` Teachings › Audio
 
@@ -95,7 +93,6 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 
 - [ ] **How to find it now:** Not in the menu; reached only through links inside pages (Home › /start-here/ › /meditation-manual-introduction/)
 - [ ] **Removed on purpose** (`site/meditation-manual-introduction/index.html` line 303): "develping skill in quickly entering effortless one-pointed concentration". Corrected on purpose: the original typo "develping" is spelled "developing" in the redesign.
-- [ ] **Only findable through Topics search**, not shown on any page (line 287): "Meditation Manual — Introduction"
 
 ### `/mindful-awareness-vs-dullness/` Essay: Mindful Awareness vs Dullness
 
@@ -105,7 +102,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 ### `/amount-of-concentration-needed-for-awakening/` Essay: Amount of Concentration Needed for Awakening
 
 - [ ] **How to find it now:** Not in the menu; reached only through links inside pages (Home › /writings/ › /amount-of-concentration-needed-for-awakening/)
-- [ ] **Only findable through Topics search**, not shown on any page (line 287): "Exactly how much concentration is needed to attain Awakening?"
+- [ ] All of its text, links and media are in the redesign.
 
 ### `/daily-life-practice/` Essay: How to Maintain Practice in Daily Life
 
