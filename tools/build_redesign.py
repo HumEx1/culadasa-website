@@ -487,6 +487,11 @@ def build():
                 (f'<a href="{esc(k["url"])}" rel="noopener">{esc(k["text"])}</a>' if k['url'] else esc(k['text'])) for k in q['keywords']) + '</p>'
         text = ''.join(f'<p>{t}</p>' for t in q['question'])
         return f'<li><a class="t" href="{esc(q["url"])}" rel="noopener">{esc(short_time(q["time"]))}</a><div class="qbody">{text}{quotes}{kws}</div></li>'
+    def session_label(t):
+        m = re.fullmatch(r'(19|20)\d\d(\d\d)(\d\d)', t.strip())   # e.g. Alex's "20190517"
+        if m:
+            return datetime.date(2000, int(m.group(2)), int(m.group(3))).strftime('%B ') + str(int(m.group(3)))
+        return re.sub(r",? ?(19|20)[0-9][0-9]", "", t).strip() or t
     isess = list(reversed(qindex['sessions']))
     by_year = {}
     for s_ in isess:
@@ -504,7 +509,7 @@ def build():
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
     body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''
 <section class="section"><div class="wrap">
-<nav class="jump jump-main" aria-label="Sessions by year"><h2>All {len(isess)} sessions by year</h2><p class="muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to open it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(re.sub(r",? ?(19|20)[0-9][0-9]", "", x["title"]).strip() or x["title"])}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+<nav class="jump jump-main" aria-label="Sessions by year"><h2>All {len(isess)} sessions by year</h2><p class="muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to open it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
 <form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
 {sess}</div></section>
 <script>
