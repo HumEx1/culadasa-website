@@ -753,8 +753,10 @@ def build():
 <section class="section"><div class="wrap">
   <h2>Certified Teachers</h2>
   <div class="finder">
+    <div class="search-panel">
     <form class="search" id="teacher-form" role="search"><label class="sr" for="tq">Find a teacher by name or place</label><input id="tq" type="search" placeholder="Name, town or country"><button class="btn ghost" type="button" id="near">Near me</button></form>
     <div class="filters" id="tfilters"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="online" aria-pressed="false">Teaches online</button><button type="button" data-f="inperson" aria-pressed="false">In person</button></div>
+    </div>
     <p class="status small" id="tstatus" role="status"></p>
   </div>
   <details class="map-wrap" id="mapbox" open><summary>Map</summary><div id="map" class="map" role="region" aria-label="Map of teachers"></div></details>
