@@ -506,7 +506,7 @@ def build():
         first_q = re.sub(r'<[^>]+>', '', s_['questions'][0]['question'][0]) if s_['questions'] and s_['questions'][0]['question'] else ''
         n_ = len(s_['questions'])
         sess += f'''<article class="scard" id="s-{esc(s_['video'])}"><div class="scard-media">{tile}</div>
-<div class="scard-main"><div class="scard-top"><h3>{esc(s_['title'])}</h3><a class="scard-back" href="#sessions">Return to AMA list</a></div>
+<div class="scard-main"><div class="scard-top"><h3><button type="button" class="scard-title" aria-expanded="false">{esc(s_['title'])}</button></h3><a class="scard-back" href="#sessions">Return to AMA list</a></div>
 <p class="scard-first">{esc(first_q[:220])}{'…' if len(first_q) > 220 else ''}</p>
 <details class="scard-q"><summary><span class="when-closed">Open all {n_} question{'s' if n_ != 1 else ''}</span><span class="when-open">Close all {n_} question{'s' if n_ != 1 else ''}</span></summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol><p class="scard-close"><button type="button" class="close-q">Close all {n_} question{'s' if n_ != 1 else ''}</button></p></details></div></article>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
@@ -541,6 +541,11 @@ def build():
 (function () {{
   function sync(card) {{ var d = card.querySelector('details'); card.classList.toggle('open', !!(d && d.open)); }}
   document.querySelectorAll('.scard details').forEach(function (d) {{ d.addEventListener('toggle', function () {{ sync(d.closest('.scard')); }}); }});
+  /* clicking the session name opens or closes its questions, like the prompt below it (D, 25 Nov 2026) */
+  document.querySelectorAll('.scard .scard-title').forEach(function (t) {{ t.addEventListener('click', function () {{
+    var c = t.closest('.scard'), d = c.querySelector('details'); d.open = !d.open; sync(c); activate(c); }}); }});
+  document.querySelectorAll('.scard details').forEach(function (d) {{ d.addEventListener('toggle', function () {{
+    var t = d.closest('.scard').querySelector('.scard-title'); if (t) t.setAttribute('aria-expanded', d.open ? 'true' : 'false'); }}); }});
   document.querySelectorAll('.scard .close-q').forEach(function (b) {{ b.addEventListener('click', function () {{
     var d = b.closest('details'), c = b.closest('.scard'); d.open = false; sync(c); c.scrollIntoView({{ block: 'start' }}); d.querySelector('summary').focus({{ preventScroll: true }}); }}); }});
   /* the session being looked at is marked active: thin gold line, slightly lighter ground (D, 25 Nov 2026) */

@@ -515,3 +515,7 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .scard.active+.scard{border-top-color:transparent}
 @media (max-width:760px){.scard,.scard.open{padding:22px 14px;margin:0 -15px}}
 @media (prefers-reduced-motion:reduce){.scard{transition:none}}
+/* the session name is also the open/close control (D, 25 Nov 2026) */
+.scard-title{all:unset;cursor:pointer;font:inherit;color:inherit}
+.scard-title:hover{color:var(--teal)}
+.scard-title:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
