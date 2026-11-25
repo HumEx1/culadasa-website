@@ -1,0 +1,11 @@
+# Practice Advice for Everyday Life
+
+Video: https://www.youtube.com/watch?v=NndWvacogTk  
+Published on YouTube: 2015-07-17  
+Length of transcript: 323 words
+
+> Transcribed automatically by YouTube, not by a person, so expect mistakes. Pāli terms YouTube mishears (jhāna, pīti, mettā and others) have been corrected; nothing else has been changed. Each time stamp opens the video at that moment. How this was made: [TRANSCRIPTS.md](../TRANSCRIPTS.md).
+
+**[0:08](https://www.youtube.com/watch?v=NndWvacogTk&t=8s)** so before we start with you let's start with me and just thinking about my own life I you know work full-time and then beyond I have a wife I have a young daughter who's a toddler I am starting a business running around life is totally crazy how do you recommend finding the time to establish a really you know a decent practice that would actually be beneficial and not just completely superficial right well maybe the first question the answer is what what's a practice that would be beneficial as opposed to just superficial indeed you know and I I really recommend that you practice every day seven days a week okay and ideally it would be from 45 minutes to an hour minimum each time so you know that's that's what I'd suggest that you try for that that's the kind of practice that will will show slow but steady progress and then if you can do retreats things like that that will that will accelerate it but yeah how do you find an hour a day yeah yeah I mean I I have spare time people have this at least you know how busy you are a lot of times people start meditating and they said oh yeah I'll sit in my spare time
+
+**[1:41](https://www.youtube.com/watch?v=NndWvacogTk&t=101s)** and people don't have spare time so the fact is that something else has to go and if you're serious about meditation it has to rate high enough in this feel of things it has to have enough of a priority over other things that you're going to be able to every day now the what most people find easiest to do is to go to bed a little earlier and get up a little earlier and then meditate before everybody else gets up and before they get into the usual routine that's that's the timeslot that is easiest for people to sort of enter

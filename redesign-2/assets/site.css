@@ -162,6 +162,8 @@ a.card:hover{background:var(--white);color:var(--body)}
 .result h3 a{text-decoration:none;color:var(--ink)}
 .result h3 a:hover{color:var(--teal)}
 .result .meta{display:flex;flex-wrap:wrap;gap:6px 14px;font:500 13px/1.4 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--label);margin-bottom:8px}
+.result .tstamp{font:600 13px/1 var(--display);color:var(--teal);text-decoration:none;margin-right:4px;white-space:nowrap}
+.result .tstamp:hover{text-decoration:underline}
 .result .hits{color:var(--pop)}
 .result p{font-size:15.5px;line-height:1.65;margin:0 0 6px}
 mark{background:#f3e3a8;color:inherit;padding:0 2px;border-radius:2px}

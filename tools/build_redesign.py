@@ -491,7 +491,7 @@ def build():
     # ---------------------------------------------------------------- videos (old path)
     body = banner('Watch', 'Videos', f'{len(videos)} videos: talks, discussions and {len(qna)} recorded AMA (ask me anything) sessions.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
-<section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search the video titles', 'v-q')}</div></section>
+<section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search what he says in the videos', 'v-q')}</div></section>
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
 <section class="section"><div class="wrap"><h2>Culadasa AMA sessions</h2><p class="muted">Each session’s questions are listed, with links to the moment he answers, in <a href="{r}online-meetings/">Culadasa AMA sessions</a>.</p>
 <div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f'{len(s["items"])} questions · <a href="{r}online-meetings/#s-{s["video"]}">Questions →</a>') for s in list(reversed(qna))[:6])}</div>
@@ -612,7 +612,7 @@ def build():
   <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>
   <p class="status" id="status" role="status">Loading the teachings…</p>
   <div class="results" id="results"></div>
-  <p class="small muted">Sources: his handouts and essays, the Lineage page, video titles, and the Culadasa Q&amp;A Index (the questions from his AMA sessions). Spellings with and without accents match each other. Common English words are left out of the word cloud.</p>
+  <p class="small muted">Sources: his handouts and essays, the Lineage page, the Culadasa Q&amp;A Index (the questions from his AMA sessions), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
 </div></section>'''
     page('topics/', 'Topics', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
          extra_js=f'<script src="{r}assets/topics.js" defer></script>\n')

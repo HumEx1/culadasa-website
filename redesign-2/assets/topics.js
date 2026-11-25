@@ -11,13 +11,21 @@
   // so Writings and AMA sessions can be searched together. Clear switches them all off, which searches everything.
   // The count and the status line follow the choice. Writings = handouts and essays. The Lineage page is searched when nothing is switched on.
   var KINDS = [['writings', 'Writings'], ['ama', 'AMA sessions'], ['video', 'Videos'], ['audio', 'Audio']];
-  var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA sessions', video: 'the video titles', audio: 'the audio recordings' };
+  var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA sessions', video: 'the videos', audio: 'the audio recordings' };
   function selected() { return KINDS.map(function (k) { return k[0]; }).filter(function (k) { return SEL[k]; }); }
   function scopeText() {
     var s = selected().map(function (k) { return SCOPE_NAME[k]; });
     if (!s.length) return 'across the site';
     return 'in ' + (s.length === 1 ? s[0] : s.slice(0, -1).join(', ') + ' and ' + s[s.length - 1]);
   }
+  // Pāli and Sanskrit forms of the same word find each other (D, 25 Nov 2026): Culadasa mostly said the Pāli,
+  // sometimes the Sanskrit (nirvana, karma, dharma, arhat), and the transcripts keep what he said.
+  var SYN = [['jhana', 'dhyana'], ['metta', 'maitri'], ['piti', 'priti'], ['nibbana', 'nirvana'], ['kamma', 'karma'], ['dhamma', 'dharma'],
+    ['arahant', 'arhat'], ['anatta', 'anatman'], ['dukkha', 'duhkha'], ['vipassana', 'vipashyana', 'vipasyana'], ['samatha', 'shamatha'],
+    ['sotapanna', 'srotapanna'], ['sunnata', 'sunyata', 'shunyata'], ['khandha', 'skandha'], ['sutta', 'sutra'], ['bodhisatta', 'bodhisattva'],
+    ['tanha', 'trishna'], ['sankhara', 'samskara'], ['kilesa', 'klesha', 'klesa'], ['sila', 'shila'], ['panna', 'prajna'], ['avijja', 'avidya']];
+  function alts(w) { for (var i = 0; i < SYN.length; i++) if (SYN[i].indexOf(w) >= 0) return '(?:' + SYN[i].join('|') + ')'; return w; }
+  var TR = null, trLoading = false;   // the video transcripts: loaded only when a search needs them
   var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video', 'Audio': 'audio' };
   var ALIAS = { 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video', 'audios': 'audio', 'recordings': 'audio' };
 
@@ -39,7 +47,7 @@
   function isLetter(ch) { return /[a-z0-9À-ɏḀ-ỿ]/i.test(ch || ''); }
   // Find matches in folded text: word-start boundary checked by hand (no lookbehind, so older Safari works).
   function matcher(q) {
-    var words = fold(q.trim()).split(/\s+/).map(function (w) { return w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
+    var words = fold(q.trim()).split(/\s+/).map(function (w) { return alts(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); });
     var re = new RegExp(words.join("[\\s\\-–—]+") + "[a-z0-9À-ɏḀ-ỿ]*", 'g');
     return function (text, folded, max) {
       var hits = [], m;
@@ -85,13 +93,35 @@
       s.items.forEach(function (it) { var h = find(it.text, it.f); if (h.length) { n += h.length; list.push({ it: it, hits: h }); } });
       if (n) items.push({ kind: 'ama', label: 'AMA', title: s.title, url: s.video ? '../online-meetings/#s-' + s.video : s.url, n: n, qa: list });
     });
+    // Video transcripts (YouTube's automatic captions, Pāli terms corrected): each result links into the video at the moment it is said.
+    var wantVideo = !selected().length || SEL.video;
+    if (wantVideo && !TR) loadTranscripts();
+    if (TR) {
+      var byVid = {};
+      items.forEach(function (i) { var m = /[?&]v=([\w-]{11})/.exec(i.url || ''); if (m && i.kind === 'video') byVid[m[1]] = i; });
+      TR.forEach(function (v) {
+        var hits = find(v.text, v.f);
+        if (!hits.length) return;
+        var snips = [], last = -999;
+        for (var k = 0; k < hits.length && snips.length < 3; k++) {
+          if (hits[k][0] - last < 260) continue;
+          last = hits[k][0];
+          var t = timeAt(v, hits[k][0]), u = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + t + 's';
+          snips.push('<a class="tstamp" href="' + u + '" target="_blank" rel="noopener">' + hms(t) + '</a> ' + snippet(v.text, hits, k));
+        }
+        var first = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + timeAt(v, hits[0][0]) + 's';
+        var it = byVid[v.id];
+        if (it) { it.n += hits.length; it.snips = snips; it.label = 'Video'; it.url = first; }
+        else items.push({ kind: 'video', label: 'Video', title: v.title, url: first, n: hits.length, credit: 'Transcript', snips: snips });
+      });
+    }
     items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });
     drawFilters(counts);
     var on = selected(), shown = on.length ? items.filter(function (i) { return SEL[i.kind]; }) : items;
     var total = shown.reduce(function (s, i) { return s + i.n; }, 0);
-    statusEl.textContent = shown.length ? total + ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '” in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + ', most mentions first.'
-      : 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.');
+    statusEl.textContent = shown.length ? (wantVideo && !TR ? 'Searching the video transcripts too… ' : '') + total + ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '” in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + ', most mentions first.'
+      : (wantVideo && !TR ? 'Searching the video transcripts… ' : '') + 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.');
     resultsEl.innerHTML = shown.slice(0, LIMIT).map(function (i) {
       var body = i.qa
         ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '')
@@ -100,6 +130,22 @@
         '<h3><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(i.title) + '</a></h3>' + body + '</article>';
     }).join('') + (shown.length > LIMIT ? '<p><button type="button" class="btn ghost" id="more">Show all ' + shown.length + ' sources</button></p>' : '');
     var more = $('more'); if (more) more.addEventListener('click', function () { LIMIT = 100000; search(clean); });
+  }
+
+  function hms(s) { var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + (m < 10 ? '0' : '') : '') + m + ':' + (x < 10 ? '0' : '') + x; }
+  // the time stamp in force at a place in a transcript (marks: [position in text, seconds], in order)
+  function timeAt(v, pos) {
+    var lo = 0, hi = v.marks.length - 1;
+    while (lo < hi) { var mid = (lo + hi + 1) >> 1; if (v.marks[mid][0] <= pos) lo = mid; else hi = mid - 1; }
+    return v.marks.length ? v.marks[lo][1] : 0;
+  }
+  function loadTranscripts() {
+    if (trLoading) return; trLoading = true;
+    fetch('../data/transcripts.json').then(function (r) { return r.json(); }).then(function (d) {
+      d.videos.forEach(function (v) { v.f = fold(v.text); });
+      TR = d.videos;
+      if (input.value.trim()) search(input.value.trim());
+    }).catch(function () { trLoading = false; });
   }
 
   function drawFilters(counts) {
