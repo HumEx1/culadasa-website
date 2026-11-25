@@ -51,6 +51,23 @@
     }, function () { statusEl.textContent = 'Location was not shared. Search by town or country instead.'; }, { timeout: 10000 });
   });
 
+  /* The teacher you were last looking at keeps a thin gold outline (D, 25 Nov 2026): the card you opened a profile from,
+     shown again when you come back, or the card whose pin you clicked on the map. Remembered for this visit only
+     (sessionStorage, cleared when the tab closes); nothing is sent anywhere. */
+  var KEY = 'culadasa-last-teacher';
+  function mark(card) {
+    cards.forEach(function (c) { c.classList.toggle('active', c === card); });
+    try { if (card) sessionStorage.setItem(KEY, card.querySelector('a').getAttribute('href')); } catch (e) {}
+  }
+  function restore() {
+    var h = null; try { h = sessionStorage.getItem(KEY); } catch (e) {}
+    if (!h) return;
+    var card = cards.filter(function (c) { return c.querySelector('a').getAttribute('href') === h; })[0];
+    if (card) cards.forEach(function (c) { c.classList.toggle('active', c === card); });
+  }
+  list.addEventListener('click', function (e) { var c = e.target.closest('.tcard'); if (c) mark(c); });
+  window.addEventListener('pageshow', restore);   // also runs when Back restores the page from the browser's cache
+
   function initMap() {
     if (!window.L || map) return;
     map = window.L.map('map', { scrollWheelZoom: false, worldCopyJump: true }).setView([30, -40], 2);
@@ -61,6 +78,7 @@
       var a = c.querySelector('a');
       var m = window.L.marker([+c.dataset.lat, +c.dataset.lng], { icon: icon, title: a.querySelector('.tname').textContent })
         .addTo(map).bindPopup('<a href="' + esc(a.getAttribute('href')) + '">' + esc(a.querySelector('.tname').textContent) + '</a><br>' + esc(a.querySelector('.tmeta').textContent));
+      m.on('click', function () { mark(c); });
       markers.push(m);
     });
   }
