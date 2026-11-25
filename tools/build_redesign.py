@@ -504,10 +504,11 @@ def build():
         v = vid_by_id.get(s_['video'])
         tile = video_tile(v, r) if v else f'<p><a href="{esc(s_["url"])}" rel="noopener">Watch on YouTube</a></p>'
         first_q = re.sub(r'<[^>]+>', '', s_['questions'][0]['question'][0]) if s_['questions'] and s_['questions'][0]['question'] else ''
+        n_ = len(s_['questions'])
         sess += f'''<article class="scard" id="s-{esc(s_['video'])}"><div class="scard-media">{tile}</div>
-<div class="scard-main"><h3>{esc(s_['title'])}</h3><p class="scard-first">{esc(first_q[:150])}{'…' if len(first_q) > 150 else ''}</p>
-<details class="scard-q"><summary>Show all {len(s_['questions'])} questions</summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></details>
-<p class="scard-back"><a href="#sessions">Return to main list</a></p></div></article>'''
+<div class="scard-main"><div class="scard-top"><h3>{esc(s_['title'])}</h3><a class="scard-back" href="#sessions">Return to Q&amp;A list</a></div>
+<p class="scard-first">{esc(first_q[:220])}{'…' if len(first_q) > 220 else ''}</p>
+<details class="scard-q"><summary><span class="when-closed">Open all {n_} question{'s' if n_ != 1 else ''}</span><span class="when-open">Close all {n_} question{'s' if n_ != 1 else ''}</span></summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></details></div></article>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
     body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''

@@ -487,3 +487,20 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .scard.open .qlist{margin-top:14px}
 @media (max-width:760px){.scard.open{display:block}.scard.open .scard-media{position:static}}
 .scard .video-card>h3{display:none}
+/* Q&A archive: each session is a horizontal banner (D, 25 Nov 2026) */
+.scards{grid-template-columns:1fr;gap:0}
+.scard,.scard.open{grid-column:auto;display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:0 36px;padding:28px 0;border-top:1px solid var(--line)}
+.scard .scard-media{align-self:start}
+.scard.open .scard-media{position:sticky;top:90px}
+.scard-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px}
+.scard h3{margin:0}
+.scard-back{margin:0;font-size:14px;white-space:nowrap}
+.scard-first{margin:8px 0 6px}
+.scard-q summary::after{content:none}
+.scard-q .when-open{display:none}
+.scard-q[open] .when-open{display:inline}
+.scard-q[open] .when-closed{display:none}
+.scard-q summary .when-closed::after{content:" +"}
+.scard-q summary .when-open::after{content:" −"}
+@media (max-width:760px){.scard,.scard.open{display:block}.scard.open .scard-media{position:static}.scard-main{margin-top:14px}}
+.scard-q[open] summary::after{content:none}

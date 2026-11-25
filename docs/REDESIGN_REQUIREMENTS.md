@@ -129,3 +129,10 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
     3. the SoundCloud player;
     4. "The sessions", with the search box;
     5. the sessions as compact cards, three to a row on desktop and each as wide as its video. A card shows the video, the session name and the start of the first question. "Show all N questions" opens it out to the full row, video on the left, questions on the right. Every card ends with "Return to main list". A year link opens its card and scrolls to it.
+
+52. **Q&A sessions as horizontal banners (D, 25 Nov 2026).** Each session is one full-width row:
+    - the video on the left;
+    - on the right, the session name, with "Return to Q&A list" at the far right of the same line;
+    - below the name, the start of the first question, then "Open all N questions", which changes to "Close all N questions" once opened.
+
+    Opened, the questions run down the right while the video stays in view on the left. On phones the video sits above the text.
