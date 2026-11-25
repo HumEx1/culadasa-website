@@ -449,7 +449,11 @@
     c.addEventListener('focusin', function () { activate(c); });
     var d = c.querySelector('details'); if (d) d.addEventListener('toggle', function () { if (d.open) activate(c); });
   });
-  function openFromHash() { var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) { var d = c.querySelector('details'); d.open = true; sync(c); activate(c); c.scrollIntoView({ block: 'start' }); } }
+  function openFromHash() { var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) { var d = c.querySelector('details'); d.open = true; sync(c); activate(c); c.scrollIntoView({ block: 'start' }); return true; } return false; }
+  /* this device remembers the last session read, so it is still marked on a later visit (localStorage; nothing is sent anywhere) */
+  var KEY = 'culadasa-last-ama';
+  document.addEventListener('click', function () { var a = document.querySelector('.scard.active'); try { if (a) localStorage.setItem(KEY, a.id); } catch (e) {} });
+  if (!(location.hash && document.getElementById(location.hash.slice(1)))) { var last = null; try { last = localStorage.getItem(KEY); } catch (e) {} var lc = last && document.getElementById(last); if (lc && lc.classList.contains('scard')) activate(lc); }
   window.addEventListener('hashchange', openFromHash); openFromHash();
 })();
 </script>

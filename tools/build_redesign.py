@@ -419,10 +419,22 @@ def build():
         ]),
     ]
     sec = ''
+    slug_of = lambda n: re.sub(r'[^a-z0-9]+', '-', n.lower()).strip('-')
     for name, tone, items in tracks:
-        sec += f'''<section class="section"><div class="wrap"><div class="track-head {tone}"><h2>{name}</h2></div>
+        sec += f'''<section class="section learn-sec" id="{slug_of(name)}"><div class="wrap"><div class="track-head {tone}"><h2>{name}</h2><a class="scard-back" href="#learn-sections">All sections ↑</a></div>
 <div class="grid cols-4">{''.join(f'<a class="card tone-{tone}" href="{u}"><h3>{esc(t)}</h3><p>{esc(d)}</p><span class="more">{"Search" if "topics/?q=" in u else "Open"} →</span></a>' for t, d, u in items)}</div></div></section>'''
-    body = banner('The basics, then deeper', 'Learn', 'His teaching arranged as a journey: the basics, the method, the science of mind, going deeper, and daily life.', 'ink') + sec
+    # quick links to the five sections; the one chosen keeps a thin gold outline, as on the AMA sessions page (D, 25 Nov 2026)
+    jump = ('<section class="section tight"><div class="wrap"><nav class="jump jump-main learn-jump" id="learn-sections" aria-label="Sections of the path">'
+            '<p>' + ' · '.join(f'<a href="#{slug_of(n)}">{esc(n)}</a>' for n, _, _ in tracks) + '</p></nav></div></section>')
+    learn_js = '''<script>
+(function () {
+  function mark(id) { document.querySelectorAll('.learn-jump a').forEach(function (a) { var on = a.getAttribute('href') === '#' + id; a.classList.toggle('current', on); if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); }); }
+  document.querySelectorAll('.learn-sec').forEach(function (s) { s.addEventListener('pointerdown', function () { mark(s.id); }); s.addEventListener('focusin', function () { mark(s.id); }); });
+  function fromHash() { var id = location.hash.slice(1); if (document.getElementById(id) && document.getElementById(id).classList.contains('learn-sec')) mark(id); }
+  window.addEventListener('hashchange', fromHash); fromHash();
+})();
+</script>'''
+    body = banner('The basics, then deeper', 'Learn', 'His teaching arranged as a journey: the basics, the method, the science of mind, going deeper, and daily life.', 'ink') + jump + sec + learn_js
     page('learn/', 'Learn', body, description='Culadasa’s teaching arranged as a journey: basics, method, science of mind, going deeper, daily life.')
 
     # ---------------------------------------------------------------- the book
@@ -579,7 +591,11 @@ def build():
     c.addEventListener('focusin', function () {{ activate(c); }});
     var d = c.querySelector('details'); if (d) d.addEventListener('toggle', function () {{ if (d.open) activate(c); }});
   }});
-  function openFromHash() {{ var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) {{ var d = c.querySelector('details'); d.open = true; sync(c); activate(c); c.scrollIntoView({{ block: 'start' }}); }} }}
+  function openFromHash() {{ var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) {{ var d = c.querySelector('details'); d.open = true; sync(c); activate(c); c.scrollIntoView({{ block: 'start' }}); return true; }} return false; }}
+  /* this device remembers the last session read, so it is still marked on a later visit (localStorage; nothing is sent anywhere) */
+  var KEY = 'culadasa-last-ama';
+  document.addEventListener('click', function () {{ var a = document.querySelector('.scard.active'); try {{ if (a) localStorage.setItem(KEY, a.id); }} catch (e) {{}} }});
+  if (!(location.hash && document.getElementById(location.hash.slice(1)))) {{ var last = null; try {{ last = localStorage.getItem(KEY); }} catch (e) {{}} var lc = last && document.getElementById(last); if (lc && lc.classList.contains('scard')) activate(lc); }}
   window.addEventListener('hashchange', openFromHash); openFromHash();
 }})();
 </script>

@@ -538,3 +538,8 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .scope-pill span{display:inline-flex;align-items:center;min-height:40px;box-sizing:border-box;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;font:500 12.5px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--body)}
 .scope-pill input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
 .scope-pill input:focus-visible+span{outline:2px solid var(--teal);outline-offset:3px}
+/* Learn: quick links to its five sections (D, 25 Nov 2026) */
+.learn-jump{margin:0}
+.learn-jump p{font-size:18px}
+.learn-sec{scroll-margin-top:90px}
+.learn-sec .track-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px}

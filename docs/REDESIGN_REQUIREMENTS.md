@@ -170,3 +170,8 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
     - **Old links:** old addresses such as ?type=qa still work.
 
 63. **Audio in the search (D, 25 Nov 2026).** All 401 of Culadasa's SoundCloud recordings are now searchable by title and by the useful part of their descriptions (question timestamps, retreat summaries, handout notes). The data comes from his public SoundCloud podcast feed, saved in `source/soundcloud-feed-2026-11-25/` with email addresses replaced by `[email]`, and parsed by `tools/build_audio.py` into `redesign/data/audio.json`. Promotional lines are dropped. The scope pills now read All · Writings · AMA sessions · Videos · Audio, and the Audio page has the box with Audio preselected. Results link to each recording on SoundCloud. The searchable total is now about 195,000 words; the banners count it from the data. Still to get, via a SoundCloud login: which of the 26 collections each recording belongs to, and anything the public feed leaves out.
+
+64. **Learn quick links, and the AMA page remembers your place (D, 25 Nov 2026: "do the things you suggested").**
+    - **Learn:** a row of quick links under the banner (The basics · The method · The science of mind · Going deeper · Daily life). The section you jump to, or click into, keeps a thin gold outline in that row. Each section has "All sections ↑" back to the row.
+    - **AMA sessions:** this device now remembers the last session read (stored in the browser, nothing sent anywhere). On a later visit it is still outlined and marked in the list at the top, without opening or scrolling.
+    - **Writings:** no quick links, as recommended; the page has its search box instead.

@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2018 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2023 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -11,15 +11,15 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 | Section | Items |
 |---|---|
-| Every page: header, menu, newsletter box and footer | 30 |
+| Every page: header, menu, newsletter box and footer | 31 |
 | Home | 53 |
 | Start here | 30 |
-| Learn | 44 |
+| Learn | 46 |
 | Topics | 8 |
 | Library › Writings | 34 |
-| Library › Audio | 7 |
+| Library › Audio | 11 |
 | Library › Videos | 27 |
-| Library › Q&A archive | 1370 |
+| Library › Q&A archive | 1367 |
 | Library › Writings › essay | 17 |
 | The Book | 21 |
 | The Book (old address, redirects) | 2 |
@@ -30,10 +30,10 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Footer › Testimonials | 6 |
 | Footer › Testimonials (old address, redirects) | 2 |
 | Teachers › individual profile pages | 208 |
-| Messages shown by the search and map scripts | 26 |
-| **Total** | **2018** |
+| Messages shown by the search and map scripts | 27 |
+| **Total** | **2023** |
 
-## Every page: header, menu, newsletter box and footer (30)
+## Every page: header, menu, newsletter box and footer (31)
 
 - [ ] **Paragraph:** "Upasaka Culadasa · John Yates, Ph.D. · 1945–2021"  
   Home (`redesign-2/index.html` line 24), in the header; also on 80 more places (81 pages)
@@ -81,6 +81,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 133), in the footer; also on 80 more places (81 pages)
 - [ ] **Paragraph:** "The teachings of Culadasa are offered freely under a Creative Commons Attribution 4.0 license, as he wished. © 2021–2026."  
   Home (`redesign-2/index.html` line 134), in the footer; also on 80 more places (81 pages)
+- [ ] **Paragraph:** "The basics · The method · The science of mind · Going deeper · Daily life"  
+  Learn (`redesign-2/learn/index.html` line 37), in the menu
 - [ ] **Section heading:** "All 61 Patreon AMA sessions organized by year"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 39), in the menu
 - [ ] **Paragraph:** "Choose one to go to it."  
@@ -132,7 +134,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 54), under "Learn the method"
 - [ ] **Short label:** "Every teaching, searchable"  
   Home (`redesign-2/index.html` line 55), under "Learn the method"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "Search over 172,000 words of his handouts, essays and 441 recorded questions and answers."  
+- [ ] **Paragraph:** "Search over 195,000 words of his handouts, essays and 441 recorded questions and answers."  
   Home (`redesign-2/index.html` line 55), under "Topics"
 - [ ] **Short label:** "Practice with someone"  
   Home (`redesign-2/index.html` line 56), under "Topics"
@@ -144,7 +146,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 56), under "Find a teacher"
 - [ ] **Search box hint:** "Search the teachings, for example: compassion"  
   Home (`redesign-2/index.html` line 64), under "Find a teacher"
-- [ ] **Paragraph:** "Most discussed: mind · experience · awareness · meditation · attention · practice · stage · insight · mental · feel"  
+- [ ] **Paragraph:** "Most discussed: mind · meditation · experience · practice · insight · awareness · stage · attention · mindful · feel"  
   Home (`redesign-2/index.html` line 67), under "Find a teacher"
 - [ ] **Paragraph:** "Watch"  
   Home (`redesign-2/index.html` line 72), under "Find a teacher"; also on 1 more place (2 pages)
@@ -268,7 +270,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **List item:** "Daily life 23 questions"  
   Start here (`redesign-2/start-here/index.html` line 41), under "What people asked him most"
 
-## Learn (44)
+## Learn (46)
 
 - [ ] **Page title (browser tab):** "Learn — Culadasa"  
   Learn (`redesign-2/learn/index.html` line 6)
@@ -278,6 +280,10 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Learn (`redesign-2/learn/index.html` line 36)
 - [ ] **Paragraph:** "His teaching arranged as a journey: the basics, the method, the science of mind, going deeper, and daily life."  
   Learn (`redesign-2/learn/index.html` line 36), under "Learn"
+- [ ] **Screen-reader label (hidden):** "Sections of the path"  
+  Learn (`redesign-2/learn/index.html` line 37), under "Learn"
+- [ ] **Link text:** "All sections ↑"  
+  Learn (`redesign-2/learn/index.html` line 37), under "The basics"; also on 4 more places
 - [ ] **Sub-heading:** "What meditation trains"  
   Learn (`redesign-2/learn/index.html` line 38), under "What meditation trains"
 - [ ] **Paragraph:** "Attention and peripheral awareness, and how they work together."  
@@ -365,7 +371,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Topics (`redesign-2/topics/index.html` line 6)
 - [ ] **Search description (hidden):** "Search every Culadasa teaching by topic, ranked by mentions, with a word cloud."  
   Topics (`redesign-2/topics/index.html` line 7)
-- [ ] **Paragraph:** "Search over 172,000 words: handouts, essays and 441 recorded questions. Results are ranked by how often they mention what you search for."  
+- [ ] **Paragraph:** "Search over 195,000 words: handouts, essays and 441 recorded questions. Results are ranked by how often they mention what you search for."  
   Topics (`redesign-2/topics/index.html` line 36), under "Topics"
 - [ ] **Search box hint:** "Try: compassion, dullness, jhāna, craving"  
   Topics (`redesign-2/topics/index.html` line 39), under "Topics"
@@ -449,7 +455,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **List item:** "Joy & Meditation – More Than Just a Happy Feeling PDF · 28 min read"  
   Library › Writings (`redesign-2/writings/index.html` line 37), under "Teaching Retreats Handouts"
 
-## Library › Audio (7)
+## Library › Audio (11)
 
 - [ ] **Page title (browser tab):** "Audio — Culadasa"  
   Library › Audio (`redesign-2/audio/index.html` line 6)
@@ -459,6 +465,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Audio (`redesign-2/audio/index.html` line 36), under "Audio"
 - [ ] **Paragraph:** "Open SoundCloud"  
   Library › Audio (`redesign-2/audio/index.html` line 36), under "Audio"
+- [ ] **Search box hint:** "Search the titles and notes of 401 recordings"  
+  Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"
+- [ ] **legend:** "Where to search"  
+  Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 3 more places (4 pages)
+- [ ] **Form label:** "All"  
+  Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 4 more places (5 pages)
+- [ ] **Form label:** "AMA sessions"  
+  Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 3 more places (4 pages)
 - [ ] **Section heading:** "Patreon Q&As"  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Patreon Q&As"
 - [ ] **Section heading:** "Every recording"  
@@ -523,7 +537,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Button:** "Hide the 61 sessions"  
   Library › Videos (`redesign-2/videos/index.html` line 262), under "Culadasa October 2017 Patreon Q&A"
 
-## Library › Q&A archive (1370)
+## Library › Q&A archive (1367)
 
 - [ ] **Page title (browser tab):** "Culadasa AMA sessions — Culadasa"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 6)
@@ -571,12 +585,6 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 59), under "The sessions"
 - [ ] **Search box hint:** "Search 441 questions and answers"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"
-- [ ] **legend:** "Where to search"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"; also on 2 more places (3 pages)
-- [ ] **Form label:** "All"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"; also on 3 more places (4 pages)
-- [ ] **Form label:** "AMA sessions"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"; also on 2 more places (3 pages)
 - [ ] **Button:** "May 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 65), under "May 2021 #1"
 - [ ] **Link text:** "Return to AMA list"  
@@ -4074,7 +4082,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Text block:** "WH"  
   Teachers › profile (`redesign-2/teachers/wayne-hayden-moreland/index.html` line 36), under "Wayne Hayden Moreland"
 
-## Messages shown by the search and map scripts (26)
+## Messages shown by the search and map scripts (27)
 
 These appear while using Topics search and the Teachers map; they are not in the page files.
 
@@ -4091,6 +4099,8 @@ These appear while using Topics search and the Teachers map; they are not in the
 - [ ] "in the AMA sessions"  
   `redesign-2/assets/topics.js` line 13
 - [ ] "in the video titles"  
+  `redesign-2/assets/topics.js` line 13
+- [ ] "in the audio recordings"  
   `redesign-2/assets/topics.js` line 13
 - [ ] "Type a word, or choose one from the cloud."  
   `redesign-2/assets/topics.js` line 69
