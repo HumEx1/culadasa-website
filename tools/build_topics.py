@@ -182,6 +182,12 @@ def main(qna_md, interviews_dir):
         if v['id'] not in qna_ids:
             docs.append({'id': 'video-' + v['id'], 'type': 'Video', 'title': v['title'],
                          'url': f'https://www.youtube.com/watch?v={v["id"]}', 'text': v['title']})
+    # SoundCloud recordings: title and the kept part of each description (tools/build_audio.py; D, 25 Nov 2026)
+    audio_path = ROOT / 'redesign' / 'data' / 'audio.json'
+    if audio_path.exists():
+        for i, r in enumerate(json.loads(audio_path.read_text())['recordings']):
+            docs.append({'id': f'audio-{i}', 'type': 'Audio', 'title': r['title'], 'url': r['url'],
+                         'text': (r['title'] + '\n' + r['text']).strip()})
     # word cloud: most frequent words across everything
     counts = collections.Counter()
     for d in docs:

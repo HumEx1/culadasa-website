@@ -9,10 +9,10 @@
   var DATA = null, KIND = 'all', LIMIT = 60;
   // Scoped search (D, 25 Nov 2026): one box, and pills for where to search. The count and the status line follow the scope.
   // Writings = handouts and essays. The Lineage page is searched under All only.
-  var KINDS = [['all', 'All'], ['writings', 'Writings'], ['ama', 'AMA sessions'], ['video', 'Videos']];
-  var SCOPE_NAME = { all: 'across the site', writings: 'in the Writings', ama: 'in the AMA sessions', video: 'in the video titles' };
-  var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video' };
-  var ALIAS = { 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video' };
+  var KINDS = [['all', 'All'], ['writings', 'Writings'], ['ama', 'AMA sessions'], ['video', 'Videos'], ['audio', 'Audio']];
+  var SCOPE_NAME = { all: 'across the site', writings: 'in the Writings', ama: 'in the AMA sessions', video: 'in the video titles', audio: 'in the audio recordings' };
+  var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video', 'Audio': 'audio' };
+  var ALIAS = { 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video', 'audios': 'audio', 'recordings': 'audio' };
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   // Fold accents and apostrophes, one character in, one out, so positions stay aligned with the original text.

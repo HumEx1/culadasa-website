@@ -189,7 +189,7 @@ def video_tile(v, r, sub=''):
 </article>'''
 
 
-SCOPES = [('all', 'All'), ('writings', 'Writings'), ('ama', 'AMA sessions'), ('video', 'Videos')]
+SCOPES = [('all', 'All'), ('writings', 'Writings'), ('ama', 'AMA sessions'), ('video', 'Videos'), ('audio', 'Audio')]
 
 
 def scoped_search(r, scope, placeholder, ident):
@@ -470,7 +470,7 @@ def build():
     PL = [('Guided Meditations', '282960661'), ('Questions and Answers', '283520935'), ('Teaching Retreats', '296077102'),
           ('Intensive Meditation Retreats', '283729524'), ('Patreon Q&As', '967729615')]
     body = banner('Listen', 'Audio', 'Guided meditations, teaching retreats and questions and answers: 401 recordings in 26 collections on his SoundCloud.', 'ink',
-                  '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section"><div class="wrap"><div class="grid">' + ''.join(
+                  '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section tight"><div class="wrap">' + scoped_search(r, 'audio', 'Search the titles and notes of 401 recordings', 'a-q') + '</div></section><section class="section"><div class="wrap"><div class="grid">' + ''.join(
         f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All 401 recordings, newest first.</p>{sc_player("users", "111086538", 600)}</div></section>'
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud.')
 
