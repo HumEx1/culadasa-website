@@ -639,3 +639,4 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .rrow.open .rr-body{display:block}
 .rr-open{margin:10px 0 0;font:500 14px/1.4 var(--display)}
 .rgroup .result-group + .rrow{border-top:0}
+.book-lead-quote{margin:26px 0 28px;max-width:none}
