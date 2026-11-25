@@ -349,23 +349,13 @@ EYES = '''<section class="eyes-band" aria-label="Closing">
 
 
 def book_finder(r):
-    """Search the book and its word cloud, right below the Buy button (D, 25 Nov 2026). The book is not on this site:
+    """Search the book, across the page below the cover (D, 25 Nov 2026; no word cloud). The book is not on this site:
     results give the place in the book (page, chapter, heading, paragraph, line) and, for teaching terms, a few short phrases."""
-    bp = D / 'book.json'
-    if not bp.exists():
+    if not (D / 'book.json').exists():
         return ''
-    terms = [t for t in json.loads(bp.read_text())['terms'] if t['n'] >= 3]
-    import math
-    hi, lo = max(t['n'] for t in terms), min(t['n'] for t in terms)
-    words = []
-    for t in sorted(terms, key=lambda t: t['t'].lower().replace('the ', '')):
-        k = (math.sqrt(t['n']) - math.sqrt(lo)) / ((math.sqrt(hi) - math.sqrt(lo)) or 1)
-        tone = ' class="t3"' if k > .55 else ' class="t2"' if k > .25 else ''
-        words.append(f'<a{tone} style="font-size:{round(14 + k * 20)}px" href="{r}topics/?q={quote_plus(t["t"])}&amp;type=book" title="{t["n"]} mentions in the book">{esc(t["t"])}</a>')
-    return (f'<div class="book-finder"><p class="label">Search the book</p>'
+    return (f'<section class="section tight book-finder"><div class="wrap"><p class="label">Search the book</p>'
             f'{scoped_search(r, "book", "Find a word or topic in the book", "b-q")}'
-            f'<div class="cloud cloud-links" aria-label="Teaching terms in the book">{" ".join(words)}</div>'
-            f'<p class="small muted">The book itself is not on this site. A search shows where a word appears (page, chapter, heading, paragraph and line, in the 2015 first edition) and, for teaching terms, a few short phrases, so you can find the passage in your own copy.</p></div>')
+            f'<p class="small muted">The book itself is not on this site. A search shows where a word appears (page, chapter, heading, paragraph and line, in the 2015 first edition) and, for teaching terms, a few short phrases, so you can find the passage in your own copy.</p></div></section>')
 
 
 def build():
@@ -529,9 +519,9 @@ def build():
     <p class="lead">Written by Culadasa (John Yates, Ph.D.) with Matthew Immergut, Ph.D. and Jeremy Graves, and first published by Dharma Treasure Press on 6 October 2015.</p>
     <p>The book sets out ten stages of meditative development, from establishing a daily practice to tranquility and equanimity, with clear instructions for each stage and an account of how the mind works drawn from both the Buddhist tradition and cognitive science.</p>
     <p><a class="btn" href="https://www.simonandschuster.com/books/The-Mind-Illuminated/John-Yates/9781501156984" rel="noopener">Buy from Publisher</a></p>
-    {book_finder(r)}
   </div>
 </div></section>
+{book_finder(r)}
 <section class="section"><div class="wrap"><p class="label">The ten stages</p><h2>From the first sit to equanimity</h2>
 <ol class="stages">{''.join(f'<li><span><small>{lvl}</small>{esc(n)}</span></li>' for n, lvl in STAGES)}</ol>
 <p class="muted small" style="margin-top:18px">Milestones: continuous attention to the meditation object (after stage 3); sustained exclusive focus of attention (after stage 6); effortless stability of attention (after stage 7); persistence of the mental qualities of an adept (after stage 10).</p></div></section>
