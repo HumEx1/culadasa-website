@@ -216,7 +216,7 @@ def video_tile(v, r, sub=''):
 </article>'''
 
 
-SCOPES = [('writings', 'Writings'), ('ama', 'AMA sessions'), ('video', 'Videos'), ('audio', 'Audio')]
+SCOPES = [('video', 'Videos'), ('audio', 'Audio'), ('ama', 'AMA sessions'), ('writings', 'Writings')]   # the Library order (D, 25 Nov 2026)
 
 
 def scoped_search(r, scope, placeholder, ident):
@@ -652,8 +652,10 @@ def build():
     # ---------------------------------------------------------------- topics
     body = banner('Every teaching, searchable', 'Search', f'Search over a million words: every word of about {round(N_VIDEOS, -1)} videos, {N_WRIT} retreat handouts and essays, {sum(len(s["items"]) for s in qna)} AMA questions, and the titles and descriptions of {N_AUDIO_TXT} audio recordings. Results are ranked by how often they mention what you search for.', 'ink') + f'''
 <section class="section"><div class="wrap">
+  <div class="search-panel">
   <form class="search" id="topic-form" role="search"><label class="sr" for="q">Search the teachings</label><input id="q" name="q" type="search" placeholder="Try: compassion, dullness, jhāna, craving" autocomplete="off"><button class="btn" type="submit">Search</button></form>
   <div class="filters" id="filters" aria-label="Filter by kind"></div>
+  </div>
   <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>
   <p class="status" id="status" role="status">Loading the teachings…</p>
   <div class="results" id="results"></div>

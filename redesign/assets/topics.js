@@ -10,7 +10,7 @@
   // Scoped search (D, 25 Nov 2026): one box, and pills that each switch a part of the site on or off, independently,
   // so Writings and AMA sessions can be searched together. Clear switches them all off, which searches everything.
   // The count and the status line follow the choice. Writings = handouts and essays. The Lineage page is searched when nothing is switched on.
-  var KINDS = [['writings', 'Writings'], ['ama', 'AMA sessions'], ['video', 'Videos'], ['audio', 'Audio']];
+  var KINDS = [['video', 'Videos'], ['audio', 'Audio'], ['ama', 'AMA sessions'], ['writings', 'Writings']];   // the Library order (D, 25 Nov 2026)
   var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA sessions', video: 'the videos', audio: 'the audio recordings' };
   function selected() { return KINDS.map(function (k) { return k[0]; }).filter(function (k) { return SEL[k]; }); }
   function scopeText() {
