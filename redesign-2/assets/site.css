@@ -651,3 +651,26 @@ body[data-section="book"] .section.book-finder{padding-top:0;border-top:0}
 @media (min-width:761px){.book-lead-quote{margin-left:-27px}}
 /* Buy from Publisher spans the cover width, so it reads as part of the cover rather than floating beside it (D, 25 Nov 2026) */
 .book-buy{text-align:center}   /* its normal width, centred under the cover (D, 25 Nov 2026) */
+
+/* Times are play buttons everywhere (D, 25 Nov 2026): ▶ 12:34 in a small outlined pill that fills on hover */
+a.play, a.tstamp, .qlist > li > a.t, .qa-list a.t, li > a.t[href*="youtube.com/watch"], p.qtime a{
+  display:inline-flex;align-items:center;gap:6px;width:max-content;height:auto;align-self:start;justify-self:start;box-sizing:border-box;
+  padding:3px 10px 3px 8px;margin:0 6px 0 0;border:1px solid var(--teal);border-radius:999px;background:transparent;
+  font:600 12.5px/1.2 var(--display);letter-spacing:.04em;color:var(--teal);text-decoration:none;white-space:nowrap;vertical-align:baseline}
+a.play::before, a.tstamp::before, .qlist > li > a.t::before, li > a.t[href*="youtube.com/watch"]::before, p.qtime a::before{
+  content:"";width:0;height:0;border-left:7px solid currentColor;border-top:4.5px solid transparent;border-bottom:4.5px solid transparent}
+a.play:hover, a.tstamp:hover, .qlist > li > a.t:hover, li > a.t[href*="youtube.com/watch"]:hover, p.qtime a:hover{background:var(--teal);color:#fff}
+a.play:focus-visible, a.tstamp:focus-visible, li > a.t:focus-visible, p.qtime a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.tline{margin:0 0 8px}
+
+/* title rows on the Audio and Videos pages (the same look as the search results) */
+.lrow{border-top:1px solid var(--line)}
+.rgroup .result-group + .lrow{border-top:0}
+.lrow > summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;padding:14px 0}
+.lrow > summary::-webkit-details-marker{display:none}
+.lrow > summary:hover .rr-name{color:var(--teal)}
+.lrow > summary:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.lrow > .rr-body{padding:0 0 18px}
+.lrow .video-card{max-width:560px;margin-bottom:8px}
+.rgroup .result-group{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 0 6px;margin:28px 0 0;border-top:2px solid var(--gold-line,#c4972f);font:500 14px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.rgroup .result-group .rg-count{font-size:12px;letter-spacing:.08em;color:var(--muted)}

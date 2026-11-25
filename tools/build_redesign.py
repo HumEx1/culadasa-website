@@ -358,6 +358,48 @@ def book_finder(r):
             f'<p class="small muted">The book itself is not on this site. A search shows where a word appears (page, chapter, heading, paragraph and line, in the 2015 first edition) and, for teaching terms, a few short phrases, so you can find the passage in your own copy.</p></div></section>')
 
 
+def row(title, meta, body, key=''):
+    """One title row that opens to show its detail (D, 25 Nov 2026): the same convention as the search results."""
+    return (f'<details class="lrow"{f" id={chr(34)}{esc(key)}{chr(34)}" if key else ""}><summary><span class="rr-name">{esc(title)}</span>'
+            f'<span class="rr-meta">{esc(meta)}</span></summary><div class="rr-body">{body}</div></details>')
+
+
+def row_groups(groups, show=4):
+    """Sections of title rows; each shows `show` rows, "Show all N" opens the rest, "Show fewer" closes them."""
+    out = ''
+    for name, rows_ in groups:
+        extra = len(rows_) - show
+        out += (f'<section class="rgroup{" open" if extra <= 0 else ""}"><h3 class="result-group"><span class="rg-name">{esc(name)}</span>'
+                f'<span class="rg-count">{len(rows_)}</span></h3>'
+                + ''.join(r_ if k < show else f'<div class="rg-more">{r_}</div>' for k, r_ in enumerate(rows_))
+                + (f'<p class="rg-foot"><button type="button" class="linklike rg-all">Show all {len(rows_)} in {esc(name)}</button>'
+                   f'<button type="button" class="linklike rg-less">Show fewer</button></p>' if extra > 0 else '') + '</section>')
+    return out
+
+
+def play(url, label):
+    """A time as a play button (D, 25 Nov 2026): ▶ 12:34, opening the recording or video at that moment."""
+    return f'<a class="play" href="{esc(url)}" title="Play from {esc(label)}" rel="noopener">{esc(label)}</a>'
+
+
+def handout_map():
+    """Handouts linked from the recordings → our own copies (docs/AUDIO_LINKS.md)."""
+    m, cur = {}, []
+    p_ = ROOT / 'docs' / 'AUDIO_LINKS.md'
+    if not p_.exists():
+        return m
+    for line in p_.read_text().splitlines():
+        if line.startswith('- Linked as: '):
+            cur.append(line[13:].strip())
+        elif line.startswith('- Our copy: `'):
+            for u in cur:
+                m[u] = line.split('`')[1]
+            cur = []
+        elif line.startswith('### '):
+            cur = []
+    return m
+
+
 def build():
     vid_by_id = {v['id']: v for v in videos}
     global WORDS
@@ -555,26 +597,82 @@ def build():
         page(slug + '/', title, body, description=f'{title}: an essay by Culadasa.')
 
     # ---------------------------------------------------------------- audio (old path)
+    # Every recording as a list of titles by year (D, 25 Nov 2026), from the public SoundCloud feed (tools/build_audio.py).
+    audio_all = json.loads((D / 'audio.json').read_text())['recordings']
+    hmap = handout_map()
+    def audio_body(a_):
+        parts = []
+        for line in a_['text'].splitlines():
+            m_ = re.match(r'^\s*\(?((?:\d{1,2}:)?\d{1,2}:\d{2})\)?\s*[-–—:]?\s*(.*)$', line)
+            if m_ and a_['url']:
+                parts.append(f'<p class="tline">{play(a_["url"] + "#t=" + m_.group(1), m_.group(1))} {esc(m_.group(2))}</p>')
+            elif line.strip() and not line.strip().lower().startswith('timestamps'):
+                parts.append(f'<p>{esc(line.strip())}</p>')
+        hs = [(u, hmap[u]) for u in a_.get('links', []) if u in hmap]
+        if hs:
+            parts.append('<p class="small"><strong>Handouts:</strong> ' + ' · '.join(
+                f'<a href="{r}../{esc(p_)}">{esc(p_.rsplit("/", 1)[-1].replace("-", " ").replace(".pdf", ""))}</a>' for u, p_ in hs) + '</p>')
+        parts.append(f'<p class="rr-open"><a href="{esc(a_["url"])}" rel="noopener">Listen on SoundCloud →</a></p>')
+        return ''.join(parts)
+    def dur(d):
+        d = re.sub(r'^00:', '', d or '')
+        return re.sub(r'^0(?=\d)', '', d)
+    # grouped by series, read from the titles (the feed's dates are upload dates, so years would mislead)
+    def a_series(t):
+        t = t.replace(' - Culadasa', '').strip()
+        if re.search(r'patreon|q ?& ?a\b|q and a', t, re.I):
+            return 'AMA sessions and Q&As'
+        if re.match(r'TCMC Thursday', t):
+            return 'TCMC Thursday evenings'
+        t = re.sub(r'[,:\-–]?\s*(Part|Pt\.?|Session|Day|Talk)\s*,?\s*\d+.*$', '', t, flags=re.I).strip(' ,-–:')
+        t = re.sub(r'^(Dharma Talk|Guided Metta|Guided Meditation|Meditation|Q&A),\s*', '', t)
+        return t
+    by_s = {}
+    for a_ in sorted(audio_all, key=lambda x: (x['date'], x['title']), reverse=True):
+        by_s.setdefault(a_series(a_['title']), []).append(a_)
+    singles = [a_ for k, v in by_s.items() if len(v) == 1 for a_ in v]
+    series_ = sorted(((k, v) for k, v in by_s.items() if len(v) > 1), key=lambda kv: (kv[0] != 'AMA sessions and Q&As', -len(kv[1]), kv[0]))
+    def a_row(a_):
+        return row(a_['title'].replace(' - Culadasa', ''), ' · '.join(x for x in (a_['date'], dur(a_['duration'])) if x), audio_body(a_))
+    def natural(t):   # Part 2 before Part 10
+        return [int(x) if x.isdigit() else x.lower() for x in re.split(r'(\d+)', t)]
+    audio_groups = [(k, [a_row(a_) for a_ in sorted(v, key=lambda x: natural(x['title']))] if k != 'AMA sessions and Q&As' else [a_row(a_) for a_ in v]) for k, v in series_]
+    if singles:
+        audio_groups.append(('Single talks and meditations', [a_row(a_) for a_ in sorted(singles, key=lambda x: natural(x['title']))]))
     PL = [('Guided Meditations', '282960661'), ('Questions and Answers', '283520935'), ('Teaching Retreats', '296077102'),
           ('Intensive Meditation Retreats', '283729524'), ('Patreon Q&As', '967729615')]
     body = banner('Listen', 'Audio', 'Guided meditations, teaching retreats and questions and answers: 401 recordings in 26 collections on his SoundCloud.', 'ink',
                   '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section tight"><div class="wrap">' + scoped_search(r, 'audio', 'Search the titles and notes of 401 recordings', 'a-q') + '</div></section><section class="section"><div class="wrap"><div class="grid">' + ''.join(
-        f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All 401 recordings, newest first.</p>{sc_player("users", "111086538", 600)}</div></section>'
+        f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All {len(audio_all)} recordings, grouped by retreat or series. Open one for its notes, the handouts that go with it, and the moments in it.</p>{row_groups(audio_groups)}</div></section>'
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud.')
 
     # ---------------------------------------------------------------- videos (old path)
+    # Every video as a list of titles (D, 25 Nov 2026): the talks, then the AMA sessions by year. The list covers all the
+    # videos on his channel that have transcripts, not only the ones that were on the old Videos page.
+    _trv = {v['id']: v for v in json.loads((D / 'transcripts.json').read_text())['videos']} if (D / 'transcripts.json').exists() else {}
+    ama_ids = {s_['video']: s_ for s_ in qna if s_.get('video')}
+    all_vids = list(dict.fromkeys([v['id'] for v in videos] + list(_trv)))
+    def vtitle(i):
+        return vid_by_id[i]['title'] if i in vid_by_id else _trv[i]['title']
+    def vrow(i):
+        v = vid_by_id.get(i) or {'id': i, 'title': vtitle(i)}
+        meta = ' · '.join(x for x in ((_trv.get(i) or {}).get('date', ''), f"{len(ama_ids[i]['items'])} questions" if i in ama_ids else '') if x)
+        links = ([f'<a href="{r}online-meetings/#s-{i}">Questions →</a>'] if i in ama_ids else []) + [f'<a href="https://www.youtube.com/watch?v={i}" rel="noopener">Open on YouTube →</a>']
+        return row(vtitle(i), meta, video_tile(v, r) + '<p class="rr-open">' + ' · '.join(links) + '</p>', key='v-' + i)
+    talk_ids = sorted([i for i in all_vids if i not in ama_ids], key=lambda i: (_trv.get(i) or {}).get('date', ''), reverse=True)
+    video_groups = [('Talks and discussions', [vrow(i) for i in talk_ids])]
+    def ama_year(i):   # the year the session was held (from its title), not the year it was uploaded
+        m_ = re.search(r'(19|20)\d\d', ama_ids[i]['title'])
+        return m_.group(0) if m_ else (_trv.get(i) or {}).get('date', '')[:4]
+    for y in sorted({ama_year(i) for i in ama_ids}, reverse=True):
+        ids = [i for i in ama_ids if ama_year(i) == y]
+        ids.sort(key=lambda i: (_trv.get(i) or {}).get('date', ''), reverse=True)
+        video_groups.append((f'AMA sessions {y}', [vrow(i) for i in ids]))
     body = banner('Watch', 'Videos', 'His talks and AMA (ask me anything) sessions from YouTube. Search finds every word he says in about 100 of his videos.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
 <section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search what he says in the videos', 'v-q')}</div></section>
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
-<section class="section"><div class="wrap"><h2>Culadasa AMA sessions</h2><p class="muted">Each session’s questions are listed, with links to the moment he answers, in <a href="{r}online-meetings/">Culadasa AMA sessions</a>.</p>
-<div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f'{len(s["items"])} questions · <a href="{r}online-meetings/#s-{s["video"]}">Questions →</a>') for s in list(reversed(qna))[:6])}</div>
-<details class="map-wrap vsessions" id="vsessions" style="margin-top:24px"><summary><span class="when-closed">Show all {len(qna)} sessions</span><span class="when-open">Hide the {len(qna)} sessions</span></summary><div class="grid" style="margin-top:16px">{''.join(video_tile(vid_by_id[s['video']], r, f'{len(s["items"])} questions · <a href="{r}online-meetings/#s-{s["video"]}">Questions →</a>') for s in list(reversed(qna))[6:])}</div>
-<p class="scard-close"><button type="button" class="close-q" id="vsessions-close">Hide the {len(qna)} sessions</button></p></details>
-<script>
-(function () {{ var d = document.getElementById('vsessions'), b = document.getElementById('vsessions-close');
-  if (d && b) b.addEventListener('click', function () {{ d.open = false; d.scrollIntoView({{ block: 'start' }}); d.querySelector('summary').focus({{ preventScroll: true }}); }}); }})();
-</script></div></section>'''
+<section class="section"><div class="wrap"><h2>Every video</h2><p class="muted">All {len(all_vids)} of his videos on YouTube: talks first, then the AMA sessions by year. Open one to play it here.</p>{row_groups(video_groups)}</div></section>'''
     page('videos/', 'Videos', body, description='Talks, discussions and AMA sessions by Culadasa on YouTube.')
 
     # ---------------------------------------------------------------- Q&A archive (old path: online-meetings)

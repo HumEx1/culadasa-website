@@ -41,3 +41,13 @@
   });
   document.querySelectorAll('.menu a').forEach(function (a) { a.addEventListener('click', function () { if (nav) setMenu(false); }); });
 })();
+
+/* "Show all" / "Show fewer" on the title lists of the Audio and Videos pages (the search page has its own) (D, 25 Nov 2026) */
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('.rg-all, .rg-less');
+  if (!b || b.closest('#results')) return;
+  var sec = b.closest('.rgroup'); if (!sec) return;
+  var open = b.classList.contains('rg-all');
+  sec.classList.toggle('open', open);
+  if (!open) sec.scrollIntoView({ block: 'start', behavior: 'smooth' });
+});
