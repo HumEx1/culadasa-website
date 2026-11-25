@@ -700,3 +700,7 @@ a.play:focus-visible, a.tstamp:focus-visible, li > a.t:focus-visible, p.qtime a:
 .stage-pin p{margin:8px 0 0}
 .stage-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font:500 15px/1.4 var(--display)}
 .stages.linked a > span::after{content:" →";color:var(--teal)}
+/* the ten stages open the Learn page (D, 25 Nov 2026) */
+.learn-stages .stages.compact-grid{margin:18px 0 6px}
+.learn-stages .stages.compact-grid a{padding:10px 0}
+.learn-stages h2{margin-top:6px}

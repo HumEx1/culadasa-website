@@ -621,6 +621,11 @@ def build():
         sec += f'''<section class="section learn-sec" id="{slug_of(name)}"><div class="wrap"><div class="track-head {tone}"><h2>{name}</h2><a class="scard-back" href="#learn-sections">All sections ↑</a></div>
 <div class="grid cols-4">{''.join(f'<a class="card tone-{tone}" href="{u}"><h3>{esc(t)}</h3><p>{esc(d)}</p><span class="more">{"Search" if "topics/?q=" in u else "Open"} →</span></a>' for t, d, u in items)}</div></div></section>'''
     # quick links to the five sections; the one chosen keeps a thin gold outline, as on the AMA sessions page (D, 25 Nov 2026)
+    # The ten stages first (D, 25 Nov 2026): the foundation of the method, so they open Learn
+    learn_stages = (f'<section class="section tight learn-stages"><div class="wrap"><p class="label">The foundation of the method</p>'
+                    f'<h2>The ten stages</h2><p class="measure">The map of the whole path in <em>The Mind Illuminated</em>. Open a stage for a video to start with and everything he said about it.</p>'
+                    f'<ol class="stages linked compact-grid">' + ''.join(f'<li><a href="{r}ten-stages/stage-{k + 1}/"><span><small>{lvl}</small>{esc(n)}</span></a></li>' for k, (n, lvl) in enumerate(STAGES))
+                    + f'</ol><p class="actions"><a class="btn" href="{r}ten-stages/">The ten stages in his words →</a></p></div></section>')
     jump = ('<section class="section tight"><div class="wrap"><nav class="jump jump-main learn-jump" id="learn-sections" aria-label="Sections of the path">'
             '<p>' + ' · '.join(f'<a href="#{slug_of(n)}">{esc(n)}</a>' for n, _, _ in tracks) + '</p></nav></div></section>')
     learn_js = '''<script>
@@ -631,7 +636,7 @@ def build():
   window.addEventListener('hashchange', fromHash); fromHash();
 })();
 </script>'''
-    body = banner('The basics, then deeper', 'Learn', 'His teaching arranged as a journey: the basics, the method, the science of mind, going deeper, and daily life.', 'ink') + jump + sec + learn_js
+    body = banner('The basics, then deeper', 'Learn', 'His teaching arranged as a journey: the basics, the method, the science of mind, going deeper, and daily life.', 'ink') + learn_stages + jump + sec + learn_js
     page('learn/', 'Learn', body, description='Culadasa’s teaching arranged as a journey: basics, method, science of mind, going deeper, daily life.')
 
     # ---------------------------------------------------------------- the book
