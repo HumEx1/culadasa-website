@@ -23,14 +23,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Library › Writings › essay | 17 |
 | The Book | 21 |
 | The Book (old address, redirects) | 2 |
-| Teachers | 72 |
+| Teachers | 73 |
 | Conversations | 45 |
 | Lineage | 13 |
 | Lineage (old About address, redirects) | 3 |
 | Footer › Testimonials | 6 |
 | Footer › Testimonials (old address, redirects) | 2 |
 | Teachers › individual profile pages | 208 |
-| Messages shown by the search and map scripts | 27 |
+| Messages shown by the search and map scripts | 26 |
 | **Total** | **2023** |
 
 ## Every page: header, menu, newsletter box and footer (31)
@@ -469,9 +469,9 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"
 - [ ] **legend:** "Where to search"  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 3 more places (4 pages)
-- [ ] **Form label:** "All"  
-  Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 4 more places (5 pages)
 - [ ] **Form label:** "AMA sessions"  
+  Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 3 more places (4 pages)
+- [ ] **Button:** "Clear"  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 3 more places (4 pages)
 - [ ] **Section heading:** "Patreon Q&As"  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Patreon Q&As"
@@ -3363,7 +3363,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "The reviews are now on The Mind Illuminated page."  
   The Book (old address, redirects) (`redesign-2/book-reviews/index.html` line 37)
 
-## Teachers (72)
+## Teachers (73)
 
 - [ ] **Page title (browser tab):** "Teachers — Culadasa"  
   Teachers (`redesign-2/teachers/index.html` line 6)
@@ -3379,6 +3379,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Teachers (`redesign-2/teachers/index.html` line 42), under "Certified Teachers"
 - [ ] **Button:** "Near me"  
   Teachers (`redesign-2/teachers/index.html` line 42), under "Certified Teachers"
+- [ ] **Button:** "All"  
+  Teachers (`redesign-2/teachers/index.html` line 43), under "Certified Teachers"
 - [ ] **Button:** "Teaches online"  
   Teachers (`redesign-2/teachers/index.html` line 43), under "Certified Teachers"
 - [ ] **Button:** "In person"  
@@ -4082,46 +4084,44 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Text block:** "WH"  
   Teachers › profile (`redesign-2/teachers/wayne-hayden-moreland/index.html` line 36), under "Wayne Hayden Moreland"
 
-## Messages shown by the search and map scripts (27)
+## Messages shown by the search and map scripts (26)
 
 These appear while using Topics search and the Teachers map; they are not in the page files.
 
-- [ ] "All"  
-  `redesign-2/assets/topics.js` line 12
 - [ ] "AMA sessions"  
-  `redesign-2/assets/topics.js` line 12
+  `redesign-2/assets/topics.js` line 13
 - [ ] "AMA sessions"  
-  `redesign-2/assets/topics.js` line 12
+  `redesign-2/assets/topics.js` line 13
+- [ ] "the Writings"  
+  `redesign-2/assets/topics.js` line 14
+- [ ] "the AMA sessions"  
+  `redesign-2/assets/topics.js` line 14
+- [ ] "the video titles"  
+  `redesign-2/assets/topics.js` line 14
+- [ ] "the audio recordings"  
+  `redesign-2/assets/topics.js` line 14
 - [ ] "across the site"  
-  `redesign-2/assets/topics.js` line 13
-- [ ] "in the Writings"  
-  `redesign-2/assets/topics.js` line 13
-- [ ] "in the AMA sessions"  
-  `redesign-2/assets/topics.js` line 13
-- [ ] "in the video titles"  
-  `redesign-2/assets/topics.js` line 13
-- [ ] "in the audio recordings"  
-  `redesign-2/assets/topics.js` line 13
+  `redesign-2/assets/topics.js` line 18
 - [ ] "Type a word, or choose one from the cloud."  
-  `redesign-2/assets/topics.js` line 69
+  `redesign-2/assets/topics.js` line 76
 - [ ] "Type at least two letters."  
-  `redesign-2/assets/topics.js` line 70
+  `redesign-2/assets/topics.js` line 77
 - [ ] ", most mentions first."  
-  `redesign-2/assets/topics.js` line 86
+  `redesign-2/assets/topics.js` line 93
 - [ ] "No mentions of “"  
-  `redesign-2/assets/topics.js` line 87
-- [ ] "Choose All to see"  
-  `redesign-2/assets/topics.js` line 87
-- [ ] "elsewhere on the site."  
-  `redesign-2/assets/topics.js` line 87
-- [ ] "Try a shorter or different word."  
-  `redesign-2/assets/topics.js` line 87
-- [ ] "more questions in this session"  
-  `redesign-2/assets/topics.js` line 90
-- [ ] "Show all"  
   `redesign-2/assets/topics.js` line 94
+- [ ] "Press Clear to see"  
+  `redesign-2/assets/topics.js` line 94
+- [ ] "across the site."  
+  `redesign-2/assets/topics.js` line 94
+- [ ] "Try a shorter or different word."  
+  `redesign-2/assets/topics.js` line 94
+- [ ] "more questions in this session"  
+  `redesign-2/assets/topics.js` line 97
+- [ ] "Show all"  
+  `redesign-2/assets/topics.js` line 101
 - [ ] "The teachings could not be loaded. Please reload the page."  
-  `redesign-2/assets/topics.js` line 139
+  `redesign-2/assets/topics.js` line 150
 - [ ] "teachers shown."  
   `redesign-2/assets/teachers.js` line 33
 - [ ] "a location on the map so far."  

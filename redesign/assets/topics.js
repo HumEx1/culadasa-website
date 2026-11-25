@@ -6,11 +6,18 @@
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var form = $('topic-form'), input = $('q'), cloudEl = $('cloud'), statusEl = $('status'), resultsEl = $('results'), filtersEl = $('filters');
-  var DATA = null, KIND = 'all', LIMIT = 60;
-  // Scoped search (D, 25 Nov 2026): one box, and pills for where to search. The count and the status line follow the scope.
-  // Writings = handouts and essays. The Lineage page is searched under All only.
-  var KINDS = [['all', 'All'], ['writings', 'Writings'], ['ama', 'AMA sessions'], ['video', 'Videos'], ['audio', 'Audio']];
-  var SCOPE_NAME = { all: 'across the site', writings: 'in the Writings', ama: 'in the AMA sessions', video: 'in the video titles', audio: 'in the audio recordings' };
+  var DATA = null, SEL = {}, LIMIT = 60;   // SEL: the parts of the site switched on; none switched on = the whole site
+  // Scoped search (D, 25 Nov 2026): one box, and pills that each switch a part of the site on or off, independently,
+  // so Writings and AMA sessions can be searched together. Clear switches them all off, which searches everything.
+  // The count and the status line follow the choice. Writings = handouts and essays. The Lineage page is searched when nothing is switched on.
+  var KINDS = [['writings', 'Writings'], ['ama', 'AMA sessions'], ['video', 'Videos'], ['audio', 'Audio']];
+  var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA sessions', video: 'the video titles', audio: 'the audio recordings' };
+  function selected() { return KINDS.map(function (k) { return k[0]; }).filter(function (k) { return SEL[k]; }); }
+  function scopeText() {
+    var s = selected().map(function (k) { return SCOPE_NAME[k]; });
+    if (!s.length) return 'across the site';
+    return 'in ' + (s.length === 1 ? s[0] : s.slice(0, -1).join(', ') + ' and ' + s[s.length - 1]);
+  }
   var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video', 'Audio': 'audio' };
   var ALIAS = { 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video', 'audios': 'audio', 'recordings': 'audio' };
 
@@ -81,10 +88,10 @@
     items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });
     drawFilters(counts);
-    var shown = KIND === 'all' ? items : items.filter(function (i) { return i.kind === KIND; });
+    var on = selected(), shown = on.length ? items.filter(function (i) { return SEL[i.kind]; }) : items;
     var total = shown.reduce(function (s, i) { return s + i.n; }, 0);
-    statusEl.textContent = shown.length ? total + ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '” in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + SCOPE_NAME[KIND] + ', most mentions first.'
-      : 'No mentions of “' + clean + '” ' + SCOPE_NAME[KIND] + '.' + (KIND !== 'all' && items.length ? ' Choose All to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' elsewhere on the site.' : ' Try a shorter or different word.');
+    statusEl.textContent = shown.length ? total + ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '” in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + ', most mentions first.'
+      : 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.');
     resultsEl.innerHTML = shown.slice(0, LIMIT).map(function (i) {
       var body = i.qa
         ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '')
@@ -98,12 +105,14 @@
   function drawFilters(counts) {
     var searched = counts.all !== undefined;   // before a search the pills show without numbers
     filtersEl.innerHTML = KINDS.map(function (k) {
-      return '<button type="button" data-k="' + k[0] + '" aria-pressed="' + (k[0] === KIND) + '">' + esc(k[1]) + (searched ? ' <span class="muted">' + (counts[k[0]] || 0) + '</span>' : '') + '</button>';
-    }).join('');
+      return '<button type="button" data-k="' + k[0] + '" aria-pressed="' + !!SEL[k[0]] + '">' + esc(k[1]) + (searched ? ' <span class="muted">' + (counts[k[0]] || 0) + '</span>' : '') + '</button>';
+    }).join('') + '<button type="button" class="scope-clear" data-k="clear"' + (selected().length ? '' : ' disabled') + '>Clear</button>';
   }
   filtersEl.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
-    KIND = b.getAttribute('data-k'); go(false);
+    var k = b.getAttribute('data-k');
+    if (k === 'clear') SEL = {}; else SEL[k] = !SEL[k];
+    go(false);
   });
 
   function drawCloud() {
@@ -122,7 +131,7 @@
 
   function go(scroll) {
     var q = input.value.trim(); LIMIT = 60;
-    try { history.replaceState(null, '', q ? '?q=' + encodeURIComponent(q) + (KIND !== 'all' ? '&type=' + KIND : '') : location.pathname); } catch (e) {}
+    try { history.replaceState(null, '', q ? '?q=' + encodeURIComponent(q) + selected().map(function (k) { return '&type=' + k; }).join('') : location.pathname); } catch (e) {}
     search(q);
     if (q && scroll) resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -132,9 +141,11 @@
     d.docs.forEach(function (x) { x.f = fold(x.text); });
     d.qna.forEach(function (s) { s.items.forEach(function (i) { i.f = fold(i.text); }); });
     DATA = d; drawCloud();
-    var p = new URLSearchParams(location.search), t = (p.get('type') || '').toLowerCase();
-    t = ALIAS[t] || t;
-    if (KINDS.some(function (k) { return k[0] === t; })) KIND = t;
+    var p = new URLSearchParams(location.search);
+    p.getAll('type').join(',').toLowerCase().split(',').forEach(function (t) {
+      t = ALIAS[t.trim()] || t.trim();
+      if (KINDS.some(function (k) { return k[0] === t; })) SEL[t] = true;   // 'all' or unknown values leave the search site-wide
+    });
     if (p.get('q')) { input.value = p.get('q'); search(p.get('q')); } else search('');
   }).catch(function () { statusEl.textContent = 'The teachings could not be loaded. Please reload the page.'; });
 })();

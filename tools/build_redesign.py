@@ -189,13 +189,15 @@ def video_tile(v, r, sub=''):
 </article>'''
 
 
-SCOPES = [('all', 'All'), ('writings', 'Writings'), ('ama', 'AMA sessions'), ('video', 'Videos'), ('audio', 'Audio')]
+SCOPES = [('writings', 'Writings'), ('ama', 'AMA sessions'), ('video', 'Videos'), ('audio', 'Audio')]
 
 
 def scoped_search(r, scope, placeholder, ident):
     """One search box used on several pages (D, 25 Nov 2026): it starts with the page's own scope selected and opens
     Topics with that scope; the reader can widen it to All or switch to another part of the site."""
-    pills = ''.join(f'<label class="scope-pill"><input type="radio" name="type" value="{k}"{" checked" if k == scope else ""}><span>{esc(t)}</span></label>' for k, t in SCOPES)
+    # each pill switches on or off by itself, so several parts can be searched together; none on = the whole site (D, 25 Nov 2026)
+    pills = ''.join(f'<label class="scope-pill"><input type="checkbox" name="type" value="{k}"{" checked" if k == scope else ""}><span>{esc(t)}</span></label>' for k, t in SCOPES)
+    pills += '<button type="button" class="scope-clear" onclick="this.form.querySelectorAll(\'input[name=type]\').forEach(function(c){c.checked=false})">Clear</button>'
     return (f'<form class="search scoped" action="{r}topics/" method="get" role="search" aria-label="Search the teachings">'
             f'<div class="scoped-row"><label class="sr" for="{ident}">Search</label><input id="{ident}" name="q" type="search" placeholder="{esc(placeholder)}">'
             f'<button class="btn">Search</button></div>'

@@ -543,3 +543,9 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .learn-jump p{font-size:18px}
 .learn-sec{scroll-margin-top:90px}
 .learn-sec .track-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px}
+/* independent scope pills with Clear on the right (D, 25 Nov 2026) */
+.scope{align-items:center}
+.scope-clear,.filters .scope-clear{all:unset;cursor:pointer;margin-left:auto;min-height:40px;display:inline-flex;align-items:center;padding:0 6px;font:500 12.5px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--teal);text-decoration:underline;text-underline-offset:4px}
+.filters .scope-clear[disabled]{color:var(--muted);text-decoration:none;cursor:default;opacity:.6}
+.scope-clear:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.filters{align-items:center}
