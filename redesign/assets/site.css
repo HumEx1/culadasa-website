@@ -428,3 +428,18 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .jump p{margin:0}
 .jump p+p{margin-top:6px}
 .jump strong{display:inline-block;min-width:3.2em;font-family:var(--display);font-weight:500;color:var(--ink)}
+
+/* Q&A archive: Alex's full index (D, 25 Nov 2026) */
+.qlist li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:4px 8px;margin:0 0 22px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.qlist li:last-child{border-bottom:0}
+.qlist .qbody p{margin:0 0 .6em}
+.qquote{margin:10px 0 12px;padding:10px 16px;border-left:3px solid var(--line-2);color:var(--body);font-style:italic}
+.qquote p{margin:0 0 .4em}
+.qquote .qtime{font-style:normal;font-size:13px}
+.kw{font-size:13.5px;line-height:1.6;color:var(--muted)}
+.kw-label{font:500 11.5px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--label);margin-right:6px}
+.small-prose{font-size:15.5px}
+.small-prose h3{font-size:18px;margin:1.2em 0 .4em}
+@media (max-width:760px){.qlist li{grid-template-columns:1fr}.qlist a.t{padding:6px 0}}
+.qlist .qquote,.qlist .qquote p{font:italic 400 15.5px/1.6 var(--text)}
+.qlist .qquote .qtime{font:400 13px/1.5 var(--text)}

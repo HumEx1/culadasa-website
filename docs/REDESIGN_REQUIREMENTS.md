@@ -95,3 +95,13 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
     9. Writings opens with an "Essays" list of all five essays.
 
 44. **Episode images on Conversations (D, 25 Nov 2026).** Each conversation shows the show's own image for Culadasa's episode, linked to the episode and credited: Guru Viking episodes 35 and 13 (guruviking.com), Deconstructing Yourself DY 022 (deconstructingyourself.com), Buddha at the Gas Pump 394 (its YouTube video's thumbnail), Tricycle Dharma Talks (tricycle.org). The two YouTube talks use their video thumbnails. Alex's Q&A index has no image. Permission to use the show images is still to be confirmed.
+
+45. **The Q&A archive carries Alex's whole index, in the site's design (D, 25 Nov 2026).** "Make this match the website", referring to Alex's Culadasa Q&A Index. Alex's own page is his, so it is unchanged. The Q&A archive (/online-meetings/) now shows the whole index as Alex wrote it, in the site's look:
+    - his introduction and contributing note, with his links, in a band headed "By Alex, who transcribed it";
+    - all 61 sessions (newest first, plus the index by year) and all 441 questions in full, no longer cut at 400 characters;
+    - his 34 quotes from Culadasa's answers, each with its timestamp;
+    - his keywords, the linked ones going to their moment in the video.
+
+    The source is saved unedited in `source/qna-index-2026-11-25/` and parsed by `tools/build_qna_index.py` into `redesign/data/qna_index.json`; rerun both on a fresh copy to pick up Alex's later corrections. Permission from Alex is still to be confirmed.
+
+46. **Photo for the Q&A Index on Conversations (D, 25 Nov 2026).** "Find a nice high definition photo." The Culadasa Q&A Index entry on Conversations uses a high-definition still of Culadasa from his April 2018 Q&A session video (YouTube, 1280×720, cropped square). It is credited "Still from his April 2018 Q&A session on YouTube".

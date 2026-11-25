@@ -22,6 +22,7 @@ videos = json.loads((D / 'videos.json').read_text())
 topics = json.loads((D / 'topics.json').read_text())
 teachers = json.loads((D / 'teachers.json').read_text())
 convos = json.loads((D / 'conversations.json').read_text())
+qindex = json.loads((D / 'qna_index.json').read_text())   # Alex's Q&A index, parsed by tools/build_qna_index.py
 esc = html.escape
 YEAR = datetime.date.today().year
 
@@ -470,21 +471,43 @@ def build():
     page('videos/', 'Videos', body, description='Talks, discussions and Q&A sessions by Culadasa on YouTube.')
 
     # ---------------------------------------------------------------- Q&A archive (old path: online-meetings)
-    sess = ''
+    # The whole of Alex's Culadasa Q&A Index, in the site's design (D, 25 Nov 2026): his introduction, every question
+    # in full, his quotes from the answers and his keywords, each linked to its moment in the video.
+    def short_time(t):
+        t = re.sub(r'^00:', '', t.strip())
+        return re.sub(r'^0(?=\d)', '', t)
+    def q_item(q):
+        def quote_html(qq):
+            stamp = f'<p class="qtime"><a href="{esc(qq["url"])}" rel="noopener">{esc(short_time(qq["time"]))}</a></p>' if qq['url'] else ''
+            return '<blockquote class="qquote">' + ''.join(f'<p>{t}</p>' for t in qq['text']) + stamp + '</blockquote>'
+        quotes = ''.join(quote_html(qq) for qq in q['quotes'])
+        kws = ''
+        if q['keywords']:
+            kws = '<p class="kw"><span class="kw-label">Keywords</span> ' + ', '.join(
+                (f'<a href="{esc(k["url"])}" rel="noopener">{esc(k["text"])}</a>' if k['url'] else esc(k['text'])) for k in q['keywords']) + '</p>'
+        text = ''.join(f'<p>{t}</p>' for t in q['question'])
+        return f'<li><a class="t" href="{esc(q["url"])}" rel="noopener">{esc(short_time(q["time"]))}</a><div class="qbody">{text}{quotes}{kws}</div></li>'
+    isess = list(reversed(qindex['sessions']))
     by_year = {}
-    for s_ in reversed(qna):
-        y = (re.search(r'(19|20)\d\d', s_['month']) or re.search(r'(19|20)\d\d', vid_by_id[s_['video']]['title']))
+    for s_ in isess:
+        y = re.search(r'(19|20)\d\d', s_['title'])
         by_year.setdefault(y.group(0) if y else 'Other', []).append(s_)
-    n_patreon = sum(1 for s_ in qna if 'patreon' in vid_by_id[s_['video']]['title'].lower())
-    for s in reversed(qna):
-        v = vid_by_id[s['video']]
-        items = ''.join(f'<li><a class="t" href="{esc(i["url"])}" rel="noopener">{i["t"]}</a> {esc(i["text"][:400])}{"…" if len(i["text"]) > 400 else ""}</li>' for i in s['items'])
-        sess += f'''<details class="session" id="s-{esc(s['video'])}"><summary><h3>{esc(s['month'])}</h3><span class="count">{len(s['items'])} questions</span></summary>
-<div class="body"><div>{video_tile(v, r)}</div><ol class="qlist">{items}</ol></div></details>'''
+    n_patreon = sum(1 for s_ in isess if s_['video'] in vid_by_id and 'patreon' in vid_by_id[s_['video']]['title'].lower())
+    n_q = sum(len(s_['questions']) for s_ in isess)
+    sess = ''
+    for s_ in isess:
+        v = vid_by_id.get(s_['video'])
+        tile = video_tile(v, r) if v else f'<p><a href="{esc(s_["url"])}" rel="noopener">Watch on YouTube</a></p>'
+        sess += f'''<details class="session" id="s-{esc(s_['video'])}"><summary><h3>{esc(s_['title'])}</h3><span class="count">{len(s_['questions'])} questions</span></summary>
+<div class="body"><div>{tile}</div><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></div></details>'''
+    intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(content['online_meetings_intro']), 'teal',
-                  f'<p class="small">Questions transcribed by Alex in the <a href="{topics["credit"]["qna"]["url"]}" rel="noopener">Culadasa Q&amp;A Index</a>. Each time links to the moment the question is asked.</p>') + f'''
-<section class="section"><div class="wrap"><form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {sum(len(s['items']) for s in qna)} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
-<nav class="jump" aria-label="Sessions by year"><p class="label">All {len(qna)} sessions by year</p><p class="small muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to open it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(re.sub(r" ?(19|20)[0-9][0-9]", "", x["month"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+                  f'<p class="small">The <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a> by Alex, shown here in full. Each time links to the moment the question is asked.</p>') + f'''
+<section class="section band-panel" id="about-the-index"><div class="wrap two"><div><p class="label">About this index</p><h2>By Alex, who transcribed it</h2>
+<p class="small muted">Shown here as Alex wrote it. The <a href="{esc(qindex["source"])}" rel="noopener">original index</a> is where corrections go.</p></div>
+<div class="prose measure small-prose">{intro_html}</div></div></section>
+<section class="section"><div class="wrap"><form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
+<nav class="jump" aria-label="Sessions by year"><p class="label">All {len(isess)} sessions by year</p><p class="small muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to open it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(re.sub(r",? ?(19|20)[0-9][0-9]", "", x["title"]).strip() or x["title"])}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
 {sess}</div></section>
 <script>
 /* open a session when its link (or the page address) points at it */
