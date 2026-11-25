@@ -598,3 +598,7 @@ body:not([data-group="book"]) .banner.lib-banner h1{margin:0 0 .15em}
   .banner.lib-banner .wrap > p:last-child:not(.lead){margin:12px 0 0}
   .lib-side{padding-top:16px}
 }
+/* all four Library banners the same height (D, 25 Nov 2026) */
+@media (min-width:761px){body:not([data-group="book"]) .banner.lib-banner{min-height:160px;display:flex;align-items:center}
+  .banner.lib-banner > .wrap{width:100%}}
+@media (max-width:760px){body:not([data-group="book"]) .banner.lib-banner{min-height:240px;display:flex;align-items:center}.banner.lib-banner > .wrap{width:100%}}
