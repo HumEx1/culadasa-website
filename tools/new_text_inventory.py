@@ -102,6 +102,11 @@ for f in pages:
             add(m.get('content', ''), 'Search description (hidden)', rel, m.sourceline, '', 'head')
     for t in soup(['script', 'style', 'noscript']):
         t.decompose()
+    # on the stage pages, the quoted passages are his own words from transcripts, AMA questions, writings and recording
+    # notes (sources already on the site), so only the page's own wording is listed (D, 25 Nov 2026)
+    if 'ten-stages' in f.parts:
+        for t in soup.select('.rr-body p.tline, .rr-body .qsnip, .rr-body > p:not(.rr-open):not(.small)'):
+            t.decompose()
     heading = ''
     for el in soup.body.descendants:
         if not getattr(el, 'name', None):
