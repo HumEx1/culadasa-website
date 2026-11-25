@@ -22,6 +22,7 @@
     }
     return out;
   }
+  // AMA results open the session on the Culadasa AMA sessions page (opened, outlined, marked in its list); their times still go to the video (D, 25 Nov 2026).
   // Links that leave the site, and PDFs, open in a new tab (D, 24 Nov 2026).
   function nt(u) { return /^https?:/.test(u) || /\.pdf$/i.test(u) ? ' target="_blank" rel="noopener"' : ''; }
   function isLetter(ch) { return /[a-z0-9À-ɏḀ-ỿ]/i.test(ch || ''); }
@@ -71,7 +72,7 @@
     DATA.qna.forEach(function (s) {
       var list = [], n = 0;
       s.items.forEach(function (it) { var h = find(it.text, it.f); if (h.length) { n += h.length; list.push({ it: it, hits: h }); } });
-      if (n) items.push({ kind: 'qa', label: 'AMA', title: s.title, url: s.url, n: n, qa: list });
+      if (n) items.push({ kind: 'qa', label: 'AMA', title: s.title, url: s.video ? '../online-meetings/#s-' + s.video : s.url, n: n, qa: list });
     });
     items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });
