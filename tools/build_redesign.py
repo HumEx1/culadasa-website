@@ -549,7 +549,12 @@ def build():
   document.querySelectorAll('.scard .close-q').forEach(function (b) {{ b.addEventListener('click', function () {{
     var d = b.closest('details'), c = b.closest('.scard'); d.open = false; sync(c); c.scrollIntoView({{ block: 'start' }}); d.querySelector('summary').focus({{ preventScroll: true }}); }}); }});
   /* the session being looked at is marked active: thin gold line, slightly lighter ground (D, 25 Nov 2026) */
-  function activate(c) {{ document.querySelectorAll('.scard.active').forEach(function (x) {{ if (x !== c) x.classList.remove('active'); }}); if (c) c.classList.add('active'); }}
+  function activate(c) {{
+    document.querySelectorAll('.scard.active').forEach(function (x) {{ if (x !== c) x.classList.remove('active'); }}); if (c) c.classList.add('active');
+    /* the same session's link in the list at the top keeps a thin gold outline, so "Return to AMA list" shows where you were */
+    document.querySelectorAll('.jump-main a.current').forEach(function (a) {{ a.classList.remove('current'); a.removeAttribute('aria-current'); }});
+    var l = c && document.querySelector('.jump-main a[href="#' + c.id + '"]'); if (l) {{ l.classList.add('current'); l.setAttribute('aria-current', 'true'); }}
+  }}
   document.querySelectorAll('.scard').forEach(function (c) {{
     c.addEventListener('pointerdown', function () {{ activate(c); }});
     c.addEventListener('focusin', function () {{ activate(c); }});
