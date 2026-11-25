@@ -160,7 +160,7 @@ def main(qna_md, interviews_dir):
     docs = []
     for fname, title in PDF_TITLES.items():
         docs.append({'id': 'pdf-' + fname[:-4], 'type': 'Handout', 'title': title,
-                     'url': f'../wp-content/uploads/2021/09/{fname}', 'text': pdf_text(UP / fname)})
+                     'url': f'../../wp-content/uploads/2021/09/{fname}', 'text': pdf_text(UP / fname)})
     ch = ET.parse(next((ROOT / 'source' / 'wordpress-export').glob('*.xml'))).getroot().find('channel')
     ns = {'wp': 'http://wordpress.org/export/1.2/', 'content': 'http://purl.org/rss/1.0/modules/content/'}
     for it in ch.findall('item'):
