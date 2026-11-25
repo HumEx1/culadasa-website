@@ -297,6 +297,10 @@ def build():
     vid_by_id = {v['id']: v for v in videos}
     global WORDS
     WORDS = sum(len(d['text'].split()) for d in topics['docs']) + sum(len(i['text'].split()) for s in topics['qna'] for i in s['items'])
+    # the video transcripts are searched too (D, 25 Nov 2026); they are a separate file, loaded only when needed
+    _tr = json.loads((D / 'transcripts.json').read_text())['videos'] if (D / 'transcripts.json').exists() else []
+    N_VIDEOS, N_AUDIO = len(_tr), sum(1 for d in topics['docs'] if d['type'] == 'Audio')
+    WORDS += sum(len(v['text'].split()) for v in _tr)
     qna = topics['qna']
     talks = [v for v in videos if v['group'] == 'talks']
 
@@ -323,7 +327,7 @@ def build():
     <div class="grid cols-4">
       <a class="card" href="start-here/"><span class="meta">New to meditation</span><h3>Start here</h3><p>Seven steps from your first sit to a daily practice, using his own handouts and guided meditations.</p><span class="more">Begin →</span></a>
       <a class="card" href="learn/"><span class="meta">The basics</span><h3>Learn the method</h3><p>Attention and awareness, the ten stages, insight, and practice in daily life, in his words.</p><span class="more">Learn →</span></a>
-      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Search</h3><p>Search over {round(WORDS/1000)},000 words of his handouts, essays and {sum(len(s_["items"]) for s_ in topics["qna"])} recorded questions and answers.</p><span class="more">Search →</span></a>
+      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Search</h3><p>Search over {round(WORDS/1000):,},000 words: his handouts and essays, {sum(len(s_["items"]) for s_ in topics["qna"])} recorded questions, what is said in {N_VIDEOS} videos, and the titles and descriptions of {N_AUDIO} audio recordings.</p><span class="more">Search →</span></a>
       <a class="card" href="teachers/"><span class="meta">Practice with someone</span><h3>Find a teacher</h3><p>The 48 teachers certified in The Mind Illuminated Teacher Training Program, by name and place.</p><span class="more">Find →</span></a>
     </div>
   </div>
@@ -605,7 +609,7 @@ def build():
     page('online-meetings/', 'Culadasa AMA sessions', body, description='Every question from Culadasa’s 61 recorded AMA sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics
-    body = banner('Every teaching, searchable', 'Search', f'Search over {round(WORDS / 1000)},000 words: handouts, essays and {sum(len(s["items"]) for s in qna)} recorded questions. Results are ranked by how often they mention what you search for.', 'ink') + f'''
+    body = banner('Every teaching, searchable', 'Search', f'Search over {round(WORDS / 1000):,},000 words: his handouts and essays, {sum(len(s["items"]) for s in qna)} recorded questions, what is said in {N_VIDEOS} videos, and the titles and descriptions of {N_AUDIO} audio recordings. Results are ranked by how often they mention what you search for.', 'ink') + f'''
 <section class="section"><div class="wrap">
   <form class="search" id="topic-form" role="search"><label class="sr" for="q">Search the teachings</label><input id="q" name="q" type="search" placeholder="Try: compassion, dullness, jhāna, craving" autocomplete="off"><button class="btn" type="submit">Search</button></form>
   <div class="filters" id="filters" aria-label="Filter by kind"></div>
