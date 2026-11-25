@@ -135,11 +135,15 @@
       if (n) items.push({ kind: 'ama', label: 'AMA', title: s.title, url: s.video ? '../online-meetings/#s-' + s.video : s.url, n: n, qa: list });
     });
     // Video transcripts (YouTube's automatic captions, Pāli terms corrected): each result links into the video at the moment it is said.
-    var wantVideo = !selected().length || SEL.video;
+    var wantVideo = !selected().length || SEL.video || SEL.ama;
     if (wantVideo && !TR) loadTranscripts();
     if (TR) {
       var byVid = {};
       items.forEach(function (i) { var m = /[?&]v=([\w-]{11})/.exec(i.url || ''); if (m && i.kind === 'video') byVid[m[1]] = i; });
+      // AMA session recordings count as AMA sessions: the title opens the session on the AMA page, the times open the video (D, 25 Nov 2026)
+      var amaTitle = {}, amaItem = {};
+      DATA.qna.forEach(function (q) { if (q.video) amaTitle[q.video] = q.title; });
+      items.forEach(function (i) { var m = /#s-([\w-]{11})$/.exec(i.url || ''); if (m && i.kind === 'ama') amaItem[m[1]] = i; });
       TR.forEach(function (v) {
         var hits = find(v.text, v.f);
         if (!hits.length) return;
@@ -151,6 +155,12 @@
           snips.push('<a class="tstamp" href="' + u + '" target="_blank" rel="noopener">' + hms(t) + '</a> ' + snippet(v.text, hits, k));
         }
         var first = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + timeAt(v, hits[0][0]) + 's';
+        if (amaTitle[v.id]) {
+          var a = amaItem[v.id];
+          if (a) { a.n += cnt(hits); a.snips = snips; }
+          else items.push({ kind: 'ama', label: 'AMA', title: amaTitle[v.id], url: '../online-meetings/#s-' + v.id, n: cnt(hits), credit: 'Transcript', snips: snips });
+          return;
+        }
         var it = byVid[v.id];
         if (it) { it.n += cnt(hits); it.snips = snips; it.label = 'Video'; it.url = first; }
         else items.push({ kind: 'video', label: 'Video', title: v.title, url: first, n: cnt(hits), credit: 'Transcript', snips: snips });
@@ -169,7 +179,7 @@
     var qm = clean.replace(/[^\p{L}\p{N}\s'’\-]/gu, ' ').replace(/\s+/g, ' ').trim() || clean;
     var items = collect(matcher(qm)), near = null;
     if (!items.length && qm.split(' ').length > 1) { near = nearMatcher(qm); if (near) items = collect(near); }
-    var wantVideo = !selected().length || SEL.video;
+    var wantVideo = !selected().length || SEL.video || SEL.ama;
     items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });
     drawFilters(counts);
@@ -178,9 +188,10 @@
     statusEl.textContent = (near && shown.length ? 'The exact words “' + clean + '” are not in the teachings, so these are passages where ' + near.words.map(function (w) { return '“' + w + '”'; }).join(', ') + ' all appear close together. ' : '') + (shown.length ? (wantVideo && !TR ? 'Searching the video transcripts too… ' : '') + total + (near ? ' place' + (total === 1 ? '' : 's') : ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '”') + ' in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + (near ? ', most first.' : ', most mentions first.')
       : (wantVideo && !TR ? 'Searching the video transcripts… ' : '') + 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.'));
     resultsEl.innerHTML = shown.slice(0, LIMIT).map(function (i) {
+      var said = (i.snips || []).map(function (s) { return '<p>' + s + '</p>'; }).join('');
       var body = i.qa
-        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '')
-        : i.snips.map(function (s) { return '<p>' + s + '</p>'; }).join('');
+        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
+        : said;
       return '<article class="result"><div class="meta"><span>' + esc(i.label) + '</span><span class="hits">' + i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + '</span>' + (i.credit ? '<span>' + esc(i.credit) + '</span>' : '') + '</div>' +
         '<h3><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(i.title) + '</a></h3>' + body + '</article>';
     }).join('') + (shown.length > LIMIT ? '<p><button type="button" class="btn ghost" id="more">Show all ' + shown.length + ' sources</button></p>' : '');
