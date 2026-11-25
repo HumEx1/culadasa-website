@@ -27,17 +27,26 @@
 
 **Phone only, About page.** On the live site, the two photos on the About page float at 250px wide even on a phone, which squeezes the text beside them into a column one or two words wide. Below 545px (the theme's own phone breakpoint) the mirror lets the text run underneath the photo instead. The photo keeps its size and position. Desktop and tablet are unchanged. This is `assets/mobile.css`, one rule; delete the file and its `<link>` to undo it.
 
+## Removed or corrected on 25 Nov 2026 (D approved each one)
+
+The site will not run on WordPress or be managed by a WordPress support company, so the leftovers of that set-up were taken off. Nothing else changed.
+
+| What | Where | Visible? |
+|---|---|---|
+| Footer credit "Copyright © 2021. Manage By 24×7 WP Support" (the footer bar stays, empty) | every page and the "page not found" page | yes |
+| Hidden spam adverts: "Powered by" links to a WooCommerce support company and a CBD salve shop, planted on the old WordPress pages | Mindful Awareness vs Dullness; Cultivating Mindfulness in Daily Life | no (hidden) |
+| Google AdSense ad loader (it showed no ads) | every page | no |
+| WordPress emoji styles and loader, which fetched images from WordPress.org | every page | no |
+| WordPress search box on the "page not found" page, and its "Maybe try searching?" | `404.html` | yes |
+| The old WordPress site name "Inspiration Station" in page titles and link previews, now "Culadasa" | every page | in the browser tab |
+| Typo "develping" → "developing" | Meditation Manual introduction | yes |
+| "Introduction to What the Buddha Thought – Slides" now opens the slides PDF, not the handout | Writings | yes |
+
 ## Kept as on the live site, for the group to decide later
 
-These are left exactly as they are, because the mirror changes nothing visible:
-
-- Page titles and link previews say "Inspiration Station" rather than "Culadasa".
-- The footer credits "24×7 WP Support".
-- On Writings, "Introduction to What the Buddha Thought – Slides" opens the handout PDF, not the slides PDF.
 - The "Teachings" menu item links nowhere (`#`); it only opens its sub-menu.
 - The Teachers page formats the 2020 names differently from the other years.
-- The meditation manual introduction has the typo "develping".
-- A Google AdSense loader script is on every page but shows no ads.
+- Three essay pages have their web-address slug as their title (for example "daily-life-practice").
 - A large empty space sits above the footer on some pages.
 - The gallery thumbnails and titles are fixed at what the playlists held on 24 Nov 2026. If videos are added to those YouTube playlists, the galleries need re-saving.
 
