@@ -602,3 +602,24 @@ body:not([data-group="book"]) .banner.lib-banner h1{margin:0 0 .15em}
 @media (min-width:761px){body:not([data-group="book"]) .banner.lib-banner{min-height:160px;display:flex;align-items:center}
   .banner.lib-banner > .wrap{width:100%}}
 @media (max-width:760px){body:not([data-group="book"]) .banner.lib-banner{min-height:240px;display:flex;align-items:center}.banner.lib-banner > .wrap{width:100%}}
+/* Library banners: title, description and button in exactly the same place on all four pages, so moving down
+   the side menu doesn't make anything jump (D, 25 Nov 2026). Fixed height, content from the top, same type sizes. */
+@media (min-width:761px){
+  body:not([data-group="book"]) .banner.lib-banner{height:160px;min-height:0;padding:26px 0 0;display:block}
+  .banner.lib-banner .wrap{align-items:start}
+  .banner.lib-banner .wrap > p:last-child:not(.lead){grid-row:1;align-self:center}
+  .banner.lib-banner h1{font-size:44px;line-height:52px;margin:0 0 6px}
+  .banner.lib-banner .lead{font-size:17px;line-height:25px;margin:0;max-width:var(--measure)}
+}
+@media (max-width:760px){
+  body:not([data-group="book"]) .banner.lib-banner{height:240px;min-height:0;padding:22px 0 0;display:block}
+  .banner.lib-banner h1{font-size:34px;line-height:40px;margin:0 0 6px}
+  .banner.lib-banner .lead{font-size:16px;line-height:23px;margin:0}
+  .banner.lib-banner .wrap > p:last-child:not(.lead){margin:12px 0 0}
+}
+body:not([data-group="book"]) .banner.lib-banner .wrap > p.lead{margin:0}
+body:not([data-group="book"]) .banner.lib-banner h1{margin:0 0 8px}
+@media (min-width:761px){
+  .banner.lib-banner .wrap{display:block;position:relative}
+  .banner.lib-banner .wrap > p:last-child:not(.lead){position:absolute;right:24px;top:3px;margin:0}
+}
