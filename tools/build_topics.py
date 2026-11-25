@@ -20,6 +20,7 @@ common English words (the list is below and in the decisions log).
 
 Usage:
   python3 tools/build_topics.py <qna-index.md> <interviews-dir>
+  python3 tools/build_topics.py redesign/data/qna_index.json -     (since 25 Nov 2026: the index as shown on the Q&A archive)
 """
 import json, re, sys, subprocess, pathlib, html, collections, unicodedata
 import xml.etree.ElementTree as ET
@@ -135,6 +136,26 @@ def parse_qna(md):
     return sessions
 
 
+def parse_qna_json(path):
+    """The same sessions from redesign/data/qna_index.json (made by tools/build_qna_index.py), so search and the
+    word cloud cover exactly what the Q&A archive shows: every question in full, the quotes and the keywords."""
+    data = json.loads(pathlib.Path(path).read_text())
+    plain = lambda h: re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', h))).strip()
+    sessions = []
+    for s in data['sessions']:
+        cur = {'title': f'Culadasa {s["title"]} Patreon Q&A', 'month': s['title'], 'video': s['video'], 'url': s['url'], 'items': []}
+        for q in s['questions']:
+            h, mi, se = (list(map(int, q['time'].split(':'))) + [0, 0, 0])[:3] if q['time'].count(':') == 2 else (0, *map(int, q['time'].split(':')))
+            text = ' '.join(plain(x) for x in q['question'])
+            for qq in q['quotes']:
+                text += ' ' + ' '.join(plain(x) for x in qq['text'])
+            if q['keywords']:
+                text += ' Keywords — ' + ', '.join(k['text'] for k in q['keywords'])
+            cur['items'].append({'t': f'{h}:{mi:02d}:{se:02d}' if h else f'{mi}:{se:02d}', 'url': q['url'], 'text': text.strip()})
+        sessions.append(cur)
+    return sessions
+
+
 def main(qna_md, interviews_dir):
     docs = []
     for fname, title in PDF_TITLES.items():
@@ -155,7 +176,7 @@ def main(qna_md, interviews_dir):
         own = [x.split(':', 1)[1].strip() for x in turns if x.strip().startswith(marker)]
         docs.append({'id': 'interview-' + fname[:-4], 'type': 'Interview', 'title': title, 'url': url, 'credit': credit, 'text': '\n\n'.join(own)})
     vids = json.loads((ROOT / 'redesign' / 'data' / 'videos.json').read_text())
-    qna = parse_qna(pathlib.Path(qna_md).read_text())
+    qna = parse_qna_json(qna_md) if str(qna_md).endswith('.json') else parse_qna(pathlib.Path(qna_md).read_text())
     qna_ids = {s['video'] for s in qna}
     for v in vids:
         if v['id'] not in qna_ids:
