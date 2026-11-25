@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2013 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2018 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -16,22 +16,22 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Start here | 30 |
 | Learn | 44 |
 | Topics | 8 |
-| Library › Writings | 33 |
+| Library › Writings | 34 |
 | Library › Audio | 7 |
-| Library › Videos | 26 |
-| Library › Q&A archive | 1368 |
+| Library › Videos | 27 |
+| Library › Q&A archive | 1370 |
 | Library › Writings › essay | 17 |
 | The Book | 21 |
 | The Book (old address, redirects) | 2 |
-| Teachers | 73 |
+| Teachers | 72 |
 | Conversations | 45 |
 | Lineage | 13 |
 | Lineage (old About address, redirects) | 3 |
 | Footer › Testimonials | 6 |
 | Footer › Testimonials (old address, redirects) | 2 |
 | Teachers › individual profile pages | 208 |
-| Messages shown by the search and map scripts | 24 |
-| **Total** | **2013** |
+| Messages shown by the search and map scripts | 26 |
+| **Total** | **2018** |
 
 ## Every page: header, menu, newsletter box and footer (30)
 
@@ -378,7 +378,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Sources: his handouts and essays, the Lineage page, video titles, and the Culadasa Q&A Index (the questions from his AMA sessions). Spellings with and without accents match each other. Common English words are left out of the word cloud."  
   Topics (`redesign-2/topics/index.html` line 44), under "Topics"
 
-## Library › Writings (33)
+## Library › Writings (34)
 
 - [ ] **Page title (browser tab):** "Writings — Culadasa"  
   Library › Writings (`redesign-2/writings/index.html` line 6)
@@ -388,6 +388,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Writings (`redesign-2/writings/index.html` line 36)
 - [ ] **Paragraph:** "Twenty-six handouts and essays, free to read and download."  
   Library › Writings (`redesign-2/writings/index.html` line 36), under "Writings"
+- [ ] **Search box hint:** "Search the handouts and essays"  
+  Library › Writings (`redesign-2/writings/index.html` line 37), under "Writings"
 - [ ] **Section heading:** "Essays"  
   Library › Writings (`redesign-2/writings/index.html` line 37), under "Essays"
 - [ ] **Paragraph:** "All five of his essays on this site, in one place. Each also appears in its group below."  
@@ -464,7 +466,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "All 401 recordings, newest first."  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Every recording"
 
-## Library › Videos (26)
+## Library › Videos (27)
 
 - [ ] **Page title (browser tab):** "Videos — Culadasa"  
   Library › Videos (`redesign-2/videos/index.html` line 6)
@@ -474,52 +476,54 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Videos (`redesign-2/videos/index.html` line 36), under "Videos"
 - [ ] **Paragraph:** "Open YouTube"  
   Library › Videos (`redesign-2/videos/index.html` line 36), under "Videos"
+- [ ] **Search box hint:** "Search the video titles"  
+  Library › Videos (`redesign-2/videos/index.html` line 38), under "Videos"
 - [ ] **Section heading:** "Talks and discussions"  
-  Library › Videos (`redesign-2/videos/index.html` line 38), under "Talks and discussions"
-- [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years"  
   Library › Videos (`redesign-2/videos/index.html` line 39), under "Talks and discussions"
+- [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years"  
+  Library › Videos (`redesign-2/videos/index.html` line 40), under "Talks and discussions"
 - [ ] **Screen-reader label (hidden):** "Play: Introduction to "My Journey" discussion series"  
-  Library › Videos (`redesign-2/videos/index.html` line 42), under "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years"
+  Library › Videos (`redesign-2/videos/index.html` line 43), under "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"  
-  Library › Videos (`redesign-2/videos/index.html` line 45), under "Introduction to "My Journey" discussion series"
+  Library › Videos (`redesign-2/videos/index.html` line 46), under "Introduction to "My Journey" discussion series"
 - [ ] **Screen-reader label (hidden):** "Play: Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take?"  
-  Library › Videos (`redesign-2/videos/index.html` line 48), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
+  Library › Videos (`redesign-2/videos/index.html` line 49), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
 - [ ] **Screen-reader label (hidden):** "Play: Engaged Compassion, Part 1; Gloucester MA, July 1, 2016"  
-  Library › Videos (`redesign-2/videos/index.html` line 63), under "Culadasa April 2019 Patreon Q&A"
+  Library › Videos (`redesign-2/videos/index.html` line 64), under "Culadasa April 2019 Patreon Q&A"
 - [ ] **Paragraph:** "Each session’s questions are listed, with links to the moment he answers, in Culadasa AMA sessions ."  
-  Library › Videos (`redesign-2/videos/index.html` line 75), under "Culadasa AMA sessions"
+  Library › Videos (`redesign-2/videos/index.html` line 76), under "Culadasa AMA sessions"
 - [ ] **Paragraph:** "3 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 78), under "Culadasa May 2021 Patreon Q&A No1"; also on 2 more places
+  Library › Videos (`redesign-2/videos/index.html` line 79), under "Culadasa May 2021 Patreon Q&A No1"; also on 2 more places
 - [ ] **Paragraph:** "9 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 81), under "Culadasa April 2021 Patreon Q&A No2"; also on 5 more places
+  Library › Videos (`redesign-2/videos/index.html` line 82), under "Culadasa April 2021 Patreon Q&A No2"; also on 5 more places
 - [ ] **Paragraph:** "6 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 84), under "Culadasa April 2021 Patreon Q&A No1"; also on 9 more places
+  Library › Videos (`redesign-2/videos/index.html` line 85), under "Culadasa April 2021 Patreon Q&A No1"; also on 9 more places
 - [ ] **Expandable heading:** "Show all 61 sessions Hide the 61 sessions"  
-  Library › Videos (`redesign-2/videos/index.html` line 95), under "Culadasa February 2021 Patreon Q&A No2"
+  Library › Videos (`redesign-2/videos/index.html` line 96), under "Culadasa February 2021 Patreon Q&A No2"
 - [ ] **Paragraph:** "5 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 97), under "Culadasa February 2021 Patreon Q&A No1"; also on 8 more places
+  Library › Videos (`redesign-2/videos/index.html` line 98), under "Culadasa February 2021 Patreon Q&A No1"; also on 8 more places
 - [ ] **Paragraph:** "8 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 103), under "Culadasa January 2021 Patreon Q&A No1"; also on 7 more places
+  Library › Videos (`redesign-2/videos/index.html` line 104), under "Culadasa January 2021 Patreon Q&A No1"; also on 7 more places
 - [ ] **Paragraph:** "7 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 106), under "Culadasa December 2020 Patreon Q&A No2"; also on 8 more places
+  Library › Videos (`redesign-2/videos/index.html` line 107), under "Culadasa December 2020 Patreon Q&A No2"; also on 8 more places
 - [ ] **Paragraph:** "2 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 109), under "Culadasa December 2020 Patreon Q&A No1"
+  Library › Videos (`redesign-2/videos/index.html` line 110), under "Culadasa December 2020 Patreon Q&A No1"
 - [ ] **Paragraph:** "4 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 148), under "Culadasa June 2020 Patreon Q&A N°1 Recording"; also on 3 more places
+  Library › Videos (`redesign-2/videos/index.html` line 149), under "Culadasa June 2020 Patreon Q&A N°1 Recording"; also on 3 more places
 - [ ] **Paragraph:** "11 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 193), under "20190517 Culadasa Patreon Q&A"; also on 3 more places
+  Library › Videos (`redesign-2/videos/index.html` line 194), under "20190517 Culadasa Patreon Q&A"; also on 3 more places
 - [ ] **Paragraph:** "10 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 232), under "July 25, 2018 Culadasa Patreon Q&A"; also on 3 more places
+  Library › Videos (`redesign-2/videos/index.html` line 233), under "July 25, 2018 Culadasa Patreon Q&A"; also on 3 more places
 - [ ] **Paragraph:** "17 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 244), under "Culadasa April 2018 Patreon Q&A Catch-Up"
+  Library › Videos (`redesign-2/videos/index.html` line 245), under "Culadasa April 2018 Patreon Q&A Catch-Up"
 - [ ] **Paragraph:** "13 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 250), under "Culadasa February 2018 Patreon Q&A"
+  Library › Videos (`redesign-2/videos/index.html` line 251), under "Culadasa February 2018 Patreon Q&A"
 - [ ] **Paragraph:** "14 questions · Questions →"  
-  Library › Videos (`redesign-2/videos/index.html` line 253), under "Culadasa January 2018 Patreon Q&A"
+  Library › Videos (`redesign-2/videos/index.html` line 254), under "Culadasa January 2018 Patreon Q&A"
 - [ ] **Button:** "Hide the 61 sessions"  
-  Library › Videos (`redesign-2/videos/index.html` line 261), under "Culadasa October 2017 Patreon Q&A"
+  Library › Videos (`redesign-2/videos/index.html` line 262), under "Culadasa October 2017 Patreon Q&A"
 
-## Library › Q&A archive (1368)
+## Library › Q&A archive (1370)
 
 - [ ] **Page title (browser tab):** "Culadasa AMA sessions — Culadasa"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 6)
@@ -565,10 +569,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 58), under "Audio of the meetings"
 - [ ] **Section heading:** "The sessions"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 59), under "The sessions"
-- [ ] **Form label:** "Search the questions"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"
 - [ ] **Search box hint:** "Search 441 questions and answers"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"
+- [ ] **legend:** "Where to search"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"; also on 2 more places (3 pages)
+- [ ] **Form label:** "All"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"; also on 3 more places (4 pages)
+- [ ] **Form label:** "AMA sessions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"; also on 2 more places (3 pages)
 - [ ] **Button:** "May 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 65), under "May 2021 #1"
 - [ ] **Link text:** "Return to AMA list"  
@@ -3347,7 +3355,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "The reviews are now on The Mind Illuminated page."  
   The Book (old address, redirects) (`redesign-2/book-reviews/index.html` line 37)
 
-## Teachers (73)
+## Teachers (72)
 
 - [ ] **Page title (browser tab):** "Teachers — Culadasa"  
   Teachers (`redesign-2/teachers/index.html` line 6)
@@ -3363,8 +3371,6 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Teachers (`redesign-2/teachers/index.html` line 42), under "Certified Teachers"
 - [ ] **Button:** "Near me"  
   Teachers (`redesign-2/teachers/index.html` line 42), under "Certified Teachers"
-- [ ] **Button:** "All"  
-  Teachers (`redesign-2/teachers/index.html` line 43), under "Certified Teachers"
 - [ ] **Button:** "Teaches online"  
   Teachers (`redesign-2/teachers/index.html` line 43), under "Certified Teachers"
 - [ ] **Button:** "In person"  
@@ -4068,40 +4074,44 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Text block:** "WH"  
   Teachers › profile (`redesign-2/teachers/wayne-hayden-moreland/index.html` line 36), under "Wayne Hayden Moreland"
 
-## Messages shown by the search and map scripts (24)
+## Messages shown by the search and map scripts (26)
 
 These appear while using Topics search and the Teachers map; they are not in the page files.
 
 - [ ] "All"  
-  `redesign-2/assets/topics.js` line 10
-- [ ] "Handouts"  
-  `redesign-2/assets/topics.js` line 10
-- [ ] "Essays"  
-  `redesign-2/assets/topics.js` line 10
-- [ ] "AMA"  
-  `redesign-2/assets/topics.js` line 10
-- [ ] "Interviews"  
-  `redesign-2/assets/topics.js` line 10
-- [ ] "Lineage"  
-  `redesign-2/assets/topics.js` line 10
+  `redesign-2/assets/topics.js` line 12
+- [ ] "AMA sessions"  
+  `redesign-2/assets/topics.js` line 12
+- [ ] "AMA sessions"  
+  `redesign-2/assets/topics.js` line 12
+- [ ] "across the site"  
+  `redesign-2/assets/topics.js` line 13
+- [ ] "in the Writings"  
+  `redesign-2/assets/topics.js` line 13
+- [ ] "in the AMA sessions"  
+  `redesign-2/assets/topics.js` line 13
+- [ ] "in the video titles"  
+  `redesign-2/assets/topics.js` line 13
 - [ ] "Type a word, or choose one from the cloud."  
-  `redesign-2/assets/topics.js` line 65
+  `redesign-2/assets/topics.js` line 69
 - [ ] "Type at least two letters."  
-  `redesign-2/assets/topics.js` line 66
-- [ ] "mentions of “"  
-  `redesign-2/assets/topics.js` line 82
-- [ ] "sources, most mentions first."  
-  `redesign-2/assets/topics.js` line 82
+  `redesign-2/assets/topics.js` line 70
+- [ ] ", most mentions first."  
+  `redesign-2/assets/topics.js` line 86
 - [ ] "No mentions of “"  
-  `redesign-2/assets/topics.js` line 82
-- [ ] "”. Try a shorter or different word."  
-  `redesign-2/assets/topics.js` line 82
+  `redesign-2/assets/topics.js` line 87
+- [ ] "Choose All to see"  
+  `redesign-2/assets/topics.js` line 87
+- [ ] "elsewhere on the site."  
+  `redesign-2/assets/topics.js` line 87
+- [ ] "Try a shorter or different word."  
+  `redesign-2/assets/topics.js` line 87
 - [ ] "more questions in this session"  
-  `redesign-2/assets/topics.js` line 85
+  `redesign-2/assets/topics.js` line 90
 - [ ] "Show all"  
-  `redesign-2/assets/topics.js` line 89
+  `redesign-2/assets/topics.js` line 94
 - [ ] "The teachings could not be loaded. Please reload the page."  
-  `redesign-2/assets/topics.js` line 132
+  `redesign-2/assets/topics.js` line 139
 - [ ] "teachers shown."  
   `redesign-2/assets/teachers.js` line 33
 - [ ] "a location on the map so far."  

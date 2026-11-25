@@ -7,8 +7,12 @@
   var $ = function (id) { return document.getElementById(id); };
   var form = $('topic-form'), input = $('q'), cloudEl = $('cloud'), statusEl = $('status'), resultsEl = $('results'), filtersEl = $('filters');
   var DATA = null, KIND = 'all', LIMIT = 60;
-  var KINDS = [['all', 'All'], ['handout', 'Handouts'], ['essay', 'Essays'], ['qa', 'AMA'], ['interview', 'Interviews'], ['about', 'Lineage'], ['video', 'Videos']];
-  var TYPE_OF = { 'Handout': 'handout', 'Essay': 'essay', 'Q&A': 'qa', 'Interview': 'interview', 'Lineage': 'about', 'Video': 'video' };
+  // Scoped search (D, 25 Nov 2026): one box, and pills for where to search. The count and the status line follow the scope.
+  // Writings = handouts and essays. The Lineage page is searched under All only.
+  var KINDS = [['all', 'All'], ['writings', 'Writings'], ['ama', 'AMA sessions'], ['video', 'Videos']];
+  var SCOPE_NAME = { all: 'across the site', writings: 'in the Writings', ama: 'in the AMA sessions', video: 'in the video titles' };
+  var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video' };
+  var ALIAS = { 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video' };
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   // Fold accents and apostrophes, one character in, one out, so positions stay aligned with the original text.
@@ -67,19 +71,20 @@
     var find = matcher(clean), items = [];
     DATA.docs.forEach(function (d) {
       var hits = find(d.text, d.f);
-      if (hits.length) items.push({ kind: TYPE_OF[d.type], label: d.type, title: d.title, url: d.url, n: hits.length, credit: d.credit, snips: snippets(d.text, hits, 3) });
+      if (hits.length) items.push({ kind: TYPE_OF[d.type], label: d.type === 'Q&A' ? 'AMA' : d.type, title: d.title, url: d.url, n: hits.length, credit: d.credit, snips: snippets(d.text, hits, 3) });
     });
     DATA.qna.forEach(function (s) {
       var list = [], n = 0;
       s.items.forEach(function (it) { var h = find(it.text, it.f); if (h.length) { n += h.length; list.push({ it: it, hits: h }); } });
-      if (n) items.push({ kind: 'qa', label: 'AMA', title: s.title, url: s.video ? '../online-meetings/#s-' + s.video : s.url, n: n, qa: list });
+      if (n) items.push({ kind: 'ama', label: 'AMA', title: s.title, url: s.video ? '../online-meetings/#s-' + s.video : s.url, n: n, qa: list });
     });
     items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });
     drawFilters(counts);
     var shown = KIND === 'all' ? items : items.filter(function (i) { return i.kind === KIND; });
-    var total = items.reduce(function (s, i) { return s + i.n; }, 0);
-    statusEl.textContent = items.length ? total + ' mentions of “' + clean + '” in ' + items.length + ' sources, most mentions first.' : 'No mentions of “' + clean + '”. Try a shorter or different word.';
+    var total = shown.reduce(function (s, i) { return s + i.n; }, 0);
+    statusEl.textContent = shown.length ? total + ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '” in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + SCOPE_NAME[KIND] + ', most mentions first.'
+      : 'No mentions of “' + clean + '” ' + SCOPE_NAME[KIND] + '.' + (KIND !== 'all' && items.length ? ' Choose All to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' elsewhere on the site.' : ' Try a shorter or different word.');
     resultsEl.innerHTML = shown.slice(0, LIMIT).map(function (i) {
       var body = i.qa
         ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '')
@@ -91,8 +96,9 @@
   }
 
   function drawFilters(counts) {
-    filtersEl.innerHTML = KINDS.filter(function (k) { return k[0] === 'all' || counts[k[0]]; }).map(function (k) {
-      return '<button type="button" data-k="' + k[0] + '" aria-pressed="' + (k[0] === KIND) + '">' + esc(k[1]) + ' <span class="muted">' + (counts[k[0]] || 0) + '</span></button>';
+    var searched = counts.all !== undefined;   // before a search the pills show without numbers
+    filtersEl.innerHTML = KINDS.map(function (k) {
+      return '<button type="button" data-k="' + k[0] + '" aria-pressed="' + (k[0] === KIND) + '">' + esc(k[1]) + (searched ? ' <span class="muted">' + (counts[k[0]] || 0) + '</span>' : '') + '</button>';
     }).join('');
   }
   filtersEl.addEventListener('click', function (e) {
@@ -111,7 +117,7 @@
   }
   cloudEl.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
-    input.value = b.textContent; KIND = 'all'; go(true);
+    input.value = b.textContent; go(true);
   });
 
   function go(scroll) {
@@ -120,13 +126,14 @@
     search(q);
     if (q && scroll) resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  form.addEventListener('submit', function (e) { e.preventDefault(); KIND = 'all'; go(true); });
+  form.addEventListener('submit', function (e) { e.preventDefault(); go(true); });   // the chosen scope stays
 
   fetch('../data/topics.json').then(function (r) { return r.json(); }).then(function (d) {
     d.docs.forEach(function (x) { x.f = fold(x.text); });
     d.qna.forEach(function (s) { s.items.forEach(function (i) { i.f = fold(i.text); }); });
     DATA = d; drawCloud();
-    var p = new URLSearchParams(location.search), t = (p.get('type') || '').toLowerCase().replace('q&a', 'qa');
+    var p = new URLSearchParams(location.search), t = (p.get('type') || '').toLowerCase();
+    t = ALIAS[t] || t;
     if (KINDS.some(function (k) { return k[0] === t; })) KIND = t;
     if (p.get('q')) { input.value = p.get('q'); search(p.get('q')); } else search('');
   }).catch(function () { statusEl.textContent = 'The teachings could not be loaded. Please reload the page.'; });

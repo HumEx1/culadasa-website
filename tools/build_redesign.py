@@ -189,6 +189,19 @@ def video_tile(v, r, sub=''):
 </article>'''
 
 
+SCOPES = [('all', 'All'), ('writings', 'Writings'), ('ama', 'AMA sessions'), ('video', 'Videos')]
+
+
+def scoped_search(r, scope, placeholder, ident):
+    """One search box used on several pages (D, 25 Nov 2026): it starts with the page's own scope selected and opens
+    Topics with that scope; the reader can widen it to All or switch to another part of the site."""
+    pills = ''.join(f'<label class="scope-pill"><input type="radio" name="type" value="{k}"{" checked" if k == scope else ""}><span>{esc(t)}</span></label>' for k, t in SCOPES)
+    return (f'<form class="search scoped" action="{r}topics/" method="get" role="search" aria-label="Search the teachings">'
+            f'<div class="scoped-row"><label class="sr" for="{ident}">Search</label><input id="{ident}" name="q" type="search" placeholder="{esc(placeholder)}">'
+            f'<button class="btn">Search</button></div>'
+            f'<fieldset class="scope"><legend class="sr">Where to search</legend>{pills}</fieldset></form>')
+
+
 def sc_player(kind, ident, height=450, comments=True):
     url = f'https%3A//api.soundcloud.com/{kind}/{ident}'
     return (f'<div class="audio"><iframe title="SoundCloud player" loading="lazy" height="{height}" allow="autoplay" '
@@ -435,7 +448,7 @@ def build():
     essays_all = [(t, k, x) for g, items in WRITINGS for t, k, x in items if k == 'essay']
     essay_index = ('<h2>Essays</h2><p class="muted">All five of his essays on this site, in one place. Each also appears in its group below.</p>'
                    f'<ul class="doclist">{"".join(doc_link(t, k, x, r) for t, k, x in essays_all)}</ul>')
-    body = banner('Read', 'Writings', 'Twenty-six handouts and essays, free to read and download.', 'teal') + '<section class="section"><div class="wrap measure">' + essay_index + ''.join(
+    body = banner('Read', 'Writings', 'Twenty-six handouts and essays, free to read and download.', 'teal') + '<section class="section"><div class="wrap measure">' + scoped_search(r, 'writings', 'Search the handouts and essays', 'w-q') + essay_index + ''.join(
         f'<h2>{esc(g)}</h2><ul class="doclist">{"".join(doc_link(t, k, x, r) for t, k, x in items)}</ul>' for g, items in WRITINGS) + '</div></section>'
     page('writings/', 'Writings', body, description='Culadasa’s handouts and essays, free to download.')
 
@@ -464,6 +477,7 @@ def build():
     # ---------------------------------------------------------------- videos (old path)
     body = banner('Watch', 'Videos', f'{len(videos)} videos: talks, discussions and {len(qna)} recorded AMA (ask me anything) sessions.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
+<section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search the video titles', 'v-q')}</div></section>
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
 <section class="section"><div class="wrap"><h2>Culadasa AMA sessions</h2><p class="muted">Each session’s questions are listed, with links to the moment he answers, in <a href="{r}online-meetings/">Culadasa AMA sessions</a>.</p>
 <div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f'{len(s["items"])} questions · <a href="{r}online-meetings/#s-{s["video"]}">Questions →</a>') for s in list(reversed(qna))[:6])}</div>
@@ -539,7 +553,7 @@ def build():
 </div></section>
 <section class="section band-panel"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>
 <section class="section" id="all-sessions"><div class="wrap"><h2>The sessions</h2>
-<form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
+{scoped_search(r, 'ama', f'Search {n_q} questions and answers', 'qa-q')}
 <div class="scards">{sess}</div>
 <script>
 /* a year link or the page address opens its session; an opened card widens to the full row */

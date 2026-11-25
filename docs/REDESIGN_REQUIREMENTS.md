@@ -161,3 +161,10 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 60. **Teachers list marks the teacher last looked at (D, 25 Nov 2026).** After opening a teacher's profile and pressing Back, that teacher's card has a thin gold outline. Clicking a pin on the map outlines the matching card. Only one is marked at a time. The browser remembers it for the visit only (cleared when the tab closes) and nothing is sent anywhere.
 
 61. **Videos page joined to the AMA sessions (D, 25 Nov 2026).** The session box's label switches between "Show all 61 sessions" and "Hide the 61 sessions", with a second "Hide the 61 sessions" under the list that closes it and returns to its top. Each session tile reads "N questions · Questions →". The link opens that session on the Culadasa AMA sessions page, opened and marked.
+
+62. **Scoped search (D, 25 Nov 2026).** One search box design used on four pages:
+    - **The box:** a field with pills under it for where to search: All · Writings · AMA sessions · Videos.
+    - **Where it appears:** on the AMA sessions, Writings and Videos pages it starts with that page's scope selected, and searching opens Topics with that scope. On Topics the old filter buttons are now those same pills.
+    - **Behaviour:** the chosen scope stays when you search again. The result count and the status line ("91 mentions of 'jhana' in 25 sources in the AMA sessions") count only that scope. If nothing matches in a scope, it says how many sources match elsewhere.
+    - **What each scope covers:** Writings = handouts and essays; Videos = the talk titles (the AMA session videos are under AMA sessions). The Lineage page is searched under All.
+    - **Old links:** old addresses such as ?type=qa still work.

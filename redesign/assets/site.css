@@ -528,3 +528,13 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .vsessions[open] summary .when-open{display:inline}
 .vsessions[open] summary .when-closed{display:none}
 .vsessions{scroll-margin-top:90px}
+/* one scoped search box: a field, then pills for where to search (D, 25 Nov 2026) */
+.search.scoped{display:block;margin:0 0 28px}
+.scoped-row{display:flex;flex-wrap:wrap;gap:10px}
+.scoped-row input{flex:1 1 260px}
+.scope{border:0;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.scope-pill{position:relative;cursor:pointer}
+.scope-pill input{position:absolute;opacity:0;width:1px;height:1px}
+.scope-pill span{display:inline-flex;align-items:center;min-height:40px;box-sizing:border-box;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;font:500 12.5px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--body)}
+.scope-pill input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.scope-pill input:focus-visible+span{outline:2px solid var(--teal);outline-offset:3px}
