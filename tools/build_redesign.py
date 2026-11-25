@@ -509,14 +509,28 @@ def build():
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
     body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''
 <section class="section"><div class="wrap">
-<p class="small muted transcribed">Every question below was transcribed by Alex in the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a>, with keywords and quotes from the answers. Each time links to the moment in the video. More about the index is at the <a href="#about-the-index">foot of the page</a>.</p>
-<nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} sessions by year</h2><p class="muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to go to it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+<nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} Patreon Q&amp;A sessions organized by year</h2><p class="muted">Choose one to go to it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
 <form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
-{sess}</div></section>
-<section class="section"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>
-<section class="section band-panel footnotes" id="about-the-index"><div class="wrap two"><div><p class="label">Notes</p><h2>About this index</h2>
-<p class="small muted">The questions, keywords and quotes on this page are the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a> by Alex, shown here in full and as he wrote it. Each time links to the moment the question is asked. Corrections go to the original index.</p></div>
-<div class="prose measure small-prose">{intro_html}</div></div></section>'''
+{sess}
+<p class="tinfo-open"><button type="button" class="linklike" id="tinfo-btn" aria-haspopup="dialog" aria-controls="tinfo">Transcription information</button></p>
+<dialog id="tinfo" class="tinfo" aria-labelledby="tinfo-h">
+  <div class="tinfo-head"><h2 id="tinfo-h">Transcription information</h2><button type="button" class="tinfo-close" id="tinfo-close" aria-label="Close">×</button></div>
+  <div class="prose small-prose">
+    <p class="small muted">The questions, keywords and quotes on this page come from the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a>, shown here in full and as written. Each time links to the moment the question is asked. Corrections go to the original index. Its introduction follows.</p>
+    {intro_html}
+  </div>
+</dialog>
+<script>
+(function () {{
+  var d = document.getElementById('tinfo'), b = document.getElementById('tinfo-btn'), c = document.getElementById('tinfo-close');
+  if (!d || !b) return;
+  b.addEventListener('click', function () {{ if (d.showModal) d.showModal(); else d.setAttribute('open', ''); }});
+  c.addEventListener('click', function () {{ d.close ? d.close() : d.removeAttribute('open'); b.focus(); }});
+  d.addEventListener('click', function (e) {{ if (e.target === d) {{ d.close(); }} }});
+}})();
+</script>
+</div></section>
+<section class="section"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>'''
     page('online-meetings/', 'Q&A archive', body, description='Every question from Culadasa’s 61 recorded Q&A sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics

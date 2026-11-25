@@ -460,3 +460,14 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .session-full .body{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:32px}
 .session-full .body>div:first-child{position:sticky;top:90px;align-self:start}
 @media (max-width:760px){.session-full .body{grid-template-columns:1fr}.session-full .body>div:first-child{position:static}}
+/* Q&A archive: transcription information in a pop-up (D, 25 Nov 2026) */
+.tinfo-open{margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+.linklike{all:unset;cursor:pointer;font:500 13px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);text-decoration:underline;text-underline-offset:4px;padding:10px 0}
+.linklike:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+.tinfo{width:min(680px,calc(100vw - 32px));max-height:min(80vh,760px);padding:0;border:1px solid var(--line-2);background:var(--ground,#f5efe2);color:var(--body);box-shadow:0 20px 60px rgba(20,28,33,.25)}
+.tinfo::backdrop{background:rgba(20,28,33,.45)}
+.tinfo-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 24px;background:inherit;border-bottom:1px solid var(--line)}
+.tinfo-head h2{margin:0;font-size:22px}
+.tinfo-close{all:unset;cursor:pointer;width:44px;height:44px;display:grid;place-items:center;font-size:28px;line-height:1;color:var(--ink)}
+.tinfo-close:focus-visible{outline:2px solid var(--teal)}
+.tinfo .prose{padding:18px 24px 26px;overflow:auto}

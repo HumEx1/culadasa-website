@@ -118,3 +118,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
     7. Alex's introduction as notes at the foot.
 
     Nothing is collapsed any more. It stays on this site (same GitHub repository, moving to the organisation with it) rather than a separate GitHub page.
+
+49. **Transcription information in a pop-up; index heading (D, 25 Nov 2026).** The short note about the transcription at the top and the "About this index" notes at the foot are gone. Below the last session, just above the SoundCloud player, a small "Transcription information" link opens a pop-up with the same information: where the questions, keywords and quotes come from, and the index's own introduction. Nothing on the page itself names Alex. The index heading reads "All 61 Patreon Q&A sessions organized by year".
