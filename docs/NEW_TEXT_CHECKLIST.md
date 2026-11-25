@@ -59,7 +59,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 31), in the menu; also on 161 more places (81 pages)
 - [ ] **Section heading:** "Occasional letters from the archive"  
   Home (`redesign-2/index.html` line 111), in the newsletter box; also on 80 more places (81 pages)
-- [ ] **Paragraph:** "A teaching, a Q&A moment or a newly added recording, a few times a year. No more than that."  
+- [ ] **Paragraph:** "A teaching, an AMA moment or a newly added recording, a few times a year. No more than that."  
   Home (`redesign-2/index.html` line 112), in the newsletter box; also on 80 more places (81 pages)
 - [ ] **Form label:** "Email address"  
   Home (`redesign-2/index.html` line 115), in the newsletter box; also on 80 more places (81 pages)
@@ -100,7 +100,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 - [ ] **Page title (browser tab):** "Culadasa — the teachings of John Yates"  
   Home (`redesign-2/index.html` line 6)
-- [ ] **Search description (hidden):** "The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: writings, talks, Q&A recordings, topics and teachers."  
+- [ ] **Search description (hidden):** "The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: writings, talks, AMA recordings, topics and teachers."  
   Home (`redesign-2/index.html` line 7)
 - [ ] **Text block:** "Draft redesign (2) for review"  
   Home (`redesign-2/index.html` line 21); also on 80 more places (81 pages)
@@ -314,7 +314,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Learn (`redesign-2/learn/index.html` line 39), under "The science of mind"
 - [ ] **Sub-heading:** "The mind-system model"  
   Learn (`redesign-2/learn/index.html` line 40), under "The mind-system model"
-- [ ] **Paragraph:** "His model of the mind as many sub-minds, from the book and the Q&As."  
+- [ ] **Paragraph:** "His model of the mind as many sub-minds, from the book and the AMA sessions."  
   Learn (`redesign-2/learn/index.html` line 40), under "The mind-system model"
 - [ ] **Sub-heading:** "Consciousness"  
   Learn (`redesign-2/learn/index.html` line 40), under "Consciousness"
@@ -451,7 +451,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 - [ ] **Page title (browser tab):** "Audio — Culadasa"  
   Library › Audio (`redesign-2/audio/index.html` line 6)
-- [ ] **Search description (hidden):** "Culadasa’s guided meditations, retreats and Q&A recordings on SoundCloud."  
+- [ ] **Search description (hidden):** "Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud."  
   Library › Audio (`redesign-2/audio/index.html` line 7)
 - [ ] **Paragraph:** "Guided meditations, teaching retreats and questions and answers: 401 recordings in 26 collections on his SoundCloud."  
   Library › Audio (`redesign-2/audio/index.html` line 36), under "Audio"
@@ -567,7 +567,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"
 - [ ] **Search box hint:** "Search 441 questions and answers"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 60), under "The sessions"
-- [ ] **Sub-heading:** "May 2021 #1"  
+- [ ] **Button:** "May 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 65), under "May 2021 #1"
 - [ ] **Link text:** "Return to AMA list"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 65), under "May 2021 #1"; also on 60 more places
@@ -605,7 +605,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 67), under "May 2021 #1"; also on 2 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2021 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 68), under "May 2021 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "April 2021 #2"  
+- [ ] **Button:** "April 2021 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 71), under "April 2021 #2"
 - [ ] **Paragraph:** "How does one distinguish between pain and discomfort that should be dealt with vs the kind that comes from the mind’s ability to blow up minor discomfort?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 72), under "April 2021 #2"; also on 1 more place
@@ -667,7 +667,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 73), under "April 2021 #2"; also on 5 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2021 Patreon Q&A No1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 74), under "April 2021 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "April 2021 #1"  
+- [ ] **Button:** "April 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 77), under "April 2021 #1"
 - [ ] **Paragraph:** "What would be your game plan for someone who is at the later stages of TMI and would like to attain nirvana in under 10 years? What might their daily routine look like?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 78), under "April 2021 #1"; also on 1 more place
@@ -701,7 +701,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 79), under "April 2021 #1"; also on 9 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2021 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 80), under "April 2021 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "March 2021 #2"  
+- [ ] **Button:** "March 2021 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 83), under "March 2021 #2"
 - [ ] **Paragraph:** "What is spiritual bypassing?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 84), under "March 2021 #2"; also on 1 more place
@@ -731,7 +731,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 85), under "March 2021 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2021 Patreon Q&A No1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 86), under "March 2021 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "March 2021 #1"  
+- [ ] **Button:** "March 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 89), under "March 2021 #1"
 - [ ] **Paragraph:** "I asked last time about the agitation between my eyes, and it has not been very bothersome since because I’ve started to just accept it. But I’ve noticed that when I get very stable attention, exclusive attention and fee…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 90), under "March 2021 #1"
@@ -757,7 +757,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 91), under "March 2021 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2021 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 92), under "March 2021 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "February 2021 #2"  
+- [ ] **Button:** "February 2021 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 95), under "February 2021 #2"
 - [ ] **Paragraph:** "My inquiry is about Stage 7 purification process. A few months before I started my meditation practice, I did a lot of daily mindfulness practice. As a result, I started feeling a loosening of tension in my chest. I had …"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 96), under "February 2021 #2"
@@ -797,7 +797,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 97), under "February 2021 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2021 Patreon Q&A No1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 98), under "February 2021 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "February 2021 #1"  
+- [ ] **Button:** "February 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 101), under "February 2021 #1"
 - [ ] **Paragraph:** "I would like to talk about the Yogacharan idea of storehouse-consciousness (ālaya-vijñāna). What you mentioned when you described the Mind-System, one of the definitions I found is “Ālaya is a sort of eternal substance o…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 102), under "February 2021 #1"
@@ -839,7 +839,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 103), under "February 2021 #1"; also on 8 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2021 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 104), under "February 2021 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "January 2021 #2"  
+- [ ] **Button:** "January 2021 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 107), under "January 2021 #2"
 - [ ] **Paragraph:** "I’ve been reading a book by David Hume, An Enquiry Concerning Human Understanding. (Culadasa: This is the branch of philosophy known as epistemology.) In the book he says that the law of causality is a view that arises b…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 108), under "January 2021 #2"
@@ -865,7 +865,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 109), under "January 2021 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2021 Patreon Q&A No1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 110), under "January 2021 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "January 2021 #1"  
+- [ ] **Button:** "January 2021 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 113), under "January 2021 #1"
 - [ ] **Paragraph:** "What is direct knowledge? How can we know that we understand something through direct knowledge?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 114), under "January 2021 #1"; also on 1 more place
@@ -899,7 +899,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 115), under "January 2021 #1"; also on 7 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2020 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 116), under "January 2021 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "December 2020 #2"  
+- [ ] **Button:** "December 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 119), under "December 2020 #2"
 - [ ] **Paragraph:** "Where can a meditator find guidance on how to practice after attaining first path? I’m familiar with the ten fetters model, but it only describes what should be overcome at certain stages, not exactly how. Are there any …"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 120), under "December 2020 #2"
@@ -933,7 +933,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 121), under "December 2020 #2"; also on 8 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2020 Patreon Q&A No1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 122), under "December 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "December 2020 #1"  
+- [ ] **Button:** "December 2020 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 125), under "December 2020 #1"
 - [ ] **Paragraph:** "Over the years I’ve heard people use the term “Dark Night” to describe difficulty as the result of their practice. What has been confusing is that I’ve seen it used to describe everything from a period of relatively mild…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 126), under "December 2020 #1"
@@ -959,7 +959,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 127), under "December 2020 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A No3"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 128), under "December 2020 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 2020 #3"  
+- [ ] **Button:** "November 2020 #3"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 131), under "November 2020 #3"
 - [ ] **Paragraph:** "A friend of mine and myself are interested in an answer to a question. There seem to be two different flavors of Awakening. The self-realization of Advaita and the levels of Awakening described in Buddhism. Although diss…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 132), under "November 2020 #3"
@@ -993,7 +993,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 133), under "November 2020 #3"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A N°2 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 134), under "November 2020 #3"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 2020 #2"  
+- [ ] **Button:** "November 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 137), under "November 2020 #2"
 - [ ] **Paragraph:** "I’m practicing between Stage 3 and 4. So far, I’ve never fallen asleep during a meditation. I’m wondering if this is a sign of me not having sufficient stable attention. I sure do have the feeling that I experience subtl…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 138), under "November 2020 #2"
@@ -1019,7 +1019,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 139), under "November 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 140), under "November 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 2020 #1 - Sunday the 1st"  
+- [ ] **Button:** "November 2020 #1 - Sunday the 1st"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 143), under "November 2020 #1 - Sunday the 1st"
 - [ ] **Paragraph:** "I’m curious to hear you view on the role of longer retreats as part of the dharma. In TMI you offer teachings that can be incorporated into a daily routine, and to me this seems to be an integral part of your teachings. …"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 144), under "November 2020 #1 - Sunday the 1st"
@@ -1045,7 +1045,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 145), under "November 2020 #1 - Sunday the 1st"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2020 Patreon Q&A N°2 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 146), under "November 2020 #1 - Sunday the 1st"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "October 2020 #2"  
+- [ ] **Button:** "October 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 149), under "October 2020 #2"
 - [ ] **Paragraph:** "TMI is a wonderful book, but you’ve often said that you couldn’t possibly include everything you thought was important, or the book would have been twice as large. You have an online book recommendations list. Either fro…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 150), under "October 2020 #2"
@@ -1083,7 +1083,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 151), under "October 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2020 Patreon Q&A N°1 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 152), under "October 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "October 2020 #1"  
+- [ ] **Button:** "October 2020 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 155), under "October 2020 #1"
 - [ ] **Paragraph:** "In recent sits I’ve been letting go of attention on the breath, and instead relying on metacognitive awareness to investigate the Mind-System. I’ve been investigating arising phenomena by noting how they are constantly c…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 156), under "October 2020 #1"
@@ -1121,7 +1121,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 157), under "October 2020 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 Patreon Q&A N°2 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 158), under "October 2020 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "September 2020 #2"  
+- [ ] **Button:** "September 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 161), under "September 2020 #2"
 - [ ] **Paragraph:** "I’ve been wondering about the similarities between the state of awareness characterized by the mind at Stage 10, and the mind which is unsurpassable, and nibbāna."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 162), under "September 2020 #2"; also on 1 more place
@@ -1157,7 +1157,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 163), under "September 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 Patreon Q&A N°1 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 164), under "September 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "September 2020 #1"  
+- [ ] **Button:** "September 2020 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 167), under "September 2020 #1"
 - [ ] **Paragraph:** "During one of the previous Q&amp;A sessions, you mentioned that one of realizations after deep Awakening is that everything is love. Could you please elaborate more on that? Why is that the case?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 168), under "September 2020 #1"; also on 1 more place
@@ -1191,7 +1191,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 169), under "September 2020 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa August 2020 Patreon Q&A N°2 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 170), under "September 2020 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "August 2020 #2"  
+- [ ] **Button:** "August 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 173), under "August 2020 #2"
 - [ ] **Paragraph:** "My question is about whole-body jhānas. I had an experience a couple of weeks ago where I used an approach that is a bit different to what is described in TMI. When I focus on the sensations at the nose, it can get quite…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 174), under "August 2020 #2"
@@ -1217,7 +1217,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 175), under "August 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa August 2020 Patreon Q&A N°1 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 176), under "August 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "August 2020 #1"  
+- [ ] **Button:** "August 2020 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 179), under "August 2020 #1"
 - [ ] **Paragraph:** "I feel I’ve been in Stage 4 for months, maybe almost a year. I also have the impression that my peripheral awareness has been gaining ground week by week⁠—even off the cushion. That leads me to think that being stuck in …"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 180), under "August 2020 #1"
@@ -1243,7 +1243,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 181), under "August 2020 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2020 Patreon Q&A N°2 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 182), under "August 2020 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "July 2020 #2"  
+- [ ] **Button:** "July 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 185), under "July 2020 #2"
 - [ ] **Paragraph:** "What is the interaction between the progress of insight and the progress of śamatha? Could one draw a table with how different ñanas feel in the different stages of TMI?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 186), under "July 2020 #2"
@@ -1271,7 +1271,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 187), under "July 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2020 Patreon Q&A N°1 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 188), under "July 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "July 2020 #1"  
+- [ ] **Button:** "July 2020 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 191), under "July 2020 #1"
 - [ ] **Paragraph:** "What is the Buddhist take on free will? Is there no free will, or is there limited free will? Why is it that some people are able to quit their addictions, while there are others who are equally motivated, but are unable…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 192), under "July 2020 #1"
@@ -1295,7 +1295,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 193), under "July 2020 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2020 Patreon Q&A N°2 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 194), under "July 2020 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "June 2020 #2"  
+- [ ] **Button:** "June 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 197), under "June 2020 #2"
 - [ ] **Paragraph:** "I want to ask about your thought on whether consistent psychedelic use is a good idea on the path to Awakening. I’ve never used it, but a friend of mine extensively uses the substance called 5-MeO-DMT. He says that it is…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 198), under "June 2020 #2"
@@ -1323,7 +1323,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 199), under "June 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2020 Patreon Q&A N°1 Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 200), under "June 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "June 2020 #1"  
+- [ ] **Button:** "June 2020 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 203), under "June 2020 #1"
 - [ ] **Paragraph:** "I consider myself to be Stage 4. I have a lot of gross distractions. I’m having trouble finding my meditation object. I find myself overwhelemed by this turmoil of really violent contractions and pressures around my face…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 204), under "June 2020 #1"
@@ -1357,7 +1357,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 205), under "June 2020 #1"; also on 3 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2020 Patreon Q&A Recording N°2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 206), under "June 2020 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "May 2020 #2"  
+- [ ] **Button:** "May 2020 #2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 209), under "May 2020 #2"
 - [ ] **Paragraph:** "Would you say that drinking Ayahuasca is against the fifth precept? What’s your opinion regarding similar substances in relation to TMI practice?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 210), under "May 2020 #2"; also on 1 more place
@@ -1391,7 +1391,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 211), under "May 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2020 Patreon Q&A Recording N°1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 212), under "May 2020 #2"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "May 2020 #1"  
+- [ ] **Button:** "May 2020 #1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 215), under "May 2020 #1"
 - [ ] **Paragraph:** "How to deal with being both dull and distracted at the same time?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 216), under "May 2020 #1"; also on 1 more place
@@ -1447,7 +1447,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 217), under "May 2020 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2020 Patreon Q&A Recording"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 218), under "May 2020 #1"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "April 2020"  
+- [ ] **Button:** "April 2020"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 221), under "April 2020"
 - [ ] **Paragraph:** "I’m at Stage 7. Should I try and contain the bodily movements. The thumb-twitching I was expecting, but my back and back started bending in snake-like movements. Also, my breath gets very accelerated. Ignoring it allows …"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 222), under "April 2020"
@@ -1489,7 +1489,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 223), under "April 2020"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 224), under "April 2020"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "February 2020 #2 - Sunday"  
+- [ ] **Button:** "February 2020 #2 - Sunday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 227), under "February 2020 #2 - Sunday"
 - [ ] **Paragraph:** "I reached Stage 4 a year or two ago. The practice started reinforcing my sense of Self, and especially my sense of agency to the extent that it seemed to cause me a lot of agitation when I’m not on the cushion because my…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 228), under "February 2020 #2 - Sunday"
@@ -1527,7 +1527,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 229), under "February 2020 #2 - Sunday"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2020 Patreon Q&A Nº 1 - Saturday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 230), under "February 2020 #2 - Sunday"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "February 2020 #1 - Saturday"  
+- [ ] **Button:** "February 2020 #1 - Saturday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 233), under "February 2020 #1 - Saturday"
 - [ ] **Paragraph:** "I’m investigating some of the subtle forms of attachment and urgency that seem to underlie conscious experience. I’m experiencing fears arise related to losing control. The feeling of moving to yet another unknown way of…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 234), under "February 2020 #1 - Saturday"
@@ -1555,7 +1555,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 235), under "February 2020 #1 - Saturday"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2020 Patreon Q&A N° 2 (Monday)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 236), under "February 2020 #1 - Saturday"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "January 2020 #2 - Monday"  
+- [ ] **Button:** "January 2020 #2 - Monday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 239), under "January 2020 #2 - Monday"
 - [ ] **Paragraph:** "When I reach mental pliancy or am on the way to, I have quite a few hypnagogic mental situations (like impersonal thoughts, images etc.) which at the same time help me to get deeper into the meditation state as long as I…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 240), under "January 2020 #2 - Monday"
@@ -1581,7 +1581,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 241), under "January 2020 #2 - Monday"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2020 Patreon Q&A Nº 1 - Sunday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 242), under "January 2020 #2 - Monday"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "January 2020 #1 - Sunday"  
+- [ ] **Button:** "January 2020 #1 - Sunday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 245), under "January 2020 #1 - Sunday"
 - [ ] **Paragraph:** "I’d appreciate our discussing the various jhānas. In particular, advice for setting the conditions for jhānas to arise, for exploring and maturing the different jhānas, and how jhāna may contribute to Awakening."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 246), under "January 2020 #1 - Sunday"
@@ -1619,7 +1619,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2019 Patreon Q&A Video - Monday the 16th"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 248), under "January 2020 #1 - Sunday"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "December 2019 - Monday the 16th"  
+- [ ] **Button:** "December 2019 - Monday the 16th"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 251), under "December 2019 - Monday the 16th"
 - [ ] **Paragraph:** "As before, the yogi should react to the awareness rather than to the distraction, and should do so with a feeling of satisfaction, but the awareness is there⁠—of confidence that the mind is becoming well-trained. But if …"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 252), under "December 2019 - Monday the 16th"
@@ -1647,7 +1647,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 253), under "December 2019 - Monday the 16th"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2019 Patreon Q&A Video - Sunday the 15th"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 254), under "December 2019 - Monday the 16th"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "December 2019 - Sunday the 15th"  
+- [ ] **Button:** "December 2019 - Sunday the 15th"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 257), under "December 2019 - Sunday the 15th"
 - [ ] **Paragraph:** "With regards to the human experience, there can be moments that give rise to the experience of emotions and perception of pain/heartache within letting go despite the spaciousness and knowing that exists. This knowing al…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 258), under "December 2019 - Sunday the 15th"
@@ -1691,7 +1691,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 259), under "December 2019 - Sunday the 15th"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2019 Patreon Q&A Video - Friday the 29th"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 260), under "December 2019 - Sunday the 15th"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 2019 - Friday the 29th"  
+- [ ] **Button:** "November 2019 - Friday the 29th"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 263), under "November 2019 - Friday the 29th"
 - [ ] **Paragraph:** "I hear a lot of terms used such as The Four Noble Truths, Ten Fetters, Awakening, Enlightenment, nibbāna and so on, many explaining their own interpretations of what they mean. I could say, intellectually I have a vague …"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 264), under "November 2019 - Friday the 29th"
@@ -1725,7 +1725,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 265), under "November 2019 - Friday the 29th"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2019 Patreon Q&A - Monday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 266), under "November 2019 - Friday the 29th"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 2019 - Monday"  
+- [ ] **Button:** "November 2019 - Monday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 269), under "November 2019 - Monday"
 - [ ] **Paragraph:** "As a result of the learned technique to release repetitive negative emotional grasping traces as felt sensations of tension or contraction anywhere in the body, my experience of pīti, which was formerly patchy and transi…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 270), under "November 2019 - Monday"
@@ -1761,7 +1761,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 271), under "November 2019 - Monday"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2019 Patreon Q&A - Sunday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 272), under "November 2019 - Monday"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 2019 - Sunday"  
+- [ ] **Button:** "November 2019 - Sunday"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 275), under "November 2019 - Sunday"
 - [ ] **Paragraph:** "What is prayer, and how does it work? Can we pray for someone who passed away, and would prayers benefit them?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 276), under "November 2019 - Sunday"; also on 1 more place
@@ -1799,7 +1799,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 277), under "November 2019 - Sunday"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2019 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 278), under "November 2019 - Sunday"; also on 2 more places (2 pages)
-- [ ] **Sub-heading:** "July 2019"  
+- [ ] **Button:** "July 2019"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 281), under "July 2019"
 - [ ] **Paragraph:** "Is it possible to say that the experience of the Still Point and that of the equanimity factor in the fourth jhāna are of the same nature/quality?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 282), under "July 2019"; also on 1 more place
@@ -1827,7 +1827,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 283), under "July 2019"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2019 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 284), under "July 2019"; also on 2 more places (2 pages)
-- [ ] **Sub-heading:** "June 2019"  
+- [ ] **Button:** "June 2019"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 287), under "June 2019"
 - [ ] **Paragraph:** "In meditation, it occured to me the degree to which guilt creates a strong attachment to Self. Any means to resolve the guilt by means of apology or confession is an extremely selfish act. Although it can be appropriate,…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 288), under "June 2019"
@@ -1935,7 +1935,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"; also on 3 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2019 Patreon Q&A Catchup"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 296), under "20190517"; also on 2 more places (2 pages)
-- [ ] **Sub-heading:** "March 2019 Catch-Up"  
+- [ ] **Button:** "March 2019 Catch-Up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 299), under "March 2019 Catch-Up"
 - [ ] **Paragraph:** "Could you comment on the two types of dependent origination: the Theravādan concept of a temporal dependent origination⁠—one thing happens after the next, and the more Tibetan, Mahāyāna type⁠—dependent co-origination? It…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 300), under "March 2019 Catch-Up"
@@ -1971,7 +1971,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 301), under "March 2019 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2019 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 302), under "March 2019 Catch-Up"; also on 2 more places (2 pages)
-- [ ] **Sub-heading:** "April 2019"  
+- [ ] **Button:** "April 2019"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 305), under "April 2019"
 - [ ] **Paragraph:** "I’m currently in Stage 0 despite attempting to transition to Stage 1 for years. I aimed to a one-hour sit. Not once have I lasted that long, and in fact I haven’t atempted to sit for weeks. To be fair, I just came out of…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 306), under "April 2019"
@@ -2009,7 +2009,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 307), under "April 2019"
 - [ ] **Screen-reader label (hidden):** "Play: March 2019 Culadasa Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 308), under "April 2019"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "March 2019"  
+- [ ] **Button:** "March 2019"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 311), under "March 2019"
 - [ ] **Paragraph:** "What is the role of psychosis/schizophrenia/bipolarity and personality disorders in the human being? Why do they have to exist, and can’t people living with them be free from this harm? Could people living with these men…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 312), under "March 2019"
@@ -2125,7 +2125,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
 - [ ] **Screen-reader label (hidden):** "Play: February 2019 Culadasa Patreon Q&A catch-up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 320), under "February 2019"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "February 2019 Catch-Up"  
+- [ ] **Button:** "February 2019 Catch-Up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 323), under "February 2019 Catch-Up"
 - [ ] **Paragraph:** "How do you stay mindful during intellectuall activities?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 324), under "February 2019 Catch-Up"; also on 1 more place
@@ -2177,7 +2177,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2019 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 326), under "February 2019 Catch-Up"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "January 2019"  
+- [ ] **Button:** "January 2019"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 329), under "January 2019"
 - [ ] **Paragraph:** "I have a question about the Mahāsatipaṭṭhānasutta."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 330), under "January 2019"; also on 1 more place
@@ -2217,7 +2217,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 331), under "January 2019"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 332), under "January 2019"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "December 2018"  
+- [ ] **Button:** "December 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 335), under "December 2018"
 - [ ] **Paragraph:** "I learned the first four pleasure jhānas from Brasington’s book, and a subsequent week-long retreat with two Brasington-authorized teachers. I can access the jhānas outside retreat as long as I practice consistently at h…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 336), under "December 2018"
@@ -2281,7 +2281,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 337), under "December 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 338), under "December 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 2018"  
+- [ ] **Button:** "November 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 341), under "November 2018"
 - [ ] **Paragraph:** "As a beginner, how do I handle intense trauma during meditation from a very bad breakup, or lovesickness and hurt in general?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 342), under "November 2018"; also on 1 more place
@@ -2357,7 +2357,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
 - [ ] **Screen-reader label (hidden):** "Play: November 23, 2018 Culadasa Q&A Catch Up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 344), under "November 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "November 23, 2018 Catch-Up"  
+- [ ] **Button:** "November 23, 2018 Catch-Up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 347), under "November 23, 2018 Catch-Up"
 - [ ] **Paragraph:** "What is your understanding of rigpa in Dzogchen, if you are familiar with this term?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 348), under "November 23, 2018 Catch-Up"; also on 1 more place
@@ -2405,7 +2405,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play: October 29, 2018 Culadasa Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 350), under "November 23, 2018 Catch-Up"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "October 29, 2018"  
+- [ ] **Button:** "October 29, 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 353), under "October 29, 2018"
 - [ ] **Paragraph:** "In TMI, you advocate a combination of concentration and Insight practice, whereas in MCTB, Daniel advocates separating the two practices. However, in Stage 7, you give two separate practices: close following and cultivat…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 354), under "October 29, 2018"
@@ -2519,7 +2519,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 361), under "September 2018"
 - [ ] **Screen-reader label (hidden):** "Play: 20180816 Patreon Meetup Video"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 362), under "September 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "August 2018"  
+- [ ] **Button:** "August 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 365), under "August 2018"
 - [ ] **Paragraph:** "In TMI you mentioned that Insight into No-Self was what brings people to achieve first path. You’ve also mentioned elsewhere that there are different gateways from first path to second path, and that that affects the pro…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 366), under "August 2018"
@@ -2599,7 +2599,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
 - [ ] **Screen-reader label (hidden):** "Play: July 25, 2018 Culadasa Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 368), under "August 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "July 25, 2018"  
+- [ ] **Button:** "July 25, 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 371), under "July 25, 2018"
 - [ ] **Paragraph:** "How do I know when my ego-structure is healthy enough that I can go for Insight without worry?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 372), under "July 25, 2018"; also on 1 more place
@@ -2671,7 +2671,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"; also on 3 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 374), under "July 25, 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "June 2018"  
+- [ ] **Button:** "June 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 377), under "June 2018"
 - [ ] **Paragraph:** "TMI was mostly about śamatha. Will you be writing a book about Insight too? What resources and methods which go beyond just hoping for spontaneous insight experiences during śamatha do you recommend⁠—besides a personal t…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 378), under "June 2018"
@@ -2747,7 +2747,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 379), under "June 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 380), under "June 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "May 2018"  
+- [ ] **Button:** "May 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 383), under "May 2018"
 - [ ] **Paragraph:** "How is your health? What can you tell us about your work on your upcoming book, on the changes to the Stronghold, and the integration of TCMC?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 384), under "May 2018"; also on 1 more place
@@ -2807,7 +2807,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 385), under "May 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 386), under "May 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "April 2018"  
+- [ ] **Button:** "April 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 389), under "April 2018"
 - [ ] **Paragraph:** "In your view, can consuming alcohol and cannabis be reconciled with the precept discouraging intoxicating substances?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 390), under "April 2018"; also on 1 more place
@@ -2883,7 +2883,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2018 Patreon Q&A Catch-Up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 392), under "April 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "April 2018 Catch-Up"  
+- [ ] **Button:** "April 2018 Catch-Up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 395), under "April 2018 Catch-Up"
 - [ ] **Paragraph:** "There seem to be a number of people on the internet who’ve got second path, but have found progress after that to be much more tricky. What advice can you give people looking to get to third path."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 396), under "April 2018 Catch-Up"; also on 1 more place
@@ -2985,7 +2985,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 397), under "April 2018 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 398), under "April 2018 Catch-Up"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "March 2018"  
+- [ ] **Button:** "March 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 401), under "March 2018"
 - [ ] **Paragraph:** "I recently came across Daniel Ingram’s writings on his experimentations as a fire kasiṇa practice. Then in an interesting bit of synchronicity, a TMI mentor happened to mention chataka practice, which is somewhat similar…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 402), under "March 2018"
@@ -3047,7 +3047,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 403), under "March 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 404), under "March 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "February 2018"  
+- [ ] **Button:** "February 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 407), under "February 2018"
 - [ ] **Paragraph:** "Do you make the distinction between awareness, consciousness, mind, and the Buddha-nature? If so, what are the distinctions and relationships amongst these four?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 408), under "February 2018"
@@ -3107,7 +3107,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 410), under "February 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "January 2018"  
+- [ ] **Button:** "January 2018"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 413), under "January 2018"
 - [ ] **Paragraph:** "How do I know when I’ve moved from stream entrant to once-returner? Additionally, besides just being continuously mindful of aversion and craving, and continuing meditation, are there any other practices which help to ac…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 414), under "January 2018"
@@ -3169,7 +3169,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 415), under "January 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2017 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 416), under "January 2018"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "December 2017"  
+- [ ] **Button:** "December 2017"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 419), under "December 2017"
 - [ ] **Paragraph:** "We are two meditators from Spain, and have been practicing daily for two years. One does one or two sessions, the other three or four of sitting and walking meditation. We also listened to several hours of online content…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 420), under "December 2017"
@@ -3215,7 +3215,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 421), under "December 2017"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2017 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 422), under "December 2017"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "October 2017"  
+- [ ] **Button:** "October 2017"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 425), under "October 2017"
 - [ ] **Paragraph:** "How do arising of pīti and spontaneous body movements relate to purification of the mind? Do you have any advice not mentioned in TMI for someone who is going through a prolonged period of these sometimes painful movemen…"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 426), under "October 2017"
@@ -3574,15 +3574,15 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Conversations (`redesign-2/conversations/index.html` line 50), under "How do you know what’s true?"
 - [ ] **Paragraph:** "A talk given at New York Insight Meditation Center, on his YouTube channel."  
   Conversations (`redesign-2/conversations/index.html` line 51), under "How do you know what’s true?"
-- [ ] **Image description (alt text):** "Culadasa answering questions in one of his online Q&A sessions"  
+- [ ] **Image description (alt text):** "Culadasa answering questions in one of his online AMA sessions"  
   Conversations (`redesign-2/conversations/index.html` line 51), under "How do you know what’s true?"
-- [ ] **Photo caption:** "Still from his April 2018 Q&A session on YouTube"  
+- [ ] **Photo caption:** "Still from his April 2018 AMA session on YouTube"  
   Conversations (`redesign-2/conversations/index.html` line 51), under "How do you know what’s true?"
 - [ ] **Sub-heading:** "Culadasa Q&A Index"  
   Conversations (`redesign-2/conversations/index.html` line 52), under "Culadasa Q&A Index"
 - [ ] **Paragraph:** "Community archive by Alex"  
   Conversations (`redesign-2/conversations/index.html` line 52), under "Culadasa Q&A Index"
-- [ ] **Paragraph:** "Every question asked in his 61 Q&A sessions from October 2017 to May 2021, transcribed with keywords and links to the exact moment in each video. It powers this site’s Culadasa AMA sessions page and Topics search."  
+- [ ] **Paragraph:** "Every question asked in his 61 AMA sessions from October 2017 to May 2021, transcribed with keywords and links to the exact moment in each video. It powers this site’s Culadasa AMA sessions page and Topics search."  
   Conversations (`redesign-2/conversations/index.html` line 53), under "Culadasa Q&A Index"
 - [ ] **Paragraph:** "Open the index"  
   Conversations (`redesign-2/conversations/index.html` line 53), under "Culadasa Q&A Index"

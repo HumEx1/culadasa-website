@@ -146,7 +146,7 @@
    "date_label": "2017–2021",
    "url": "https://transcendentmind.github.io/html/culadasa_qna_index.html",
    "cta": "Browse",
-   "description": "Every question asked in his 61 Q&A sessions from October 2017 to May 2021, transcribed with keywords and links to the exact moment in each video. It powers this site’s Culadasa AMA sessions page and Topics search.",
+   "description": "Every question asked in his 61 AMA sessions from October 2017 to May 2021, transcribed with keywords and links to the exact moment in each video. It powers this site’s Culadasa AMA sessions page and Topics search.",
    "links": [
     [
      "Open the index",
@@ -154,8 +154,8 @@
     ]
    ],
    "image": "assets/img/conversations/qna-index.jpg",
-   "image_alt": "Culadasa answering questions in one of his online Q&A sessions",
-   "image_credit": "Still from his April 2018 Q&A session on YouTube"
+   "image_alt": "Culadasa answering questions in one of his online AMA sessions",
+   "image_credit": "Still from his April 2018 AMA session on YouTube"
   }
  ]
 }

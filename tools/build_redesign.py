@@ -139,7 +139,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
     <div>
       <p class="label">Newsletter</p>
       <h2 id="signup-h">Occasional letters from the archive</h2>
-      <p class="muted">A teaching, a Q&amp;A moment or a newly added recording, a few times a year. No more than that.</p>
+      <p class="muted">A teaching, an AMA moment or a newly added recording, a few times a year. No more than that.</p>
     </div>
     <form class="signup-form" action="#" method="post">
       <label class="sr" for="signup-email">Email address</label>
@@ -351,7 +351,7 @@ def build():
 </section>
 {'' if V2 else EYES}'''
     page('', 'Home', body,
-         description='The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: writings, talks, Q&A recordings, topics and teachers.')
+         description='The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: writings, talks, AMA recordings, topics and teachers.')
 
     # ---------------------------------------------------------------- start here
     r = '../'
@@ -387,7 +387,7 @@ def build():
             ('Jhāna', 'The original practice of mindfulness and insight.', f'{r}{UP}jhanas-and-mindfulness-handout.pdf'),
         ]),
         ('The science of mind', 'ink', [
-            ('The mind-system model', 'His model of the mind as many sub-minds, from the book and the Q&As.', qlink('mind-system')),
+            ('The mind-system model', 'His model of the mind as many sub-minds, from the book and the AMA sessions.', qlink('mind-system')),
             ('Consciousness', 'What consciousness is, discussed across his talks and handouts.', qlink('consciousness')),
             ('Meditation and insight', 'Three handouts and slides on how insight arises.', f'{r}{UP}Meditation-and-Insight-I.pdf'),
             ('What the Buddha thought', 'An introduction to the Buddha’s teaching, with slides.', f'{r}{UP}20130322-what-the-buddha-thought-handout.pdf'),
@@ -459,7 +459,7 @@ def build():
     body = banner('Listen', 'Audio', 'Guided meditations, teaching retreats and questions and answers: 401 recordings in 26 collections on his SoundCloud.', 'ink',
                   '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section"><div class="wrap"><div class="grid">' + ''.join(
         f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All 401 recordings, newest first.</p>{sc_player("users", "111086538", 600)}</div></section>'
-    page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and Q&A recordings on SoundCloud.')
+    page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud.')
 
     # ---------------------------------------------------------------- videos (old path)
     body = banner('Watch', 'Videos', f'{len(videos)} videos: talks, discussions and {len(qna)} recorded AMA (ask me anything) sessions.', 'teal',
