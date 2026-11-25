@@ -471,3 +471,19 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .tinfo-close{all:unset;cursor:pointer;width:44px;height:44px;display:grid;place-items:center;font-size:28px;line-height:1;color:var(--ink)}
 .tinfo-close:focus-visible{outline:2px solid var(--teal)}
 .tinfo .prose{padding:18px 24px 26px;overflow:auto}
+/* Q&A archive: compact session cards, each as wide as a video; a card opens out to the full row (D, 25 Nov 2026) */
+.scards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:36px 32px;margin-top:28px;align-items:start}
+.scard{scroll-margin-top:90px;border-top:1px solid var(--line);padding-top:18px}
+.scard h3{margin:14px 0 6px;font-size:21px}
+.scard-first{margin:0 0 10px;font-size:14.5px;line-height:1.55;color:var(--muted)}
+.scard-q summary{cursor:pointer;font:500 12.5px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);padding:8px 0;list-style:none}
+.scard-q summary::-webkit-details-marker{display:none}
+.scard-q summary::after{content:" +"}
+.scard-q[open] summary::after{content:" −"}
+.scard-back{margin:8px 0 0;font-size:14px}
+.scard.open{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:0 40px}
+.scard.open .scard-media{position:sticky;top:90px;align-self:start}
+.scard.open .scard-first{display:none}
+.scard.open .qlist{margin-top:14px}
+@media (max-width:760px){.scard.open{display:block}.scard.open .scard-media{position:static}}
+.scard .video-card>h3{display:none}

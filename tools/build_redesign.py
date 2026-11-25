@@ -503,15 +503,16 @@ def build():
     for s_ in isess:
         v = vid_by_id.get(s_['video'])
         tile = video_tile(v, r) if v else f'<p><a href="{esc(s_["url"])}" rel="noopener">Watch on YouTube</a></p>'
-        sess += f'''<section class="session-full" id="s-{esc(s_['video'])}"><div class="session-head"><h3>{esc(s_['title'])}</h3><span class="count">{len(s_['questions'])} questions</span><a class="top" href="#sessions">All sessions ↑</a></div>
-<div class="body"><div>{tile}</div><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></div></section>'''
+        first_q = re.sub(r'<[^>]+>', '', s_['questions'][0]['question'][0]) if s_['questions'] and s_['questions'][0]['question'] else ''
+        sess += f'''<article class="scard" id="s-{esc(s_['video'])}"><div class="scard-media">{tile}</div>
+<div class="scard-main"><h3>{esc(s_['title'])}</h3><p class="scard-first">{esc(first_q[:150])}{'…' if len(first_q) > 150 else ''}</p>
+<details class="scard-q"><summary>Show all {len(s_['questions'])} questions</summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></details>
+<p class="scard-back"><a href="#sessions">Return to main list</a></p></div></article>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
     body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''
 <section class="section"><div class="wrap">
 <nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} Patreon Q&amp;A sessions organized by year</h2><p class="muted">Choose one to go to it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
-<form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
-{sess}
 <p class="tinfo-open"><button type="button" class="linklike" id="tinfo-btn" aria-haspopup="dialog" aria-controls="tinfo">Transcription information</button></p>
 <dialog id="tinfo" class="tinfo" aria-labelledby="tinfo-h">
   <div class="tinfo-head"><h2 id="tinfo-h">Transcription information</h2><button type="button" class="tinfo-close" id="tinfo-close" aria-label="Close">×</button></div>
@@ -530,7 +531,20 @@ def build():
 }})();
 </script>
 </div></section>
-<section class="section"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>'''
+<section class="section band-panel"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>
+<section class="section" id="all-sessions"><div class="wrap"><h2>The sessions</h2>
+<form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
+<div class="scards">{sess}</div>
+<script>
+/* a year link or the page address opens its session; an opened card widens to the full row */
+(function () {{
+  function sync(card) {{ var d = card.querySelector('details'); card.classList.toggle('open', !!(d && d.open)); }}
+  document.querySelectorAll('.scard details').forEach(function (d) {{ d.addEventListener('toggle', function () {{ sync(d.closest('.scard')); }}); }});
+  function openFromHash() {{ var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) {{ var d = c.querySelector('details'); d.open = true; sync(c); c.scrollIntoView({{ block: 'start' }}); }} }}
+  window.addEventListener('hashchange', openFromHash); openFromHash();
+}})();
+</script>
+</div></section>'''
     page('online-meetings/', 'Q&A archive', body, description='Every question from Culadasa’s 61 recorded Q&A sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics

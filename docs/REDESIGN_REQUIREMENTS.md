@@ -122,3 +122,10 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 49. **Transcription information in a pop-up; index heading (D, 25 Nov 2026).** The short note about the transcription at the top and the "About this index" notes at the foot are gone. Below the last session, just above the SoundCloud player, a small "Transcription information" link opens a pop-up with the same information: where the questions, keywords and quotes come from, and the index's own introduction. Nothing on the page itself names Alex. The index heading reads "All 61 Patreon Q&A sessions organized by year".
 
 50. **Search and word cloud cover the whole Q&A index (D, 25 Nov 2026).** "Do all these words now show up in the word cloud and search?" Before this, no. Search was built from an older copy of the index: 439 questions, 21 of 34 quotes, 617 of 645 keywords. `tools/build_topics.py` now reads `redesign/data/qna_index.json`, the same data the Q&A archive shows, so search covers all 441 questions, all 34 quotes and all the keywords. The word cloud is counted from the same text. Its 90 words are unchanged; a few counts moved by one.
+
+51. **Q&A archive made compact (D, 25 Nov 2026).** In order:
+    1. the sessions by year;
+    2. "Transcription information" just below the 2017 row (opens the pop-up);
+    3. the SoundCloud player;
+    4. "The sessions", with the search box;
+    5. the sessions as compact cards, three to a row on desktop and each as wide as its video. A card shows the video, the session name and the start of the first question. "Show all N questions" opens it out to the full row, video on the left, questions on the right. Every card ends with "Return to main list". A year link opens its card and scrolls to it.
