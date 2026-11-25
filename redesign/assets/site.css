@@ -523,3 +523,8 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .jump-main a.current{outline:1px solid var(--gold-line,#c4972f);outline-offset:3px;border-radius:2px;background:var(--panel)}
 /* the teacher last looked at: thin gold outline, as on the AMA sessions page (D, 25 Nov 2026) */
 .tcard.active a{border-color:var(--gold-line,#c4972f);box-shadow:0 0 0 1px var(--gold-line,#c4972f);background:var(--white)}
+/* Videos: "Show all / Hide the 61 sessions", as on the AMA page (D, 25 Nov 2026) */
+.vsessions summary .when-open{display:none}
+.vsessions[open] summary .when-open{display:inline}
+.vsessions[open] summary .when-closed{display:none}
+.vsessions{scroll-margin-top:90px}

@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2012 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2013 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -18,7 +18,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Topics | 8 |
 | Library › Writings | 33 |
 | Library › Audio | 7 |
-| Library › Videos | 25 |
+| Library › Videos | 26 |
 | Library › Q&A archive | 1368 |
 | Library › Writings › essay | 17 |
 | The Book | 21 |
@@ -31,7 +31,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Footer › Testimonials (old address, redirects) | 2 |
 | Teachers › individual profile pages | 208 |
 | Messages shown by the search and map scripts | 24 |
-| **Total** | **2012** |
+| **Total** | **2013** |
 
 ## Every page: header, menu, newsletter box and footer (30)
 
@@ -464,7 +464,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "All 401 recordings, newest first."  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Every recording"
 
-## Library › Videos (25)
+## Library › Videos (26)
 
 - [ ] **Page title (browser tab):** "Videos — Culadasa"  
   Library › Videos (`redesign-2/videos/index.html` line 6)
@@ -488,34 +488,36 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Videos (`redesign-2/videos/index.html` line 63), under "Culadasa April 2019 Patreon Q&A"
 - [ ] **Paragraph:** "Each session’s questions are listed, with links to the moment he answers, in Culadasa AMA sessions ."  
   Library › Videos (`redesign-2/videos/index.html` line 75), under "Culadasa AMA sessions"
-- [ ] **Paragraph:** "3 questions"  
+- [ ] **Paragraph:** "3 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 78), under "Culadasa May 2021 Patreon Q&A No1"; also on 2 more places
-- [ ] **Paragraph:** "9 questions"  
+- [ ] **Paragraph:** "9 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 81), under "Culadasa April 2021 Patreon Q&A No2"; also on 5 more places
-- [ ] **Paragraph:** "6 questions"  
+- [ ] **Paragraph:** "6 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 84), under "Culadasa April 2021 Patreon Q&A No1"; also on 9 more places
-- [ ] **Expandable heading:** "Show all 61 sessions"  
+- [ ] **Expandable heading:** "Show all 61 sessions Hide the 61 sessions"  
   Library › Videos (`redesign-2/videos/index.html` line 95), under "Culadasa February 2021 Patreon Q&A No2"
-- [ ] **Paragraph:** "5 questions"  
+- [ ] **Paragraph:** "5 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 97), under "Culadasa February 2021 Patreon Q&A No1"; also on 8 more places
-- [ ] **Paragraph:** "8 questions"  
+- [ ] **Paragraph:** "8 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 103), under "Culadasa January 2021 Patreon Q&A No1"; also on 7 more places
-- [ ] **Paragraph:** "7 questions"  
+- [ ] **Paragraph:** "7 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 106), under "Culadasa December 2020 Patreon Q&A No2"; also on 8 more places
-- [ ] **Paragraph:** "2 questions"  
+- [ ] **Paragraph:** "2 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 109), under "Culadasa December 2020 Patreon Q&A No1"
-- [ ] **Paragraph:** "4 questions"  
+- [ ] **Paragraph:** "4 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 148), under "Culadasa June 2020 Patreon Q&A N°1 Recording"; also on 3 more places
-- [ ] **Paragraph:** "11 questions"  
+- [ ] **Paragraph:** "11 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 193), under "20190517 Culadasa Patreon Q&A"; also on 3 more places
-- [ ] **Paragraph:** "10 questions"  
+- [ ] **Paragraph:** "10 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 232), under "July 25, 2018 Culadasa Patreon Q&A"; also on 3 more places
-- [ ] **Paragraph:** "17 questions"  
+- [ ] **Paragraph:** "17 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 244), under "Culadasa April 2018 Patreon Q&A Catch-Up"
-- [ ] **Paragraph:** "13 questions"  
+- [ ] **Paragraph:** "13 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 250), under "Culadasa February 2018 Patreon Q&A"
-- [ ] **Paragraph:** "14 questions"  
+- [ ] **Paragraph:** "14 questions · Questions →"  
   Library › Videos (`redesign-2/videos/index.html` line 253), under "Culadasa January 2018 Patreon Q&A"
+- [ ] **Button:** "Hide the 61 sessions"  
+  Library › Videos (`redesign-2/videos/index.html` line 261), under "Culadasa October 2017 Patreon Q&A"
 
 ## Library › Q&A archive (1368)
 
@@ -4083,23 +4085,23 @@ These appear while using Topics search and the Teachers map; they are not in the
 - [ ] "Lineage"  
   `redesign-2/assets/topics.js` line 10
 - [ ] "Type a word, or choose one from the cloud."  
-  `redesign-2/assets/topics.js` line 64
-- [ ] "Type at least two letters."  
   `redesign-2/assets/topics.js` line 65
+- [ ] "Type at least two letters."  
+  `redesign-2/assets/topics.js` line 66
 - [ ] "mentions of “"  
-  `redesign-2/assets/topics.js` line 81
+  `redesign-2/assets/topics.js` line 82
 - [ ] "sources, most mentions first."  
-  `redesign-2/assets/topics.js` line 81
+  `redesign-2/assets/topics.js` line 82
 - [ ] "No mentions of “"  
-  `redesign-2/assets/topics.js` line 81
+  `redesign-2/assets/topics.js` line 82
 - [ ] "”. Try a shorter or different word."  
-  `redesign-2/assets/topics.js` line 81
+  `redesign-2/assets/topics.js` line 82
 - [ ] "more questions in this session"  
-  `redesign-2/assets/topics.js` line 84
+  `redesign-2/assets/topics.js` line 85
 - [ ] "Show all"  
-  `redesign-2/assets/topics.js` line 88
+  `redesign-2/assets/topics.js` line 89
 - [ ] "The teachings could not be loaded. Please reload the page."  
-  `redesign-2/assets/topics.js` line 131
+  `redesign-2/assets/topics.js` line 132
 - [ ] "teachers shown."  
   `redesign-2/assets/teachers.js` line 33
 - [ ] "a location on the map so far."  

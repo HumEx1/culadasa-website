@@ -159,3 +159,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 59. **AMA search results open the session on our page (D, 25 Nov 2026).** In Topics search, an AMA result's title now opens that session on the Culadasa AMA sessions page. The session is scrolled to, opened, outlined in gold and marked in the list at the top. Each question's time link still opens the video at that moment, in a new tab.
 
 60. **Teachers list marks the teacher last looked at (D, 25 Nov 2026).** After opening a teacher's profile and pressing Back, that teacher's card has a thin gold outline. Clicking a pin on the map outlines the matching card. Only one is marked at a time. The browser remembers it for the visit only (cleared when the tab closes) and nothing is sent anywhere.
+
+61. **Videos page joined to the AMA sessions (D, 25 Nov 2026).** The session box's label switches between "Show all 61 sessions" and "Hide the 61 sessions", with a second "Hide the 61 sessions" under the list that closes it and returns to its top. Each session tile reads "N questions · Questions →". The link opens that session on the Culadasa AMA sessions page, opened and marked.

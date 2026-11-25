@@ -466,8 +466,13 @@ def build():
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
 <section class="section"><div class="wrap"><h2>Culadasa AMA sessions</h2><p class="muted">Each session’s questions are listed, with links to the moment he answers, in <a href="{r}online-meetings/">Culadasa AMA sessions</a>.</p>
-<div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f"{len(s['items'])} questions") for s in list(reversed(qna))[:6])}</div>
-<details class="map-wrap" style="margin-top:24px"><summary>Show all {len(qna)} sessions</summary><div class="grid" style="margin-top:16px">{''.join(video_tile(vid_by_id[s['video']], r, f"{len(s['items'])} questions") for s in list(reversed(qna))[6:])}</div></details></div></section>'''
+<div class="grid">{''.join(video_tile(vid_by_id[s['video']], r, f'{len(s["items"])} questions · <a href="{r}online-meetings/#s-{s["video"]}">Questions →</a>') for s in list(reversed(qna))[:6])}</div>
+<details class="map-wrap vsessions" id="vsessions" style="margin-top:24px"><summary><span class="when-closed">Show all {len(qna)} sessions</span><span class="when-open">Hide the {len(qna)} sessions</span></summary><div class="grid" style="margin-top:16px">{''.join(video_tile(vid_by_id[s['video']], r, f'{len(s["items"])} questions · <a href="{r}online-meetings/#s-{s["video"]}">Questions →</a>') for s in list(reversed(qna))[6:])}</div>
+<p class="scard-close"><button type="button" class="close-q" id="vsessions-close">Hide the {len(qna)} sessions</button></p></details>
+<script>
+(function () {{ var d = document.getElementById('vsessions'), b = document.getElementById('vsessions-close');
+  if (d && b) b.addEventListener('click', function () {{ d.open = false; d.scrollIntoView({{ block: 'start' }}); d.querySelector('summary').focus({{ preventScroll: true }}); }}); }})();
+</script></div></section>'''
     page('videos/', 'Videos', body, description='Talks, discussions and AMA sessions by Culadasa on YouTube.')
 
     # ---------------------------------------------------------------- Q&A archive (old path: online-meetings)
