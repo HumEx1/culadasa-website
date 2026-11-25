@@ -504,3 +504,8 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .scard-q summary .when-open::after{content:" −"}
 @media (max-width:760px){.scard,.scard.open{display:block}.scard.open .scard-media{position:static}.scard-main{margin-top:14px}}
 .scard-q[open] summary::after{content:none}
+/* a second "Close all N questions" at the end of an open list (D, 25 Nov 2026) */
+.scard-close{margin:4px 0 0}
+.close-q{all:unset;cursor:pointer;font:500 12.5px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);padding:10px 0}
+.close-q::after{content:" −"}
+.close-q:focus-visible,.scard-q summary:focus-visible{outline:2px solid var(--teal);outline-offset:4px}

@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2000 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 2013 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -19,7 +19,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Library › Writings | 33 |
 | Library › Audio | 7 |
 | Library › Videos | 26 |
-| Library › Q&A archive | 1355 |
+| Library › Q&A archive | 1368 |
 | Library › Writings › essay | 17 |
 | The Book | 21 |
 | The Book (old address, redirects) | 2 |
@@ -31,7 +31,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Footer › Testimonials (old address, redirects) | 2 |
 | Teachers › individual profile pages | 208 |
 | Messages shown by the search and map scripts | 24 |
-| **Total** | **2000** |
+| **Total** | **2013** |
 
 ## Every page: header, menu, newsletter box and footer (30)
 
@@ -519,7 +519,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "14 questions"  
   Library › Videos (`redesign-2/videos/index.html` line 253), under "Culadasa January 2018 Patreon Q&A"
 
-## Library › Q&A archive (1355)
+## Library › Q&A archive (1368)
 
 - [ ] **Page title (browser tab):** "Q&A archive — Culadasa"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 6)
@@ -603,6 +603,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 67), under "May 2021 #1"
 - [ ] **Paragraph:** "Keywords intiuitive/insight vs intellectual/discursive/conceptual (symbolic) knowledge , implicit memory"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 67), under "May 2021 #1"
+- [ ] **Button:** "Close all 3 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 67), under "May 2021 #1"; also on 2 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2021 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 68), under "May 2021 #1"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "April 2021 #2"  
@@ -663,6 +665,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 73), under "April 2021 #2"
 - [ ] **Paragraph:** "My current question builds on your response to my previous one. How do I cultivate that interest, that curiosity for investigating the sensations of the breath such that that intention gets stronger and stronger to want to see these little details."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 73), under "April 2021 #2"
+- [ ] **Button:** "Close all 9 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 73), under "April 2021 #2"; also on 5 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2021 Patreon Q&A No1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 74), under "April 2021 #2"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "April 2021 #1"  
@@ -695,6 +699,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 79), under "April 2021 #1"
 - [ ] **Paragraph:** "Keywords empathy, compassion, sympathy"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 79), under "April 2021 #1"
+- [ ] **Button:** "Close all 6 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 79), under "April 2021 #1"; also on 9 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2021 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 80), under "April 2021 #1"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "March 2021 #2"  
@@ -831,6 +837,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 103), under "February 2021 #1"
 - [ ] **Paragraph:** "Keywords Satipaṭṭhāna Sutta"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 103), under "February 2021 #1"
+- [ ] **Button:** "Close all 5 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 103), under "February 2021 #1"; also on 8 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2021 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 104), under "February 2021 #1"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "January 2021 #2"  
@@ -889,6 +897,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 115), under "January 2021 #1"
 - [ ] **Paragraph:** "I’ve been thinking lately about sāti and samadhi as being two axes or dimensions of development. In TMI there is a certain path that’s drawn in this two-dimensional space. And sometimes you refer to what happens when you deviate from that path. I think that in my experience I see more and more that the two are not as much correlated as I thought they were from reading TMI."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 115), under "January 2021 #1"
+- [ ] **Button:** "Close all 8 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 115), under "January 2021 #1"; also on 7 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2020 Patreon Q&A No2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 116), under "January 2021 #1"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "December 2020 #2"  
@@ -921,6 +931,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 121), under "December 2020 #2"
 - [ ] **Paragraph:** "I think somebody asked a few months ago about nirodha-samāpatti . I think it was about when they come out of that, do they get to fourth path. I remember your response saying that you knew what you had to do to practice nirodha-samāpatti , and I was curious if you had tried it out."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 121), under "December 2020 #2"
+- [ ] **Button:** "Close all 7 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 121), under "December 2020 #2"; also on 8 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2020 Patreon Q&A No1"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 122), under "December 2020 #2"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "December 2020 #1"  
@@ -944,6 +956,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Imagine there are four people living in a remote area and never influence another person during their whole lives except each other. 01:12:49 One is an adult and three are children. The adult teaches the children meditation and eventually dies. One of the children remains unawakened, one becomes a sotāpanna , one becomes an arhat. Then they all die."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 127), under "December 2020 #1"
 - [ ] **Paragraph:** "Do the deaths of the above described unawakened child, sotāpanna and arhat precipitate future events any differently than each other? Are there any different after-effects of their deaths, especially with regard to suffering and rebirth vs extinction and vs persisting in the universe via forces and fields without a biological substrate?"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 127), under "December 2020 #1"
+- [ ] **Button:** "Close all 2 questions"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 127), under "December 2020 #1"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A No3"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 128), under "December 2020 #1"; also on 1 more place (2 pages)
@@ -1341,6 +1355,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 205), under "June 2020 #1"
 - [ ] **Paragraph:** "Keywords samsaric cycle, links of dependent arising"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 205), under "June 2020 #1"
+- [ ] **Button:** "Close all 4 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 205), under "June 2020 #1"; also on 3 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2020 Patreon Q&A Recording N°2"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 206), under "June 2020 #1"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "May 2020 #2"  
@@ -1917,6 +1933,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"
 - [ ] **Paragraph:** "From your point of view, what would happen to the universe if all beings would stop clinging at once? If every being was enlightened?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"
+- [ ] **Button:** "Close all 11 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"; also on 3 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2019 Patreon Q&A Catchup"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 296), under "20190517"; also on 2 more places (2 pages)
 - [ ] **Sub-heading:** "March 2019 Catch-Up"  
@@ -2651,6 +2669,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Paragraph:** "Keywords intention · cetanā, intention forms before one becomes conscious of it , dukkha-ñana , knowledge of fear vs knowledge of fearfulness"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
+- [ ] **Button:** "Close all 10 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"; also on 3 more places
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 374), under "July 25, 2018"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "June 2018"  
@@ -2963,6 +2983,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 397), under "April 2018 Catch-Up"
 - [ ] **Paragraph:** "01:58:23 What can we do to help you and support you, other then contribute through Patreon website?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 397), under "April 2018 Catch-Up"
+- [ ] **Button:** "Close all 17 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 397), under "April 2018 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 398), under "April 2018 Catch-Up"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "March 2018"  
@@ -3083,6 +3105,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
 - [ ] **Paragraph:** "How are you doing? How is your health? How are your projects? What can we do to help you?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
+- [ ] **Button:** "Close all 13 questions"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2018 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 410), under "February 2018"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "January 2018"  
@@ -3142,6 +3166,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Keywords kasiṇa, fire kasiṇa, visual hallucination, Charles Bonnet syndrome"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 415), under "January 2018"
 - [ ] **Paragraph:** "Can you please talk about the connection between concentration in daily life and in meditation?"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 415), under "January 2018"
+- [ ] **Button:** "Close all 14 questions"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 415), under "January 2018"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2017 Patreon Q&A"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 416), under "January 2018"; also on 1 more place (2 pages)

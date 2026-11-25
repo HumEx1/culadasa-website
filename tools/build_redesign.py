@@ -508,7 +508,7 @@ def build():
         sess += f'''<article class="scard" id="s-{esc(s_['video'])}"><div class="scard-media">{tile}</div>
 <div class="scard-main"><div class="scard-top"><h3>{esc(s_['title'])}</h3><a class="scard-back" href="#sessions">Return to Q&amp;A list</a></div>
 <p class="scard-first">{esc(first_q[:220])}{'…' if len(first_q) > 220 else ''}</p>
-<details class="scard-q"><summary><span class="when-closed">Open all {n_} question{'s' if n_ != 1 else ''}</span><span class="when-open">Close all {n_} question{'s' if n_ != 1 else ''}</span></summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></details></div></article>'''
+<details class="scard-q"><summary><span class="when-closed">Open all {n_} question{'s' if n_ != 1 else ''}</span><span class="when-open">Close all {n_} question{'s' if n_ != 1 else ''}</span></summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol><p class="scard-close"><button type="button" class="close-q">Close all {n_} question{'s' if n_ != 1 else ''}</button></p></details></div></article>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
     body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''
@@ -541,6 +541,8 @@ def build():
 (function () {{
   function sync(card) {{ var d = card.querySelector('details'); card.classList.toggle('open', !!(d && d.open)); }}
   document.querySelectorAll('.scard details').forEach(function (d) {{ d.addEventListener('toggle', function () {{ sync(d.closest('.scard')); }}); }});
+  document.querySelectorAll('.scard .close-q').forEach(function (b) {{ b.addEventListener('click', function () {{
+    var d = b.closest('details'), c = b.closest('.scard'); d.open = false; sync(c); c.scrollIntoView({{ block: 'start' }}); d.querySelector('summary').focus({{ preventScroll: true }}); }}); }});
   function openFromHash() {{ var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) {{ var d = c.querySelector('details'); d.open = true; sync(c); c.scrollIntoView({{ block: 'start' }}); }} }}
   window.addEventListener('hashchange', openFromHash); openFromHash();
 }})();

@@ -136,3 +136,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
     - below the name, the start of the first question, then "Open all N questions", which changes to "Close all N questions" once opened.
 
     Opened, the questions run down the right while the video stays in view on the left. On phones the video sits above the text.
+
+53. **"Close all N questions" at the end of each open session too (D, 25 Nov 2026).** When a session's questions are open, a second "Close all N questions" sits under the last question. Clicking it closes the list and brings the reader back to the top of that session. D: keep the sessions as banners for now.
