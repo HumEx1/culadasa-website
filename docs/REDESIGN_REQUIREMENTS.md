@@ -197,3 +197,9 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 74. **Lozenges in one row (D, 25 Nov 2026):** All, the kinds, Clear. All searches the whole site; Clear also empties the search box. Sound-alike spellings find the Pāli term ("jana" finds jhāna; also suka, dukka, samata, nibana, anata, nimita, meta, vipasana).
 
 75. **Compact results (D, 25 Nov 2026).** After a search the results come straight under the search box and the word cloud moves below them. Each kind lists titles only, four at first ("Show all" lists the rest, still closed); clicking a title opens the places the word appears in it, with a link to the source ("Open the video", "Open the session"…), and clicking again closes it. The lozenges still filter by kind. The Book page has only the book search, across the page below the cover (no cloud).
+
+76. **The ten stages in his words (D, 25 Nov 2026).** An overview at `ten-stages/` and a page for each stage. Each stage page has a video to start with pinned at the top (provisional until the teachers choose) and every place he talks about that stage, grouped like the search results. It is reached from The Book page's list of stages, Learn's "The ten stages", Start here's "Learn the map" and the home page. Matching rules: `docs/STAGES.md`.
+
+77. **Lists read as lists (D, 25 Nov 2026).** Titles under each heading in search results and in the Audio and Videos lists are indented with a small bullet, under a short line saying a title opens. AMA results say "Open the video" and open it on YouTube; a second link opens the session's questions.
+
+78. **Jobs for teachers (D, 25 Nov 2026).** A category of teacher tasks in `docs/VOLUNTEER_TASKS.md` §9: choosing each stage's video, checking stage mentions, marking where he goes beyond the book, and approving or reshaping Start here and Learn.

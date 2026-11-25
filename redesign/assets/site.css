@@ -686,3 +686,17 @@ a.play:focus-visible, a.tstamp:focus-visible, li > a.t:focus-visible, p.qtime a:
 /* AMA questions in search results: the time button, then the question as one block beside it (the matched word no longer breaks onto its own line) */
 .rrow .qlist li{grid-template-columns:max-content minmax(0,1fr)}
 @media (max-width:760px){.rrow .qlist li{grid-template-columns:1fr}}
+/* The ten stages (D, 25 Nov 2026): stage lists that open each stage's page, the video to start with, and stage-to-stage links */
+.stages.linked li{display:block;padding:0}
+.stages.linked li::before{display:none}
+.stages.linked a{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;color:var(--ink);text-decoration:none}
+.stages.linked a::before{content:counter(s);font:300 26px/1 var(--display);color:var(--teal)}
+.stages.linked a:hover span,.stages.linked a:focus-visible span{color:var(--teal)}
+.stages.linked a:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.stage-count{display:block;font:400 13px/1.5 var(--text);font-style:normal;color:var(--muted);margin-top:4px}
+.stage-pin{max-width:720px;padding:22px 24px;border:1px solid var(--line-2);border-left:3px solid var(--gold-line,#c4972f);background:#fff}
+.stage-pin .label{margin:0 0 12px}
+.stage-pin .video-card h3{font-size:19px;margin:10px 0 4px}
+.stage-pin p{margin:8px 0 0}
+.stage-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font:500 15px/1.4 var(--display)}
+.stages.linked a > span::after{content:" →";color:var(--teal)}

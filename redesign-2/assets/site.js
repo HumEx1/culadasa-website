@@ -6,7 +6,7 @@
     if (!btn) return;
     var box = btn.parentNode, id = box.getAttribute('data-id');
     var f = document.createElement('iframe');
-    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0' + (box.getAttribute('data-start') ? '&start=' + box.getAttribute('data-start') : '');
     f.title = btn.getAttribute('aria-label') || 'YouTube video';
     f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     f.allowFullscreen = true;

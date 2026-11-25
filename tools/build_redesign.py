@@ -126,7 +126,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
     LIBRARY = {'writings', 'audio', 'videos', 'online-meetings', 'meditation-manual-introduction', 'mindful-awareness-vs-dullness',
                'amount-of-concentration-needed-for-awakening', 'daily-life-practice', 'cultivating-mindfulness-in-daily-life'}
     section = ('home' if not first else 'library' if first in LIBRARY else 'lineage' if first in ('lineage', 'about', 'testimonials', 'student-testimonials')
-               else 'book' if first in ('the-book', 'book-reviews') else first)
+               else 'book' if first in ('the-book', 'book-reviews', 'ten-stages') else first)
     group = {'start-here': 'guide', 'learn': 'guide', 'topics': 'guide', 'library': 'library', 'book': 'book',
              'teachers': 'people', 'conversations': 'people', 'lineage': 'people'}.get(section, 'home')
     if LIBRARY_STYLE == 'side' and path in {h for _, h in LIB_PAGES}:
@@ -135,7 +135,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
     OLD = {'', 'writings/', 'audio/', 'videos/', 'online-meetings/', 'teachers/', 'testimonials/', 'student-testimonials/', 'book-reviews/',
            'meditation-manual-introduction/', 'mindful-awareness-vs-dullness/', 'amount-of-concentration-needed-for-awakening/',
            'daily-life-practice/', 'cultivating-mindfulness-in-daily-life/'}
-    counterpart = path if path in OLD else ('teachers/' if path.startswith('teachers/') else ('book-reviews/' if path == 'the-book/' else ('online-meetings/' if path == 'topics/' else '')))
+    counterpart = path if path in OLD else ('teachers/' if path.startswith('teachers/') else ('book-reviews/' if path == 'the-book/' or path.startswith('ten-stages/') else ('online-meetings/' if path == 'topics/' else '')))
     mirror = r + '../' + counterpart
     mirror_label = 'See this page on the current site' if path in OLD else 'See the nearest page on the current site'
     doc = f'''<!doctype html>
@@ -400,6 +400,87 @@ def handout_map():
     return m
 
 
+NUMW = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten']
+
+
+def hms_(t):
+    t = int(t)
+    return f'{t // 3600}:{t % 3600 // 60:02d}:{t % 60:02d}' if t >= 3600 else f'{t // 60}:{t % 60:02d}'
+
+
+def stage_pages(r):
+    """The ten stages in his words (D, 25 Nov 2026): an overview, and a page per stage with a video to start with and
+    every place he talks about that stage. The mentions come from tools/build_stages.py (rules in docs/STAGES.md)."""
+    f_ = D / 'stages.json'
+    if not f_.exists():
+        return
+    data = json.loads(f_.read_text())['stages']
+    yt = lambda i, t=0: f'https://www.youtube.com/watch?v={i}' + (f'&t={int(t)}s' if t else '')
+    total = lambda st: sum(x['n'] for k in ('videos', 'ama', 'writings', 'audio') for x in st[k])
+    rr = '../../'
+    PROVISIONAL = 'Chosen for now as the stretch where he talks about this stage longest. The teachers will choose the video to start with.'
+    for st in data:
+        n, (name, lvl) = st['n'], STAGES[st['n'] - 1]
+        W = NUMW[n - 1]
+        moments = lambda ms, vid: ''.join(f'<p class="tline">{play(yt(vid, t), hms_(t))} {sn}</p>' for t, sn in ms)
+        vrows = [row(v['title'], f"{v['n']} mention{'s' if v['n'] != 1 else ''} · {v['date']}",
+                     moments(v['moments'], v['id']) + f'<p class="rr-open"><a href="{yt(v["id"])}" target="_blank" rel="noopener">Open the video →</a></p>')
+                 for v in st['videos']]
+        arows = []
+        for a in st['ama']:
+            body = ''
+            if a['questions']:
+                body += '<ol class="qlist">' + ''.join(f'<li><a class="t" href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a> <span class="qsnip">{sn}</span></li>' for t, u, sn in a['questions']) + '</ol>'
+            if a['moments']:
+                body += ('<p class="small muted said">In the recording:</p>' if a['questions'] else '') + moments(a['moments'], a['id'])
+            body += f'<p class="rr-open"><a href="{yt(a["id"])}" target="_blank" rel="noopener">Open the video →</a><a href="{rr}online-meetings/#s-{a["id"]}">All questions in this session →</a></p>'
+            arows.append(row(a['title'], f"{a['n']} mention{'s' if a['n'] != 1 else ''}", body))
+        def drows(items, label):
+            out = []
+            for d in items:
+                u = d['url'] if d['url'].startswith('http') else '../' + d['url']
+                nt_ = ' target="_blank" rel="noopener"' if u.startswith('http') or u.endswith('.pdf') else ''
+                out.append(row(d['title'], f"{d['n']} mention{'s' if d['n'] != 1 else ''}",
+                               ''.join(f'<p>{sn}</p>' for sn in d['snips'][:8]) + (f'<p class="small muted">and {len(d["snips"]) - 8} more</p>' if len(d['snips']) > 8 else '')
+                               + f'<p class="rr-open"><a href="{esc(u)}"{nt_}>{label} →</a></p>'))
+            return out
+        groups = [(g, rows_) for g, rows_ in (('Videos', vrows), ('AMA sessions', arows), ('Writings', drows(st['writings'], 'Open')),
+                                               ('Audio', drows(st['audio'], 'Open the recording'))) if rows_]
+        b = st.get('book')
+        if b:
+            groups.append(('The Book', [row(f'The Mind Illuminated: Stage {W}', f"pages {b['first']}–{b['last']} · first edition, 2015",
+                                            f'<p>The book’s chapter on Stage {W}, {esc(name)}, runs from page {b["first"]} to page {b["last"]} of the 2015 first edition. Page numbers in later editions may differ.</p>'
+                                            f'<p class="rr-open"><a href="{rr}the-book/">About the book →</a></p>')]))
+        pin = st.get('pin')
+        pin_html = ''
+        if pin:
+            pin_html = f'''<section class="section tight"><div class="wrap"><div class="stage-pin">
+  <p class="label">Start with this video</p>
+  {video_tile({'id': pin['id'], 'title': pin['title']}, rr).replace('<div class="video" data-id=', f'<div class="video" data-start="{pin["start"]}" data-id=', 1)}
+  <p class="small">{play(yt(pin['id'], pin['start']), hms_(pin['start']))} It starts where he talks about Stage {W}.</p>
+  <p class="small muted">{'Chosen by the teachers.' if pin.get('chosen') else PROVISIONAL}</p>
+</div></div></section>'''
+        prev_ = f'<a href="{rr}ten-stages/stage-{n - 1}/">← Stage {NUMW[n - 2]}</a>' if n > 1 else '<span></span>'
+        next_ = f'<a href="{rr}ten-stages/stage-{n + 1}/">Stage {NUMW[n]} →</a>' if n < 10 else '<span></span>'
+        body = banner(f'<a href="{rr}ten-stages/">The ten stages</a> · {lvl}', f'Stage {W}', esc(name), 'gold') + f'''
+<section class="section tight"><div class="wrap measure"><p class="lead">Everything Culadasa said about Stage {W} in his talks, AMA sessions, writings and recordings: {total(st)} mentions. Much of it came after the book was published, so it adds to what the book says.</p></div></section>
+{pin_html}
+<section class="section"><div class="wrap"><h2>Where he talks about Stage {W}</h2><p class="rr-hint">Click a title to see where it’s mentioned.</p>{row_groups(groups)}
+<nav class="stage-nav" aria-label="Stages">{prev_}<a href="{rr}ten-stages/">All ten stages</a>{next_}</nav></div></section>'''
+        page(f'ten-stages/stage-{n}/', f'Stage {W}: {name}', body, description=f'Stage {W} of The Mind Illuminated, {name}: a video to start with and everything Culadasa said about it.')
+    # the overview
+    r1 = '../'
+    items = ''.join(f'''<li><a href="stage-{st['n']}/"><span><small>{STAGES[st['n'] - 1][1]}</small>{esc(STAGES[st['n'] - 1][0])}<em class="stage-count">{total(st)} mentions</em></span></a></li>''' for st in data)
+    body = banner('<a href="../the-book/">The book</a>', 'The ten stages', 'Each stage of <em>The Mind Illuminated</em>, in Culadasa’s own words from his talks, AMA sessions, writings and recordings.', 'gold') + f'''
+<section class="section"><div class="wrap">
+<p class="measure">Open a stage for a video to start with and every place he talks about it. Many of these talks came after the book, so they add to it: questions students asked as they practised, and his answers. The book’s own overview of the ten stages is on pages 2–19 of the 2015 first edition.</p>
+<ol class="stages linked">{items}</ol>
+<p class="muted small" style="margin-top:18px">Milestones: continuous attention to the meditation object (after stage 3); sustained exclusive focus of attention (after stage 6); effortless stability of attention (after stage 7); persistence of the mental qualities of an adept (after stage 10).</p>
+<p class="muted small">The videos to start with are chosen for now by where he talks about each stage longest. The teachers will choose them.</p>
+</div></section>'''
+    page('ten-stages/', 'The ten stages', body, description='The ten stages of The Mind Illuminated, each with a video to start with and everything Culadasa said about it.')
+
+
 def build():
     vid_by_id = {v['id']: v for v in videos}
     global WORDS
@@ -466,7 +547,7 @@ def build():
       <h2>The Mind Illuminated</h2>
       <p>A complete meditation guide integrating Buddhist wisdom and brain science, written with Matthew Immergut and Jeremy Graves. Its ten stages map the path from a first, distracted sit to tranquility and equanimity.</p>
       <ol class="stages compact">{''.join(f'<li><span>{esc(n)}</span></li>' for n, _ in STAGES[:5])}</ol>
-      <p><a class="btn ghost light" href="the-book/">The ten stages →</a></p>
+      <p><a class="btn ghost light" href="ten-stages/">The ten stages →</a></p>
     </div>
   </div>
 </section>
@@ -488,7 +569,7 @@ def build():
         ('Read the beginning meditation handout', 'Two pages on posture, the breath at the nose, and what to do when the mind wanders.', f'<a class="btn ghost" href="{r}{UP}beginning-meditation-handout.pdf">Open the handout (PDF)</a>'),
         ('Prepare for each sit', 'His six preparations: motivation, goals, expectations, diligence, distractions and posture.', f'<a class="btn ghost" href="{r}{UP}preparation-for-practice.pdf">Preparation for Practice (PDF)</a>'),
         ('Sit with a guided meditation', 'Follow his voice. Start with one of the shorter recordings and sit daily, even briefly.', sc_player('playlists', '282960661', 300, False)),
-        ('Learn the map', 'The ten stages show where you are and what to work on next. Read the introduction to the meditation manual, then the stages.', f'<div class="actions"><a class="btn ghost" href="{r}meditation-manual-introduction/">Introduction to the manual</a><a class="btn ghost" href="{r}the-book/">The ten stages</a></div>'),
+        ('Learn the map', 'The ten stages show where you are and what to work on next. Read the introduction to the meditation manual, then the stages.', f'<div class="actions"><a class="btn ghost" href="{r}meditation-manual-introduction/">Introduction to the manual</a><a class="btn ghost" href="{r}ten-stages/">The ten stages</a></div>'),
         ('Understand attention and awareness', 'The two kinds of knowing the whole method trains. His essay on dullness explains why vividness matters.', f'<a class="btn ghost" href="{r}mindful-awareness-vs-dullness/">Mindful Awareness vs Dullness</a>'),
         ('Take it into daily life', 'Practice does not end when you stand up. His handout and essays on daily life.', f'<div class="actions"><a class="btn ghost" href="{r}{UP}Awakening-in-Daily-Life-Handout.pdf">The Path to Awakening in Daily Life (PDF)</a><a class="btn ghost" href="{r}daily-life-practice/">Maintaining practice in daily life</a></div>'),
         ('Ask your question', 'Someone has probably asked it already. Search his ' + str(sum(len(s_['items']) for s_ in topics['qna'])) + ' recorded questions and everything he says in about 100 videos, and jump to his answer.', f'<a class="btn" href="{r}topics/">Search the teachings</a>'),
@@ -510,7 +591,7 @@ def build():
             ('Dullness', 'Mindful awareness versus dullness: his essay.', f'{r}mindful-awareness-vs-dullness/'),
         ]),
         ('The method', 'gold', [
-            ('The ten stages', 'Novice, skilled, transition and adept: the map in his book.', f'{r}the-book/'),
+            ('The ten stages', 'Novice, skilled, transition and adept: the map in his book, with his talks on each stage.', f'{r}ten-stages/'),
             ('Introduction to the manual', 'Concentration and mindful awareness to a minimum level, the first step towards awakening.', f'{r}meditation-manual-introduction/'),
             ('An introduction to the ten stages of samatha', 'His retreat handout on the stages.', f'{r}{UP}Cape-Ann-Retreat-for-Peace-Handout-.pdf'),
             ('Jhāna', 'The original practice of mindfulness and insight.', f'{r}{UP}jhanas-and-mindfulness-handout.pdf'),
@@ -566,13 +647,17 @@ def build():
 </div></section>
 {book_finder(r)}
 <section class="section"><div class="wrap"><p class="label">The ten stages</p><h2>From the first sit to equanimity</h2>
-<ol class="stages">{''.join(f'<li><span><small>{lvl}</small>{esc(n)}</span></li>' for n, lvl in STAGES)}</ol>
+<p class="muted">Open a stage for a video to start with and everything Culadasa said about it in his talks, AMA sessions, writings and recordings, much of it after the book.</p>
+<ol class="stages linked">{''.join(f'<li><a href="{r}ten-stages/stage-{k + 1}/"><span><small>{lvl}</small>{esc(n)}</span></a></li>' for k, (n, lvl) in enumerate(STAGES))}</ol>
+<p class="actions" style="margin-top:22px"><a class="btn ghost" href="{r}ten-stages/">The ten stages in his words →</a></p>
 <p class="muted small" style="margin-top:18px">Milestones: continuous attention to the meditation object (after stage 3); sustained exclusive focus of attention (after stage 6); effortless stability of attention (after stage 7); persistence of the mental qualities of an adept (after stage 10).</p></div></section>
 <section class="section" id="reviews"><div class="wrap"><p class="label">Reviews</p><h2>What teachers and authors say</h2><div class="quotes">{''.join(f'<figure class="quote"><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>' for q in content['reviews'] if 'Salzberg' not in q['by'])}</div></div></section>
 <section class="section band-panel" id="students"><div class="wrap"><p class="label">Testimonials</p><h2>What his students say about the Mind Illuminated method</h2><div class="quotes">{''.join(f'<figure class="quote"><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>' for q in content['testimonials'])}</div></div></section>'''
     if V2:
         body = body.replace('<header class="banner gold">', '<header class="banner cover">', 1)
     page('the-book/', 'The Mind Illuminated', body, description='The Mind Illuminated by Culadasa (John Yates, Ph.D.): the ten stages of meditative development.', cover_band=True)
+
+    stage_pages(r)
 
     # ---------------------------------------------------------------- writings (old path)
     essays_all = [(t, k, x) for g, items in WRITINGS for t, k, x in items if k == 'essay']

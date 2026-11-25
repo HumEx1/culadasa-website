@@ -75,6 +75,23 @@ The transcripts are YouTube's automatic captions with Pāli terms corrected by r
 | Click through both sites on a phone, a tablet and a computer, in two browsers, and report anything odd | 3 |
 | Read `docs/SEO_AUDIT.md` and choose which recommendations to do | 2 |
 
+## 9. For teachers: checking and recommending — about 60 hours
+
+Jobs that need a certified teacher's judgement: checking what the site says against the teaching, and choosing what students should see first.
+
+| Task | Hours |
+|---|---|
+| Choose the video to start with for each of the ten stages, and the moment to start it, with a second choice. Record them in `docs/STAGES.md` | 10 |
+| Check each stage page's mentions and list any that are not about that stage (for example a stage of insight) | 10 |
+| Mark the moments where he goes beyond the book or changes his view after it, so they can be highlighted | 15 |
+| Approve or reshape Start here: the seven steps, their order, and what each links to | 4 |
+| Approve or reshape Learn: the sections, the headings in each, and which item comes first under each | 6 |
+| Choose the "Frequently asked" questions on Start here and the three talks on the home page | 3 |
+| Check the stage names, levels and milestones on The Book page and the stage pages against the book | 2 |
+| Approve the topic lists for the clouds and the one-line meanings of the Pāli and Sanskrit terms (with §6) | 4 |
+| Read the new text the site adds about the teaching (`docs/NEW_TEXT_CHECKLIST.md`) for anything that misstates it | 4 |
+| Check your own profile on the Teachers page | 2 |
+
 ## Totals
 
 | Section | Hours |
@@ -87,6 +104,7 @@ The transcripts are YouTube's automatic captions with Pāli terms corrected by r
 | 6. Pāli, Sanskrit and topics | about 12 |
 | 7. Teachers | about 26 |
 | 8. The website as a whole | about 20 |
-| **Total** | **about 408 hours** |
+| 9. For teachers | about 60 |
+| **Total** | **about 468 hours** |
 
 The single biggest task is proofreading the transcripts (225 hours). Split across 20 people, that is about 11 hours each.
