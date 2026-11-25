@@ -514,12 +514,12 @@ def build():
     # ---------------------------------------------------------------- the book
     body = banner('The book', '<em>The Mind Illuminated</em>', 'A complete meditation guide integrating Buddhist wisdom and brain science.', 'gold') + f'''
 <section class="section"><div class="wrap two">
-  <div><img class="framed" src="{r}assets/img/the-mind-illuminated-cover.jpg" alt="Cover of The Mind Illuminated" loading="lazy"></div>
+  <div class="book-cover"><img class="framed" src="{r}assets/img/the-mind-illuminated-cover.jpg" alt="Cover of The Mind Illuminated" loading="lazy">
+    <p class="book-buy"><a class="btn" href="https://www.simonandschuster.com/books/The-Mind-Illuminated/John-Yates/9781501156984" rel="noopener">Buy from Publisher</a></p></div>
   <div class="measure">
     <p class="lead">Written by Culadasa (John Yates, Ph.D.) with Matthew Immergut, Ph.D. and Jeremy Graves, and first published by Dharma Treasure Press on 6 October 2015.</p>
     <p>The book sets out ten stages of meditative development, from establishing a daily practice to tranquility and equanimity, with clear instructions for each stage and an account of how the mind works drawn from both the Buddhist tradition and cognitive science.</p>
     {''.join(f'<figure class="quote book-lead-quote"><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>' for q in content['reviews'] if 'Salzberg' in q['by'])}
-    <p><a class="btn" href="https://www.simonandschuster.com/books/The-Mind-Illuminated/John-Yates/9781501156984" rel="noopener">Buy from Publisher</a></p>
   </div>
 </div></section>
 {book_finder(r)}

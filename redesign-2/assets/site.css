@@ -640,3 +640,8 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .rr-open{margin:10px 0 0;font:500 14px/1.4 var(--display)}
 .rgroup .result-group + .rrow{border-top:0}
 .book-lead-quote{margin:26px 0 28px;max-width:none}
+/* book page: bigger cover with Buy from Publisher under it, so the cover and the text end level (D, 25 Nov 2026) */
+@media (min-width:900px){body[data-section="book"] .two{grid-template-columns:minmax(0,23fr) minmax(0,37fr)}}
+.book-cover img{display:block;width:100%;height:auto;box-sizing:border-box}
+.book-buy{margin:24px 0 0}
+.book-lead-quote{margin-bottom:0}
