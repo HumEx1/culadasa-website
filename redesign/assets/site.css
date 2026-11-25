@@ -551,3 +551,22 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .filters .scope-clear[disabled]{color:var(--muted);text-decoration:none;cursor:default;opacity:.6}
 .scope-clear:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
 .filters{align-items:center}
+
+/* Library as one section (D, 25 Nov 2026): its four pages listed down the left, content in the rest; a row of tabs on phones */
+.lib-layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px;align-items:start}
+.lib-main .wrap{max-width:none;padding-left:0;padding-right:0}
+.lib-side{position:sticky;top:20px;padding-top:72px}
+.lib-side .label{margin:0 0 12px}
+.lib-side ul{list-style:none;margin:0;padding:0;border-left:1px solid var(--line-2)}
+.lib-side a{display:block;margin-left:-1px;padding:10px 0 10px 16px;border-left:2px solid transparent;color:var(--ink);text-decoration:none;font:500 15px/1.35 var(--display);letter-spacing:.02em}
+.lib-side a:hover{color:var(--teal)}
+.lib-side a[aria-current]{border-left-color:var(--gold-line,#c4972f);color:var(--teal);background:var(--panel)}
+@media (max-width:900px){
+  .lib-layout{grid-template-columns:minmax(0,1fr);gap:0}
+  .lib-side{position:static;padding-top:24px}
+  .lib-side .label{display:none}
+  .lib-side ul{display:flex;gap:8px;overflow-x:auto;border:0;padding-bottom:4px}
+  .lib-side a{margin:0;border:1px solid var(--line-2);border-radius:999px;padding:8px 14px;white-space:nowrap;font-size:14px}
+  .lib-side a[aria-current]{border-color:var(--gold-line,#c4972f);box-shadow:0 0 0 1px var(--gold-line,#c4972f)}
+}
+.lineage-link{margin:-6px 0 22px;font:500 15px/1.4 var(--display);letter-spacing:.02em}

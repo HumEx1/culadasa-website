@@ -33,13 +33,32 @@ YEAR = datetime.date.today().year
 NAV = [  # order and names (D, 25 Nov 2026): Start here · Learn · Library · The Book · Teachers · Conversations · Lineage · Search
     ('Start here', 'start-here/', None),
     ('Learn', 'learn/', None),
-    ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Culadasa AMA sessions', 'online-meetings/')]),
+    ('Library', None, [('Writings', 'writings/'), ('Audio', 'audio/'), ('Videos', 'videos/'), ('Culadasa AMA sessions', 'online-meetings/')]),   # see LIBRARY_STYLE
     ('The Book', 'the-book/', None),
     ('Teachers', 'teachers/', None),
     ('Conversations', 'conversations/', None),
     ('Lineage', 'lineage/', None),
     ('Search', 'topics/', None),   # the Topics page, renamed; its address stays /topics/ so old links keep working
 ]
+# Library layout (D, 25 Nov 2026): 'side' = one Library section with its four pages listed down the left (a row of tabs on
+# phones), opening on Videos; the pages themselves are unchanged. 'dropdown' = the earlier Library dropdown menu.
+# To go back, set LIBRARY_STYLE = 'dropdown' and rebuild both variants.
+LIBRARY_STYLE = 'side'
+LIB_PAGES = [('Videos', 'videos/'), ('Audio', 'audio/'), ('AMA sessions', 'online-meetings/'), ('Writings', 'writings/')]
+if LIBRARY_STYLE == 'side':
+    NAV = [('Library', 'videos/', None) if n == 'Library' else (n, h, sub) for n, h, sub in NAV]
+
+
+def library_layout(path, body, r):
+    """Put a Library page in the side-menu layout: the gold Library banner on top, the four pages down the left."""
+    m = re.match(r'\s*(<header class="banner) [a-z]+(">.*?</header>)(.*)', body, re.S)
+    if not m:
+        return body
+    head = m.group(1) + ' teal' + re.sub(r'<p class="label">.*?</p>', '<p class="label">Library</p>', m.group(2), count=1, flags=re.S)
+    items = ''.join(f'<li><a href="{r}{h}"{" aria-current=\"page\"" if h == path else ""}>{esc(l)}</a></li>' for l, h in LIB_PAGES)
+    side = f'<nav class="lib-side" aria-label="Library"><p class="label">Library</p><ul>{items}</ul></nav>'
+    return f'{head}<div class="lib-layout wrap">{side}<div class="lib-main">{m.group(3)}</div></div>'
+
 SOCIAL = [
     ('YouTube', 'https://www.youtube.com/@Culadasa',
      '<path d="M21.6 7.2a2.7 2.7 0 0 0-1.9-1.9C18 4.8 12 4.8 12 4.8s-6 0-7.7.5A2.7 2.7 0 0 0 2.4 7.2 28 28 0 0 0 2 12a28 28 0 0 0 .4 4.8 2.7 2.7 0 0 0 1.9 1.9c1.7.5 7.7.5 7.7.5s6 0 7.7-.5a2.7 2.7 0 0 0 1.9-1.9A28 28 0 0 0 22 12a28 28 0 0 0-.4-4.8ZM10 15.1V8.9l5.2 3.1Z" fill="currentColor"/>'),
@@ -64,7 +83,8 @@ def nav_html(current, r):
             subs = ''.join(f'<li><a href="{r}{h}"{" aria-current=\"page\"" if h == current else ""}>{esc(l)}</a></li>' for l, h in sub)
             out.append(f'<li class="has-sub"><button type="button" class="group" aria-expanded="false" aria-controls="sub-{label.lower()}"{" aria-current=\"page\"" if cur else ""}>{label}</button><ul class="sub" id="sub-{label.lower()}">{subs}</ul></li>')
         else:
-            out.append(f'<li><a href="{r}{href}"{" aria-current=\"page\"" if href == current else ""}>{label}</a></li>')
+            cur = href == current or (label == 'Library' and current in {h for _, h in LIB_PAGES})
+            out.append(f'<li><a href="{r}{href}"{" aria-current=\"page\"" if cur else ""}>{label}</a></li>')
     return ''.join(out)
 
 
@@ -95,6 +115,8 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
                else 'book' if first in ('the-book', 'book-reviews') else first)
     group = {'start-here': 'guide', 'learn': 'guide', 'topics': 'guide', 'library': 'library', 'book': 'book',
              'teachers': 'people', 'conversations': 'people', 'lineage': 'people'}.get(section, 'home')
+    if LIBRARY_STYLE == 'side' and path in {h for _, h in LIB_PAGES}:
+        body = library_layout(path, body, r)
     full = 'Culadasa — the teachings of John Yates' if path == '' else f'{title} — Culadasa'
     OLD = {'', 'writings/', 'audio/', 'videos/', 'online-meetings/', 'teachers/', 'testimonials/', 'student-testimonials/', 'book-reviews/',
            'meditation-manual-introduction/', 'mindful-awareness-vs-dullness/', 'amount-of-concentration-needed-for-awakening/',
@@ -172,6 +194,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
 {extra_js}</body>
 </html>
 '''
+    doc = doc.replace('His principle teachers', 'His principal teachers')   # spelling (D, 25 Nov 2026); the mirror keeps the original
     out = OUT / (path + 'index.html' if path else 'index.html')
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(new_tab(doc))
@@ -275,6 +298,16 @@ STAGES = [
 ]
 
 
+def ESSAY_NEXT(slug, r):
+    """Where each essay sits in the journey (D, 25 Nov 2026: a next step after reading, back into the journey)."""
+    steps = {'meditation-manual-introduction': [('Start here', 'start-here/'), ('Learn: the method', 'learn/#the-method')],
+             'mindful-awareness-vs-dullness': [('Start here', 'start-here/'), ('Learn: the basics', 'learn/#the-basics')],
+             'amount-of-concentration-needed-for-awakening': [('Learn: going deeper', 'learn/#going-deeper')],
+             'daily-life-practice': [('Start here', 'start-here/'), ('Learn: daily life', 'learn/#daily-life')],
+             'cultivating-mindfulness-in-daily-life': [('Learn: daily life', 'learn/#daily-life')]}
+    return ' · '.join(f'<a href="{r}{h}">{esc(t)} →</a>' for t, h in steps.get(slug, [('Learn', 'learn/')]))
+
+
 def clean_essay(raw):
     s = re.sub(r'\s(style|class|id)="[^"]*"', '', raw)
     s = re.sub(r'<h2[^>]*>.*?</h2>', '', s, count=1, flags=re.S)
@@ -323,6 +356,7 @@ def build():
       <h1>That his work be freely and equally available to all students.</h1>
       <p class="by">— The Yates family, on his wishes in his final days</p>
       <p class="lead">Culadasa, John Yates Ph.D., spent four decades in the Tibetan and Theravādin traditions and taught physiology and neuroscience. His book <em>The Mind Illuminated</em> joins the two. Everything he taught is here, free.</p>
+      <p class="lineage-link"><a href="lineage/">Culadasa’s Buddhist Lineage →</a></p>
       <div class="actions"><a class="btn" href="start-here/">Start here</a><a class="btn ghost" href="topics/">Search the teachings</a></div>
     </div>
   </div>
@@ -333,8 +367,8 @@ def build():
     <h2 class="label">Find your way in</h2>
     <div class="grid cols-4">
       <a class="card" href="start-here/"><span class="meta">New to meditation</span><h3>Start here</h3><p>Seven steps from your first sit to a daily practice, using his own handouts and guided meditations.</p><span class="more">Begin →</span></a>
-      <a class="card" href="learn/"><span class="meta">The basics</span><h3>Learn the method</h3><p>Attention and awareness, the ten stages, insight, and practice in daily life, in his words.</p><span class="more">Learn →</span></a>
-      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Search</h3><p>Search over {round(WORDS/1000):,},000 words: the transcripts of {N_VIDEOS} videos, {N_WRIT} retreat handouts and essays, {sum(len(s_["items"]) for s_ in topics["qna"])} questions from {len(topics["qna"])} AMA sessions, and the titles and descriptions of {N_AUDIO_TXT} audio recordings.</p><span class="more">Search →</span></a>
+      <a class="card" href="learn/"><span class="meta">From the basics to going deeper</span><h3>Learn the method</h3><p>Attention and awareness, the ten stages, insight, and practice in daily life, in his words.</p><span class="more">Learn →</span></a>
+      <a class="card" href="topics/"><span class="meta">Every teaching, searchable</span><h3>Search</h3><p>Search over a million words: every word of about {round(N_VIDEOS, -1)} videos, {N_WRIT} retreat handouts and essays, {sum(len(s_["items"]) for s_ in topics["qna"])} AMA questions, and the titles and descriptions of {N_AUDIO_TXT} audio recordings.</p><span class="more">Search →</span></a>
       <a class="card" href="teachers/"><span class="meta">Practice with someone</span><h3>Find a teacher</h3><p>The 48 teachers certified in The Mind Illuminated Teacher Training Program, by name and place.</p><span class="more">Find →</span></a>
     </div>
   </div>
@@ -377,7 +411,7 @@ def build():
 </section>
 {'' if V2 else EYES}'''
     page('', 'Home', body,
-         description='The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: writings, talks, AMA recordings, topics and teachers.')
+         description='The teachings of Culadasa (John Yates, Ph.D.), author of The Mind Illuminated: his writings, talks, AMA sessions and teachers, and a search of everything he said.')
 
     # ---------------------------------------------------------------- start here
     r = '../'
@@ -388,7 +422,7 @@ def build():
         ('Learn the map', 'The ten stages show where you are and what to work on next. Read the introduction to the meditation manual, then the stages.', f'<div class="actions"><a class="btn ghost" href="{r}meditation-manual-introduction/">Introduction to the manual</a><a class="btn ghost" href="{r}the-book/">The ten stages</a></div>'),
         ('Understand attention and awareness', 'The two kinds of knowing the whole method trains. His essay on dullness explains why vividness matters.', f'<a class="btn ghost" href="{r}mindful-awareness-vs-dullness/">Mindful Awareness vs Dullness</a>'),
         ('Take it into daily life', 'Practice does not end when you stand up. His handout and essays on daily life.', f'<div class="actions"><a class="btn ghost" href="{r}{UP}Awakening-in-Daily-Life-Handout.pdf">The Path to Awakening in Daily Life (PDF)</a><a class="btn ghost" href="{r}daily-life-practice/">Maintaining practice in daily life</a></div>'),
-        ('Ask your question', 'Someone has probably asked it already. Search ' + str(sum(len(s_['items']) for s_ in topics['qna'])) + ' recorded questions and jump to his answer.', f'<a class="btn" href="{r}topics/">Search the teachings</a>'),
+        ('Ask your question', 'Someone has probably asked it already. Search his ' + str(sum(len(s_['items']) for s_ in topics['qna'])) + ' recorded questions and everything he says in about 100 videos, and jump to his answer.', f'<a class="btn" href="{r}topics/">Search the teachings</a>'),
     ]
     body = banner('New to meditation', 'Start here', 'Seven steps through his own handouts, essays and recordings, from your first sit to a daily practice.', 'teal') + f'''
 <section class="section"><div class="wrap measure"><ol class="steps">{''.join(f'<li><div><h3>{t}</h3><p>{d}</p>{a}</div></li>' for t, d, a in steps)}</ol></div></section>
@@ -488,7 +522,7 @@ def build():
             sub = ''   # the original heading only repeated the title (or was a stray web-address slug)
         body = f'''<header class="banner panel"><div class="wrap measure"><p class="label">Essay · {max(1, round(words / 230))} min read</p><h1>{esc(title)}</h1>{f'<p class="lead essay-sub">{esc(sub)}</p>' if sub else ''}</div></header>
 <article class="section"><div class="wrap measure prose">{clean_essay(raw)}</div></article>
-<section class="section tight"><div class="wrap measure"><p><a href="{r}writings/">← All writings</a> · <a href="{r}topics/">Search the teachings</a></p></div></section>'''
+<section class="section tight"><div class="wrap measure"><p class="label">Where next</p><p>{ESSAY_NEXT(slug, r)} · <a href="{r}writings/">All writings</a> · <a href="{r}topics/">Search the teachings</a></p></div></section>'''
         page(slug + '/', title, body, description=f'{title}: an essay by Culadasa.')
 
     # ---------------------------------------------------------------- audio (old path)
@@ -500,7 +534,7 @@ def build():
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud.')
 
     # ---------------------------------------------------------------- videos (old path)
-    body = banner('Watch', 'Videos', f'{len(videos)} videos: talks, discussions and {len(qna)} recorded AMA (ask me anything) sessions.', 'teal',
+    body = banner('Watch', 'Videos', 'His talks and AMA (ask me anything) sessions from YouTube. Search finds every word he says in about 100 of his videos.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
 <section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search what he says in the videos', 'v-q')}</div></section>
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
@@ -557,12 +591,12 @@ def build():
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
     body = banner('Recorded online meetings, 2017–2021', 'Culadasa AMA sessions', esc(om_intro), 'teal') + f'''
 <section class="section"><div class="wrap">
-<nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} Patreon AMA sessions organized by year</h2><p class="muted">Choose one to go to it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
-<p class="tinfo-open"><button type="button" class="linklike" id="tinfo-btn" aria-haspopup="dialog" aria-controls="tinfo">Transcription information</button></p>
+<nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} Patreon AMA sessions organized by year</h2><p class="muted">Choose one to go to it. This page remembers the last session you opened on this device.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+<p class="tinfo-open"><button type="button" class="linklike" id="tinfo-btn" aria-haspopup="dialog" aria-controls="tinfo">About this index</button></p>
 <dialog id="tinfo" class="tinfo" aria-labelledby="tinfo-h">
-  <div class="tinfo-head"><h2 id="tinfo-h">Transcription information</h2><button type="button" class="tinfo-close" id="tinfo-close" aria-label="Close">×</button></div>
+  <div class="tinfo-head"><h2 id="tinfo-h">About this index</h2><button type="button" class="tinfo-close" id="tinfo-close" aria-label="Close">×</button></div>
   <div class="prose small-prose">
-    <p class="small muted">The questions, keywords and quotes on this page come from the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a>, shown here in full and as written. Each time links to the moment the question is asked. Corrections go to the original index. Its introduction follows.</p>
+    <p class="small muted">The questions, keywords and quotes on this page come from the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a>, shown here in full, with spelling mistakes corrected. Each time links to the moment the question is asked. Corrections go to the original index. Its introduction follows.</p>
     {intro_html}
   </div>
 </dialog>
@@ -578,7 +612,7 @@ def build():
 </div></section>
 <section class="section band-panel"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>
 <section class="section" id="all-sessions"><div class="wrap"><h2>The sessions</h2>
-{scoped_search(r, 'ama', f'Search {n_q} questions and answers', 'qa-q')}
+{scoped_search(r, 'ama', f'Search {n_q} questions and all {len(qna)} recordings', 'qa-q')}
 <div class="scards">{sess}</div>
 <script>
 /* a year link or the page address opens its session; an opened card widens to the full row */
@@ -616,14 +650,14 @@ def build():
     page('online-meetings/', 'Culadasa AMA sessions', body, description='Every question from Culadasa’s 61 recorded AMA sessions, 2017–2021, with links to his answers.')
 
     # ---------------------------------------------------------------- topics
-    body = banner('Every teaching, searchable', 'Search', f'Search over {round(WORDS / 1000):,},000 words: the transcripts of {N_VIDEOS} videos, {N_WRIT} retreat handouts and essays, {sum(len(s["items"]) for s in qna)} questions from {len(qna)} AMA sessions, and the titles and descriptions of {N_AUDIO_TXT} audio recordings. Results are ranked by how often they mention what you search for.', 'ink') + f'''
+    body = banner('Every teaching, searchable', 'Search', f'Search over a million words: every word of about {round(N_VIDEOS, -1)} videos, {N_WRIT} retreat handouts and essays, {sum(len(s["items"]) for s in qna)} AMA questions, and the titles and descriptions of {N_AUDIO_TXT} audio recordings. Results are ranked by how often they mention what you search for.', 'ink') + f'''
 <section class="section"><div class="wrap">
   <form class="search" id="topic-form" role="search"><label class="sr" for="q">Search the teachings</label><input id="q" name="q" type="search" placeholder="Try: compassion, dullness, jhāna, craving" autocomplete="off"><button class="btn" type="submit">Search</button></form>
   <div class="filters" id="filters" aria-label="Filter by kind"></div>
   <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>
   <p class="status" id="status" role="status">Loading the teachings…</p>
   <div class="results" id="results"></div>
-  <p class="small muted">Sources: his handouts and essays, the Lineage page, the Culadasa Q&amp;A Index (the questions from his AMA sessions), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
+  <p class="small muted">Sources: his handouts and essays, the Lineage page, the Culadasa Q&amp;A Index (the questions from his AMA sessions), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. You can also type a whole question. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
 </div></section>'''
     page('topics/', 'Search', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
          extra_js=f'<script src="{r}assets/topics.js" defer></script>\n')
@@ -638,8 +672,8 @@ def build():
     items = ''.join(f'''<article class="convo">{convo_img(c)}<div><div class="when">{esc(c['date_label'])}</div>
 <h3><a href="{esc(c['url'])}" rel="noopener">{esc(c['title'])}</a></h3><p class="show">{esc(c['show'])}{f" · with {esc(c['host'])}" if c.get('host') else ''}</p>
 <p>{esc(c['description'])}</p><p class="small">{' · '.join(f'<a href="{esc(u)}" rel="noopener">{esc(l)}</a>' for l, u in c.get('links', []))}</p></div></article>''' for c in convos['items'])
-    body = banner('In conversation', 'Conversations', 'Interviews, podcasts and talks with Culadasa, from across the web.', 'gold') + f'<section class="section"><div class="wrap measure">{items}{f'<p class="small muted" style="margin-top:24px">{esc(convos["note"])}</p>' if convos["note"] else ''}</div></section>'
-    page('conversations/', 'Conversations', body, description='Interviews, podcasts and talks with Culadasa from across the web.')
+    body = banner('In conversation', 'Conversations', 'Interviews, podcasts and talks with Culadasa from across the web, and Alex’s index of his AMA sessions.', 'gold') + f'<section class="section"><div class="wrap measure">{items}{f'<p class="small muted" style="margin-top:24px">{esc(convos["note"])}</p>' if convos["note"] else ''}</div></section>'
+    page('conversations/', 'Conversations', body, description='Interviews, podcasts and talks with Culadasa from across the web, and Alex’s index of his AMA sessions.')
 
     # ---------------------------------------------------------------- lineage (was About; D, 24 Nov 2026)
     # Order: the lineage first, then his wishes, then the obituary.  Text is the live site's, unchanged;

@@ -172,7 +172,7 @@
   function search(q) {
     resultsEl.innerHTML = '';
     var clean = (q || '').trim();
-    if (!clean) { statusEl.textContent = 'Type a word, or choose one from the cloud.'; drawFilters({}); return; }
+    if (!clean) { statusEl.textContent = 'Type a word or a question, or choose one from the cloud.'; drawFilters({}); return; }
     if (!/[A-Za-zÀ-ɏḀ-ỿ]/.test(clean) || fold(clean).replace(/[^a-z0-9]/g, '').length < 2) { statusEl.textContent = 'Type at least two letters.'; drawFilters({}); return; }
     // Several words: first the exact phrase; if that finds nothing anywhere, passages where all the words
     // (common ones like "what" and "the" left out) appear close together (D, 25 Nov 2026). Punctuation is ignored.
