@@ -10,8 +10,8 @@
   // Scoped search (D, 25 Nov 2026): one box, and pills that each switch a part of the site on or off, independently,
   // so Writings and AMA sessions can be searched together. Clear switches them all off, which searches everything.
   // The count and the status line follow the choice. Writings = handouts and essays. The Lineage page is searched when nothing is switched on.
-  var KINDS = [['video', 'Videos'], ['audio', 'Audio'], ['ama', 'AMA sessions'], ['writings', 'Writings']];   // the Library order (D, 25 Nov 2026)
-  var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA sessions', video: 'the videos', audio: 'the audio recordings' };
+  var KINDS = [['video', 'Videos'], ['audio', 'Audio'], ['ama', 'AMA sessions'], ['writings', 'Writings'], ['book', 'The Book']];   // the Library order (D, 25 Nov 2026)
+  var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA sessions', video: 'the videos', audio: 'the audio recordings', book: 'The Mind Illuminated' };
   function selected() { return KINDS.map(function (k) { return k[0]; }).filter(function (k) { return SEL[k]; }); }
   function scopeText() {
     var s = selected().map(function (k) { return SCOPE_NAME[k]; });
@@ -20,14 +20,19 @@
   }
   // Pāli and Sanskrit forms of the same word find each other (D, 25 Nov 2026): Culadasa mostly said the Pāli,
   // sometimes the Sanskrit (nirvana, karma, dharma, arhat), and the transcripts keep what he said.
-  var SYN = [['jhana', 'dhyana'], ['metta', 'maitri'], ['piti', 'priti'], ['nibbana', 'nirvana'], ['kamma', 'karma'], ['dhamma', 'dharma'],
-    ['arahant', 'arhat'], ['anatta', 'anatman'], ['dukkha', 'duhkha'], ['vipassana', 'vipashyana', 'vipasyana'], ['samatha', 'shamatha'],
+  var SYN = [['jhana', 'dhyana', 'jana', 'jhanna', 'janna'], ['metta', 'maitri', 'meta'], ['piti', 'priti', 'peeti'], ['sukha', 'suka', 'sukka'], ['dukkha', 'dukha', 'dukka'], ['samadhi', 'samadi'], ['nimitta', 'nimita'], ['upekkha', 'upeka', 'upekha'], ['sampajanna', 'sampajana'], ['nibbana', 'nirvana', 'nibana'], ['kamma', 'karma'], ['dhamma', 'dharma'],
+    ['arahant', 'arhat'], ['anatta', 'anatman', 'anata'], ['dukkha', 'duhkha'], ['vipassana', 'vipashyana', 'vipasyana', 'vipasana'], ['samatha', 'shamatha', 'samata'],
     ['sotapanna', 'srotapanna'], ['sunnata', 'sunyata', 'shunyata'], ['khandha', 'skandha'], ['sutta', 'sutra'], ['bodhisatta', 'bodhisattva'],
     ['tanha', 'trishna'], ['sankhara', 'samskara'], ['kilesa', 'klesha', 'klesa'], ['sila', 'shila'], ['panna', 'prajna'], ['avijja', 'avidya']];
   function alts(w) { for (var i = 0; i < SYN.length; i++) if (SYN[i].indexOf(w) >= 0) return '(?:' + SYN[i].join('|') + ')'; return w; }
+  // The Mind Illuminated (D, 25 Nov 2026): the book is not on this site. Its index gives, for any word, the pages it is on;
+  // for a set list of teaching terms also the chapter, heading, paragraph and line, and at most three short phrases,
+  // one per page (the limits of Google Books' snippet view). Loaded only when a search covers the book.
+  var BOOK = null, bookLoading = false;
+  var GROUP = { video: [0, 'Videos'], ama: [1, 'AMA sessions'], writings: [2, 'Writings'], about: [2, 'Writings'], all: [2, 'Writings'], audio: [3, 'Audio'], book: [4, 'The Book'] };   // the same kinds as the lozenges
   var TR = null, trLoading = false;   // the video transcripts: loaded only when a search needs them
   var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video', 'Audio': 'audio' };
-  var ALIAS = { 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video', 'audios': 'audio', 'recordings': 'audio' };
+  var ALIAS = { 'tmi': 'book', 'the-book': 'book', 'mind-illuminated': 'book', 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video', 'audios': 'audio', 'recordings': 'audio' };
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   // Fold accents and apostrophes, one character in, one out, so positions stay aligned with the original text.
@@ -179,23 +184,45 @@
     var qm = clean.replace(/[^\p{L}\p{N}\s'’\-]/gu, ' ').replace(/\s+/g, ' ').trim() || clean;
     var items = collect(matcher(qm)), near = null;
     if (!items.length && qm.split(' ').length > 1) { near = nearMatcher(qm); if (near) items = collect(near); }
+    var wantBook = !selected().length || SEL.book;
+    if (wantBook && !BOOK) loadBook();
+    if (BOOK) { var bi = bookItem(qm); if (bi) items.push(bi); }
     var wantVideo = !selected().length || SEL.video || SEL.ama;
-    items.sort(function (a, b) { return b.n - a.n || a.title.localeCompare(b.title); });
+    // grouped by kind (D, 25 Nov 2026): videos, AMA sessions, writings, audio, then the book; most mentions first within each
+    items.sort(function (a, b) { return (GROUP[a.kind] || [9])[0] - (GROUP[b.kind] || [9])[0] || b.n - a.n || a.title.localeCompare(b.title); });
     var counts = { all: items.length }; items.forEach(function (i) { counts[i.kind] = (counts[i.kind] || 0) + 1; });
     drawFilters(counts);
     var on = selected(), shown = on.length ? items.filter(function (i) { return SEL[i.kind]; }) : items;
     var total = shown.reduce(function (s, i) { return s + i.n; }, 0);
-    statusEl.textContent = (near && shown.length ? 'The exact words “' + clean + '” are not in the teachings, so these are passages where ' + near.words.map(function (w) { return '“' + w + '”'; }).join(', ') + ' all appear close together. ' : '') + (shown.length ? (wantVideo && !TR ? 'Searching the video transcripts too… ' : '') + total + (near ? ' place' + (total === 1 ? '' : 's') : ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '”') + ' in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + (near ? ', most first.' : ', most mentions first.')
-      : (wantVideo && !TR ? 'Searching the video transcripts… ' : '') + 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.'));
-    resultsEl.innerHTML = shown.slice(0, LIMIT).map(function (i) {
+    statusEl.textContent = (near && shown.length ? 'The exact words “' + clean + '” are not in the teachings, so these are passages where ' + near.words.map(function (w) { return '“' + w + '”'; }).join(', ') + ' all appear close together. ' : '') + (shown.length ? ((wantVideo && !TR) || (wantBook && !BOOK) ? 'Still searching… ' : '') + total + (near ? ' place' + (total === 1 ? '' : 's') : ' mention' + (total === 1 ? '' : 's') + ' of “' + clean + '”') + ' in ' + shown.length + ' source' + (shown.length === 1 ? '' : 's') + ' ' + scopeText() + (near ? ', most first.' : ', most mentions first.')
+      : ((wantVideo && !TR) || (wantBook && !BOOK) ? 'Searching the video transcripts and the book… ' : '') + 'No mentions of “' + clean + '” ' + scopeText() + '.' + (on.length && items.length ? ' Press Clear to see ' + items.length + ' source' + (items.length === 1 ? '' : 's') + ' across the site.' : ' Try a shorter or different word.'));
+    // Nested results (D, 25 Nov 2026): one section per kind, the same kinds as the lozenges, in the order videos, AMA sessions,
+    // writings, audio, the book. Each shows its three strongest results; its title or "See all" opens the rest, and
+    // "Show fewer" at the bottom closes it again. With one kind chosen, its section opens in full.
+    function card(i) {
       var said = (i.snips || []).map(function (s) { return '<p>' + s + '</p>'; }).join('');
       var body = i.qa
         ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> ' + snippet(x.it.text, x.hits, 0) + '</li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
-        : said;
-      return '<article class="result"><div class="meta"><span>' + esc(i.label) + '</span><span class="hits">' + i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + '</span>' + (i.credit ? '<span>' + esc(i.credit) + '</span>' : '') + '</div>' +
+        : (i.html || said);
+      return '<article class="result' + (i.kind === 'book' ? ' result-book' : '') + '"><div class="meta"><span>' + esc(i.label) + '</span><span class="hits">' + i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + '</span>' + (i.credit ? '<span>' + esc(i.credit) + '</span>' : '') + '</div>' +
         '<h3><a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(i.title) + '</a></h3>' + body + '</article>';
-    }).join('') + (shown.length > LIMIT ? '<p><button type="button" class="btn ghost" id="more">Show all ' + shown.length + ' sources</button></p>' : '');
-    var more = $('more'); if (more) more.addEventListener('click', function () { LIMIT = 100000; search(clean); });
+    }
+    var groups = [];
+    shown.forEach(function (i) {
+      var g = GROUP[i.kind] || [9, 'More'];
+      var last = groups[groups.length - 1];
+      if (!last || last.name !== g[1]) groups.push(last = { name: g[1], items: [] });
+      last.items.push(i);
+    });
+    var single = selected().length === 1;
+    resultsEl.innerHTML = groups.map(function (g, gi) {
+      var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 3, open = single || extra <= 0;
+      return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '">' +
+        '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? ' places' : ' mentions') + '</span></button></h2>' +
+        g.items.map(function (i, k) { return k < 3 ? card(i) : '<div class="rg-more">' + card(i) + '</div>'; }).join('') +
+        (extra > 0 ? '<p class="rg-foot"><button type="button" class="linklike rg-all">See all ' + g.items.length + ' results in ' + esc(g.name.split(' · ')[0]) + '</button><button type="button" class="linklike rg-less">Show fewer</button></p>' : '') +
+        '</section>';
+    }).join('');
   }
 
   function hms(s) { var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + (m < 10 ? '0' : '') : '') + m + ':' + (x < 10 ? '0' : '') + x; }
@@ -205,6 +232,60 @@
     while (lo < hi) { var mid = (lo + hi + 1) >> 1; if (v.marks[mid][0] <= pos) lo = mid; else hi = mid - 1; }
     return v.marks.length ? v.marks[lo][1] : 0;
   }
+  function loadBook() {
+    if (bookLoading) return; bookLoading = true;
+    fetch('../data/book.json').then(function (r) { return r.json(); }).then(function (d) {
+      d.keys = Object.keys(d.words).sort(); d.stopSet = {}; (d.stop || []).forEach(function (w) { d.stopSet[w] = 1; }); BOOK = d;
+      if (input.value.trim()) search(input.value.trim());
+    }).catch(function () { bookLoading = false; });
+  }
+  function bookPlace(l, full) {
+    var p = BOOK.pages[l[0]], h = l[1] >= 0 ? BOOK.headings[l[1]] : '';
+    var where = [p[1], p[2]].filter(Boolean).join(': ');
+    return 'p. ' + esc(p[0]) + (where ? ' · ' + esc(where) : '') + (h && h !== p[2] ? ' · ' + esc(h) : '') + (full ? ' · paragraph ' + l[2] + ', line ' + l[3] : '');
+  }
+  function markIn(text, q) {
+    var h = matcher(q)(text, fold(text)), out = '', pos = 0;
+    h.forEach(function (x) { out += esc(text.slice(pos, x[0])) + '<mark>' + esc(text.slice(x[0], x[1])) + '</mark>'; pos = x[1]; });
+    return out + esc(text.slice(pos));
+  }
+  var BOOK_STOP = { the: 1, and: 1, for: 1, are: 1, but: 1, not: 1, you: 1, all: 1, can: 1, was: 1, his: 1, her: 1, what: 1, how: 1, why: 1, when: 1, does: 1, with: 1, this: 1, that: 1, from: 1, into: 1, about: 1, there: 1, their: 1, which: 1, who: 1, will: 1, would: 1, should: 1, could: 1 };
+  function bookItem(q) {
+    var fq = fold(q).replace(/[^a-z0-9'\- ]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!fq) return null;
+    var item = { kind: 'book', label: 'The Mind Illuminated', title: 'The Mind Illuminated — in the book', url: '../the-book/', credit: 'Not on this site: find it in your copy · ' + 'first edition, 2015' };
+    var term = null, tries = [fq];
+    SYN.forEach(function (g) { if (g.indexOf(fq) >= 0) tries = tries.concat(g); });   // "jana" also tries jhana and dhyana
+    BOOK.terms.forEach(function (t) { if (!term && t.f.some(function (f) { return tries.some(function (x) { return f === x || f + 's' === x || x + 's' === f; }); })) term = t; });
+    if (term) {
+      var ph = term.ph.map(function (x) { return '<p class="bookph">“' + markIn(x[1], q) + '”<br><span class="small muted">' + bookPlace(term.loc[x[0]], true) + '</span></p>'; }).join('');
+      var all = term.loc.slice(0, 40).map(function (l) { return '<span title="' + bookPlace(l, true).replace(/"/g, '&quot;') + '">' + esc(BOOK.pages[l[0]][0]) + '</span>'; }).join(', ');
+      item.n = term.n;
+      item.html = ph + '<p class="small bookall"><strong>All ' + term.n + ' places, by page:</strong> ' + all + (term.n > 40 ? ' and ' + (term.n - 40) + ' more' : '') + '.</p>';
+      return item;
+    }
+    // common words ("what", "between") are not in the book's index, so they are left out of the search, as they are elsewhere
+    var words = fq.split(' ').filter(function (w) { return w.length > 2 && !BOOK_STOP[w] && !BOOK.stopSet[w]; });
+    if (!words.length) return null;
+    var pages = null;
+    for (var i = 0; i < words.length; i++) {
+      var w = words[i], set = {};
+      // word start, like the rest of the search: "awaken" also finds "awakening"
+      var lo = 0, hi = BOOK.keys.length;
+      while (lo < hi) { var mid = (lo + hi) >> 1; if (BOOK.keys[mid] < w) lo = mid + 1; else hi = mid; }
+      for (var k = lo; k < BOOK.keys.length && BOOK.keys[k].indexOf(w) === 0; k++) BOOK.words[BOOK.keys[k]].forEach(function (p) { set[p] = 1; });
+      var list = Object.keys(set).map(Number);
+      pages = pages === null ? list : pages.filter(function (p) { return set[p]; });
+      if (!pages.length) return null;
+    }
+    pages.sort(function (a, b) { return a - b; });
+    item.n = pages.length;
+    item.html = '<p class="small bookall"><strong>On ' + pages.length + ' page' + (pages.length === 1 ? '' : 's') + ':</strong> ' +
+      pages.slice(0, 40).map(function (p) { var P = BOOK.pages[p]; return esc(P[0]) + (P[2] || P[1] ? ' <span class="muted">(' + esc(P[2] || P[1]) + ')</span>' : ''); }).join(', ') +
+      (pages.length > 40 ? ' and ' + (pages.length - 40) + ' more' : '') + '.</p>';
+    return item;
+  }
+
   function loadTranscripts() {
     if (trLoading) return; trLoading = true;
     fetch('../data/transcripts.json').then(function (r) { return r.json(); }).then(function (d) {
@@ -214,16 +295,24 @@
     }).catch(function () { trLoading = false; });
   }
 
+  resultsEl.addEventListener('click', function (e) {
+    var b = e.target.closest('.rg-toggle, .rg-all, .rg-less'); if (!b) return;
+    var sec = b.closest('.rgroup'), open = b.classList.contains('rg-less') ? false : b.classList.contains('rg-all') ? true : !sec.classList.contains('open');
+    sec.classList.toggle('open', open);
+    sec.querySelector('.rg-toggle').setAttribute('aria-expanded', open);
+    if (!open) sec.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  });
+
   function drawFilters(counts) {
     var searched = counts.all !== undefined;   // before a search the pills show without numbers
-    filtersEl.innerHTML = KINDS.map(function (k) {
+    filtersEl.innerHTML = '<button type="button" class="scope-all" data-k="all" aria-pressed="' + !selected().length + '">All' + (searched ? ' <span class="muted">' + counts.all + '</span>' : '') + '</button>' + KINDS.map(function (k) {
       return '<button type="button" data-k="' + k[0] + '" aria-pressed="' + !!SEL[k[0]] + '">' + esc(k[1]) + (searched ? ' <span class="muted">' + (counts[k[0]] || 0) + '</span>' : '') + '</button>';
-    }).join('') + '<button type="button" class="scope-clear" data-k="clear"' + (selected().length ? '' : ' disabled') + '>Clear</button>';
+    }).join('') + '<button type="button" class="scope-clear" data-k="clear">Clear</button>';
   }
   filtersEl.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
     var k = b.getAttribute('data-k');
-    if (k === 'clear') SEL = {}; else SEL[k] = !SEL[k];
+    if (k === 'all') SEL = {}; else if (k === 'clear') { SEL = {}; input.value = ''; } else SEL[k] = !SEL[k];   // All: the whole site; Clear: start again
     go(false);
   });
 

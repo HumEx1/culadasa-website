@@ -11,6 +11,7 @@ Usage:  python3 tools/build_redesign.py        -> redesign/    (A2 + D2: portrai
         python3 tools/build_redesign.py 2      -> redesign-2/  (A2 sans base: more open and minimal; lattice
                                                    texture in the masthead; cover graphics only on The Book)
 """
+from urllib.parse import quote_plus
 import sys as _sys, os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from spelling import fix_spelling
@@ -230,15 +231,17 @@ def video_tile(v, r, sub=''):
 </article>'''
 
 
-SCOPES = [('video', 'Videos'), ('audio', 'Audio'), ('ama', 'AMA sessions'), ('writings', 'Writings')]   # the Library order (D, 25 Nov 2026)
+SCOPES = [('video', 'Videos'), ('audio', 'Audio'), ('ama', 'AMA sessions'), ('writings', 'Writings'), ('book', 'The Book')]   # the Library order (D, 25 Nov 2026)
 
 
 def scoped_search(r, scope, placeholder, ident):
     """One search box used on several pages (D, 25 Nov 2026): it starts with the page's own scope selected and opens
     Topics with that scope; the reader can widen it to All or switch to another part of the site."""
     # each pill switches on or off by itself, so several parts can be searched together; none on = the whole site (D, 25 Nov 2026)
-    pills = ''.join(f'<label class="scope-pill"><input type="checkbox" name="type" value="{k}"{" checked" if k == scope else ""}><span>{esc(t)}</span></label>' for k, t in SCOPES)
-    pills += '<button type="button" class="scope-clear" onclick="this.form.querySelectorAll(\'input[name=type]\').forEach(function(c){c.checked=false})">Clear</button>'
+    # one row of lozenges (D, 25 Nov 2026): All, the kinds, Clear. All = the whole site; Clear = the whole site and an empty box
+    pills = ('<button type="button" class="scope-all" onclick="this.form.querySelectorAll(\'input[name=type]\').forEach(function(c){c.checked=false})">All</button>'
+             + ''.join(f'<label class="scope-pill"><input type="checkbox" name="type" value="{k}"{" checked" if k == scope else ""}><span>{esc(t)}</span></label>' for k, t in SCOPES)
+             + '<button type="button" class="scope-clear" onclick="this.form.querySelectorAll(\'input[name=type]\').forEach(function(c){c.checked=false});this.form.q.value=\'\'">Clear</button>')
     return (f'<form class="search scoped" action="{r}topics/" method="get" role="search" aria-label="Search the teachings">'
             f'<div class="scoped-row"><label class="sr" for="{ident}">Search</label><input id="{ident}" name="q" type="search" placeholder="{esc(placeholder)}">'
             f'<button class="btn">Search</button></div>'
@@ -343,6 +346,26 @@ EYES = '''<section class="eyes-band" aria-label="Closing">
   <p>All of Culadasa’s students are his successors.</p>
   <p class="small muted" style="font-family:var(--text);font-size:15px;margin-top:6px">— The Yates family</p>
 </section>'''
+
+
+def book_finder(r):
+    """Search the book and its word cloud, right below the Buy button (D, 25 Nov 2026). The book is not on this site:
+    results give the place in the book (page, chapter, heading, paragraph, line) and, for teaching terms, a few short phrases."""
+    bp = D / 'book.json'
+    if not bp.exists():
+        return ''
+    terms = [t for t in json.loads(bp.read_text())['terms'] if t['n'] >= 3]
+    import math
+    hi, lo = max(t['n'] for t in terms), min(t['n'] for t in terms)
+    words = []
+    for t in sorted(terms, key=lambda t: t['t'].lower().replace('the ', '')):
+        k = (math.sqrt(t['n']) - math.sqrt(lo)) / ((math.sqrt(hi) - math.sqrt(lo)) or 1)
+        tone = ' class="t3"' if k > .55 else ' class="t2"' if k > .25 else ''
+        words.append(f'<a{tone} style="font-size:{round(14 + k * 20)}px" href="{r}topics/?q={quote_plus(t["t"])}&amp;type=book" title="{t["n"]} mentions in the book">{esc(t["t"])}</a>')
+    return (f'<div class="book-finder"><p class="label">Search the book</p>'
+            f'{scoped_search(r, "book", "Find a word or topic in the book", "b-q")}'
+            f'<div class="cloud cloud-links" aria-label="Teaching terms in the book">{" ".join(words)}</div>'
+            f'<p class="small muted">The book itself is not on this site. A search shows where a word appears (page, chapter, heading, paragraph and line, in the 2015 first edition) and, for teaching terms, a few short phrases, so you can find the passage in your own copy.</p></div>')
 
 
 def build():
@@ -506,6 +529,7 @@ def build():
     <p class="lead">Written by Culadasa (John Yates, Ph.D.) with Matthew Immergut, Ph.D. and Jeremy Graves, and first published by Dharma Treasure Press on 6 October 2015.</p>
     <p>The book sets out ten stages of meditative development, from establishing a daily practice to tranquility and equanimity, with clear instructions for each stage and an account of how the mind works drawn from both the Buddhist tradition and cognitive science.</p>
     <p><a class="btn" href="https://www.simonandschuster.com/books/The-Mind-Illuminated/John-Yates/9781501156984" rel="noopener">Buy from Publisher</a></p>
+    {book_finder(r)}
   </div>
 </div></section>
 <section class="section"><div class="wrap"><p class="label">The ten stages</p><h2>From the first sit to equanimity</h2>

@@ -591,3 +591,37 @@ body[data-section="teachers"] .banner .lead{max-width:none}
   .banner.lib-banner .wrap{position:relative}
   .banner.lib-banner .wrap > p:last-child:not(.lead){position:absolute;right:24px;top:51px;margin:0}
 }
+
+/* Search results grouped by kind, and the book (D, 25 Nov 2026) */
+.result-group{font:500 13px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--label);margin:34px 0 0;padding-top:16px;border-top:2px solid var(--gold-line,#c4972f)}
+.result-group:first-child{margin-top:8px}
+.result-group + .result{border-top:0}
+.result-book .bookph{font-size:15.5px;line-height:1.6;margin:0 0 12px}
+.result-book .bookall{line-height:1.7}
+.result-book .bookall span[title]{border-bottom:1px dotted var(--line-2);cursor:help}
+.book-finder{margin-top:34px}
+.book-finder .label{margin-bottom:10px}
+.cloud-links{padding:20px 4px}
+.cloud a{font-family:var(--display);font-weight:300;color:var(--ink);padding:6px 5px;border-radius:4px;text-decoration:none}
+.cloud a:hover,.cloud a:focus-visible{color:var(--teal);background:var(--teal-pale)}
+.cloud a.t2{color:#4a5f66}
+.cloud a.t3{color:var(--teal)}
+/* All and Clear are lozenges in the same row as the kinds, not pushed to the far side (D, 25 Nov 2026) */
+.scope-all,.scope-clear,.filters .scope-clear,.filters .scope-all{all:unset;cursor:pointer;margin-left:0;display:inline-flex;align-items:center;min-height:40px;box-sizing:border-box;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;font:500 12.5px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.filters .scope-all,.filters .scope-clear{min-height:44px}
+.scope-all[aria-pressed="true"],.scope:not(:has(input:checked)) .scope-all{background:var(--ink);border-color:var(--ink);color:#fff}
+.scope-all:focus-visible,.scope-clear:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+/* nested results: a section per kind, three results showing, the rest behind "See all" (D, 25 Nov 2026) */
+.rgroup{margin:0 0 10px}
+.rgroup .result-group{margin:28px 0 0;padding-top:0;border-top:2px solid var(--gold-line,#c4972f)}
+.rg-toggle{all:unset;cursor:pointer;display:flex;align-items:baseline;justify-content:space-between;gap:12px;width:100%;padding:14px 0 6px;font:500 14px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.rg-toggle::after{content:"+";font-size:20px;letter-spacing:0;color:var(--teal)}
+.rgroup.open .rg-toggle::after{content:"–"}
+.rg-count{margin-left:auto;font-size:12px;letter-spacing:.08em;text-transform:none;color:var(--muted)}
+.rg-toggle:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.rgroup .rg-more{display:none}
+.rgroup.open .rg-more{display:block}
+.rg-foot{margin:6px 0 0}
+.rg-foot .rg-less{display:none}
+.rgroup.open .rg-foot .rg-all{display:none}
+.rgroup.open .rg-foot .rg-less{display:inline}
