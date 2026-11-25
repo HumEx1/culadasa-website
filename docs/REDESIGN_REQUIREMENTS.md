@@ -147,3 +147,5 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
     - the Topics filter and result labels, now "AMA".
 
     The address stays /online-meetings/. Alex's own title, "Culadasa Q&A Index", and the YouTube video titles keep "Q&A", because they are other people's names for their work. The hard-coded "439 questions" on Home and Start here now count from the data (441).
+
+55. **The session being looked at is highlighted (D, 25 Nov 2026).** "Put a gold line around the post you are looking at… expands to the shape of the text box if you open out." The active session gets a thin gold line round the whole banner and a slightly lighter background. The outline grows with the banner when its questions are open. A session becomes active when you click anything in it, open it, play its video, or arrive from a year link. Only one is active at a time.

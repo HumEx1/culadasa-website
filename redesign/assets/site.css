@@ -509,3 +509,9 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .close-q{all:unset;cursor:pointer;font:500 12.5px/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);padding:10px 0}
 .close-q::after{content:" −"}
 .close-q:focus-visible,.scard-q summary:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+/* the active session: thin gold line round the whole banner, growing with it when opened (D, 25 Nov 2026) */
+.scard,.scard.open{border:1px solid transparent;border-top-color:var(--line);padding:28px 22px;margin:0 -23px;transition:border-color .2s,background-color .2s}
+.scard.active{border-color:var(--gold-line,#c4972f);background:var(--panel)}
+.scard.active+.scard{border-top-color:transparent}
+@media (max-width:760px){.scard,.scard.open{padding:22px 14px;margin:0 -15px}}
+@media (prefers-reduced-motion:reduce){.scard{transition:none}}

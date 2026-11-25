@@ -432,7 +432,14 @@
   document.querySelectorAll('.scard details').forEach(function (d) { d.addEventListener('toggle', function () { sync(d.closest('.scard')); }); });
   document.querySelectorAll('.scard .close-q').forEach(function (b) { b.addEventListener('click', function () {
     var d = b.closest('details'), c = b.closest('.scard'); d.open = false; sync(c); c.scrollIntoView({ block: 'start' }); d.querySelector('summary').focus({ preventScroll: true }); }); });
-  function openFromHash() { var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) { var d = c.querySelector('details'); d.open = true; sync(c); c.scrollIntoView({ block: 'start' }); } }
+  /* the session being looked at is marked active: thin gold line, slightly lighter ground (D, 25 Nov 2026) */
+  function activate(c) { document.querySelectorAll('.scard.active').forEach(function (x) { if (x !== c) x.classList.remove('active'); }); if (c) c.classList.add('active'); }
+  document.querySelectorAll('.scard').forEach(function (c) {
+    c.addEventListener('pointerdown', function () { activate(c); });
+    c.addEventListener('focusin', function () { activate(c); });
+    var d = c.querySelector('details'); if (d) d.addEventListener('toggle', function () { if (d.open) activate(c); });
+  });
+  function openFromHash() { var c = location.hash && document.getElementById(location.hash.slice(1)); if (c && c.classList.contains('scard')) { var d = c.querySelector('details'); d.open = true; sync(c); activate(c); c.scrollIntoView({ block: 'start' }); } }
   window.addEventListener('hashchange', openFromHash); openFromHash();
 })();
 </script>
