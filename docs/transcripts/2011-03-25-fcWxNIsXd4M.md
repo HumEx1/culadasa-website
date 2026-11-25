@@ -1,4 +1,4 @@
-# The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa 
+# The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa
 
 Video: https://www.youtube.com/watch?v=fcWxNIsXd4M  
 Published on YouTube: 2011-03-25  

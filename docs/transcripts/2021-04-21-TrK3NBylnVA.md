@@ -1,4 +1,4 @@
-# My Journey∩╝Ü Episode 4 - Stranger in a Strange Land
+# My Journey: Episode 4 - Stranger in a Strange Land
 
 Video: https://www.youtube.com/watch?v=TrK3NBylnVA  
 Published on YouTube: 2021-04-21  

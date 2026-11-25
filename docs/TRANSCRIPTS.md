@@ -28,7 +28,7 @@ YouTube mishears his Pāli terms. Culadasa mostly used the Pāli forms, so mishe
 | meta, metta | mettā | meta: not before "-cognitive", awareness, level, analysis, data, physics |
 | suka, sukkah, sooka | sukha | always |
 | dooka, dooku, duke | dukkha | always |
-| Dukan Yanis, Dukan youngins, Duquesne Jana | dukkha ñāṇas | always |
+| Dukan Yanis, Dukan youngins, Duquesne Jana, Dupin ñāṇas | dukkha ñāṇas | always |
 | yanis, nyanas, nanas | ñāṇas | always |
 | sati some vagina, sati SAA Jana, sampaja, sampajanna | sati sampajañña / sampajañña | always |
 | samata, shamata, shamita | samatha | always |

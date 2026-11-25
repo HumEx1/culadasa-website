@@ -15,6 +15,7 @@ RULES = [
  (r"\bsati some vagina\b", "sati sampajañña"),
  (r"\bsampaja(nna)?\b", "sampajañña"),
  (r"\b(yanis|nyanas|nanas|nana's)\b", "ñāṇas"),
+ (r"\bdupin ñāṇas\b", "dukkha ñāṇas"),   # found 25 Nov 2026 in the January 2018 AMA
  (r"\b(jonah|janna|jana|jonna|jannah|jhana)'?s\b|\b(jonas|john's|johns)\b", "jhānas"),   # YouTube writes the plural as "Jonah's"
  (r"\b(jonah|janna|jana|jonna|jannah|jhana)\b", "jhāna"),
  (r"\b(first|second|third|fourth|fifth|sixth|seventh|eighth|1st|2nd|3rd|4th|the|a|into|enter|entering|in|of|body|luminous|pleasure|form|formless|deepest|deeper|higher|that) john\b(?!\s+(of|yates|kabat)\b)", r"\1 jhāna"),

@@ -1,4 +1,4 @@
-# My Journey∩╝Ü Episode 2 - A Series of Miracles
+# My Journey: Episode 2 - A Series of Miracles
 
 Video: https://www.youtube.com/watch?v=OAfkxskGREo  
 Published on YouTube: 2021-03-03  

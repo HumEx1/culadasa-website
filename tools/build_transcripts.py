@@ -25,6 +25,20 @@ SRC = sys.argv[1]
 SITE_TITLES = {v['id']: v['title'] for v in json.loads((ROOT / 'redesign/data/videos.json').read_text())}
 
 
+def clean_title(t):
+    """Undo the garbling the file names picked up on the way (UTF-8 read as the old DOS code page, e.g. "∩╝Ü" for a
+    full-width colon) and turn YouTube's full-width punctuation back into plain : and ? (D, 25 Nov 2026)."""
+    import unicodedata
+    def fix(m):
+        try:
+            return m.group(0).encode('cp437').decode('utf-8')
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            return m.group(0)
+    t = re.sub(r'[^\x00-\x7f]{3}', fix, t)
+    t = ''.join(unicodedata.normalize('NFKC', c) if 0xFF00 <= ord(c) <= 0xFFEF else c for c in t)
+    return re.sub(r'\s+', ' ', t).strip()
+
+
 def secs(ts):
     h, m, s = ts.split(':')
     return int(h) * 3600 + int(m) * 60 + float(s)
@@ -67,7 +81,7 @@ for f in files:
     name = os.path.basename(f)[:-len('.en-orig.vtt')]
     date, vid, title = name.split(' ', 2)
     date = f'{date[:4]}-{date[4:6]}-{date[6:]}'
-    title = SITE_TITLES.get(vid, title)
+    title = SITE_TITLES.get(vid, title) if vid in SITE_TITLES else clean_title(title)
     url = f'https://www.youtube.com/watch?v={vid}'
     log = []
     ls = [(t, fix(x, log)) for t, x in lines_of(f)]

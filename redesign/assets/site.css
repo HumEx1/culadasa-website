@@ -628,9 +628,8 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 /* results as title rows that open to show where the word appears (D, 25 Nov 2026) */
 .rrow{padding:0;border-top:1px solid var(--line)}
 .rrow h3{margin:0;font-size:inherit}
-.rr-title{all:unset;cursor:pointer;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;width:100%;padding:14px 28px 14px 0;position:relative}
-.rr-title::after{content:"+";position:absolute;right:2px;top:12px;font:400 20px/1 var(--display);color:var(--teal)}
-.rrow.open .rr-title::after{content:"–"}
+.rr-title{all:unset;cursor:pointer;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;width:100%;padding:14px 0;position:relative}
+.rr-title::after{content:none}   /* no + on the title rows (D, 25 Nov 2026) */
 .rr-name{font:400 18px/1.35 var(--display);color:var(--ink)}
 .rr-title:hover .rr-name{color:var(--teal)}
 .rr-meta{font:500 12px/1.4 var(--display);letter-spacing:.06em;color:var(--muted)}

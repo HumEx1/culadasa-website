@@ -32,12 +32,12 @@
 | 2021-09-17 | ● [Culadasa April 2021 Patreon Q&A No1](2021-09-17-8Uc_gewR1gY.md) | 10,456 |
 | 2021-09-17 | ● [Culadasa April 2020 Patreon Q&A Recording](2021-09-17-omNF2wQYVxs.md) | 12,851 |
 | 2021-08-20 | [New Channel 4 My Journey](2021-08-20-BAWrOls6I8U.md) | 130 |
-| 2021-07-27 | [My Journey∩╝Ü Episode 6 - The Ups and Downs of Practice (and Life!) - RE-UPLOAD WI](2021-07-27-AdiW7_HcjiE.md) | 10,393 |
-| 2021-05-04 | [My Journey∩╝Ü Episode 5 - Unifying life around the Dharma (re-upload)](2021-05-04-BR7D92whYXA.md) | 9,596 |
-| 2021-04-21 | [My Journey∩╝Ü Episode 4 - Stranger in a Strange Land](2021-04-21-TrK3NBylnVA.md) | 11,203 |
-| 2021-03-24 | [My Journey∩╝Ü  Episode 3 -  Experiences don't mean sh...](2021-03-24-E48ByR0Xt6U.md) | 9,598 |
+| 2021-07-27 | [My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) - RE-UPLOAD WI](2021-07-27-AdiW7_HcjiE.md) | 10,393 |
+| 2021-05-04 | [My Journey: Episode 5 - Unifying life around the Dharma (re-upload)](2021-05-04-BR7D92whYXA.md) | 9,596 |
+| 2021-04-21 | [My Journey: Episode 4 - Stranger in a Strange Land](2021-04-21-TrK3NBylnVA.md) | 11,203 |
+| 2021-03-24 | [My Journey: Episode 3 - Experiences don't mean sh...](2021-03-24-E48ByR0Xt6U.md) | 9,598 |
 | 2021-03-07 | ● [Culadasa March 2021 Patreon Q&A No1](2021-03-07-Yg6l-DsFEz8.md) | 11,929 |
-| 2021-03-03 | [My Journey∩╝Ü Episode 2 - A Series of Miracles](2021-03-03-OAfkxskGREo.md) | 8,234 |
+| 2021-03-03 | [My Journey: Episode 2 - A Series of Miracles](2021-03-03-OAfkxskGREo.md) | 8,234 |
 | 2021-02-12 | ● [My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years](2021-02-12-kn050yBN37U.md) | 7,315 |
 | 2021-02-12 | ● [Introduction to "My Journey" discussion series](2021-02-12-Uf_su1wDk94.md) | 1,278 |
 | 2021-01-29 | ● [Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it](2021-01-29-UjBXtI1Q2as.md) | 8,652 |
@@ -86,17 +86,17 @@
 | 2014-09-22 | [Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa](2014-09-22-XaRnabvBKOQ.md) | 320 |
 | 2014-09-22 | [Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad](2014-09-22-MAY3lh-4xIE.md) | 615 |
 | 2014-06-30 | [Rattlesnake Round-up](2014-06-30-9_7sTiQ-jIM.md) | 126 |
-| 2014-03-31 | [Here Comes the Sun∩╝Ü Achieving Awakening Without the Dark Night](2014-03-31-u5He0q5u5yY.md) | 371 |
+| 2014-03-31 | [Here Comes the Sun: Achieving Awakening Without the Dark Night](2014-03-31-u5He0q5u5yY.md) | 371 |
 | 2011-03-31 | [Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa](2011-03-31-33lZZhsKJw0.md) | 1,361 |
 | 2011-03-31 | [Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula](2011-03-31-XFrOYVJxO80.md) | 1,074 |
 | 2011-03-31 | [Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa](2011-03-31-GVoIxju59lc.md) | 1,310 |
 | 2011-03-31 | [Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula](2011-03-31-BT1HpYIg-oE.md) | 735 |
 | 2011-03-31 | [A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas](2011-03-31-R9dqNii3Vmc.md) | 266 |
-| 2011-03-25 | [Where do the Four Elements Cease∩╝ƒ - Buddhist Wisdom meets Brain Science - Culada](2011-03-25-JraPD3iMJYE.md) | 1,218 |
-| 2011-03-25 | [What is Rebirth∩╝ƒ - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-G-JUhLJdJ3w.md) | 852 |
-| 2011-03-25 | [What is Equanimity∩╝ƒ - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-HSv2dindx7o.md) | 843 |
+| 2011-03-25 | [Where do the Four Elements Cease? - Buddhist Wisdom meets Brain Science - Culada](2011-03-25-JraPD3iMJYE.md) | 1,218 |
+| 2011-03-25 | [What is Rebirth? - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-G-JUhLJdJ3w.md) | 852 |
+| 2011-03-25 | [What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-HSv2dindx7o.md) | 843 |
 | 2011-03-25 | [Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C](2011-03-25-7Rv4Dh0FWRI.md) | 1,057 |
-| 2011-03-25 | [The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa ](2011-03-25-fcWxNIsXd4M.md) | 1,056 |
+| 2011-03-25 | [The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-fcWxNIsXd4M.md) | 1,056 |
 | 2011-03-25 | [The Nature of Suffering - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-BdJWwlWVkzk.md) | 1,208 |
 | 2011-03-25 | [Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-0F8Oub7tYsk.md) | 1,147 |
 | 2011-03-25 | [Reality is Mind-Created - Buddhist Wisdom meets Brain Science - Culadasa](2011-03-25-8IqXwOlYiWs.md) | 1,123 |

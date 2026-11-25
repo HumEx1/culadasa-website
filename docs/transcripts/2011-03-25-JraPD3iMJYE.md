@@ -1,4 +1,4 @@
-# Where do the Four Elements Cease∩╝ƒ - Buddhist Wisdom meets Brain Science - Culada
+# Where do the Four Elements Cease? - Buddhist Wisdom meets Brain Science - Culada
 
 Video: https://www.youtube.com/watch?v=JraPD3iMJYE  
 Published on YouTube: 2011-03-25  
