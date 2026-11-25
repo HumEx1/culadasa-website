@@ -107,3 +107,14 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 46. **Photo for the Q&A Index on Conversations (D, 25 Nov 2026).** "Find a nice high definition photo." The Culadasa Q&A Index entry on Conversations uses a high-definition still of Culadasa from his April 2018 Q&A session video (YouTube, 1280×720, cropped square). It is credited "Still from his April 2018 Q&A session on YouTube".
 
 47. **Q&A archive leads with the sessions (D, 25 Nov 2026).** "Take off ', a crowdsourcing platform'. All of the below should be the focus and the info currently at the top should be footnotes." The banner sentence now ends "…question and answer meetings on Patreon." The mirror keeps the original wording. The page opens with "All 61 sessions by year", then the search box and the sessions. The credit line and Alex's introduction moved to a "Notes · About this index" band at the foot of the page, after the audio.
+
+48. **Q&A archive as one long page (D, 25 Nov 2026).** Alex's whole index, in the site's look, in this order:
+    1. the banner about the Patreon meetings;
+    2. a short note in small type that Alex transcribed the questions, with keywords and quotes;
+    3. "All 61 sessions by year", whose links jump to each session;
+    4. the search box;
+    5. every session open, one after another, each with its video beside the questions and an "All sessions ↑" link back to the index;
+    6. the audio;
+    7. Alex's introduction as notes at the foot.
+
+    Nothing is collapsed any more. It stays on this site (same GitHub repository, moving to the organisation with it) rather than a separate GitHub page.

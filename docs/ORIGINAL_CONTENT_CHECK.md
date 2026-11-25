@@ -10,7 +10,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 | Original page (old menu) | In the redesign | Missing | Edited slightly | Hidden or search-only |
 |---|---|---|---|---|
 | `/` About (the old home page) | Home page | 0 | 0 | 0 |
-| `/online-meetings/` Online Meetings | Main menu › Library › Q&A archive | 0 | 0 | 8 |
+| `/online-meetings/` Online Meetings | Main menu › Library › Q&A archive | 0 | 0 | 1 |
 | `/writings/` Teachings › Writings | Main menu › Library › Writings | 0 | 0 | 0 |
 | `/audio/` Teachings › Audio | Main menu › Library › Audio | 0 | 0 | 0 |
 | `/videos/` Teachings › Videos | Main menu › Library › Videos | 0 | 0 | 0 |
@@ -38,13 +38,6 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 
 - [ ] **How to find it now:** Main menu › Library › Q&A archive
 - [ ] **Only findable through Topics search**, not shown on any page (line 285): "Culadasa held monthly video AMA / question and answer meetings on Patreon , a crowdsourcing platform. The videos from these sessions are available on his YouTube site and can be viewed and listened to below."
-- [ ] **Present but inside a collapsed section** (shown only when opened) (line 297): "Culadasa August 2020 Patreon Q&A N°1 Recording"
-- [ ] **Present but inside a collapsed section** (shown only when opened) (line 297): "Culadasa January 2020 Patreon Q&A Nº 1 – Sunday"
-- [ ] **Present but inside a collapsed section** (shown only when opened) (line 297): "Culadasa August 2020 Patreon Q&A N°2 Recording"
-- [ ] **Present but inside a collapsed section** (shown only when opened) (line 297): "Culadasa July 2020 Patreon Q&A N°2 Recording"
-- [ ] **Present but inside a collapsed section** (shown only when opened) (line 297): "Culadasa July 2020 Patreon Q&A N°1 Recording"
-- [ ] **Present but inside a collapsed section** (shown only when opened) (line 297): "Culadasa September 2020 Patreon Q&A N°2 Recording"
-- [ ] **Present but inside a collapsed section** (shown only when opened) (line 297): "Culadasa April 2020 Patreon Q&A Recording"
 
 ### `/writings/` Teachings › Writings
 

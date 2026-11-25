@@ -503,22 +503,16 @@ def build():
     for s_ in isess:
         v = vid_by_id.get(s_['video'])
         tile = video_tile(v, r) if v else f'<p><a href="{esc(s_["url"])}" rel="noopener">Watch on YouTube</a></p>'
-        sess += f'''<details class="session" id="s-{esc(s_['video'])}"><summary><h3>{esc(s_['title'])}</h3><span class="count">{len(s_['questions'])} questions</span></summary>
-<div class="body"><div>{tile}</div><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></div></details>'''
+        sess += f'''<section class="session-full" id="s-{esc(s_['video'])}"><div class="session-head"><h3>{esc(s_['title'])}</h3><span class="count">{len(s_['questions'])} questions</span><a class="top" href="#sessions">All sessions ↑</a></div>
+<div class="body"><div>{tile}</div><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol></div></section>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
     body = banner('Recorded online meetings, 2017–2021', 'Q&amp;A archive', esc(om_intro), 'teal') + f'''
 <section class="section"><div class="wrap">
-<nav class="jump jump-main" aria-label="Sessions by year"><h2>All {len(isess)} sessions by year</h2><p class="muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to open it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+<p class="small muted transcribed">Every question below was transcribed by Alex in the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a>, with keywords and quotes from the answers. Each time links to the moment in the video. More about the index is at the <a href="#about-the-index">foot of the page</a>.</p>
+<nav class="jump jump-main" id="sessions" aria-label="Sessions by year"><h2>All {len(isess)} sessions by year</h2><p class="muted">{n_patreon} of them were his Patreon Q&amp;As. Choose one to go to it.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
 <form class="search" action="{r}topics/" method="get" role="search"><label class="sr" for="qa-q">Search the questions</label><input id="qa-q" name="q" type="search" placeholder="Search {n_q} questions and answers"><input type="hidden" name="type" value="Q&amp;A"><button class="btn">Search</button></form>
 {sess}</div></section>
-<script>
-/* open a session when its link (or the page address) points at it */
-(function () {{
-  function openFromHash() {{ var d = location.hash && document.getElementById(location.hash.slice(1)); if (d && d.tagName === 'DETAILS') {{ d.open = true; d.scrollIntoView({{ block: 'start' }}); }} }}
-  window.addEventListener('hashchange', openFromHash); openFromHash();
-}})();
-</script>
 <section class="section"><div class="wrap"><h2>Audio of the meetings</h2>{sc_player('playlists', '967729615', 450, False)}</div></section>
 <section class="section band-panel footnotes" id="about-the-index"><div class="wrap two"><div><p class="label">Notes</p><h2>About this index</h2>
 <p class="small muted">The questions, keywords and quotes on this page are the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a> by Alex, shown here in full and as he wrote it. Each time links to the moment the question is asked. Corrections go to the original index.</p></div>

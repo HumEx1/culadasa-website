@@ -450,3 +450,13 @@ body[data-section="teachers"] .banner .lead{max-width:none}
 .jump-main strong{font-size:19px;min-width:3.4em}
 .footnotes .small-prose{font-size:14.5px}
 .footnotes h2{font-size:24px}
+/* Q&A archive: the whole index, open and scrolling (D, 25 Nov 2026) */
+.transcribed{margin:0 0 28px;max-width:var(--measure)}
+.session-full{border-top:1px solid var(--line);padding:36px 0 8px;scroll-margin-top:90px}
+.session-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 20px;margin-bottom:20px}
+.session-head h3{margin:0}
+.session-head .count{font:500 12.5px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--label)}
+.session-head .top{margin-left:auto;font-size:14px}
+.session-full .body{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:32px}
+.session-full .body>div:first-child{position:sticky;top:90px;align-self:start}
+@media (max-width:760px){.session-full .body{grid-template-columns:1fr}.session-full .body>div:first-child{position:static}}
