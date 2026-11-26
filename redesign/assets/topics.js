@@ -255,10 +255,9 @@
 
   // A search for a stage ("stage 4", "stage four", "fourth stage") or for "ten stages" first offers that stage's page,
   // with a video to start with and everything he said about it (D, 25 Nov 2026)
-  var STAGE_NAMES = ['Establishing a practice', 'Interrupted attention and overcoming mind-wandering', 'Extended attention and overcoming forgetting',
-    'Continuous attention and overcoming gross distraction and strong dullness', 'Overcoming subtle dullness and increasing mindfulness',
-    'Subduing subtle distraction', 'Exclusive attention and unifying the mind', 'Mental pliancy and pacifying the senses',
-    'Mental and physical pliancy and calming the intensity of meditative joy', 'Tranquility and equanimity'];
+  var STAGE_NAMES = ['Establishing a practice', 'Overcoming mind-wandering', 'Overcoming forgetting', 'Overcoming gross distraction and strong dullness',
+    'Overcoming subtle dullness and increasing mindfulness', 'Subduing subtle distractions', 'Unifying the mind', 'Pacifying the senses',
+    'Calming the intensity of meditative joy', 'Tranquility and equanimity'];   // named by what each stage achieves (D, 26 Nov 2026)
   var SW = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
   var SO = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'];
   function stageLink(q) {

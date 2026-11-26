@@ -305,13 +305,19 @@ def doc_link(title, kind, target, r):
     return f'<li><a href="{r}{target}"><span>{esc(title)}</span><span class="kind">Essay</span></a></li>'
 
 
+# Each stage named by what is achieved in it (D, 26 Nov 2026): the second half of the book's chapter title, checked
+# against the 2015 final draft's contents and chapter headings. BOOK_STAGE_TITLES are the book's full titles.
 STAGES = [
-    ('Establishing a practice', 'Novice'), ('Interrupted attention and overcoming mind-wandering', 'Novice'),
-    ('Extended attention and overcoming forgetting', 'Novice'),
-    ('Continuous attention and overcoming gross distraction and strong dullness', 'Skilled'),
-    ('Overcoming subtle dullness and increasing mindfulness', 'Skilled'), ('Subduing subtle distraction', 'Skilled'),
-    ('Exclusive attention and unifying the mind', 'Transition'), ('Mental pliancy and pacifying the senses', 'Adept'),
-    ('Mental and physical pliancy and calming the intensity of meditative joy', 'Adept'), ('Tranquility and equanimity', 'Adept'),
+    ('Establishing a practice', 'Novice'), ('Overcoming mind-wandering', 'Novice'), ('Overcoming forgetting', 'Novice'),
+    ('Overcoming gross distraction and strong dullness', 'Skilled'), ('Overcoming subtle dullness and increasing mindfulness', 'Skilled'),
+    ('Subduing subtle distractions', 'Skilled'), ('Unifying the mind', 'Transition'), ('Pacifying the senses', 'Adept'),
+    ('Calming the intensity of meditative joy', 'Adept'), ('Tranquility and equanimity', 'Adept'),
+]
+BOOK_STAGE_TITLES = [
+    'Establishing a Practice', 'Interrupted Attention and Overcoming Mind-Wandering', 'Extended Attention and Overcoming Forgetting',
+    'Continuous Attention and Overcoming Gross Distraction and Strong Dullness', 'Overcoming Subtle Dullness and Increasing Mindfulness',
+    'Subduing Subtle Distractions', 'Exclusive Attention and Unifying the Mind', 'Mental Pliancy and Pacifying the Senses',
+    'Mental and Physical Pliancy and Calming the Intensity of Meditative Joy', 'Tranquility and Equanimity',
 ]
 
 
@@ -449,7 +455,7 @@ def stage_pages(r):
         b = st.get('book')
         if b:
             groups.append(('The Book', [row(f'The Mind Illuminated: Stage {W}', f"pages {b['first']}–{b['last']} · first edition, 2015",
-                                            f'<p>The book’s chapter on Stage {W}, {esc(name)}, runs from page {b["first"]} to page {b["last"]} of the 2015 first edition. Page numbers in later editions may differ.</p>'
+                                            f'<p>The book’s chapter on Stage {W}, {esc(BOOK_STAGE_TITLES[n - 1])}, runs from page {b["first"]} to page {b["last"]} of the 2015 first edition. Page numbers in later editions may differ.</p>'
                                             f'<p class="rr-open"><a href="{rr}the-book/">About the book →</a></p>')]))
         pin = st.get('pin')
         pin_html = ''
@@ -462,7 +468,7 @@ def stage_pages(r):
 </div></div></section>'''
         prev_ = f'<a href="{rr}ten-stages/stage-{n - 1}/">← Stage {NUMW[n - 2]}</a>' if n > 1 else '<span></span>'
         next_ = f'<a href="{rr}ten-stages/stage-{n + 1}/">Stage {NUMW[n]} →</a>' if n < 10 else '<span></span>'
-        body = banner(f'<a href="{rr}ten-stages/">The ten stages</a> · {lvl}', f'Stage {W}', esc(name), 'gold') + f'''
+        body = banner(f'<a href="{rr}ten-stages/">The ten stages</a> · {lvl}', f'Stage {W}: {esc(name)}', f'In the book: Stage {W}, {esc(BOOK_STAGE_TITLES[n - 1])}', 'gold') + f'''
 <section class="section tight"><div class="wrap measure"><p class="lead">Everything Culadasa said about Stage {W} in his talks, AMA sessions, writings and recordings: {total(st)} mentions. Much of it came after the book was published, so it adds to what the book says.</p></div></section>
 {pin_html}
 <section class="section"><div class="wrap"><h2>Where he talks about Stage {W}</h2><p class="rr-hint">Click a title to see where it’s mentioned.</p>{row_groups(groups)}
