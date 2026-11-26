@@ -24,6 +24,17 @@
     ['arahant', 'arhat'], ['anatta', 'anatman', 'anata'], ['dukkha', 'duhkha'], ['vipassana', 'vipashyana', 'vipasyana', 'vipasana'], ['samatha', 'shamatha', 'samata'],
     ['sotapanna', 'srotapanna'], ['sunnata', 'sunyata', 'shunyata'], ['khandha', 'skandha'], ['sutta', 'sutra'], ['bodhisatta', 'bodhisattva'],
     ['tanha', 'trishna'], ['sankhara', 'samskara'], ['kilesa', 'klesha', 'klesa'], ['sila', 'shila'], ['panna', 'prajna'], ['avijja', 'avidya']];
+  // After "stage" or "stages", a number and its word are the same ("stage 4" also finds "stage four", which is how the
+  // video captions write it), but only there, so "one" elsewhere does not find every "1" (D, 26 Nov 2026)
+  var NUMW = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+  function wordRe(arr, i) {
+    var w = arr[i], prev = i > 0 ? arr[i - 1] : '';
+    if (/^stages?$/.test(prev)) {
+      var n = /^(10|[1-9])$/.test(w) ? +w : NUMW.indexOf(w) + 1;
+      if (n >= 1 && n <= 10) return '(?:' + n + '|' + NUMW[n - 1] + ')';
+    }
+    return alts(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  }
   function alts(w) { for (var i = 0; i < SYN.length; i++) if (SYN[i].indexOf(w) >= 0) return '(?:' + SYN[i].join('|') + ')'; return w; }
   // The Mind Illuminated (D, 25 Nov 2026): the book is not on this site. Its index gives, for any word, the pages it is on;
   // for a set list of teaching terms also the chapter, heading, paragraph and line, and at most three short phrases,
@@ -54,7 +65,7 @@
   function isLetter(ch) { return /[a-z0-9À-ɏḀ-ỿ]/i.test(ch || ''); }
   // Find matches in folded text: word-start boundary checked by hand (no lookbehind, so older Safari works).
   function matcher(q) {
-    var words = fold(q.trim()).split(/\s+/).map(function (w) { return alts(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); });
+    var words = fold(q.trim()).split(/\s+/).map(function (w, i, arr) { return wordRe(arr, i); });
     var re = new RegExp(words.join("[\\s\\-–—]+") + "[a-z0-9À-ɏḀ-ỿ]*", 'g');
     return function (text, folded, max) {
       var hits = [], m;
@@ -76,7 +87,7 @@
     var all = fold(q).split(/\s+/).filter(Boolean), words = all.filter(function (w) { return !STOP[w.replace(/['’]/g, '')]; });
     if (!words.length) words = all;
     if (words.length < 2) { var one = matcher(words.join(' ')); one.words = words; return words.length ? one : null; }
-    var res = words.map(function (w) { return new RegExp(alts(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')) + "[a-z0-9À-ɏḀ-ỿ]*", 'g'); });
+    var res = words.map(function (w, i, arr) { return new RegExp(wordRe(arr, i) + "[a-z0-9À-ɏḀ-ỿ]*", 'g'); });
     var W = 200;
     var f = function (text, folded) {
       var lists = [];
