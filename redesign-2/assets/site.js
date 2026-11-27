@@ -12,6 +12,7 @@
     f.allowFullscreen = true;
     f.referrerPolicy = 'strict-origin-when-cross-origin';
     box.replaceChildren(f);
+    f.focus();   // keep keyboard focus on the player that replaced the button (accessibility review, 27 Nov 2026)
   });
 
   // Newsletter: not connected to a mailing service yet, so say so plainly and send nothing.
@@ -49,5 +50,6 @@ document.addEventListener('click', function (e) {
   var sec = b.closest('.rgroup'); if (!sec) return;
   var open = b.classList.contains('rg-all');
   sec.classList.toggle('open', open);
-  if (!open) sec.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  var other = sec.querySelector(open ? '.rg-less' : '.rg-all'); if (other) other.focus({ preventScroll: !open });   // focus follows the button that replaced it
+  if (!open) sec.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 });

@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Jost:ital,wght@0,300;0,400;0,500;1,300&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
 <link rel="stylesheet" href="../assets/site.css?v=7ce1362b">
-<link rel="stylesheet" href="../assets/site2.css?v=84efb222">
+<link rel="stylesheet" href="../assets/site2.css?v=75017f75">
 </head>
 <body data-section="topics" data-group="guide">
 <a class="skip" href="#main">Skip to content</a>
@@ -27,13 +27,13 @@
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <button type="button" class="nav-button" aria-expanded="false" aria-controls="menu">Menu</button>
-    <ul class="menu" id="menu"><li><a href="../start-here/">Start here</a></li><li><a href="../learn/">Learn</a></li><li><a href="../videos/">Library</a></li><li><a href="../the-book/">The Book</a></li><li><a href="../teachers/">Teachers</a></li><li><a href="../conversations/">Conversations</a></li><li><a href="../lineage/">Lineage</a></li><li><a href="../topics/" aria-current="page">Search</a></li></ul>
-    <a class="subscribe" href="#signup">Newsletter</a>
+    <ul class="menu" id="menu"><li><a href="../start-here/">Start here</a></li><li><a href="../learn/">Learn</a></li><li><a href="../library/">Library</a></li><li><a href="../the-book/">The Book</a></li><li><a href="../teachers/">Teachers</a></li><li><a href="../lineage/">About</a></li></ul>
+    <a class="nav-search" href="../topics/" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Search</span></a>
   </div>
 </nav>
 <main id="main">
 <header class="banner slate"><div class="wrap">
-  <p class="label">Every teaching, searchable</p><h1>Search</h1><p class="lead">Search over a million words: every word of about 100 videos, 26 retreat handouts and essays, 441 AMA questions, and the titles and descriptions of 400+ audio recordings. Results are ranked by how often they mention what you search for.</p>
+  <p class="label">Every teaching, searchable</p><h1>Search</h1><p class="lead">Every word of his talks, writings, AMA answers and recording notes, in one search.</p>
 </div></header>
 <section class="section"><div class="wrap">
   <div class="search-panel">
@@ -43,7 +43,8 @@
   <p class="status" id="status" role="status">Loading the teachings…</p>
   <div class="results" id="results"></div>
   <div class="cloud" id="cloud" aria-label="Most frequent words across the teachings"></div>   <!-- below the results, so a search shows its results first (D, 25 Nov 2026) -->
-  <p class="small muted">Sources: his handouts and essays, the Lineage page, the Culadasa Q&amp;A Index (the questions from his AMA sessions), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. You can also type a whole question. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
+  <p class="small muted">Search over a million words: every word of about 100 videos, 26 retreat handouts and essays, 441 AMA questions, and the titles and descriptions of 400+ audio recordings. Results are ranked by how often they mention what you search for.</p>
+  <p class="small muted">Sources: his handouts and essays, the Lineage page, the Culadasa Q&amp;A Index (the questions from his AMA videos), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. You can also type a whole question. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
 </div></section>
 </main>
 <section class="signup" id="signup" aria-labelledby="signup-h">
@@ -66,17 +67,17 @@
     <div>
       <a class="wordmark" href="../">Culadasa</a>
       <nav aria-label="Footer"><ul>
-        <li><a href="../start-here/">Start here</a></li><li><a href="../learn/">Learn</a></li><li><a href="../writings/">Writings</a></li><li><a href="../audio/">Audio</a></li>
-        <li><a href="../videos/">Videos</a></li><li><a href="../online-meetings/">Culadasa AMA sessions</a></li><li><a href="../topics/">Search</a></li>
-        <li><a href="../the-book/">The Mind Illuminated</a></li><li><a href="../teachers/">Teachers</a></li><li><a href="../conversations/">Conversations</a></li>
-        <li><a href="../testimonials/">Testimonials</a></li><li><a href="../lineage/">Lineage</a></li>
+        <li><a href="../start-here/">Start here</a></li><li><a href="../learn/">Learn</a></li><li><a href="../ten-stages/">The ten stages</a></li><li><a href="../library/">Library</a></li>
+        <li><a href="../videos/">Videos</a></li><li><a href="../audio/">Audio</a></li><li><a href="../online-meetings/">AMA videos</a></li><li><a href="../writings/">Writings</a></li><li><a href="../conversations/">Conversations</a></li>
+        <li><a href="../the-book/">The Book</a></li><li><a href="../teachers/">Teachers</a></li><li><a href="../lineage/">About</a></li><li><a href="../testimonials/">Testimonials</a></li>
+        <li><a href="../topics/">Search</a></li><li><a href="#signup">Newsletter</a></li>
       </ul></nav>
     </div>
     <div class="social"><a href="https://www.youtube.com/@Culadasa" aria-label="Culadasa on YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.7 2.7 0 0 0-1.9-1.9C18 4.8 12 4.8 12 4.8s-6 0-7.7.5A2.7 2.7 0 0 0 2.4 7.2 28 28 0 0 0 2 12a28 28 0 0 0 .4 4.8 2.7 2.7 0 0 0 1.9 1.9c1.7.5 7.7.5 7.7.5s6 0 7.7-.5a2.7 2.7 0 0 0 1.9-1.9A28 28 0 0 0 22 12a28 28 0 0 0-.4-4.8ZM10 15.1V8.9l5.2 3.1Z" fill="currentColor"/></svg></a><a href="https://soundcloud.com/culadasa" aria-label="Culadasa on SoundCloud" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.5 10.3a4.6 4.6 0 0 0-8.4-2.4v9.6h8.4a3.6 3.6 0 0 0 0-7.2ZM8.8 8.6v8.9h-.9V9.1Zm-1.8 1v7.9h-.9V9.9Zm-1.8.8v6.8h-.9v-6.6Zm-1.8 1.2v5.6h-.9v-5.4Zm-1.8 1.3v3.2H.7v-3.1Z" fill="currentColor"/></svg></a><a href="https://www.facebook.com/Culadasa.John.Yates/" aria-label="Culadasa on Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.7c0-.9.3-1.5 1.5-1.5h1.5V4.6A20 20 0 0 0 14.3 4.5c-2.2 0-3.8 1.4-3.8 3.9v2.1H8v3h2.5V21Z" fill="currentColor"/></svg></a><a href="https://www.patreon.com/culadasa" aria-label="Culadasa on Patreon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="14.5" cy="9.5" r="5.5" fill="currentColor"/><rect x="3" y="4" width="3" height="16" fill="currentColor"/></svg></a></div>
     <p class="licence">The teachings of Culadasa are offered freely under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0</a> license, as he wished. © 2021–2026.</p>
   </div>
 </footer>
-<script src="../assets/site.js?v=b819f05e" defer></script>
-<script src="../assets/topics.js?v=972d2ad2" defer></script>
+<script src="../assets/site.js?v=929b27b0" defer></script>
+<script src="../assets/topics.js?v=db223e92" defer></script>
 </body>
 </html>

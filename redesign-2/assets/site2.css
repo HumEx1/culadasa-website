@@ -97,3 +97,180 @@ body:not([data-group="book"]) .banner::before{background-image:var(--lat)}
 .masthead.lattice{background:#f5efe2;border-bottom:0;padding:44px 20px 12px}
 .masthead.lattice::before{background-position:center top;-webkit-mask-image:linear-gradient(#000 0,#000 45%,transparent 100%);mask-image:linear-gradient(#000 0,#000 45%,transparent 100%)}
 @media (max-width:760px){.masthead.lattice{padding:26px 16px 10px}}
+
+/* ======================================================================================================
+   Design review pass (D, 27 Nov 2026). Findings and measurements: HumEx1/Claude Culadasa_Website/design-review-2026-11-27/.
+   One sand banner, smaller and the same on every page; a smaller header; one spacing rhythm; rows that open
+   carry a chevron; visible keyboard focus; bigger tap targets; one left edge for text.
+   ====================================================================================================== */
+
+/* --- one sand banner on every page; the section's colour shows only in the short rule under the label --- */
+body{--rule2:#3d7088}
+body[data-section="start-here"]{--rule2:#3d7088}
+body[data-section="learn"]{--rule2:#4a5d48}
+body[data-section="topics"]{--rule2:#6b6f4c}
+body[data-section="library"]{--rule2:#9a7b25}
+body[data-section="book"]{--rule2:#b6835d}
+body[data-section="teachers"]{--rule2:#a8693f}
+body[data-section="lineage"]{--rule2:#5c7354}
+body:not([data-group="book"]) .banner,.banner.cover{position:relative;overflow:hidden;background:#dbc9ad;color:#141c21;border:0}
+body:not([data-group="book"]) .banner h1,body:not([data-group="book"]) .banner .label,
+body:not([data-group="book"]) .banner .lead,body:not([data-group="book"]) .banner p,body:not([data-group="book"]) .banner a{color:#141c21}
+body:not([data-group="book"]) .banner::before{background-image:var(--lattice)}
+body:not([data-group="book"]) .banner .label::after,.banner.cover .label::after{background:var(--rule2);height:3px}
+body:not([data-group="book"]) .banner .btn.ghost,body:not([data-group="book"]) .banner .btn.light{border-color:#141c21;color:#141c21;background:transparent}
+body:not([data-group="book"]) .banner .btn.ghost:hover,body:not([data-group="book"]) .banner .btn.light:hover{background:#141c21;color:#dbc9ad}
+body:not([data-group="book"]) .banner :focus-visible{outline-color:#141c21;box-shadow:0 0 0 4px #dbc9ad}
+.menu a[aria-current="page"],.menu button.group[aria-current="page"],body[data-section="book"] .menu a[aria-current="page"]{border-bottom-color:var(--rule2)}
+.banner .phone-only{display:none}
+
+/* --- banner sizes: label, rule, title and a lead of two lines at most; 232 px on desktop, about 175 px on phones --- */
+@media (min-width:761px){
+  body:not([data-group="book"]) .banner,.banner.cover{padding:32px 0;min-height:232px;box-sizing:border-box}
+  body:not([data-group="book"]) .banner.lib-banner{height:auto;min-height:232px}
+  .banner h1{font-size:clamp(34px,4.2vw,44px);margin-bottom:8px}
+  .banner h1.long{font-size:36px}
+  .banner .lead{font-size:18.5px;line-height:1.55}
+  .banner.lib-banner .wrap > p:last-child:not(.lead){top:20px}
+}
+@media (max-width:760px){
+  body:not([data-group="book"]) .banner,.banner.cover{padding:24px 0}
+  body:not([data-group="book"]) .banner.lib-banner{height:auto;min-height:175px}
+  .banner .label{font-size:12px;line-height:1.4;letter-spacing:.18em;margin-bottom:12px}
+  body:not([data-group="book"]) .banner .label::after,.banner.cover .label::after{width:28px;margin-top:8px}
+  .banner h1{font-size:28px;line-height:1.15;margin-bottom:8px}
+  .banner h1:last-child{margin-bottom:0}
+  .banner .lead{font-size:16.5px;line-height:1.45}
+  .banner .btn{margin-top:12px;min-height:40px}
+  .banner .phone-only{display:inline}
+  .banner.lib-banner .wrap > p:last-child:not(.lead){display:none}   /* the button is the link at the end of the lead */
+}
+
+/* --- header: 156 -> about 125 px on phones, 212 -> about 165 px on desktop; the tagline at a readable contrast --- */
+.masthead.lattice .tagline{color:#7d5f1f}
+@media (max-width:760px){
+  .masthead.lattice{padding:16px 16px 8px}
+  .masthead .wordmark{font-size:24px}
+  .masthead .tagline{margin-top:8px}
+  .nav .wrap{min-height:48px}
+  .nav-button{min-height:44px}
+}
+@media (min-width:761px){
+  .masthead.lattice{padding:32px 20px 8px}
+  .masthead .wordmark{font-size:clamp(30px,3.6vw,44px)}
+  .masthead .tagline{margin-top:12px;font-size:14px}
+  .nav .wrap{min-height:48px}
+  .menu a,.menu .group,.menu button.group{padding-top:14px;padding-bottom:12px}
+}
+/* Search in the menu row, where Newsletter was (Newsletter is in the footer) */
+.nav-search{margin-left:12px;display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--teal);border-radius:999px;
+  font:500 12.5px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);text-decoration:none;flex:none;box-sizing:border-box}
+.nav-search svg{width:17px;height:17px}
+.nav-search:hover,.nav-search[aria-current="page"]{background:var(--teal);color:#fff}
+.nav-search:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+@media (max-width:760px){.nav-search{margin:0;min-height:44px}}
+/* tablets and narrow windows: the menu stays on one row */
+@media (min-width:761px) and (max-width:1099px){
+  .menu{gap:0}
+  .menu a,.menu .group,.menu button.group{padding-left:8px;padding-right:8px;letter-spacing:.08em;font-size:13px}
+  .nav .wrap{padding:0 16px}
+  .nav-search{margin-left:4px;padding:0 12px;letter-spacing:.08em}
+}
+@media (min-width:761px) and (max-width:879px){.nav-search span{display:none}.nav-search{padding:0 12px}}
+
+/* --- one spacing rhythm: 48 px between sections on phones, 96 on desktop; 24 / 32 after a banner --- */
+@media (max-width:760px){
+  .section{padding:24px 0}
+  .section.tight{padding:16px 0}
+  .section.band-panel,.section.banner-section{padding:32px 0}
+  .section.tight.band-panel{padding:24px 0}
+  .banner + .section,.banner + article.section{padding-top:24px}
+  .signup .wrap{padding-top:32px;padding-bottom:32px}
+  .lib-side{padding-top:12px}
+  .lib-side ul{gap:6px}
+  .lib-side a{padding:8px 11px}
+  .lib-main > .section:first-child{padding-top:12px}
+  body[data-section="library"] .search.scoped{margin-bottom:24px}
+  body[data-section="library"] .search.scoped:last-child{margin-bottom:0}
+  h2{font-size:24px;margin-bottom:12px}
+  h3{font-size:20px}
+  .card{padding:16px}
+  .grid{gap:16px}
+  .steps>li{padding:24px 0}
+  .convo{padding:24px 0}
+  .quote{padding:16px;margin-bottom:16px}
+  .two{gap:16px}
+  .initials.big{width:96px;font-size:32px}
+  .book-cover img{max-width:220px;margin:0 auto}
+  .book-buy{margin-top:16px}
+  .stage-pin{padding:16px}
+  .lead-hero .wrap{padding-top:24px;padding-bottom:32px;gap:24px}
+  .lead-hero h1{font-size:28px;margin-bottom:8px}
+  .lead-hero .by{margin-bottom:16px}
+  .lead-hero .actions{flex-wrap:nowrap;gap:8px;margin-bottom:20px}
+  .lead-hero .actions .btn{flex:1 1 auto;padding:0 12px;white-space:nowrap}
+}
+@media (min-width:761px){
+  .section{padding:48px 0}
+  .section.tight{padding:32px 0}
+  .section.band-panel,.section.banner-section{padding:64px 0}
+  .section.tight.band-panel{padding:48px 0}
+  .banner + .section,.banner + article.section{padding-top:32px}
+  .lib-side{padding-top:32px}
+  .lib-main > .section:first-child{padding-top:32px;padding-bottom:0}
+  .lib-main .search.scoped{margin-bottom:32px}
+  .lib-main .search.scoped:last-child{margin-bottom:0}
+  .lib-main > .section + .section{padding-top:32px}
+  .lead-hero .wrap{padding-top:48px;padding-bottom:48px}
+  .lead-hero .actions{margin-bottom:24px}
+}
+
+/* --- the search tool on phones: field and button on one row, the kinds in one row that scrolls --- */
+@media (max-width:760px){
+  .scoped-row,.search-panel .search{flex-wrap:nowrap;gap:8px}
+  .scoped-row input,.search-panel .search input{flex:1 1 0;min-width:0;min-height:48px;padding:0 16px}
+  .scoped-row .btn,.search-panel .search .btn{min-height:48px;padding:0 16px;flex:none}
+  .scope,.search-panel .filters{flex-wrap:nowrap;overflow-x:auto;margin-top:12px;scrollbar-width:none;min-width:0;max-width:100%;
+    -webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent)}
+  .scope::-webkit-scrollbar,.search-panel .filters::-webkit-scrollbar{display:none}
+  .scope > *,.search-panel .filters > *{flex:none}
+  .status{margin-top:12px}
+  .results{margin-top:16px}
+  .rr-hint{margin-top:0}
+}
+
+/* --- rows that open: a chevron at the right instead of the bullet; it turns when the row is open --- */
+.rgroup .rr-name::before{content:none}
+.rr-title,.lrow > summary{position:relative;box-sizing:border-box;min-height:48px;padding-right:36px;padding-left:8px}
+.rr-title::after,.lrow > summary::after{content:"";position:absolute;right:12px;top:22px;width:8px;height:8px;
+  border-right:2px solid var(--teal);border-bottom:2px solid var(--teal);transform:rotate(45deg);transition:transform .15s}
+.rrow.open .rr-title::after,.lrow[open] > summary::after{transform:rotate(-135deg);top:26px}
+.rr-title:hover,.lrow > summary:hover{background:#efe6d3}
+.rrow.open .rr-title,.lrow[open] > summary{background:#f0e8d6}
+.rrow .rr-body,.lrow > .rr-body{padding-left:8px;max-width:720px}
+@media (prefers-reduced-motion:reduce){.rr-title::after,.lrow > summary::after{transition:none}}
+
+/* --- visible keyboard focus on every control (accessibility review) --- */
+.filters button:focus-visible,.cloud button:focus-visible,.video button:focus-visible,.scope-pill input:focus-visible + span,
+.scope-all:focus-visible,.scope-clear:focus-visible,.rg-all:focus-visible,.rg-less:focus-visible,.lib-side a:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.video button:focus-visible{outline-offset:-4px;outline:3px solid #fff;box-shadow:inset 0 0 0 6px var(--teal)}
+/* the boxes people type into have an edge you can see */
+.search input,.scoped-row input,#tq{border-color:#8c8470}
+.filters button .muted{color:var(--muted)}
+
+/* --- bigger tap targets: times, stage links --- */
+a.play,a.tstamp,.qlist > li > a.t,li > a.t[href*="youtube.com/watch"],p.qtime a{min-height:28px}
+@media (max-width:760px){a.play,a.tstamp,.qlist > li > a.t,li > a.t[href*="youtube.com/watch"],p.qtime a{min-height:32px;padding:6px 12px 6px 10px}}
+.qlist li{column-gap:14px}
+@media (min-width:761px){.qlist li{grid-template-columns:max-content minmax(0,1fr)}}
+.stage-nav a{display:inline-flex;align-items:center;min-height:44px}
+
+/* --- one left edge: text columns start where the banner title starts --- */
+.wrap.measure{max-width:var(--wrap)}
+.wrap.measure > *{max-width:var(--measure)}
+main p.small{max-width:var(--measure)}
+
+/* --- new pieces --- */
+.teacher-statement{font-size:18px;line-height:1.6;color:var(--body);margin:0 0 24px}
+.book-link{margin:12px 0 0;font:500 16px/1.4 var(--display)}
+.grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}

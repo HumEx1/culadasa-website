@@ -10,8 +10,8 @@
   // Scoped search (D, 25 Nov 2026): one box, and pills that each switch a part of the site on or off, independently,
   // so Writings and AMA sessions can be searched together. Clear switches them all off, which searches everything.
   // The count and the status line follow the choice. Writings = handouts and essays. The Lineage page is searched when nothing is switched on.
-  var KINDS = [['video', 'Videos'], ['audio', 'Audio'], ['ama', 'AMA sessions'], ['writings', 'Writings'], ['book', 'The Book']];   // the Library order (D, 25 Nov 2026)
-  var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA sessions', video: 'the videos', audio: 'the audio recordings', book: 'The Mind Illuminated' };
+  var KINDS = [['video', 'Videos'], ['audio', 'Audio'], ['ama', 'AMA'], ['writings', 'Writings'], ['book', 'The Book']];   // the Library order (D, 25 Nov 2026)
+  var SCOPE_NAME = { writings: 'the Writings', ama: 'the AMA videos', video: 'the videos', audio: 'the audio recordings', book: 'The Mind Illuminated' };
   function selected() { return KINDS.map(function (k) { return k[0]; }).filter(function (k) { return SEL[k]; }); }
   function scopeText() {
     var s = selected().map(function (k) { return SCOPE_NAME[k]; });
@@ -41,7 +41,7 @@
   // one per page (the limits of Google Books' snippet view). Loaded only when a search covers the book.
   var BOOK = null, bookLoading = false;
   var OPEN = {}, OPENROW = {}, lastQ = '';   // sections the reader opened; kept when late data (book, transcripts) redraws the same search
-  var GROUP = { video: [0, 'Videos'], ama: [1, 'AMA sessions'], writings: [2, 'Writings'], about: [2, 'Writings'], all: [2, 'Writings'], audio: [3, 'Audio'], book: [4, 'The Book'] };   // the same kinds as the lozenges
+  var GROUP = { video: [0, 'Videos'], ama: [1, 'AMA videos'], writings: [2, 'Writings'], about: [2, 'Writings'], all: [2, 'Writings'], audio: [3, 'Audio'], book: [4, 'The Book'] };   // the same kinds as the lozenges
   var TR = null, trLoading = false;   // the video transcripts: loaded only when a search needs them
   var TYPE_OF = { 'Handout': 'writings', 'Essay': 'writings', 'Q&A': 'ama', 'Interview': 'all', 'Lineage': 'about', 'Video': 'video', 'Audio': 'audio' };
   var ALIAS = { 'tmi': 'book', 'the-book': 'book', 'mind-illuminated': 'book', 'qa': 'ama', 'q&a': 'ama', 'handout': 'writings', 'handouts': 'writings', 'essay': 'writings', 'essays': 'writings', 'videos': 'video', 'audios': 'audio', 'recordings': 'audio' };
@@ -170,7 +170,7 @@
           if (hits[k][0] - last < 260) continue;
           last = hits[k][0];
           var t = timeAt(v, hits[k][0]), u = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + t + 's';
-          snips.push('<a class="tstamp" href="' + u + '" target="_blank" rel="noopener">' + hms(t) + '</a> ' + snippet(v.text, hits, k));
+          snips.push('<a class="tstamp" href="' + u + '" target="_blank" rel="noopener" aria-label="Play from ' + hms(t) + ' on YouTube (opens a new tab)">' + hms(t) + '</a> ' + snippet(v.text, hits, k));
         }
         var first = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + timeAt(v, hits[0][0]) + 's';
         if (amaTitle[v.id]) {
@@ -219,14 +219,14 @@
       var m = i.kind === 'ama' && /#s-([\w-]{11})$/.exec(i.url || '');
       if (m) {
         var v = i.first || 'https://www.youtube.com/watch?v=' + m[1];
-        return '<a href="' + esc(v) + '" target="_blank" rel="noopener">Open the video →</a><a href="' + esc(i.url) + '">All questions in this session →</a>';
+        return '<a href="' + esc(v) + '" target="_blank" rel="noopener">Open the video →</a><a href="' + esc(i.url) + '">All questions in this video →</a>';
       }
       return '<a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(OPEN_LABEL[i.kind] || 'Open') + ' →</a>';
     }
     function card(i) {
       var said = (i.snips || []).map(function (s) { return '<p>' + s + '</p>'; }).join('');
       var body = i.qa
-        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + '>' + esc(x.it.t) + '</a> <span class="qsnip">' + snippet(x.it.text, x.hits, 0) + '</span></li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this session</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
+        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + ' aria-label="Play from ' + esc(x.it.t) + ' on YouTube (opens a new tab)">' + esc(x.it.t) + '</a> <span class="qsnip">' + snippet(x.it.text, x.hits, 0) + '</span></li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this video</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
         : (i.html || said);
       var key = i.kind + '|' + i.title, open = !!OPENROW[key];
       var meta = i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + (i.credit ? ' · ' + i.credit : '');
@@ -243,7 +243,7 @@
     });
     var single = selected().length === 1;
     if (clean !== lastQ) { OPEN = {}; OPENROW = {}; lastQ = clean; }
-    resultsEl.innerHTML = stageLink(clean) + (groups.length ? '<p class="rr-hint">Click a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
+    resultsEl.innerHTML = stageLink(clean) + (groups.length ? '<p class="rr-hint">Select a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
       var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 4, open = single || extra <= 0 || !!OPEN[g.name];
       return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
         '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? ' places' : ' mentions') + '</span></button></h2>' +
@@ -351,14 +351,17 @@
     sec.classList.toggle('open', open);
     OPEN[sec.getAttribute('data-name')] = open;
     sec.querySelector('.rg-toggle').setAttribute('aria-expanded', open);
-    if (!open) sec.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    var other = sec.querySelector(b.classList.contains('rg-all') ? '.rg-less' : b.classList.contains('rg-less') ? '.rg-all' : null); if (other) other.focus({ preventScroll: open });
+    if (!open) sec.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   });
 
   function drawFilters(counts) {
+    var had = document.activeElement && filtersEl.contains(document.activeElement) ? document.activeElement.getAttribute('data-k') : null;
     var searched = counts.all !== undefined;   // before a search the pills show without numbers
     filtersEl.innerHTML = '<button type="button" class="scope-all" data-k="all" aria-pressed="' + !selected().length + '">All' + (searched ? ' <span class="muted">' + counts.all + '</span>' : '') + '</button>' + KINDS.map(function (k) {
       return '<button type="button" data-k="' + k[0] + '" aria-pressed="' + !!SEL[k[0]] + '">' + esc(k[1]) + (searched ? ' <span class="muted">' + (counts[k[0]] || 0) + '</span>' : '') + '</button>';
     }).join('') + '<button type="button" class="scope-clear" data-k="clear">Clear</button>';
+    if (had) { var again = filtersEl.querySelector('[data-k="' + had + '"]'); if (again) again.focus(); }
   }
   filtersEl.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
