@@ -13,7 +13,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 | `/online-meetings/` Online Meetings | Footer link only (bottom of every page); not in the menu | 0 | 0 | 1 |
 | `/writings/` Teachings › Writings | Footer link only (bottom of every page); not in the menu | 1 | 0 | 0 |
 | `/audio/` Teachings › Audio | Footer link only (bottom of every page); not in the menu | 0 | 0 | 0 |
-| `/videos/` Teachings › Videos | Main menu › Library | 0 | 0 | 0 |
+| `/videos/` Teachings › Videos | Footer link only (bottom of every page); not in the menu | 0 | 0 | 0 |
 | `/teachers/` Teachings › Teachers | Main menu › Teachers | 6 | 0 | 0 |
 | `/testimonials/` Teachings › Testimonials | Footer link only (bottom of every page); not in the menu | 0 | 3 | 0 |
 | `/student-testimonials/` Teachings › Student testimonials | Address kept; it forwards to `/testimonials/` (Footer link only (bottom of every page); not in the menu) | 0 | 3 | 0 |
@@ -51,7 +51,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 
 ### `/videos/` Teachings › Videos
 
-- [ ] **How to find it now:** Main menu › Library
+- [ ] **How to find it now:** Footer link only (bottom of every page); not in the menu
 - [ ] All of its text, links and media are in the redesign.
 
 ### `/teachers/` Teachings › Teachers

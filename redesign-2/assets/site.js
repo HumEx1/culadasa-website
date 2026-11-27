@@ -53,3 +53,11 @@ document.addEventListener('click', function (e) {
   var other = sec.querySelector(open ? '.rg-less' : '.rg-all'); if (other) other.focus({ preventScroll: !open });   // focus follows the button that replaced it
   if (!open) sec.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 });
+
+/* the filter rows on phones scroll sideways; mark the ones that do, so only they fade at the edge (27 Nov 2026) */
+(function () {
+  function mark() { document.querySelectorAll('.scope, .search-panel .filters').forEach(function (el) { el.classList.remove('scrolls'); if (el.scrollWidth > el.clientWidth + 2) el.classList.add('scrolls'); }); }
+  window.culadasaMarkScroll = mark;
+  window.addEventListener('load', mark); window.addEventListener('resize', mark); mark();
+})();
+

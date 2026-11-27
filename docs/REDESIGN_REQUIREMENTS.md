@@ -203,3 +203,10 @@ Every need Darin listed for the redesign on 24 November 2026, in his order, with
 77. **Lists read as lists (D, 25 Nov 2026).** Titles under each heading in search results and in the Audio and Videos lists are indented with a small bullet, under a short line saying a title opens. AMA results say "Open the video" and open it on YouTube; a second link opens the session's questions.
 
 78. **Jobs for teachers (D, 25 Nov 2026).** A category of teacher tasks in `docs/VOLUNTEER_TASKS.md` §9: choosing each stage's video, checking stage mentions, marking where he goes beyond the book, and approving or reshaping Start here and Learn.
+
+79. **Design review (27 Nov 2026).** Five independent reviews (information architecture, visual design, above the fold on phones, accessibility, CSS). Changes made, approved by D: one sand banner on every page with the section colour only in the short rule; banners about 175 px on phones and 232 px on desktop; a smaller header; 48 px between sections on phones and 96 on desktop; chevrons on rows that open; visible keyboard focus; larger time buttons with descriptive labels; one left edge for text; a new page-not-found page.
+
+80. **Structure (D, 27 Nov 2026).** Menu: Start here · Learn · Library · The Book · Teachers · About, with a Search button at the right of the menu row; Newsletter in the footer. A Library front page at `library/`; Conversations is a Library room. Lineage is called About (the page stays at `lineage/`). The ten stages sit under Learn and link to The Book. Sample teacher profiles are not published.
+
+81. **Wording (D, 27 Nov 2026).** "AMA sessions" are called "AMA videos" (the search filter says "AMA"). The method is called "The Mind Illuminated Path", or "method" where the context needs it. Every banner introduction is 90 characters or fewer.
+

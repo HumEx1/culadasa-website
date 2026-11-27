@@ -99,7 +99,7 @@ body:not([data-group="book"]) .banner::before{background-image:var(--lat)}
 @media (max-width:760px){.masthead.lattice{padding:26px 16px 10px}}
 
 /* ======================================================================================================
-   Design review pass (D, 27 Nov 2026). Findings and measurements: HumEx1/Claude Culadasa_Website/design-review-2026-11-27/.
+   Design review pass (D, 27 Nov 2026).
    One sand banner, smaller and the same on every page; a smaller header; one spacing rhythm; rows that open
    carry a chevron; visible keyboard focus; bigger tap targets; one left edge for text.
    ====================================================================================================== */
@@ -108,10 +108,10 @@ body:not([data-group="book"]) .banner::before{background-image:var(--lat)}
 body{--rule2:#3d7088}
 body[data-section="start-here"]{--rule2:#3d7088}
 body[data-section="learn"]{--rule2:#4a5d48}
-body[data-section="topics"]{--rule2:#6b6f4c}
-body[data-section="library"]{--rule2:#9a7b25}
-body[data-section="book"]{--rule2:#b6835d}
-body[data-section="teachers"]{--rule2:#a8693f}
+body[data-section="topics"]{--rule2:#5a5e3e}
+body[data-section="library"]{--rule2:#7a6119}
+body[data-section="book"]{--rule2:#8f5f3f}
+body[data-section="teachers"]{--rule2:#8a5530}
 body[data-section="lineage"]{--rule2:#5c7354}
 body:not([data-group="book"]) .banner,.banner.cover{position:relative;overflow:hidden;background:#dbc9ad;color:#141c21;border:0}
 body:not([data-group="book"]) .banner h1,body:not([data-group="book"]) .banner .label,
@@ -256,7 +256,7 @@ body:not([data-group="book"]) .banner :focus-visible{outline-color:#141c21;box-s
 .video button:focus-visible{outline-offset:-4px;outline:3px solid #fff;box-shadow:inset 0 0 0 6px var(--teal)}
 /* the boxes people type into have an edge you can see */
 .search input,.scoped-row input,#tq{border-color:#8c8470}
-.filters button .muted{color:var(--muted)}
+.filters button .muted{color:inherit;opacity:1}   /* counts in the filter pills read at full contrast in every state */
 
 /* --- bigger tap targets: times, stage links --- */
 a.play,a.tstamp,.qlist > li > a.t,li > a.t[href*="youtube.com/watch"],p.qtime a{min-height:28px}
@@ -274,3 +274,13 @@ main p.small{max-width:var(--measure)}
 .teacher-statement{font-size:18px;line-height:1.6;color:var(--body);margin:0 0 24px}
 .book-link{margin:12px 0 0;font:500 16px/1.4 var(--display)}
 .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+
+/* --- round 1 of the adversarial review (27 Nov 2026) --- */
+[hidden]{display:none!important}   /* hidden controls stay hidden whatever their display style */
+.rr-body{overflow-wrap:anywhere}   /* long links in recording notes wrap instead of pushing the page sideways */
+@media (max-width:380px){.lead-hero .actions{flex-wrap:wrap}.lead-hero .actions .btn{white-space:normal}}
+/* the filter row fades at its right edge only when there is more to scroll to */
+@media (max-width:760px){
+  .scope,.search-panel .filters{-webkit-mask-image:none;mask-image:none}
+  .scope.scrolls,.search-panel .filters.scrolls{-webkit-mask-image:linear-gradient(to right,#000 80%,transparent);mask-image:linear-gradient(to right,#000 80%,transparent);padding-right:40px}
+}

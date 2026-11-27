@@ -362,6 +362,7 @@
       return '<button type="button" data-k="' + k[0] + '" aria-pressed="' + !!SEL[k[0]] + '">' + esc(k[1]) + (searched ? ' <span class="muted">' + (counts[k[0]] || 0) + '</span>' : '') + '</button>';
     }).join('') + '<button type="button" class="scope-clear" data-k="clear">Clear</button>';
     if (had) { var again = filtersEl.querySelector('[data-k="' + had + '"]'); if (again) again.focus(); }
+    if (window.culadasaMarkScroll) window.culadasaMarkScroll();
   }
   filtersEl.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;

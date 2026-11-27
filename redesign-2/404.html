@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Jost:ital,wght@0,300;0,400;0,500;1,300&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
 <link rel="stylesheet" href="assets/site.css?v=7ce1362b">
-<link rel="stylesheet" href="assets/site2.css?v=75017f75">
+<link rel="stylesheet" href="assets/site2.css?v=8f6dad2a">
 </head>
 <body data-section="404.html" data-group="home">
 <a class="skip" href="#main">Skip to content</a>
@@ -36,8 +36,8 @@
 <header class="banner teal"><div class="wrap">
   <p class="label">Error 404</p><h1>Page not found</h1><p class="lead">That address isn’t on the site. Search, or choose a way in below.</p>
 </div></header>
-<section class="section tight"><div class="wrap"><form class="search scoped" action="topics/" method="get" role="search" aria-label="Search the teachings"><div class="scoped-row"><label class="sr" for="nf-q">Search</label><input id="nf-q" name="q" type="search" placeholder="Search the teachings"><button class="btn">Search</button></div><fieldset class="scope"><legend class="sr">Where to search</legend><button type="button" class="scope-all" onclick="this.form.querySelectorAll('input[name=type]').forEach(function(c){c.checked=false})">All</button><label class="scope-pill"><input type="checkbox" name="type" value="video"><span>Videos</span></label><label class="scope-pill"><input type="checkbox" name="type" value="audio"><span>Audio</span></label><label class="scope-pill"><input type="checkbox" name="type" value="ama"><span>AMA</span></label><label class="scope-pill"><input type="checkbox" name="type" value="writings"><span>Writings</span></label><label class="scope-pill"><input type="checkbox" name="type" value="book"><span>The Book</span></label><button type="button" class="scope-clear" onclick="this.form.querySelectorAll('input[name=type]').forEach(function(c){c.checked=false});this.form.q.value=''">Clear</button></fieldset></form></div></section>
-<section class="section"><div class="wrap"><div class="grid cols-4"><a class="card" href="start-here/"><span class="meta">New to meditation</span><h3>Start here</h3><span class="more">Go →</span></a><a class="card" href="learn/"><span class="meta">The Mind Illuminated Path</span><h3>Learn</h3><span class="more">Go →</span></a><a class="card" href="library/"><span class="meta">Talks, recordings and writings</span><h3>Library</h3><span class="more">Go →</span></a><a class="card" href="teachers/"><span class="meta">Practice with someone</span><h3>Find a teacher</h3><span class="more">Go →</span></a></div></div></section>
+<section class="section tight"><div class="wrap"><form class="search scoped" action="topics/" method="get" role="search" aria-label="Search the teachings"><div class="scoped-row"><label class="sr" for="nf-q">Search</label><input id="nf-q" name="q" type="search" placeholder="Search the site"><button class="btn">Search</button></div><fieldset class="scope"><legend class="sr">Where to search</legend><button type="button" class="scope-all" onclick="this.form.querySelectorAll('input[name=type]').forEach(function(c){c.checked=false})">All</button><label class="scope-pill"><input type="checkbox" name="type" value="video"><span>Videos</span></label><label class="scope-pill"><input type="checkbox" name="type" value="audio"><span>Audio</span></label><label class="scope-pill"><input type="checkbox" name="type" value="ama"><span>AMA</span></label><label class="scope-pill"><input type="checkbox" name="type" value="writings"><span>Writings</span></label><label class="scope-pill"><input type="checkbox" name="type" value="book"><span>The Book</span></label><button type="button" class="scope-clear" onclick="this.form.querySelectorAll('input[name=type]').forEach(function(c){c.checked=false});this.form.q.value=''">Clear</button></fieldset></form></div></section>
+<section class="section"><div class="wrap"><h2 class="sr">Ways in</h2><div class="grid cols-4"><a class="card" href="start-here/"><span class="meta">New to meditation</span><h3>Start here</h3><span class="more">Go →</span></a><a class="card" href="learn/"><span class="meta">The Mind Illuminated Path</span><h3>Learn</h3><span class="more">Go →</span></a><a class="card" href="library/"><span class="meta">Talks, recordings and writings</span><h3>Library</h3><span class="more">Go →</span></a><a class="card" href="teachers/"><span class="meta">Practice with someone</span><h3>Find a teacher</h3><span class="more">Go →</span></a></div></div></section>
 </main>
 <section class="signup" id="signup" aria-labelledby="signup-h">
   <div class="wrap">
@@ -69,6 +69,7 @@
     <p class="licence">The teachings of Culadasa are offered freely under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0</a> license, as he wished. © 2021–2026.</p>
   </div>
 </footer>
-<script src="assets/site.js?v=929b27b0" defer></script>
+<script src="assets/site.js?v=e3647228" defer></script>
+<script>document.querySelectorAll('a[href^="#"]').forEach(function(a){a.href=location.href.split("#")[0]+a.getAttribute("href")});</script>
 </body>
 </html>
