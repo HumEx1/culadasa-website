@@ -12,19 +12,19 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Section | Items |
 |---|---|
 | Every page: header, menu, newsletter box and footer | 40 |
-| Home | 55 |
-| Start here | 30 |
+| Home | 54 |
+| Start here | 31 |
 | Learn | 60 |
 | Topics | 9 |
 | Library › Writings | 32 |
 | Library › Audio | 1080 |
 | Library › Videos | 185 |
-| Library › Q&A archive | 1784 |
+| Library › Q&A archive | 1783 |
 | Library › Writings › essay | 22 |
 | The Book | 13 |
 | The Book (old address, redirects) | 1 |
 | Teachers | 59 |
-| Conversations | 44 |
+| Conversations | 45 |
 | Lineage | 14 |
 | Lineage (old About address, redirects) | 3 |
 | Footer › Testimonials | 5 |
@@ -59,8 +59,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 30), in the menu; also on 172 more places (81 pages)
 - [ ] **List item:** "The Book"  
   Home (`redesign-2/index.html` line 30), in the menu; also on 169 more places (81 pages)
-- [ ] **Short label:** "Search"  
-  Home (`redesign-2/index.html` line 31), in the menu; also on 184 more places (81 pages)
+- [ ] **Screen-reader label (hidden):** "Search"  
+  Home (`redesign-2/index.html` line 31), in the menu; also on 265 more places (81 pages)
 - [ ] **Paragraph:** "Newsletter"  
   Home (`redesign-2/index.html` line 111), in the newsletter box; also on 161 more places (81 pages)
 - [ ] **Section heading:** "Occasional letters from the archive"  
@@ -128,7 +128,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Link text:** "Stage Ten →"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), in the menu
 
-## Home (55)
+## Home (54)
 
 - [ ] **Page title (browser tab):** "Culadasa — The Mind Illuminated Path"  
   Home (`redesign-2/index.html` line 6)
@@ -145,7 +145,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "— The Yates family, on his wishes in his final days"  
   Home (`redesign-2/index.html` line 42), under "That his work be freely and equally available to all students."
 - [ ] **Link text:** "Search the teachings"  
-  Home (`redesign-2/index.html` line 43), under "That his work be freely and equally available to all students."; also on 2 more places (2 pages)
+  Home (`redesign-2/index.html` line 43), under "That his work be freely and equally available to all students."; also on 3 more places (2 pages)
 - [ ] **Paragraph:** "Culadasa, John Yates Ph.D., spent four decades in the Tibetan and Theravādin traditions and taught physiology and neuroscience. His book The Mind Illuminated joins the two. Everything he taught is here, free."  
   Home (`redesign-2/index.html` line 44), under "That his work be freely and equally available to all students."
 - [ ] **Paragraph:** "Culadasa’s Buddhist Lineage →"  
@@ -176,8 +176,6 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 57), under "Find a teacher"
 - [ ] **Short label:** "Find →"  
   Home (`redesign-2/index.html` line 57), under "Find a teacher"
-- [ ] **Search box hint:** "Search the teachings, for example: compassion"  
-  Home (`redesign-2/index.html` line 65), under "Find a teacher"
 - [ ] **Paragraph:** "Most discussed: mind · meditation · experience · practice · insight · awareness · attention · stage · mindful · feel"  
   Home (`redesign-2/index.html` line 68), under "Find a teacher"
 - [ ] **Paragraph:** "Watch"  
@@ -241,7 +239,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "All conversations →"  
   Home (`redesign-2/index.html` line 103), under "Culadasa on Stream Entry"
 
-## Start here (30)
+## Start here (31)
 
 - [ ] **Page title (browser tab):** "Start here — Culadasa"  
   Start here (`redesign-2/start-here/index.html` line 6)
@@ -249,6 +247,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Start here (`redesign-2/start-here/index.html` line 7)
 - [ ] **Paragraph:** "Seven steps from your first sit to the focus, resilience and calm of a daily practice."  
   Start here (`redesign-2/start-here/index.html` line 36), under "Start here"
+- [ ] **Section heading:** "Seven steps"  
+  Start here (`redesign-2/start-here/index.html` line 38), under "Seven steps"
 - [ ] **Sub-heading:** "Read the beginning meditation handout"  
   Start here (`redesign-2/start-here/index.html` line 38), under "Read the beginning meditation handout"
 - [ ] **Paragraph:** "Two pages on posture, the breath at the nose, and what to do when the mind wanders."  
@@ -454,7 +454,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Writings (`redesign-2/writings/index.html` line 7)
 - [ ] **Paragraph:** "Twenty-six handouts and essays, free to read and download."  
   Library › Writings (`redesign-2/writings/index.html` line 36), under "Writings"
-- [ ] **Search box hint:** "Search the writings"  
+- [ ] **Search box hint:** "Search writings"  
   Library › Writings (`redesign-2/writings/index.html` line 37), under "Writings"
 - [ ] **Section heading:** "Essays"  
   Library › Writings (`redesign-2/writings/index.html` line 37), under "Essays"
@@ -523,7 +523,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Audio (`redesign-2/audio/index.html` line 36), under "Audio"
 - [ ] **Paragraph:** "Open SoundCloud"  
   Library › Audio (`redesign-2/audio/index.html` line 36), under "Audio"
-- [ ] **Search box hint:** "Search the recordings"  
+- [ ] **Search box hint:** "Search recordings"  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"
 - [ ] **legend:** "Where to search"  
   Library › Audio (`redesign-2/audio/index.html` line 37), under "Audio"; also on 5 more places (6 pages)
@@ -2686,7 +2686,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Videos (`redesign-2/videos/index.html` line 36), under "Videos"
 - [ ] **Paragraph:** "Open YouTube"  
   Library › Videos (`redesign-2/videos/index.html` line 36), under "Videos"
-- [ ] **Search box hint:** "Search the videos"  
+- [ ] **Search box hint:** "Search videos"  
   Library › Videos (`redesign-2/videos/index.html` line 38), under "Videos"
 - [ ] **Section heading:** "Talks and discussions"  
   Library › Videos (`redesign-2/videos/index.html` line 39), under "Talks and discussions"
@@ -3051,17 +3051,15 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 2017-12-12 · 10 questions"  
   Library › Videos (`redesign-2/videos/index.html` line 370), under "Culadasa October 2017 Patreon Q&A"
 
-## Library › Q&A archive (1784)
+## Library › Q&A archive (1783)
 
 - [ ] **Page title (browser tab):** "AMA videos — Culadasa"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 6)
 - [ ] **Search description (hidden):** "Every question from Culadasa’s 61 recorded AMA (ask me anything) videos, 2017–2021, with links to his answers."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 7)
-- [ ] **Paragraph:** "Recorded online meetings, 2017–2021"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 36)
 - [ ] **Paragraph:** "His monthly ask-me-anything videos, 2017–2021: every question, linked to his answer."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 36), under "AMA Videos"
-- [ ] **Search box hint:** "Search the AMA questions"  
+- [ ] **Search box hint:** "Search questions"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 38), under "AMA Videos"
 - [ ] **Screen-reader label (hidden):** "AMA videos by year"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 40), under "AMA Videos"
@@ -6708,123 +6706,123 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Search description (hidden):** "Find a teacher certified in The Mind Illuminated method."  
   Teachers (`redesign-2/teachers/index.html` line 7)
 - [ ] **Paragraph:** "Practice with a teacher"  
-  Teachers (`redesign-2/teachers/index.html` line 37)
+  Teachers (`redesign-2/teachers/index.html` line 36)
 - [ ] **Paragraph:** "Certified teachers of The Mind Illuminated, online and in person."  
-  Teachers (`redesign-2/teachers/index.html` line 37), under "Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 36), under "Teachers"
 - [ ] **Section heading:** "Certified Teachers"  
-  Teachers (`redesign-2/teachers/index.html` line 40), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 39), under "Certified Teachers"
 - [ ] **Form label:** "Find a teacher by name"  
-  Teachers (`redesign-2/teachers/index.html` line 44), under "Certified Teachers"; also on 1 more place
+  Teachers (`redesign-2/teachers/index.html` line 43), under "Certified Teachers"; also on 1 more place
 - [ ] **Button:** "Near me"  
-  Teachers (`redesign-2/teachers/index.html` line 44), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 43), under "Certified Teachers"
 - [ ] **Button:** "Teaches online"  
-  Teachers (`redesign-2/teachers/index.html` line 45), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 44), under "Certified Teachers"
 - [ ] **Button:** "In person"  
-  Teachers (`redesign-2/teachers/index.html` line 45), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 44), under "Certified Teachers"
 - [ ] **Expandable heading:** "Map"  
-  Teachers (`redesign-2/teachers/index.html` line 49), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 48), under "Certified Teachers"
 - [ ] **Screen-reader label (hidden):** "Map of teachers"  
-  Teachers (`redesign-2/teachers/index.html` line 49), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 48), under "Certified Teachers"
 - [ ] **List item:** "SA Stephen "Greg" Ascue Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 50), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 49), under "Certified Teachers"
 - [ ] **List item:** "BB Blake Barton Certified 2018"  
-  Teachers (`redesign-2/teachers/index.html` line 51), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 50), under "Certified Teachers"
 - [ ] **List item:** "OB Oliver Bray Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 52), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 51), under "Certified Teachers"
 - [ ] **List item:** "JC Junot Castelyn Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 53), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 52), under "Certified Teachers"
 - [ ] **List item:** "RC Robin Craig Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 54), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 53), under "Certified Teachers"
 - [ ] **List item:** "RC Rachel Cronin Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 55), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 54), under "Certified Teachers"
 - [ ] **List item:** "MD Michael Dunn Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 56), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 55), under "Certified Teachers"
 - [ ] **List item:** "TD Terry Dushenko Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 57), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 56), under "Certified Teachers"
 - [ ] **List item:** "PE Paulin Elley Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 58), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 57), under "Certified Teachers"
 - [ ] **List item:** "JF Jesse Fallon Certified 2018"  
-  Teachers (`redesign-2/teachers/index.html` line 59), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 58), under "Certified Teachers"
 - [ ] **List item:** "CG Chris Gagné Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 60), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 59), under "Certified Teachers"
 - [ ] **List item:** "IG Ivan Ganza Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 61), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 60), under "Certified Teachers"
 - [ ] **List item:** "AK Anna Knutson Geller Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 62), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 61), under "Certified Teachers"
 - [ ] **List item:** "JG Josh Geller Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 63), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 62), under "Certified Teachers"
 - [ ] **List item:** "NG Nick Grabovac Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 64), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 63), under "Certified Teachers"
 - [ ] **List item:** "JG Jeremy Graves Certified 2018"  
-  Teachers (`redesign-2/teachers/index.html` line 65), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 64), under "Certified Teachers"
 - [ ] **List item:** "BH Babette Haemmerle Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 66), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 65), under "Certified Teachers"
 - [ ] **List item:** "JH Jordan Hill Certified 2018"  
-  Teachers (`redesign-2/teachers/index.html` line 67), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 66), under "Certified Teachers"
 - [ ] **List item:** "MH Mary Hill Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 68), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 67), under "Certified Teachers"
 - [ ] **List item:** "MI Matthew Immergut Certified 2018"  
-  Teachers (`redesign-2/teachers/index.html` line 69), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 68), under "Certified Teachers"
 - [ ] **List item:** "TK Tom Kennedy Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 70), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 69), under "Certified Teachers"
 - [ ] **List item:** "NV Nick Van Kleeck Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 71), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 70), under "Certified Teachers"
 - [ ] **List item:** "DK Dor Konforty Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 72), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 71), under "Certified Teachers"
 - [ ] **List item:** "JK Jon Krop Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 73), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 72), under "Certified Teachers"
 - [ ] **List item:** "AL Andrea Lemon Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 74), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 73), under "Certified Teachers"
 - [ ] **List item:** "TL Ted Lemon Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 75), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 74), under "Certified Teachers"
 - [ ] **List item:** "EL Eric Lindo Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 76), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 75), under "Certified Teachers"
 - [ ] **List item:** "AL Anne Lindsey (Chukyi) Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 77), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 76), under "Certified Teachers"
 - [ ] **List item:** "DM Darin McFadyen Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 78), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 77), under "Certified Teachers"
 - [ ] **List item:** "MM Mark Miller Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 79), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 78), under "Certified Teachers"
 - [ ] **List item:** "TM Terry Moody Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 80), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 79), under "Certified Teachers"
 - [ ] **List item:** "WH Wayne Hayden Moreland Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 81), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 80), under "Certified Teachers"
 - [ ] **List item:** "HN Henrik Norberg Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 82), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 81), under "Certified Teachers"
 - [ ] **List item:** "MP Mark Pirtle Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 83), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 82), under "Certified Teachers"
 - [ ] **List item:** "EP Elizabeth Pugh Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 84), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 83), under "Certified Teachers"
 - [ ] **List item:** "JR Jaye Ring Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 85), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 84), under "Certified Teachers"
 - [ ] **List item:** "GR Gabriel Rocheleau Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 86), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 85), under "Certified Teachers"
 - [ ] **List item:** "RS Ricardo Sasaki Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 87), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 86), under "Certified Teachers"
 - [ ] **List item:** "DS David Schultz Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 88), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 87), under "Certified Teachers"
 - [ ] **List item:** "AS Andrew Sherbrooke Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 89), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 88), under "Certified Teachers"
 - [ ] **List item:** "ES Eve Smith Certified 2019"  
-  Teachers (`redesign-2/teachers/index.html` line 90), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 89), under "Certified Teachers"
 - [ ] **List item:** "LT Li-Anne Tang Certified 2022*"  
-  Teachers (`redesign-2/teachers/index.html` line 91), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 90), under "Certified Teachers"
 - [ ] **List item:** "AT Alexandra Tataryn Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 92), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 91), under "Certified Teachers"
 - [ ] **List item:** "DT Darlene Tataryn Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 93), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 92), under "Certified Teachers"
 - [ ] **List item:** "DT Douglas Tataryn Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 94), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 93), under "Certified Teachers"
 - [ ] **List item:** "CW Cliff Walshein Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 95), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 94), under "Certified Teachers"
 - [ ] **List item:** "KW Kim Weeber Certified 2021"  
-  Teachers (`redesign-2/teachers/index.html` line 96), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 95), under "Certified Teachers"
 - [ ] **List item:** "JW Jeff Wooley Certified 2020"  
-  Teachers (`redesign-2/teachers/index.html` line 97), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 96), under "Certified Teachers"
 - [ ] **Paragraph:** "Names and certification years are from the current culadasa.com Teachers page. Profiles, photos and locations will be added once confirmed with each teacher."  
-  Teachers (`redesign-2/teachers/index.html` line 99), under "Certified Teachers"
+  Teachers (`redesign-2/teachers/index.html` line 98), under "Certified Teachers"
 
-## Conversations (44)
+## Conversations (45)
 
 - [ ] **Page title (browser tab):** "Conversations — Culadasa"  
   Conversations (`redesign-2/conversations/index.html` line 6)
@@ -6832,12 +6830,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Conversations (`redesign-2/conversations/index.html` line 7); also on 2 more places (2 pages)
 - [ ] **Paragraph:** "In conversation"  
   Conversations (`redesign-2/conversations/index.html` line 36); also on 1 more place (2 pages)
+- [ ] **Section heading:** "Interviews and podcasts"  
+  Conversations (`redesign-2/conversations/index.html` line 37), under "Interviews and podcasts"
 - [ ] **Image description (alt text):** "Guru Viking Podcast episode 35 cover: Culadasa, Pandemic Series"  
-  Conversations (`redesign-2/conversations/index.html` line 37), under "Conversations"
+  Conversations (`redesign-2/conversations/index.html` line 37), under "Interviews and podcasts"
 - [ ] **Photo caption:** "Image: guruviking.com"  
-  Conversations (`redesign-2/conversations/index.html` line 37), under "Conversations"; also on 1 more place
+  Conversations (`redesign-2/conversations/index.html` line 37), under "Interviews and podcasts"; also on 1 more place
 - [ ] **Text block:** "March 2020"  
-  Conversations (`redesign-2/conversations/index.html` line 37), under "Conversations"
+  Conversations (`redesign-2/conversations/index.html` line 37), under "Interviews and podcasts"
 - [ ] **Paragraph:** "Guru Viking Podcast: Pandemic Series, episode 35 · with Guru Viking"  
   Conversations (`redesign-2/conversations/index.html` line 38), under "Pandemic – Culadasa"
 - [ ] **Paragraph:** "Listen at Guru Viking"  
@@ -7303,7 +7303,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Over 400 recordings: guided meditations, retreats, and questions and answers."  
   library/ (`redesign-2/library/index.html` line 39), under "Audio"
 - [ ] **Short label:** "Ask me anything"  
-  library/ (`redesign-2/library/index.html` line 39), under "Audio"
+  library/ (`redesign-2/library/index.html` line 39), under "Audio"; also on 1 more place (2 pages)
 - [ ] **Paragraph:** "61 monthly AMA videos, 2017–2021: 441 questions, each linked to his answer."  
   library/ (`redesign-2/library/index.html` line 39), under "AMA videos"
 - [ ] **Short label:** "Read"  
@@ -7360,10 +7360,10 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 36), under "Stage One: Establishing a practice"
 - [ ] **Paragraph:** "In the book: Establishing a Practice"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 36), under "Stage One: Establishing a practice"
-- [ ] **Paragraph:** "Start with this video"  
-  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 39), under "Stage One: Establishing a practice"; also on 9 more places (10 pages)
+- [ ] **Section heading:** "Start with this video"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 39), under "Start with this video"; also on 9 more places (10 pages)
 - [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 6 - The Ups and Downs of Practice (and Life!)"  
-  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 41), under "Stage One: Establishing a practice"
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!)"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 42), under "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!)"
 - [ ] **Paragraph:** "27:24 It starts where he talks about Stage One."  
@@ -7470,7 +7470,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "In the book: Tranquility and Equanimity"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 36), under "Stage Ten: Tranquility and equanimity"
 - [ ] **Screen-reader label (hidden):** "Play: Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take?"  
-  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 41), under "Stage Ten: Tranquility and equanimity"; also on 2 more places (2 pages)
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 41), under "Start with this video"; also on 2 more places (2 pages)
 - [ ] **Paragraph:** "56:03 It starts where he talks about Stage Ten."  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 44), under "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take?"
 - [ ] **Screen-reader label (hidden):** "Play from 56:03 on YouTube (opens a new tab)"  
@@ -7545,7 +7545,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "In the book: Interrupted Attention and Overcoming Mind-Wandering"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 36), under "Stage Two: Overcoming mind-wandering"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2020 #1 Patreon Q&A"  
-  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 41), under "Stage Two: Overcoming mind-wandering"; also on 1 more place (2 pages)
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Culadasa October 2020 #1 Patreon Q&A"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 42), under "Culadasa October 2020 #1 Patreon Q&A"; also on 1 more place (2 pages)
 - [ ] **Paragraph:** "32:32 It starts where he talks about Stage Two."  
@@ -7626,7 +7626,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "In the book: Extended Attention and Overcoming Forgetting"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 36), under "Stage Three: Overcoming forgetting"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 #2 Patreon Q&A"  
-  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 41), under "Stage Three: Overcoming forgetting"; also on 1 more place (2 pages)
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Culadasa November 2020 #2 Patreon Q&A"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 42), under "Culadasa November 2020 #2 Patreon Q&A"; also on 1 more place (2 pages)
 - [ ] **Paragraph:** "0:41 It starts where he talks about Stage Three."  
@@ -8089,7 +8089,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "In the book: Mental Pliancy and Pacifying the Senses"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 36), under "Stage Eight: Pacifying the senses"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa August 2018 Patreon Q&A"  
-  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 41), under "Stage Eight: Pacifying the senses"
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "Culadasa August 2018 Patreon Q&A"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 42), under "Culadasa August 2018 Patreon Q&A"
 - [ ] **Paragraph:** "38:25 It starts where he talks about Stage Eight."  
@@ -8150,7 +8150,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "In the book: Mental and Physical Pliancy and Calming the Intensity of Meditative Joy"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 36), under "Stage Nine: Calming the intensity of meditative joy"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 #2 Patreon Q&A"  
-  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 41), under "Stage Nine: Calming the intensity of meditative joy"
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "Culadasa September 2020 #2 Patreon Q&A"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 42), under "Culadasa September 2020 #2 Patreon Q&A"
 - [ ] **Paragraph:** "32:42 It starts where he talks about Stage Nine."  
@@ -8327,29 +8327,29 @@ These appear while using Topics search and the Teachers map; they are not in the
 - [ ] "The teachings could not be loaded. Please reload the page."  
   `redesign-2/assets/topics.js` line 406
 - [ ] "sample teacher"  
-  `redesign-2/assets/teachers.js` line 33
+  `redesign-2/assets/teachers.js` line 34
 - [ ] "teachers shown."  
-  `redesign-2/assets/teachers.js` line 36
+  `redesign-2/assets/teachers.js` line 37
 - [ ] "sample profile"  
-  `redesign-2/assets/teachers.js` line 36
+  `redesign-2/assets/teachers.js` line 37
 - [ ] "on the map"  
-  `redesign-2/assets/teachers.js` line 36
+  `redesign-2/assets/teachers.js` line 37
 - [ ] "is a mock-up"  
-  `redesign-2/assets/teachers.js` line 36
+  `redesign-2/assets/teachers.js` line 37
 - [ ] "are mock-ups"  
-  `redesign-2/assets/teachers.js` line 36
+  `redesign-2/assets/teachers.js` line 37
 - [ ] "until teachers send their details."  
-  `redesign-2/assets/teachers.js` line 36
+  `redesign-2/assets/teachers.js` line 37
 - [ ] "Nearest first."  
-  `redesign-2/assets/teachers.js` line 36
+  `redesign-2/assets/teachers.js` line 37
 - [ ] "Your browser cannot share a location. Search by town or country instead."  
-  `redesign-2/assets/teachers.js` line 47
-- [ ] "Finding teachers near you…"  
   `redesign-2/assets/teachers.js` line 48
+- [ ] "Finding teachers near you…"  
+  `redesign-2/assets/teachers.js` line 49
 - [ ] "You are here"  
-  `redesign-2/assets/teachers.js` line 52
+  `redesign-2/assets/teachers.js` line 53
 - [ ] "Location was not shared. Search by town or country instead."  
-  `redesign-2/assets/teachers.js` line 54
+  `redesign-2/assets/teachers.js` line 55
 - [ ] "YouTube video"  
   `redesign-2/assets/site.js` line 10
 - [ ] "Thank you. This preview is not connected to a mailing service yet, so your address was not sent or stored anywhere."  

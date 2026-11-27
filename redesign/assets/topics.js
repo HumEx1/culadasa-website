@@ -246,7 +246,7 @@
     resultsEl.innerHTML = stageLink(clean) + (groups.length ? '<p class="rr-hint">Select a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
       var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 4, open = single || extra <= 0 || !!OPEN[g.name];
       return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
-        '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? ' places' : ' mentions') + '</span></button></h2>' +
+        '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? (m === 1 ? ' place' : ' places') : (m === 1 ? ' mention' : ' mentions')) + '</span></button></h2>' +
         g.items.map(function (i, k) { return k < 4 ? card(i) : '<div class="rg-more">' + card(i) + '</div>'; }).join('') +
         (extra > 0 ? '<p class="rg-foot"><button type="button" class="linklike rg-all">Show all ' + g.items.length + ' in ' + esc(g.name) + '</button><button type="button" class="linklike rg-less">Show fewer</button></p>' : '') +
         '</section>';
@@ -351,7 +351,7 @@
     sec.classList.toggle('open', open);
     OPEN[sec.getAttribute('data-name')] = open;
     sec.querySelector('.rg-toggle').setAttribute('aria-expanded', open);
-    var other = sec.querySelector(b.classList.contains('rg-all') ? '.rg-less' : b.classList.contains('rg-less') ? '.rg-all' : null); if (other) other.focus({ preventScroll: open });
+    var target = b.classList.contains('rg-all') ? sec.querySelector('.rg-more .rr-title') : b.classList.contains('rg-less') ? sec.querySelector('.rg-all') : null; if (target) target.focus({ preventScroll: true });   // round 2, 27 Nov 2026
     if (!open) sec.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   });
 

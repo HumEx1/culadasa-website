@@ -284,3 +284,15 @@ main p.small{max-width:var(--measure)}
   .scope,.search-panel .filters{-webkit-mask-image:none;mask-image:none}
   .scope.scrolls,.search-panel .filters.scrolls{-webkit-mask-image:linear-gradient(to right,#000 80%,transparent);mask-image:linear-gradient(to right,#000 80%,transparent);padding-right:40px}
 }
+
+/* --- round 2 of the adversarial review (27 Nov 2026) --- */
+.nav-button:focus-visible{outline:2px solid var(--teal);outline-offset:3px}   /* the phone Menu button shows keyboard focus */
+@media (max-width:760px){
+  .lib-side a{min-height:44px;display:inline-flex;align-items:center;box-sizing:border-box}
+  .lib-side ul.scrolls{-webkit-mask-image:linear-gradient(to right,#000 82%,transparent);mask-image:linear-gradient(to right,#000 82%,transparent)}
+  .banner h1.long{font-size:24px}   /* long titles (stage pages) step down on phones too */
+}
+@media (min-width:761px){
+  .qlist li{grid-template-columns:84px minmax(0,1fr)}   /* one left edge for the questions, whatever the length of the time */
+  .lib-main > .section:last-child{padding-bottom:48px}  /* a Library page does not end hard against the newsletter */
+}

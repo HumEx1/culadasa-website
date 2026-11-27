@@ -50,13 +50,17 @@ document.addEventListener('click', function (e) {
   var sec = b.closest('.rgroup'); if (!sec) return;
   var open = b.classList.contains('rg-all');
   sec.classList.toggle('open', open);
-  var other = sec.querySelector(open ? '.rg-less' : '.rg-all'); if (other) other.focus({ preventScroll: !open });   // focus follows the button that replaced it
+  // keyboard focus: on opening, the first row that appeared (the page does not move); on closing, back to "Show all" (round 2, 27 Nov 2026)
+  var target = open ? sec.querySelector('.rg-more summary, .rg-more .rr-title, .rg-more a') : sec.querySelector('.rg-all');
+  if (target) target.focus({ preventScroll: true });
   if (!open) sec.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 });
 
 /* the filter rows on phones scroll sideways; mark the ones that do, so only they fade at the edge (27 Nov 2026) */
 (function () {
-  function mark() { document.querySelectorAll('.scope, .search-panel .filters').forEach(function (el) { el.classList.remove('scrolls'); if (el.scrollWidth > el.clientWidth + 2) el.classList.add('scrolls'); }); }
+  var cur = document.querySelector('.lib-side [aria-current]');
+  if (cur && window.innerWidth <= 760) { var ul = cur.closest('ul'); ul.scrollLeft = cur.offsetLeft - 16; }   // the current Library room is in view on phones
+  function mark() { document.querySelectorAll('.scope, .search-panel .filters, .lib-side ul').forEach(function (el) { el.classList.remove('scrolls'); if (el.scrollWidth > el.clientWidth + 2) el.classList.add('scrolls'); }); }
   window.culadasaMarkScroll = mark;
   window.addEventListener('load', mark); window.addEventListener('resize', mark); mark();
 })();

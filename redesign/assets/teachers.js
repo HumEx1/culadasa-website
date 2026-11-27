@@ -9,7 +9,7 @@
   var cards = Array.prototype.slice.call(list.querySelectorAll('.tcard'));
   var F = 'all', here = null, map = null, markers = [];
   var box = document.getElementById('mapbox');
-  if (box) box.open = true;  // sample locations exist, so show the map
+  if (box && !box.hidden) box.open = true;  // only when teachers have places to show (27 Nov 2026)
 
   function km(a, b) {
     var R = 6371, r = Math.PI / 180, dLat = (b[0] - a[0]) * r, dLng = (b[1] - a[1]) * r;
@@ -17,9 +17,10 @@
     return 2 * R * Math.asin(Math.sqrt(h));
   }
   function apply() {
-    var term = (q.value || '').trim().toLowerCase(), shown = 0;
+    var fold = function (x) { return (x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); };   // "gagne" finds Gagné
+    var term = fold((q.value || '').trim()), shown = 0;
     cards.forEach(function (c) {
-      var ok = (!term || c.dataset.name.indexOf(term) >= 0 || c.dataset.place.indexOf(term) >= 0) &&
+      var ok = (!term || fold(c.dataset.name).indexOf(term) >= 0 || fold(c.dataset.place).indexOf(term) >= 0) &&
                (F === 'all' || (F === 'online' ? c.dataset.online === '1' : F === 'inperson' ? c.dataset.inperson === '1' : c.dataset.year === F));
       c.hidden = !ok; if (ok) shown++;
     });

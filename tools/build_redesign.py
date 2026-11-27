@@ -99,8 +99,8 @@ def nav_html(current, r, section=''):
             subs = ''.join(f'<li><a href="{r}{h}"{" aria-current=\"page\"" if h == current else ""}>{esc(l)}</a></li>' for l, h in sub)
             out.append(f'<li class="has-sub"><button type="button" class="group" aria-expanded="false" aria-controls="sub-{label.lower()}"{" aria-current=\"page\"" if cur else ""}>{label}</button><ul class="sub" id="sub-{label.lower()}">{subs}</ul></li>')
         else:
-            cur = href == current or SECTION_MENU.get(section) == label
-            out.append(f'<li><a href="{r}{href}"{" aria-current=\"page\"" if cur else ""}>{label}</a></li>')
+            cur = ' aria-current="page"' if href == current else ' aria-current="true"' if SECTION_MENU.get(section) == label else ''
+            out.append(f'<li><a href="{r}{href}"{cur}>{label}</a></li>')
     return ''.join(out)
 
 
@@ -176,7 +176,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
   <div class="wrap">
     <button type="button" class="nav-button" aria-expanded="false" aria-controls="menu">Menu</button>
     <ul class="menu" id="menu">{nav_html(path, r, section)}</ul>
-    <a class="nav-search" href="{r}topics/"{' aria-current="page"' if section == 'topics' else ''}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Search</span></a>
+    <a class="nav-search" href="{r}topics/" aria-label="Search"{' aria-current="page"' if section == 'topics' else ''}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Search</span></a>
   </div>
 </nav>
 <main id="main">
@@ -473,7 +473,7 @@ def stage_pages(r):
         pin_html = ''
         if pin:
             pin_html = f'''<section class="section tight"><div class="wrap"><div class="stage-pin">
-  <p class="label">Start with this video</p>
+  <h2 class="label">Start with this video</h2>
   {video_tile({'id': pin['id'], 'title': pin['title']}, rr).replace('<div class="video" data-id=', f'<div class="video" data-start="{pin["start"]}" data-id=', 1)}
   <p class="small">{play(yt(pin['id'], pin['start']), hms_(pin['start']))} It starts where he talks about Stage {W}.</p>
   <p class="small muted">{'Chosen by the teachers.' if pin.get('chosen') else PROVISIONAL}</p>
@@ -547,7 +547,7 @@ def build():
   <div class="wrap">
     <form class="search" action="topics/" method="get" role="search">
       <label class="sr" for="home-q">Search the teachings</label>
-      <input id="home-q" name="q" type="search" placeholder="Search the teachings, for example: compassion">
+      <input id="home-q" name="q" type="search" placeholder="Search the teachings">
       <button class="btn" type="submit">Search</button>
     </form>
     <p class="small muted" style="margin:14px 0 0">Most discussed: {" · ".join(f'<a href="topics/?q={urllib.parse.quote(w)}">{esc(w)}</a>' for w in cloud_top)}</p>
@@ -595,7 +595,7 @@ def build():
         ('Ask your question', 'Someone has probably asked it already. Search his ' + str(sum(len(s_['items']) for s_ in topics['qna'])) + ' recorded questions and everything he says in about 100 videos, and jump to his answer.', f'<a class="btn" href="{r}topics/">Search the teachings</a>'),
     ]
     body = banner('New to meditation', 'Start here', 'Seven steps from your first sit to the focus, resilience and calm of a daily practice.', 'teal') + f'''
-<section class="section"><div class="wrap measure"><ol class="steps">{''.join(f'<li><div><h3>{t}</h3><p>{d}</p>{a}</div></li>' for t, d, a in steps)}</ol></div></section>
+<section class="section"><div class="wrap measure"><h2 class="sr">Seven steps</h2><ol class="steps">{''.join(f'<li><div><h3>{t}</h3><p>{d}</p>{a}</div></li>' for t, d, a in steps)}</ol></div></section>
 <section class="section band-panel" id="asked"><div class="wrap measure"><p class="label">Frequently asked</p><h2>What people asked him most</h2>
 <p class="muted">From the 441 questions put to him in his AMA videos, 2017–2021. Each link opens his answers, most-discussed first.</p>
 <ul class="doclist">{''.join(f'<li><a href="{r}topics/?q={urllib.parse.quote(f["q"])}&amp;type=Q%26A"><span>{esc(f["label"])}</span><span class="kind">{f["n"]} questions</span></a></li>' for f in content['faq'])}</ul></div></section>'''
@@ -688,7 +688,7 @@ def build():
     essays_all = [(t, k, x) for g, items in WRITINGS for t, k, x in items if k == 'essay']
     essay_index = ('<h2>Essays</h2><p class="muted">All five of his essays on this site, in one place. Each also appears in its group below.</p>'
                    f'<ul class="doclist">{"".join(doc_link(t, k, x, r) for t, k, x in essays_all)}</ul>')
-    body = banner('Read', 'Writings', 'Twenty-six handouts and essays, free to read and download.', 'teal') + '<section class="section"><div class="wrap measure">' + scoped_search(r, 'writings', 'Search the writings', 'w-q') + essay_index + ''.join(
+    body = banner('Read', 'Writings', 'Twenty-six handouts and essays, free to read and download.', 'teal') + '<section class="section"><div class="wrap measure">' + scoped_search(r, 'writings', 'Search writings', 'w-q') + essay_index + ''.join(
         f'<h2>{esc(g)}</h2><ul class="doclist">{"".join(doc_link(t, k, x, r) for t, k, x in items)}</ul>' for g, items in WRITINGS) + '</div></section>'
     page('writings/', 'Writings', body, description='Culadasa’s handouts and essays, free to download.')
 
@@ -753,7 +753,7 @@ def build():
     PL = [('Guided Meditations', '282960661'), ('Questions and Answers', '283520935'), ('Teaching Retreats', '296077102'),
           ('Intensive Meditation Retreats', '283729524'), ('Patreon Q&As', '967729615')]
     body = banner('Listen', 'Audio', 'Over 400 recordings: guided meditations, retreats, and questions and answers.', 'ink',
-                  '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section tight"><div class="wrap">' + scoped_search(r, 'audio', 'Search the recordings', 'a-q') + '</div></section><section class="section"><div class="wrap"><div class="grid">' + ''.join(
+                  '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section tight"><div class="wrap">' + scoped_search(r, 'audio', 'Search recordings', 'a-q') + '</div></section><section class="section"><div class="wrap"><div class="grid">' + ''.join(
         f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All {len(audio_all)} recordings, grouped by retreat or series. Open one for its notes, the handouts that go with it, and the moments in it.</p><p class="rr-hint">Select a title to open it.</p>{row_groups(audio_groups)}</div></section>'
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud.')
 
@@ -781,7 +781,7 @@ def build():
         video_groups.append((f'AMA videos {y}', [vrow(i) for i in ids]))
     body = banner('Watch', 'Videos', 'His talks and AMA (ask me anything) videos, searchable word for word.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
-<section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search the videos', 'v-q')}</div></section>
+<section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search videos', 'v-q')}</div></section>
 <section class="section"><div class="wrap"><h2>Talks and discussions</h2><div class="grid">{''.join(video_tile(v, r) for v in talks)}</div></div></section>
 <section class="section"><div class="wrap"><h2>Every video</h2><p class="muted">All {len(all_vids)} of his videos on YouTube: talks first, then the AMA videos by year. Open one to play it here.</p><p class="rr-hint">Select a title to open it.</p>{row_groups(video_groups)}</div></section>'''
     page('videos/', 'Videos', body, description='Talks, discussions and AMA (ask me anything) videos by Culadasa on YouTube.')
@@ -827,8 +827,8 @@ def build():
 <details class="scard-q"><summary><span class="when-closed">Open all {n_} question{'s' if n_ != 1 else ''}</span><span class="when-open">Close all {n_} question{'s' if n_ != 1 else ''}</span></summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol><p class="scard-close"><button type="button" class="close-q">Close all {n_} question{'s' if n_ != 1 else ''}</button></p></details></div></article>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
-    body = banner('Recorded online meetings, 2017–2021', 'AMA Videos', 'His monthly ask-me-anything videos, 2017–2021: every question, linked to his answer.', 'teal') + f'''
-<section class="section tight"><div class="wrap">{scoped_search(r, 'ama', 'Search the AMA questions', 'qa-q')}</div></section>   
+    body = banner('Ask me anything', 'AMA Videos', 'His monthly ask-me-anything videos, 2017–2021: every question, linked to his answer.', 'teal') + f'''
+<section class="section tight"><div class="wrap">{scoped_search(r, 'ama', 'Search questions', 'qa-q')}</div></section>   
 <section class="section"><div class="wrap">
 <nav class="jump jump-main" id="sessions" aria-label="AMA videos by year"><h2>All {len(isess)} Patreon AMA sessions organized by year</h2><p class="muted">Choose one to go to it. This page remembers the last video you opened on this device.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
 <p class="tinfo-open"><button type="button" class="linklike" id="tinfo-btn" aria-haspopup="dialog" aria-controls="tinfo">About this index</button></p>
@@ -914,7 +914,7 @@ def build():
     items = ''.join(f'''<article class="convo">{convo_img(c)}<div><div class="when">{esc(c['date_label'])}</div>
 <h3><a href="{esc(c['url'])}" rel="noopener">{esc(c['title'])}</a></h3><p class="show">{esc(c['show'])}{f" · with {esc(c['host'])}" if c.get('host') else ''}</p>
 <p>{esc(c['description'])}</p><p class="small">{' · '.join(f'<a href="{esc(u)}" rel="noopener">{esc(l)}</a>' for l, u in c.get('links', []))}</p></div></article>''' for c in convos['items'])
-    body = banner('In conversation', 'Conversations', 'Interviews and podcasts with Culadasa from across the web.', 'gold') + f'<section class="section"><div class="wrap measure">{items}{f'<p class="small muted" style="margin-top:24px">{esc(convos["note"])}</p>' if convos["note"] else ''}</div></section>'
+    body = banner('In conversation', 'Conversations', 'Interviews and podcasts with Culadasa from across the web.', 'gold') + f'<section class="section"><div class="wrap measure"><h2 class="sr">Interviews and podcasts</h2>{items}{f'<p class="small muted" style="margin-top:24px">{esc(convos["note"])}</p>' if convos["note"] else ''}</div></section>'
     page('conversations/', 'Conversations', body, description='Interviews and podcasts with Culadasa from across the web.')
 
     # ---------------------------------------------------------------- lineage (was About; D, 24 Nov 2026)
@@ -1008,8 +1008,8 @@ def build():
   <hr><div class="measure small muted"><p>{esc(content['teachers_intro'][1])}</p><p>{esc(content['teachers_intro'][2])}</p><p>* 2022 graduates were certified to have completed <em>The Mind Illuminated Teacher Training Program</em> under the direct and personal guidance of Upāsaka Culadasa/John Yates PhD and graduates of the program.</p></div>
 </div></section>'''
     page('teachers/', 'Teachers', body, description='Find a teacher certified in The Mind Illuminated method.',
-         extra_head=f'<link rel="stylesheet" href="{r}assets/vendor/leaflet/leaflet.css">\n',
-         extra_js=f'<script src="{r}assets/vendor/leaflet/leaflet.js" defer></script>\n<script src="{r}assets/teachers.js" defer></script>\n')
+         extra_head=f'<link rel="stylesheet" href="{r}assets/vendor/leaflet/leaflet.css">\n' if HAS_PLACES else '',
+         extra_js=(f'<script src="{r}assets/vendor/leaflet/leaflet.js" defer></script>\n' if HAS_PLACES else '') + f'<script src="{r}assets/teachers.js" defer></script>\n')
     for t in teachers['teachers']:
         if t.get('profile') == 'sample':   # kept out of the public site (D, 27 Nov 2026); their data stays in teachers.json for the mock-up
             continue
