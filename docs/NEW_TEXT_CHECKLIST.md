@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 4106 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 4139 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -19,7 +19,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Library › Writings | 32 |
 | Library › Audio | 1080 |
 | Library › Videos | 185 |
-| Library › Q&A archive | 1783 |
+| Library › Q&A archive | 1816 |
 | Library › Writings › essay | 22 |
 | The Book | 13 |
 | The Book (old address, redirects) | 1 |
@@ -43,7 +43,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | ten-stages/stage-8/ | 29 |
 | ten-stages/stage-9/ | 20 |
 | Messages shown by the search and map scripts | 84 |
-| **Total** | **4106** |
+| **Total** | **4139** |
 
 ## Every page: header, menu, newsletter box and footer (40)
 
@@ -3051,7 +3051,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 2017-12-12 · 10 questions"  
   Library › Videos (`redesign-2/videos/index.html` line 370), under "Culadasa October 2017 Patreon Q&A"
 
-## Library › Q&A archive (1783)
+## Library › Q&A archive (1816)
 
 - [ ] **Page title (browser tab):** "AMA videos — Culadasa"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 6)
@@ -3304,7 +3304,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "I started to think that loving-kindness is just another view. It’s just a mental construct. You tend to see someone as repulsive or perceive them as pleasant or desirable, but it’s just a mental construct. It’s just a way of seeing things for a moment and then it disappears."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 85), under "March 2021 #2"
 - [ ] **Screen-reader label (hidden):** "Play from 1:06:31 on YouTube (opens a new tab)"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 85), under "March 2021 #2"
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 85), under "March 2021 #2"; also on 1 more place
 - [ ] **Paragraph:** "Is there a way you would approach reading the suttas sequentially?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 85), under "March 2021 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2021 Patreon Q&A No1"  
@@ -3374,6 +3374,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "00:46:06 Sometimes I feel my pulse in my head and body and a slight tingling feeling. Is that awareness?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 97), under "February 2021 #2"
 - [ ] **Paragraph:** "That knowing without noticing is awareness without a movement of attention taking place. That’s what awareness feels like."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 97), under "February 2021 #2"
+- [ ] **Screen-reader label (hidden):** "Play from 38:24 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 97), under "February 2021 #2"
 - [ ] **Screen-reader label (hidden):** "Play from 46:57 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 97), under "February 2021 #2"
@@ -3702,6 +3704,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "What is reborn is the Self. And every time the Self is reborn, it’s different, but what it is is based on what it was and what it did the last time it arose. In its last birth."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 139), under "November 2020 #2"
 - [ ] **Paragraph:** "So the idea of karma and reincarnation is a crude level of understanding, understanding at the level of mythical and magical of what is a very real process that’s happening hour by hour, moment by moment."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 139), under "November 2020 #2"
+- [ ] **Screen-reader label (hidden):** "Play from 1:17:58 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 139), under "November 2020 #2"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 140), under "November 2020 #2"; also on 1 more place (2 pages)
@@ -4443,7 +4447,11 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 241), under "January 2020 #2 - Monday"
 - [ ] **Paragraph:** "You would be guided in mahamudra to answer some ridiculous questions in the first place. Like, “What color is the mind?”, “What’s shape of the mind?”, “How big is the mind?”, “Where is the mind?”, and things like this. These are absurd questions. But they are the way that attention frames the world."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 241), under "January 2020 #2 - Monday"
+- [ ] **Screen-reader label (hidden):** "Play from 55:01 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 241), under "January 2020 #2 - Monday"
 - [ ] **Paragraph:** "The mind is in constant interaction with something that it doesn’t know, and that it’s trying to know."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 241), under "January 2020 #2 - Monday"
+- [ ] **Screen-reader label (hidden):** "Play from 59:28 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 241), under "January 2020 #2 - Monday"
 - [ ] **Paragraph:** "Keywords meditating on the mind · mahamudra , merging of attention and awareness , mind as mental construct"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 241), under "January 2020 #2 - Monday"
@@ -4473,6 +4481,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
 - [ ] **Paragraph:** "The hindrances are really categories of distraction that produce movement of attention. And to subdue the hindrances is just a shorthand way of saying “overcome movements of the mind”."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
+- [ ] **Screen-reader label (hidden):** "Play from 3:22 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
 - [ ] **Paragraph:** "Keywords mental counterpart appearance · paṭibhāga-nimitta, nada sound, divine fragrance, divine nectar"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
 - [ ] **Screen-reader label (hidden):** "Play from 51:00 on YouTube (opens a new tab)"  
@@ -4486,6 +4496,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "And so we go from recognizing the illusory nature as illusory and the ultimate nature as real to the more difficult place of the complete falling away of the illusory nature, and experiencing the ultimate reality of the apparent nature as ultimate reality as well."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
 - [ ] **Paragraph:** "So form is emptiness, and emptiness is form."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
+- [ ] **Screen-reader label (hidden):** "Play from 1:02:44 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
 - [ ] **Paragraph:** "Keywords fourth path, form is emptiness, emptiness is form, non-duality of duality and non-duality"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 247), under "January 2020 #1 - Sunday"
@@ -4606,6 +4618,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "00:29:01 Once nibbāna and a practitioner rests in this state more permanently, does that mean that there’s no more shadow work remaining, and that everything is known, seen and integrated such that we will not fall victim to our shadow parts influencing how we create and express in this world via thought, gesture and physical health and well-being and so on?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 265), under "November 2019 - Friday the 29th"
 - [ ] **Paragraph:** "It is very difficult to put into words what it is like to be awakened because words and anything that they refer to, they belong to the world of appearances."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 265), under "November 2019 - Friday the 29th"
+- [ ] **Screen-reader label (hidden):** "Play from 13:37 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 265), under "November 2019 - Friday the 29th"
 - [ ] **Screen-reader label (hidden):** "Play from 37:31 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 265), under "November 2019 - Friday the 29th"
@@ -4875,6 +4889,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"
 - [ ] **Paragraph:** "If you surrender to it, then there’s nothing there. So you experience it exactly as it is. No more, no less."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"
+- [ ] **Screen-reader label (hidden):** "Play from 40:12 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"
 - [ ] **Paragraph:** "Keywords surrender, acceptance, letting go, let it come, let it be, let it go, not resisting · non-resistance, non-doing, craving, surrendering to the higher power, refuge in the Buddha, the dharma, and the saṅgha, three definitions of the saṅgha"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 295), under "20190517"
 - [ ] **Paragraph:** "Is there a reason for shifting to the abdomen before beginning the body scan in Stage 5. I have on occasion gone straight into the body scan from attention on the breath at the nostrils. Is this problematic in some way?"  
@@ -4981,7 +4997,11 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 307), under "April 2019"
 - [ ] **Paragraph:** "[I]t’s not like you’re going into some other place and coming out of it. It’s just that when it’s appropriate, this way of seeing things arises. And when this way of seeing things arises, it allows you to participate in that wholeness, which is where your awareness resides. And as a matter of fact, it’s not even your awareness, it’s just a local manifestation of the awareness of that wholeness itself, of suchness itself. So it’s something that suchness does that manifests locally, that allows local activity."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 307), under "April 2019"
+- [ ] **Screen-reader label (hidden):** "Play from 24:30 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 307), under "April 2019"
 - [ ] **Paragraph:** "[Y]ou recognize that the relative truth is a necessary part of that greater truth in order for something in the form of a human being to participate in that greater dance of wholeness."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 307), under "April 2019"
+- [ ] **Screen-reader label (hidden):** "Play from 26:07 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 307), under "April 2019"
 - [ ] **Paragraph:** "Keywords falling away of sense of separateness, non-duality of being and non-being , ten fetters, first to second path, second to third path, satipaṭṭhāna, addiction to craving · craving for craving"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 307), under "April 2019"
@@ -5073,6 +5093,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 313), under "March 2019"
 - [ ] **Paragraph:** "[…] Geshe Dorjee said to me in a conversation where I brought up lay practice vs. monastic practice[, ]“Lay practice is much more difficult, but much more powerful than the monastic approach; the monastic approach is easier, but not as powerful”."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 313), under "March 2019"
+- [ ] **Screen-reader label (hidden):** "Play from 1:39:50 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 313), under "March 2019"
 - [ ] **Paragraph:** "Keywords Geshe Thupten Dorjee"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 313), under "March 2019"
 - [ ] **Screen-reader label (hidden):** "Play from 1:40:49 on YouTube (opens a new tab)"  
@@ -5125,6 +5147,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
 - [ ] **Paragraph:** "[S]o the essence of jhāna , or the flow state, is […] exclusion of these other things"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
+- [ ] **Screen-reader label (hidden):** "Play from 53:19 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
 - [ ] **Paragraph:** "Keywords Stephen Hawking , black holes evaporating , Hawking radiation , jhāna “blinders”`"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
 - [ ] **Screen-reader label (hidden):** "Play from 54:19 on YouTube (opens a new tab)"  
@@ -5150,6 +5174,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "So recognizing that what you’re doing in terms of your relaxation of attention is triggering dullness, that’s important information. […] That’s telling you something about what your mind is doing, and knowing that there is an alternative way to just— not relax the attention, not back away from it, but rather just let it be there in awareness, without attention being drawn to the phenomena, being concerned about the phenomena⁠—and basically, generating a state of non-acceptance where you want this alteration in the breath to just simply go away."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
 - [ ] **Paragraph:** "That’s what’s important there."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
+- [ ] **Screen-reader label (hidden):** "Play from 1:14:30 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
 - [ ] **Paragraph:** "Keywords metacognitive awareness · mindfulness with clear comprehension · sāti-sampajañña, thought replacement · thought substitution, karma is intention"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 319), under "February 2019"
@@ -5183,6 +5209,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Paragraph:** "There are people that I can think of off hand that I doubt really have an honest and open relationship with anybody because of the need that they have to defend their self-image in their own mind by having a positive self-image reflected back to them by other people."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
+- [ ] **Screen-reader label (hidden):** "Play from 23:05 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play from 30:30 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Paragraph:** "One thing that I’m noticing in my practice is that dullness brought on by external tiredness, for example didn’t sleep well last night, is often a relatively unconquerable adversary. I can progress through the stages in that state, but more than often I just end up chasing dream-like thoughts and forgetting. I’ve tried sitting through these feelings, but I also know that if I just wait for a while and come back to it in an hour or tomorrow morning that I can approach my meditation with clarity and energy."  
@@ -5196,6 +5224,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "If you are experiencing anxiety, depression, things like that to such a degree that it impairs your ability to function, see an MD and get a prescription for chemical assistance."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Paragraph:** "If it is something that is manageable without chemical assistance, don’t try to manage it with chemical assistance."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
+- [ ] **Screen-reader label (hidden):** "Play from 34:51 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play from 35:45 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
@@ -5220,6 +5250,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Very difficult concepts to try to express until one has had certain experiences, in which case it’s ah, it is the eternally creative moment. […]"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Paragraph:** "Aeternitās means outside of time. It’s the timeless moment of creation."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
+- [ ] **Screen-reader label (hidden):** "Play from 1:18:36 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
 - [ ] **Paragraph:** "Keywords non-duality of being and non-being"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 325), under "February 2019 Catch-Up"
@@ -5327,6 +5359,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 337), under "December 2018"
 - [ ] **Paragraph:** "Those emotions of appreciation and wonder […] come from our ability to sense at a deep level, the truth. And what is the truth? The truth is that we are a part of something much more vast than ourselves that is unfolding."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 337), under "December 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 35:46 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 337), under "December 2018"
 - [ ] **Paragraph:** "Keywords connection between spirituality and beauty, appreciation of beauty that comes from genetics"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 337), under "December 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 39:44 on YouTube (opens a new tab)"  
@@ -5419,6 +5453,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
 - [ ] **Paragraph:** "Information generation and information exchange are happening at absolutely every level. But that doesn’t mean subjectivity is happening at every level."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 1:12:39 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
 - [ ] **Paragraph:** "Keywords when a tree is falls in the forest, and there is no one there, does it make a sound, non-duality of duality and non-duality, Thomas Nagel, What Is It Like to Be a Bat?`, hard problem of consciousness , subjectivity and memory, hard problem of consciousness, subjectivity and memory, any experience is the construct of the mind, mahamudra"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 1:17:03 on YouTube (opens a new tab)"  
@@ -5457,6 +5493,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
 - [ ] **Paragraph:** "So the moral question of doing harm comes down to not doing anything that knowingly will increase the unnecessary and avoidable suffering in the world. And better yet, to do something to reduce the unnecessary and avoidable suffering in the world."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 1:39:32 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 343), under "November 2018"
 - [ ] **Screen-reader label (hidden):** "Play: November 23, 2018 Culadasa Q&A Catch Up"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 344), under "November 2018"; also on 1 more place (2 pages)
 - [ ] **Button:** "November 23, 2018 Catch-Up"  
@@ -5468,6 +5506,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "As one discovers in the progression through Insight, there’s a realization at some point that in the knowing there’s only the knowing. The knowing happens . Just happens. It’s independent of any knower, or even of any known. That neither of those is anything more than a projection of the mind onto the fact of knowing in order to make it into the kind of information that we can use and do things with. […]"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Paragraph:** "[I]n deep states of meditation, there is a direct experience of that. The realization that there’s only the knowing, there’s only this primordial awareness, or this clear light of mind, this rigpa . And that it’s not just a phenomenon of the individual mind that comes to this realization, but that it is universal."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
+- [ ] **Screen-reader label (hidden):** "Play from 10:00 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Paragraph:** "Keywords information exchange, paṭicca-samuppāda"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
@@ -5489,6 +5529,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Paragraph:** "The Self of one individual is identical to the Self of another in that it is an illusion that has exactly the same properties."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
+- [ ] **Screen-reader label (hidden):** "Play from 42:03 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Paragraph:** "Keywords knowing that you don’t know , non-dualism , nirvana as extinguishing , cessation , suchness , rigpa , information exchange , rebirth as rebirth of self as mental formation , the Self of one individual is identical to the Self of another , The Buddha and Sāti the fisherman’s son"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play from 48:44 on YouTube (opens a new tab)"  
@@ -5498,6 +5540,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "I don’t know how dense the answer to this question may be, so I’ll be appreciative of any resources, practices, teachings from others you have to offer as well."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Paragraph:** "Beauty doesn’t need a purpose. Beauty just is."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
+- [ ] **Screen-reader label (hidden):** "Play from 53:00 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
 - [ ] **Screen-reader label (hidden):** "Play from 55:19 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 349), under "November 23, 2018 Catch-Up"
@@ -5538,6 +5582,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "00:22:58 Do you see any correlation between synesthesia and seeing the breath in the way that Pa-Auk jhānas are practiced, and how does that compare to the synesthesia of an acid trip, seeing the music?"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 355), under "October 29, 2018"
 - [ ] **Paragraph:** "Depending on what stage of the practice you’re in, you may experience [hypnagogia] with the onset of strong dullness. As progressive subtle dullness moves into strong dullness, hypnagogic imagery arises."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 355), under "October 29, 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 17:49 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 355), under "October 29, 2018"
 - [ ] **Paragraph:** "Keywords hypnopompia, lucid dreaming, psychedelics"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 355), under "October 29, 2018"
@@ -5598,6 +5644,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "This is how in interaction between attention and awareness, attention is going try to fulfill the intention of being more aware, and it actually does that by flagging things in awareness that you want to continue to be aware of."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 361), under "September 2018"
 - [ ] **Paragraph:** "But eventually that stops happening, and there’s no need to redirect attention towards those things."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 361), under "September 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 5:36 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 361), under "September 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 6:59 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 361), under "September 2018"
@@ -5677,6 +5725,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
 - [ ] **Paragraph:** "Depending on which is the experiential gateway, and which is the Insight that triggers the deepening of, really all of the Insights, that leads to this empowerment, that will have a certain effect on the way the person experiences the work of second path: whether it’s the focus on craving gives rise to dukkha , or whether it’s the focus on craving is an indicator of self-clinging."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 10:16 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
 - [ ] **Paragraph:** "Keywords four applications of mindfulness - mindfulness of mental states , ten fetters , craving for craving , suffering as translation of dukkha : dukkha covers the entire range of dissatisfaction from the subtlest to most extreme forms , relationship between self-clinging, craving, dukkha , metacognitive awareness · sāti-sampajañña, effortless stable attention · absorption concentration · appana-samadhi, śamatha and vipassanā , states vs traits"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 19:55 on YouTube (opens a new tab)"  
@@ -5710,6 +5760,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Instead, the intention begins to just be the framing of your mind. It’s sort of the background state of your mind that [has a continuous sense of] “I know where I’m heading”."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
 - [ ] **Paragraph:** "And where the emphasis is, you just go with the feeling."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 31:18 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 35:11 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 367), under "August 2018"
@@ -5781,6 +5833,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Paragraph:** "He used the word Awakening because it’s like being in a dream, and then waking up and recognizing that you were in a dream. And seeing how things really are."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 23:32 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Paragraph:** "Keywords naturalization of the dharma , paṭicca-samuppāda , paṭicca-samuppāda is the dharma; the dharma is paṭicca-samuppāda , there is nothing that is outside the realm of causality , nothing is super -natural , experiences vs states vs traits"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 31:20 on YouTube (opens a new tab)"  
@@ -5801,6 +5855,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Paragraph:** "We present is this way, but at its heart, it is the deepest part of the dharma . Through developing the mindfulness to recognize and to direct the intentions, the Mind-System liberates itself."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 40:54 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 42:07 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Paragraph:** "You have mentioned that there are different ways that stream entry might occur. For example through the progress of insight stages, through a PCE, or through a gradual series of lesser awakenings."  
@@ -5816,6 +5872,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "And so, holding in consciousness⁠—remember, consciousness is how all of these parts of the Mind-System are ultimately communicating with each other⁠—so holding clearly in your mind the understanding that is the gift of Insight, and its distinction from, and its differences from the delusion that you lived in before will serve the same purpose as the fruition experience."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Paragraph:** "As a matter of fact, I would put more weight on this practice of intentionally and consciously holding the state of Insight in a very powerful form as being the most important thing to do."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 49:00 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
 - [ ] **Paragraph:** "Keywords pure consciousness experience (PCE) \| consciousness without an object (CWO), cessation · nirodha, nirvana · nibbāna, experiencing the world from the perspective of Insight"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 373), under "July 25, 2018"
@@ -5880,6 +5938,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "So what you want to do is to keep that in mind. Let that background awareness be there. [And] what you’ll notice is that the different things arising and passing away in extrospective awareness and introspective awareness, they are what is drawing your attention away."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 379), under "June 2018"
 - [ ] **Paragraph:** "So it’s just allowing yourself to notice that, not focusing your attention on it. Just notice that your attention is moving, but that you know what your attention is moving."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 379), under "June 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 15:41 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 379), under "June 2018"
 - [ ] **Paragraph:** "Keywords ADD, ADHD"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 379), under "June 2018"
@@ -6073,6 +6133,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
 - [ ] **Paragraph:** "Any time that something comes up, and [you] feel overwhelmed by it, [you] should back away. [You] can reapproach it later on, but if [you] find that every time it comes up, [you] are overwhelmed by it, then [you] should be dealing with it with the assistance of a highly trained therapist."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 1:04:49 on YouTube (opens a new tab)"  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
 - [ ] **Paragraph:** "Keywords dissociation, healthy ego-structure, meditation as tool for dealing with difficult psychological material, dukkha-ñana, meditation as tool for dealing with difficult psychological material , meditation or psychotherapy?`"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
 - [ ] **Screen-reader label (hidden):** "Play from 1:08:19 on YouTube (opens a new tab)"  
@@ -6102,6 +6164,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "It’s taking my preferences, my experiences, my predispositions, and those things that would be called my personality traits and so forth, and it’s assembling them into a self."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
 - [ ] **Paragraph:** "And then it attributes to Self the experience of observation, when in fact in the seeing there’s only the seeing. And it attributes to this created Self the agency that results in not just actions, but at an unconscious level, our thoughts and our emotions, and it appropriates those into the self as “our intentions."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 1:32:02 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
 - [ ] **Paragraph:** "Keywords metacognitive awareness"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 391), under "April 2018"
@@ -6394,6 +6458,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "For example, Shinzen states in his book that he’s only met three or four who perhaps were arhats throughout his life. I find it problematic that the higher stages of Awakening seems so elusive even for people that spent their whole life on the path."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
 - [ ] **Paragraph:** "Shinzen’s approach is to synthesize a completely new meditative approach. Mine is to go back and try to find out what it was about the early ways of practicing that was so incredibly effective that we’ve lost the way."  
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
+- [ ] **Screen-reader label (hidden):** "Play from 1:25:12 on YouTube (opens a new tab)"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
 - [ ] **Paragraph:** "Keywords Shinzen Young, no reincarnation , belief in reincarnation as obstacle to progress on the path , consciousness is not true self , The Buddha and Sāti the fisherman’s son , convergence of science and innovative approaches to meditation"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 409), under "February 2018"
