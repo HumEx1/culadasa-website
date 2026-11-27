@@ -296,3 +296,18 @@ main p.small{max-width:var(--measure)}
   .qlist li{grid-template-columns:84px minmax(0,1fr)}   /* one left edge for the questions, whatever the length of the time */
   .lib-main > .section:last-child{padding-bottom:48px}  /* a Library page does not end hard against the newsletter */
 }
+
+/* --- round 3 of the adversarial review (27 Nov 2026) --- */
+/* sub-pages mark their section in the menu (aria-current="true") the same way the section page does */
+.menu a[aria-current="true"],.menu button.group[aria-current="true"]{color:var(--teal);border-bottom-color:var(--rule2)}
+/* AMA questions in search results share one left edge too */
+@media (min-width:761px){.rrow .qlist li{grid-template-columns:84px minmax(0,1fr)}}
+/* the ten stage titles share one size */
+.banner h1.stage{font-size:36px}
+@media (max-width:760px){.banner h1.stage{font-size:24px}}
+/* very small phones: a little more room for the search prompt */
+@media (max-width:340px){
+  .scoped-row input,.search-panel .search input{padding:0 10px}
+  .scoped-row .btn,.search-panel .search .btn{padding:0 12px}
+  .search-panel,.search.scoped{padding-left:12px;padding-right:12px}
+}

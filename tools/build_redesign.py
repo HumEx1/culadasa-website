@@ -486,6 +486,7 @@ def stage_pages(r):
 <p class="book-link"><a href="{rr}the-book/">About <em>The Mind Illuminated</em> and its method →</a></p></div></section>
 <section class="section"><div class="wrap"><h2>Where he talks about Stage {W}</h2><p class="rr-hint">Select a title to see where it’s mentioned.</p>{row_groups(groups)}
 <nav class="stage-nav" aria-label="Stages">{prev_}<a href="{rr}ten-stages/">All ten stages</a>{next_}</nav></div></section>'''
+        body = body.replace('<h1 class="long">', '<h1>', 1).replace('<h1>', '<h1 class="stage">', 1)   # one title size for all ten stages (round 3, 27 Nov 2026)
         page(f'ten-stages/stage-{n}/', f'Stage {W}: {name}', body, description=f'Stage {W} of The Mind Illuminated, {name}: a video to start with and everything Culadasa said about it.')
     # the overview
     r1 = '../'
@@ -794,7 +795,7 @@ def build():
         return re.sub(r'^0(?=\d)', '', t)
     def q_item(q):
         def quote_html(qq):
-            stamp = f'<p class="qtime"><a href="{esc(qq["url"])}" rel="noopener">{esc(short_time(qq["time"]))}</a></p>' if qq['url'] else ''
+            stamp = f'<p class="qtime"><a href="{esc(qq["url"])}" rel="noopener" aria-label="Play from {esc(short_time(qq["time"]))} on YouTube (opens a new tab)">{esc(short_time(qq["time"]))}</a></p>' if qq['url'] else ''
             return '<blockquote class="qquote">' + ''.join(f'<p>{t}</p>' for t in qq['text']) + stamp + '</blockquote>'
         quotes = ''.join(quote_html(qq) for qq in q['quotes'])
         kws = ''

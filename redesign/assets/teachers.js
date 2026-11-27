@@ -17,7 +17,7 @@
     return 2 * R * Math.asin(Math.sqrt(h));
   }
   function apply() {
-    var fold = function (x) { return (x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); };   // "gagne" finds Gagné
+    var fold = function (x) { return (x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); };   // "gagne" finds Gagné; punctuation ignored
     var term = fold((q.value || '').trim()), shown = 0;
     cards.forEach(function (c) {
       var ok = (!term || fold(c.dataset.name).indexOf(term) >= 0 || fold(c.dataset.place).indexOf(term) >= 0) &&
