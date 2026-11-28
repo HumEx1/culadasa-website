@@ -252,7 +252,7 @@ def scoped_search(r, scope, placeholder, ident):
     # each pill switches on or off by itself, so several parts can be searched together; none on = the whole site (D, 25 Nov 2026)
     # one row of lozenges (D, 25 Nov 2026): All, the kinds, Clear. All = the whole site; Clear = the whole site and an empty box
     pills = ('<button type="button" class="scope-all" onclick="this.form.querySelectorAll(\'input[name=type]\').forEach(function(c){c.checked=false})">All</button>'
-             + ''.join(f'<label class="scope-pill"><input type="checkbox" name="type" value="{k}"{" checked" if k == scope else ""}><span>{esc(t)}</span></label>' for k, t in SCOPES)
+             + ''.join(f'<label class="scope-pill"><input type="checkbox" name="type" value="{k}"{" checked" if k == scope or (isinstance(scope, (list, tuple)) and k in scope) else ""}><span>{esc(t)}</span></label>' for k, t in SCOPES)
              + '<button type="button" class="scope-clear" onclick="this.form.querySelectorAll(\'input[name=type]\').forEach(function(c){c.checked=false});this.form.q.value=\'\'">Clear</button>')
     return (f'<form class="search scoped" action="{r}topics/" method="get" role="search" aria-label="Search the teachings">'
             f'<div class="scoped-row"><label class="sr" for="{ident}">Search</label><input id="{ident}" name="q" type="search" placeholder="{esc(placeholder)}">'
@@ -783,15 +783,23 @@ def build():
     ama_ids = {s_['video']: s_ for s_ in qna if s_.get('video')}
     all_vids = list(dict.fromkeys([v['id'] for v in videos] + list(_trv)))
     def vtitle(i):
-        return vid_by_id[i]['title'] if i in vid_by_id else _trv[i]['title']
+        t_ = vid_by_id[i]['title'] if i in vid_by_id else _trv[i]['title']
+        t_ = t_.replace('┬á', ' ').replace('\u00a0', ' ')   # a non-breaking space garbled on download
+        return re.sub(r'\s*-\s*RE-UPLOAD.*$', '', t_).strip()
     # One Videos room (D, 28 Nov 2026, after looking at how TED, Attia, Lex Fridman, Huberman and Dharma Seed do it):
     # every video in one list, AMA videos as a series in it, filters at the top; each video has its own page.
     def vlen(i):
         mk = (_trv.get(i) or {}).get('marks') or []
         s_ = mk[-1][1] if mk else 0
-        return f'{s_ // 3600} h {s_ % 3600 // 60} min' if s_ >= 3600 else (f'{s_ // 60} min' if s_ else '')
+        return f'{s_ // 3600} h {s_ % 3600 // 60} min' if s_ >= 3600 else (f'{max(1, round(s_ / 60))} min' if s_ else '')
+    held = {s_['video']: (k, s_['title']) for k, s_ in enumerate(qindex['sessions']) if s_.get('video')}   # Alex's index runs oldest first
+    def held_label(i):
+        t_ = held.get(i, (0, ''))[1]
+        m_ = re.fullmatch(r'(19|20)\d\d(\d\d)(\d\d)', t_.strip())   # e.g. Alex's "20190517"
+        return datetime.date(2000, int(m_.group(2)), int(m_.group(3))).strftime('%B ') + str(int(m_.group(3))) + ', ' + t_[:4] if m_ else t_
     def vcard(i):
-        meta = ' · '.join(x for x in ((_trv.get(i) or {}).get('date', ''), vlen(i), f"{len(ama_ids[i]['items'])} questions" if i in ama_ids else '') if x)
+        when = held_label(i) if i in held else (_trv.get(i) or {}).get('date', '')
+        meta = ' · '.join(x for x in (when, vlen(i), f"{len(ama_ids[i]['items'])} questions" if i in ama_ids else '') if x)
         return (f'<li><a class="vcard" href="{r}videos/{i}/"><img src="https://i.ytimg.com/vi/{i}/mqdefault.jpg" alt="" loading="lazy" width="320" height="180">'
                 f'<span class="vc-title">{esc(vtitle(i))}</span><span class="vc-meta">{esc(meta)}</span></a></li>')
     talk_ids = sorted([i for i in all_vids if i not in ama_ids], key=lambda i: (_trv.get(i) or {}).get('date', ''), reverse=True)
@@ -802,18 +810,19 @@ def build():
     vsec = f'<section class="vgroup" data-kind="talk" id="talks"><h2>Talks and discussions <span class="rg-count">{len(talk_ids)}</span></h2><ul class="vcards">{"".join(vcard(i) for i in talk_ids)}</ul></section>'
     ama_intro = (f'<p class="muted vgroup-intro" data-kind="ama">His monthly ask-me-anything sessions on Patreon, 2017–2021. Each video’s page lists the questions asked, '
                  f'from the <a href="{esc(qindex["source"])}" rel="noopener">Culadasa Q&amp;A Index</a> by {esc(qindex["author"])}, with the full transcript. '
-                 'Years: ' + ' · '.join(f'<a href="#ama-{y}">{y}</a>' for y in ama_years) + '</p>')
+                 'Years: ' + ' · '.join(f'<a href="#ama-{y}">{y}</a>' for y in ama_years) + '</p>'
+                 + '<details class="vgroup-intro alex-intro" data-kind="ama"><summary>About the Culadasa Q&amp;A Index, by Alex</summary>'
+                 + ''.join(f'<p>{it["html"]}</p>' for it in qindex['intro'] if it.get('kind') == 'p') + '</details>')
     for y in ama_years:
-        ids = sorted([i for i in ama_ids if ama_year(i) == y], key=lambda i: (_trv.get(i) or {}).get('date', ''), reverse=True)
-        vsec += f'<section class="vgroup" data-kind="ama" id="ama-{y}"><h2>AMA videos {y} <span class="rg-count">{len(ids)}</span></h2><ul class="vcards">{"".join(vcard(i) for i in ids)}</ul></section>'
+        ids = sorted([i for i in ama_ids if ama_year(i) == y], key=lambda i: held.get(i, (0, ''))[0], reverse=True)   # newest session first
+        vsec += (ama_intro if y == ama_years[0] else '') + f'<section class="vgroup" data-kind="ama" id="ama-{y}"><h2>AMA videos {y} <span class="rg-count">{len(ids)}</span></h2><ul class="vcards">{"".join(vcard(i) for i in ids)}</ul></section>'
     chips = ''.join(f'<button type="button" class="vchip" data-show="{k}" aria-pressed="{str(k == "all").lower()}">{esc(t)}</button>'
                     for k, t in (('all', f'All {len(all_vids)}'), ('talk', f'Talks {len(talk_ids)}'), ('ama', f'AMA videos {len(ama_ids)}')))
     body = banner('Watch', 'Videos', 'His talks and AMA (ask me anything) videos, searchable word for word.', 'teal',
                   '<p><a class="btn ghost light" href="https://www.youtube.com/@Culadasa" rel="noopener">Open YouTube</a></p>') + f'''
-<section class="section tight"><div class="wrap">{scoped_search(r, 'video', 'Search videos', 'v-q')}</div></section>
+<section class="section tight"><div class="wrap">{scoped_search(r, ('video', 'ama'), 'Search videos', 'v-q')}</div></section>
 <section class="section"><div class="wrap">
 <div class="vchips" role="group" aria-label="Show">{chips}</div>
-{ama_intro}
 <p class="muted small">Open a video for its page: the player, the questions asked (AMA videos) and the full transcript, where every time plays from that moment.</p>
 {vsec}
 </div></section>
@@ -823,11 +832,13 @@ def build():
   var chips = document.querySelectorAll('.vchip');
   function show(k) {{
     chips.forEach(function (c) {{ c.setAttribute('aria-pressed', c.getAttribute('data-show') === k ? 'true' : 'false'); }});
+    try {{ history.replaceState(null, '', k === 'all' ? location.pathname : '?show=' + k + location.hash); }} catch (e) {{}}
     document.querySelectorAll('.vgroup, .vgroup-intro').forEach(function (g) {{ g.hidden = k !== 'all' && g.getAttribute('data-kind') !== k; }});
   }}
   chips.forEach(function (c) {{ c.addEventListener('click', function () {{ show(c.getAttribute('data-show')); }}); }});
   var q = new URLSearchParams(location.search).get('show'); if (q === 'ama' || q === 'talk') show(q);
   if (/^#ama-/.test(location.hash)) show('ama');
+  window.addEventListener('hashchange', function () {{ if (/^#ama-/.test(location.hash)) {{ show('ama'); var t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }} }});
 }})();
 </script>'''
     page('videos/', 'Videos', body, description='Talks and AMA (ask me anything) videos by Culadasa, each with its questions and full transcript.')
@@ -934,7 +945,7 @@ def build():
     # The AMA page's old address keeps working (D, 28 Nov 2026): a session link (#s-<video id>, or Alex's own anchors)
     # goes to that video's page; anything else to the AMA videos in Videos.
     anchors = {s_['anchor']: s_['video'] for s_ in isess if s_.get('video') and s_.get('anchor')}
-    redirect = ('<script>(function(){var h=location.hash.slice(1),a=' + json.dumps(anchors) + ',m=/^s-([\\w-]{11})$/.exec(h),v=m?m[1]:a[h];'
+    redirect = ('<script>(function(){var h=location.hash.slice(1),a=' + json.dumps(anchors) + ',ids=Object.values(a),m=/^s-([\\w-]{11})$/.exec(h),v=m&&ids.indexOf(m[1])>=0?m[1]:a[h];'
                 'location.replace(v?"../videos/"+v+"/":"../videos/?show=ama");})();</script>\n'
                 '<meta http-equiv="refresh" content="1; url=../videos/?show=ama">\n<link rel="canonical" href="../videos/?show=ama">\n')
     page('online-meetings/', 'AMA videos', '<section class="section"><div class="wrap"><p>The AMA videos are now in <a href="../videos/?show=ama">Videos</a>, each on its own page with its questions and transcript.</p></div></section>', extra_head=redirect)
@@ -953,7 +964,7 @@ def build():
         rv = '../../'
         is_ama = i in ama_ids
         label = f'<a href="{rv}videos/{"?show=ama" if is_ama else ""}">{"AMA video" if is_ama else "Talk"}</a>' + (f' · {ama_year(i)}' if is_ama else '')
-        facts = ' · '.join(x for x in ((tv or {}).get('date', ''), vlen(i)) if x)
+        facts = ' · '.join(x for x in ((f'Held {held_label(i)}' if is_ama and i in held else (tv or {}).get('date', '')), vlen(i)) if x)
         stages_here = []
         for st in stage_data:
             for k in ('videos', 'ama'):
@@ -976,8 +987,8 @@ def build():
                     starts.append((pos, sec))
             for k, (pos, sec) in enumerate(starts):
                 end = starts[k + 1][0] if k + 1 < len(starts) else len(text)
-                paras += (f'<p class="tp" id="t{sec}"><a class="play" href="https://www.youtube.com/watch?v={i}&amp;t={sec}s" data-seek="{sec}" '
-                          f'aria-label="Play from {hms_(sec)}">{hms_(sec)}</a> {esc(text[pos:end].strip())}</p>')
+                paras += (f'<p class="tp" id="t{sec}"><a class="play" href="https://www.youtube.com/watch?v={i}&amp;t={sec}s" '
+                          f'aria-label="Play from {hms_(sec)}">{hms_(sec)}</a> <span class="tt">{esc(html.unescape(text[pos:end]).strip())}</span></p>')
         tr = (f'<section class="vblock" id="transcript"><h2>Transcript</h2>'
               f'<p class="small muted">YouTube’s automatic captions, with the Pāli terms it mishears corrected, so expect mistakes. Each time plays the video from that moment.</p>'
               f'<form class="tfind" role="search" onsubmit="return false"><label class="sr" for="tf">Find in this transcript</label><input id="tf" type="search" placeholder="Find in this transcript" autocomplete="off"><span class="tf-status small muted" role="status"></span></form>'
@@ -985,8 +996,9 @@ def build():
         v = vid_by_id.get(i) or {'id': i, 'title': vtitle(i)}
         body = banner(label, esc(vtitle(i)), '', 'teal') + f'''
 <section class="section vpage"><div class="wrap vgrid" data-video="{i}">
-  <div class="vplayer">{video_tile(v, rv).replace('<h3>', '<h3 class="sr">', 1)}
-    <p class="small vfacts">{esc(facts)} · <a href="https://www.youtube.com/watch?v={i}" rel="noopener">Open on YouTube ↗</a></p>{st_html}</div>
+  <div class="vplayer">{re.sub(r'<h3>.*?</h3>', '', video_tile(v, rv), count=1, flags=re.S)}
+    <p class="small vfacts">{esc(facts)} · <a href="https://www.youtube.com/watch?v={i}" rel="noopener">Open on YouTube ↗</a>{' · <a href="#transcript">Transcript ↓</a>' if tv else ''}</p>{st_html}
+    <p class="small vback"><a href="{rv}videos/{"?show=ama" if is_ama else "?show=talk"}">← All {"AMA videos" if is_ama else "talks"}</a></p></div>
   <div class="vtext">{qs}{tr}</div>
 </div></section>'''
         page(f'videos/{i}/', vtitle(i), add_seek(body, i), description=f'{vtitle(i)}: Culadasa on video, with {"the questions asked and " if is_ama else ""}the full transcript.')
@@ -1144,13 +1156,13 @@ def build():
         (OUT / 'data' / 'teachers.json').write_text(json.dumps(pub, ensure_ascii=False, indent=1))
     # ---------------------------------------------------------------- Library front page (D, 27 Nov 2026: "let's try it")
     n_talks = sum(1 for i in {v['id'] for v in _tr} | {v['id'] for v in videos} if i not in {s_['video'] for s_ in qna if s_.get('video')})
-    rooms = [('Watch', 'Videos', 'videos/', f'{n_talks} talks and {len(qna)} AMA videos, each with its questions and full transcript.'),
+    rooms = [('Watch', 'Videos', 'videos/', f'{n_talks} talks and {len(qna)} AMA videos, every word searchable; each AMA video with its questions.'),
              ('Listen', 'Audio', 'audio/', 'Over 400 recordings: guided meditations, retreats, and questions and answers.'),
              ('Read', 'Writings', 'writings/', f'{N_WRIT} handouts and essays, free to read and download.'),
              ('In conversation', 'Conversations', 'conversations/', 'Interviews and podcasts with Culadasa from across the web.')]
     body = banner('Read, watch, listen', 'Library', 'The complete body of work: talks, recordings, AMA videos and writings, free to all.', 'teal') + f'''
 <section class="section tight"><div class="wrap">{scoped_search(r, '', 'Search the library', 'l-q')}</div></section>
-<section class="section"><div class="wrap"><h2 class="sr">The rooms of the Library</h2><div class="grid cols-3 library-rooms">{''.join(f'<a class="card" href="{r}{h}"><span class="meta">{esc(m)}</span><h3>{esc(t)}</h3><p>{esc(d)}</p><span class="more">Open →</span></a>' for m, t, h, d in rooms)}</div></div></section>'''
+<section class="section"><div class="wrap"><h2 class="sr">The rooms of the Library</h2><div class="grid cols-4 library-rooms">{''.join(f'<a class="card" href="{r}{h}"><span class="meta">{esc(m)}</span><h3>{esc(t)}</h3><p>{esc(d)}</p><span class="more">Open →</span></a>' for m, t, h, d in rooms)}</div></div></section>'''
     page('library/', 'Library', body, description='The complete body of work of Upasaka Culadasa: talks, recordings, AMA videos and writings, free to all.')
 
     # ---------------------------------------------------------------- page not found (design review, 27 Nov 2026)

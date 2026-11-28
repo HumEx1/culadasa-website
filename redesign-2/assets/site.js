@@ -85,7 +85,8 @@ document.addEventListener('click', function (e) {
     var cur = null; paras.forEach(function (p) { if (+p.id.slice(1) <= sec) cur = p; p.classList.remove('now'); });
     if (cur) cur.classList.add('now'); return cur;
   }
-  function seek(sec) {
+  var player = grid.querySelector('.vplayer');
+  function seek(sec, from) {
     var f = box.querySelector('iframe');
     if (f) {
       f.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'seekTo', args: [sec, true] }), '*');
@@ -95,21 +96,32 @@ document.addEventListener('click', function (e) {
       var b = box.querySelector('button'); if (b) b.click();
     }
     mark(sec);
-    if (window.innerWidth <= 900) box.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    // on phones and tablets the playing video stays pinned under the menu, so the reader keeps their place (28 Nov 2026)
+    if (player) player.classList.add('pinned');
+    if (from) from.focus({ preventScroll: true });   // keyboard focus stays on the time that was chosen
   }
+  box.addEventListener('click', function () { if (player) player.classList.add('pinned'); });
   grid.addEventListener('click', function (e) {
     var a = e.target.closest('[data-seek]'); if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
-    e.preventDefault(); seek(+a.getAttribute('data-seek'));
+    e.preventDefault(); seek(+a.getAttribute('data-seek'), a);
   });
   var t = parseInt(new URLSearchParams(location.search).get('t') || '', 10);
   if (t > 0) { box.setAttribute('data-start', String(t)); var p = mark(t); if (p) p.scrollIntoView({ block: 'center' }); }
   var input = document.getElementById('tf'), status = grid.querySelector('.tf-status');
   if (!input) return;
   function fold(x) { return x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
-  paras.forEach(function (p) { p.dataset.f = fold(p.textContent); });
+  function esc(x) { return x.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  paras.forEach(function (p) { var t = p.querySelector('.tt'); p._t = t; p._raw = t ? t.textContent : ''; p.dataset.f = fold(p._raw); });
   input.addEventListener('input', function () {
     var q = fold(input.value.trim()), n = 0;
-    paras.forEach(function (p) { var hit = !q || p.dataset.f.indexOf(q) >= 0; p.hidden = !hit; if (hit && q) n++; });
+    paras.forEach(function (p) {
+      var at = q ? p.dataset.f.indexOf(q) : 0, hit = !q || at >= 0; p.hidden = !hit; if (hit && q) n++;
+      if (!p._t) return;
+      if (!q || at < 0) { p._t.textContent = p._raw; return; }
+      var out = '', from = 0, f = p.dataset.f;   // folding keeps the same length for these scripts, so positions line up
+      while (at >= 0) { out += esc(p._raw.slice(from, at)) + '<mark>' + esc(p._raw.slice(at, at + q.length)) + '</mark>'; from = at + q.length; at = f.indexOf(q, from); }
+      p._t.innerHTML = out + esc(p._raw.slice(from));
+    });
     status.textContent = q ? (n ? n + ' paragraph' + (n === 1 ? '' : 's') + ' with “' + input.value.trim() + '”' : 'Not in this transcript') : '';
   });
 })();

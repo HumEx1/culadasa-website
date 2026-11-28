@@ -104,6 +104,9 @@ for f in pages:
         t.decompose()
     # on the stage pages, the quoted passages are his own words from transcripts, AMA questions, writings and recording
     # notes (sources already on the site), so only the page's own wording is listed (D, 25 Nov 2026)
+    if 'videos' in f.parts and f.parent.name != 'videos':   # a video page: the transcript and Alex's questions are quoted, not new
+        for t in soup.select('.transcript, #questions .qlist'):
+            t.decompose()
     if 'ten-stages' in f.parts:
         for t in soup.select('.rr-body p.tline, .rr-body .qsnip, .rr-body > p:not(.rr-open):not(.small)'):
             t.decompose()
@@ -158,7 +161,7 @@ KIND = {'h1': 'Page heading', 'h2': 'Section heading', 'h3': 'Sub-heading', 'h4'
 
 TAB = [('', 'Home'), ('start-here/', 'Start here'), ('learn/', 'Learn'), ('topics/', 'Topics'),
        ('writings/', 'Library › Writings'), ('audio/', 'Library › Audio'), ('videos/', 'Library › Videos'),
-       ('online-meetings/', 'Library › Q&A archive'), ('meditation-manual-introduction/', 'Library › Writings › essay'),
+       ('online-meetings/', 'Library › AMA videos (redirect)'), ('meditation-manual-introduction/', 'Library › Writings › essay'),
        ('mindful-awareness-vs-dullness/', 'Library › Writings › essay'), ('amount-of-concentration-needed-for-awakening/', 'Library › Writings › essay'),
        ('daily-life-practice/', 'Library › Writings › essay'), ('cultivating-mindfulness-in-daily-life/', 'Library › Writings › essay'),
        ('the-book/', 'The Book'), ('book-reviews/', 'The Book (old address, redirects)'), ('teachers/', 'Teachers'),

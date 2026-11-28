@@ -238,7 +238,10 @@
       last.items.push(i);
     });
     var single = selected().length === 1;
-    if (clean !== lastQ) { OPEN = {}; OPENROW = {}; lastQ = clean; }
+    if (clean !== lastQ) {   // coming back to the same search keeps what was open (28 Nov 2026)
+      var kept = null; try { kept = JSON.parse(sessionStorage.getItem('culadasa-open') || 'null'); } catch (e) {}
+      OPEN = kept && kept.q === clean ? kept.open : {}; OPENROW = kept && kept.q === clean ? kept.row : {}; lastQ = clean;
+    }
     resultsEl.innerHTML = stageLink(clean) + (groups.length ? '<p class="rr-hint">Select a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
       var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 4, open = single || extra <= 0 || !!OPEN[g.name];
       return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
@@ -344,6 +347,8 @@
     }).catch(function () { trLoading = false; });
   }
 
+  function keep() { try { sessionStorage.setItem('culadasa-open', JSON.stringify({ q: lastQ, open: OPEN, row: OPENROW })); } catch (e) {} }
+  resultsEl.addEventListener('click', function (e) { setTimeout(keep, 0); });
   resultsEl.addEventListener('click', function (e) {
     var t = e.target.closest('.rr-title');
     if (t) { var row = t.closest('.rrow'), o = !row.classList.contains('open'); row.classList.toggle('open', o); t.setAttribute('aria-expanded', o); OPENROW[row.getAttribute('data-key')] = o; return; }
