@@ -791,14 +791,21 @@ def build():
     def vlen(i):
         mk = (_trv.get(i) or {}).get('marks') or []
         s_ = mk[-1][1] if mk else 0
-        return f'{s_ // 3600} h {s_ % 3600 // 60} min' if s_ >= 3600 else (f'{max(1, round(s_ / 60))} min' if s_ else '')
+        if s_ >= 3600:
+            return f'{s_ // 3600} h' + (f' {s_ % 3600 // 60} min' if s_ % 3600 // 60 else '')
+        return f'{max(1, round(s_ / 60))} min' if s_ else ''
+    def nice_date(d_):
+        try:
+            y_, m_, dd_ = map(int, d_.split('-')); return f'{dd_} {datetime.date(y_, m_, 1).strftime("%B")} {y_}'
+        except Exception:
+            return d_
     held = {s_['video']: (k, s_['title']) for k, s_ in enumerate(qindex['sessions']) if s_.get('video')}   # Alex's index runs oldest first
     def held_label(i):
         t_ = held.get(i, (0, ''))[1]
         m_ = re.fullmatch(r'(19|20)\d\d(\d\d)(\d\d)', t_.strip())   # e.g. Alex's "20190517"
         return datetime.date(2000, int(m_.group(2)), int(m_.group(3))).strftime('%B ') + str(int(m_.group(3))) + ', ' + t_[:4] if m_ else t_
     def vcard(i):
-        when = held_label(i) if i in held else (_trv.get(i) or {}).get('date', '')
+        when = held_label(i) if i in held else nice_date((_trv.get(i) or {}).get('date', ''))
         meta = ' · '.join(x for x in (when, vlen(i), f"{len(ama_ids[i]['items'])} questions" if i in ama_ids else '') if x)
         return (f'<li><a class="vcard" href="{r}videos/{i}/"><img src="https://i.ytimg.com/vi/{i}/mqdefault.jpg" alt="" loading="lazy" width="320" height="180">'
                 f'<span class="vc-title">{esc(vtitle(i))}</span><span class="vc-meta">{esc(meta)}</span></a></li>')
@@ -832,11 +839,12 @@ def build():
   var chips = document.querySelectorAll('.vchip');
   function show(k) {{
     chips.forEach(function (c) {{ c.setAttribute('aria-pressed', c.getAttribute('data-show') === k ? 'true' : 'false'); }});
-    try {{ history.replaceState(null, '', k === 'all' ? location.pathname : '?show=' + k + location.hash); }} catch (e) {{}}
+    try {{ history.replaceState(null, '', k === 'all' ? location.pathname : '?show=' + k + (k === 'ama' ? location.hash : '')); }} catch (e) {{}}
     document.querySelectorAll('.vgroup, .vgroup-intro').forEach(function (g) {{ g.hidden = k !== 'all' && g.getAttribute('data-kind') !== k; }});
   }}
   chips.forEach(function (c) {{ c.addEventListener('click', function () {{ show(c.getAttribute('data-show')); }}); }});
-  var q = new URLSearchParams(location.search).get('show'); if (q === 'ama' || q === 'talk') show(q);
+  function fromAddress() {{ var q = new URLSearchParams(location.search).get('show'); show(q === 'ama' || q === 'talk' ? q : (/^#ama-/.test(location.hash) ? 'ama' : 'all')); }}
+  fromAddress(); window.addEventListener('popstate', fromAddress);
   if (/^#ama-/.test(location.hash)) show('ama');
   window.addEventListener('hashchange', function () {{ if (/^#ama-/.test(location.hash)) {{ show('ama'); var t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }} }});
 }})();
@@ -964,7 +972,7 @@ def build():
         rv = '../../'
         is_ama = i in ama_ids
         label = f'<a href="{rv}videos/{"?show=ama" if is_ama else ""}">{"AMA video" if is_ama else "Talk"}</a>' + (f' · {ama_year(i)}' if is_ama else '')
-        facts = ' · '.join(x for x in ((f'Held {held_label(i)}' if is_ama and i in held else (tv or {}).get('date', '')), vlen(i)) if x)
+        facts = ' · '.join(x for x in ((f'AMA session: {held_label(i)}' if is_ama and i in held else nice_date((tv or {}).get('date', ''))), vlen(i)) if x)
         stages_here = []
         for st in stage_data:
             for k in ('videos', 'ama'):
@@ -996,9 +1004,9 @@ def build():
         v = vid_by_id.get(i) or {'id': i, 'title': vtitle(i)}
         body = banner(label, esc(vtitle(i)), '', 'teal') + f'''
 <section class="section vpage"><div class="wrap vgrid" data-video="{i}">
-  <div class="vplayer">{re.sub(r'<h3>.*?</h3>', '', video_tile(v, rv), count=1, flags=re.S)}
-    <p class="small vfacts">{esc(facts)} · <a href="https://www.youtube.com/watch?v={i}" rel="noopener">Open on YouTube ↗</a>{' · <a href="#transcript">Transcript ↓</a>' if tv else ''}</p>{st_html}
-    <p class="small vback"><a href="{rv}videos/{"?show=ama" if is_ama else "?show=talk"}">← All {"AMA videos" if is_ama else "talks"}</a></p></div>
+  <div class="vleft"><div class="vplayer">{re.sub(r'<h3>.*?</h3>', '', video_tile(v, rv), count=1, flags=re.S)}</div>
+    <div class="vmeta"><p class="small vfacts">{esc(facts)} · <a href="https://www.youtube.com/watch?v={i}" rel="noopener">Open on YouTube ↗</a>{' · <a href="#transcript">Transcript ↓</a>' if tv else ''}</p>{st_html}
+    <p class="small vback"><a href="{rv}videos/{"?show=ama" if is_ama else "?show=talk"}">← All {"AMA videos" if is_ama else "talks"}</a></p></div></div>
   <div class="vtext">{qs}{tr}</div>
 </div></section>'''
         page(f'videos/{i}/', vtitle(i), add_seek(body, i), description=f'{vtitle(i)}: Culadasa on video, with {"the questions asked and " if is_ama else ""}the full transcript.')

@@ -96,24 +96,39 @@ document.addEventListener('click', function (e) {
       var b = box.querySelector('button'); if (b) b.click();
     }
     mark(sec);
-    // on phones and tablets the playing video stays pinned under the menu, so the reader keeps their place (28 Nov 2026)
-    if (player) player.classList.add('pinned');
-    if (from) from.focus({ preventScroll: true });   // keyboard focus stays on the time that was chosen
+    pin();
+    if (from) {
+      from.focus({ preventScroll: true });   // keyboard focus stays on the time that was chosen
+      requestAnimationFrame(function () {   // and the time is not left under the pinned player
+        if (!player.classList.contains('pinned')) return;
+        var r = from.getBoundingClientRect(), pb = player.getBoundingClientRect().bottom;
+        if (r.top < pb + 8) window.scrollBy(0, r.top - pb - 8);
+      });
+    }
   }
-  box.addEventListener('click', function () { if (player) player.classList.add('pinned'); });
+  // On phones and tablets in portrait the video, once started, stays pinned under the menu so the reader keeps their
+  // place; never on short screens (a phone on its side), where it would cover the page (28 Nov 2026)
+  function canPin() { return window.innerWidth <= 900 && window.innerHeight >= 560; }
+  function pad() {
+    var on = player.classList.contains('pinned') && canPin();
+    document.documentElement.style.scrollPaddingTop = on ? (player.getBoundingClientRect().height + 56) + 'px' : '';
+  }
+  function pin() { if (player && canPin()) { player.classList.add('pinned'); requestAnimationFrame(pad); } }
+  window.addEventListener('resize', function () { if (!canPin()) player.classList.remove('pinned'); pad(); });
+  box.addEventListener('click', pin);
   grid.addEventListener('click', function (e) {
     var a = e.target.closest('[data-seek]'); if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
     e.preventDefault(); seek(+a.getAttribute('data-seek'), a);
   });
   var t = parseInt(new URLSearchParams(location.search).get('t') || '', 10);
-  if (t > 0) { box.setAttribute('data-start', String(t)); var p = mark(t); if (p) p.scrollIntoView({ block: 'center' }); }
+  if (t > 0) { box.setAttribute('data-start', String(t)); pin(); var p = mark(t); if (p) p.scrollIntoView({ block: 'center' }); }   // the Play button stays in view, ready at that moment
   var input = document.getElementById('tf'), status = grid.querySelector('.tf-status');
   if (!input) return;
-  function fold(x) { return x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+  function fold(x) { return x.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’‘]/g, "'").replace(/[“”]/g, '"').toLowerCase(); }
   function esc(x) { return x.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   paras.forEach(function (p) { var t = p.querySelector('.tt'); p._t = t; p._raw = t ? t.textContent : ''; p.dataset.f = fold(p._raw); });
   input.addEventListener('input', function () {
-    var q = fold(input.value.trim()), n = 0;
+    var q = fold(input.value.trim().replace(/\s+/g, ' ')), n = 0;
     paras.forEach(function (p) {
       var at = q ? p.dataset.f.indexOf(q) : 0, hit = !q || at >= 0; p.hidden = !hit; if (hit && q) n++;
       if (!p._t) return;

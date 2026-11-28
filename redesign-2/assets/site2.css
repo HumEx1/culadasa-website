@@ -353,9 +353,11 @@ main p.small{max-width:var(--measure)}
 .banner:has(+ .section.vpage){min-height:0}
 @media (min-width:761px){.banner:has(+ .section.vpage){padding-bottom:28px}}
 /* the video page on phones and tablets: once playing, the player stays pinned under the menu (28 Nov 2026) */
+@media (min-width:901px){.vplayer{position:static}.vleft{position:sticky;top:64px}}
 @media (max-width:900px){
-  .vplayer.pinned{position:sticky;top:48px;z-index:15;background:var(--ground);padding:8px 0 4px;margin:0 -16px;padding-left:16px;padding-right:16px;box-shadow:0 6px 12px -8px rgba(20,28,33,.25)}
-  .vplayer.pinned .vfacts,.vplayer.pinned .vback,.vplayer.pinned > p.small{display:none}
+  .vleft{display:contents}   /* so the player can stay pinned while the rest of the page scrolls */
+  .vplayer.pinned{position:sticky;top:48px;z-index:15;background:var(--ground);padding:8px 16px 6px;margin:0 -16px;box-shadow:0 6px 12px -8px rgba(20,28,33,.25)}
+  .vplayer.pinned .video-card{max-width:min(100%,calc(34vh * 16 / 9));margin:0 auto}   /* at most about a third of the screen */
 }
 .tp mark{background:#f3e3a8;color:inherit;padding:0 1px}
 .vback{margin:4px 0 0}
@@ -363,3 +365,4 @@ main p.small{max-width:var(--measure)}
 .alex-intro summary{cursor:pointer;font:500 14px/1.4 var(--display);color:var(--teal)}
 .alex-intro p{font-size:16px;max-width:var(--measure)}
 .banner .label a:hover{text-decoration:underline}
+@media (min-width:761px) and (max-width:1023px){.grid.cols-4.library-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}

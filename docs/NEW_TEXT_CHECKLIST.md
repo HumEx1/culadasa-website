@@ -2785,81 +2785,81 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Videos (`redesign-2/videos/index.html` line 41), under "Videos"
 - [ ] **Section heading:** "Talks and discussions 38"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "New Channel 4 My Journey 2021-08-20 · 1 min"  
+- [ ] **List item:** "New Channel 4 My Journey 20 August 2021 · 1 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) 2021-07-27 · 1 h 12 min"  
+- [ ] **List item:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) 27 July 2021 · 1 h 12 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "My Journey: Episode 5 - Unifying life around the Dharma (re-upload) 2021-05-04 · 1 h 9 min"  
+- [ ] **List item:** "My Journey: Episode 5 - Unifying life around the Dharma (re-upload) 4 May 2021 · 1 h 9 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "My Journey: Episode 4 - Stranger in a Strange Land 2021-04-21 · 1 h 23 min"  
+- [ ] **List item:** "My Journey: Episode 4 - Stranger in a Strange Land 21 April 2021 · 1 h 23 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "My Journey: Episode 3 - Experiences don't mean sh... 2021-03-24 · 1 h 10 min"  
+- [ ] **List item:** "My Journey: Episode 3 - Experiences don't mean sh... 24 March 2021 · 1 h 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "My Journey: Episode 2 - A Series of Miracles 2021-03-03 · 1 h 7 min"  
+- [ ] **List item:** "My Journey: Episode 2 - A Series of Miracles 3 March 2021 · 1 h 7 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years 2021-02-12 · 59 min"  
+- [ ] **List item:** "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years 12 February 2021 · 59 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Introduction to "My Journey" discussion series 2021-02-12 · 9 min"  
+- [ ] **List item:** "Introduction to "My Journey" discussion series 12 February 2021 · 9 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 2021-01-29 · 1 h 4 min"  
+- [ ] **List item:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 29 January 2021 · 1 h 4 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 2021-01-28 · 1 h 16 min"  
+- [ ] **List item:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 28 January 2021 · 1 h 16 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 2017-02-05 · 1 h 10 min"  
+- [ ] **List item:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 5 February 2017 · 1 h 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 2017-02-01 · 1 h 15 min"  
+- [ ] **List item:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 1 February 2017 · 1 h 15 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "How do you know whats true? - Culadasa at NY Insight 2017-02-01 · 27 min"  
+- [ ] **List item:** "How do you know whats true? - Culadasa at NY Insight 1 February 2017 · 27 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 2017-01-25 · 1 h 36 min"  
+- [ ] **List item:** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 25 January 2017 · 1 h 36 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "benefits of meditation, therapy and awakening 2015-07-17 · 12 min"  
+- [ ] **List item:** "benefits of meditation, therapy and awakening 17 July 2015 · 12 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Practice Advice for Everyday Life 2015-07-17 · 2 min"  
+- [ ] **List item:** "Practice Advice for Everyday Life 17 July 2015 · 2 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula 2014-09-30 · 1 min"  
+- [ ] **List item:** "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula 30 September 2014 · 1 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad 2014-09-22 · 4 min"  
+- [ ] **List item:** "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad 22 September 2014 · 4 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa 2014-09-22 · 3 min"  
+- [ ] **List item:** "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa 22 September 2014 · 3 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa 2014-09-22 · 1 min"  
+- [ ] **List item:** "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa 22 September 2014 · 1 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Rattlesnake Round-up 2014-06-30 · 1 min"  
+- [ ] **List item:** "Rattlesnake Round-up 30 June 2014 · 1 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Here Comes the Sun: Achieving Awakening Without the Dark Night 2014-03-31 · 2 min"  
+- [ ] **List item:** "Here Comes the Sun: Achieving Awakening Without the Dark Night 31 March 2014 · 2 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa 2011-03-31 · 9 min"  
+- [ ] **List item:** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa 31 March 2011 · 9 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula 2011-03-31 · 6 min"  
+- [ ] **List item:** "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula 31 March 2011 · 6 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa 2011-03-31 · 9 min"  
+- [ ] **List item:** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa 31 March 2011 · 9 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas 2011-03-31 · 2 min"  
+- [ ] **List item:** "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas 31 March 2011 · 2 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula 2011-03-31 · 10 min"  
+- [ ] **List item:** "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula 31 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C 2011-03-25 · 10 min"  
+- [ ] **List item:** "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C 25 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa 2011-03-25 · 10 min"  
+- [ ] **List item:** "Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa 25 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C 2011-03-25 · 8 min"  
+- [ ] **List item:** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C 25 March 2011 · 8 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Reality is Mind-Created - Buddhist Wisdom meets Brain Science - Culadasa 2011-03-25 · 10 min"  
+- [ ] **List item:** "Reality is Mind-Created - Buddhist Wisdom meets Brain Science - Culadasa 25 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu 2011-03-25 · 10 min"  
+- [ ] **List item:** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu 25 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "The Nature of Suffering - Buddhist Wisdom meets Brain Science - Culadasa 2011-03-25 · 10 min"  
+- [ ] **List item:** "The Nature of Suffering - Buddhist Wisdom meets Brain Science - Culadasa 25 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "What is Rebirth? - Buddhist Wisdom meets Brain Science - Culadasa 2011-03-25 · 8 min"  
+- [ ] **List item:** "What is Rebirth? - Buddhist Wisdom meets Brain Science - Culadasa 25 March 2011 · 8 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa 2011-03-25 · 8 min"  
+- [ ] **List item:** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa 25 March 2011 · 8 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Where do the Four Elements Cease? - Buddhist Wisdom meets Brain Science - Culada 2011-03-25 · 10 min"  
+- [ ] **List item:** "Where do the Four Elements Cease? - Buddhist Wisdom meets Brain Science - Culada 25 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa 2011-03-25 · 10 min"  
+- [ ] **List item:** "The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa 25 March 2011 · 10 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
-- [ ] **List item:** "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci 2011-03-25 · 4 min"  
+- [ ] **List item:** "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci 25 March 2011 · 4 min"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
 - [ ] **Paragraph:** "His monthly ask-me-anything sessions on Patreon, 2017–2021. Each video’s page lists the questions asked, from the Culadasa Q&A Index by Alex, with the full transcript. Years: 2021 · 2020 · 2019 · 2018 · 2017"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "Talks and discussions 38"
@@ -3007,7 +3007,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Videos (`redesign-2/videos/index.html` line 42), under "AMA videos 2018 14"
 - [ ] **List item:** "Culadasa April 2018 Patreon Q&A April 2018 · 1 h 47 min · 10 questions"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "AMA videos 2018 14"
-- [ ] **List item:** "Culadasa April 2018 Patreon Q&A Catch-Up April 2018 Catch-Up · 2 h 0 min · 17 questions"  
+- [ ] **List item:** "Culadasa April 2018 Patreon Q&A Catch-Up April 2018 Catch-Up · 2 h · 17 questions"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "AMA videos 2018 14"
 - [ ] **List item:** "Culadasa March 2018 Patreon Q&A March 2018 · 1 h 1 min · 6 questions"  
   Library › Videos (`redesign-2/videos/index.html` line 42), under "AMA videos 2018 14"
@@ -4801,7 +4801,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/-hKGfbBuemA/ (`redesign-2/videos/-hKGfbBuemA/index.html` line 36); also on 8 more places (9 pages)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2021 Patreon Q&A No2"  
   videos/-hKGfbBuemA/ (`redesign-2/videos/-hKGfbBuemA/index.html` line 40), under "Culadasa March 2021 Patreon Q&A No2"
-- [ ] **Paragraph:** "Held March 2021 #2 · 1 h 14 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: March 2021 #2 · 1 h 14 min · Open on YouTube ↗ · Transcript ↓"  
   videos/-hKGfbBuemA/ (`redesign-2/videos/-hKGfbBuemA/index.html` line 43), under "Culadasa March 2021 Patreon Q&A No2"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Seven (2) · Stage Eight (2)"  
   videos/-hKGfbBuemA/ (`redesign-2/videos/-hKGfbBuemA/index.html` line 43), under "Culadasa March 2021 Patreon Q&A No2"
@@ -4828,7 +4828,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/-pqnkm1tQ0E/ (`redesign-2/videos/-pqnkm1tQ0E/index.html` line 36); also on 13 more places (14 pages)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2019 Patreon Q&A - Monday"  
   videos/-pqnkm1tQ0E/ (`redesign-2/videos/-pqnkm1tQ0E/index.html` line 40), under "Culadasa November 2019 Patreon Q&A - Monday"
-- [ ] **Paragraph:** "Held November 2019 - Monday · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 2019 - Monday · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
   videos/-pqnkm1tQ0E/ (`redesign-2/videos/-pqnkm1tQ0E/index.html` line 43), under "Culadasa November 2019 Patreon Q&A - Monday"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (3) · Stage Five (1)"  
   videos/-pqnkm1tQ0E/ (`redesign-2/videos/-pqnkm1tQ0E/index.html` line 43), under "Culadasa November 2019 Patreon Q&A - Monday"
@@ -4845,7 +4845,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/-x-ONEhLDlA/ (`redesign-2/videos/-x-ONEhLDlA/index.html` line 36), under "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C"
 - [ ] **Screen-reader label (hidden):** "Play: Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C"  
   videos/-x-ONEhLDlA/ (`redesign-2/videos/-x-ONEhLDlA/index.html` line 40), under "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C"
-- [ ] **Paragraph:** "2011-03-25 · 10 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "25 March 2011 · 10 min · Open on YouTube ↗ · Transcript ↓"  
   videos/-x-ONEhLDlA/ (`redesign-2/videos/-x-ONEhLDlA/index.html` line 43), under "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C"; also on 6 more places (7 pages)
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1)"  
   videos/-x-ONEhLDlA/ (`redesign-2/videos/-x-ONEhLDlA/index.html` line 43), under "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C"; also on 2 more places (3 pages)
@@ -4873,7 +4873,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/0nC9ZUx-Xs4/ (`redesign-2/videos/0nC9ZUx-Xs4/index.html` line 36); also on 13 more places (14 pages)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2018 Patreon Q&A"  
   videos/0nC9ZUx-Xs4/ (`redesign-2/videos/0nC9ZUx-Xs4/index.html` line 40), under "Culadasa April 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held April 2018 · 1 h 47 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: April 2018 · 1 h 47 min · Open on YouTube ↗ · Transcript ↓"  
   videos/0nC9ZUx-Xs4/ (`redesign-2/videos/0nC9ZUx-Xs4/index.html` line 43), under "Culadasa April 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (2) · Stage Two (2) · Stage Three (1) · Stage Four (8) · Stage Five (2) · Stage Six (4) · Stage Seven (2) · Stage Eight (1)"  
   videos/0nC9ZUx-Xs4/ (`redesign-2/videos/0nC9ZUx-Xs4/index.html` line 43), under "Culadasa April 2018 Patreon Q&A"
@@ -4890,7 +4890,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/1-bzZgZd-sg/ (`redesign-2/videos/1-bzZgZd-sg/index.html` line 36); also on 21 more places (22 pages)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2020 Patreon Q&A N°1 Recording"  
   videos/1-bzZgZd-sg/ (`redesign-2/videos/1-bzZgZd-sg/index.html` line 40), under "Culadasa June 2020 Patreon Q&A N°1 Recording"
-- [ ] **Paragraph:** "Held June 2020 #1 · 1 h 45 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: June 2020 #1 · 1 h 45 min · Open on YouTube ↗ · Transcript ↓"  
   videos/1-bzZgZd-sg/ (`redesign-2/videos/1-bzZgZd-sg/index.html` line 43), under "Culadasa June 2020 Patreon Q&A N°1 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (1) · Stage Three (1) · Stage Four (12) · Stage Five (8) · Stage Six (2) · Stage Seven (2) · Stage Eight (3) · Stage Ten (1)"  
   videos/1-bzZgZd-sg/ (`redesign-2/videos/1-bzZgZd-sg/index.html` line 43), under "Culadasa June 2020 Patreon Q&A N°1 Recording"
@@ -4905,7 +4905,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/1nPhm73Aaxw/ (`redesign-2/videos/1nPhm73Aaxw/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2021 Patreon Q&A No1"  
   videos/1nPhm73Aaxw/ (`redesign-2/videos/1nPhm73Aaxw/index.html` line 40), under "Culadasa February 2021 Patreon Q&A No1"
-- [ ] **Paragraph:** "Held February 2021 #1 · 1 h 34 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: February 2021 #1 · 1 h 34 min · Open on YouTube ↗ · Transcript ↓"  
   videos/1nPhm73Aaxw/ (`redesign-2/videos/1nPhm73Aaxw/index.html` line 43), under "Culadasa February 2021 Patreon Q&A No1"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (2) · Stage Four (2) · Stage Five (3) · Stage Seven (5) · Stage Eight (7) · Stage Nine (4)"  
   videos/1nPhm73Aaxw/ (`redesign-2/videos/1nPhm73Aaxw/index.html` line 43), under "Culadasa February 2021 Patreon Q&A No1"
@@ -4918,7 +4918,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/2LYa1YCdZH8/ (`redesign-2/videos/2LYa1YCdZH8/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa -The 5 ultimate insights that lead to direct awakening.: Culadasa on video, with the full transcript."  
   videos/2LYa1YCdZH8/ (`redesign-2/videos/2LYa1YCdZH8/index.html` line 7)
-- [ ] **Paragraph:** "2017-02-01 · 1 h 15 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "1 February 2017 · 1 h 15 min · Open on YouTube ↗ · Transcript ↓"  
   videos/2LYa1YCdZH8/ (`redesign-2/videos/2LYa1YCdZH8/index.html` line 43), under "Culadasa -The 5 ultimate insights that lead to direct awakening."
 - [ ] **Paragraph:** "On the ten stages pages: Stage Seven (1) · Stage Eight (2) · Stage Nine (1) · Stage Ten (1)"  
   videos/2LYa1YCdZH8/ (`redesign-2/videos/2LYa1YCdZH8/index.html` line 43), under "Culadasa -The 5 ultimate insights that lead to direct awakening."
@@ -4933,7 +4933,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/33lZZhsKJw0/ (`redesign-2/videos/33lZZhsKJw0/index.html` line 36), under "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa"
 - [ ] **Screen-reader label (hidden):** "Play: Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa"  
   videos/33lZZhsKJw0/ (`redesign-2/videos/33lZZhsKJw0/index.html` line 40), under "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa"
-- [ ] **Paragraph:** "2011-03-31 · 9 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "31 March 2011 · 9 min · Open on YouTube ↗ · Transcript ↓"  
   videos/33lZZhsKJw0/ (`redesign-2/videos/33lZZhsKJw0/index.html` line 43), under "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa"; also on 1 more place (2 pages)
 
 ## videos/3ZM2Hq-wiwU/ (6)
@@ -4944,7 +4944,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/3ZM2Hq-wiwU/ (`redesign-2/videos/3ZM2Hq-wiwU/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2018 Patreon Q&A Catch-Up"  
   videos/3ZM2Hq-wiwU/ (`redesign-2/videos/3ZM2Hq-wiwU/index.html` line 40), under "Culadasa April 2018 Patreon Q&A Catch-Up"
-- [ ] **Paragraph:** "Held April 2018 Catch-Up · 2 h 0 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: April 2018 Catch-Up · 2 h · Open on YouTube ↗ · Transcript ↓"  
   videos/3ZM2Hq-wiwU/ (`redesign-2/videos/3ZM2Hq-wiwU/index.html` line 43), under "Culadasa April 2018 Patreon Q&A Catch-Up"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (7) · Stage Four (11) · Stage Five (6) · Stage Six (3)"  
   videos/3ZM2Hq-wiwU/ (`redesign-2/videos/3ZM2Hq-wiwU/index.html` line 43), under "Culadasa April 2018 Patreon Q&A Catch-Up"
@@ -4957,7 +4957,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/6nxZFnYCjbc/ (`redesign-2/videos/6nxZFnYCjbc/index.html` line 6)
 - [ ] **Search description (hidden):** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take?: Culadasa on video, with the full transcript."  
   videos/6nxZFnYCjbc/ (`redesign-2/videos/6nxZFnYCjbc/index.html` line 7)
-- [ ] **Paragraph:** "2021-01-28 · 1 h 16 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "28 January 2021 · 1 h 16 min · Open on YouTube ↗ · Transcript ↓"  
   videos/6nxZFnYCjbc/ (`redesign-2/videos/6nxZFnYCjbc/index.html` line 43), under "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take?"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (2) · Stage Four (3) · Stage Seven (1) · Stage Ten (4)"  
   videos/6nxZFnYCjbc/ (`redesign-2/videos/6nxZFnYCjbc/index.html` line 43), under "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take?"
@@ -4972,7 +4972,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/7Rv4Dh0FWRI/ (`redesign-2/videos/7Rv4Dh0FWRI/index.html` line 36), under "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C"
 - [ ] **Screen-reader label (hidden):** "Play: Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C"  
   videos/7Rv4Dh0FWRI/ (`redesign-2/videos/7Rv4Dh0FWRI/index.html` line 40), under "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C"
-- [ ] **Paragraph:** "2011-03-25 · 8 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "25 March 2011 · 8 min · Open on YouTube ↗ · Transcript ↓"  
   videos/7Rv4Dh0FWRI/ (`redesign-2/videos/7Rv4Dh0FWRI/index.html` line 43), under "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C"; also on 2 more places (3 pages)
 
 ## videos/7UdHOJqB03o/ (6)
@@ -4983,7 +4983,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/7UdHOJqB03o/ (`redesign-2/videos/7UdHOJqB03o/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: March 2019 Culadasa Patreon Q&A"  
   videos/7UdHOJqB03o/ (`redesign-2/videos/7UdHOJqB03o/index.html` line 40), under "March 2019 Culadasa Patreon Q&A"
-- [ ] **Paragraph:** "Held March 2019 · 1 h 54 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: March 2019 · 1 h 54 min · Open on YouTube ↗ · Transcript ↓"  
   videos/7UdHOJqB03o/ (`redesign-2/videos/7UdHOJqB03o/index.html` line 43), under "March 2019 Culadasa Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Five (1) · Stage Six (2) · Stage Seven (1) · Stage Nine (2)"  
   videos/7UdHOJqB03o/ (`redesign-2/videos/7UdHOJqB03o/index.html` line 43), under "March 2019 Culadasa Patreon Q&A"
@@ -4998,7 +4998,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/81mCT4D6w1I/ (`redesign-2/videos/81mCT4D6w1I/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 Patreon Q&A N°1 Recording"  
   videos/81mCT4D6w1I/ (`redesign-2/videos/81mCT4D6w1I/index.html` line 40), under "Culadasa September 2020 Patreon Q&A N°1 Recording"
-- [ ] **Paragraph:** "Held September 2020 #1 · 1 h 39 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: September 2020 #1 · 1 h 39 min · Open on YouTube ↗ · Transcript ↓"  
   videos/81mCT4D6w1I/ (`redesign-2/videos/81mCT4D6w1I/index.html` line 43), under "Culadasa September 2020 Patreon Q&A N°1 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Ten (8)"  
   videos/81mCT4D6w1I/ (`redesign-2/videos/81mCT4D6w1I/index.html` line 43), under "Culadasa September 2020 Patreon Q&A N°1 Recording"
@@ -5024,7 +5024,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/8Uc_gewR1gY/ (`redesign-2/videos/8Uc_gewR1gY/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2021 Patreon Q&A No1"  
   videos/8Uc_gewR1gY/ (`redesign-2/videos/8Uc_gewR1gY/index.html` line 40), under "Culadasa April 2021 Patreon Q&A No1"
-- [ ] **Paragraph:** "Held April 2021 #1 · 1 h 27 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: April 2021 #1 · 1 h 27 min · Open on YouTube ↗ · Transcript ↓"  
   videos/8Uc_gewR1gY/ (`redesign-2/videos/8Uc_gewR1gY/index.html` line 43), under "Culadasa April 2021 Patreon Q&A No1"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (4) · Stage Three (6) · Stage Four (1) · Stage Six (1) · Stage Eight (1) · Stage Ten (1)"  
   videos/8Uc_gewR1gY/ (`redesign-2/videos/8Uc_gewR1gY/index.html` line 43), under "Culadasa April 2021 Patreon Q&A No1"
@@ -5037,7 +5037,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/9GCa0epZVs8/ (`redesign-2/videos/9GCa0epZVs8/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2018 Patreon Q&A"  
   videos/9GCa0epZVs8/ (`redesign-2/videos/9GCa0epZVs8/index.html` line 40), under "Culadasa March 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held March 2018 · 1 h 1 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: March 2018 · 1 h 1 min · Open on YouTube ↗ · Transcript ↓"  
   videos/9GCa0epZVs8/ (`redesign-2/videos/9GCa0epZVs8/index.html` line 43), under "Culadasa March 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (7) · Stage Five (14) · Stage Six (6) · Stage Eight (1)"  
   videos/9GCa0epZVs8/ (`redesign-2/videos/9GCa0epZVs8/index.html` line 43), under "Culadasa March 2018 Patreon Q&A"
@@ -5050,7 +5050,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/9KYmlShAz_g/ (`redesign-2/videos/9KYmlShAz_g/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A N°2 Recording"  
   videos/9KYmlShAz_g/ (`redesign-2/videos/9KYmlShAz_g/index.html` line 40), under "Culadasa November 2020 Patreon Q&A N°2 Recording"
-- [ ] **Paragraph:** "Held November 2020 #2 · 1 h 26 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 2020 #2 · 1 h 26 min · Open on YouTube ↗ · Transcript ↓"  
   videos/9KYmlShAz_g/ (`redesign-2/videos/9KYmlShAz_g/index.html` line 43), under "Culadasa November 2020 Patreon Q&A N°2 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (10) · Stage Four (14) · Stage Five (6) · Stage Six (2) · Stage Seven (1)"  
   videos/9KYmlShAz_g/ (`redesign-2/videos/9KYmlShAz_g/index.html` line 43), under "Culadasa November 2020 Patreon Q&A N°2 Recording"
@@ -5065,7 +5065,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/9_7sTiQ-jIM/ (`redesign-2/videos/9_7sTiQ-jIM/index.html` line 36), under "Rattlesnake Round-up"
 - [ ] **Screen-reader label (hidden):** "Play: Rattlesnake Round-up"  
   videos/9_7sTiQ-jIM/ (`redesign-2/videos/9_7sTiQ-jIM/index.html` line 40), under "Rattlesnake Round-up"
-- [ ] **Paragraph:** "2014-06-30 · 1 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "30 June 2014 · 1 min · Open on YouTube ↗ · Transcript ↓"  
   videos/9_7sTiQ-jIM/ (`redesign-2/videos/9_7sTiQ-jIM/index.html` line 43), under "Rattlesnake Round-up"
 
 ## videos/AdiW7_HcjiE/ (4)
@@ -5074,7 +5074,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/AdiW7_HcjiE/ (`redesign-2/videos/AdiW7_HcjiE/index.html` line 6)
 - [ ] **Search description (hidden):** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!): Culadasa on video, with the full transcript."  
   videos/AdiW7_HcjiE/ (`redesign-2/videos/AdiW7_HcjiE/index.html` line 7)
-- [ ] **Paragraph:** "2021-07-27 · 1 h 12 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "27 July 2021 · 1 h 12 min · Open on YouTube ↗ · Transcript ↓"  
   videos/AdiW7_HcjiE/ (`redesign-2/videos/AdiW7_HcjiE/index.html` line 43), under "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!)"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (4) · Stage Two (1) · Stage Three (1) · Stage Five (1) · Stage Six (5) · Stage Seven (5) · Stage Eight (1) · Stage Nine (1)"  
   videos/AdiW7_HcjiE/ (`redesign-2/videos/AdiW7_HcjiE/index.html` line 43), under "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!)"
@@ -5100,7 +5100,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/BAWrOls6I8U/ (`redesign-2/videos/BAWrOls6I8U/index.html` line 36), under "New Channel 4 My Journey"
 - [ ] **Screen-reader label (hidden):** "Play: New Channel 4 My Journey"  
   videos/BAWrOls6I8U/ (`redesign-2/videos/BAWrOls6I8U/index.html` line 40), under "New Channel 4 My Journey"
-- [ ] **Paragraph:** "2021-08-20 · 1 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "20 August 2021 · 1 min · Open on YouTube ↗ · Transcript ↓"  
   videos/BAWrOls6I8U/ (`redesign-2/videos/BAWrOls6I8U/index.html` line 43), under "New Channel 4 My Journey"
 
 ## videos/BJzM7GH9-nE/ (5)
@@ -5111,7 +5111,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/BJzM7GH9-nE/ (`redesign-2/videos/BJzM7GH9-nE/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa August 2020 Patreon Q&A N°2 Recording"  
   videos/BJzM7GH9-nE/ (`redesign-2/videos/BJzM7GH9-nE/index.html` line 40), under "Culadasa August 2020 Patreon Q&A N°2 Recording"
-- [ ] **Paragraph:** "Held August 2020 #2 · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: August 2020 #2 · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
   videos/BJzM7GH9-nE/ (`redesign-2/videos/BJzM7GH9-nE/index.html` line 43), under "Culadasa August 2020 Patreon Q&A N°2 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Five (1) · Stage Six (1) · Stage Eight (1)"  
   videos/BJzM7GH9-nE/ (`redesign-2/videos/BJzM7GH9-nE/index.html` line 43), under "Culadasa August 2020 Patreon Q&A N°2 Recording"
@@ -5126,7 +5126,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/BR7D92whYXA/ (`redesign-2/videos/BR7D92whYXA/index.html` line 36), under "My Journey: Episode 5 - Unifying life around the Dharma (re-upload)"
 - [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 5 - Unifying life around the Dharma (re-upload)"  
   videos/BR7D92whYXA/ (`redesign-2/videos/BR7D92whYXA/index.html` line 40), under "My Journey: Episode 5 - Unifying life around the Dharma (re-upload)"
-- [ ] **Paragraph:** "2021-05-04 · 1 h 9 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "4 May 2021 · 1 h 9 min · Open on YouTube ↗ · Transcript ↓"  
   videos/BR7D92whYXA/ (`redesign-2/videos/BR7D92whYXA/index.html` line 43), under "My Journey: Episode 5 - Unifying life around the Dharma (re-upload)"
 
 ## videos/BT1HpYIg-oE/ (5)
@@ -5139,7 +5139,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/BT1HpYIg-oE/ (`redesign-2/videos/BT1HpYIg-oE/index.html` line 36), under "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula"
 - [ ] **Screen-reader label (hidden):** "Play: Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula"  
   videos/BT1HpYIg-oE/ (`redesign-2/videos/BT1HpYIg-oE/index.html` line 40), under "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula"
-- [ ] **Paragraph:** "2011-03-31 · 6 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "31 March 2011 · 6 min · Open on YouTube ↗ · Transcript ↓"  
   videos/BT1HpYIg-oE/ (`redesign-2/videos/BT1HpYIg-oE/index.html` line 43), under "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula"
 
 ## videos/BYtQAyNyA8E/ (5)
@@ -5150,7 +5150,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/BYtQAyNyA8E/ (`redesign-2/videos/BYtQAyNyA8E/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2020 Patreon Q&A Recording N°2"  
   videos/BYtQAyNyA8E/ (`redesign-2/videos/BYtQAyNyA8E/index.html` line 40), under "Culadasa May 2020 Patreon Q&A Recording N°2"
-- [ ] **Paragraph:** "Held May 2020 #2 · 1 h 57 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: May 2020 #2 · 1 h 57 min · Open on YouTube ↗ · Transcript ↓"  
   videos/BYtQAyNyA8E/ (`redesign-2/videos/BYtQAyNyA8E/index.html` line 43), under "Culadasa May 2020 Patreon Q&A Recording N°2"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (2) · Stage Three (2) · Stage Four (5) · Stage Five (3) · Stage Six (4) · Stage Seven (5) · Stage Eight (3)"  
   videos/BYtQAyNyA8E/ (`redesign-2/videos/BYtQAyNyA8E/index.html` line 43), under "Culadasa May 2020 Patreon Q&A Recording N°2"
@@ -5172,7 +5172,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/By0s1KVLYBw/ (`redesign-2/videos/By0s1KVLYBw/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/By0s1KVLYBw/ (`redesign-2/videos/By0s1KVLYBw/index.html` line 7)
-- [ ] **Paragraph:** "Held December 2018 · 1 h 33 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: December 2018 · 1 h 33 min · Open on YouTube ↗ · Transcript ↓"  
   videos/By0s1KVLYBw/ (`redesign-2/videos/By0s1KVLYBw/index.html` line 43), under "Culadasa December 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (7) · Stage Five (15) · Stage Six (1) · Stage Seven (6) · Stage Eight (3)"  
   videos/By0s1KVLYBw/ (`redesign-2/videos/By0s1KVLYBw/index.html` line 43), under "Culadasa December 2018 Patreon Q&A"
@@ -5185,7 +5185,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/DO4vExydTKA/ (`redesign-2/videos/DO4vExydTKA/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: October 29, 2018 Culadasa Patreon Q&A"  
   videos/DO4vExydTKA/ (`redesign-2/videos/DO4vExydTKA/index.html` line 40), under "October 29, 2018 Culadasa Patreon Q&A"
-- [ ] **Paragraph:** "Held October 29, 2018 · 1 h 30 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: October 29, 2018 · 1 h 30 min · Open on YouTube ↗ · Transcript ↓"  
   videos/DO4vExydTKA/ (`redesign-2/videos/DO4vExydTKA/index.html` line 43), under "October 29, 2018 Culadasa Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (5) · Stage Six (1) · Stage Seven (9) · Stage Eight (9) · Stage Nine (1)"  
   videos/DO4vExydTKA/ (`redesign-2/videos/DO4vExydTKA/index.html` line 43), under "October 29, 2018 Culadasa Patreon Q&A"
@@ -5200,7 +5200,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/Dp3l_XnTd20/ (`redesign-2/videos/Dp3l_XnTd20/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2019 Patreon Q&A"  
   videos/Dp3l_XnTd20/ (`redesign-2/videos/Dp3l_XnTd20/index.html` line 40), under "Culadasa April 2019 Patreon Q&A"
-- [ ] **Paragraph:** "Held April 2019 · 1 h 25 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: April 2019 · 1 h 25 min · Open on YouTube ↗ · Transcript ↓"  
   videos/Dp3l_XnTd20/ (`redesign-2/videos/Dp3l_XnTd20/index.html` line 43), under "Culadasa April 2019 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (2) · Stage Four (7) · Stage Six (1)"  
   videos/Dp3l_XnTd20/ (`redesign-2/videos/Dp3l_XnTd20/index.html` line 43), under "Culadasa April 2019 Patreon Q&A"
@@ -5215,7 +5215,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/E48ByR0Xt6U/ (`redesign-2/videos/E48ByR0Xt6U/index.html` line 36), under "My Journey: Episode 3 - Experiences don't mean sh..."
 - [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 3 - Experiences don't mean sh..."  
   videos/E48ByR0Xt6U/ (`redesign-2/videos/E48ByR0Xt6U/index.html` line 40), under "My Journey: Episode 3 - Experiences don't mean sh..."
-- [ ] **Paragraph:** "2021-03-24 · 1 h 10 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "24 March 2021 · 1 h 10 min · Open on YouTube ↗ · Transcript ↓"  
   videos/E48ByR0Xt6U/ (`redesign-2/videos/E48ByR0Xt6U/index.html` line 43), under "My Journey: Episode 3 - Experiences don't mean sh..."
 
 ## videos/EhtU5ei6YaM/ (5)
@@ -5226,7 +5226,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/EhtU5ei6YaM/ (`redesign-2/videos/EhtU5ei6YaM/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: 20180816 Patreon Meetup Video"  
   videos/EhtU5ei6YaM/ (`redesign-2/videos/EhtU5ei6YaM/index.html` line 40), under "20180816 Patreon Meetup Video"
-- [ ] **Paragraph:** "Held August 2018 · 1 h 29 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: August 2018 · 1 h 29 min · Open on YouTube ↗ · Transcript ↓"  
   videos/EhtU5ei6YaM/ (`redesign-2/videos/EhtU5ei6YaM/index.html` line 43), under "20180816 Patreon Meetup Video"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (3) · Stage Two (1) · Stage Four (9) · Stage Five (12) · Stage Six (6) · Stage Seven (6) · Stage Eight (12) · Stage Nine (5) · Stage Ten (1)"  
   videos/EhtU5ei6YaM/ (`redesign-2/videos/EhtU5ei6YaM/index.html` line 43), under "20180816 Patreon Meetup Video"
@@ -5239,7 +5239,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/FnQVRtDu0kQ/ (`redesign-2/videos/FnQVRtDu0kQ/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday"  
   videos/FnQVRtDu0kQ/ (`redesign-2/videos/FnQVRtDu0kQ/index.html` line 40), under "Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday"
-- [ ] **Paragraph:** "Held February 2020 #2 - Sunday · 1 h 46 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: February 2020 #2 - Sunday · 1 h 46 min · Open on YouTube ↗ · Transcript ↓"  
   videos/FnQVRtDu0kQ/ (`redesign-2/videos/FnQVRtDu0kQ/index.html` line 43), under "Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (3) · Stage Two (3) · Stage Four (1)"  
   videos/FnQVRtDu0kQ/ (`redesign-2/videos/FnQVRtDu0kQ/index.html` line 43), under "Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday"
@@ -5274,7 +5274,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/GWThVC6FEzA/ (`redesign-2/videos/GWThVC6FEzA/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 Patreon Q&A N°2 Recording"  
   videos/GWThVC6FEzA/ (`redesign-2/videos/GWThVC6FEzA/index.html` line 40), under "Culadasa September 2020 Patreon Q&A N°2 Recording"
-- [ ] **Paragraph:** "Held September 2020 #2 · 1 h 46 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: September 2020 #2 · 1 h 46 min · Open on YouTube ↗ · Transcript ↓"  
   videos/GWThVC6FEzA/ (`redesign-2/videos/GWThVC6FEzA/index.html` line 43), under "Culadasa September 2020 Patreon Q&A N°2 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Five (1) · Stage Six (1) · Stage Seven (2) · Stage Eight (6) · Stage Nine (11) · Stage Ten (12)"  
   videos/GWThVC6FEzA/ (`redesign-2/videos/GWThVC6FEzA/index.html` line 43), under "Culadasa September 2020 Patreon Q&A N°2 Recording"
@@ -5298,7 +5298,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/IamWcgYWKcw/ (`redesign-2/videos/IamWcgYWKcw/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2020 Patreon Q&A Nº 1 - Saturday"  
   videos/IamWcgYWKcw/ (`redesign-2/videos/IamWcgYWKcw/index.html` line 40), under "Culadasa February 2020 Patreon Q&A Nº 1 - Saturday"
-- [ ] **Paragraph:** "Held February 2020 #1 - Saturday · 1 h 30 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: February 2020 #1 - Saturday · 1 h 30 min · Open on YouTube ↗ · Transcript ↓"  
   videos/IamWcgYWKcw/ (`redesign-2/videos/IamWcgYWKcw/index.html` line 43), under "Culadasa February 2020 Patreon Q&A Nº 1 - Saturday"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (1) · Stage Three (1) · Stage Six (1) · Stage Seven (2) · Stage Eight (3) · Stage Nine (3)"  
   videos/IamWcgYWKcw/ (`redesign-2/videos/IamWcgYWKcw/index.html` line 43), under "Culadasa February 2020 Patreon Q&A Nº 1 - Saturday"
@@ -5313,7 +5313,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/JK0q0tgsw2U/ (`redesign-2/videos/JK0q0tgsw2U/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2020 Patreon Q&A N°1 Recording"  
   videos/JK0q0tgsw2U/ (`redesign-2/videos/JK0q0tgsw2U/index.html` line 40), under "Culadasa October 2020 Patreon Q&A N°1 Recording"
-- [ ] **Paragraph:** "Held October 2020 #1 · 1 h 36 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: October 2020 #1 · 1 h 36 min · Open on YouTube ↗ · Transcript ↓"  
   videos/JK0q0tgsw2U/ (`redesign-2/videos/JK0q0tgsw2U/index.html` line 43), under "Culadasa October 2020 Patreon Q&A N°1 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (11) · Stage Three (10) · Stage Four (8) · Stage Seven (6) · Stage Eight (6) · Stage Nine (2)"  
   videos/JK0q0tgsw2U/ (`redesign-2/videos/JK0q0tgsw2U/index.html` line 43), under "Culadasa October 2020 Patreon Q&A N°1 Recording"
@@ -5337,7 +5337,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/K0KKBU46hNM/ (`redesign-2/videos/K0KKBU46hNM/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st"  
   videos/K0KKBU46hNM/ (`redesign-2/videos/K0KKBU46hNM/index.html` line 40), under "Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st"
-- [ ] **Paragraph:** "Held November 2020 #1 - Sunday the 1st · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 2020 #1 - Sunday the 1st · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
   videos/K0KKBU46hNM/ (`redesign-2/videos/K0KKBU46hNM/index.html` line 43), under "Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (2) · Stage Five (1) · Stage Six (4)"  
   videos/K0KKBU46hNM/ (`redesign-2/videos/K0KKBU46hNM/index.html` line 43), under "Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st"
@@ -5352,7 +5352,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/MAY3lh-4xIE/ (`redesign-2/videos/MAY3lh-4xIE/index.html` line 36), under "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad"
 - [ ] **Screen-reader label (hidden):** "Play: Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad"  
   videos/MAY3lh-4xIE/ (`redesign-2/videos/MAY3lh-4xIE/index.html` line 40), under "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad"
-- [ ] **Paragraph:** "2014-09-22 · 4 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "22 September 2014 · 4 min · Open on YouTube ↗ · Transcript ↓"  
   videos/MAY3lh-4xIE/ (`redesign-2/videos/MAY3lh-4xIE/index.html` line 43), under "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad"
 
 ## videos/MapEQWUQakY/ (5)
@@ -5363,7 +5363,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2019 Patreon Q&A"  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 40), under "Culadasa June 2019 Patreon Q&A"
-- [ ] **Paragraph:** "Held June 2019 · 1 h 34 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: June 2019 · 1 h 34 min · Open on YouTube ↗ · Transcript ↓"  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 43), under "Culadasa June 2019 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (3) · Stage Three (5) · Stage Four (14) · Stage Five (11) · Stage Six (17) · Stage Seven (1) · Stage Eight (1)"  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 43), under "Culadasa June 2019 Patreon Q&A"
@@ -5378,7 +5378,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/Mzlk1iq_LRs/ (`redesign-2/videos/Mzlk1iq_LRs/index.html` line 36), under "benefits of meditation, therapy and awakening"
 - [ ] **Screen-reader label (hidden):** "Play: benefits of meditation, therapy and awakening"  
   videos/Mzlk1iq_LRs/ (`redesign-2/videos/Mzlk1iq_LRs/index.html` line 40), under "benefits of meditation, therapy and awakening"
-- [ ] **Paragraph:** "2015-07-17 · 12 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "17 July 2015 · 12 min · Open on YouTube ↗ · Transcript ↓"  
   videos/Mzlk1iq_LRs/ (`redesign-2/videos/Mzlk1iq_LRs/index.html` line 43), under "benefits of meditation, therapy and awakening"
 
 ## videos/NndWvacogTk/ (5)
@@ -5391,7 +5391,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/NndWvacogTk/ (`redesign-2/videos/NndWvacogTk/index.html` line 36), under "Practice Advice for Everyday Life"
 - [ ] **Screen-reader label (hidden):** "Play: Practice Advice for Everyday Life"  
   videos/NndWvacogTk/ (`redesign-2/videos/NndWvacogTk/index.html` line 40), under "Practice Advice for Everyday Life"
-- [ ] **Paragraph:** "2015-07-17 · 2 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "17 July 2015 · 2 min · Open on YouTube ↗ · Transcript ↓"  
   videos/NndWvacogTk/ (`redesign-2/videos/NndWvacogTk/index.html` line 43), under "Practice Advice for Everyday Life"
 
 ## videos/OAfkxskGREo/ (5)
@@ -5404,7 +5404,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/OAfkxskGREo/ (`redesign-2/videos/OAfkxskGREo/index.html` line 36), under "My Journey: Episode 2 - A Series of Miracles"
 - [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 2 - A Series of Miracles"  
   videos/OAfkxskGREo/ (`redesign-2/videos/OAfkxskGREo/index.html` line 40), under "My Journey: Episode 2 - A Series of Miracles"
-- [ ] **Paragraph:** "2021-03-03 · 1 h 7 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "3 March 2021 · 1 h 7 min · Open on YouTube ↗ · Transcript ↓"  
   videos/OAfkxskGREo/ (`redesign-2/videos/OAfkxskGREo/index.html` line 43), under "My Journey: Episode 2 - A Series of Miracles"
 
 ## videos/R9dqNii3Vmc/ (5)
@@ -5417,7 +5417,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/R9dqNii3Vmc/ (`redesign-2/videos/R9dqNii3Vmc/index.html` line 36), under "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas"
 - [ ] **Screen-reader label (hidden):** "Play: A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas"  
   videos/R9dqNii3Vmc/ (`redesign-2/videos/R9dqNii3Vmc/index.html` line 40), under "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas"
-- [ ] **Paragraph:** "2011-03-31 · 2 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "31 March 2011 · 2 min · Open on YouTube ↗ · Transcript ↓"  
   videos/R9dqNii3Vmc/ (`redesign-2/videos/R9dqNii3Vmc/index.html` line 43), under "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas"
 
 ## videos/RarJIUBrysw/ (6)
@@ -5428,7 +5428,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2018 Patreon Q&A"  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 40), under "Culadasa January 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held January 2018 · 1 h 31 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: January 2018 · 1 h 31 min · Open on YouTube ↗ · Transcript ↓"  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 43), under "Culadasa January 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Six (3) · Stage Seven (1) · Stage Eight (4) · Stage Nine (2) · Stage Ten (2)"  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 43), under "Culadasa January 2018 Patreon Q&A"
@@ -5445,7 +5445,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/TrK3NBylnVA/ (`redesign-2/videos/TrK3NBylnVA/index.html` line 36), under "My Journey: Episode 4 - Stranger in a Strange Land"
 - [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 4 - Stranger in a Strange Land"  
   videos/TrK3NBylnVA/ (`redesign-2/videos/TrK3NBylnVA/index.html` line 40), under "My Journey: Episode 4 - Stranger in a Strange Land"
-- [ ] **Paragraph:** "2021-04-21 · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "21 April 2021 · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
   videos/TrK3NBylnVA/ (`redesign-2/videos/TrK3NBylnVA/index.html` line 43), under "My Journey: Episode 4 - Stranger in a Strange Land"
 
 ## videos/Uf_su1wDk94/ (5)
@@ -5456,7 +5456,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/Uf_su1wDk94/ (`redesign-2/videos/Uf_su1wDk94/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Introduction to "My Journey" discussion series"  
   videos/Uf_su1wDk94/ (`redesign-2/videos/Uf_su1wDk94/index.html` line 40), under "Introduction to "My Journey" discussion series"
-- [ ] **Paragraph:** "2021-02-12 · 9 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "12 February 2021 · 9 min · Open on YouTube ↗ · Transcript ↓"  
   videos/Uf_su1wDk94/ (`redesign-2/videos/Uf_su1wDk94/index.html` line 43), under "Introduction to "My Journey" discussion series"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (1)"  
   videos/Uf_su1wDk94/ (`redesign-2/videos/Uf_su1wDk94/index.html` line 43), under "Introduction to "My Journey" discussion series"
@@ -5469,7 +5469,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 40), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
-- [ ] **Paragraph:** "2021-01-29 · 1 h 4 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "29 January 2021 · 1 h 4 min · Open on YouTube ↗ · Transcript ↓"  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 43), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (1)"  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 43), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
@@ -5482,7 +5482,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/Wmg-SOl9Sk4/ (`redesign-2/videos/Wmg-SOl9Sk4/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2019 Patreon Q&A Video - Friday the 29th"  
   videos/Wmg-SOl9Sk4/ (`redesign-2/videos/Wmg-SOl9Sk4/index.html` line 40), under "Culadasa November 2019 Patreon Q&A Video - Friday the 29th"
-- [ ] **Paragraph:** "Held November 2019 - Friday the 29th · 1 h 28 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 2019 - Friday the 29th · 1 h 28 min · Open on YouTube ↗ · Transcript ↓"  
   videos/Wmg-SOl9Sk4/ (`redesign-2/videos/Wmg-SOl9Sk4/index.html` line 43), under "Culadasa November 2019 Patreon Q&A Video - Friday the 29th"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Seven (1)"  
   videos/Wmg-SOl9Sk4/ (`redesign-2/videos/Wmg-SOl9Sk4/index.html` line 43), under "Culadasa November 2019 Patreon Q&A Video - Friday the 29th"
@@ -5495,7 +5495,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2019 Patreon Q&A"  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 40), under "Culadasa July 2019 Patreon Q&A"
-- [ ] **Paragraph:** "Held July 2019 · 1 h 35 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: July 2019 · 1 h 35 min · Open on YouTube ↗ · Transcript ↓"  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 43), under "Culadasa July 2019 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Six (1) · Stage Seven (2) · Stage Eight (1)"  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 43), under "Culadasa July 2019 Patreon Q&A"
@@ -5510,7 +5510,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/XFrOYVJxO80/ (`redesign-2/videos/XFrOYVJxO80/index.html` line 36), under "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula"
 - [ ] **Screen-reader label (hidden):** "Play: Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula"  
   videos/XFrOYVJxO80/ (`redesign-2/videos/XFrOYVJxO80/index.html` line 40), under "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula"
-- [ ] **Paragraph:** "2011-03-31 · 10 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "31 March 2011 · 10 min · Open on YouTube ↗ · Transcript ↓"  
   videos/XFrOYVJxO80/ (`redesign-2/videos/XFrOYVJxO80/index.html` line 43), under "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula"
 
 ## videos/XaRnabvBKOQ/ (5)
@@ -5523,7 +5523,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/XaRnabvBKOQ/ (`redesign-2/videos/XaRnabvBKOQ/index.html` line 36), under "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa"
 - [ ] **Screen-reader label (hidden):** "Play: Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa"  
   videos/XaRnabvBKOQ/ (`redesign-2/videos/XaRnabvBKOQ/index.html` line 40), under "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa"
-- [ ] **Paragraph:** "2014-09-22 · 3 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "22 September 2014 · 3 min · Open on YouTube ↗ · Transcript ↓"  
   videos/XaRnabvBKOQ/ (`redesign-2/videos/XaRnabvBKOQ/index.html` line 43), under "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa"
 
 ## videos/YD02MC1RaUs/ (6)
@@ -5534,7 +5534,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/YD02MC1RaUs/ (`redesign-2/videos/YD02MC1RaUs/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2018 Patreon Q&A"  
   videos/YD02MC1RaUs/ (`redesign-2/videos/YD02MC1RaUs/index.html` line 40), under "Culadasa February 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held February 2018 · 1 h 41 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: February 2018 · 1 h 41 min · Open on YouTube ↗ · Transcript ↓"  
   videos/YD02MC1RaUs/ (`redesign-2/videos/YD02MC1RaUs/index.html` line 43), under "Culadasa February 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Four (1) · Stage Five (9) · Stage Six (2) · Stage Eight (2) · Stage Nine (2)"  
   videos/YD02MC1RaUs/ (`redesign-2/videos/YD02MC1RaUs/index.html` line 43), under "Culadasa February 2018 Patreon Q&A"
@@ -5549,7 +5549,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/YU_gUvXkkVY/ (`redesign-2/videos/YU_gUvXkkVY/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2020 Patreon Q&A N°2 Recording"  
   videos/YU_gUvXkkVY/ (`redesign-2/videos/YU_gUvXkkVY/index.html` line 40), under "Culadasa July 2020 Patreon Q&A N°2 Recording"
-- [ ] **Paragraph:** "Held July 2020 #2 · 1 h 43 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: July 2020 #2 · 1 h 43 min · Open on YouTube ↗ · Transcript ↓"  
   videos/YU_gUvXkkVY/ (`redesign-2/videos/YU_gUvXkkVY/index.html` line 43), under "Culadasa July 2020 Patreon Q&A N°2 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (2) · Stage Three (1) · Stage Four (2) · Stage Five (3) · Stage Six (2) · Stage Seven (1) · Stage Eight (1)"  
   videos/YU_gUvXkkVY/ (`redesign-2/videos/YU_gUvXkkVY/index.html` line 43), under "Culadasa July 2020 Patreon Q&A N°2 Recording"
@@ -5562,7 +5562,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/YfRp9cMPSNk/ (`redesign-2/videos/YfRp9cMPSNk/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2019 Patreon Q&A - Sunday"  
   videos/YfRp9cMPSNk/ (`redesign-2/videos/YfRp9cMPSNk/index.html` line 40), under "Culadasa November 2019 Patreon Q&A - Sunday"
-- [ ] **Paragraph:** "Held November 2019 - Sunday · 1 h 33 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 2019 - Sunday · 1 h 33 min · Open on YouTube ↗ · Transcript ↓"  
   videos/YfRp9cMPSNk/ (`redesign-2/videos/YfRp9cMPSNk/index.html` line 43), under "Culadasa November 2019 Patreon Q&A - Sunday"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (3) · Stage Five (1) · Stage Six (1)"  
   videos/YfRp9cMPSNk/ (`redesign-2/videos/YfRp9cMPSNk/index.html` line 43), under "Culadasa November 2019 Patreon Q&A - Sunday"
@@ -5575,7 +5575,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/Yg6l-DsFEz8/ (`redesign-2/videos/Yg6l-DsFEz8/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2021 Patreon Q&A No1"  
   videos/Yg6l-DsFEz8/ (`redesign-2/videos/Yg6l-DsFEz8/index.html` line 40), under "Culadasa March 2021 Patreon Q&A No1"
-- [ ] **Paragraph:** "Held March 2021 #1 · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: March 2021 #1 · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
   videos/Yg6l-DsFEz8/ (`redesign-2/videos/Yg6l-DsFEz8/index.html` line 43), under "Culadasa March 2021 Patreon Q&A No1"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Six (2) · Stage Seven (3)"  
   videos/Yg6l-DsFEz8/ (`redesign-2/videos/Yg6l-DsFEz8/index.html` line 43), under "Culadasa March 2021 Patreon Q&A No1"
@@ -5588,7 +5588,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/ZbmFWHoT0YE/ (`redesign-2/videos/ZbmFWHoT0YE/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2021 Patreon Q&A No1"  
   videos/ZbmFWHoT0YE/ (`redesign-2/videos/ZbmFWHoT0YE/index.html` line 40), under "Culadasa January 2021 Patreon Q&A No1"
-- [ ] **Paragraph:** "Held January 2021 #1 · 1 h 21 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: January 2021 #1 · 1 h 21 min · Open on YouTube ↗ · Transcript ↓"  
   videos/ZbmFWHoT0YE/ (`redesign-2/videos/ZbmFWHoT0YE/index.html` line 43), under "Culadasa January 2021 Patreon Q&A No1"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (5) · Stage Eight (1)"  
   videos/ZbmFWHoT0YE/ (`redesign-2/videos/ZbmFWHoT0YE/index.html` line 43), under "Culadasa January 2021 Patreon Q&A No1"
@@ -5603,7 +5603,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/Zk2XQFwESIk/ (`redesign-2/videos/Zk2XQFwESIk/index.html` line 36), under "Creating the optimal state of mind for Meditation - Culadasa at NYIMC"
 - [ ] **Screen-reader label (hidden):** "Play: Creating the optimal state of mind for Meditation - Culadasa at NYIMC"  
   videos/Zk2XQFwESIk/ (`redesign-2/videos/Zk2XQFwESIk/index.html` line 40), under "Creating the optimal state of mind for Meditation - Culadasa at NYIMC"
-- [ ] **Paragraph:** "2017-02-05 · 1 h 10 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "5 February 2017 · 1 h 10 min · Open on YouTube ↗ · Transcript ↓"  
   videos/Zk2XQFwESIk/ (`redesign-2/videos/Zk2XQFwESIk/index.html` line 43), under "Creating the optimal state of mind for Meditation - Culadasa at NYIMC"
 
 ## videos/_c94GntI6qM/ (5)
@@ -5614,7 +5614,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/_c94GntI6qM/ (`redesign-2/videos/_c94GntI6qM/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2019 Patreon Q&A Video - Sunday the 15th"  
   videos/_c94GntI6qM/ (`redesign-2/videos/_c94GntI6qM/index.html` line 40), under "Culadasa December 2019 Patreon Q&A Video - Sunday the 15th"
-- [ ] **Paragraph:** "Held December 2019 - Sunday the 15th · 1 h 31 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: December 2019 - Sunday the 15th · 1 h 31 min · Open on YouTube ↗ · Transcript ↓"  
   videos/_c94GntI6qM/ (`redesign-2/videos/_c94GntI6qM/index.html` line 43), under "Culadasa December 2019 Patreon Q&A Video - Sunday the 15th"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (1) · Stage Three (1) · Stage Four (2) · Stage Five (1) · Stage Seven (10) · Stage Eight (6) · Stage Nine (3) · Stage Ten (2)"  
   videos/_c94GntI6qM/ (`redesign-2/videos/_c94GntI6qM/index.html` line 43), under "Culadasa December 2019 Patreon Q&A Video - Sunday the 15th"
@@ -5627,7 +5627,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/_m3ou_CA1Wk/ (`redesign-2/videos/_m3ou_CA1Wk/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: November 23, 2018 Culadasa Q&A Catch Up"  
   videos/_m3ou_CA1Wk/ (`redesign-2/videos/_m3ou_CA1Wk/index.html` line 40), under "November 23, 2018 Culadasa Q&A Catch Up"
-- [ ] **Paragraph:** "Held November 23, 2018 Catch-Up · 1 h 16 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 23, 2018 Catch-Up · 1 h 16 min · Open on YouTube ↗ · Transcript ↓"  
   videos/_m3ou_CA1Wk/ (`redesign-2/videos/_m3ou_CA1Wk/index.html` line 43), under "November 23, 2018 Culadasa Q&A Catch Up"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Five (1) · Stage Six (2)"  
   videos/_m3ou_CA1Wk/ (`redesign-2/videos/_m3ou_CA1Wk/index.html` line 43), under "November 23, 2018 Culadasa Q&A Catch Up"
@@ -5640,7 +5640,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/a8XJrNx7iN0/ (`redesign-2/videos/a8XJrNx7iN0/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2020 Patreon Q&A N°2 Recording"  
   videos/a8XJrNx7iN0/ (`redesign-2/videos/a8XJrNx7iN0/index.html` line 40), under "Culadasa June 2020 Patreon Q&A N°2 Recording"
-- [ ] **Paragraph:** "Held June 2020 #2 · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: June 2020 #2 · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
   videos/a8XJrNx7iN0/ (`redesign-2/videos/a8XJrNx7iN0/index.html` line 43), under "Culadasa June 2020 Patreon Q&A N°2 Recording"
 
 ## videos/aCwUGQk-0gQ/ (5)
@@ -5653,7 +5653,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/aCwUGQk-0gQ/ (`redesign-2/videos/aCwUGQk-0gQ/index.html` line 36), under "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula"
 - [ ] **Screen-reader label (hidden):** "Play: Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula"  
   videos/aCwUGQk-0gQ/ (`redesign-2/videos/aCwUGQk-0gQ/index.html` line 40), under "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula"
-- [ ] **Paragraph:** "2014-09-30 · 1 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "30 September 2014 · 1 min · Open on YouTube ↗ · Transcript ↓"  
   videos/aCwUGQk-0gQ/ (`redesign-2/videos/aCwUGQk-0gQ/index.html` line 43), under "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula"
 
 ## videos/aJ16ifG-udI/ (5)
@@ -5664,7 +5664,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/aJ16ifG-udI/ (`redesign-2/videos/aJ16ifG-udI/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2020 Patreon Q&A N° 2 (Monday)"  
   videos/aJ16ifG-udI/ (`redesign-2/videos/aJ16ifG-udI/index.html` line 40), under "Culadasa January 2020 Patreon Q&A N° 2 (Monday)"
-- [ ] **Paragraph:** "Held January 2020 #2 - Monday · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: January 2020 #2 - Monday · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
   videos/aJ16ifG-udI/ (`redesign-2/videos/aJ16ifG-udI/index.html` line 43), under "Culadasa January 2020 Patreon Q&A N° 2 (Monday)"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (1) · Stage Four (1) · Stage Eight (2) · Stage Nine (2)"  
   videos/aJ16ifG-udI/ (`redesign-2/videos/aJ16ifG-udI/index.html` line 43), under "Culadasa January 2020 Patreon Q&A N° 2 (Monday)"
@@ -5677,7 +5677,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/aM0o-BkrwkY/ (`redesign-2/videos/aM0o-BkrwkY/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: September 2018 Patreon Q&A"  
   videos/aM0o-BkrwkY/ (`redesign-2/videos/aM0o-BkrwkY/index.html` line 40), under "September 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held September 2018 · 1 h 48 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: September 2018 · 1 h 48 min · Open on YouTube ↗ · Transcript ↓"  
   videos/aM0o-BkrwkY/ (`redesign-2/videos/aM0o-BkrwkY/index.html` line 43), under "September 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (2) · Stage Two (7) · Stage Three (2) · Stage Five (2) · Stage Six (6) · Stage Seven (1)"  
   videos/aM0o-BkrwkY/ (`redesign-2/videos/aM0o-BkrwkY/index.html` line 43), under "September 2018 Patreon Q&A"
@@ -5690,7 +5690,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/c7GSUFa_lF4/ (`redesign-2/videos/c7GSUFa_lF4/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2020 Patreon Q&A Nº 1 - Sunday"  
   videos/c7GSUFa_lF4/ (`redesign-2/videos/c7GSUFa_lF4/index.html` line 40), under "Culadasa January 2020 Patreon Q&A Nº 1 - Sunday"
-- [ ] **Paragraph:** "Held January 2020 #1 - Sunday · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: January 2020 #1 - Sunday · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
   videos/c7GSUFa_lF4/ (`redesign-2/videos/c7GSUFa_lF4/index.html` line 43), under "Culadasa January 2020 Patreon Q&A Nº 1 - Sunday"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Five (3) · Stage Six (6) · Stage Seven (1)"  
   videos/c7GSUFa_lF4/ (`redesign-2/videos/c7GSUFa_lF4/index.html` line 43), under "Culadasa January 2020 Patreon Q&A Nº 1 - Sunday"
@@ -5703,7 +5703,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/d4x3_ffTPC0/ (`redesign-2/videos/d4x3_ffTPC0/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2020 Patreon Q&A No1"  
   videos/d4x3_ffTPC0/ (`redesign-2/videos/d4x3_ffTPC0/index.html` line 40), under "Culadasa December 2020 Patreon Q&A No1"
-- [ ] **Paragraph:** "Held December 2020 #1 · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: December 2020 #1 · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
   videos/d4x3_ffTPC0/ (`redesign-2/videos/d4x3_ffTPC0/index.html` line 43), under "Culadasa December 2020 Patreon Q&A No1"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (1) · Stage Seven (3) · Stage Nine (1) · Stage Ten (1)"  
   videos/d4x3_ffTPC0/ (`redesign-2/videos/d4x3_ffTPC0/index.html` line 43), under "Culadasa December 2020 Patreon Q&A No1"
@@ -5718,7 +5718,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/e1kss-E0IKU/ (`redesign-2/videos/e1kss-E0IKU/index.html` line 7)
 - [ ] **Paragraph:** "AMA video · 2017"  
   videos/e1kss-E0IKU/ (`redesign-2/videos/e1kss-E0IKU/index.html` line 36); also on 1 more place (2 pages)
-- [ ] **Paragraph:** "Held October 2017 · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: October 2017 · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
   videos/e1kss-E0IKU/ (`redesign-2/videos/e1kss-E0IKU/index.html` line 43), under "Culadasa October 2017 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (9) · Stage Five (5) · Stage Six (15) · Stage Seven (8) · Stage Eight (3) · Stage Nine (2) · Stage Ten (1)"  
   videos/e1kss-E0IKU/ (`redesign-2/videos/e1kss-E0IKU/index.html` line 43), under "Culadasa October 2017 Patreon Q&A"
@@ -5731,7 +5731,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/eERQSG0eMFY/ (`redesign-2/videos/eERQSG0eMFY/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2019 Patreon Q&A Video - Monday the 16th"  
   videos/eERQSG0eMFY/ (`redesign-2/videos/eERQSG0eMFY/index.html` line 40), under "Culadasa December 2019 Patreon Q&A Video - Monday the 16th"
-- [ ] **Paragraph:** "Held December 2019 - Monday the 16th · 1 h 17 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: December 2019 - Monday the 16th · 1 h 17 min · Open on YouTube ↗ · Transcript ↓"  
   videos/eERQSG0eMFY/ (`redesign-2/videos/eERQSG0eMFY/index.html` line 43), under "Culadasa December 2019 Patreon Q&A Video - Monday the 16th"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (4) · Stage Three (2) · Stage Four (6) · Stage Five (14) · Stage Six (10) · Stage Seven (2) · Stage Eight (3) · Stage Nine (2)"  
   videos/eERQSG0eMFY/ (`redesign-2/videos/eERQSG0eMFY/index.html` line 43), under "Culadasa December 2019 Patreon Q&A Video - Monday the 16th"
@@ -5744,7 +5744,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/eKMKZGZy6sc/ (`redesign-2/videos/eKMKZGZy6sc/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: February 2019 Culadasa Patreon Q&A"  
   videos/eKMKZGZy6sc/ (`redesign-2/videos/eKMKZGZy6sc/index.html` line 40), under "February 2019 Culadasa Patreon Q&A"
-- [ ] **Paragraph:** "Held February 2019 · 1 h 29 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: February 2019 · 1 h 29 min · Open on YouTube ↗ · Transcript ↓"  
   videos/eKMKZGZy6sc/ (`redesign-2/videos/eKMKZGZy6sc/index.html` line 43), under "February 2019 Culadasa Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (3) · Stage Four (9) · Stage Five (9) · Stage Six (4) · Stage Seven (1)"  
   videos/eKMKZGZy6sc/ (`redesign-2/videos/eKMKZGZy6sc/index.html` line 43), under "February 2019 Culadasa Patreon Q&A"
@@ -5757,7 +5757,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/eL36yVnWcb8/ (`redesign-2/videos/eL36yVnWcb8/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2020 Patreon Q&A Recording N°1"  
   videos/eL36yVnWcb8/ (`redesign-2/videos/eL36yVnWcb8/index.html` line 40), under "Culadasa May 2020 Patreon Q&A Recording N°1"
-- [ ] **Paragraph:** "Held May 2020 #1 · 2 h 1 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: May 2020 #1 · 2 h 1 min · Open on YouTube ↗ · Transcript ↓"  
   videos/eL36yVnWcb8/ (`redesign-2/videos/eL36yVnWcb8/index.html` line 43), under "Culadasa May 2020 Patreon Q&A Recording N°1"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (2) · Stage Two (4) · Stage Three (3) · Stage Four (5) · Stage Five (4) · Stage Six (3) · Stage Eight (1)"  
   videos/eL36yVnWcb8/ (`redesign-2/videos/eL36yVnWcb8/index.html` line 43), under "Culadasa May 2020 Patreon Q&A Recording N°1"
@@ -5768,7 +5768,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/edd2fS8BRdM/ (`redesign-2/videos/edd2fS8BRdM/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa May 2021 Patreon Q&A No1: Culadasa on video, with the questions asked and the full transcript."  
   videos/edd2fS8BRdM/ (`redesign-2/videos/edd2fS8BRdM/index.html` line 7)
-- [ ] **Paragraph:** "Held May 2021 #1 · 1 h 48 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: May 2021 #1 · 1 h 48 min · Open on YouTube ↗ · Transcript ↓"  
   videos/edd2fS8BRdM/ (`redesign-2/videos/edd2fS8BRdM/index.html` line 43), under "Culadasa May 2021 Patreon Q&A No1"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (4) · Stage Six (2) · Stage Seven (1) · Stage Eight (1)"  
   videos/edd2fS8BRdM/ (`redesign-2/videos/edd2fS8BRdM/index.html` line 43), under "Culadasa May 2021 Patreon Q&A No1"
@@ -5781,7 +5781,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/ewiA5sh-otw/ (`redesign-2/videos/ewiA5sh-otw/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2019 Patreon Q&A"  
   videos/ewiA5sh-otw/ (`redesign-2/videos/ewiA5sh-otw/index.html` line 40), under "Culadasa January 2019 Patreon Q&A"
-- [ ] **Paragraph:** "Held January 2019 · 1 h 28 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: January 2019 · 1 h 28 min · Open on YouTube ↗ · Transcript ↓"  
   videos/ewiA5sh-otw/ (`redesign-2/videos/ewiA5sh-otw/index.html` line 43), under "Culadasa January 2019 Patreon Q&A"
 
 ## videos/fcWxNIsXd4M/ (4)
@@ -5803,7 +5803,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/fmn_lz7tGFc/ (`redesign-2/videos/fmn_lz7tGFc/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2021 Patreon Q&A No2"  
   videos/fmn_lz7tGFc/ (`redesign-2/videos/fmn_lz7tGFc/index.html` line 40), under "Culadasa April 2021 Patreon Q&A No2"
-- [ ] **Paragraph:** "Held April 2021 #2 · 1 h 29 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: April 2021 #2 · 1 h 29 min · Open on YouTube ↗ · Transcript ↓"  
   videos/fmn_lz7tGFc/ (`redesign-2/videos/fmn_lz7tGFc/index.html` line 43), under "Culadasa April 2021 Patreon Q&A No2"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (2) · Stage Three (5) · Stage Four (4)"  
   videos/fmn_lz7tGFc/ (`redesign-2/videos/fmn_lz7tGFc/index.html` line 43), under "Culadasa April 2021 Patreon Q&A No2"
@@ -5816,7 +5816,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/kGgpbE_etV8/ (`redesign-2/videos/kGgpbE_etV8/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: 20190517 Culadasa Patreon Q&A"  
   videos/kGgpbE_etV8/ (`redesign-2/videos/kGgpbE_etV8/index.html` line 40), under "20190517 Culadasa Patreon Q&A"
-- [ ] **Paragraph:** "Held May 17, 2019 · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: May 17, 2019 · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
   videos/kGgpbE_etV8/ (`redesign-2/videos/kGgpbE_etV8/index.html` line 43), under "20190517 Culadasa Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (4) · Stage Three (3) · Stage Four (2) · Stage Five (5) · Stage Seven (2)"  
   videos/kGgpbE_etV8/ (`redesign-2/videos/kGgpbE_etV8/index.html` line 43), under "20190517 Culadasa Patreon Q&A"
@@ -5829,7 +5829,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/kn050yBN37U/ (`redesign-2/videos/kn050yBN37U/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years"  
   videos/kn050yBN37U/ (`redesign-2/videos/kn050yBN37U/index.html` line 40), under "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years"
-- [ ] **Paragraph:** "2021-02-12 · 59 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "12 February 2021 · 59 min · Open on YouTube ↗ · Transcript ↓"  
   videos/kn050yBN37U/ (`redesign-2/videos/kn050yBN37U/index.html` line 43), under "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years"
 
 ## videos/kwyGPfavfFY/ (5)
@@ -5840,7 +5840,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/kwyGPfavfFY/ (`redesign-2/videos/kwyGPfavfFY/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa August 2020 Patreon Q&A N°1 Recording"  
   videos/kwyGPfavfFY/ (`redesign-2/videos/kwyGPfavfFY/index.html` line 40), under "Culadasa August 2020 Patreon Q&A N°1 Recording"
-- [ ] **Paragraph:** "Held August 2020 #1 · 1 h 44 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: August 2020 #1 · 1 h 44 min · Open on YouTube ↗ · Transcript ↓"  
   videos/kwyGPfavfFY/ (`redesign-2/videos/kwyGPfavfFY/index.html` line 43), under "Culadasa August 2020 Patreon Q&A N°1 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (2) · Stage Four (4) · Stage Five (2) · Stage Six (3) · Stage Seven (2) · Stage Eight (1) · Stage Nine (2) · Stage Ten (1)"  
   videos/kwyGPfavfFY/ (`redesign-2/videos/kwyGPfavfFY/index.html` line 43), under "Culadasa August 2020 Patreon Q&A N°1 Recording"
@@ -5853,7 +5853,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/lVvii04Sa3I/ (`redesign-2/videos/lVvii04Sa3I/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2020 Patreon Q&A No2"  
   videos/lVvii04Sa3I/ (`redesign-2/videos/lVvii04Sa3I/index.html` line 40), under "Culadasa December 2020 Patreon Q&A No2"
-- [ ] **Paragraph:** "Held December 2020 #2 · 1 h 14 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: December 2020 #2 · 1 h 14 min · Open on YouTube ↗ · Transcript ↓"  
   videos/lVvii04Sa3I/ (`redesign-2/videos/lVvii04Sa3I/index.html` line 43), under "Culadasa December 2020 Patreon Q&A No2"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Six (3) · Stage Seven (3) · Stage Eight (1) · Stage Nine (1) · Stage Ten (1)"  
   videos/lVvii04Sa3I/ (`redesign-2/videos/lVvii04Sa3I/index.html` line 43), under "Culadasa December 2020 Patreon Q&A No2"
@@ -5866,7 +5866,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/mW3_WGR2Llo/ (`redesign-2/videos/mW3_WGR2Llo/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2019 Patreon Q&A Catchup"  
   videos/mW3_WGR2Llo/ (`redesign-2/videos/mW3_WGR2Llo/index.html` line 40), under "Culadasa March 2019 Patreon Q&A Catchup"
-- [ ] **Paragraph:** "Held March 2019 Catch-Up · 1 h 12 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: March 2019 Catch-Up · 1 h 12 min · Open on YouTube ↗ · Transcript ↓"  
   videos/mW3_WGR2Llo/ (`redesign-2/videos/mW3_WGR2Llo/index.html` line 43), under "Culadasa March 2019 Patreon Q&A Catchup"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (2) · Stage Four (1) · Stage Five (1) · Stage Six (1) · Stage Nine (1)"  
   videos/mW3_WGR2Llo/ (`redesign-2/videos/mW3_WGR2Llo/index.html` line 43), under "Culadasa March 2019 Patreon Q&A Catchup"
@@ -5879,7 +5879,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/mz0MlFOwaek/ (`redesign-2/videos/mz0MlFOwaek/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: July 25, 2018 Culadasa Patreon Q&A"  
   videos/mz0MlFOwaek/ (`redesign-2/videos/mz0MlFOwaek/index.html` line 40), under "July 25, 2018 Culadasa Patreon Q&A"
-- [ ] **Paragraph:** "Held July 25, 2018 · 1 h 49 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: July 25, 2018 · 1 h 49 min · Open on YouTube ↗ · Transcript ↓"  
   videos/mz0MlFOwaek/ (`redesign-2/videos/mz0MlFOwaek/index.html` line 43), under "July 25, 2018 Culadasa Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (6) · Stage Three (4) · Stage Four (5) · Stage Seven (1) · Stage Eight (1) · Stage Nine (1)"  
   videos/mz0MlFOwaek/ (`redesign-2/videos/mz0MlFOwaek/index.html` line 43), under "July 25, 2018 Culadasa Patreon Q&A"
@@ -5892,7 +5892,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/nlB-Dk8MkVE/ (`redesign-2/videos/nlB-Dk8MkVE/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2020 Patreon Q&A N°1 Recording"  
   videos/nlB-Dk8MkVE/ (`redesign-2/videos/nlB-Dk8MkVE/index.html` line 40), under "Culadasa July 2020 Patreon Q&A N°1 Recording"
-- [ ] **Paragraph:** "Held July 2020 #1 · 1 h 40 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: July 2020 #1 · 1 h 40 min · Open on YouTube ↗ · Transcript ↓"  
   videos/nlB-Dk8MkVE/ (`redesign-2/videos/nlB-Dk8MkVE/index.html` line 43), under "Culadasa July 2020 Patreon Q&A N°1 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Ten (1)"  
   videos/nlB-Dk8MkVE/ (`redesign-2/videos/nlB-Dk8MkVE/index.html` line 43), under "Culadasa July 2020 Patreon Q&A N°1 Recording"
@@ -5905,7 +5905,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/oge5XL_vdPw/ (`redesign-2/videos/oge5XL_vdPw/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Engaged Compassion, Part 1; Gloucester MA, July 1, 2016"  
   videos/oge5XL_vdPw/ (`redesign-2/videos/oge5XL_vdPw/index.html` line 40), under "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016"
-- [ ] **Paragraph:** "2017-01-25 · 1 h 36 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "25 January 2017 · 1 h 36 min · Open on YouTube ↗ · Transcript ↓"  
   videos/oge5XL_vdPw/ (`redesign-2/videos/oge5XL_vdPw/index.html` line 43), under "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016"
 
 ## videos/omNF2wQYVxs/ (5)
@@ -5916,7 +5916,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/omNF2wQYVxs/ (`redesign-2/videos/omNF2wQYVxs/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2020 Patreon Q&A Recording"  
   videos/omNF2wQYVxs/ (`redesign-2/videos/omNF2wQYVxs/index.html` line 40), under "Culadasa April 2020 Patreon Q&A Recording"
-- [ ] **Paragraph:** "Held April 2020 · 1 h 53 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: April 2020 · 1 h 53 min · Open on YouTube ↗ · Transcript ↓"  
   videos/omNF2wQYVxs/ (`redesign-2/videos/omNF2wQYVxs/index.html` line 43), under "Culadasa April 2020 Patreon Q&A Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (2) · Stage Three (5) · Stage Four (2) · Stage Seven (1)"  
   videos/omNF2wQYVxs/ (`redesign-2/videos/omNF2wQYVxs/index.html` line 43), under "Culadasa April 2020 Patreon Q&A Recording"
@@ -5929,7 +5929,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2018 Patreon Q&A"  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 40), under "Culadasa May 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held May 2018 · 1 h 28 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: May 2018 · 1 h 28 min · Open on YouTube ↗ · Transcript ↓"  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 43), under "Culadasa May 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Six (4) · Stage Seven (13) · Stage Eight (10) · Stage Nine (2) · Stage Ten (4)"  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 43), under "Culadasa May 2018 Patreon Q&A"
@@ -5942,7 +5942,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/qIuZg6jBNsM/ (`redesign-2/videos/qIuZg6jBNsM/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2021 Patreon Q&A No2"  
   videos/qIuZg6jBNsM/ (`redesign-2/videos/qIuZg6jBNsM/index.html` line 40), under "Culadasa January 2021 Patreon Q&A No2"
-- [ ] **Paragraph:** "Held January 2021 #2 · 1 h 24 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: January 2021 #2 · 1 h 24 min · Open on YouTube ↗ · Transcript ↓"  
   videos/qIuZg6jBNsM/ (`redesign-2/videos/qIuZg6jBNsM/index.html` line 43), under "Culadasa January 2021 Patreon Q&A No2"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (3) · Stage Two (3) · Stage Four (1) · Stage Five (1)"  
   videos/qIuZg6jBNsM/ (`redesign-2/videos/qIuZg6jBNsM/index.html` line 43), under "Culadasa January 2021 Patreon Q&A No2"
@@ -5955,7 +5955,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/qppnBfQ_KEI/ (`redesign-2/videos/qppnBfQ_KEI/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2021 Patreon Q&A No2"  
   videos/qppnBfQ_KEI/ (`redesign-2/videos/qppnBfQ_KEI/index.html` line 40), under "Culadasa February 2021 Patreon Q&A No2"
-- [ ] **Paragraph:** "Held February 2021 #2 · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: February 2021 #2 · 1 h 22 min · Open on YouTube ↗ · Transcript ↓"  
   videos/qppnBfQ_KEI/ (`redesign-2/videos/qppnBfQ_KEI/index.html` line 43), under "Culadasa February 2021 Patreon Q&A No2"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (4) · Stage Two (1) · Stage Three (3) · Stage Four (4) · Stage Five (4) · Stage Six (2) · Stage Seven (7)"  
   videos/qppnBfQ_KEI/ (`redesign-2/videos/qppnBfQ_KEI/index.html` line 43), under "Culadasa February 2021 Patreon Q&A No2"
@@ -5970,7 +5970,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/r-n-Ca_RqUQ/ (`redesign-2/videos/r-n-Ca_RqUQ/index.html` line 36), under "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci"
 - [ ] **Screen-reader label (hidden):** "Play: Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci"  
   videos/r-n-Ca_RqUQ/ (`redesign-2/videos/r-n-Ca_RqUQ/index.html` line 40), under "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci"
-- [ ] **Paragraph:** "2011-03-25 · 4 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "25 March 2011 · 4 min · Open on YouTube ↗ · Transcript ↓"  
   videos/r-n-Ca_RqUQ/ (`redesign-2/videos/r-n-Ca_RqUQ/index.html` line 43), under "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci"
 
 ## videos/rXySJwIZMP8/ (5)
@@ -5981,7 +5981,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/rXySJwIZMP8/ (`redesign-2/videos/rXySJwIZMP8/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2020 Patreon Q&A N°2 Recording"  
   videos/rXySJwIZMP8/ (`redesign-2/videos/rXySJwIZMP8/index.html` line 40), under "Culadasa October 2020 Patreon Q&A N°2 Recording"
-- [ ] **Paragraph:** "Held October 2020 #2 · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: October 2020 #2 · 1 h 32 min · Open on YouTube ↗ · Transcript ↓"  
   videos/rXySJwIZMP8/ (`redesign-2/videos/rXySJwIZMP8/index.html` line 43), under "Culadasa October 2020 Patreon Q&A N°2 Recording"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (6) · Stage Four (3) · Stage Seven (2)"  
   videos/rXySJwIZMP8/ (`redesign-2/videos/rXySJwIZMP8/index.html` line 43), under "Culadasa October 2020 Patreon Q&A N°2 Recording"
@@ -5994,7 +5994,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/rqpZrRRC1sU/ (`redesign-2/videos/rqpZrRRC1sU/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2018 Patreon Q&A"  
   videos/rqpZrRRC1sU/ (`redesign-2/videos/rqpZrRRC1sU/index.html` line 40), under "Culadasa June 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held June 2018 · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: June 2018 · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
   videos/rqpZrRRC1sU/ (`redesign-2/videos/rqpZrRRC1sU/index.html` line 43), under "Culadasa June 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (1) · Stage Three (1) · Stage Four (2) · Stage Five (3) · Stage Six (4) · Stage Seven (3) · Stage Eight (4)"  
   videos/rqpZrRRC1sU/ (`redesign-2/videos/rqpZrRRC1sU/index.html` line 43), under "Culadasa June 2018 Patreon Q&A"
@@ -6009,7 +6009,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/u5He0q5u5yY/ (`redesign-2/videos/u5He0q5u5yY/index.html` line 36), under "Here Comes the Sun: Achieving Awakening Without the Dark Night"
 - [ ] **Screen-reader label (hidden):** "Play: Here Comes the Sun: Achieving Awakening Without the Dark Night"  
   videos/u5He0q5u5yY/ (`redesign-2/videos/u5He0q5u5yY/index.html` line 40), under "Here Comes the Sun: Achieving Awakening Without the Dark Night"
-- [ ] **Paragraph:** "2014-03-31 · 2 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "31 March 2014 · 2 min · Open on YouTube ↗ · Transcript ↓"  
   videos/u5He0q5u5yY/ (`redesign-2/videos/u5He0q5u5yY/index.html` line 43), under "Here Comes the Sun: Achieving Awakening Without the Dark Night"
 
 ## videos/urCb5Ryp8SU/ (5)
@@ -6020,7 +6020,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2018 Patreon Q&A"  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 40), under "Culadasa November 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Held November 2018 · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 2018 · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 43), under "Culadasa November 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (2) · Stage Three (2) · Stage Four (8) · Stage Five (16) · Stage Six (17) · Stage Seven (5) · Stage Ten (1)"  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 43), under "Culadasa November 2018 Patreon Q&A"
@@ -6033,7 +6033,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2017 Patreon Q&A"  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 40), under "Culadasa December 2017 Patreon Q&A"
-- [ ] **Paragraph:** "Held December 2017 · 1 h 59 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: December 2017 · 1 h 59 min · Open on YouTube ↗ · Transcript ↓"  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 43), under "Culadasa December 2017 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (4) · Stage Three (2) · Stage Four (11) · Stage Six (1) · Stage Seven (3) · Stage Eight (1) · Stage Nine (1) · Stage Ten (4)"  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 43), under "Culadasa December 2017 Patreon Q&A"
@@ -6044,7 +6044,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/vtWoFpEHTBs/ (`redesign-2/videos/vtWoFpEHTBs/index.html` line 6)
 - [ ] **Search description (hidden):** "How do you know whats true? - Culadasa at NY Insight: Culadasa on video, with the full transcript."  
   videos/vtWoFpEHTBs/ (`redesign-2/videos/vtWoFpEHTBs/index.html` line 7)
-- [ ] **Paragraph:** "2017-02-01 · 27 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "1 February 2017 · 27 min · Open on YouTube ↗ · Transcript ↓"  
   videos/vtWoFpEHTBs/ (`redesign-2/videos/vtWoFpEHTBs/index.html` line 43), under "How do you know whats true? - Culadasa at NY Insight"
 
 ## videos/xrUlWLRqQEM/ (5)
@@ -6057,7 +6057,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/xrUlWLRqQEM/ (`redesign-2/videos/xrUlWLRqQEM/index.html` line 36), under "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa"
 - [ ] **Screen-reader label (hidden):** "Play: Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa"  
   videos/xrUlWLRqQEM/ (`redesign-2/videos/xrUlWLRqQEM/index.html` line 40), under "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa"
-- [ ] **Paragraph:** "2014-09-22 · 1 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "22 September 2014 · 1 min · Open on YouTube ↗ · Transcript ↓"  
   videos/xrUlWLRqQEM/ (`redesign-2/videos/xrUlWLRqQEM/index.html` line 43), under "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa"
 
 ## videos/z2aOw9Uhc-w/ (5)
@@ -6068,7 +6068,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/z2aOw9Uhc-w/ (`redesign-2/videos/z2aOw9Uhc-w/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2020 Patreon Q&A No3"  
   videos/z2aOw9Uhc-w/ (`redesign-2/videos/z2aOw9Uhc-w/index.html` line 40), under "Culadasa November 2020 Patreon Q&A No3"
-- [ ] **Paragraph:** "Held November 2020 #3 · 2 h 1 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: November 2020 #3 · 2 h 1 min · Open on YouTube ↗ · Transcript ↓"  
   videos/z2aOw9Uhc-w/ (`redesign-2/videos/z2aOw9Uhc-w/index.html` line 43), under "Culadasa November 2020 Patreon Q&A No3"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (6) · Stage Three (9) · Stage Four (6) · Stage Five (5) · Stage Six (9) · Stage Seven (6) · Stage Eight (2) · Stage Nine (1) · Stage Ten (1)"  
   videos/z2aOw9Uhc-w/ (`redesign-2/videos/z2aOw9Uhc-w/index.html` line 43), under "Culadasa November 2020 Patreon Q&A No3"
@@ -6081,7 +6081,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   videos/zRa9I0ZkdKM/ (`redesign-2/videos/zRa9I0ZkdKM/index.html` line 7)
 - [ ] **Screen-reader label (hidden):** "Play: February 2019 Culadasa Patreon Q&A catch-up"  
   videos/zRa9I0ZkdKM/ (`redesign-2/videos/zRa9I0ZkdKM/index.html` line 40), under "February 2019 Culadasa Patreon Q&A catch-up"
-- [ ] **Paragraph:** "Held February 2019 Catch-Up · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
+- [ ] **Paragraph:** "AMA session: February 2019 Catch-Up · 1 h 23 min · Open on YouTube ↗ · Transcript ↓"  
   videos/zRa9I0ZkdKM/ (`redesign-2/videos/zRa9I0ZkdKM/index.html` line 43), under "February 2019 Culadasa Patreon Q&A catch-up"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (2) · Stage Three (1) · Stage Four (6) · Stage Five (4) · Stage Six (1) · Stage Seven (2) · Stage Eight (1)"  
   videos/zRa9I0ZkdKM/ (`redesign-2/videos/zRa9I0ZkdKM/index.html` line 43), under "February 2019 Culadasa Patreon Q&A catch-up"
@@ -6263,4 +6263,4 @@ These appear while using Topics search and the Teachers map; they are not in the
 - [ ] "Thank you. This preview is not connected to a mailing service yet, so your address was not sent or stored anywhere."  
   `redesign-2/assets/site.js` line 23
 - [ ] "Not in this transcript"  
-  `redesign-2/assets/site.js` line 125
+  `redesign-2/assets/site.js` line 140
