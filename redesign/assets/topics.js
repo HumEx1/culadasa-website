@@ -268,6 +268,8 @@
       var W = SW[n - 1].charAt(0).toUpperCase() + SW[n - 1].slice(1);
       return '<p class="stage-callout"><a href="' + base + 'ten-stages/stage-' + n + '/"><strong>Stage ' + W + ': ' + esc(STAGE_NAMES[n - 1]) + '</strong> — a video to start with and everything he said about this stage →</a></p>';
     }
+    var tp = window.CULADASA_TOPICS && window.CULADASA_TOPICS[f.replace(/-/g, ' ')];   // a topic word offers its page (28 Nov 2026)
+    if (tp) return '<p class="stage-callout"><a href="' + base + 'learn/topics/' + tp[0] + '/"><strong>' + esc(tp[1]) + '</strong> — a video to start with and everything he said about it →</a></p>';
     if (/^(the )?(10|ten) stages?$/.test(f)) return '<p class="stage-callout"><a href="' + base + 'ten-stages/"><strong>The ten stages</strong> — each stage with a video to start with and everything he said about it →</a></p>';
     return '';
   }

@@ -366,3 +366,19 @@ main p.small{max-width:var(--measure)}
 .alex-intro p{font-size:16px;max-width:var(--measure)}
 .banner .label a:hover{text-decoration:underline}
 @media (min-width:761px) and (max-width:1023px){.grid.cols-4.library-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* --- Topics and the glossary (D, 28 Nov 2026) --- */
+.topic-chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.topic-chips a{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border:1px solid var(--line-2);border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font:400 15px/1 var(--display)}
+.topic-chips a:hover,.topic-chips a:focus-visible{border-color:var(--teal);color:var(--teal)}
+.topic-list{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:0 32px}
+.topic-list a{display:grid;gap:4px;padding:16px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.tl-name{font:400 20px/1.3 var(--display)}
+.tl-lead{font-size:16px;color:var(--body)}
+.tl-n{font-size:14px;color:var(--muted)}
+.topic-list a:hover .tl-name,.topic-list a:focus-visible .tl-name{color:var(--teal)}
+.glossary{margin:24px 0 0}
+.gl-row{padding:16px 0;border-top:1px solid var(--line);scroll-margin-top:80px}
+.glossary dt{font:600 19px/1.3 var(--text);color:var(--ink)}   /* the text face sets Pāli marks cleanly (word-final ā drew loose in Jost) */
+.gl-also{font:400 15px var(--text);color:var(--muted);margin-left:8px}
+.glossary dd{margin:6px 0 0}
+.gl-links{display:block;margin-top:6px;font-size:15px;color:var(--muted)}

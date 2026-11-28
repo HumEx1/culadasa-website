@@ -107,7 +107,7 @@ for f in pages:
     if 'videos' in f.parts and f.parent.name != 'videos':   # a video page: the transcript and Alex's questions are quoted, not new
         for t in soup.select('.transcript, #questions .qlist'):
             t.decompose()
-    if 'ten-stages' in f.parts:
+    if 'ten-stages' in f.parts or ('learn' in f.parts and 'topics' in f.parts):
         for t in soup.select('.rr-body p.tline, .rr-body .qsnip, .rr-body > p:not(.rr-open):not(.small)'):
             t.decompose()
     heading = ''

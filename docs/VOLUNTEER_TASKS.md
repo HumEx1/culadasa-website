@@ -75,7 +75,7 @@ The transcripts are YouTube's automatic captions with Pāli terms corrected by r
 | Click through both sites on a phone, a tablet and a computer, in two browsers, and report anything odd | 3 |
 | Read `docs/SEO_AUDIT.md` and choose which recommendations to do | 2 |
 
-## 9. For teachers: checking and recommending — about 60 hours
+## 9. For teachers: checking and recommending — about 72 hours
 
 Jobs that need a certified teacher's judgement: checking what the site says against the teaching, and choosing what students should see first.
 
@@ -91,6 +91,8 @@ Jobs that need a certified teacher's judgement: checking what the site says agai
 | Approve the topic lists for the clouds and the one-line meanings of the Pāli and Sanskrit terms (with §6) | 4 |
 | Read the new text the site adds about the teaching (`docs/NEW_TEXT_CHECKLIST.md`) for anything that misstates it | 4 |
 | Check your own profile on the Teachers page | 2 |
+| Confirm the twenty topics, the words that count for each and their one-line introductions; choose each topic's video to start with (`docs/TOPICS.md`) | 8 |
+| Check the glossary meanings against his own glossary and teaching, and add missing terms | 4 |
 
 ## Totals
 
@@ -104,7 +106,7 @@ Jobs that need a certified teacher's judgement: checking what the site says agai
 | 6. Pāli, Sanskrit and topics | about 12 |
 | 7. Teachers | about 26 |
 | 8. The website as a whole | about 20 |
-| 9. For teachers | about 60 |
-| **Total** | **about 468 hours** |
+| 9. For teachers | about 72 |
+| **Total** | **about 480 hours** |
 
 The single biggest task is proofreading the transcripts (225 hours). Split across 20 people, that is about 11 hours each.
