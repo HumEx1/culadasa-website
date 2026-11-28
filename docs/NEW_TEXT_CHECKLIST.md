@@ -91,7 +91,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 135), in the footer; also on 80 more places (81 pages)
 - [ ] **Paragraph:** "The basics · The method · The science of mind · Going deeper · Daily life"  
   Learn (`redesign-2/learn/index.html` line 37), in the menu
-- [ ] **Section heading:** "All 61 Patreon AMA sessions organized by year"  
+- [ ] **Section heading:** "All 61 Patreon AMA videos organized by year"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 40), in the menu
 - [ ] **Paragraph:** "Choose one to go to it. This page remembers the last video you opened on this device."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 40), in the menu
@@ -3058,13 +3058,13 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Search description (hidden):** "Every question from Culadasa’s 61 recorded AMA (ask me anything) videos, 2017–2021, with links to his answers."  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 7)
 - [ ] **Paragraph:** "His monthly ask-me-anything videos, 2017–2021: every question, linked to his answer."  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 36), under "AMA Videos"
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 36), under "AMA videos"
 - [ ] **Search box hint:** "Search questions"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 38), under "AMA Videos"
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 38), under "AMA videos"
 - [ ] **Screen-reader label (hidden):** "AMA videos by year"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 40), under "AMA Videos"
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 40), under "AMA videos"
 - [ ] **Button:** "About this index"  
-  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 41), under "AMA Videos"; also on 1 more place
+  Library › Q&A archive (`redesign-2/online-meetings/index.html` line 41), under "AMA videos"; also on 1 more place
 - [ ] **Screen-reader label (hidden):** "Close"  
   Library › Q&A archive (`redesign-2/online-meetings/index.html` line 43), under "About this index"
 - [ ] **Paragraph:** "The questions, keywords and quotes on this page come from the Culadasa Q&A Index , shown here in full, with spelling mistakes corrected. Each time links to the moment the question is asked. Corrections go to the original index. Its introduction follows."  

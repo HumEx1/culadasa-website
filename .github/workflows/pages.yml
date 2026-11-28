@@ -1,6 +1,6 @@
 # Publishes to GitHub Pages on every push to main:
 #   site/      -> the root (the exact mirror of culadasa.com)
-#   redesign/  -> /redesign/   (redesign draft: A2 + D2)
+#   redesign/  -> /redesign/   retired 28 Nov 2026: only redirects to /redesign-2/ are published (its assets and data stay as the generator's sources)
 #   redesign-2/ -> /redesign-2/ (redesign draft 2: A2 sans base, more minimal)
 # No build step: both folders are served exactly as committed.
 name: Publish site
@@ -31,7 +31,16 @@ jobs:
         run: |
           mkdir -p _site
           cp -a site/. _site/
-          cp -a redesign _site/redesign
+          # The first redesign is retired (D, 28 Nov 2026): it is no longer published. Each of its old addresses
+          # sends visitors to the same page of redesign 2 (the sample teacher pages go to Teachers).
+          (cd redesign && find . -name index.html | sort) | while read -r f; do
+            d=${f#./}; d=${d%index.html}
+            case "$d" in teachers/sample-teacher-*) t=teachers/ ;; *) t=$d ;; esac
+            up=$(printf '%s' "$d" | tr -cd '/' | wc -c)
+            pre=$(printf '../%.0s' $(seq 0 "$up"))
+            mkdir -p "_site/redesign/$d"
+            printf '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=%sredesign-2/%s"><link rel="canonical" href="%sredesign-2/%s"><title>Moved</title><p>This draft has moved to <a href="%sredesign-2/%s">the current redesign</a>.</p></html>\n' "$pre" "$t" "$pre" "$t" "$pre" "$t" > "_site/redesign/${d}index.html"
+          done
           cp -a redesign-2 _site/redesign-2
       - uses: actions/upload-pages-artifact@v5
         with:

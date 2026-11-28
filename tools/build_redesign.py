@@ -828,10 +828,10 @@ def build():
 <details class="scard-q"><summary><span class="when-closed">Open all {n_} question{'s' if n_ != 1 else ''}</span><span class="when-open">Close all {n_} question{'s' if n_ != 1 else ''}</span></summary><ol class="qlist">{''.join(q_item(q) for q in s_['questions'])}</ol><p class="scard-close"><button type="button" class="close-q">Close all {n_} question{'s' if n_ != 1 else ''}</button></p></details></div></article>'''
     intro_html = ''.join((f'<h3>{x["html"]}</h3>' if x['html'] in ('Some basic notes on how to use this document', 'Contributing') else f'<p>{x["html"]}</p>') for x in qindex['intro'])
     om_intro = re.sub(r'\s*,\s*a crowdsourcing platform', '', content['online_meetings_intro']).replace('Patreon .', 'Patreon.')   # D, 25 Nov 2026
-    body = banner('Ask me anything', 'AMA Videos', 'His monthly ask-me-anything videos, 2017–2021: every question, linked to his answer.', 'teal') + f'''
+    body = banner('Ask me anything', 'AMA videos', 'His monthly ask-me-anything videos, 2017–2021: every question, linked to his answer.', 'teal') + f'''
 <section class="section tight"><div class="wrap">{scoped_search(r, 'ama', 'Search questions', 'qa-q')}</div></section>   
 <section class="section"><div class="wrap">
-<nav class="jump jump-main" id="sessions" aria-label="AMA videos by year"><h2>All {len(isess)} Patreon AMA sessions organized by year</h2><p class="muted">Choose one to go to it. This page remembers the last video you opened on this device.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
+<nav class="jump jump-main" id="sessions" aria-label="AMA videos by year"><h2>All {len(isess)} Patreon AMA videos organized by year</h2><p class="muted">Choose one to go to it. This page remembers the last video you opened on this device.</p>{''.join(f'<p><strong>{y}</strong> {" · ".join(f'<a href="#s-{esc(x["video"])}">{esc(session_label(x["title"]))}</a>' for x in ss)}</p>' for y, ss in by_year.items())}</nav>
 <p class="tinfo-open"><button type="button" class="linklike" id="tinfo-btn" aria-haspopup="dialog" aria-controls="tinfo">About this index</button></p>
 <dialog id="tinfo" class="tinfo" aria-labelledby="tinfo-h">
   <div class="tinfo-head"><h2 id="tinfo-h">About this index</h2><button type="button" class="tinfo-close" id="tinfo-close" aria-label="Close">×</button></div>
