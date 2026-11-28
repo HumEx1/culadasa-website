@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 3448 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 3449 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -163,8 +163,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | videos/xrUlWLRqQEM/ | 5 |
 | videos/z2aOw9Uhc-w/ | 5 |
 | videos/zRa9I0ZkdKM/ | 5 |
-| Messages shown by the search and map scripts | 88 |
-| **Total** | **3448** |
+| Messages shown by the search and map scripts | 89 |
+| **Total** | **3449** |
 
 ## Every page: header, menu, newsletter box and footer (33)
 
@@ -237,7 +237,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Home (54)
 
-- [ ] **Page title (browser tab):** "Culadasa — The Mind Illuminated Path"  
+- [ ] **Page title (browser tab):** "Culadasa - The Mind Illuminated Path"  
   Home (`redesign-2/index.html` line 6)
 - [ ] **Search description (hidden):** "The Mind Illuminated meditation path, taught by Upasaka Culadasa (John Yates, Ph.D.): talks, AMA videos, writings, recordings and teachers."  
   Home (`redesign-2/index.html` line 7)
@@ -249,14 +249,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Home (`redesign-2/index.html` line 38); also on 1 more place (2 pages)
 - [ ] **Paragraph:** "The Mind Illuminated Path, free for everyone"  
   Home (`redesign-2/index.html` line 40)
-- [ ] **Paragraph:** "— The Yates family, on his wishes in his final days"  
-  Home (`redesign-2/index.html` line 42), under "That his work be freely and equally available to all students."
+- [ ] **Paragraph:** "- Sharon Salzberg, meditation teacher and author of Real Happiness"  
+  Home (`redesign-2/index.html` line 42), under "“Culadasa gives us the full conceptual framework together with complete instructions for putting it into play.”"
 - [ ] **Link text:** "Search the teachings"  
-  Home (`redesign-2/index.html` line 43), under "That his work be freely and equally available to all students."; also on 3 more places (2 pages)
+  Home (`redesign-2/index.html` line 43), under "“Culadasa gives us the full conceptual framework together with complete instructions for putting it into play.”"; also on 3 more places (2 pages)
 - [ ] **Paragraph:** "Culadasa, John Yates Ph.D., spent four decades in the Tibetan and Theravādin traditions and taught physiology and neuroscience. His book The Mind Illuminated joins the two. Everything he taught is here, free."  
-  Home (`redesign-2/index.html` line 44), under "That his work be freely and equally available to all students."
+  Home (`redesign-2/index.html` line 44), under "“Culadasa gives us the full conceptual framework together with complete instructions for putting it into play.”"
 - [ ] **Paragraph:** "Culadasa’s Buddhist Lineage →"  
-  Home (`redesign-2/index.html` line 45), under "That his work be freely and equally available to all students."
+  Home (`redesign-2/index.html` line 45), under "“Culadasa gives us the full conceptual framework together with complete instructions for putting it into play.”"
 - [ ] **Section heading:** "Find your way in"  
   Home (`redesign-2/index.html` line 52), under "Find your way in"
 - [ ] **Short label:** "New to meditation"  
@@ -348,7 +348,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Start here (31)
 
-- [ ] **Page title (browser tab):** "Start here — Culadasa"  
+- [ ] **Page title (browser tab):** "Start here - Culadasa"  
   Start here (`redesign-2/start-here/index.html` line 6)
 - [ ] **Search description (hidden):** "A seven-step beginning path through Culadasa’s own handouts, guided meditations and essays."  
   Start here (`redesign-2/start-here/index.html` line 7)
@@ -413,7 +413,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Learn (64)
 
-- [ ] **Page title (browser tab):** "Learn — Culadasa"  
+- [ ] **Page title (browser tab):** "Learn - Culadasa"  
   Learn (`redesign-2/learn/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa’s teaching arranged as a journey: basics, method, science of mind, going deeper, daily life."  
   Learn (`redesign-2/learn/index.html` line 7)
@@ -544,7 +544,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Topics (9)
 
-- [ ] **Page title (browser tab):** "Search — Culadasa"  
+- [ ] **Page title (browser tab):** "Search - Culadasa"  
   Topics (`redesign-2/topics/index.html` line 6)
 - [ ] **Search description (hidden):** "Search every Culadasa teaching by topic, ranked by mentions, with a word cloud."  
   Topics (`redesign-2/topics/index.html` line 7)
@@ -3054,14 +3054,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Library › AMA videos (redirect) (2)
 
-- [ ] **Page title (browser tab):** "AMA videos — Culadasa"  
+- [ ] **Page title (browser tab):** "AMA videos - Culadasa"  
   Library › AMA videos (redirect) (`redesign-2/online-meetings/index.html` line 6)
 - [ ] **Paragraph:** "The AMA videos are now in Videos , each on its own page with its questions and transcript."  
   Library › AMA videos (redirect) (`redesign-2/online-meetings/index.html` line 38)
 
 ## Library › Writings › essay (22)
 
-- [ ] **Page title (browser tab):** "Amount of Concentration Needed for Awakening — Culadasa"  
+- [ ] **Page title (browser tab):** "Amount of Concentration Needed for Awakening - Culadasa"  
   Library › Writings › essay (`redesign-2/amount-of-concentration-needed-for-awakening/index.html` line 6)
 - [ ] **Search description (hidden):** "Amount of Concentration Needed for Awakening: an essay by Culadasa."  
   Library › Writings › essay (`redesign-2/amount-of-concentration-needed-for-awakening/index.html` line 7)
@@ -3073,7 +3073,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Writings › essay (`redesign-2/amount-of-concentration-needed-for-awakening/index.html` line 47), under "Amount of Concentration Needed for Awakening"; also on 4 more places (5 pages)
 - [ ] **Paragraph:** "Learn: going deeper → · All writings · Search the teachings"  
   Library › Writings › essay (`redesign-2/amount-of-concentration-needed-for-awakening/index.html` line 47), under "Amount of Concentration Needed for Awakening"
-- [ ] **Page title (browser tab):** "Cultivating Mindfulness in Daily Life — Culadasa"  
+- [ ] **Page title (browser tab):** "Cultivating Mindfulness in Daily Life - Culadasa"  
   Library › Writings › essay (`redesign-2/cultivating-mindfulness-in-daily-life/index.html` line 6)
 - [ ] **Search description (hidden):** "Cultivating Mindfulness in Daily Life: an essay by Culadasa."  
   Library › Writings › essay (`redesign-2/cultivating-mindfulness-in-daily-life/index.html` line 7)
@@ -3081,7 +3081,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Writings › essay (`redesign-2/cultivating-mindfulness-in-daily-life/index.html` line 35)
 - [ ] **Paragraph:** "Learn: daily life → · All writings · Search the teachings"  
   Library › Writings › essay (`redesign-2/cultivating-mindfulness-in-daily-life/index.html` line 47), under "Cultivating Mindfulness in Daily Life"
-- [ ] **Page title (browser tab):** "How to Maintain Practice in One’s Daily Life — Culadasa"  
+- [ ] **Page title (browser tab):** "How to Maintain Practice in One’s Daily Life - Culadasa"  
   Library › Writings › essay (`redesign-2/daily-life-practice/index.html` line 6)
 - [ ] **Search description (hidden):** "How to Maintain Practice in One’s Daily Life: an essay by Culadasa."  
   Library › Writings › essay (`redesign-2/daily-life-practice/index.html` line 7)
@@ -3089,7 +3089,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Library › Writings › essay (`redesign-2/daily-life-practice/index.html` line 35)
 - [ ] **Paragraph:** "Start here → · Learn: daily life → · All writings · Search the teachings"  
   Library › Writings › essay (`redesign-2/daily-life-practice/index.html` line 53), under "How to Maintain Practice in One’s Daily Life"
-- [ ] **Page title (browser tab):** "Introduction to the Meditation Manual — Culadasa"  
+- [ ] **Page title (browser tab):** "Introduction to the Meditation Manual - Culadasa"  
   Library › Writings › essay (`redesign-2/meditation-manual-introduction/index.html` line 6)
 - [ ] **Search description (hidden):** "Introduction to the Meditation Manual: an essay by Culadasa."  
   Library › Writings › essay (`redesign-2/meditation-manual-introduction/index.html` line 7)
@@ -3108,7 +3108,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## The Book (13)
 
-- [ ] **Page title (browser tab):** "The Mind Illuminated — Culadasa"  
+- [ ] **Page title (browser tab):** "The Mind Illuminated - Culadasa"  
   The Book (`redesign-2/the-book/index.html` line 6)
 - [ ] **Search description (hidden):** "The Mind Illuminated by Culadasa (John Yates, Ph.D.): the ten stages of meditative development."  
   The Book (`redesign-2/the-book/index.html` line 7)
@@ -3263,7 +3263,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Conversations (45)
 
-- [ ] **Page title (browser tab):** "Conversations — Culadasa"  
+- [ ] **Page title (browser tab):** "Conversations - Culadasa"  
   Conversations (`redesign-2/conversations/index.html` line 6)
 - [ ] **Search description (hidden):** "Interviews and podcasts with Culadasa from across the web."  
   Conversations (`redesign-2/conversations/index.html` line 7); also on 2 more places (2 pages)
@@ -3356,7 +3356,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Lineage (14)
 
-- [ ] **Page title (browser tab):** "About Upasaka Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "About Upasaka Culadasa - Culadasa"  
   Lineage (`redesign-2/lineage/index.html` line 6)
 - [ ] **Search description (hidden):** "The Buddhist lineage of Upasaka Culadasa (John Yates, Ph.D., 1945–2021), his wishes for his teachings, and his obituary."  
   Lineage (`redesign-2/lineage/index.html` line 7)
@@ -3387,7 +3387,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Lineage (old About address, redirects) (3)
 
-- [ ] **Page title (browser tab):** "About Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "About Culadasa - Culadasa"  
   Lineage (old About address, redirects) (`redesign-2/about/index.html` line 6)
 - [ ] **Search description (hidden):** "About Culadasa"  
   Lineage (old About address, redirects) (`redesign-2/about/index.html` line 7)
@@ -3398,11 +3398,11 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 - [ ] **Search description (hidden):** "What students say about Culadasa as a teacher."  
   Footer › Testimonials (`redesign-2/testimonials/index.html` line 7)
-- [ ] **Footer text:** "— Andrew Scrivens"  
+- [ ] **Footer text:** "- Andrew Scrivens"  
   Footer › Testimonials (`redesign-2/testimonials/index.html` line 37), under "Praise for Culadasa as a teacher"; also on 1 more place (2 pages)
-- [ ] **Footer text:** "— Kevin Knox"  
+- [ ] **Footer text:** "- Kevin Knox"  
   Footer › Testimonials (`redesign-2/testimonials/index.html` line 37), under "Praise for Culadasa as a teacher"; also on 1 more place (2 pages)
-- [ ] **Footer text:** "— Robert Leamy"  
+- [ ] **Footer text:** "- Robert Leamy"  
   Footer › Testimonials (`redesign-2/testimonials/index.html` line 37), under "Praise for Culadasa as a teacher"; also on 1 more place (2 pages)
 - [ ] **Paragraph:** "Reviews of The Mind Illuminated →"  
   Footer › Testimonials (`redesign-2/testimonials/index.html` line 37), under "Praise for Culadasa as a teacher"
@@ -3414,7 +3414,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## Teachers › individual profile pages (154)
 
-- [ ] **Page title (browser tab):** "Alexandra Tataryn — Culadasa"  
+- [ ] **Page title (browser tab):** "Alexandra Tataryn - Culadasa"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 6)
 - [ ] **Search description (hidden):** "Alexandra Tataryn, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 7)
@@ -3428,19 +3428,19 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 37), under "Alexandra Tataryn"; also on 18 more places (19 pages)
 - [ ] **Term:** "Based in"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 37), under "Alexandra Tataryn"; also on 47 more places (48 pages)
-- [ ] **Definition:** "[Town, region, country — to come]"  
+- [ ] **Definition:** "[Town, region, country - to come]"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 37), under "Alexandra Tataryn"; also on 47 more places (48 pages)
 - [ ] **Term:** "Teaches"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 37), under "Alexandra Tataryn"; also on 47 more places (48 pages)
-- [ ] **Definition:** "[In person, online, retreats — to come]"  
+- [ ] **Definition:** "[In person, online, retreats - to come]"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 37), under "Alexandra Tataryn"; also on 47 more places (48 pages)
 - [ ] **Term:** "Website"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 37), under "Alexandra Tataryn"; also on 47 more places (48 pages)
-- [ ] **Definition:** "[Website — to come]"  
+- [ ] **Definition:** "[Website - to come]"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 37), under "Alexandra Tataryn"; also on 47 more places (48 pages)
 - [ ] **Paragraph:** "All teachers"  
   Teachers › profile (`redesign-2/teachers/alexandra-tataryn/index.html` line 38), under "Alexandra Tataryn"; also on 47 more places (48 pages)
-- [ ] **Page title (browser tab):** "Andrea Lemon — Culadasa"  
+- [ ] **Page title (browser tab):** "Andrea Lemon - Culadasa"  
   Teachers › profile (`redesign-2/teachers/andrea-lemon/index.html` line 6)
 - [ ] **Search description (hidden):** "Andrea Lemon, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/andrea-lemon/index.html` line 7)
@@ -3448,7 +3448,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Teachers › profile (`redesign-2/teachers/andrea-lemon/index.html` line 36), under "Andrea Lemon"; also on 1 more place (2 pages)
 - [ ] **Definition:** "2019, The Mind Illuminated Teacher Training Program"  
   Teachers › profile (`redesign-2/teachers/andrea-lemon/index.html` line 37), under "Andrea Lemon"; also on 9 more places (10 pages)
-- [ ] **Page title (browser tab):** "Andrew Sherbrooke — Culadasa"  
+- [ ] **Page title (browser tab):** "Andrew Sherbrooke - Culadasa"  
   Teachers › profile (`redesign-2/teachers/andrew-sherbrooke/index.html` line 6)
 - [ ] **Search description (hidden):** "Andrew Sherbrooke, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/andrew-sherbrooke/index.html` line 7)
@@ -3456,23 +3456,23 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Teachers › profile (`redesign-2/teachers/andrew-sherbrooke/index.html` line 36), under "Andrew Sherbrooke"
 - [ ] **Definition:** "2021, The Mind Illuminated Teacher Training Program"  
   Teachers › profile (`redesign-2/teachers/andrew-sherbrooke/index.html` line 37), under "Andrew Sherbrooke"; also on 12 more places (13 pages)
-- [ ] **Page title (browser tab):** "Anna Knutson Geller — Culadasa"  
+- [ ] **Page title (browser tab):** "Anna Knutson Geller - Culadasa"  
   Teachers › profile (`redesign-2/teachers/anna-knutson-geller/index.html` line 6)
 - [ ] **Search description (hidden):** "Anna Knutson Geller, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/anna-knutson-geller/index.html` line 7)
 - [ ] **Text block:** "AK"  
   Teachers › profile (`redesign-2/teachers/anna-knutson-geller/index.html` line 36), under "Anna Knutson Geller"
-- [ ] **Page title (browser tab):** "Anne Lindsey (Chukyi) — Culadasa"  
+- [ ] **Page title (browser tab):** "Anne Lindsey (Chukyi) - Culadasa"  
   Teachers › profile (`redesign-2/teachers/anne-lindsey/index.html` line 6)
 - [ ] **Search description (hidden):** "Anne Lindsey (Chukyi), a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/anne-lindsey/index.html` line 7)
-- [ ] **Page title (browser tab):** "Babette Haemmerle — Culadasa"  
+- [ ] **Page title (browser tab):** "Babette Haemmerle - Culadasa"  
   Teachers › profile (`redesign-2/teachers/babette-haemmerle/index.html` line 6)
 - [ ] **Search description (hidden):** "Babette Haemmerle, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/babette-haemmerle/index.html` line 7)
 - [ ] **Text block:** "BH"  
   Teachers › profile (`redesign-2/teachers/babette-haemmerle/index.html` line 36), under "Babette Haemmerle"
-- [ ] **Page title (browser tab):** "Blake Barton — Culadasa"  
+- [ ] **Page title (browser tab):** "Blake Barton - Culadasa"  
   Teachers › profile (`redesign-2/teachers/blake-barton/index.html` line 6)
 - [ ] **Search description (hidden):** "Blake Barton, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/blake-barton/index.html` line 7)
@@ -3480,135 +3480,135 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Teachers › profile (`redesign-2/teachers/blake-barton/index.html` line 36), under "Blake Barton"
 - [ ] **Definition:** "2018, The Mind Illuminated Teacher Training Program"  
   Teachers › profile (`redesign-2/teachers/blake-barton/index.html` line 37), under "Blake Barton"; also on 4 more places (5 pages)
-- [ ] **Page title (browser tab):** "Chris Gagné — Culadasa"  
+- [ ] **Page title (browser tab):** "Chris Gagné - Culadasa"  
   Teachers › profile (`redesign-2/teachers/chris-gagne/index.html` line 6)
 - [ ] **Search description (hidden):** "Chris Gagné, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/chris-gagne/index.html` line 7)
 - [ ] **Text block:** "CG"  
   Teachers › profile (`redesign-2/teachers/chris-gagne/index.html` line 36), under "Chris Gagné"
-- [ ] **Page title (browser tab):** "Cliff Walshein — Culadasa"  
+- [ ] **Page title (browser tab):** "Cliff Walshein - Culadasa"  
   Teachers › profile (`redesign-2/teachers/cliff-walshein/index.html` line 6)
 - [ ] **Search description (hidden):** "Cliff Walshein, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/cliff-walshein/index.html` line 7)
 - [ ] **Text block:** "CW"  
   Teachers › profile (`redesign-2/teachers/cliff-walshein/index.html` line 36), under "Cliff Walshein"
-- [ ] **Page title (browser tab):** "Darin McFadyen — Culadasa"  
+- [ ] **Page title (browser tab):** "Darin McFadyen - Culadasa"  
   Teachers › profile (`redesign-2/teachers/darin-mcfadyen/index.html` line 6)
 - [ ] **Search description (hidden):** "Darin McFadyen, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/darin-mcfadyen/index.html` line 7)
 - [ ] **Text block:** "DM"  
   Teachers › profile (`redesign-2/teachers/darin-mcfadyen/index.html` line 36), under "Darin McFadyen"
-- [ ] **Page title (browser tab):** "Darlene Tataryn — Culadasa"  
+- [ ] **Page title (browser tab):** "Darlene Tataryn - Culadasa"  
   Teachers › profile (`redesign-2/teachers/darlene-tataryn/index.html` line 6)
 - [ ] **Search description (hidden):** "Darlene Tataryn, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/darlene-tataryn/index.html` line 7)
 - [ ] **Text block:** "DT"  
   Teachers › profile (`redesign-2/teachers/darlene-tataryn/index.html` line 36), under "Darlene Tataryn"; also on 1 more place (2 pages)
-- [ ] **Page title (browser tab):** "David Schultz — Culadasa"  
+- [ ] **Page title (browser tab):** "David Schultz - Culadasa"  
   Teachers › profile (`redesign-2/teachers/david-schultz/index.html` line 6)
 - [ ] **Search description (hidden):** "David Schultz, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/david-schultz/index.html` line 7)
 - [ ] **Text block:** "DS"  
   Teachers › profile (`redesign-2/teachers/david-schultz/index.html` line 36), under "David Schultz"
-- [ ] **Page title (browser tab):** "Dor Konforty — Culadasa"  
+- [ ] **Page title (browser tab):** "Dor Konforty - Culadasa"  
   Teachers › profile (`redesign-2/teachers/dor-konforty/index.html` line 6)
 - [ ] **Search description (hidden):** "Dor Konforty, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/dor-konforty/index.html` line 7)
 - [ ] **Text block:** "DK"  
   Teachers › profile (`redesign-2/teachers/dor-konforty/index.html` line 36), under "Dor Konforty"
-- [ ] **Page title (browser tab):** "Douglas Tataryn — Culadasa"  
+- [ ] **Page title (browser tab):** "Douglas Tataryn - Culadasa"  
   Teachers › profile (`redesign-2/teachers/douglas-tataryn/index.html` line 6)
 - [ ] **Search description (hidden):** "Douglas Tataryn, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/douglas-tataryn/index.html` line 7)
-- [ ] **Page title (browser tab):** "Elizabeth Pugh — Culadasa"  
+- [ ] **Page title (browser tab):** "Elizabeth Pugh - Culadasa"  
   Teachers › profile (`redesign-2/teachers/elizabeth-pugh/index.html` line 6)
 - [ ] **Search description (hidden):** "Elizabeth Pugh, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/elizabeth-pugh/index.html` line 7)
 - [ ] **Text block:** "EP"  
   Teachers › profile (`redesign-2/teachers/elizabeth-pugh/index.html` line 36), under "Elizabeth Pugh"
-- [ ] **Page title (browser tab):** "Eric Lindo — Culadasa"  
+- [ ] **Page title (browser tab):** "Eric Lindo - Culadasa"  
   Teachers › profile (`redesign-2/teachers/eric-lindo/index.html` line 6)
 - [ ] **Search description (hidden):** "Eric Lindo, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/eric-lindo/index.html` line 7)
 - [ ] **Text block:** "EL"  
   Teachers › profile (`redesign-2/teachers/eric-lindo/index.html` line 36), under "Eric Lindo"
-- [ ] **Page title (browser tab):** "Eve Smith — Culadasa"  
+- [ ] **Page title (browser tab):** "Eve Smith - Culadasa"  
   Teachers › profile (`redesign-2/teachers/eve-smith/index.html` line 6)
 - [ ] **Search description (hidden):** "Eve Smith, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/eve-smith/index.html` line 7)
 - [ ] **Text block:** "ES"  
   Teachers › profile (`redesign-2/teachers/eve-smith/index.html` line 36), under "Eve Smith"
-- [ ] **Page title (browser tab):** "Gabriel Rocheleau — Culadasa"  
+- [ ] **Page title (browser tab):** "Gabriel Rocheleau - Culadasa"  
   Teachers › profile (`redesign-2/teachers/gabriel-rocheleau/index.html` line 6)
 - [ ] **Search description (hidden):** "Gabriel Rocheleau, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/gabriel-rocheleau/index.html` line 7)
 - [ ] **Text block:** "GR"  
   Teachers › profile (`redesign-2/teachers/gabriel-rocheleau/index.html` line 36), under "Gabriel Rocheleau"
-- [ ] **Page title (browser tab):** "Henrik Norberg — Culadasa"  
+- [ ] **Page title (browser tab):** "Henrik Norberg - Culadasa"  
   Teachers › profile (`redesign-2/teachers/henrik-norberg/index.html` line 6)
 - [ ] **Search description (hidden):** "Henrik Norberg, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/henrik-norberg/index.html` line 7)
 - [ ] **Text block:** "HN"  
   Teachers › profile (`redesign-2/teachers/henrik-norberg/index.html` line 36), under "Henrik Norberg"
-- [ ] **Page title (browser tab):** "Ivan Ganza — Culadasa"  
+- [ ] **Page title (browser tab):** "Ivan Ganza - Culadasa"  
   Teachers › profile (`redesign-2/teachers/ivan-ganza/index.html` line 6)
 - [ ] **Search description (hidden):** "Ivan Ganza, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/ivan-ganza/index.html` line 7)
 - [ ] **Text block:** "IG"  
   Teachers › profile (`redesign-2/teachers/ivan-ganza/index.html` line 36), under "Ivan Ganza"
-- [ ] **Page title (browser tab):** "Jaye Ring — Culadasa"  
+- [ ] **Page title (browser tab):** "Jaye Ring - Culadasa"  
   Teachers › profile (`redesign-2/teachers/jaye-ring/index.html` line 6)
 - [ ] **Search description (hidden):** "Jaye Ring, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/jaye-ring/index.html` line 7)
 - [ ] **Text block:** "JR"  
   Teachers › profile (`redesign-2/teachers/jaye-ring/index.html` line 36), under "Jaye Ring"
-- [ ] **Page title (browser tab):** "Jeff Wooley — Culadasa"  
+- [ ] **Page title (browser tab):** "Jeff Wooley - Culadasa"  
   Teachers › profile (`redesign-2/teachers/jeff-wooley/index.html` line 6)
 - [ ] **Search description (hidden):** "Jeff Wooley, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/jeff-wooley/index.html` line 7)
 - [ ] **Text block:** "JW"  
   Teachers › profile (`redesign-2/teachers/jeff-wooley/index.html` line 36), under "Jeff Wooley"
-- [ ] **Page title (browser tab):** "Jeremy Graves — Culadasa"  
+- [ ] **Page title (browser tab):** "Jeremy Graves - Culadasa"  
   Teachers › profile (`redesign-2/teachers/jeremy-graves/index.html` line 6)
 - [ ] **Search description (hidden):** "Jeremy Graves, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/jeremy-graves/index.html` line 7)
 - [ ] **Text block:** "JG"  
   Teachers › profile (`redesign-2/teachers/jeremy-graves/index.html` line 36), under "Jeremy Graves"; also on 1 more place (2 pages)
-- [ ] **Page title (browser tab):** "Jesse Fallon — Culadasa"  
+- [ ] **Page title (browser tab):** "Jesse Fallon - Culadasa"  
   Teachers › profile (`redesign-2/teachers/jesse-fallon/index.html` line 6)
 - [ ] **Search description (hidden):** "Jesse Fallon, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/jesse-fallon/index.html` line 7)
 - [ ] **Text block:** "JF"  
   Teachers › profile (`redesign-2/teachers/jesse-fallon/index.html` line 36), under "Jesse Fallon"
-- [ ] **Page title (browser tab):** "Jon Krop — Culadasa"  
+- [ ] **Page title (browser tab):** "Jon Krop - Culadasa"  
   Teachers › profile (`redesign-2/teachers/jon-krop/index.html` line 6)
 - [ ] **Search description (hidden):** "Jon Krop, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/jon-krop/index.html` line 7)
 - [ ] **Text block:** "JK"  
   Teachers › profile (`redesign-2/teachers/jon-krop/index.html` line 36), under "Jon Krop"
-- [ ] **Page title (browser tab):** "Jordan Hill — Culadasa"  
+- [ ] **Page title (browser tab):** "Jordan Hill - Culadasa"  
   Teachers › profile (`redesign-2/teachers/jordan-hill/index.html` line 6)
 - [ ] **Search description (hidden):** "Jordan Hill, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/jordan-hill/index.html` line 7)
 - [ ] **Text block:** "JH"  
   Teachers › profile (`redesign-2/teachers/jordan-hill/index.html` line 36), under "Jordan Hill"
-- [ ] **Page title (browser tab):** "Josh Geller — Culadasa"  
+- [ ] **Page title (browser tab):** "Josh Geller - Culadasa"  
   Teachers › profile (`redesign-2/teachers/josh-geller/index.html` line 6)
 - [ ] **Search description (hidden):** "Josh Geller, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/josh-geller/index.html` line 7)
-- [ ] **Page title (browser tab):** "Junot Castelyn — Culadasa"  
+- [ ] **Page title (browser tab):** "Junot Castelyn - Culadasa"  
   Teachers › profile (`redesign-2/teachers/junot-castelyn/index.html` line 6)
 - [ ] **Search description (hidden):** "Junot Castelyn, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/junot-castelyn/index.html` line 7)
 - [ ] **Text block:** "JC"  
   Teachers › profile (`redesign-2/teachers/junot-castelyn/index.html` line 36), under "Junot Castelyn"
-- [ ] **Page title (browser tab):** "Kim Weeber — Culadasa"  
+- [ ] **Page title (browser tab):** "Kim Weeber - Culadasa"  
   Teachers › profile (`redesign-2/teachers/kim-weeber/index.html` line 6)
 - [ ] **Search description (hidden):** "Kim Weeber, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/kim-weeber/index.html` line 7)
 - [ ] **Text block:** "KW"  
   Teachers › profile (`redesign-2/teachers/kim-weeber/index.html` line 36), under "Kim Weeber"
-- [ ] **Page title (browser tab):** "Li-Anne Tang — Culadasa"  
+- [ ] **Page title (browser tab):** "Li-Anne Tang - Culadasa"  
   Teachers › profile (`redesign-2/teachers/li-anne-tang/index.html` line 6)
 - [ ] **Search description (hidden):** "Li-Anne Tang, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/li-anne-tang/index.html` line 7)
@@ -3616,107 +3616,107 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Teachers › profile (`redesign-2/teachers/li-anne-tang/index.html` line 36), under "Li-Anne Tang"
 - [ ] **Definition:** "2022, The Mind Illuminated Teacher Training Program"  
   Teachers › profile (`redesign-2/teachers/li-anne-tang/index.html` line 37), under "Li-Anne Tang"
-- [ ] **Page title (browser tab):** "Mark Miller — Culadasa"  
+- [ ] **Page title (browser tab):** "Mark Miller - Culadasa"  
   Teachers › profile (`redesign-2/teachers/mark-miller/index.html` line 6)
 - [ ] **Search description (hidden):** "Mark Miller, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/mark-miller/index.html` line 7)
 - [ ] **Text block:** "MM"  
   Teachers › profile (`redesign-2/teachers/mark-miller/index.html` line 36), under "Mark Miller"
-- [ ] **Page title (browser tab):** "Mark Pirtle — Culadasa"  
+- [ ] **Page title (browser tab):** "Mark Pirtle - Culadasa"  
   Teachers › profile (`redesign-2/teachers/mark-pirtle/index.html` line 6)
 - [ ] **Search description (hidden):** "Mark Pirtle, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/mark-pirtle/index.html` line 7)
 - [ ] **Text block:** "MP"  
   Teachers › profile (`redesign-2/teachers/mark-pirtle/index.html` line 36), under "Mark Pirtle"
-- [ ] **Page title (browser tab):** "Mary Hill — Culadasa"  
+- [ ] **Page title (browser tab):** "Mary Hill - Culadasa"  
   Teachers › profile (`redesign-2/teachers/mary-hill/index.html` line 6)
 - [ ] **Search description (hidden):** "Mary Hill, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/mary-hill/index.html` line 7)
 - [ ] **Text block:** "MH"  
   Teachers › profile (`redesign-2/teachers/mary-hill/index.html` line 36), under "Mary Hill"
-- [ ] **Page title (browser tab):** "Matthew Immergut — Culadasa"  
+- [ ] **Page title (browser tab):** "Matthew Immergut - Culadasa"  
   Teachers › profile (`redesign-2/teachers/matthew-immergut/index.html` line 6)
 - [ ] **Search description (hidden):** "Matthew Immergut, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/matthew-immergut/index.html` line 7)
 - [ ] **Text block:** "MI"  
   Teachers › profile (`redesign-2/teachers/matthew-immergut/index.html` line 36), under "Matthew Immergut"
-- [ ] **Page title (browser tab):** "Michael Dunn — Culadasa"  
+- [ ] **Page title (browser tab):** "Michael Dunn - Culadasa"  
   Teachers › profile (`redesign-2/teachers/michael-dunn/index.html` line 6)
 - [ ] **Search description (hidden):** "Michael Dunn, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/michael-dunn/index.html` line 7)
 - [ ] **Text block:** "MD"  
   Teachers › profile (`redesign-2/teachers/michael-dunn/index.html` line 36), under "Michael Dunn"
-- [ ] **Page title (browser tab):** "Nick Grabovac — Culadasa"  
+- [ ] **Page title (browser tab):** "Nick Grabovac - Culadasa"  
   Teachers › profile (`redesign-2/teachers/nick-grabovac/index.html` line 6)
 - [ ] **Search description (hidden):** "Nick Grabovac, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/nick-grabovac/index.html` line 7)
 - [ ] **Text block:** "NG"  
   Teachers › profile (`redesign-2/teachers/nick-grabovac/index.html` line 36), under "Nick Grabovac"
-- [ ] **Page title (browser tab):** "Nick Van Kleeck — Culadasa"  
+- [ ] **Page title (browser tab):** "Nick Van Kleeck - Culadasa"  
   Teachers › profile (`redesign-2/teachers/nick-van-kleeck/index.html` line 6)
 - [ ] **Search description (hidden):** "Nick Van Kleeck, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/nick-van-kleeck/index.html` line 7)
 - [ ] **Text block:** "NV"  
   Teachers › profile (`redesign-2/teachers/nick-van-kleeck/index.html` line 36), under "Nick Van Kleeck"
-- [ ] **Page title (browser tab):** "Oliver Bray — Culadasa"  
+- [ ] **Page title (browser tab):** "Oliver Bray - Culadasa"  
   Teachers › profile (`redesign-2/teachers/oliver-bray/index.html` line 6)
 - [ ] **Search description (hidden):** "Oliver Bray, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/oliver-bray/index.html` line 7)
 - [ ] **Text block:** "OB"  
   Teachers › profile (`redesign-2/teachers/oliver-bray/index.html` line 36), under "Oliver Bray"
-- [ ] **Page title (browser tab):** "Paulin Elley — Culadasa"  
+- [ ] **Page title (browser tab):** "Paulin Elley - Culadasa"  
   Teachers › profile (`redesign-2/teachers/paulin-elley/index.html` line 6)
 - [ ] **Search description (hidden):** "Paulin Elley, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/paulin-elley/index.html` line 7)
 - [ ] **Text block:** "PE"  
   Teachers › profile (`redesign-2/teachers/paulin-elley/index.html` line 36), under "Paulin Elley"
-- [ ] **Page title (browser tab):** "Rachel Cronin — Culadasa"  
+- [ ] **Page title (browser tab):** "Rachel Cronin - Culadasa"  
   Teachers › profile (`redesign-2/teachers/rachel-cronin/index.html` line 6)
 - [ ] **Search description (hidden):** "Rachel Cronin, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/rachel-cronin/index.html` line 7)
 - [ ] **Text block:** "RC"  
   Teachers › profile (`redesign-2/teachers/rachel-cronin/index.html` line 36), under "Rachel Cronin"; also on 1 more place (2 pages)
-- [ ] **Page title (browser tab):** "Ricardo Sasaki — Culadasa"  
+- [ ] **Page title (browser tab):** "Ricardo Sasaki - Culadasa"  
   Teachers › profile (`redesign-2/teachers/ricardo-sasaki/index.html` line 6)
 - [ ] **Search description (hidden):** "Ricardo Sasaki, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/ricardo-sasaki/index.html` line 7)
 - [ ] **Text block:** "RS"  
   Teachers › profile (`redesign-2/teachers/ricardo-sasaki/index.html` line 36), under "Ricardo Sasaki"
-- [ ] **Page title (browser tab):** "Robin Craig — Culadasa"  
+- [ ] **Page title (browser tab):** "Robin Craig - Culadasa"  
   Teachers › profile (`redesign-2/teachers/robin-craig/index.html` line 6)
 - [ ] **Search description (hidden):** "Robin Craig, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/robin-craig/index.html` line 7)
-- [ ] **Page title (browser tab):** "Stephen "Greg" Ascue — Culadasa"  
+- [ ] **Page title (browser tab):** "Stephen "Greg" Ascue - Culadasa"  
   Teachers › profile (`redesign-2/teachers/stephen-greg-ascue/index.html` line 6)
 - [ ] **Search description (hidden):** "Stephen "Greg" Ascue, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/stephen-greg-ascue/index.html` line 7)
 - [ ] **Text block:** "SA"  
   Teachers › profile (`redesign-2/teachers/stephen-greg-ascue/index.html` line 36), under "Stephen "Greg" Ascue"
-- [ ] **Page title (browser tab):** "Ted Lemon — Culadasa"  
+- [ ] **Page title (browser tab):** "Ted Lemon - Culadasa"  
   Teachers › profile (`redesign-2/teachers/ted-lemon/index.html` line 6)
 - [ ] **Search description (hidden):** "Ted Lemon, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/ted-lemon/index.html` line 7)
 - [ ] **Text block:** "TL"  
   Teachers › profile (`redesign-2/teachers/ted-lemon/index.html` line 36), under "Ted Lemon"
-- [ ] **Page title (browser tab):** "Terry Dushenko — Culadasa"  
+- [ ] **Page title (browser tab):** "Terry Dushenko - Culadasa"  
   Teachers › profile (`redesign-2/teachers/terry-dushenko/index.html` line 6)
 - [ ] **Search description (hidden):** "Terry Dushenko, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/terry-dushenko/index.html` line 7)
 - [ ] **Text block:** "TD"  
   Teachers › profile (`redesign-2/teachers/terry-dushenko/index.html` line 36), under "Terry Dushenko"
-- [ ] **Page title (browser tab):** "Terry Moody — Culadasa"  
+- [ ] **Page title (browser tab):** "Terry Moody - Culadasa"  
   Teachers › profile (`redesign-2/teachers/terry-moody/index.html` line 6)
 - [ ] **Search description (hidden):** "Terry Moody, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/terry-moody/index.html` line 7)
 - [ ] **Text block:** "TM"  
   Teachers › profile (`redesign-2/teachers/terry-moody/index.html` line 36), under "Terry Moody"
-- [ ] **Page title (browser tab):** "Tom Kennedy — Culadasa"  
+- [ ] **Page title (browser tab):** "Tom Kennedy - Culadasa"  
   Teachers › profile (`redesign-2/teachers/tom-kennedy/index.html` line 6)
 - [ ] **Search description (hidden):** "Tom Kennedy, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/tom-kennedy/index.html` line 7)
 - [ ] **Text block:** "TK"  
   Teachers › profile (`redesign-2/teachers/tom-kennedy/index.html` line 36), under "Tom Kennedy"
-- [ ] **Page title (browser tab):** "Wayne Hayden Moreland — Culadasa"  
+- [ ] **Page title (browser tab):** "Wayne Hayden Moreland - Culadasa"  
   Teachers › profile (`redesign-2/teachers/wayne-hayden-moreland/index.html` line 6)
 - [ ] **Search description (hidden):** "Wayne Hayden Moreland, a teacher of The Mind Illuminated method certified by Culadasa."  
   Teachers › profile (`redesign-2/teachers/wayne-hayden-moreland/index.html` line 7)
@@ -3725,7 +3725,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/glossary/ (85)
 
-- [ ] **Page title (browser tab):** "Glossary — Culadasa"  
+- [ ] **Page title (browser tab):** "Glossary - Culadasa"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 6)
 - [ ] **Search description (hidden):** "Pāli and method terms of The Mind Illuminated Path, each with a short meaning."  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 7)
@@ -3853,7 +3853,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "samādhi samadhi"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Definition:** "Concentration: stable attention, which the ten stages develop alongside mindfulness. Jhāna → · Search →"  
+- [ ] **Definition:** "Concentration, which he described as unification of mind; the ten stages build it with stable attention and mindfulness. Unification of mind → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "samatha shamatha, śamatha"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
@@ -3898,7 +3898,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/attention-and-awareness/ (67)
 
-- [ ] **Page title (browser tab):** "Attention and awareness — Culadasa"  
+- [ ] **Page title (browser tab):** "Attention and awareness - Culadasa"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 6)
 - [ ] **Search description (hidden):** "Attention and awareness: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 7)
@@ -4035,7 +4035,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/awakening/ (71)
 
-- [ ] **Page title (browser tab):** "Awakening and stream entry — Culadasa"  
+- [ ] **Page title (browser tab):** "Awakening and stream entry - Culadasa"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 6)
 - [ ] **Search description (hidden):** "Awakening and stream entry: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 7)
@@ -4180,7 +4180,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/craving/ (38)
 
-- [ ] **Page title (browser tab):** "Craving — Culadasa"  
+- [ ] **Page title (browser tab):** "Craving - Culadasa"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 6)
 - [ ] **Search description (hidden):** "Craving: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 7)
@@ -4259,7 +4259,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/daily-life/ (30)
 
-- [ ] **Page title (browser tab):** "Daily life — Culadasa"  
+- [ ] **Page title (browser tab):** "Daily life - Culadasa"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 6)
 - [ ] **Search description (hidden):** "Daily life: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 7)
@@ -4322,7 +4322,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/dark-night/ (15)
 
-- [ ] **Page title (browser tab):** "The Dark Night — Culadasa"  
+- [ ] **Page title (browser tab):** "The Dark Night - Culadasa"  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 6)
 - [ ] **Search description (hidden):** "The Dark Night: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 7)
@@ -4355,7 +4355,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/distraction/ (30)
 
-- [ ] **Page title (browser tab):** "Distraction — Culadasa"  
+- [ ] **Page title (browser tab):** "Distraction - Culadasa"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 6)
 - [ ] **Search description (hidden):** "Distraction: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 7)
@@ -4418,7 +4418,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/dullness/ (38)
 
-- [ ] **Page title (browser tab):** "Dullness — Culadasa"  
+- [ ] **Page title (browser tab):** "Dullness - Culadasa"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 6)
 - [ ] **Search description (hidden):** "Dullness: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 7)
@@ -4497,7 +4497,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/equanimity/ (22)
 
-- [ ] **Page title (browser tab):** "Equanimity — Culadasa"  
+- [ ] **Page title (browser tab):** "Equanimity - Culadasa"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 6)
 - [ ] **Search description (hidden):** "Equanimity: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 7)
@@ -4544,7 +4544,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/forgetting/ (13)
 
-- [ ] **Page title (browser tab):** "Forgetting — Culadasa"  
+- [ ] **Page title (browser tab):** "Forgetting - Culadasa"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 6)
 - [ ] **Search description (hidden):** "Forgetting: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 7)
@@ -4573,7 +4573,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/ (24)
 
-- [ ] **Page title (browser tab):** "Topics — Culadasa"  
+- [ ] **Page title (browser tab):** "Topics - Culadasa"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 6)
 - [ ] **Search description (hidden):** "The teaching topics of The Mind Illuminated Path, each with everything Culadasa said about it."  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 7)
@@ -4624,7 +4624,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/insight/ (56)
 
-- [ ] **Page title (browser tab):** "Insight — Culadasa"  
+- [ ] **Page title (browser tab):** "Insight - Culadasa"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 6)
 - [ ] **Search description (hidden):** "Insight: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 7)
@@ -4739,7 +4739,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/jhana/ (26)
 
-- [ ] **Page title (browser tab):** "Jhāna — Culadasa"  
+- [ ] **Page title (browser tab):** "Jhāna - Culadasa"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 6)
 - [ ] **Search description (hidden):** "Jhāna: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 7)
@@ -4794,7 +4794,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/metacognition/ (13)
 
-- [ ] **Page title (browser tab):** "Metacognitive awareness — Culadasa"  
+- [ ] **Page title (browser tab):** "Metacognitive awareness - Culadasa"  
   learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 6)
 - [ ] **Search description (hidden):** "Metacognitive awareness: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 7)
@@ -4823,7 +4823,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/metta/ (18)
 
-- [ ] **Page title (browser tab):** "Loving-kindness — Culadasa"  
+- [ ] **Page title (browser tab):** "Loving-kindness - Culadasa"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 6)
 - [ ] **Search description (hidden):** "Loving-kindness: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 7)
@@ -4862,7 +4862,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/mind-system/ (16)
 
-- [ ] **Page title (browser tab):** "The mind-system — Culadasa"  
+- [ ] **Page title (browser tab):** "The mind-system - Culadasa"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 6)
 - [ ] **Search description (hidden):** "The mind-system: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 7)
@@ -4897,7 +4897,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/mind-wandering/ (15)
 
-- [ ] **Page title (browser tab):** "Mind-wandering — Culadasa"  
+- [ ] **Page title (browser tab):** "Mind-wandering - Culadasa"  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 6)
 - [ ] **Search description (hidden):** "Mind-wandering: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 7)
@@ -4930,7 +4930,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/mindfulness/ (33)
 
-- [ ] **Page title (browser tab):** "Mindfulness — Culadasa"  
+- [ ] **Page title (browser tab):** "Mindfulness - Culadasa"  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 6)
 - [ ] **Search description (hidden):** "Mindfulness: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 7)
@@ -4999,7 +4999,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/pain/ (23)
 
-- [ ] **Page title (browser tab):** "Pain — Culadasa"  
+- [ ] **Page title (browser tab):** "Pain - Culadasa"  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 6)
 - [ ] **Search description (hidden):** "Pain: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 7)
@@ -5048,7 +5048,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/piti/ (22)
 
-- [ ] **Page title (browser tab):** "Pīti and meditative joy — Culadasa"  
+- [ ] **Page title (browser tab):** "Pīti and meditative joy - Culadasa"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 6)
 - [ ] **Search description (hidden):** "Pīti and meditative joy: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 7)
@@ -5095,7 +5095,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/purification/ (16)
 
-- [ ] **Page title (browser tab):** "Purification — Culadasa"  
+- [ ] **Page title (browser tab):** "Purification - Culadasa"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 6)
 - [ ] **Search description (hidden):** "Purification: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 7)
@@ -5130,7 +5130,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## learn/topics/unification/ (14)
 
-- [ ] **Page title (browser tab):** "Unification of mind — Culadasa"  
+- [ ] **Page title (browser tab):** "Unification of mind - Culadasa"  
   learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 6)
 - [ ] **Search description (hidden):** "Unification of mind: everything Culadasa said about it, in his talks, AMA videos, writings and recordings."  
   learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 7)
@@ -5161,7 +5161,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## library/ (10)
 
-- [ ] **Page title (browser tab):** "Library — Culadasa"  
+- [ ] **Page title (browser tab):** "Library - Culadasa"  
   library/ (`redesign-2/library/index.html` line 6)
 - [ ] **Search description (hidden):** "The complete body of work of Upasaka Culadasa: talks, recordings, AMA videos and writings, free to all."  
   library/ (`redesign-2/library/index.html` line 7)
@@ -5184,7 +5184,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/ (17)
 
-- [ ] **Page title (browser tab):** "The ten stages — Culadasa"  
+- [ ] **Page title (browser tab):** "The ten stages - Culadasa"  
   ten-stages/ (`redesign-2/ten-stages/index.html` line 6)
 - [ ] **Search description (hidden):** "The ten stages of The Mind Illuminated, each with a video to start with and everything Culadasa said about it."  
   ten-stages/ (`redesign-2/ten-stages/index.html` line 7)
@@ -5221,7 +5221,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-1/ (45)
 
-- [ ] **Page title (browser tab):** "Stage One: Establishing a practice — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage One: Establishing a practice - Culadasa"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage One of The Mind Illuminated, Establishing a practice: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 7)
@@ -5314,7 +5314,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-10/ (36)
 
-- [ ] **Page title (browser tab):** "Stage Ten: Tranquility and equanimity — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Ten: Tranquility and equanimity - Culadasa"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Ten of The Mind Illuminated, Tranquility and equanimity: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 7)
@@ -5389,7 +5389,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-2/ (39)
 
-- [ ] **Page title (browser tab):** "Stage Two: Overcoming mind-wandering — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Two: Overcoming mind-wandering - Culadasa"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Two of The Mind Illuminated, Overcoming mind-wandering: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 7)
@@ -5470,7 +5470,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-3/ (40)
 
-- [ ] **Page title (browser tab):** "Stage Three: Overcoming forgetting — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Three: Overcoming forgetting - Culadasa"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Three of The Mind Illuminated, Overcoming forgetting: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 7)
@@ -5553,7 +5553,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-4/ (66)
 
-- [ ] **Page title (browser tab):** "Stage Four: Overcoming gross distraction and strong dullness — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Four: Overcoming gross distraction and strong dullness - Culadasa"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Four of The Mind Illuminated, Overcoming gross distraction and strong dullness: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 7)
@@ -5688,7 +5688,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-5/ (43)
 
-- [ ] **Page title (browser tab):** "Stage Five: Overcoming subtle dullness and increasing mindfulness — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Five: Overcoming subtle dullness and increasing mindfulness - Culadasa"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Five of The Mind Illuminated, Overcoming subtle dullness and increasing mindfulness: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 7)
@@ -5777,7 +5777,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-6/ (47)
 
-- [ ] **Page title (browser tab):** "Stage Six: Subduing subtle distractions — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Six: Subduing subtle distractions - Culadasa"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Six of The Mind Illuminated, Subduing subtle distractions: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 7)
@@ -5874,7 +5874,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-7/ (40)
 
-- [ ] **Page title (browser tab):** "Stage Seven: Unifying the mind — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Seven: Unifying the mind - Culadasa"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Seven of The Mind Illuminated, Unifying the mind: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 7)
@@ -5957,7 +5957,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-8/ (30)
 
-- [ ] **Page title (browser tab):** "Stage Eight: Pacifying the senses — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Eight: Pacifying the senses - Culadasa"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Eight of The Mind Illuminated, Pacifying the senses: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 7)
@@ -6020,7 +6020,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## ten-stages/stage-9/ (21)
 
-- [ ] **Page title (browser tab):** "Stage Nine: Calming the intensity of meditative joy — Culadasa"  
+- [ ] **Page title (browser tab):** "Stage Nine: Calming the intensity of meditative joy - Culadasa"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 6)
 - [ ] **Search description (hidden):** "Stage Nine of The Mind Illuminated, Calming the intensity of meditative joy: a video to start with and everything Culadasa said about it."  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 7)
@@ -6065,7 +6065,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/-hKGfbBuemA/ (12)
 
-- [ ] **Page title (browser tab):** "Culadasa March 2021 Patreon Q&A No2 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa March 2021 Patreon Q&A No2 - Culadasa"  
   videos/-hKGfbBuemA/ (`redesign-2/videos/-hKGfbBuemA/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa March 2021 Patreon Q&A No2: Culadasa on video, with the questions asked and the full transcript."  
   videos/-hKGfbBuemA/ (`redesign-2/videos/-hKGfbBuemA/index.html` line 7)
@@ -6092,7 +6092,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/-pqnkm1tQ0E/ (7)
 
-- [ ] **Page title (browser tab):** "Culadasa November 2019 Patreon Q&A - Monday — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa November 2019 Patreon Q&A - Monday - Culadasa"  
   videos/-pqnkm1tQ0E/ (`redesign-2/videos/-pqnkm1tQ0E/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2019 Patreon Q&A - Monday: Culadasa on video, with the questions asked and the full transcript."  
   videos/-pqnkm1tQ0E/ (`redesign-2/videos/-pqnkm1tQ0E/index.html` line 7)
@@ -6109,7 +6109,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/-x-ONEhLDlA/ (7)
 
-- [ ] **Page title (browser tab):** "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C — Culadasa"  
+- [ ] **Page title (browser tab):** "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C - Culadasa"  
   videos/-x-ONEhLDlA/ (`redesign-2/videos/-x-ONEhLDlA/index.html` line 6)
 - [ ] **Search description (hidden):** "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C: Culadasa on video, with the full transcript."  
   videos/-x-ONEhLDlA/ (`redesign-2/videos/-x-ONEhLDlA/index.html` line 7)
@@ -6126,7 +6126,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/0F8Oub7tYsk/ (4)
 
-- [ ] **Page title (browser tab):** "Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/0F8Oub7tYsk/ (`redesign-2/videos/0F8Oub7tYsk/index.html` line 6)
 - [ ] **Search description (hidden):** "Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/0F8Oub7tYsk/ (`redesign-2/videos/0F8Oub7tYsk/index.html` line 7)
@@ -6137,7 +6137,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/0nC9ZUx-Xs4/ (7)
 
-- [ ] **Page title (browser tab):** "Culadasa April 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa April 2018 Patreon Q&A - Culadasa"  
   videos/0nC9ZUx-Xs4/ (`redesign-2/videos/0nC9ZUx-Xs4/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa April 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/0nC9ZUx-Xs4/ (`redesign-2/videos/0nC9ZUx-Xs4/index.html` line 7)
@@ -6154,7 +6154,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/1-bzZgZd-sg/ (7)
 
-- [ ] **Page title (browser tab):** "Culadasa June 2020 Patreon Q&A N°1 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa June 2020 Patreon Q&A N°1 Recording - Culadasa"  
   videos/1-bzZgZd-sg/ (`redesign-2/videos/1-bzZgZd-sg/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa June 2020 Patreon Q&A N°1 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/1-bzZgZd-sg/ (`redesign-2/videos/1-bzZgZd-sg/index.html` line 7)
@@ -6171,7 +6171,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/1nPhm73Aaxw/ (6)
 
-- [ ] **Page title (browser tab):** "Culadasa February 2021 Patreon Q&A No1 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa February 2021 Patreon Q&A No1 - Culadasa"  
   videos/1nPhm73Aaxw/ (`redesign-2/videos/1nPhm73Aaxw/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa February 2021 Patreon Q&A No1: Culadasa on video, with the questions asked and the full transcript."  
   videos/1nPhm73Aaxw/ (`redesign-2/videos/1nPhm73Aaxw/index.html` line 7)
@@ -6186,7 +6186,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/2LYa1YCdZH8/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa -The 5 ultimate insights that lead to direct awakening. — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa -The 5 ultimate insights that lead to direct awakening. - Culadasa"  
   videos/2LYa1YCdZH8/ (`redesign-2/videos/2LYa1YCdZH8/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa -The 5 ultimate insights that lead to direct awakening.: Culadasa on video, with the full transcript."  
   videos/2LYa1YCdZH8/ (`redesign-2/videos/2LYa1YCdZH8/index.html` line 7)
@@ -6197,7 +6197,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/33lZZhsKJw0/ (5)
 
-- [ ] **Page title (browser tab):** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/33lZZhsKJw0/ (`redesign-2/videos/33lZZhsKJw0/index.html` line 6)
 - [ ] **Search description (hidden):** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/33lZZhsKJw0/ (`redesign-2/videos/33lZZhsKJw0/index.html` line 7)
@@ -6210,7 +6210,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/3ZM2Hq-wiwU/ (6)
 
-- [ ] **Page title (browser tab):** "Culadasa April 2018 Patreon Q&A Catch-Up — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa April 2018 Patreon Q&A Catch-Up - Culadasa"  
   videos/3ZM2Hq-wiwU/ (`redesign-2/videos/3ZM2Hq-wiwU/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa April 2018 Patreon Q&A Catch-Up: Culadasa on video, with the questions asked and the full transcript."  
   videos/3ZM2Hq-wiwU/ (`redesign-2/videos/3ZM2Hq-wiwU/index.html` line 7)
@@ -6225,7 +6225,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/6nxZFnYCjbc/ (4)
 
-- [ ] **Page title (browser tab):** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? — Culadasa"  
+- [ ] **Page title (browser tab):** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? - Culadasa"  
   videos/6nxZFnYCjbc/ (`redesign-2/videos/6nxZFnYCjbc/index.html` line 6)
 - [ ] **Search description (hidden):** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take?: Culadasa on video, with the full transcript."  
   videos/6nxZFnYCjbc/ (`redesign-2/videos/6nxZFnYCjbc/index.html` line 7)
@@ -6236,7 +6236,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/7Rv4Dh0FWRI/ (5)
 
-- [ ] **Page title (browser tab):** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C — Culadasa"  
+- [ ] **Page title (browser tab):** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C - Culadasa"  
   videos/7Rv4Dh0FWRI/ (`redesign-2/videos/7Rv4Dh0FWRI/index.html` line 6)
 - [ ] **Search description (hidden):** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C: Culadasa on video, with the full transcript."  
   videos/7Rv4Dh0FWRI/ (`redesign-2/videos/7Rv4Dh0FWRI/index.html` line 7)
@@ -6249,7 +6249,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/7UdHOJqB03o/ (6)
 
-- [ ] **Page title (browser tab):** "March 2019 Culadasa Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "March 2019 Culadasa Patreon Q&A - Culadasa"  
   videos/7UdHOJqB03o/ (`redesign-2/videos/7UdHOJqB03o/index.html` line 6)
 - [ ] **Search description (hidden):** "March 2019 Culadasa Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/7UdHOJqB03o/ (`redesign-2/videos/7UdHOJqB03o/index.html` line 7)
@@ -6264,7 +6264,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/81mCT4D6w1I/ (6)
 
-- [ ] **Page title (browser tab):** "Culadasa September 2020 Patreon Q&A N°1 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa September 2020 Patreon Q&A N°1 Recording - Culadasa"  
   videos/81mCT4D6w1I/ (`redesign-2/videos/81mCT4D6w1I/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa September 2020 Patreon Q&A N°1 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/81mCT4D6w1I/ (`redesign-2/videos/81mCT4D6w1I/index.html` line 7)
@@ -6279,7 +6279,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/8IqXwOlYiWs/ (4)
 
-- [ ] **Page title (browser tab):** "Reality is Mind-Created - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "Reality is Mind-Created - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/8IqXwOlYiWs/ (`redesign-2/videos/8IqXwOlYiWs/index.html` line 6)
 - [ ] **Search description (hidden):** "Reality is Mind-Created - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/8IqXwOlYiWs/ (`redesign-2/videos/8IqXwOlYiWs/index.html` line 7)
@@ -6290,7 +6290,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/8Uc_gewR1gY/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa April 2021 Patreon Q&A No1 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa April 2021 Patreon Q&A No1 - Culadasa"  
   videos/8Uc_gewR1gY/ (`redesign-2/videos/8Uc_gewR1gY/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa April 2021 Patreon Q&A No1: Culadasa on video, with the questions asked and the full transcript."  
   videos/8Uc_gewR1gY/ (`redesign-2/videos/8Uc_gewR1gY/index.html` line 7)
@@ -6303,7 +6303,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/9GCa0epZVs8/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa March 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa March 2018 Patreon Q&A - Culadasa"  
   videos/9GCa0epZVs8/ (`redesign-2/videos/9GCa0epZVs8/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa March 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/9GCa0epZVs8/ (`redesign-2/videos/9GCa0epZVs8/index.html` line 7)
@@ -6316,7 +6316,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/9KYmlShAz_g/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa November 2020 Patreon Q&A N°2 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa November 2020 Patreon Q&A N°2 Recording - Culadasa"  
   videos/9KYmlShAz_g/ (`redesign-2/videos/9KYmlShAz_g/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2020 Patreon Q&A N°2 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/9KYmlShAz_g/ (`redesign-2/videos/9KYmlShAz_g/index.html` line 7)
@@ -6329,7 +6329,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/9_7sTiQ-jIM/ (5)
 
-- [ ] **Page title (browser tab):** "Rattlesnake Round-up — Culadasa"  
+- [ ] **Page title (browser tab):** "Rattlesnake Round-up - Culadasa"  
   videos/9_7sTiQ-jIM/ (`redesign-2/videos/9_7sTiQ-jIM/index.html` line 6)
 - [ ] **Search description (hidden):** "Rattlesnake Round-up: Culadasa on video, with the full transcript."  
   videos/9_7sTiQ-jIM/ (`redesign-2/videos/9_7sTiQ-jIM/index.html` line 7)
@@ -6342,7 +6342,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/AdiW7_HcjiE/ (4)
 
-- [ ] **Page title (browser tab):** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) — Culadasa"  
+- [ ] **Page title (browser tab):** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) - Culadasa"  
   videos/AdiW7_HcjiE/ (`redesign-2/videos/AdiW7_HcjiE/index.html` line 6)
 - [ ] **Search description (hidden):** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!): Culadasa on video, with the full transcript."  
   videos/AdiW7_HcjiE/ (`redesign-2/videos/AdiW7_HcjiE/index.html` line 7)
@@ -6353,14 +6353,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/B00XPYTvCRY/ (2)
 
-- [ ] **Page title (browser tab):** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu — Culadasa"  
+- [ ] **Page title (browser tab):** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu - Culadasa"  
   videos/B00XPYTvCRY/ (`redesign-2/videos/B00XPYTvCRY/index.html` line 6)
 - [ ] **Search description (hidden):** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu: Culadasa on video, with the full transcript."  
   videos/B00XPYTvCRY/ (`redesign-2/videos/B00XPYTvCRY/index.html` line 7)
 
 ## videos/BAWrOls6I8U/ (5)
 
-- [ ] **Page title (browser tab):** "New Channel 4 My Journey — Culadasa"  
+- [ ] **Page title (browser tab):** "New Channel 4 My Journey - Culadasa"  
   videos/BAWrOls6I8U/ (`redesign-2/videos/BAWrOls6I8U/index.html` line 6)
 - [ ] **Search description (hidden):** "New Channel 4 My Journey: Culadasa on video, with the full transcript."  
   videos/BAWrOls6I8U/ (`redesign-2/videos/BAWrOls6I8U/index.html` line 7)
@@ -6373,7 +6373,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/BJzM7GH9-nE/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa August 2020 Patreon Q&A N°2 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa August 2020 Patreon Q&A N°2 Recording - Culadasa"  
   videos/BJzM7GH9-nE/ (`redesign-2/videos/BJzM7GH9-nE/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa August 2020 Patreon Q&A N°2 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/BJzM7GH9-nE/ (`redesign-2/videos/BJzM7GH9-nE/index.html` line 7)
@@ -6386,7 +6386,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/BR7D92whYXA/ (5)
 
-- [ ] **Page title (browser tab):** "My Journey: Episode 5 - Unifying life around the Dharma (re-upload) — Culadasa"  
+- [ ] **Page title (browser tab):** "My Journey: Episode 5 - Unifying life around the Dharma (re-upload) - Culadasa"  
   videos/BR7D92whYXA/ (`redesign-2/videos/BR7D92whYXA/index.html` line 6)
 - [ ] **Search description (hidden):** "My Journey: Episode 5 - Unifying life around the Dharma (re-upload): Culadasa on video, with the full transcript."  
   videos/BR7D92whYXA/ (`redesign-2/videos/BR7D92whYXA/index.html` line 7)
@@ -6399,7 +6399,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/BT1HpYIg-oE/ (5)
 
-- [ ] **Page title (browser tab):** "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula — Culadasa"  
+- [ ] **Page title (browser tab):** "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula - Culadasa"  
   videos/BT1HpYIg-oE/ (`redesign-2/videos/BT1HpYIg-oE/index.html` line 6)
 - [ ] **Search description (hidden):** "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula: Culadasa on video, with the full transcript."  
   videos/BT1HpYIg-oE/ (`redesign-2/videos/BT1HpYIg-oE/index.html` line 7)
@@ -6412,7 +6412,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/BYtQAyNyA8E/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa May 2020 Patreon Q&A Recording N°2 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa May 2020 Patreon Q&A Recording N°2 - Culadasa"  
   videos/BYtQAyNyA8E/ (`redesign-2/videos/BYtQAyNyA8E/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa May 2020 Patreon Q&A Recording N°2: Culadasa on video, with the questions asked and the full transcript."  
   videos/BYtQAyNyA8E/ (`redesign-2/videos/BYtQAyNyA8E/index.html` line 7)
@@ -6425,7 +6425,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/BdJWwlWVkzk/ (4)
 
-- [ ] **Page title (browser tab):** "The Nature of Suffering - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "The Nature of Suffering - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/BdJWwlWVkzk/ (`redesign-2/videos/BdJWwlWVkzk/index.html` line 6)
 - [ ] **Search description (hidden):** "The Nature of Suffering - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/BdJWwlWVkzk/ (`redesign-2/videos/BdJWwlWVkzk/index.html` line 7)
@@ -6436,7 +6436,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/By0s1KVLYBw/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa December 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa December 2018 Patreon Q&A - Culadasa"  
   videos/By0s1KVLYBw/ (`redesign-2/videos/By0s1KVLYBw/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/By0s1KVLYBw/ (`redesign-2/videos/By0s1KVLYBw/index.html` line 7)
@@ -6447,7 +6447,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/DO4vExydTKA/ (6)
 
-- [ ] **Page title (browser tab):** "October 29, 2018 Culadasa Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "October 29, 2018 Culadasa Patreon Q&A - Culadasa"  
   videos/DO4vExydTKA/ (`redesign-2/videos/DO4vExydTKA/index.html` line 6)
 - [ ] **Search description (hidden):** "October 29, 2018 Culadasa Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/DO4vExydTKA/ (`redesign-2/videos/DO4vExydTKA/index.html` line 7)
@@ -6462,7 +6462,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/Dp3l_XnTd20/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa April 2019 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa April 2019 Patreon Q&A - Culadasa"  
   videos/Dp3l_XnTd20/ (`redesign-2/videos/Dp3l_XnTd20/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa April 2019 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/Dp3l_XnTd20/ (`redesign-2/videos/Dp3l_XnTd20/index.html` line 7)
@@ -6475,7 +6475,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/E48ByR0Xt6U/ (5)
 
-- [ ] **Page title (browser tab):** "My Journey: Episode 3 - Experiences don't mean sh... — Culadasa"  
+- [ ] **Page title (browser tab):** "My Journey: Episode 3 - Experiences don't mean sh... - Culadasa"  
   videos/E48ByR0Xt6U/ (`redesign-2/videos/E48ByR0Xt6U/index.html` line 6)
 - [ ] **Search description (hidden):** "My Journey: Episode 3 - Experiences don't mean sh...: Culadasa on video, with the full transcript."  
   videos/E48ByR0Xt6U/ (`redesign-2/videos/E48ByR0Xt6U/index.html` line 7)
@@ -6488,7 +6488,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/EhtU5ei6YaM/ (5)
 
-- [ ] **Page title (browser tab):** "20180816 Patreon Meetup Video — Culadasa"  
+- [ ] **Page title (browser tab):** "20180816 Patreon Meetup Video - Culadasa"  
   videos/EhtU5ei6YaM/ (`redesign-2/videos/EhtU5ei6YaM/index.html` line 6)
 - [ ] **Search description (hidden):** "20180816 Patreon Meetup Video: Culadasa on video, with the questions asked and the full transcript."  
   videos/EhtU5ei6YaM/ (`redesign-2/videos/EhtU5ei6YaM/index.html` line 7)
@@ -6501,7 +6501,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/FnQVRtDu0kQ/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday - Culadasa"  
   videos/FnQVRtDu0kQ/ (`redesign-2/videos/FnQVRtDu0kQ/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa February 2020 Patreon Q&A Recording Nº 2 - Sunday: Culadasa on video, with the questions asked and the full transcript."  
   videos/FnQVRtDu0kQ/ (`redesign-2/videos/FnQVRtDu0kQ/index.html` line 7)
@@ -6514,7 +6514,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/G-JUhLJdJ3w/ (4)
 
-- [ ] **Page title (browser tab):** "What is Rebirth? - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "What is Rebirth? - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/G-JUhLJdJ3w/ (`redesign-2/videos/G-JUhLJdJ3w/index.html` line 6)
 - [ ] **Search description (hidden):** "What is Rebirth? - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/G-JUhLJdJ3w/ (`redesign-2/videos/G-JUhLJdJ3w/index.html` line 7)
@@ -6525,7 +6525,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/GVoIxju59lc/ (4)
 
-- [ ] **Page title (browser tab):** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/GVoIxju59lc/ (`redesign-2/videos/GVoIxju59lc/index.html` line 6)
 - [ ] **Search description (hidden):** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/GVoIxju59lc/ (`redesign-2/videos/GVoIxju59lc/index.html` line 7)
@@ -6536,7 +6536,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/GWThVC6FEzA/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa September 2020 Patreon Q&A N°2 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa September 2020 Patreon Q&A N°2 Recording - Culadasa"  
   videos/GWThVC6FEzA/ (`redesign-2/videos/GWThVC6FEzA/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa September 2020 Patreon Q&A N°2 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/GWThVC6FEzA/ (`redesign-2/videos/GWThVC6FEzA/index.html` line 7)
@@ -6549,14 +6549,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/HSv2dindx7o/ (2)
 
-- [ ] **Page title (browser tab):** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/HSv2dindx7o/ (`redesign-2/videos/HSv2dindx7o/index.html` line 6)
 - [ ] **Search description (hidden):** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/HSv2dindx7o/ (`redesign-2/videos/HSv2dindx7o/index.html` line 7)
 
 ## videos/IamWcgYWKcw/ (6)
 
-- [ ] **Page title (browser tab):** "Culadasa February 2020 Patreon Q&A Nº 1 - Saturday — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa February 2020 Patreon Q&A Nº 1 - Saturday - Culadasa"  
   videos/IamWcgYWKcw/ (`redesign-2/videos/IamWcgYWKcw/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa February 2020 Patreon Q&A Nº 1 - Saturday: Culadasa on video, with the questions asked and the full transcript."  
   videos/IamWcgYWKcw/ (`redesign-2/videos/IamWcgYWKcw/index.html` line 7)
@@ -6571,7 +6571,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/JK0q0tgsw2U/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa October 2020 Patreon Q&A N°1 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa October 2020 Patreon Q&A N°1 Recording - Culadasa"  
   videos/JK0q0tgsw2U/ (`redesign-2/videos/JK0q0tgsw2U/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa October 2020 Patreon Q&A N°1 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/JK0q0tgsw2U/ (`redesign-2/videos/JK0q0tgsw2U/index.html` line 7)
@@ -6584,7 +6584,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/JraPD3iMJYE/ (4)
 
-- [ ] **Page title (browser tab):** "Where do the Four Elements Cease? - Buddhist Wisdom meets Brain Science - Culada — Culadasa"  
+- [ ] **Page title (browser tab):** "Where do the Four Elements Cease? - Buddhist Wisdom meets Brain Science - Culada - Culadasa"  
   videos/JraPD3iMJYE/ (`redesign-2/videos/JraPD3iMJYE/index.html` line 6)
 - [ ] **Search description (hidden):** "Where do the Four Elements Cease? - Buddhist Wisdom meets Brain Science - Culada: Culadasa on video, with the full transcript."  
   videos/JraPD3iMJYE/ (`redesign-2/videos/JraPD3iMJYE/index.html` line 7)
@@ -6595,7 +6595,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/K0KKBU46hNM/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st - Culadasa"  
   videos/K0KKBU46hNM/ (`redesign-2/videos/K0KKBU46hNM/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2020 Patreon Q&A N°1 - Sunday the 1st: Culadasa on video, with the questions asked and the full transcript."  
   videos/K0KKBU46hNM/ (`redesign-2/videos/K0KKBU46hNM/index.html` line 7)
@@ -6608,7 +6608,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/MAY3lh-4xIE/ (5)
 
-- [ ] **Page title (browser tab):** "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad — Culadasa"  
+- [ ] **Page title (browser tab):** "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad - Culadasa"  
   videos/MAY3lh-4xIE/ (`redesign-2/videos/MAY3lh-4xIE/index.html` line 6)
 - [ ] **Search description (hidden):** "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad: Culadasa on video, with the full transcript."  
   videos/MAY3lh-4xIE/ (`redesign-2/videos/MAY3lh-4xIE/index.html` line 7)
@@ -6621,7 +6621,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/MapEQWUQakY/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa June 2019 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa June 2019 Patreon Q&A - Culadasa"  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa June 2019 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 7)
@@ -6634,7 +6634,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/Mzlk1iq_LRs/ (5)
 
-- [ ] **Page title (browser tab):** "benefits of meditation, therapy and awakening — Culadasa"  
+- [ ] **Page title (browser tab):** "benefits of meditation, therapy and awakening - Culadasa"  
   videos/Mzlk1iq_LRs/ (`redesign-2/videos/Mzlk1iq_LRs/index.html` line 6)
 - [ ] **Search description (hidden):** "benefits of meditation, therapy and awakening: Culadasa on video, with the full transcript."  
   videos/Mzlk1iq_LRs/ (`redesign-2/videos/Mzlk1iq_LRs/index.html` line 7)
@@ -6647,7 +6647,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/NndWvacogTk/ (5)
 
-- [ ] **Page title (browser tab):** "Practice Advice for Everyday Life — Culadasa"  
+- [ ] **Page title (browser tab):** "Practice Advice for Everyday Life - Culadasa"  
   videos/NndWvacogTk/ (`redesign-2/videos/NndWvacogTk/index.html` line 6)
 - [ ] **Search description (hidden):** "Practice Advice for Everyday Life: Culadasa on video, with the full transcript."  
   videos/NndWvacogTk/ (`redesign-2/videos/NndWvacogTk/index.html` line 7)
@@ -6660,7 +6660,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/OAfkxskGREo/ (5)
 
-- [ ] **Page title (browser tab):** "My Journey: Episode 2 - A Series of Miracles — Culadasa"  
+- [ ] **Page title (browser tab):** "My Journey: Episode 2 - A Series of Miracles - Culadasa"  
   videos/OAfkxskGREo/ (`redesign-2/videos/OAfkxskGREo/index.html` line 6)
 - [ ] **Search description (hidden):** "My Journey: Episode 2 - A Series of Miracles: Culadasa on video, with the full transcript."  
   videos/OAfkxskGREo/ (`redesign-2/videos/OAfkxskGREo/index.html` line 7)
@@ -6673,7 +6673,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/R9dqNii3Vmc/ (5)
 
-- [ ] **Page title (browser tab):** "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas — Culadasa"  
+- [ ] **Page title (browser tab):** "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas - Culadasa"  
   videos/R9dqNii3Vmc/ (`redesign-2/videos/R9dqNii3Vmc/index.html` line 6)
 - [ ] **Search description (hidden):** "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas: Culadasa on video, with the full transcript."  
   videos/R9dqNii3Vmc/ (`redesign-2/videos/R9dqNii3Vmc/index.html` line 7)
@@ -6686,7 +6686,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/RarJIUBrysw/ (6)
 
-- [ ] **Page title (browser tab):** "Culadasa January 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa January 2018 Patreon Q&A - Culadasa"  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa January 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 7)
@@ -6701,7 +6701,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/TrK3NBylnVA/ (5)
 
-- [ ] **Page title (browser tab):** "My Journey: Episode 4 - Stranger in a Strange Land — Culadasa"  
+- [ ] **Page title (browser tab):** "My Journey: Episode 4 - Stranger in a Strange Land - Culadasa"  
   videos/TrK3NBylnVA/ (`redesign-2/videos/TrK3NBylnVA/index.html` line 6)
 - [ ] **Search description (hidden):** "My Journey: Episode 4 - Stranger in a Strange Land: Culadasa on video, with the full transcript."  
   videos/TrK3NBylnVA/ (`redesign-2/videos/TrK3NBylnVA/index.html` line 7)
@@ -6714,7 +6714,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/Uf_su1wDk94/ (5)
 
-- [ ] **Page title (browser tab):** "Introduction to "My Journey" discussion series — Culadasa"  
+- [ ] **Page title (browser tab):** "Introduction to "My Journey" discussion series - Culadasa"  
   videos/Uf_su1wDk94/ (`redesign-2/videos/Uf_su1wDk94/index.html` line 6)
 - [ ] **Search description (hidden):** "Introduction to "My Journey" discussion series: Culadasa on video, with the full transcript."  
   videos/Uf_su1wDk94/ (`redesign-2/videos/Uf_su1wDk94/index.html` line 7)
@@ -6727,7 +6727,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/UjBXtI1Q2as/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it - Culadasa"  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it: Culadasa on video, with the full transcript."  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 7)
@@ -6738,7 +6738,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/Wmg-SOl9Sk4/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa November 2019 Patreon Q&A Video - Friday the 29th — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa November 2019 Patreon Q&A Video - Friday the 29th - Culadasa"  
   videos/Wmg-SOl9Sk4/ (`redesign-2/videos/Wmg-SOl9Sk4/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2019 Patreon Q&A Video - Friday the 29th: Culadasa on video, with the questions asked and the full transcript."  
   videos/Wmg-SOl9Sk4/ (`redesign-2/videos/Wmg-SOl9Sk4/index.html` line 7)
@@ -6751,7 +6751,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/X7brJ8qrLBo/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa July 2019 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa July 2019 Patreon Q&A - Culadasa"  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa July 2019 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 7)
@@ -6764,7 +6764,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/XFrOYVJxO80/ (5)
 
-- [ ] **Page title (browser tab):** "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula — Culadasa"  
+- [ ] **Page title (browser tab):** "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula - Culadasa"  
   videos/XFrOYVJxO80/ (`redesign-2/videos/XFrOYVJxO80/index.html` line 6)
 - [ ] **Search description (hidden):** "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula: Culadasa on video, with the full transcript."  
   videos/XFrOYVJxO80/ (`redesign-2/videos/XFrOYVJxO80/index.html` line 7)
@@ -6777,7 +6777,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/XaRnabvBKOQ/ (5)
 
-- [ ] **Page title (browser tab):** "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/XaRnabvBKOQ/ (`redesign-2/videos/XaRnabvBKOQ/index.html` line 6)
 - [ ] **Search description (hidden):** "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/XaRnabvBKOQ/ (`redesign-2/videos/XaRnabvBKOQ/index.html` line 7)
@@ -6790,7 +6790,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/YD02MC1RaUs/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa February 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa February 2018 Patreon Q&A - Culadasa"  
   videos/YD02MC1RaUs/ (`redesign-2/videos/YD02MC1RaUs/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa February 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/YD02MC1RaUs/ (`redesign-2/videos/YD02MC1RaUs/index.html` line 7)
@@ -6803,7 +6803,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/YU_gUvXkkVY/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa July 2020 Patreon Q&A N°2 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa July 2020 Patreon Q&A N°2 Recording - Culadasa"  
   videos/YU_gUvXkkVY/ (`redesign-2/videos/YU_gUvXkkVY/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa July 2020 Patreon Q&A N°2 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/YU_gUvXkkVY/ (`redesign-2/videos/YU_gUvXkkVY/index.html` line 7)
@@ -6816,7 +6816,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/YfRp9cMPSNk/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa November 2019 Patreon Q&A - Sunday — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa November 2019 Patreon Q&A - Sunday - Culadasa"  
   videos/YfRp9cMPSNk/ (`redesign-2/videos/YfRp9cMPSNk/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2019 Patreon Q&A - Sunday: Culadasa on video, with the questions asked and the full transcript."  
   videos/YfRp9cMPSNk/ (`redesign-2/videos/YfRp9cMPSNk/index.html` line 7)
@@ -6829,7 +6829,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/Yg6l-DsFEz8/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa March 2021 Patreon Q&A No1 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa March 2021 Patreon Q&A No1 - Culadasa"  
   videos/Yg6l-DsFEz8/ (`redesign-2/videos/Yg6l-DsFEz8/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa March 2021 Patreon Q&A No1: Culadasa on video, with the questions asked and the full transcript."  
   videos/Yg6l-DsFEz8/ (`redesign-2/videos/Yg6l-DsFEz8/index.html` line 7)
@@ -6842,7 +6842,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/ZbmFWHoT0YE/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa January 2021 Patreon Q&A No1 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa January 2021 Patreon Q&A No1 - Culadasa"  
   videos/ZbmFWHoT0YE/ (`redesign-2/videos/ZbmFWHoT0YE/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa January 2021 Patreon Q&A No1: Culadasa on video, with the questions asked and the full transcript."  
   videos/ZbmFWHoT0YE/ (`redesign-2/videos/ZbmFWHoT0YE/index.html` line 7)
@@ -6855,7 +6855,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/Zk2XQFwESIk/ (5)
 
-- [ ] **Page title (browser tab):** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC — Culadasa"  
+- [ ] **Page title (browser tab):** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC - Culadasa"  
   videos/Zk2XQFwESIk/ (`redesign-2/videos/Zk2XQFwESIk/index.html` line 6)
 - [ ] **Search description (hidden):** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC: Culadasa on video, with the full transcript."  
   videos/Zk2XQFwESIk/ (`redesign-2/videos/Zk2XQFwESIk/index.html` line 7)
@@ -6868,7 +6868,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/_c94GntI6qM/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa December 2019 Patreon Q&A Video - Sunday the 15th — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa December 2019 Patreon Q&A Video - Sunday the 15th - Culadasa"  
   videos/_c94GntI6qM/ (`redesign-2/videos/_c94GntI6qM/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2019 Patreon Q&A Video - Sunday the 15th: Culadasa on video, with the questions asked and the full transcript."  
   videos/_c94GntI6qM/ (`redesign-2/videos/_c94GntI6qM/index.html` line 7)
@@ -6881,7 +6881,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/_m3ou_CA1Wk/ (5)
 
-- [ ] **Page title (browser tab):** "November 23, 2018 Culadasa Q&A Catch Up — Culadasa"  
+- [ ] **Page title (browser tab):** "November 23, 2018 Culadasa Q&A Catch Up - Culadasa"  
   videos/_m3ou_CA1Wk/ (`redesign-2/videos/_m3ou_CA1Wk/index.html` line 6)
 - [ ] **Search description (hidden):** "November 23, 2018 Culadasa Q&A Catch Up: Culadasa on video, with the questions asked and the full transcript."  
   videos/_m3ou_CA1Wk/ (`redesign-2/videos/_m3ou_CA1Wk/index.html` line 7)
@@ -6894,7 +6894,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/a8XJrNx7iN0/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa June 2020 Patreon Q&A N°2 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa June 2020 Patreon Q&A N°2 Recording - Culadasa"  
   videos/a8XJrNx7iN0/ (`redesign-2/videos/a8XJrNx7iN0/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa June 2020 Patreon Q&A N°2 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/a8XJrNx7iN0/ (`redesign-2/videos/a8XJrNx7iN0/index.html` line 7)
@@ -6905,7 +6905,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/aCwUGQk-0gQ/ (5)
 
-- [ ] **Page title (browser tab):** "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula — Culadasa"  
+- [ ] **Page title (browser tab):** "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula - Culadasa"  
   videos/aCwUGQk-0gQ/ (`redesign-2/videos/aCwUGQk-0gQ/index.html` line 6)
 - [ ] **Search description (hidden):** "Welcome - Meditation instruction from Buddhist and Scientific perspective - Cula: Culadasa on video, with the full transcript."  
   videos/aCwUGQk-0gQ/ (`redesign-2/videos/aCwUGQk-0gQ/index.html` line 7)
@@ -6918,7 +6918,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/aJ16ifG-udI/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa January 2020 Patreon Q&A N° 2 (Monday) — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa January 2020 Patreon Q&A N° 2 (Monday) - Culadasa"  
   videos/aJ16ifG-udI/ (`redesign-2/videos/aJ16ifG-udI/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa January 2020 Patreon Q&A N° 2 (Monday): Culadasa on video, with the questions asked and the full transcript."  
   videos/aJ16ifG-udI/ (`redesign-2/videos/aJ16ifG-udI/index.html` line 7)
@@ -6931,7 +6931,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/aM0o-BkrwkY/ (5)
 
-- [ ] **Page title (browser tab):** "September 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "September 2018 Patreon Q&A - Culadasa"  
   videos/aM0o-BkrwkY/ (`redesign-2/videos/aM0o-BkrwkY/index.html` line 6)
 - [ ] **Search description (hidden):** "September 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/aM0o-BkrwkY/ (`redesign-2/videos/aM0o-BkrwkY/index.html` line 7)
@@ -6944,7 +6944,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/c7GSUFa_lF4/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa January 2020 Patreon Q&A Nº 1 - Sunday — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa January 2020 Patreon Q&A Nº 1 - Sunday - Culadasa"  
   videos/c7GSUFa_lF4/ (`redesign-2/videos/c7GSUFa_lF4/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa January 2020 Patreon Q&A Nº 1 - Sunday: Culadasa on video, with the questions asked and the full transcript."  
   videos/c7GSUFa_lF4/ (`redesign-2/videos/c7GSUFa_lF4/index.html` line 7)
@@ -6957,7 +6957,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/d4x3_ffTPC0/ (6)
 
-- [ ] **Page title (browser tab):** "Culadasa December 2020 Patreon Q&A No1 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa December 2020 Patreon Q&A No1 - Culadasa"  
   videos/d4x3_ffTPC0/ (`redesign-2/videos/d4x3_ffTPC0/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2020 Patreon Q&A No1: Culadasa on video, with the questions asked and the full transcript."  
   videos/d4x3_ffTPC0/ (`redesign-2/videos/d4x3_ffTPC0/index.html` line 7)
@@ -6972,7 +6972,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/e1kss-E0IKU/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa October 2017 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa October 2017 Patreon Q&A - Culadasa"  
   videos/e1kss-E0IKU/ (`redesign-2/videos/e1kss-E0IKU/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa October 2017 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/e1kss-E0IKU/ (`redesign-2/videos/e1kss-E0IKU/index.html` line 7)
@@ -6985,7 +6985,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/eERQSG0eMFY/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa December 2019 Patreon Q&A Video - Monday the 16th — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa December 2019 Patreon Q&A Video - Monday the 16th - Culadasa"  
   videos/eERQSG0eMFY/ (`redesign-2/videos/eERQSG0eMFY/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2019 Patreon Q&A Video - Monday the 16th: Culadasa on video, with the questions asked and the full transcript."  
   videos/eERQSG0eMFY/ (`redesign-2/videos/eERQSG0eMFY/index.html` line 7)
@@ -6998,7 +6998,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/eKMKZGZy6sc/ (5)
 
-- [ ] **Page title (browser tab):** "February 2019 Culadasa Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "February 2019 Culadasa Patreon Q&A - Culadasa"  
   videos/eKMKZGZy6sc/ (`redesign-2/videos/eKMKZGZy6sc/index.html` line 6)
 - [ ] **Search description (hidden):** "February 2019 Culadasa Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/eKMKZGZy6sc/ (`redesign-2/videos/eKMKZGZy6sc/index.html` line 7)
@@ -7011,7 +7011,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/eL36yVnWcb8/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa May 2020 Patreon Q&A Recording N°1 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa May 2020 Patreon Q&A Recording N°1 - Culadasa"  
   videos/eL36yVnWcb8/ (`redesign-2/videos/eL36yVnWcb8/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa May 2020 Patreon Q&A Recording N°1: Culadasa on video, with the questions asked and the full transcript."  
   videos/eL36yVnWcb8/ (`redesign-2/videos/eL36yVnWcb8/index.html` line 7)
@@ -7024,7 +7024,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/edd2fS8BRdM/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa May 2021 Patreon Q&A No1 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa May 2021 Patreon Q&A No1 - Culadasa"  
   videos/edd2fS8BRdM/ (`redesign-2/videos/edd2fS8BRdM/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa May 2021 Patreon Q&A No1: Culadasa on video, with the questions asked and the full transcript."  
   videos/edd2fS8BRdM/ (`redesign-2/videos/edd2fS8BRdM/index.html` line 7)
@@ -7035,7 +7035,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/ewiA5sh-otw/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa January 2019 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa January 2019 Patreon Q&A - Culadasa"  
   videos/ewiA5sh-otw/ (`redesign-2/videos/ewiA5sh-otw/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa January 2019 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/ewiA5sh-otw/ (`redesign-2/videos/ewiA5sh-otw/index.html` line 7)
@@ -7046,7 +7046,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/fcWxNIsXd4M/ (4)
 
-- [ ] **Page title (browser tab):** "The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/fcWxNIsXd4M/ (`redesign-2/videos/fcWxNIsXd4M/index.html` line 6)
 - [ ] **Search description (hidden):** "The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/fcWxNIsXd4M/ (`redesign-2/videos/fcWxNIsXd4M/index.html` line 7)
@@ -7057,7 +7057,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/fmn_lz7tGFc/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa April 2021 Patreon Q&A No2 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa April 2021 Patreon Q&A No2 - Culadasa"  
   videos/fmn_lz7tGFc/ (`redesign-2/videos/fmn_lz7tGFc/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa April 2021 Patreon Q&A No2: Culadasa on video, with the questions asked and the full transcript."  
   videos/fmn_lz7tGFc/ (`redesign-2/videos/fmn_lz7tGFc/index.html` line 7)
@@ -7070,7 +7070,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/kGgpbE_etV8/ (5)
 
-- [ ] **Page title (browser tab):** "20190517 Culadasa Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "20190517 Culadasa Patreon Q&A - Culadasa"  
   videos/kGgpbE_etV8/ (`redesign-2/videos/kGgpbE_etV8/index.html` line 6)
 - [ ] **Search description (hidden):** "20190517 Culadasa Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/kGgpbE_etV8/ (`redesign-2/videos/kGgpbE_etV8/index.html` line 7)
@@ -7083,7 +7083,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/kn050yBN37U/ (4)
 
-- [ ] **Page title (browser tab):** "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years — Culadasa"  
+- [ ] **Page title (browser tab):** "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years - Culadasa"  
   videos/kn050yBN37U/ (`redesign-2/videos/kn050yBN37U/index.html` line 6)
 - [ ] **Search description (hidden):** "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years: Culadasa on video, with the full transcript."  
   videos/kn050yBN37U/ (`redesign-2/videos/kn050yBN37U/index.html` line 7)
@@ -7094,7 +7094,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/kwyGPfavfFY/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa August 2020 Patreon Q&A N°1 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa August 2020 Patreon Q&A N°1 Recording - Culadasa"  
   videos/kwyGPfavfFY/ (`redesign-2/videos/kwyGPfavfFY/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa August 2020 Patreon Q&A N°1 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/kwyGPfavfFY/ (`redesign-2/videos/kwyGPfavfFY/index.html` line 7)
@@ -7107,7 +7107,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/lVvii04Sa3I/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa December 2020 Patreon Q&A No2 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa December 2020 Patreon Q&A No2 - Culadasa"  
   videos/lVvii04Sa3I/ (`redesign-2/videos/lVvii04Sa3I/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2020 Patreon Q&A No2: Culadasa on video, with the questions asked and the full transcript."  
   videos/lVvii04Sa3I/ (`redesign-2/videos/lVvii04Sa3I/index.html` line 7)
@@ -7120,7 +7120,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/mW3_WGR2Llo/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa March 2019 Patreon Q&A Catchup — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa March 2019 Patreon Q&A Catchup - Culadasa"  
   videos/mW3_WGR2Llo/ (`redesign-2/videos/mW3_WGR2Llo/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa March 2019 Patreon Q&A Catchup: Culadasa on video, with the questions asked and the full transcript."  
   videos/mW3_WGR2Llo/ (`redesign-2/videos/mW3_WGR2Llo/index.html` line 7)
@@ -7133,7 +7133,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/mz0MlFOwaek/ (5)
 
-- [ ] **Page title (browser tab):** "July 25, 2018 Culadasa Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "July 25, 2018 Culadasa Patreon Q&A - Culadasa"  
   videos/mz0MlFOwaek/ (`redesign-2/videos/mz0MlFOwaek/index.html` line 6)
 - [ ] **Search description (hidden):** "July 25, 2018 Culadasa Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/mz0MlFOwaek/ (`redesign-2/videos/mz0MlFOwaek/index.html` line 7)
@@ -7146,7 +7146,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/nlB-Dk8MkVE/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa July 2020 Patreon Q&A N°1 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa July 2020 Patreon Q&A N°1 Recording - Culadasa"  
   videos/nlB-Dk8MkVE/ (`redesign-2/videos/nlB-Dk8MkVE/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa July 2020 Patreon Q&A N°1 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/nlB-Dk8MkVE/ (`redesign-2/videos/nlB-Dk8MkVE/index.html` line 7)
@@ -7159,7 +7159,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/oge5XL_vdPw/ (4)
 
-- [ ] **Page title (browser tab):** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 — Culadasa"  
+- [ ] **Page title (browser tab):** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 - Culadasa"  
   videos/oge5XL_vdPw/ (`redesign-2/videos/oge5XL_vdPw/index.html` line 6)
 - [ ] **Search description (hidden):** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016: Culadasa on video, with the full transcript."  
   videos/oge5XL_vdPw/ (`redesign-2/videos/oge5XL_vdPw/index.html` line 7)
@@ -7170,7 +7170,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/omNF2wQYVxs/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa April 2020 Patreon Q&A Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa April 2020 Patreon Q&A Recording - Culadasa"  
   videos/omNF2wQYVxs/ (`redesign-2/videos/omNF2wQYVxs/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa April 2020 Patreon Q&A Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/omNF2wQYVxs/ (`redesign-2/videos/omNF2wQYVxs/index.html` line 7)
@@ -7183,7 +7183,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/pYZ7kiIbLWs/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa May 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa May 2018 Patreon Q&A - Culadasa"  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa May 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 7)
@@ -7194,7 +7194,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/qIuZg6jBNsM/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa January 2021 Patreon Q&A No2 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa January 2021 Patreon Q&A No2 - Culadasa"  
   videos/qIuZg6jBNsM/ (`redesign-2/videos/qIuZg6jBNsM/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa January 2021 Patreon Q&A No2: Culadasa on video, with the questions asked and the full transcript."  
   videos/qIuZg6jBNsM/ (`redesign-2/videos/qIuZg6jBNsM/index.html` line 7)
@@ -7207,7 +7207,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/qppnBfQ_KEI/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa February 2021 Patreon Q&A No2 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa February 2021 Patreon Q&A No2 - Culadasa"  
   videos/qppnBfQ_KEI/ (`redesign-2/videos/qppnBfQ_KEI/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa February 2021 Patreon Q&A No2: Culadasa on video, with the questions asked and the full transcript."  
   videos/qppnBfQ_KEI/ (`redesign-2/videos/qppnBfQ_KEI/index.html` line 7)
@@ -7220,7 +7220,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/r-n-Ca_RqUQ/ (5)
 
-- [ ] **Page title (browser tab):** "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci — Culadasa"  
+- [ ] **Page title (browser tab):** "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci - Culadasa"  
   videos/r-n-Ca_RqUQ/ (`redesign-2/videos/r-n-Ca_RqUQ/index.html` line 6)
 - [ ] **Search description (hidden):** "Physics, Philosophy and Emptiness -- Culadasa - Buddhist Wisdom meets Brain Sci: Culadasa on video, with the full transcript."  
   videos/r-n-Ca_RqUQ/ (`redesign-2/videos/r-n-Ca_RqUQ/index.html` line 7)
@@ -7233,7 +7233,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/rXySJwIZMP8/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa October 2020 Patreon Q&A N°2 Recording — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa October 2020 Patreon Q&A N°2 Recording - Culadasa"  
   videos/rXySJwIZMP8/ (`redesign-2/videos/rXySJwIZMP8/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa October 2020 Patreon Q&A N°2 Recording: Culadasa on video, with the questions asked and the full transcript."  
   videos/rXySJwIZMP8/ (`redesign-2/videos/rXySJwIZMP8/index.html` line 7)
@@ -7246,7 +7246,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/rqpZrRRC1sU/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa June 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa June 2018 Patreon Q&A - Culadasa"  
   videos/rqpZrRRC1sU/ (`redesign-2/videos/rqpZrRRC1sU/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa June 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/rqpZrRRC1sU/ (`redesign-2/videos/rqpZrRRC1sU/index.html` line 7)
@@ -7259,7 +7259,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/u5He0q5u5yY/ (5)
 
-- [ ] **Page title (browser tab):** "Here Comes the Sun: Achieving Awakening Without the Dark Night — Culadasa"  
+- [ ] **Page title (browser tab):** "Here Comes the Sun: Achieving Awakening Without the Dark Night - Culadasa"  
   videos/u5He0q5u5yY/ (`redesign-2/videos/u5He0q5u5yY/index.html` line 6)
 - [ ] **Search description (hidden):** "Here Comes the Sun: Achieving Awakening Without the Dark Night: Culadasa on video, with the full transcript."  
   videos/u5He0q5u5yY/ (`redesign-2/videos/u5He0q5u5yY/index.html` line 7)
@@ -7272,7 +7272,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/urCb5Ryp8SU/ (4)
 
-- [ ] **Page title (browser tab):** "Culadasa November 2018 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa November 2018 Patreon Q&A - Culadasa"  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 7)
@@ -7283,7 +7283,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/uuBr-5G0zoE/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa December 2017 Patreon Q&A — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa December 2017 Patreon Q&A - Culadasa"  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2017 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 7)
@@ -7296,7 +7296,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/vtWoFpEHTBs/ (3)
 
-- [ ] **Page title (browser tab):** "How do you know whats true? - Culadasa at NY Insight — Culadasa"  
+- [ ] **Page title (browser tab):** "How do you know whats true? - Culadasa at NY Insight - Culadasa"  
   videos/vtWoFpEHTBs/ (`redesign-2/videos/vtWoFpEHTBs/index.html` line 6)
 - [ ] **Search description (hidden):** "How do you know whats true? - Culadasa at NY Insight: Culadasa on video, with the full transcript."  
   videos/vtWoFpEHTBs/ (`redesign-2/videos/vtWoFpEHTBs/index.html` line 7)
@@ -7305,7 +7305,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/xrUlWLRqQEM/ (5)
 
-- [ ] **Page title (browser tab):** "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
+- [ ] **Page title (browser tab):** "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa - Culadasa"  
   videos/xrUlWLRqQEM/ (`redesign-2/videos/xrUlWLRqQEM/index.html` line 6)
 - [ ] **Search description (hidden):** "Why Teach Meditation in Stages - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/xrUlWLRqQEM/ (`redesign-2/videos/xrUlWLRqQEM/index.html` line 7)
@@ -7318,7 +7318,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/z2aOw9Uhc-w/ (5)
 
-- [ ] **Page title (browser tab):** "Culadasa November 2020 Patreon Q&A No3 — Culadasa"  
+- [ ] **Page title (browser tab):** "Culadasa November 2020 Patreon Q&A No3 - Culadasa"  
   videos/z2aOw9Uhc-w/ (`redesign-2/videos/z2aOw9Uhc-w/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2020 Patreon Q&A No3: Culadasa on video, with the questions asked and the full transcript."  
   videos/z2aOw9Uhc-w/ (`redesign-2/videos/z2aOw9Uhc-w/index.html` line 7)
@@ -7331,7 +7331,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 
 ## videos/zRa9I0ZkdKM/ (5)
 
-- [ ] **Page title (browser tab):** "February 2019 Culadasa Patreon Q&A catch-up — Culadasa"  
+- [ ] **Page title (browser tab):** "February 2019 Culadasa Patreon Q&A catch-up - Culadasa"  
   videos/zRa9I0ZkdKM/ (`redesign-2/videos/zRa9I0ZkdKM/index.html` line 6)
 - [ ] **Search description (hidden):** "February 2019 Culadasa Patreon Q&A catch-up: Culadasa on video, with the questions asked and the full transcript."  
   videos/zRa9I0ZkdKM/ (`redesign-2/videos/zRa9I0ZkdKM/index.html` line 7)
@@ -7342,7 +7342,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (2) · Stage Three (1) · Stage Four (6) · Stage Five (4) · Stage Six (1) · Stage Seven (2) · Stage Eight (1)"  
   videos/zRa9I0ZkdKM/ (`redesign-2/videos/zRa9I0ZkdKM/index.html` line 43), under "February 2019 Culadasa Patreon Q&A catch-up"
 
-## Messages shown by the search and map scripts (88)
+## Messages shown by the search and map scripts (89)
 
 These appear while using Topics search and the Teachers map; they are not in the page files.
 
@@ -7476,22 +7476,24 @@ These appear while using Topics search and the Teachers map; they are not in the
   `redesign-2/assets/topics.js` line 259
 - [ ] "Tranquility and equanimity"  
   `redesign-2/assets/topics.js` line 259
-- [ ] "— a video to start with and everything he said about this stage →"  
-  `redesign-2/assets/topics.js` line 269
-- [ ] "— a video to start with and everything he said about it →"  
-  `redesign-2/assets/topics.js` line 273
-- [ ] "ten-stages/"> The ten stages  — each stage with a video to start with and everything he said about it →"  
-  `redesign-2/assets/topics.js` line 274
-- [ ] "The Mind Illuminated — in the book"  
-  `redesign-2/assets/topics.js` line 311
+- [ ] "On this site"  
+  `redesign-2/assets/topics.js` line 267
+- [ ] "- a video to start with and everything he said about this stage →"  
+  `redesign-2/assets/topics.js` line 276
+- [ ] "- a video to start with and everything he said about it →"  
+  `redesign-2/assets/topics.js` line 280
+- [ ] "ten-stages/"> The ten stages  - each stage with a video to start with and everything he said about it →"  
+  `redesign-2/assets/topics.js` line 281
+- [ ] "The Mind Illuminated - in the book"  
+  `redesign-2/assets/topics.js` line 318
 - [ ] "Not on this site: find it in your copy ·"  
-  `redesign-2/assets/topics.js` line 311
+  `redesign-2/assets/topics.js` line 318
 - [ ] "first edition, 2015"  
-  `redesign-2/assets/topics.js` line 311
+  `redesign-2/assets/topics.js` line 318
 - [ ] "places, by page:"  
-  `redesign-2/assets/topics.js` line 319
+  `redesign-2/assets/topics.js` line 326
 - [ ] "The teachings could not be loaded. Please reload the page."  
-  `redesign-2/assets/topics.js` line 415
+  `redesign-2/assets/topics.js` line 422
 - [ ] "sample teacher"  
   `redesign-2/assets/teachers.js` line 34
 - [ ] "teachers shown."  

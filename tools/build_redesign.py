@@ -139,7 +139,7 @@ def page(path, title, body, *, description='', compact=False, extra_head='', ext
              'teachers': 'people', 'conversations': 'people', 'lineage': 'people'}.get(section, 'home')
     if LIBRARY_STYLE == 'side' and path in {h for _, h in LIB_PAGES}:
         body = library_layout(path, body, r)
-    full = 'Culadasa — The Mind Illuminated Path' if path == '' else f'{title} — Culadasa'
+    full = 'Culadasa - The Mind Illuminated Path' if path == '' else f'{title} - Culadasa'
     OLD = {'', 'writings/', 'audio/', 'videos/', 'online-meetings/', 'teachers/', 'testimonials/', 'student-testimonials/', 'book-reviews/',
            'meditation-manual-introduction/', 'mindful-awareness-vs-dullness/', 'amount-of-concentration-needed-for-awakening/',
            'daily-life-practice/', 'cultivating-mindfulness-in-daily-life/'}
@@ -362,7 +362,7 @@ def clean_essay(raw):
 EYES = '''<section class="eyes-band" aria-label="Closing">
   <img src="assets/img/tmi-eyes.jpg" alt="The closed eyes of the Buddha, from the cover of The Mind Illuminated" loading="lazy">
   <p>All of Culadasa’s students are his successors.</p>
-  <p class="small muted" style="font-family:var(--text);font-size:15px;margin-top:6px">— The Yates family</p>
+  <p class="small muted" style="font-family:var(--text);font-size:15px;margin-top:6px">- The Yates family</p>
 </section>'''
 
 
@@ -691,8 +691,8 @@ def build():
     <div class="portrait-frame"><img src="assets/img/culadasa-portrait.jpg" alt="Culadasa, John Yates" width="440" height="587"></div>
     <div>
       <p class="label">The Mind Illuminated Path, free for everyone</p>
-      <h1>That his work be freely and equally available to all students.</h1>
-      <p class="by">— The Yates family, on his wishes in his final days</p>
+      <h1>“Culadasa gives us the full conceptual framework together with complete instructions for putting it into play.”</h1>
+      <p class="by">- Sharon Salzberg, meditation teacher and author of <em>Real Happiness</em></p>
       <div class="actions"><a class="btn" href="start-here/">Start here</a><a class="btn ghost" href="topics/">Search the teachings</a></div>
       <p class="lead">Culadasa, John Yates Ph.D., spent four decades in the Tibetan and Theravādin traditions and taught physiology and neuroscience. His book <em>The Mind Illuminated</em> joins the two. Everything he taught is here, free.</p>
       <p class="lineage-link"><a href="lineage/">Culadasa’s Buddhist Lineage →</a></p>
@@ -841,7 +841,7 @@ def build():
   <div class="measure">
     <p class="lead">Written by Culadasa (John Yates, Ph.D.) with Matthew Immergut, Ph.D. and Jeremy Graves, and first published by Dharma Treasure Press on 6 October 2015.</p>
     <p>The book sets out ten stages of meditative development, from establishing a daily practice to tranquility and equanimity, with clear instructions for each stage and an account of how the mind works drawn from both the Buddhist tradition and cognitive science.</p>
-    {''.join(f'<figure class="quote book-lead-quote"><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>' for q in content['reviews'] if 'Salzberg' in q['by'])}
+    {''.join(f'<figure class="quote book-lead-quote"><p>“{esc(q["text"])}”</p><footer>- {esc(q["by"])}</footer></figure>' for q in content['reviews'] if 'Salzberg' in q['by'])}
   </div>
 </div></section>
 {book_finder(r)}
@@ -850,8 +850,8 @@ def build():
 <ol class="stages linked">{''.join(f'<li><a href="{r}ten-stages/stage-{k + 1}/"><span><small>{lvl}</small>{esc(n)}</span></a></li>' for k, (n, lvl) in enumerate(STAGES))}</ol>
 <p class="actions" style="margin-top:22px"><a class="btn ghost" href="{r}ten-stages/">The ten stages in his words →</a></p>
 <p class="muted small" style="margin-top:18px">Milestones: continuous attention to the meditation object (after stage 3); sustained exclusive focus of attention (after stage 6); effortless stability of attention (after stage 7); persistence of the mental qualities of an adept (after stage 10).</p></div></section>
-<section class="section" id="reviews"><div class="wrap"><p class="label">Reviews</p><h2>What teachers and authors say</h2><div class="quotes">{''.join(f'<figure class="quote"><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>' for q in content['reviews'] if 'Salzberg' not in q['by'])}</div></div></section>
-<section class="section band-panel" id="students"><div class="wrap"><p class="label">Testimonials</p><h2>What his students say about the Mind Illuminated method</h2><div class="quotes">{''.join(f'<figure class="quote"><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>' for q in content['testimonials'])}</div></div></section>'''
+<section class="section" id="reviews"><div class="wrap"><p class="label">Reviews</p><h2>What teachers and authors say</h2><div class="quotes">{''.join(f'<figure class="quote"><p>“{esc(q["text"])}”</p><footer>- {esc(q["by"])}</footer></figure>' for q in content['reviews'] if 'Salzberg' not in q['by'])}</div></div></section>
+<section class="section band-panel" id="students"><div class="wrap"><p class="label">Testimonials</p><h2>What his students say about the Mind Illuminated method</h2><div class="quotes">{''.join(f'<figure class="quote"><p>“{esc(q["text"])}”</p><footer>- {esc(q["by"])}</footer></figure>' for q in content['testimonials'])}</div></div></section>'''
     if V2:
         body = body.replace('<header class="banner gold">', '<header class="banner cover">', 1)
     page('the-book/', 'The Mind Illuminated', body, description='The Mind Illuminated by Culadasa (John Yates, Ph.D.): the ten stages of meditative development.', cover_band=True)
@@ -929,7 +929,7 @@ def build():
           ('Intensive Meditation Retreats', '283729524'), ('Patreon Q&As', '967729615')]
     body = banner('Listen', 'Audio', 'Over 400 recordings: guided meditations, retreats, and questions and answers.', 'ink',
                   '<p><a class="btn ghost light" href="https://soundcloud.com/culadasa" rel="noopener">Open SoundCloud</a></p>') + '<section class="section tight"><div class="wrap">' + scoped_search(r, 'audio', 'Search recordings', 'a-q') + '</div></section><section class="section"><div class="wrap"><div class="grid">' + ''.join(
-        f'<section><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All {len(audio_all)} recordings, grouped by retreat or series. Open one for its notes, the handouts that go with it, and the moments in it.</p><p class="rr-hint">Select a title to open it.</p>{row_groups(audio_groups)}</div></section>'
+        f'<section id="{re.sub(r"[^a-z]+", "-", t.lower()).strip("-")}"><h2 style="font-size:24px">{t}</h2>{sc_player("playlists", i, 420)}</section>' for t, i in PL) + f'</div></div></section><section class="section"><div class="wrap"><h2>Every recording</h2><p class="muted">All {len(audio_all)} recordings, grouped by retreat or series. Open one for its notes, the handouts that go with it, and the moments in it.</p><p class="rr-hint">Select a title to open it.</p>{row_groups(audio_groups)}</div></section>'
     page('audio/', 'Audio', body, description='Culadasa’s guided meditations, retreats and AMA recordings on SoundCloud.')
 
     # ---------------------------------------------------------------- videos (old path)
@@ -1181,6 +1181,22 @@ def build():
   <p class="small muted">{SEARCH_COUNTS}</p>
   <p class="small muted">Sources: his handouts and essays, the About page, the Culadasa Q&amp;A Index (the questions from his AMA videos), the audio recordings&rsquo; titles and descriptions, and the transcripts of 99 videos. The transcripts are YouTube&rsquo;s automatic captions with the Pāli terms corrected, so expect some mistakes; each result opens the video at the moment he says it. You can also type a whole question. Spellings with and without accents match each other, and so do the Pāli and Sanskrit forms of a word (jhāna and dhyāna, mettā and maitrī). Common English words are left out of the word cloud.</p>
 </div></section>'''
+    # pages of the site a search can point to before the results (D, 28 Nov 2026)
+    _site = [('Start here', 'start-here/', ['start', 'start here', 'beginner', 'beginners', 'begin', 'how do i start', 'how to start', 'new to meditation', 'first sit']),
+             ('Guided meditations (Audio)', 'audio/#guided-meditations', ['guided meditation', 'guided meditations', 'guided', 'meditation recording']),
+             ('Find a teacher', 'teachers/', ['teacher', 'teachers', 'find a teacher', 'certified teacher', 'instructor']),
+             ('The ten stages', 'ten-stages/', ['stages', 'ten stages', 'the map', 'map']),
+             ('The Book: The Mind Illuminated', 'the-book/', ['book', 'the mind illuminated', 'tmi', 'buy', 'buy the book']),
+             ('Topics', 'learn/topics/', ['topic', 'topics']),
+             ('Glossary', 'learn/glossary/', ['glossary', 'pali', 'pali terms', 'definition', 'meaning']),
+             ('Videos', 'videos/', ['video', 'videos', 'youtube', 'ama', 'ask me anything']),
+             ('Conversations', 'conversations/', ['podcast', 'podcasts', 'interview', 'interviews']),
+             ('Writings', 'writings/', ['handout', 'handouts', 'essay', 'essays', 'pdf']),
+             ('About Culadasa', 'lineage/', ['about', 'biography', 'lineage', 'obituary', 'john yates', 'culadasa', 'his life'])]
+    for t in teachers['teachers']:
+        if t.get('profile') != 'sample' and not t.get('hidden'):
+            _site.append((f"{t['name']} (teacher)", f"teachers/{t['slug']}/", [t['name']] + [w for w in re.sub(r'\(.*?\)|".*?"', '', t['name']).split() if len(w) > 3]))
+    _site_js = [{'t': t, 'u': u, 'w': sorted({unicodedata.normalize('NFD', w.lower()).encode('ascii', 'ignore').decode() for w in ws})} for t, u, ws in _site]
     _tlinks = {}
     for t in (json.loads((D / 'topic_pages.json').read_text())['topics'] if (D / 'topic_pages.json').exists() else []):
         for w in [t['title']] + t['words']:
@@ -1191,7 +1207,7 @@ def build():
             for w in [term] + [a.strip() for a in also.split(',') if a.strip()]:
                 _tlinks.setdefault(unicodedata.normalize('NFD', w.lower()).encode('ascii', 'ignore').decode().replace('-', ' '), [slug, _titles[slug]])
     page('topics/', 'Search', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
-         extra_js=f'<script>window.CULADASA_TOPICS={json.dumps(_tlinks, ensure_ascii=False)};</script>\n<script src="{r}assets/topics.js" defer></script>\n')
+         extra_js=f'<script>window.CULADASA_TOPICS={json.dumps(_tlinks, ensure_ascii=False)};window.CULADASA_SITE={json.dumps(_site_js, ensure_ascii=False)};</script>\n<script src="{r}assets/topics.js" defer></script>\n')
 
     # ---------------------------------------------------------------- conversations (blog)
     def convo_img(c):
@@ -1260,7 +1276,7 @@ def build():
     page('about/', 'About Culadasa', '<section class="section"><div class="wrap"><p>This page is now <a href="../lineage/">About</a>.</p></div></section>', extra_head=redirect)
 
     # ---------------------------------------------------------------- testimonials (old path) + book reviews (old path)
-    body = banner('Testimonials', 'Praise for Culadasa as a teacher', '', 'teal') + f'<section class="section"><div class="wrap"><div class="quotes">{"".join(f"<figure class=quote><p>“{esc(q["text"])}”</p><footer>— {esc(q["by"])}</footer></figure>" for q in content["testimonials"])}</div><p><a href="{r}the-book/#reviews">Reviews of The Mind Illuminated →</a></p></div></section>'
+    body = banner('Testimonials', 'Praise for Culadasa as a teacher', '', 'teal') + f'<section class="section"><div class="wrap"><div class="quotes">{"".join(f"<figure class=quote><p>“{esc(q["text"])}”</p><footer>- {esc(q["by"])}</footer></figure>" for q in content["testimonials"])}</div><p><a href="{r}the-book/#reviews">Reviews of The Mind Illuminated →</a></p></div></section>'
     page('testimonials/', 'Testimonials', body, description='What students say about Culadasa as a teacher.')
     redirect = '<meta http-equiv="refresh" content="0; url=../testimonials/">\n<link rel="canonical" href="../testimonials/">\n'
     page('student-testimonials/', 'Student testimonials', '<section class="section"><div class="wrap"><p>This page has moved to <a href="../testimonials/">Testimonials</a>.</p></div></section>', extra_head=redirect)
@@ -1307,9 +1323,9 @@ def build():
         photo = f'<img class="framed" src="{rr}{t["photo"]}" alt="{esc(t["name"])}">' if t.get('photo') else f'<div class="initials big" aria-hidden="true">{esc("".join(w[0] for w in re.sub(r"\(.*?\)|\".*?\"", "", t["name"]).split()[:2]))}</div>'
         bio = ''.join(f'<p>{esc(p)}</p>' for p in t.get('bio', [])) or '<p class="muted">[Biography to come, in the teacher’s own words: their path in practice, how they teach, and what students can expect.]</p>'
         details = [('Certified', f'{t["year"]}, The Mind Illuminated Teacher Training Program')]
-        details.append(('Based in', t.get('place') or '[Town, region, country — to come]'))
-        details.append(('Teaches', t.get('teaches') or '[In person, online, retreats — to come]'))
-        details.append(('Website', f'<a href="{esc(t["website"])}" rel="noopener">{esc(t["website"])}</a>' if t.get('website') else '[Website — to come]'))
+        details.append(('Based in', t.get('place') or '[Town, region, country - to come]'))
+        details.append(('Teaches', t.get('teaches') or '[In person, online, retreats - to come]'))
+        details.append(('Website', f'<a href="{esc(t["website"])}" rel="noopener">{esc(t["website"])}</a>' if t.get('website') else '[Website - to come]'))
         body = f'''<header class="banner gold"><div class="wrap"><p class="label"><a href="{rr}teachers/">Teachers</a>{' · Sample profile (mock-up)' if sample else ''}</p><h1>{esc(t['name'])}</h1></div></header>
 <section class="section"><div class="wrap two"><div>{photo}</div><div class="measure">{bio}
 <dl class="facts">{''.join(f'<dt>{k}</dt><dd>{v}</dd>' for k, v in details)}</dl>

@@ -384,3 +384,7 @@ main p.small{max-width:var(--measure)}
 .gl-links{display:block;margin-top:6px;font-size:15px;color:var(--muted)}
 /* small inline links on topic, stage and glossary pages are easier to tap (28 Nov 2026) */
 .gl-links a,.book-link a,p.related a,.vmeta p.small a{display:inline-block;padding:10px 0}
+/* "On this site" above the search results (28 Nov 2026) */
+.site-links{margin:16px 0 8px;padding:12px 16px;border:1px solid var(--line-2);border-left:3px solid var(--teal);background:#fff;font:400 16px/1.6 var(--display)}
+.site-links .label{display:inline;margin-right:8px;font-size:12px}
+.site-links a{display:inline-block;padding:4px 0}

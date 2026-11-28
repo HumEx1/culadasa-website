@@ -242,7 +242,7 @@
       var kept = null; try { kept = JSON.parse(sessionStorage.getItem('culadasa-open') || 'null'); } catch (e) {}
       OPEN = kept && kept.q === clean ? kept.open : {}; OPENROW = kept && kept.q === clean ? kept.row : {}; lastQ = clean;
     }
-    resultsEl.innerHTML = stageLink(clean) + (groups.length ? '<p class="rr-hint">Select a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
+    resultsEl.innerHTML = siteLinks(clean) + stageLink(clean) + (groups.length ? '<p class="rr-hint">Select a title to see where it’s mentioned.</p>' : '') + groups.map(function (g, gi) {
       var m = g.items.reduce(function (s, i) { return s + i.n; }, 0), extra = g.items.length - 4, open = single || extra <= 0 || !!OPEN[g.name];
       return '<section class="rgroup' + (open ? ' open' : '') + '" data-g="' + gi + '" data-name="' + esc(g.name) + '">' +
         '<h2 class="result-group"><button type="button" class="rg-toggle" aria-expanded="' + open + '">' + esc(g.name) + ' <span class="rg-count">' + g.items.length + ' source' + (g.items.length === 1 ? '' : 's') + ' · ' + m + (near ? (m === 1 ? ' place' : ' places') : (m === 1 ? ' mention' : ' mentions')) + '</span></button></h2>' +
@@ -259,6 +259,13 @@
     'Calming the intensity of meditative joy', 'Tranquility and equanimity'];   // named by what each stage achieves (D, 26 Nov 2026)
   var SW = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
   var SO = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth'];
+  // "On this site": pages of the site that match the search, above the results (D, 28 Nov 2026)
+  function siteLinks(q) {
+    var S = window.CULADASA_SITE || [], f = ' ' + fold(q).replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim() + ' ', hits = [];
+    var base = location.pathname.indexOf('/topics/') >= 0 ? '../' : '';
+    S.forEach(function (p) { if (p.w.some(function (w) { return f.indexOf(' ' + w + ' ') >= 0; }) && hits.length < 4) hits.push(p); });
+    return hits.length ? '<p class="site-links"><span class="label">On this site</span> ' + hits.map(function (p) { return '<a href="' + base + p.u + '">' + esc(p.t) + ' →</a>'; }).join(' · ') + '</p>' : '';
+  }
   function stageLink(q) {
     var f = fold(q).replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim(), n = 0, m;
     if ((m = /^stage (10|[1-9]|[a-z]+)$/.exec(f))) n = /\d/.test(m[1]) ? +m[1] : SW.indexOf(m[1]) + 1;
@@ -266,12 +273,12 @@
     var base = location.pathname.indexOf('/topics/') >= 0 || location.pathname.indexOf('/the-book/') >= 0 ? '../' : '';
     if (n >= 1 && n <= 10) {
       var W = SW[n - 1].charAt(0).toUpperCase() + SW[n - 1].slice(1);
-      return '<p class="stage-callout"><a href="' + base + 'ten-stages/stage-' + n + '/"><strong>Stage ' + W + ': ' + esc(STAGE_NAMES[n - 1]) + '</strong> — a video to start with and everything he said about this stage →</a></p>';
+      return '<p class="stage-callout"><a href="' + base + 'ten-stages/stage-' + n + '/"><strong>Stage ' + W + ': ' + esc(STAGE_NAMES[n - 1]) + '</strong> - a video to start with and everything he said about this stage →</a></p>';
     }
     var T = window.CULADASA_TOPICS || {}, key = f.replace(/-/g, ' ').replace(/^the /, '');   // a topic word offers its page (28 Nov 2026)
     var tp = T[key] || (/s$/.test(key) && T[key.slice(0, -1)]) || (/es$/.test(key) && T[key.slice(0, -2)]);   // plurals too
-    if (tp) return '<p class="stage-callout"><a href="' + base + 'learn/topics/' + tp[0] + '/"><strong>' + esc(tp[1]) + '</strong> — a video to start with and everything he said about it →</a></p>';
-    if (/^(the )?(10|ten) stages?$/.test(f)) return '<p class="stage-callout"><a href="' + base + 'ten-stages/"><strong>The ten stages</strong> — each stage with a video to start with and everything he said about it →</a></p>';
+    if (tp) return '<p class="stage-callout"><a href="' + base + 'learn/topics/' + tp[0] + '/"><strong>' + esc(tp[1]) + '</strong> - a video to start with and everything he said about it →</a></p>';
+    if (/^(the )?(10|ten) stages?$/.test(f)) return '<p class="stage-callout"><a href="' + base + 'ten-stages/"><strong>The ten stages</strong> - each stage with a video to start with and everything he said about it →</a></p>';
     return '';
   }
 
@@ -308,7 +315,7 @@
   function bookItem(q) {
     var fq = fold(q).replace(/[^a-z0-9'\- ]/g, ' ').replace(/\s+/g, ' ').trim();
     if (!fq) return null;
-    var item = { kind: 'book', label: 'The Mind Illuminated', title: 'The Mind Illuminated — in the book', url: '../the-book/', credit: 'Not on this site: find it in your copy · ' + 'first edition, 2015' };
+    var item = { kind: 'book', label: 'The Mind Illuminated', title: 'The Mind Illuminated - in the book', url: '../the-book/', credit: 'Not on this site: find it in your copy · ' + 'first edition, 2015' };
     var term = null, tries = [fq];
     SYN.forEach(function (g) { if (g.indexOf(fq) >= 0) tries = tries.concat(g); });   // "jana" also tries jhana and dhyana
     BOOK.terms.forEach(function (t) { if (!term && t.f.some(function (f) { return tries.some(function (x) { return f === x || f + 's' === x || x + 's' === f; }); })) term = t; });
