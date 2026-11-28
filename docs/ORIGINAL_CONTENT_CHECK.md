@@ -10,7 +10,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 | Original page (old menu) | In the redesign | Missing | Edited slightly | Hidden or search-only |
 |---|---|---|---|---|
 | `/` About (the old home page) | Home page | 0 | 1 | 0 |
-| `/online-meetings/` Online Meetings | Footer link only (bottom of every page); not in the menu | 0 | 0 | 1 |
+| `/online-meetings/` Online Meetings | Address kept; it forwards to `/videos/` (Footer link only (bottom of every page); not in the menu) | 0 | 0 | 1 |
 | `/writings/` Teachings › Writings | Footer link only (bottom of every page); not in the menu | 1 | 0 | 0 |
 | `/audio/` Teachings › Audio | Footer link only (bottom of every page); not in the menu | 0 | 0 | 0 |
 | `/videos/` Teachings › Videos | Footer link only (bottom of every page); not in the menu | 0 | 0 | 0 |
@@ -36,7 +36,7 @@ Made by `tools/original_content_audit.py`. Text counts as present when the same 
 
 ### `/online-meetings/` Online Meetings
 
-- [ ] **How to find it now:** Footer link only (bottom of every page); not in the menu
+- [ ] **How to find it now:** Address kept; it forwards to `/videos/` (Footer link only (bottom of every page); not in the menu)
 - [ ] **Only findable through Topics search**, not shown on any page (line 269): "Culadasa held monthly video AMA / question and answer meetings on Patreon , a crowdsourcing platform. The videos from these sessions are available on his YouTube site and can be viewed and listened to below."
 
 ### `/writings/` Teachings › Writings

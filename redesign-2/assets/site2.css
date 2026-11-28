@@ -311,3 +311,44 @@ main p.small{max-width:var(--measure)}
   .scoped-row .btn,.search-panel .search .btn{padding:0 12px}
   .search-panel,.search.scoped{padding-left:12px;padding-right:12px}
 }
+
+/* --- One Videos room and a page for every video (D, 28 Nov 2026) --- */
+.vchips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.vchip{all:unset;cursor:pointer;box-sizing:border-box;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;
+  font:500 12.5px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:#fff}
+.vchip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.vchip:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.vgroup{margin:32px 0 0}
+.vgroup h2{font-size:24px;margin:0 0 16px;padding-top:14px;border-top:2px solid var(--gold-line,#c4972f)}
+.vcards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:24px 20px}
+.vcard{display:block;color:var(--ink);text-decoration:none}
+.vcard img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--line-2);filter:saturate(.8);background:var(--panel)}
+.vc-title{display:block;margin-top:10px;font:400 17px/1.35 var(--display)}
+.vc-meta{display:block;margin-top:4px;font:400 14px/1.4 var(--text);color:var(--muted)}
+.vcard:hover .vc-title,.vcard:focus-visible .vc-title{color:var(--teal)}
+.vcard:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+@media (max-width:760px){.vcards{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px 12px}.vc-title{font-size:15px}.vc-meta{font-size:13px}}
+/* the video page: player beside the questions and transcript on wide screens, the player staying in view */
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:901px){
+  .vgrid{grid-template-columns:minmax(0,11fr) minmax(0,10fr);gap:40px;align-items:start}
+  .vplayer{position:sticky;top:64px}
+}
+.vplayer .video-card{margin:0}
+.vfacts{margin:12px 0 4px;color:var(--muted)}
+.vblock{margin:0 0 40px}
+.vblock h2{font-size:24px;margin:0 0 8px}
+.vblock .qlist li{margin-bottom:14px;padding-bottom:14px}
+.tfind{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:12px 0 16px}
+.tfind input{flex:1 1 220px;min-height:44px;box-sizing:border-box;padding:0 16px;border:1px solid #8c8470;border-radius:999px;font:400 16px var(--text);background:#fff}
+.tp{margin:0 0 14px;line-height:1.65;scroll-margin-top:80px}
+.tp a.play{margin-right:8px}
+.tp.now{background:#efe6d3;box-shadow:-8px 0 0 #efe6d3,8px 0 0 #efe6d3}
+/* the All / Talks / AMA filter reads as tabs, not as another row of pills (28 Nov 2026) */
+.vchips{gap:0 24px;border-bottom:1px solid var(--line-2);margin:0 0 20px}
+.vchip{min-height:44px;padding:0 2px;border:0;border-bottom:3px solid transparent;border-radius:0;background:transparent;margin-bottom:-1px;letter-spacing:.12em}
+.vchip[aria-pressed="true"]{background:transparent;color:var(--teal);border-bottom-color:var(--teal)}
+.vchip:hover{color:var(--teal)}
+/* a video page's banner is just its label and title */
+.banner:has(+ .section.vpage){min-height:0}
+@media (min-width:761px){.banner:has(+ .section.vpage){padding-bottom:28px}}

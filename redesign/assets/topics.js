@@ -150,7 +150,7 @@
     DATA.qna.forEach(function (s) {
       var list = [], n = 0;
       s.items.forEach(function (it) { var h = find(it.text, it.f); if (h.length) { n += cnt(h); list.push({ it: it, hits: h }); } });
-      if (n) items.push({ kind: 'ama', label: 'AMA', title: s.title, url: s.video ? '../online-meetings/#s-' + s.video : s.url, n: n, qa: list });
+      if (n) items.push({ kind: 'ama', label: 'AMA', title: s.title, url: s.video ? vpage(s.video) : s.url, n: n, qa: list });
     });
     // Video transcripts (YouTube's automatic captions, Pāli terms corrected): each result links into the video at the moment it is said.
     var wantVideo = !selected().length || SEL.video || SEL.ama;
@@ -161,7 +161,7 @@
       // AMA session recordings count as AMA sessions: the title opens the session on the AMA page, the times open the video (D, 25 Nov 2026)
       var amaTitle = {}, amaItem = {};
       DATA.qna.forEach(function (q) { if (q.video) amaTitle[q.video] = q.title; });
-      items.forEach(function (i) { var m = /#s-([\w-]{11})$/.exec(i.url || ''); if (m && i.kind === 'ama') amaItem[m[1]] = i; });
+      items.forEach(function (i) { var m = /\/videos\/([\w-]{11})\/$/.exec(i.url || ''); if (m && i.kind === 'ama') amaItem[m[1]] = i; });
       TR.forEach(function (v) {
         var hits = find(v.text, v.f);
         if (!hits.length) return;
@@ -169,14 +169,14 @@
         for (var k = 0; k < hits.length && snips.length < 3; k++) {
           if (hits[k][0] - last < 260) continue;
           last = hits[k][0];
-          var t = timeAt(v, hits[k][0]), u = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + t + 's';
-          snips.push('<a class="tstamp" href="' + u + '" target="_blank" rel="noopener" aria-label="Play from ' + hms(t) + ' on YouTube (opens a new tab)">' + hms(t) + '</a> ' + snippet(v.text, hits, k));
+          var t = timeAt(v, hits[k][0]), u = vpage(v.id, t);
+          snips.push('<a class="tstamp" href="' + u + '" aria-label="Play from ' + hms(t) + '">' + hms(t) + '</a> ' + snippet(v.text, hits, k));
         }
-        var first = 'https://www.youtube.com/watch?v=' + v.id + '&t=' + timeAt(v, hits[0][0]) + 's';
+        var first = vpage(v.id, timeAt(v, hits[0][0]));
         if (amaTitle[v.id]) {
           var a = amaItem[v.id];
           if (a) { a.n += cnt(hits); a.snips = snips; a.first = first; }
-          else items.push({ kind: 'ama', label: 'AMA', title: amaTitle[v.id], url: '../online-meetings/#s-' + v.id, n: cnt(hits), credit: 'Transcript', snips: snips, first: first });
+          else items.push({ kind: 'ama', label: 'AMA', title: amaTitle[v.id], url: vpage(v.id), n: cnt(hits), credit: 'Transcript', snips: snips, first: first });
           return;
         }
         var it = byVid[v.id];
@@ -214,19 +214,15 @@
     // "Show fewer" at the bottom closes it again. With one kind chosen, its section opens in full.
     // Each source is one title row (D, 25 Nov 2026): click it to see where the word appears in it, click again to close.
     // The link to the source itself sits inside, as the title now opens and closes the row.
-    var OPEN_LABEL = { video: 'Open the video', ama: 'Open the video', writings: 'Open', about: 'Open the page', all: 'Open', audio: 'Open the recording', book: 'About the book' };
+    var OPEN_LABEL = { video: 'Open the video page', ama: 'Open the video page', writings: 'Open', about: 'Open the page', all: 'Open', audio: 'Open the recording', book: 'About the book' };
     function openLinks(i) {
-      var m = i.kind === 'ama' && /#s-([\w-]{11})$/.exec(i.url || '');
-      if (m) {
-        var v = i.first || 'https://www.youtube.com/watch?v=' + m[1];
-        return '<a href="' + esc(v) + '" target="_blank" rel="noopener">Open the video →</a><a href="' + esc(i.url) + '">All questions in this video →</a>';
-      }
+      if (i.kind === 'ama' || i.kind === 'video') return '<a href="' + esc(i.first || ytToPage(i.url)) + '">Open the video page: ' + (i.kind === 'ama' ? 'its questions and transcript' : 'its transcript') + ' →</a>';
       return '<a href="' + esc(i.url) + '"' + nt(i.url) + '>' + esc(OPEN_LABEL[i.kind] || 'Open') + ' →</a>';
     }
     function card(i) {
       var said = (i.snips || []).map(function (s) { return '<p>' + s + '</p>'; }).join('');
       var body = i.qa
-        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(x.it.url) + '"' + nt(x.it.url) + ' aria-label="Play from ' + esc(x.it.t) + ' on YouTube (opens a new tab)">' + esc(x.it.t) + '</a> <span class="qsnip">' + snippet(x.it.text, x.hits, 0) + '</span></li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this video</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
+        ? '<ol class="qlist">' + i.qa.slice(0, 6).map(function (x) { return '<li><a class="t" href="' + esc(ytToPage(x.it.url)) + '" aria-label="Play from ' + esc(x.it.t) + '">' + esc(x.it.t) + '</a> <span class="qsnip">' + snippet(x.it.text, x.hits, 0) + '</span></li>'; }).join('') + '</ol>' + (i.qa.length > 6 ? '<p class="small muted">and ' + (i.qa.length - 6) + ' more questions in this video</p>' : '') + (said ? '<p class="small muted said">In the recording:</p>' + said : '')
         : (i.html || said);
       var key = i.kind + '|' + i.title, open = !!OPENROW[key];
       var meta = i.n + (near ? (i.n === 1 ? ' place' : ' places') : (i.n === 1 ? ' mention' : ' mentions')) + (i.credit ? ' · ' + i.credit : '');
@@ -272,6 +268,11 @@
     if (/^(the )?(10|ten) stages?$/.test(f)) return '<p class="stage-callout"><a href="' + base + 'ten-stages/"><strong>The ten stages</strong> — each stage with a video to start with and everything he said about it →</a></p>';
     return '';
   }
+
+  // Every video has its own page (D, 28 Nov 2026): results open it at the moment, and it plays there.
+  function vpage(id, t) { return '../videos/' + id + '/' + (t ? '?t=' + t : ''); }
+  function ytSecs(t) { if (/^\d+$/.test(t)) return +t; var s = 0; (t.match(/\d+[hms]/g) || []).forEach(function (p) { s += parseInt(p, 10) * { h: 3600, m: 60, s: 1 }[p.slice(-1)]; }); return s; }
+  function ytToPage(u) { var m = /[?&]v=([\w-]{11})(?:.*?[?&]t=([0-9hms]+))?/.exec(u || ''); return m ? vpage(m[1], m[2] ? ytSecs(m[2]) : 0) : u; }
 
   function hms(s) { var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + (m < 10 ? '0' : '') : '') + m + ':' + (x < 10 ? '0' : '') + x; }
   // the time stamp in force at a place in a transcript (marks: [position in text, seconds], in order)

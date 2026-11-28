@@ -6,7 +6,7 @@
     if (!btn) return;
     var box = btn.parentNode, id = box.getAttribute('data-id');
     var f = document.createElement('iframe');
-    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0' + (box.getAttribute('data-start') ? '&start=' + box.getAttribute('data-start') : '');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&enablejsapi=1' + (box.getAttribute('data-start') ? '&start=' + box.getAttribute('data-start') : '');   // enablejsapi: the times on a video page can move the player
     f.title = btn.getAttribute('aria-label') || 'YouTube video';
     f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     f.allowFullscreen = true;
@@ -74,3 +74,43 @@ document.addEventListener('click', function (e) {
   window.culadasaMarkScroll = mark;
   window.addEventListener('load', mark); window.addEventListener('resize', mark); mark();
 })();
+
+/* A video's own page (D, 28 Nov 2026): every time plays the video here from that moment; ?t=<seconds> opens the
+   page at that moment; the find box picks out the paragraphs of the transcript that contain the words. */
+(function () {
+  var grid = document.querySelector('.vgrid'); if (!grid) return;
+  var box = grid.querySelector('.video'), id = grid.getAttribute('data-video');
+  var paras = [].slice.call(grid.querySelectorAll('.tp'));
+  function mark(sec) {
+    var cur = null; paras.forEach(function (p) { if (+p.id.slice(1) <= sec) cur = p; p.classList.remove('now'); });
+    if (cur) cur.classList.add('now'); return cur;
+  }
+  function seek(sec) {
+    var f = box.querySelector('iframe');
+    if (f) {
+      f.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'seekTo', args: [sec, true] }), '*');
+      f.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'playVideo', args: [] }), '*');
+    } else {
+      box.setAttribute('data-start', String(sec));
+      var b = box.querySelector('button'); if (b) b.click();
+    }
+    mark(sec);
+    if (window.innerWidth <= 900) box.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }
+  grid.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-seek]'); if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    e.preventDefault(); seek(+a.getAttribute('data-seek'));
+  });
+  var t = parseInt(new URLSearchParams(location.search).get('t') || '', 10);
+  if (t > 0) { box.setAttribute('data-start', String(t)); var p = mark(t); if (p) p.scrollIntoView({ block: 'center' }); }
+  var input = document.getElementById('tf'), status = grid.querySelector('.tf-status');
+  if (!input) return;
+  function fold(x) { return x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+  paras.forEach(function (p) { p.dataset.f = fold(p.textContent); });
+  input.addEventListener('input', function () {
+    var q = fold(input.value.trim()), n = 0;
+    paras.forEach(function (p) { var hit = !q || p.dataset.f.indexOf(q) >= 0; p.hidden = !hit; if (hit && q) n++; });
+    status.textContent = q ? (n ? n + ' paragraph' + (n === 1 ? '' : 's') + ' with “' + input.value.trim() + '”' : 'Not in this transcript') : '';
+  });
+})();
+
