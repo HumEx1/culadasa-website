@@ -562,7 +562,7 @@ GLOSSARY = [
     ('pīti', 'piti, meditative joy', 'Meditative joy: an energising delight of body and mind.', 'piti'),
     ('pliancy', 'mental pliancy, physical pliancy', 'A mind and body that work together without resistance, as attention becomes effortless.', 'unification'),
     ('purification', '', 'Old mental material surfacing and being released as the mind unifies.', 'purification'),
-    ('samādhi', 'samadhi', 'Concentration: stable attention, which the ten stages develop alongside mindfulness.', 'jhana'),
+    ('samādhi', 'samadhi', 'Concentration, which he described as unification of mind; the ten stages build it with stable attention and mindfulness.', 'unification'),
     ('samatha', 'shamatha, śamatha', 'Tranquility: a calm, stable and joyful mind, the goal of the ten stages.', ''),
     ('sampajañña', 'sampajanna', 'Clear comprehension: knowing what one is doing while doing it.', 'mindfulness'),
     ('sati', 'mindfulness', 'Mindfulness: the optimal working together of attention and awareness.', 'mindfulness'),
