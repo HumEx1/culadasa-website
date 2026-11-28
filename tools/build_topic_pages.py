@@ -18,45 +18,45 @@ book = json.loads((D / 'book.json').read_text())
 # start, so "dullness" also finds "dullnesses"), the stages it belongs with, and the book index terms that match.
 TOPICS = [
     ('dullness', 'Dullness', 'Drowsiness and the loss of clarity, from strong dullness to subtle dullness.',
-     ['dullness', 'drowsiness', 'drowsy', 'sleepiness'], [4, 5], ['dullness']),
+     ['dullness', 'subtle dullness', 'strong dullness', 'drowsiness', 'drowsy', 'sleepiness', 'dull'], [4, 5], ['dullness']),
     ('mind-wandering', 'Mind-wandering', 'When attention drifts off the meditation object, and how to come back.',
-     ['mind-wandering', 'mind wandering', 'wandering mind'], [2, 3], ['mind-wandering']),
+     ['mind-wandering', 'mind wandering', 'wandering mind', 'mind wanders', 'mind wandered', 'mind wander'], [2, 3], ['mind-wandering']),
     ('distraction', 'Distraction', 'Gross and subtle distraction, and how attention learns to stay.',
-     ['distraction', 'distractions', 'distracted'], [4, 6], ['distraction']),
+     ['distraction', 'distractions', 'distracted', 'gross distraction', 'subtle distraction'], [4, 6], ['distraction']),
     ('forgetting', 'Forgetting', 'Forgetting the meditation object, and the skills that overcome it.',
      ['forgetting', 'forget the breath', 'forgot the breath'], [3], ['forgetting']),
     ('attention-and-awareness', 'Attention and awareness', 'The two ways of knowing that the whole method trains.',
      ['peripheral awareness', 'introspective awareness', 'extrospective awareness', 'attention and awareness'], [1, 2, 3, 4], ['peripheral awareness', 'introspective awareness']),
     ('metacognition', 'Metacognitive awareness', 'Awareness of the state and activity of the mind itself.',
-     ['metacognitive', 'metacognition', 'meta-cognitive'], [6, 7], ['metacognitive']),
+     ['metacognitive', 'metacognition', 'meta-cognitive', 'metacognitive introspective awareness'], [6, 7], ['metacognitive']),
     ('mindfulness', 'Mindfulness', 'Sati: what mindfulness is, in his terms, and how it grows.',
-     ['mindfulness', 'sati', 'sampajanna', 'sampajañña'], [5], ['mindfulness', 'sati']),
+     ['mindfulness', 'mindful', 'sati', 'sampajañña'], [5], ['mindfulness', 'sati']),
     ('mind-system', 'The mind-system', 'His model of the mind as many sub-minds working together.',
-     ['mind-system', 'mind system', 'sub-mind', 'sub-minds', 'subminds'], [], ['mind-system', 'sub-minds']),
+     ['mind-system', 'mind system', 'sub-mind', 'submind'], [], ['mind-system', 'sub-minds']),
     ('unification', 'Unification of mind', 'Sub-minds coming together behind one intention.',
-     ['unification', 'unified mind', 'unifying the mind'], [7, 8], ['unification']),
+     ['unification', 'unified mind', 'unifying the mind', 'ekaggata'], [7, 8], ['unification']),
     ('purification', 'Purification', 'Old material surfacing and being released as practice deepens.',
-     ['purification', 'purifications', 'purifying'], [4, 7, 8], ['purification']),
+     ['purification', 'purifying'], [4, 7, 8], ['purification']),
     ('piti', 'Pīti and meditative joy', 'Joy, energy currents and the calming of meditative joy.',
-     ['piti', 'meditative joy', 'energy currents'], [8, 9], ['piti']),
+     ['piti', 'meditative joy', 'energy current'], [8, 9], ['piti']),
     ('jhana', 'Jhāna', 'The meditative absorptions, pleasure jhānas and luminous jhānas.',
-     ['jhana', 'jhanas', 'dhyana'], [], ['jhanas', 'jhana']),
+     ['jhana', 'dhyana'], [], ['jhanas', 'jhana']),
     ('insight', 'Insight', 'Insight experiences and what they reveal about mind and self.',
-     ['insight', 'insights', 'vipassana'], [], ['vipassana', 'insight']),
+     ['insight', 'vipassana'], [], ['vipassana', 'insight']),
     ('awakening', 'Awakening and stream entry', 'The stages of awakening, beginning with stream entry.',
-     ['stream entry', 'stream-entry', 'sotapanna', 'awakening'], [], ['stream entry', 'awakening']),
-    ('dark-night', 'The Dark Night', 'The difficult insight stages, and how to work with them.',
-     ['dark night', 'dukkha nanas', 'dukkha ñāṇas', 'dukkha nana'], [], ['dark night']),
+     ['stream entry', 'stream-entry', 'stream enterer', 'sotapanna', 'awakening'], [], ['stream entry', 'awakening']),
+    ('dark-night', 'The Dark Night', 'A period of distress that can follow an insight breakthrough, and how to meet it.',
+     ['dark night'], [], ['dark night']),
     ('equanimity', 'Equanimity', 'Upekkhā: balance that is not disturbed by pleasure or pain.',
      ['equanimity', 'upekkha', 'upekkhā'], [10], ['upekkha', 'equanimity']),
     ('metta', 'Loving-kindness', 'Mettā: loving-kindness practice and the brahmavihāras.',
-     ['metta', 'mettā', 'loving kindness', 'loving-kindness', 'brahmavihara', 'brahmaviharas'], [], ['loving kindness', 'metta']),
+     ['metta', 'loving kindness', 'lovingkindness', 'brahmavihara'], [], ['loving kindness', 'metta']),
     ('craving', 'Craving', 'Taṇhā: wanting and not-wanting, and the end of suffering.',
-     ['craving', 'tanha', 'taṇhā'], [], ['craving']),
+     ['craving', 'tanha'], [], ['craving']),
     ('pain', 'Pain', 'Physical and emotional pain in practice, and how to meet it.',
-     ['physical pain', 'pain'], [4], ['pain']),
+     ['physical pain', 'pain', 'painful'], [4], ['pain']),
     ('daily-life', 'Daily life', 'Practice off the cushion: work, relationships, ordinary days.',
-     ['daily life', 'everyday life', 'in daily life'], [], ['daily life']),
+     ['daily life', 'everyday life'], [], ['daily life']),
 ]
 
 
@@ -70,10 +70,23 @@ def fold(s):
     return ''.join(out)
 
 
+# Names and titles that contain a topic word but are not about it (adversarial review, 28 Nov 2026)
+EXCLUDE = [r'path of purification', r'insight meditation society', r'insight timer', r'sati the', r'sati,? the fisherman']
+
+
 def matcher(words):
+    """Whole words only, with a plural or possessive ending: "sati" no longer matches "satisfaction", nor "pain" "paint"."""
     alts = sorted({fold(w) for w in words}, key=len, reverse=True)
-    pat = r'(?<![a-z0-9])(?:' + '|'.join(re.escape(a).replace(r'\-', '\x00').replace(r'\ ', r'[\s\-]+').replace('\x00', r'[\s\-]?') for a in alts) + r')[a-z]*'
+    pat = r'(?<![a-z0-9])(?:' + '|'.join(re.escape(a).replace(r'\-', '\x00').replace(r'\ ', r'[\s\-]+').replace('\x00', r'[\s\-]?') for a in alts) + r")(?:e?s|'s)?(?![a-z0-9])"
     return re.compile(pat)
+
+
+EX = re.compile('|'.join(EXCLUDE))
+
+
+def kept(text_f, m):
+    """False when the match sits inside one of the excluded names or titles."""
+    return not EX.search(text_f[max(0, m.start() - 30):m.end() + 30])
 
 
 def snippet(text, a, b, before=120, after=160):
@@ -105,7 +118,7 @@ for slug, title, lead, words, stages, bterms in TOPICS:
     rec = {'slug': slug, 'title': title, 'lead': lead, 'words': words, 'stages': stages, 'videos': [], 'ama': {}, 'writings': [], 'audio': [], 'book': None}
     for v in tr:
         moments = []
-        for m in rx.finditer(v['f']):
+        for m in (m for m in rx.finditer(v['f']) if kept(v['f'], m)):
             t = time_at(v, m.start())
             if moments and t - moments[-1][0] < 25:
                 moments[-1][2] += 1
@@ -114,11 +127,12 @@ for slug, title, lead, words, stages, bterms in TOPICS:
         if not moments:
             continue
         n = sum(x[2] for x in moments)
-        r_ = {'id': v['id'], 'title': v['title'], 'date': v['date'], 'n': n, 'moments': [[t, sn] for t, sn, _ in moments]}
+        r_ = {'id': v['id'], 'title': v['title'], 'date': v['date'], 'n': n, 'moments': [[t, sn] for t, sn, _ in moments], 'w': [c for _, _, c in moments]}
         if v['id'] in ama_title:
             a = rec['ama'].setdefault(v['id'], {'id': v['id'], 'title': ama_title[v['id']], 'n': 0, 'questions': [], 'moments': []})
             a['n'] += n
             a['moments'] = r_['moments']
+            a['w'] = r_['w']
         else:
             rec['videos'].append(r_)
     for q in tp['qna']:
@@ -126,7 +140,7 @@ for slug, title, lead, words, stages, bterms in TOPICS:
             continue
         for it in q['items']:
             ft = fold(it['text'])
-            hits = list(rx.finditer(ft))
+            hits = [m for m in rx.finditer(ft) if kept(ft, m)]
             if not hits:
                 continue
             a = rec['ama'].setdefault(q['video'], {'id': q['video'], 'title': q['title'], 'n': 0, 'questions': [], 'moments': []})
@@ -137,34 +151,39 @@ for slug, title, lead, words, stages, bterms in TOPICS:
         if not kind:
             continue
         ft = fold(d['text'])
-        hits = list(rx.finditer(ft))
+        hits = [m for m in rx.finditer(ft) if kept(ft, m)]
         if hits:
             rec[kind].append({'title': d['title'], 'url': d['url'], 'n': len(hits), 'snips': [snippet(d['text'], m.start(), m.end()) for m in hits[:8]]})
     # the book: the index term's pages (2015 first edition, final draft)
+    pages, n_ = set(), 0
     for t in book['terms']:
         if any(fold(b) in [fold(x) for x in t['f']] for b in bterms):
-            pages = []
+            n_ += t['n']
             for l in t['loc']:
                 p = book['pages'][l[0]][0]
-                if p not in pages:
-                    pages.append(p)
-            rec['book'] = {'n': t['n'], 'pages': pages}
-            break
+                if p.isdigit():
+                    pages.add(int(p))
+    if pages:
+        rec['book'] = {'n': n_, 'pages': [str(p) for p in sorted(pages)]}
     rec['ama'] = sorted(rec['ama'].values(), key=lambda x: -x['n'])
     for k in ('videos', 'writings', 'audio'):
         rec[k].sort(key=lambda x: -x['n'])
-    # where to start: the video or AMA recording with the most moments on the topic within ten minutes (as for the stages)
+    # where to start (provisional, for the teachers to choose): a talk whose title names the topic and that mentions it
+    # at least five times, the most mentions first; otherwise the video or AMA recording with the most mentions (every
+    # one counted) within any ten minutes. It starts ten seconds before the first of them.
+    titled = [c for c in rec['videos'] if c['n'] >= 5 and rx.search(fold(c['title']))]
     best = None
-    for c in rec['videos'] + rec['ama']:
+    for c in (titled or rec['videos'] + rec['ama']):
         ts = [m[0] for m in c['moments']]
+        ws = c.get('w') or [1] * len(ts)
         for t in ts:
-            score = sum(1 for x in ts if t <= x < t + 600)
-            key = (score, c in rec['videos'])
+            score = sum(w for x, w in zip(ts, ws) if t <= x < t + 600)
+            key = (c['n'] if titled else score, c in rec['videos'], score)
             if not best or key > best[0]:
-                best = (key, c, t)
+                best = (key, c, t if not titled else ts[0])
     if best:
-        (score, _), c, t = best
-        rec['pin'] = {'id': c['id'], 'title': c['title'], 'start': max(0, t - 5), 'moments': score}
+        _, c, t = best
+        rec['pin'] = {'id': c['id'], 'title': c['title'], 'start': max(0, t - 10), 'titled': bool(titled)}
     rec['total'] = sum(x['n'] for k in ('videos', 'ama', 'writings', 'audio') for x in rec[k])
     out.append(rec)
 

@@ -1,6 +1,6 @@
 # New text checklist: Redesign 2
 
-Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 4191 items. Tick each one once it has been read and approved, changed, or removed.
+Every piece of text in `redesign-2/` that does not appear word for word on the original site (the mirror in `site/`). 3448 items. Tick each one once it has been read and approved, changed, or removed.
 
 How the list was made: `tools/new_text_inventory.py` compares each heading, paragraph, list item, caption, button, page title, search description, image description and search-box hint with all the text of the original site. Original text that was edited also shows up here. Text that is the same on many pages is listed once, with a count. Line numbers are in the built page files and change when the site is rebuilt.
 
@@ -30,40 +30,40 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | Footer › Testimonials | 5 |
 | Footer › Testimonials (old address, redirects) | 1 |
 | Teachers › individual profile pages | 154 |
-| learn/glossary/ | 83 |
-| learn/topics/attention-and-awareness/ | 136 |
-| learn/topics/awakening/ | 198 |
-| learn/topics/craving/ | 103 |
-| learn/topics/daily-life/ | 108 |
-| learn/topics/dark-night/ | 35 |
-| learn/topics/distraction/ | 84 |
-| learn/topics/dullness/ | 85 |
-| learn/topics/equanimity/ | 49 |
-| learn/topics/forgetting/ | 35 |
+| learn/glossary/ | 85 |
+| learn/topics/attention-and-awareness/ | 67 |
+| learn/topics/awakening/ | 71 |
+| learn/topics/craving/ | 38 |
+| learn/topics/daily-life/ | 30 |
+| learn/topics/dark-night/ | 15 |
+| learn/topics/distraction/ | 30 |
+| learn/topics/dullness/ | 38 |
+| learn/topics/equanimity/ | 22 |
+| learn/topics/forgetting/ | 13 |
 | learn/topics/ | 24 |
-| learn/topics/insight/ | 154 |
-| learn/topics/jhana/ | 73 |
-| learn/topics/metacognition/ | 39 |
-| learn/topics/metta/ | 44 |
-| learn/topics/mind-system/ | 40 |
-| learn/topics/mind-wandering/ | 35 |
-| learn/topics/mindfulness/ | 115 |
-| learn/topics/pain/ | 66 |
-| learn/topics/piti/ | 55 |
-| learn/topics/purification/ | 33 |
-| learn/topics/unification/ | 23 |
+| learn/topics/insight/ | 56 |
+| learn/topics/jhana/ | 26 |
+| learn/topics/metacognition/ | 13 |
+| learn/topics/metta/ | 18 |
+| learn/topics/mind-system/ | 16 |
+| learn/topics/mind-wandering/ | 15 |
+| learn/topics/mindfulness/ | 33 |
+| learn/topics/pain/ | 23 |
+| learn/topics/piti/ | 22 |
+| learn/topics/purification/ | 16 |
+| learn/topics/unification/ | 14 |
 | library/ | 10 |
 | ten-stages/ | 17 |
-| ten-stages/stage-1/ | 22 |
-| ten-stages/stage-10/ | 20 |
-| ten-stages/stage-2/ | 23 |
-| ten-stages/stage-3/ | 20 |
-| ten-stages/stage-4/ | 32 |
-| ten-stages/stage-5/ | 22 |
-| ten-stages/stage-6/ | 24 |
-| ten-stages/stage-7/ | 21 |
-| ten-stages/stage-8/ | 17 |
-| ten-stages/stage-9/ | 14 |
+| ten-stages/stage-1/ | 45 |
+| ten-stages/stage-10/ | 36 |
+| ten-stages/stage-2/ | 39 |
+| ten-stages/stage-3/ | 40 |
+| ten-stages/stage-4/ | 66 |
+| ten-stages/stage-5/ | 43 |
+| ten-stages/stage-6/ | 47 |
+| ten-stages/stage-7/ | 40 |
+| ten-stages/stage-8/ | 30 |
+| ten-stages/stage-9/ | 21 |
 | videos/-hKGfbBuemA/ | 12 |
 | videos/-pqnkm1tQ0E/ | 7 |
 | videos/-x-ONEhLDlA/ | 7 |
@@ -84,7 +84,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | videos/9KYmlShAz_g/ | 5 |
 | videos/9_7sTiQ-jIM/ | 5 |
 | videos/AdiW7_HcjiE/ | 4 |
-| videos/B00XPYTvCRY/ | 4 |
+| videos/B00XPYTvCRY/ | 2 |
 | videos/BAWrOls6I8U/ | 5 |
 | videos/BJzM7GH9-nE/ | 5 |
 | videos/BR7D92whYXA/ | 5 |
@@ -100,23 +100,23 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | videos/G-JUhLJdJ3w/ | 4 |
 | videos/GVoIxju59lc/ | 4 |
 | videos/GWThVC6FEzA/ | 5 |
-| videos/HSv2dindx7o/ | 4 |
+| videos/HSv2dindx7o/ | 2 |
 | videos/IamWcgYWKcw/ | 6 |
 | videos/JK0q0tgsw2U/ | 5 |
 | videos/JraPD3iMJYE/ | 4 |
 | videos/K0KKBU46hNM/ | 5 |
 | videos/MAY3lh-4xIE/ | 5 |
-| videos/MapEQWUQakY/ | 4 |
+| videos/MapEQWUQakY/ | 5 |
 | videos/Mzlk1iq_LRs/ | 5 |
 | videos/NndWvacogTk/ | 5 |
 | videos/OAfkxskGREo/ | 5 |
 | videos/R9dqNii3Vmc/ | 5 |
-| videos/RarJIUBrysw/ | 5 |
+| videos/RarJIUBrysw/ | 6 |
 | videos/TrK3NBylnVA/ | 5 |
 | videos/Uf_su1wDk94/ | 5 |
-| videos/UjBXtI1Q2as/ | 5 |
+| videos/UjBXtI1Q2as/ | 4 |
 | videos/Wmg-SOl9Sk4/ | 5 |
-| videos/X7brJ8qrLBo/ | 4 |
+| videos/X7brJ8qrLBo/ | 5 |
 | videos/XFrOYVJxO80/ | 5 |
 | videos/XaRnabvBKOQ/ | 5 |
 | videos/YD02MC1RaUs/ | 5 |
@@ -150,21 +150,21 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 | videos/nlB-Dk8MkVE/ | 5 |
 | videos/oge5XL_vdPw/ | 4 |
 | videos/omNF2wQYVxs/ | 5 |
-| videos/pYZ7kiIbLWs/ | 5 |
+| videos/pYZ7kiIbLWs/ | 4 |
 | videos/qIuZg6jBNsM/ | 5 |
 | videos/qppnBfQ_KEI/ | 5 |
 | videos/r-n-Ca_RqUQ/ | 5 |
 | videos/rXySJwIZMP8/ | 5 |
 | videos/rqpZrRRC1sU/ | 5 |
 | videos/u5He0q5u5yY/ | 5 |
-| videos/urCb5Ryp8SU/ | 5 |
-| videos/uuBr-5G0zoE/ | 4 |
+| videos/urCb5Ryp8SU/ | 4 |
+| videos/uuBr-5G0zoE/ | 5 |
 | videos/vtWoFpEHTBs/ | 3 |
 | videos/xrUlWLRqQEM/ | 5 |
 | videos/z2aOw9Uhc-w/ | 5 |
 | videos/zRa9I0ZkdKM/ | 5 |
 | Messages shown by the search and map scripts | 88 |
-| **Total** | **4191** |
+| **Total** | **3448** |
 
 ## Every page: header, menu, newsletter box and footer (33)
 
@@ -181,7 +181,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **List item:** "The Book"  
   Home (`redesign-2/index.html` line 30), in the menu; also on 410 more places (202 pages)
 - [ ] **Screen-reader label (hidden):** "Search"  
-  Home (`redesign-2/index.html` line 31), in the menu; also on 626 more places (202 pages)
+  Home (`redesign-2/index.html` line 31), in the menu; also on 623 more places (202 pages)
 - [ ] **Paragraph:** "Newsletter"  
   Home (`redesign-2/index.html` line 111), in the newsletter box; also on 403 more places (202 pages)
 - [ ] **Section heading:** "Occasional letters from the archive"  
@@ -292,9 +292,9 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Talks from his YouTube channel, and the May 2021 AMA video. All videos · AMA videos"  
   Home (`redesign-2/index.html` line 73), under "From the archive"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa -The 5 ultimate insights that lead to direct awakening."  
-  Home (`redesign-2/index.html` line 75), under "From the archive"; also on 1 more place (2 pages)
+  Home (`redesign-2/index.html` line 75), under "From the archive"; also on 3 more places (4 pages)
 - [ ] **Sub-heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening."  
-  Home (`redesign-2/index.html` line 76), under "Culadasa -The 5 ultimate insights that lead to direct awakening."; also on 1 more place (2 pages)
+  Home (`redesign-2/index.html` line 76), under "Culadasa -The 5 ultimate insights that lead to direct awakening."; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play: How do you know whats true? - Culadasa at NY Insight"  
   Home (`redesign-2/index.html` line 78), under "Culadasa -The 5 ultimate insights that lead to direct awakening."; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "How do you know whats true? - Culadasa at NY Insight"  
@@ -451,9 +451,9 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   Learn (`redesign-2/learn/index.html` line 37), under "The ten stages"; also on 21 more places (22 pages)
 - [ ] **Section heading:** "The questions students bring"  
   Learn (`redesign-2/learn/index.html` line 37), under "The questions students bring"
-- [ ] **Paragraph:** "Each topic gathers what he said about it, with a video to start with."  
+- [ ] **Paragraph:** "Each topic gathers what he said about it, with a video to start with. The list is a first draft for the teachers to confirm."  
   Learn (`redesign-2/learn/index.html` line 37), under "The questions students bring"
-- [ ] **Paragraph:** "Attention and awareness Awakening and stream entry Craving Daily life Distraction Dullness Equanimity Forgetting Insight Jhāna Loving-kindness Metacognitive awareness Mind-wandering Mindfulness Pain Purification Pīti and meditative joy The Dark Night The mind-system Unification of mind"  
+- [ ] **Paragraph:** "Attention and awareness Awakening and stream entry Craving Daily life The Dark Night Distraction Dullness Equanimity Forgetting Insight Jhāna Loving-kindness Metacognitive awareness The mind-system Mind-wandering Mindfulness Pain Pīti and meditative joy Purification Unification of mind"  
   Learn (`redesign-2/learn/index.html` line 37), under "The questions students bring"
 - [ ] **Paragraph:** "All topics → Glossary →"  
   Learn (`redesign-2/learn/index.html` line 37), under "The questions students bring"
@@ -472,7 +472,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Sitting comfortably and the six preparations."  
   Learn (`redesign-2/learn/index.html` line 38), under "Posture and preparation"
 - [ ] **Short label:** "Open →"  
-  Learn (`redesign-2/learn/index.html` line 38), under "Posture and preparation"; also on 255 more places (31 pages)
+  Learn (`redesign-2/learn/index.html` line 38), under "Posture and preparation"; also on 257 more places (31 pages)
 - [ ] **Paragraph:** "Why the mind wanders, and why noticing it is a success, not a failure."  
   Learn (`redesign-2/learn/index.html` line 38), under "Mind-wandering"
 - [ ] **Sub-heading:** "Dullness"  
@@ -3723,7 +3723,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Text block:** "WH"  
   Teachers › profile (`redesign-2/teachers/wayne-hayden-moreland/index.html` line 36), under "Wayne Hayden Moreland"
 
-## learn/glossary/ (83)
+## learn/glossary/ (85)
 
 - [ ] **Page title (browser tab):** "Glossary — Culadasa"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 6)
@@ -3735,21 +3735,21 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 36), under "Glossary"
 - [ ] **Paragraph:** "The meanings are a first draft, to be checked by the teachers against his own glossary in The Mind Illuminated and his teaching. Each term links to its topic page where there is one, and to a search of everything he said."  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 39), under "Glossary"
+- [ ] **Term:** "ānāpānasati anapanasati"  
+  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
+- [ ] **Definition:** "Mindfulness of breathing: the meditation the ten stages are built on. Mindfulness → · Search →"  
+  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "anattā anatta, no-self"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Definition:** "Not-self: no lasting, separate self is found in experience. Insight → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Term:** "anicca anicca, impermanence"  
+- [ ] **Term:** "anicca impermanence"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Definition:** "Impermanence: everything that arises passes away. Insight → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "attention"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Definition:** "Focusing on one part of experience, picking it out from everything else. Attention and awareness → · Search →"  
-  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Term:** "ānāpānasati anapanasati"  
-  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Definition:** "Mindfulness of breathing: the meditation the ten stages are built on. Mindfulness → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "bhāvanā bhavana"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
@@ -3759,13 +3759,17 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Definition:** "The four "divine abodes": loving-kindness, compassion, sympathetic joy and equanimity. Loving-kindness → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Term:** "Dark Night dukkha ñāṇas"  
+- [ ] **Term:** "Dark Night"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Definition:** "The difficult stages of insight that can follow an early breakthrough. The Dark Night → · Search →"  
+- [ ] **Definition:** "A period of distress that can follow an insight breakthrough; he distinguished it from the dukkha ñāṇas. The Dark Night → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "dukkha"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Definition:** "Suffering, unsatisfactoriness: the first of the Four Noble Truths. Craving → · Search →"  
+  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
+- [ ] **Term:** "dukkha ñāṇas dukkha nanas"  
+  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
+- [ ] **Definition:** "The insight knowledges of suffering: the stages of insight in the Theravāda map that follow the arising and passing away. Insight → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "dullness strong dullness, subtle dullness"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
@@ -3773,7 +3777,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "ekaggatā ekaggata"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Definition:** "One-pointedness: attention gathered and stable on one object. Unification of mind → · Search →"  
+- [ ] **Definition:** "Unification of mind: he notes it is often mistranslated as "one-pointedness". Unification of mind → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "equanimity upekkhā"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
@@ -3813,7 +3817,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "mind-wandering"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"; also on 2 more places (3 pages)
-- [ ] **Definition:** "Attention drifting from the meditation object to something else. Mind-wandering → · Search →"  
+- [ ] **Definition:** "Forgetting the meditation object and following other thoughts, sometimes for a long time. Mind-wandering → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "muditā mudita"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
@@ -3847,13 +3851,13 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"; also on 1 more place (2 pages)
 - [ ] **Definition:** "Old mental material surfacing and being released as the mind unifies. Purification → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Term:** "samatha shamatha, śamatha"  
-  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Definition:** "Tranquility: a calm, stable and joyful mind, the goal of the ten stages. Equanimity → · Search →"  
-  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "samādhi samadhi"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Definition:** "Concentration: stable attention combined with strong mindfulness. Jhāna → · Search →"  
+- [ ] **Definition:** "Concentration: stable attention, which the ten stages develop alongside mindfulness. Jhāna → · Search →"  
+  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
+- [ ] **Term:** "samatha shamatha, śamatha"  
+  learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
+- [ ] **Definition:** "Tranquility: a calm, stable and joyful mind, the goal of the ten stages. Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "sampajañña sampajanna"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
@@ -3863,9 +3867,9 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Definition:** "Mindfulness: the optimal working together of attention and awareness. Mindfulness → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Term:** "stream entry sotāpanna"  
+- [ ] **Term:** "stream entry sotāpatti"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
-- [ ] **Definition:** "The first stage of awakening. Awakening and stream entry → · Search →"  
+- [ ] **Definition:** "The first stage of awakening; one who has reached it is a sotāpanna, a stream-enterer. Awakening and stream entry → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 - [ ] **Term:** "subtle distraction"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
@@ -3892,7 +3896,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Definition:** "Insight: seeing clearly how things really are. Insight → · Search →"  
   learn/glossary/ (`redesign-2/learn/glossary/index.html` line 40), under "Glossary"
 
-## learn/topics/attention-and-awareness/ (136)
+## learn/topics/attention-and-awareness/ (67)
 
 - [ ] **Page title (browser tab):** "Attention and awareness — Culadasa"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 6)
@@ -3904,48 +3908,34 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 36), under "Attention and awareness"
 - [ ] **Section heading:** "Start with this video"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 39), under "Start with this video"; also on 29 more places (30 pages)
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2017 Patreon Q&A"  
+- [ ] **Screen-reader label (hidden):** "Play: Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "9:55 It starts where he talks about attention and awareness. Open the video page →"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 44), under "Culadasa December 2017 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 9:55"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 44), under "Culadasa December 2017 Patreon Q&A"; also on 2 more places (3 pages)
-- [ ] **Paragraph:** "Chosen for now as the stretch where he talks about this longest. The teachers will choose the video to start with."  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 45), under "Culadasa December 2017 Patreon Q&A"; also on 19 more places (20 pages)
-- [ ] **Paragraph:** "Found by the words: peripheral awareness, introspective awareness, extrospective awareness, attention and awareness. 609 mentions in all."  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 47), under "Culadasa December 2017 Patreon Q&A"
+- [ ] **Sub-heading:** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"  
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 42), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"; also on 1 more place (2 pages)
+- [ ] **Paragraph:** "3:17 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 44), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"
+- [ ] **Screen-reader label (hidden):** "Play from 3:17"  
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 44), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"
+- [ ] **Paragraph:** "Chosen for now as the talk named for this topic that mentions it most. The teachers will choose the video to start with."  
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 45), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"; also on 4 more places (5 pages)
+- [ ] **Paragraph:** "609 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 47), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"
 - [ ] **Paragraph:** "Belongs with: Stage One · Stage Two · Stage Three · Stage Four"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 47), under "Culadasa December 2017 Patreon Q&A"
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 47), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"
 - [ ] **Paragraph:** "Glossary → · All topics →"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 47), under "Culadasa December 2017 Patreon Q&A"; also on 19 more places (20 pages)
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 47), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"; also on 19 more places (20 pages)
 - [ ] **Section heading:** "Where he talks about it"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Where he talks about it"; also on 19 more places (20 pages)
 - [ ] **Paragraph:** "Select a title to see where it’s mentioned."  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Where he talks about it"; also on 29 more places (30 pages)
 - [ ] **Sub-heading:** "Videos 7"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 31 mentions · 2017-02-05"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"
 - [ ] **Paragraph:** "Open the video page →"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"; also on 146 more places (30 pages)
-- [ ] **Expandable heading:** "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad 10 mentions · 2014-09-22"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"
-- [ ] **Expandable heading:** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu 7 mentions · 2011-03-25"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"
-- [ ] **Expandable heading:** "How do you know whats true? - Culadasa at NY Insight 5 mentions · 2017-02-01"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"
-- [ ] **Expandable heading:** "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula 4 mentions · 2011-03-31"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"
-- [ ] **Expandable heading:** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa 4 mentions · 2011-03-31"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 2 mentions · 2017-02-01"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"; also on 1 more place (2 pages)
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"; also on 133 more places (30 pages)
 - [ ] **Button:** "Show all 7 in Videos"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Videos 7"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "AMA videos 50"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 31 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 28:03"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 53:09"  
@@ -3953,221 +3943,97 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Screen-reader label (hidden):** "Play from 1:22:24"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 6 more places (7 pages)
 - [ ] **Paragraph:** "In the recording:"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 511 more places (30 pages)
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 507 more places (30 pages)
 - [ ] **Paragraph:** "Open the video page: its questions and transcript →"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1099 more places (30 pages)
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 25 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1097 more places (30 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 11:05"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 6 more places (7 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 55:44"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 24 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 21:16"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:22:43"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 20 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 19 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 25:46"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 15 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 14 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 12:04"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 14 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 3:16"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 7 more places (8 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 21:56"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 14 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 13 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 13 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:45"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 13 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 12 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 1:14:36"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 11 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 2:04"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 17:12"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 11 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:23:32"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:39:01"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:53:25"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 11 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 48:54"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 10 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 9 mentions"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 0:19"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 9 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:05:40"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 9 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 8 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 7 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 36:58"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 7 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 10:32"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 7 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 7 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 2:14"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 19:49"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 6 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 51:27"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 6 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 5 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 5 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 4 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 18:39"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 4 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 4 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 0:22"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 5 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 4 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:15:42"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 4 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 14:23"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 41:27"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 50:11"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:15:25"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 38:52"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 2 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 7 more places (8 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:07:16"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 2 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 8 more places (9 pages)
-- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 50 in AMA videos"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "AMA videos 50"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Writings 8"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 79 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"
-- [ ] **Expandable heading:** "Cultivating Mindfulness in Daily Life 16 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"
-- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 11 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 11 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"
-- [ ] **Expandable heading:** "Meditation and Insight III 3 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"
-- [ ] **Expandable heading:** "Mindful Awareness vs Dullness 2 mentions"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Beginning Meditation Handout 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 1 mention"  
+- [ ] **Paragraph:** "and 71 more in it"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"
+- [ ] **Paragraph:** "and 8 more in it"  
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"
+- [ ] **Paragraph:** "and 3 more in it"  
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"; also on 8 more places (6 pages)
 - [ ] **Button:** "Show all 8 in Writings"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"; also on 1 more place (2 pages)
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Writings 8"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "Audio 7"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "How to Develop Introspective Awareness - Culadasa 4 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"
 - [ ] **Paragraph:** "Open the recording →"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 405 more places (28 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 2 mentions"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A Catch-Up 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Pateron Q&A 1 mention"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 10 more places (11 pages)
+  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 410 more places (28 pages)
 - [ ] **Button:** "Show all 7 in Audio"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "Audio 7"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "The Book 1"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "The Book 1"; also on 29 more places (30 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 288 places · first edition, 2015"  
-  learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "The Book 1"
 - [ ] **Paragraph:** "About the book →"  
   learn/topics/attention-and-awareness/ (`redesign-2/learn/topics/attention-and-awareness/index.html` line 48), under "The Book 1"; also on 29 more places (30 pages)
 
-## learn/topics/awakening/ (198)
+## learn/topics/awakening/ (71)
 
 - [ ] **Page title (browser tab):** "Awakening and stream entry — Culadasa"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 6)
@@ -4177,67 +4043,25 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 36), under "Awakening and stream entry"
 - [ ] **Paragraph:** "The stages of awakening, beginning with stream entry."  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 36), under "Awakening and stream entry"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa 20190517 Patreon Q&A"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 41), under "Start with this video"
-- [ ] **Sub-heading:** "Culadasa 20190517 Patreon Q&A"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 42), under "Culadasa 20190517 Patreon Q&A"
-- [ ] **Paragraph:** "1:06:03 It starts where he talks about awakening and stream entry. Open the video page →"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 44), under "Culadasa 20190517 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 1:06:03"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 44), under "Culadasa 20190517 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: stream entry, stream-entry, sotapanna, awakening. 954 mentions in all."  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 47), under "Culadasa 20190517 Patreon Q&A"
+- [ ] **Paragraph:** "0:00 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 44), under "Culadasa -The 5 ultimate insights that lead to direct awakening."; also on 2 more places (3 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 0:00"  
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 44), under "Culadasa -The 5 ultimate insights that lead to direct awakening."; also on 7 more places (8 pages)
+- [ ] **Paragraph:** "973 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 47), under "Culadasa -The 5 ultimate insights that lead to direct awakening."
 - [ ] **Sub-heading:** "Videos 16"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 21 mentions · 2021-01-28"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 21 mentions · 2017-02-01"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 11 mentions · 2017-01-25"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) - RE-UPLOAD WI 7 mentions · 2021-07-27"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Introduction to "My Journey" discussion series 6 mentions · 2021-02-12"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years 6 mentions · 2021-02-12"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 5 mentions · 2021-01-29"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa 4 mentions · 2014-09-22"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "My Journey: Episode 3 - Experiences don't mean sh... 2 mentions · 2021-03-24"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
-- [ ] **Expandable heading:** "Here Comes the Sun: Achieving Awakening Without the Dark Night 2 mentions · 2014-03-31"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "My Journey: Episode 5 - Unifying life around the Dharma (re-upload) 1 mention · 2021-05-04"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 1 mention · 2017-02-05"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "How do you know whats true? - Culadasa at NY Insight 1 mention · 2017-02-01"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "benefits of meditation, therapy and awakening 1 mention · 2015-07-17"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa 1 mention · 2011-03-31"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C 1 mention · 2011-03-25"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"; also on 4 more places (5 pages)
 - [ ] **Button:** "Show all 16 in Videos"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Videos 16"
 - [ ] **Sub-heading:** "AMA videos 55"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 36 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 0:29"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 30 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 39:39"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:12:27"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:29:49"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 29 mentions"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 0:10"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 4 more places (5 pages)
@@ -4245,41 +4069,29 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:11:54"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 28 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 15:32"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 42:07"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 27 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 0:11"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 41:29"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 25 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:11:52"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 25 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 13:55"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 32:44"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 42:58"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 1:05:16"  
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:07:06"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 24 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:09:27"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 21 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 42:19"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa June 2020 #2 Patreon Q&A 20 mentions"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:32"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
@@ -4287,286 +4099,86 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:35:11"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 19 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 19 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:09:11"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 18 mentions"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:17:33"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:21:15"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:23:28"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 17 mentions"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 55:53"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 16 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 42:00"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 14 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:04:16"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 14 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 13 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 7:51"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 20:04"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 13 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 13 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 55:20"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 6 more places (7 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:36:19"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 13 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 46:28"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 3 more places (4 pages)
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 4 more places (5 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 57:48"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 11 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 2:22"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 11 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:01:20"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:39:41"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 10 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 11:35"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 10 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 10 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 54:19"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 9 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 8 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 59:38"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa September 2020 #1 Patreon Q&A 7 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 0:48"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 7 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:42:53"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 7 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 22:41"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 7 mentions"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 1:27:37"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 7 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 6 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 6 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 6 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 5 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Screen-reader label (hidden):** "Play from 29:34"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:27:59"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa January 2019 Patreon Q&A 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:07:43"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 0:36"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"; also on 9 more places (9 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 30:05"  
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Button:** "Show all 55 in AMA videos"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "AMA videos 55"
 - [ ] **Sub-heading:** "Writings 18"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 46 mentions"  
+- [ ] **Paragraph:** "and 38 more in it"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "What Is Enlightenment and Why Should I Care? 17 mentions"  
+- [ ] **Paragraph:** "and 10 more in it"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life 12 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought 11 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 10 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "Meditation and Insight III 10 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 9 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "How to Maintain Practice in One’s Daily Life 7 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "Amount of Concentration Needed for Awakening 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "An Introduction to the Practice of the Ten Stages of Samatha 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Recommended Book List 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Meditation and Insight II 1 mention"  
+- [ ] **Paragraph:** "and 9 more in it"  
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 13 more places (5 pages)
+- [ ] **Paragraph:** "and 4 more in it"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part I: Future History in the Making 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
-- [ ] **Expandable heading:** "Introduction to the Meditation Manual 1 mention"  
+- [ ] **Paragraph:** "and 2 more in it"  
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 4 more places (5 pages)
+- [ ] **Paragraph:** "and 1 more in it"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 18 in Writings"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Writings 18"
 - [ ] **Sub-heading:** "Audio 51"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 1 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 2 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 3 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 4 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 5 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 6 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 7 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 8 - Culadasa 4 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 1 - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 2 - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 3 - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 4 - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 5 - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 6 - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 7 - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Awakening Process - Culadasa 3 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "Culadasa July 2018 Patreon Q&A 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A Catch-Up 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 8 more places (9 pages)
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "How Does Insight Fit into the Meditation Systems? - Culadasa 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "Bypassing Steps to Awakening? - Culadasa 2 mentions"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 8 more places (9 pages)
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 12 more places (13 pages)
-- [ ] **Expandable heading:** "Culadasa May 2019 Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 7 more places (8 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A Catch-Up 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 1 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 2 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 3 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 4 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 5 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 6, Guided Meditation - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 7 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 8 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 9 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 9, Meditation Only - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 10 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 11 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 11 - Meditation Only 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Jhanas, Part 6, Meditation - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Jhanas, Part 5 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Jhanas, Part 4 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Jhanas, Part 3, Meditation and Discussion - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Jhanas, Part 2 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Jhanas, Part 1 - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "Progressing on the Path - Culadasa 1 mention"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "Levels After the First Nine Meditation Stages - Culadasa 1 mention"  
   learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
 - [ ] **Button:** "Show all 51 in Audio"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 6 places · first edition, 2015"  
-  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "The Book 1"
+  learn/topics/awakening/ (`redesign-2/learn/topics/awakening/index.html` line 48), under "Audio 51"
 
-## learn/topics/craving/ (103)
+## learn/topics/craving/ (38)
 
 - [ ] **Page title (browser tab):** "Craving — Culadasa"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 6)
@@ -4574,208 +4186,78 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 7)
 - [ ] **Paragraph:** "Taṇhā: wanting and not-wanting, and the end of suffering."  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 36), under "Craving"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa March 2019 Patreon Q&A"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 41), under "Start with this video"
-- [ ] **Paragraph:** "1:01:25 It starts where he talks about craving. Open the video page →"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 44), under "Culadasa March 2019 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 1:01:25"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 44), under "Culadasa March 2019 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: craving, tanha, taṇhā. 810 mentions in all."  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 47), under "Culadasa March 2019 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2018 Patreon Q&A"  
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 41), under "Start with this video"; also on 2 more places (3 pages)
+- [ ] **Paragraph:** "36:31 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 44), under "Culadasa February 2018 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play from 36:31"  
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 44), under "Culadasa February 2018 Patreon Q&A"
+- [ ] **Paragraph:** "Chosen for now as the ten minutes where he mentions it most. The teachers will choose the video to start with."  
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 45), under "Culadasa February 2018 Patreon Q&A"; also on 14 more places (15 pages)
+- [ ] **Paragraph:** "810 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 47), under "Culadasa February 2018 Patreon Q&A"
 - [ ] **Sub-heading:** "Videos 9"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
-- [ ] **Expandable heading:** "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula 7 mentions · 2011-03-31"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
-- [ ] **Expandable heading:** "Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa 7 mentions · 2011-03-25"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
-- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 6 mentions · 2017-02-01"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
-- [ ] **Expandable heading:** "benefits of meditation, therapy and awakening 3 mentions · 2015-07-17"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
-- [ ] **Expandable heading:** "The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa 2 mentions · 2011-03-25"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
-- [ ] **Expandable heading:** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 1 mention · 2017-01-25"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Reality is Mind-Created - Buddhist Wisdom meets Brain Science - Culadasa 1 mention · 2011-03-25"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa 1 mention · 2011-03-25"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 9 in Videos"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Videos 9"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "AMA videos 45"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 50 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 39 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 39 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 34:46"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:16:30"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 39 mentions"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 36:37"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:07:20"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 38 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:09"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 33 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 33 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:26"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 27 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 26 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 21 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:07"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 18 mentions"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 13:10"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 18 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 24:58"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 17 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 45:13"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 16 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 16 mentions"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 4:45"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 15 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 14 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 25:17"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 10 more places (11 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 13 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 12 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:23:48"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 11 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:19:22"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 11 mentions"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 18:44"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 11 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:21:16"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 10 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 9 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 9 mentions"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:00:44"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa January 2019 Patreon Q&A 8 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 7 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 31:09"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #1 Patreon Q&A 6 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 6 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 6 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 33:13"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa June 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 5 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 4 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 3 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 3 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 3 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 3 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 2 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 2 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:05:10"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 2 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 2 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 51:50"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 2 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 4 more places (5 pages)
 - [ ] **Button:** "Show all 45 in AMA videos"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "Writings 14"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 50 mentions"  
+- [ ] **Paragraph:** "and 42 more in it"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought 30 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 17 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought – Slides 13 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "What Is Enlightenment and Why Should I Care? 12 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life 7 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Meditation and Insight III 5 mentions"  
+- [ ] **Paragraph:** "and 22 more in it"  
+  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 2 more places (3 pages)
+- [ ] **Paragraph:** "and 5 more in it"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 2 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Instructions for Entering Jhāna by Leigh Brasington 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "An Introduction to the Practice of the Ten Stages of Samatha 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 7 more places (8 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Meditation and Insight I 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Meditation and Insight – Slides 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 3 more places (4 pages)
 - [ ] **Button:** "Show all 14 in Writings"  
   learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Writings 14"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Craving, What’s it All About? - Culadasa 3 mentions"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Audio 7"
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Audio 7"; also on 8 more places (9 pages)
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 1 mention"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "Audio 7"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 63 places · first edition, 2015"  
-  learn/topics/craving/ (`redesign-2/learn/topics/craving/index.html` line 48), under "The Book 1"
 
-## learn/topics/daily-life/ (108)
+## learn/topics/daily-life/ (30)
 
 - [ ] **Page title (browser tab):** "Daily life — Culadasa"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 6)
@@ -4783,218 +4265,62 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 7)
 - [ ] **Paragraph:** "Practice off the cushion: work, relationships, ordinary days."  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 36), under "Daily life"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2019 Patreon Q&A"  
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2020 #1 Patreon Q&A"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 41), under "Start with this video"
-- [ ] **Sub-heading:** "Culadasa February 2019 Patreon Q&A"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 42), under "Culadasa February 2019 Patreon Q&A"
-- [ ] **Paragraph:** "1:05:50 It starts where he talks about daily life. Open the video page →"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 44), under "Culadasa February 2019 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 1:05:50"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 44), under "Culadasa February 2019 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: daily life, everyday life, in daily life. 247 mentions in all."  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 47), under "Culadasa February 2019 Patreon Q&A"
+- [ ] **Sub-heading:** "Culadasa July 2020 #1 Patreon Q&A"  
+  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 42), under "Culadasa July 2020 #1 Patreon Q&A"
+- [ ] **Paragraph:** "40:20 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 44), under "Culadasa July 2020 #1 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play from 40:20"  
+  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 44), under "Culadasa July 2020 #1 Patreon Q&A"
+- [ ] **Paragraph:** "247 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 47), under "Culadasa July 2020 #1 Patreon Q&A"
 - [ ] **Sub-heading:** "Videos 4"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Videos 4"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) - RE-UPLOAD WI 3 mentions · 2021-07-27"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Videos 4"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 3 mentions · 2017-02-05"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Videos 4"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa 1 mention · 2011-03-31"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Videos 4"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "AMA videos 44"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 17 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 1:07:35"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 14 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 12:03"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 32:04"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 9 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 7 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 24:23"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 7 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
+  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 26:24"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 5 more places (6 pages)
+  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 6 more places (7 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 57:47"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 6 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 5 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 50:18"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 5 mentions"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 5:56"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 4 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 0:04"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 4 mentions"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:04:40"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 3 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 3 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 49:24"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 3 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 3 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 3 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 3 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 18:31"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
+  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 7 more places (8 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 41:31"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa January 2019 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 28:50"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 5 more places (6 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:28:41"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa June 2020 #2 Patreon Q&A 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 5 more places (6 pages)
 - [ ] **Button:** "Show all 44 in AMA videos"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Writings 16"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 10 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 5 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "Cultivating Mindfulness in Daily Life 5 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life 4 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "How to Maintain Practice in One’s Daily Life 3 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "What Is Enlightenment and Why Should I Care? 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part I: Future History in the Making 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 2 mentions"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Meditation and Insight III 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Mindful Awareness vs Dullness 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"
 - [ ] **Button:** "Show all 16 in Writings"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Writings 16"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "Audio 44"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 9 more places (10 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Meditation #1 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Meditation #2 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Meditation #3 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Meditation #4 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Meditation #5 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Joy, Meditation #7 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Still Point, Meditation #8 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Metta, Meditation #9 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 1, Including Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 2, Including Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 3, Including Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 4, Including Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 5, Including Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 6 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 7, Including Joy Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 8, Including Still Point Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 9, Including Metta Meditation - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 1 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 2 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 3 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 4 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 5 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 6 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 7 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life, Part 8 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "Mindfulness in Daily Life, Uposatha Day #8 - Culadasa 1 mention"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"; also on 1 more place (2 pages)
 - [ ] **Button:** "Show all 44 in Audio"  
   learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "Audio 44"
-- [ ] **Expandable heading:** "The Mind Illuminated 67 places · first edition, 2015"  
-  learn/topics/daily-life/ (`redesign-2/learn/topics/daily-life/index.html` line 48), under "The Book 1"
 
-## learn/topics/dark-night/ (35)
+## learn/topics/dark-night/ (15)
 
 - [ ] **Page title (browser tab):** "The Dark Night — Culadasa"  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 6)
@@ -5002,72 +4328,32 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 7)
 - [ ] **Page heading:** "The Dark Night"  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 36), under "The Dark Night"
-- [ ] **Paragraph:** "The difficult insight stages, and how to work with them."  
+- [ ] **Paragraph:** "A period of distress that can follow an insight breakthrough, and how to meet it."  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 36), under "The Dark Night"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2018 Patreon Q&A"  
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "1:09:58 It starts where he talks about The Dark Night. Open the video page →"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 44), under "Culadasa January 2018 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 1:09:58"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 44), under "Culadasa January 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: dark night, dukkha nanas, dukkha ñāṇas, dukkha nana. 119 mentions in all."  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 47), under "Culadasa January 2018 Patreon Q&A"
+- [ ] **Paragraph:** "93 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 47), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
 - [ ] **Sub-heading:** "Videos 3"  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Videos 3"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 28 mentions · 2021-01-29"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Videos 3"
-- [ ] **Expandable heading:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) - RE-UPLOAD WI 1 mention · 2021-07-27"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Videos 3"; also on 2 more places (3 pages)
-- [ ] **Sub-heading:** "AMA videos 13"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 19 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 16 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
-- [ ] **Screen-reader label (hidden):** "Play from 1:08:19"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 13 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
+- [ ] **Sub-heading:** "AMA videos 11"  
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 11"
 - [ ] **Screen-reader label (hidden):** "Play from 2:39"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 6 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 4 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 4 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 2 more places (3 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 1:33:51"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 3 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 2 more places (3 pages)
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 11"
+- [ ] **Screen-reader label (hidden):** "Play from 1:08:19"  
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 11"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 52:58"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 3 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 1 more place (2 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 14:18"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 1 more place (2 pages)
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 11"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:19:45"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 2 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 1 mention"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 1 mention"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"; also on 1 more place (2 pages)
-- [ ] **Button:** "Show all 13 in AMA videos"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 13"
-- [ ] **Sub-heading:** "Writings 3"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Writings 3"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Meditation and Insight III 6 mentions"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Writings 3"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment and Why Should I Care? 1 mention"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Writings 3"; also on 1 more place (2 pages)
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 11"; also on 2 more places (3 pages)
+- [ ] **Button:** "Show all 11 in AMA videos"  
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "AMA videos 11"
+- [ ] **Sub-heading:** "Writings 1"  
+  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Writings 1"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "Audio 2"  
   learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "Audio 2"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 13 places · first edition, 2015"  
-  learn/topics/dark-night/ (`redesign-2/learn/topics/dark-night/index.html` line 48), under "The Book 1"
 
-## learn/topics/distraction/ (84)
+## learn/topics/distraction/ (30)
 
 - [ ] **Page title (browser tab):** "Distraction — Culadasa"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 6)
@@ -5081,164 +4367,56 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 42), under "Culadasa December 2019 - Monday the 16th Patreon Q&A"
-- [ ] **Paragraph:** "0:06 It starts where he talks about distraction. Open the video page →"  
+- [ ] **Paragraph:** "1:44 It starts where he turns to this topic. Open the video page →"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 44), under "Culadasa December 2019 - Monday the 16th Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 0:06"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 44), under "Culadasa December 2019 - Monday the 16th Patreon Q&A"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "Found by the words: distraction, distractions, distracted. 514 mentions in all."  
+- [ ] **Screen-reader label (hidden):** "Play from 1:44"  
+  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 44), under "Culadasa December 2019 - Monday the 16th Patreon Q&A"
+- [ ] **Paragraph:** "514 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 47), under "Culadasa December 2019 - Monday the 16th Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Four · Stage Six"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 47), under "Culadasa December 2019 - Monday the 16th Patreon Q&A"
 - [ ] **Sub-heading:** "Videos 8"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Videos 8"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 7 mentions · 2017-02-05"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Videos 8"
-- [ ] **Expandable heading:** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C 3 mentions · 2011-03-25"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Videos 8"
-- [ ] **Expandable heading:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 2 mentions · 2021-01-29"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Videos 8"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa 2 mentions · 2011-03-31"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Videos 8"
-- [ ] **Expandable heading:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 1 mention · 2021-01-28"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Videos 8"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 8 in Videos"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Videos 8"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "AMA videos 43"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 38 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
 - [ ] **Screen-reader label (hidden):** "Play from 0:09"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 37 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
+  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 50:58"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 27 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
 - [ ] **Screen-reader label (hidden):** "Play from 30:37"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 25 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 21 mentions"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
 - [ ] **Screen-reader label (hidden):** "Play from 28:16"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 57:58"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 21 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:44:46"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 21 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
 - [ ] **Screen-reader label (hidden):** "Play from 9:44"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 20 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 18 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
 - [ ] **Screen-reader label (hidden):** "Play from 39:44"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 18 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 53:44"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 12 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
 - [ ] **Screen-reader label (hidden):** "Play from 1:12:08"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 11 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 10 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 9 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 8 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 8 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 8 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
 - [ ] **Screen-reader label (hidden):** "Play from 53:36"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 7 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 7 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 7 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 5 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 5 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 5 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 5 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:03:57"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 4 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:28"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 4 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 4 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 23:46"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 3 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 2 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #2 Patreon Q&A 1 mention"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 1 mention"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 1 mention"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 43 in AMA videos"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "AMA videos 43"
-- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 30 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 7 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "An Introduction to the Practice of the Ten Stages of Samatha 5 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 4 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Mindful Awareness vs Dullness 4 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "Preparation for Practice 3 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 3 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 3 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Meditation and Insight II 2 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Cultivating Mindfulness in Daily Life 1 mention"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Writings 16"; also on 4 more places (5 pages)
 - [ ] **Sub-heading:** "Audio 25"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Audio 25"
-- [ ] **Expandable heading:** "Subtle Distractions and Gross Dullness - Culadasa 3 mentions"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Audio 25"
-- [ ] **Expandable heading:** "Culadasa July 2018 Patreon Q&A 1 mention"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Audio 25"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa October 2018 Patreon Q&A 1 mention"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Audio 25"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "DM Retreat - Culadasa 1 mention"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Audio 25"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 25 in Audio"  
   learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "Audio 25"
-- [ ] **Expandable heading:** "The Mind Illuminated 406 places · first edition, 2015"  
-  learn/topics/distraction/ (`redesign-2/learn/topics/distraction/index.html` line 48), under "The Book 1"
 
-## learn/topics/dullness/ (85)
+## learn/topics/dullness/ (38)
 
 - [ ] **Page title (browser tab):** "Dullness — Culadasa"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 6)
@@ -5247,171 +4425,77 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "Drowsiness and the loss of clarity, from strong dullness to subtle dullness."  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 36), under "Dullness"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2018 Catch-Up Patreon Q&A"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "Culadasa April 2018 Catch-Up Patreon Q&A"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 42), under "Culadasa April 2018 Catch-Up Patreon Q&A"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "1:23:29 It starts where he talks about dullness. Open the video page →"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 42), under "Culadasa April 2018 Catch-Up Patreon Q&A"
+- [ ] **Paragraph:** "1:23:24 It starts where he turns to this topic. Open the video page →"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 44), under "Culadasa April 2018 Catch-Up Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 1:23:29"  
+- [ ] **Screen-reader label (hidden):** "Play from 1:23:24"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 44), under "Culadasa April 2018 Catch-Up Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: dullness, drowsiness, drowsy, sleepiness. 540 mentions in all."  
+- [ ] **Paragraph:** "588 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 47), under "Culadasa April 2018 Catch-Up Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Four · Stage Five"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 47), under "Culadasa April 2018 Catch-Up Patreon Q&A"
 - [ ] **Sub-heading:** "Videos 2"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Videos 2"; also on 7 more places (8 pages)
-- [ ] **Expandable heading:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 2 mentions · 2021-01-28"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Videos 2"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 37 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 35 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 0:47"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 35 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 32:02"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:12:23"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:24:46"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 23 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Screen-reader label (hidden):** "Play from 53:46"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 22 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 19 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 21:02"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 44:51"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 18 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Screen-reader label (hidden):** "Play from 1:14:24"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 1:26:58"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 17 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Screen-reader label (hidden):** "Play from 1:07:42"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 17 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Screen-reader label (hidden):** "Play from 52:53"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 1:05:38"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 17 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 4 more places (5 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 53:46"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 16:55"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:20:47"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 15 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"
+- [ ] **Screen-reader label (hidden):** "Play from 1:14:24"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 1:26:58"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 1:07:42"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 52:53"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 1:05:38"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 5 more places (6 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:18:37"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 11 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 10 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Screen-reader label (hidden):** "Play from 37:31"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 9 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 30:30"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 9 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 7 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Screen-reader label (hidden):** "Play from 15:58"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 7 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 30:36"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 58:35"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 7 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 7 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 6 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 6 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 6 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 5 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 5 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 5 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 13:51"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 5 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 4 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"
+- [ ] **Screen-reader label (hidden):** "Play from 37:31"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 30:30"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 1:41"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"
+- [ ] **Screen-reader label (hidden):** "Play from 15:58"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:28:31"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 3 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 2 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 2 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 44"; also on 1 more place (2 pages)
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"
+- [ ] **Screen-reader label (hidden):** "Play from 13:51"  
+  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Writings 11"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Mindful Awareness vs Dullness 34 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 11 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 9 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 6 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "An Introduction to the Practice of the Ten Stages of Samatha 2 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Introduction to the Meditation Manual 2 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "Preparation for Practice 1 mention"  
+- [ ] **Paragraph:** "and 26 more in it"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life 1 mention"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Amount of Concentration Needed for Awakening 1 mention"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 1 more place (2 pages)
 - [ ] **Button:** "Show all 11 in Writings"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Writings 11"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Audio 28"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Sleepiness and Dullness - Culadasa 4 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Brightening the Mind to Combat Subtle Dullness - Culadasa 3 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 2 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Concentration vs Blissful States and Dullness - Culadasa 2 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "A Model for Understanding Dullness - Culadasa 2 mentions"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Subtle Distractions and Gross Dullness - Culadasa 1 mention"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Tips on Developing Full-minded Awareness with Concentration (Stage 5) - Culadasa 1 mention"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"; also on 1 more place (2 pages)
 - [ ] **Button:** "Show all 28 in Audio"  
   learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "Audio 28"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 338 places · first edition, 2015"  
-  learn/topics/dullness/ (`redesign-2/learn/topics/dullness/index.html` line 48), under "The Book 1"
 
-## learn/topics/equanimity/ (49)
+## learn/topics/equanimity/ (22)
 
 - [ ] **Page title (browser tab):** "Equanimity — Culadasa"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 6)
@@ -5421,98 +4505,44 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 36), under "Equanimity"
 - [ ] **Paragraph:** "Upekkhā: balance that is not disturbed by pleasure or pain."  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 36), under "Equanimity"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2019 Patreon Q&A"  
+- [ ] **Screen-reader label (hidden):** "Play: What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "1:01 It starts where he talks about equanimity. Open the video page →"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 44), under "Culadasa July 2019 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 1:01"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 44), under "Culadasa July 2019 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: equanimity, upekkha, upekkhā. 234 mentions in all."  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 47), under "Culadasa July 2019 Patreon Q&A"
+- [ ] **Sub-heading:** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"  
+  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 42), under "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"; also on 1 more place (2 pages)
+- [ ] **Paragraph:** "0:32 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 44), under "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"
+- [ ] **Screen-reader label (hidden):** "Play from 0:32"  
+  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 44), under "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"
+- [ ] **Paragraph:** "231 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 47), under "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"
 - [ ] **Paragraph:** "Belongs with: Stage Ten"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 47), under "Culadasa July 2019 Patreon Q&A"
-- [ ] **Expandable heading:** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa 14 mentions · 2011-03-25"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Videos 2"
+  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 47), under "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"
 - [ ] **Sub-heading:** "AMA videos 31"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 29 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 25 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"
 - [ ] **Screen-reader label (hidden):** "Play from 1:06"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 7 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 7 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 7 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 3 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 3 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 3 mentions"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 38:19"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 3 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 3 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 22:04"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #1 Patreon Q&A 2 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 2 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 3 more places (4 pages)
+  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 51:00"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 2 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 50:57"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 2 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 12:38"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 1 mention"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 1 mention"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 1 mention"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 1 mention"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa January 2019 Patreon Q&A 1 mention"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:11:49"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"
 - [ ] **Button:** "Show all 31 in AMA videos"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 34 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 23 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 14 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Meditation and Insight III 9 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 7 mentions"  
+- [ ] **Paragraph:** "and 12 more in it"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Meditation and Insight – Slides 2 mentions"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought – Slides 1 mention"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 1 mention"  
+- [ ] **Paragraph:** "and 6 more in it"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Writings 14"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Audio 1"  
   learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Audio 1"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 1 mention"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "Audio 1"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 21 places · first edition, 2015"  
-  learn/topics/equanimity/ (`redesign-2/learn/topics/equanimity/index.html` line 48), under "The Book 1"
 
-## learn/topics/forgetting/ (35)
+## learn/topics/forgetting/ (13)
 
 - [ ] **Page title (browser tab):** "Forgetting — Culadasa"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 6)
@@ -5524,66 +4554,22 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "Culadasa April 2021 #1 Patreon Q&A"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 42), under "Culadasa April 2021 #1 Patreon Q&A"
-- [ ] **Paragraph:** "53:03 It starts where he talks about forgetting. Open the video page →"  
+- [ ] **Paragraph:** "52:58 It starts where he turns to this topic. Open the video page →"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 44), under "Culadasa April 2021 #1 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 53:03"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 44), under "Culadasa April 2021 #1 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: forgetting, forget the breath, forgot the breath. 112 mentions in all."  
+- [ ] **Paragraph:** "112 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 47), under "Culadasa April 2021 #1 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Three"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 47), under "Culadasa April 2021 #1 Patreon Q&A"
-- [ ] **Expandable heading:** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa 7 mentions · 2011-03-31"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "Videos 7"
-- [ ] **Expandable heading:** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu 5 mentions · 2011-03-25"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "Videos 7"
-- [ ] **Expandable heading:** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C 1 mention · 2011-03-25"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "Videos 7"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "AMA videos 23"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 15 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 13 mentions"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"
 - [ ] **Screen-reader label (hidden):** "Play from 21:13"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 7 more places (8 pages)
-- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 9 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 6 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 5 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 5 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 58:40"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 3 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 3 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 3 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 2 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 2 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 2 mentions"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 1 mention"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 1 mention"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 1 mention"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"; also on 6 more places (7 pages)
 - [ ] **Button:** "Show all 23 in AMA videos"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "AMA videos 23"
 - [ ] **Sub-heading:** "Writings 4"  
   learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "Writings 4"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 1 mention"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "Writings 4"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A Catch-Up 1 mention"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "Audio 1"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 79 places · first edition, 2015"  
-  learn/topics/forgetting/ (`redesign-2/learn/topics/forgetting/index.html` line 48), under "The Book 1"
 
 ## learn/topics/ (24)
 
@@ -5591,52 +4577,52 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/ (`redesign-2/learn/topics/index.html` line 6)
 - [ ] **Search description (hidden):** "The teaching topics of The Mind Illuminated Path, each with everything Culadasa said about it."  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 7)
-- [ ] **Paragraph:** "The questions students bring, in his own words: one page for each."  
+- [ ] **Paragraph:** "The questions students bring, each with what he said about it."  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 36), under "Topics"
 - [ ] **Paragraph:** "Each topic gathers what he said about it in his talks, AMA videos, writings and recordings, with a video to start with. The list is a first draft for the teachers to confirm. The glossary gives a short meaning for each Pāli and method term."  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 39), under "Topics"
 - [ ] **List item:** "Attention and awareness The two ways of knowing that the whole method trains. 609 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Awakening and stream entry The stages of awakening, beginning with stream entry. 954 mentions"  
+- [ ] **List item:** "Awakening and stream entry The stages of awakening, beginning with stream entry. 973 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
 - [ ] **List item:** "Craving Taṇhā: wanting and not-wanting, and the end of suffering. 810 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
 - [ ] **List item:** "Daily life Practice off the cushion: work, relationships, ordinary days. 247 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
+- [ ] **List item:** "The Dark Night A period of distress that can follow an insight breakthrough, and how to meet it. 93 mentions"  
+  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
 - [ ] **List item:** "Distraction Gross and subtle distraction, and how attention learns to stay. 514 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Dullness Drowsiness and the loss of clarity, from strong dullness to subtle dullness. 540 mentions"  
+- [ ] **List item:** "Dullness Drowsiness and the loss of clarity, from strong dullness to subtle dullness. 588 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Equanimity Upekkhā: balance that is not disturbed by pleasure or pain. 234 mentions"  
+- [ ] **List item:** "Equanimity Upekkhā: balance that is not disturbed by pleasure or pain. 231 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
 - [ ] **List item:** "Forgetting Forgetting the meditation object, and the skills that overcome it. 112 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Insight Insight experiences and what they reveal about mind and self. 2031 mentions"  
+- [ ] **List item:** "Insight Insight experiences and what they reveal about mind and self. 2022 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Jhāna The meditative absorptions, pleasure jhānas and luminous jhānas. 1014 mentions"  
+- [ ] **List item:** "Jhāna The meditative absorptions, pleasure jhānas and luminous jhānas. 1012 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
 - [ ] **List item:** "Loving-kindness Mettā: loving-kindness practice and the brahmavihāras. 279 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Metacognitive awareness Awareness of the state and activity of the mind itself. 227 mentions"  
-  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Mind-wandering When attention drifts off the meditation object, and how to come back. 145 mentions"  
-  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Mindfulness Sati: what mindfulness is, in his terms, and how it grows. 1084 mentions"  
-  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Pain Physical and emotional pain in practice, and how to meet it. 641 mentions"  
-  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Purification Old material surfacing and being released as practice deepens. 215 mentions"  
-  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Pīti and meditative joy Joy, energy currents and the calming of meditative joy. 342 mentions"  
-  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "The Dark Night The difficult insight stages, and how to work with them. 119 mentions"  
+- [ ] **List item:** "Metacognitive awareness Awareness of the state and activity of the mind itself. 219 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
 - [ ] **List item:** "The mind-system His model of the mind as many sub-minds working together. 342 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
-- [ ] **List item:** "Unification of mind Sub-minds coming together behind one intention. 156 mentions"  
+- [ ] **List item:** "Mind-wandering When attention drifts off the meditation object, and how to come back. 151 mentions"  
+  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
+- [ ] **List item:** "Mindfulness Sati: what mindfulness is, in his terms, and how it grows. 1217 mentions"  
+  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
+- [ ] **List item:** "Pain Physical and emotional pain in practice, and how to meet it. 628 mentions"  
+  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
+- [ ] **List item:** "Pīti and meditative joy Joy, energy currents and the calming of meditative joy. 338 mentions"  
+  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
+- [ ] **List item:** "Purification Old material surfacing and being released as practice deepens. 214 mentions"  
+  learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
+- [ ] **List item:** "Unification of mind Sub-minds coming together behind one intention. 165 mentions"  
   learn/topics/ (`redesign-2/learn/topics/index.html` line 40), under "Topics"
 
-## learn/topics/insight/ (154)
+## learn/topics/insight/ (56)
 
 - [ ] **Page title (browser tab):** "Insight — Culadasa"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 6)
@@ -5646,121 +4632,47 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 36), under "Insight"
 - [ ] **Paragraph:** "Insight experiences and what they reveal about mind and self."  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 36), under "Insight"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2017 Patreon Q&A"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 41), under "Start with this video"; also on 2 more places (3 pages)
-- [ ] **Paragraph:** "14:14 It starts where he talks about insight. Open the video page →"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 44), under "Culadasa October 2017 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 14:14"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 44), under "Culadasa October 2017 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: insight, insights, vipassana. 2031 mentions in all."  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 47), under "Culadasa October 2017 Patreon Q&A"
+- [ ] **Paragraph:** "2022 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 47), under "Culadasa -The 5 ultimate insights that lead to direct awakening."
 - [ ] **Sub-heading:** "Videos 14"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 48 mentions · 2017-02-01"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "How do you know whats true? - Culadasa at NY Insight 32 mentions · 2017-02-01"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "Awakening & Insight - Buddhist Wisdom meets Brain Science - Culadasa 19 mentions · 2014-09-22"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 13 mentions · 2021-01-29"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 6 mentions · 2021-01-28"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "My Journey: Episode 4 - Stranger in a Strange Land 4 mentions · 2021-04-21"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "Here Comes the Sun: Achieving Awakening Without the Dark Night 3 mentions · 2014-03-31"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa 3 mentions · 2011-03-25"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 2 mentions · 2017-01-25"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "benefits of meditation, therapy and awakening 2 mentions · 2015-07-17"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
-- [ ] **Expandable heading:** "Introduction to "My Journey" discussion series 1 mention · 2021-02-12"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Nature of Ultimate Reality - Buddhist Wisdom meets Brain Science - Culadasa 1 mention · 2011-03-25"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"; also on 1 more place (2 pages)
 - [ ] **Button:** "Show all 14 in Videos"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Videos 14"
 - [ ] **Sub-heading:** "AMA videos 57"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 66 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 61 mentions"  
+- [ ] **Screen-reader label (hidden):** "Play from 14:18"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 56:19"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 55 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 6:22"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:18:46"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 51 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 43 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 34:28"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 42 mentions"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 19:55"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 42 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 37 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 38:20"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2020 #2 Patreon Q&A 36 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 36 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 47:58"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 35 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 35 mentions"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 19:00"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 48:57"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 34 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 1:14:15"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 33 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 33 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 32:48"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:35:28"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 30 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 29 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
+  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 11:43"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 44:52"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 28 mentions"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Screen-reader label (hidden):** "Play from 2:33"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 3 more places (4 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 56:42"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 26 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 26 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 26 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 1:06:39"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 26 mentions"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 0:05"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
@@ -5769,185 +4681,63 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Screen-reader label (hidden):** "Play from 34:17"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 5 more places (6 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 56:36"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 24 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 23 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 22 mentions"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 1:17:31"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 22 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 22:45"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 22 mentions"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 1:18:03"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 22 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 15:26"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 21 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 16 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 22:20"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 34:18"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #1 Patreon Q&A 15 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 50:39"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 15 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 14 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 12 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 10 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 1:03"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 9 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 1:10:37"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 39:43"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 48:44"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 8 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 8 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 1:24"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 7 mentions"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 48:34"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:24:54"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Screen-reader label (hidden):** "Play from 54:40"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 2 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 4 more places (5 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 50:04"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 57 in AMA videos"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "AMA videos 57"
 - [ ] **Sub-heading:** "Writings 21"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Meditation and Insight III 105 mentions"  
+- [ ] **Paragraph:** "and 97 more in it"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Meditation and Insight I 103 mentions"  
+- [ ] **Paragraph:** "and 94 more in it"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Meditation and Insight II 71 mentions"  
+- [ ] **Paragraph:** "and 63 more in it"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Meditation and Insight – Slides 36 mentions"  
+- [ ] **Paragraph:** "and 28 more in it"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 35 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 19 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "An Introduction to the Practice of the Ten Stages of Samatha 11 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Amount of Concentration Needed for Awakening 11 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought 7 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "What Is Enlightenment and Why Should I Care? 5 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought – Slides 4 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "Recommended Book List 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
-- [ ] **Expandable heading:** "About Culadasa: his lineage, wishes and life 2 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
+- [ ] **Paragraph:** "and 27 more in it"  
+  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"; also on 1 more place (2 pages)
+- [ ] **Paragraph:** "and 11 more in it"  
+  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"; also on 1 more place (2 pages)
 - [ ] **Button:** "Show all 21 in Writings"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Writings 21"
 - [ ] **Sub-heading:** "Audio 56"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 1 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 2 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 3 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 3, Meditation Only - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 4 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 5 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 6 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 7 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 8 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Meditation and Insight, Part 9 - Culadasa 17 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Culadasa May 2019 Patreon Q&A 6 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A Catch-Up 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Jhanas, Part 6, Meditation - Culadasa 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhanas, Part 5 - Culadasa 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhanas, Part 4 - Culadasa 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhanas, Part 3, Meditation and Discussion - Culadasa 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhanas, Part 2 - Culadasa 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Jhanas, Part 1 - Culadasa 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "How Does Insight Fit into the Meditation Systems? - Culadasa 3 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 2 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 2 mentions"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 1 - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 2 - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 3 - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 4 - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 5 - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 6 - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "What Is Enlightenment? Part 7 - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Awakening Process - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Dharma Talk - Culadasa, Santa Fe Vipassana Sangha 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "Bypassing Steps to Awakening? - Culadasa 1 mention"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
 - [ ] **Button:** "Show all 56 in Audio"  
   learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "Audio 56"
-- [ ] **Expandable heading:** "The Mind Illuminated 54 places · first edition, 2015"  
-  learn/topics/insight/ (`redesign-2/learn/topics/insight/index.html` line 48), under "The Book 1"
 
-## learn/topics/jhana/ (73)
+## learn/topics/jhana/ (26)
 
 - [ ] **Page title (browser tab):** "Jhāna — Culadasa"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 6)
@@ -5955,148 +4745,54 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 7)
 - [ ] **Paragraph:** "The meditative absorptions, pleasure jhānas and luminous jhānas."  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 36), under "Jhāna"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2018 Patreon Q&A"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "55:51 It starts where he talks about Jhāna. Open the video page →"  
+- [ ] **Paragraph:** "55:46 It starts where he turns to this topic. Open the video page →"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 44), under "Culadasa February 2018 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 55:51"  
+- [ ] **Screen-reader label (hidden):** "Play from 55:46"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 44), under "Culadasa February 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: jhana, jhanas, dhyana. 1014 mentions in all."  
+- [ ] **Paragraph:** "1012 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 47), under "Culadasa February 2018 Patreon Q&A"
-- [ ] **Expandable heading:** "Introduction to "My Journey" discussion series 2 mentions · 2021-02-12"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Videos 4"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "My Journey: Episode 3 - Experiences don't mean sh... 1 mention · 2021-03-24"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Videos 4"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 1 mention · 2017-02-01"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Videos 4"; also on 5 more places (6 pages)
 - [ ] **Sub-heading:** "AMA videos 38"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 80 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 1:02:21"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 68 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 65 mentions"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 19:32"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 52:40"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 64 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 54:37"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 54 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 45 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 1:17:26"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 33 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 31:22"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 32 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 27 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 23 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 22 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 22 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 1:24:06"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 14 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 12 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 47:55"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 12 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 10 mentions"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:30:22"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 23:20"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 1:04:46"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 7 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 7 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa August 2020 #2 Patreon Q&A 6 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 1:19"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 6 mentions"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
 - [ ] **Screen-reader label (hidden):** "Play from 1:19:57"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 4 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 3 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 2 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:24:59"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 1 mention"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"; also on 3 more places (4 pages)
 - [ ] **Button:** "Show all 38 in AMA videos"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "AMA videos 38"
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 215 mentions"  
+- [ ] **Paragraph:** "and 207 more in it"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "Instructions for Entering Jhāna by Leigh Brasington 22 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 16 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "Amount of Concentration Needed for Awakening 12 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 5 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"
-- [ ] **Expandable heading:** "Meditation and Insight III 4 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Mindful Awareness vs Dullness 3 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Cultivating Mindfulness in Daily Life 2 mentions"  
+- [ ] **Paragraph:** "and 14 more in it"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Writings 11"
 - [ ] **Sub-heading:** "Audio 14"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "The Jhanas, Part 6, Meditation - Culadasa 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "The Jhanas, Part 5 - Culadasa 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "The Jhanas, Part 4 - Culadasa 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "The Jhanas, Part 3, Meditation and Discussion - Culadasa 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "The Jhanas, Part 2 - Culadasa 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "The Jhanas, Part 1 - Culadasa 8 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "Culadasa October 2018 Patreon Q&A 3 mentions"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 1 mention"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"; also on 9 more places (10 pages)
-- [ ] **Expandable heading:** "Silence of the Mind - Culadasa 1 mention"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
 - [ ] **Button:** "Show all 14 in Audio"  
   learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "Audio 14"
-- [ ] **Expandable heading:** "The Mind Illuminated 520 places · first edition, 2015"  
-  learn/topics/jhana/ (`redesign-2/learn/topics/jhana/index.html` line 48), under "The Book 1"
 
-## learn/topics/metacognition/ (39)
+## learn/topics/metacognition/ (13)
 
 - [ ] **Page title (browser tab):** "Metacognitive awareness — Culadasa"  
   learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 6)
@@ -6106,78 +4802,26 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 36), under "Metacognitive awareness"
 - [ ] **Paragraph:** "Awareness of the state and activity of the mind itself."  
   learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 36), under "Metacognitive awareness"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2019 Patreon Q&A"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "53:07 It starts where he talks about metacognitive awareness. Open the video page →"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 44), under "Culadasa June 2019 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 53:07"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 44), under "Culadasa June 2019 Patreon Q&A"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "Found by the words: metacognitive, metacognition, meta-cognitive. 227 mentions in all."  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 47), under "Culadasa June 2019 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa February 2021 #1 Patreon Q&A"  
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 41), under "Start with this video"
+- [ ] **Sub-heading:** "Culadasa February 2021 #1 Patreon Q&A"  
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 42), under "Culadasa February 2021 #1 Patreon Q&A"
+- [ ] **Paragraph:** "1:14:16 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 44), under "Culadasa February 2021 #1 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play from 1:14:16"  
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 44), under "Culadasa February 2021 #1 Patreon Q&A"
+- [ ] **Paragraph:** "219 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 47), under "Culadasa February 2021 #1 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Six · Stage Seven"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 47), under "Culadasa June 2019 Patreon Q&A"
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 17 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 16 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 12 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 11 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 11 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 10 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 47), under "Culadasa February 2021 #1 Patreon Q&A"
 - [ ] **Screen-reader label (hidden):** "Play from 39:33"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 44"
 - [ ] **Screen-reader label (hidden):** "Play from 1:17:03"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 9 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 6 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 5 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 5 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 4 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 4 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 4 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 4 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 4 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 3 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 3 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 2 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 2 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 2 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 1 mention"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 1 mention"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 1 mention"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 1 mention"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 45"; also on 4 more places (5 pages)
-- [ ] **Sub-heading:** "Writings 1"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "Writings 1"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 5 mentions"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "Writings 1"
+  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "AMA videos 44"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "Audio 4"  
   learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "Audio 4"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 91 places · first edition, 2015"  
-  learn/topics/metacognition/ (`redesign-2/learn/topics/metacognition/index.html` line 48), under "The Book 1"
 
-## learn/topics/metta/ (44)
+## learn/topics/metta/ (18)
 
 - [ ] **Page title (browser tab):** "Loving-kindness — Culadasa"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 6)
@@ -6189,11 +4833,11 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 36), under "Loving-kindness"
 - [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2020 Patreon Q&A"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 41), under "Start with this video"
-- [ ] **Paragraph:** "23:36 It starts where he talks about loving-kindness. Open the video page →"  
+- [ ] **Paragraph:** "21:35 It starts where he turns to this topic. Open the video page →"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 44), under "Culadasa April 2020 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 23:36"  
+- [ ] **Screen-reader label (hidden):** "Play from 21:35"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 44), under "Culadasa April 2020 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: metta, mettā, loving kindness, loving-kindness, brahmavihara, brahmaviharas. 279 mentions in all."  
+- [ ] **Paragraph:** "279 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 47), under "Culadasa April 2020 Patreon Q&A"
 - [ ] **Sub-heading:** "AMA videos 29"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
@@ -6201,74 +4845,22 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:32:14"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 18 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
-- [ ] **Expandable heading:** "Culadasa September 2020 #1 Patreon Q&A 17 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 15 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 15 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
-- [ ] **Expandable heading:** "Culadasa August 2020 #2 Patreon Q&A 14 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
 - [ ] **Screen-reader label (hidden):** "Play from 23:19"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
 - [ ] **Screen-reader label (hidden):** "Play from 1:23:13"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 4 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 4 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 4 mentions"  
+- [ ] **Screen-reader label (hidden):** "Play from 1:33:51"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:49:55"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 3 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 2 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 6 more places (7 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 1 mention"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"; also on 1 more place (2 pages)
 - [ ] **Button:** "Show all 29 in AMA videos"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "AMA videos 29"
 - [ ] **Sub-heading:** "Writings 9"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Writings 9"
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 17 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Writings 9"
-- [ ] **Expandable heading:** "Instructions for Entering Jhāna by Leigh Brasington 4 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Writings 9"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought 2 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Writings 9"
-- [ ] **Expandable heading:** "How to Maintain Practice in One’s Daily Life 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Writings 9"
 - [ ] **Button:** "Show all 9 in Writings"  
   learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Writings 9"
-- [ ] **Expandable heading:** "Loving Kindness Practice - Culadasa 3 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Metta, Meditation #9 - Culadasa 2 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Sit, Breath, Wake Up! Part 9, Including Metta Meditation - Culadasa 2 mentions"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Meditation for Peace, Part 7, Guided Metta - Culadasa 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Guided Metta - UWest Meditation Camp #2, Part 10 - Culadasa 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Guided Metta - Culadasa, Retreat in California #3, Part 18 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Guided Metta - Culadasa, Retreat in California #3, Part 12 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Guided Metta Meditation, UWest Meditation Camp #1, Part 13 - Culadasa 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "Guided Metta Meditation, TCMC Thursday #6, Part 2 - Culadasa 1 mention"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "Audio 28"
-- [ ] **Expandable heading:** "The Mind Illuminated 29 places · first edition, 2015"  
-  learn/topics/metta/ (`redesign-2/learn/topics/metta/index.html` line 48), under "The Book 1"
 
-## learn/topics/mind-system/ (40)
+## learn/topics/mind-system/ (16)
 
 - [ ] **Page title (browser tab):** "The mind-system — Culadasa"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 6)
@@ -6278,80 +4870,32 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 36), under "The mind-system"
 - [ ] **Paragraph:** "His model of the mind as many sub-minds working together."  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 36), under "The mind-system"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 #2 Patreon Q&A"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "Culadasa September 2020 #2 Patreon Q&A"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 42), under "Culadasa September 2020 #2 Patreon Q&A"; also on 1 more place (2 pages)
-- [ ] **Paragraph:** "47:47 It starts where he talks about The mind-system. Open the video page →"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 44), under "Culadasa September 2020 #2 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 47:47"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 44), under "Culadasa September 2020 #2 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: mind-system, mind system, sub-mind, sub-minds, subminds. 342 mentions in all."  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 47), under "Culadasa September 2020 #2 Patreon Q&A"
-- [ ] **Expandable heading:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) - RE-UPLOAD WI 8 mentions · 2021-07-27"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "Videos 2"
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 24 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 24 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2019 - Friday the 29th Patreon Q&A"  
+  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 41), under "Start with this video"
+- [ ] **Sub-heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A"  
+  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 42), under "Culadasa November 2019 - Friday the 29th Patreon Q&A"
+- [ ] **Paragraph:** "46:28 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 44), under "Culadasa November 2019 - Friday the 29th Patreon Q&A"
+- [ ] **Paragraph:** "342 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 47), under "Culadasa November 2019 - Friday the 29th Patreon Q&A"
 - [ ] **Screen-reader label (hidden):** "Play from 46:44"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 23 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 35:30"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 16 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 34:08"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 14 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 13 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:06:27"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 11 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 10 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 10 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 10 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 10 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 8 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 7 mentions"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 23:26"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 6 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 6 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 1:35:56"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 5 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 5 mentions"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 35:45"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
 - [ ] **Screen-reader label (hidden):** "Play from 0:58"  
   learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 4 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 4 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 2 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"
-- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 2 mentions"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "AMA videos 45"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 336 places · first edition, 2015"  
-  learn/topics/mind-system/ (`redesign-2/learn/topics/mind-system/index.html` line 48), under "The Book 1"
 
-## learn/topics/mind-wandering/ (35)
+## learn/topics/mind-wandering/ (15)
 
 - [ ] **Page title (browser tab):** "Mind-wandering — Culadasa"  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 6)
@@ -6363,68 +4907,28 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 41), under "Start with this video"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "Culadasa October 2020 #1 Patreon Q&A"  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 42), under "Culadasa October 2020 #1 Patreon Q&A"; also on 2 more places (3 pages)
-- [ ] **Paragraph:** "21:33 It starts where he talks about mind-wandering. Open the video page →"  
+- [ ] **Paragraph:** "21:28 It starts where he turns to this topic. Open the video page →"  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 44), under "Culadasa October 2020 #1 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 21:33"  
+- [ ] **Screen-reader label (hidden):** "Play from 21:28"  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 44), under "Culadasa October 2020 #1 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: mind-wandering, mind wandering, wandering mind. 145 mentions in all."  
+- [ ] **Paragraph:** "151 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 47), under "Culadasa October 2020 #1 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Two · Stage Three"  
   learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 47), under "Culadasa October 2020 #1 Patreon Q&A"
-- [ ] **Expandable heading:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 5 mentions · 2017-02-05"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Videos 8"
-- [ ] **Expandable heading:** "Training the Mind -- Buddhist Wisdom meets Brain Science - Culadasa 4 mentions · 2011-03-31"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Videos 8"
-- [ ] **Expandable heading:** "Uninterrupted Continuity of Attention -- Buddhist Wisdom meets Brain Science - C 4 mentions · 2011-03-25"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Videos 8"
-- [ ] **Expandable heading:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 3 mentions · 2021-01-29"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Videos 8"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Developing Introspective Awareness -- Buddhist Wisdom meets Brain Science - Cula 1 mention · 2011-03-31"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Videos 8"
-- [ ] **Expandable heading:** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu 1 mention · 2011-03-25"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Videos 8"
-- [ ] **Sub-heading:** "AMA videos 24"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 10 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 5 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 4 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 3 more places (4 pages)
+- [ ] **Sub-heading:** "AMA videos 25"  
+  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 25"
 - [ ] **Screen-reader label (hidden):** "Play from 2:34"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 3 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 3 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 3 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"
+  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 25"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 15:04"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 2 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 1 mention"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 5 more places (6 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 1 mention"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"; also on 5 more places (6 pages)
-- [ ] **Button:** "Show all 24 in AMA videos"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 24"
-- [ ] **Sub-heading:** "Writings 7"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Writings 7"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 18 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Writings 7"
-- [ ] **Expandable heading:** "Preparation for Practice 2 mentions"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Writings 7"
-- [ ] **Button:** "Show all 7 in Writings"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Writings 7"; also on 1 more place (2 pages)
-- [ ] **Sub-heading:** "Audio 17"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Audio 17"
-- [ ] **Button:** "Show all 17 in Audio"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Audio 17"
-- [ ] **Expandable heading:** "The Mind Illuminated 84 places · first edition, 2015"  
-  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "The Book 1"
+  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 25"; also on 1 more place (2 pages)
+- [ ] **Button:** "Show all 25 in AMA videos"  
+  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "AMA videos 25"
+- [ ] **Sub-heading:** "Audio 18"  
+  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Audio 18"
+- [ ] **Button:** "Show all 18 in Audio"  
+  learn/topics/mind-wandering/ (`redesign-2/learn/topics/mind-wandering/index.html` line 48), under "Audio 18"
 
-## learn/topics/mindfulness/ (115)
+## learn/topics/mindfulness/ (33)
 
 - [ ] **Page title (browser tab):** "Mindfulness — Culadasa"  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 6)
@@ -6438,226 +4942,62 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "Culadasa September 2018 Patreon Q&A"  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 42), under "Culadasa September 2018 Patreon Q&A"
-- [ ] **Paragraph:** "17:10 It starts where he talks about mindfulness. Open the video page →"  
+- [ ] **Paragraph:** "17:05 It starts where he turns to this topic. Open the video page →"  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 44), under "Culadasa September 2018 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 17:10"  
+- [ ] **Screen-reader label (hidden):** "Play from 17:05"  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 44), under "Culadasa September 2018 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: mindfulness, sati, sampajanna, sampajañña. 1084 mentions in all."  
+- [ ] **Paragraph:** "1217 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 47), under "Culadasa September 2018 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Five"  
   learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 47), under "Culadasa September 2018 Patreon Q&A"
-- [ ] **Sub-heading:** "Videos 21"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "Creating the optimal state of mind for Meditation - Culadasa at NYIMC 17 mentions · 2017-02-05"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "benefits of meditation, therapy and awakening 4 mentions · 2015-07-17"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "How do you know whats true? - Culadasa at NY Insight 3 mentions · 2017-02-01"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 3 mentions · 2017-01-25"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "Seeing What Really Is - Buddhist Wisdom meets Brain Science - Culadasa 3 mentions · 2011-03-25"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "My Journey: Episode 5 - Unifying life around the Dharma (re-upload) 2 mentions · 2021-05-04"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "My Journey: Episode 2 - A Series of Miracles 2 mentions · 2021-03-03"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad 2 mentions · 2014-09-22"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "Suffering and the End of Suffering -- Buddhist Wisdom meets Brain Science - Cula 2 mentions · 2011-03-31"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "My Journey: Episode 4 - Stranger in a Strange Land 1 mention · 2021-04-21"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "Here Comes the Sun: Achieving Awakening Without the Dark Night 1 mention · 2014-03-31"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Expandable heading:** "The Nature of Suffering - Buddhist Wisdom meets Brain Science - Culadasa 1 mention · 2011-03-25"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Button:** "Show all 21 in Videos"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Videos 21"
-- [ ] **Sub-heading:** "AMA videos 60"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 54 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 37 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Screen-reader label (hidden):** "Play from 35:11"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
+- [ ] **Sub-heading:** "AMA videos 59"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
 - [ ] **Screen-reader label (hidden):** "Play from 54:01"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 29 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 27 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 22 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 21 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 21 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 19 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
 - [ ] **Screen-reader label (hidden):** "Play from 1:12:19"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa January 2019 Patreon Q&A 19 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
 - [ ] **Screen-reader label (hidden):** "Play from 1:37"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Screen-reader label (hidden):** "Play from 25:37"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 18 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 17 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 16 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 14 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 14 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 13 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 13 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 12 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 11 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 1:10:31"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 10 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 10 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Screen-reader label (hidden):** "Play from 0:12"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 4 more places (5 pages)
-- [ ] **Screen-reader label (hidden):** "Play from 13:03"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 10 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 10 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 10 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 10 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 9 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 8 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 8 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Screen-reader label (hidden):** "Play from 1:32:05"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 7 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 7 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
+- [ ] **Screen-reader label (hidden):** "Play from 1:17:01"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
+- [ ] **Screen-reader label (hidden):** "Play from 1:08:38"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
 - [ ] **Screen-reader label (hidden):** "Play from 1:41:00"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 6 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"; also on 1 more place (2 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 0:12"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"; also on 4 more places (5 pages)
+- [ ] **Screen-reader label (hidden):** "Play from 13:03"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 20:38"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 6 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 6 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
+- [ ] **Screen-reader label (hidden):** "Play from 1:32:05"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
 - [ ] **Screen-reader label (hidden):** "Play from 1:35:05"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 6 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 6 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 5 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2020 #2 Patreon Q&A 3 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Screen-reader label (hidden):** "Play from 12:27"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Expandable heading:** "Culadasa August 2020 #2 Patreon Q&A 2 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"; also on 1 more place (2 pages)
-- [ ] **Button:** "Show all 60 in AMA videos"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 60"
-- [ ] **Sub-heading:** "Writings 22"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 77 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 72 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Mindful Awareness vs Dullness 31 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 22 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life 14 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 13 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "How to Maintain Practice in One’s Daily Life 11 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 8 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 8 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought 6 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Cultivating Mindfulness in Daily Life 6 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Instructions for Entering Jhāna by Leigh Brasington 5 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Meditation and Insight II 5 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "What Is Enlightenment and Why Should I Care? 3 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part I: Future History in the Making 3 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought – Slides 2 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "Amount of Concentration Needed for Awakening 2 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Button:** "Show all 22 in Writings"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 22"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 1 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 2 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 3 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 4 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 5 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 6, Guided Meditation - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 7 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 8 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 9 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 9, Meditation Only - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 10 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 11 - Culadasa 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Magic of Mindfulness, Part 11 - Meditation Only 4 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "Mindfulness Practice - Culadasa 2 mentions"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 51"
-- [ ] **Expandable heading:** "The Mind Illuminated 39 places · first edition, 2015"  
-  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "The Book 1"
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
+- [ ] **Screen-reader label (hidden):** "Play from 1:04"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"; also on 1 more place (2 pages)
+- [ ] **Button:** "Show all 59 in AMA videos"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "AMA videos 59"
+- [ ] **Sub-heading:** "Writings 23"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 23"
+- [ ] **Paragraph:** "and 77 more in it"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 23"
+- [ ] **Paragraph:** "and 75 more in it"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 23"
+- [ ] **Paragraph:** "and 65 more in it"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 23"
+- [ ] **Paragraph:** "and 17 more in it"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 23"
+- [ ] **Paragraph:** "and 7 more in it"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 23"
+- [ ] **Button:** "Show all 23 in Writings"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Writings 23"
+- [ ] **Sub-heading:** "Audio 55"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 55"
+- [ ] **Button:** "Show all 55 in Audio"  
+  learn/topics/mindfulness/ (`redesign-2/learn/topics/mindfulness/index.html` line 48), under "Audio 55"
 
-## learn/topics/pain/ (66)
+## learn/topics/pain/ (23)
 
 - [ ] **Page title (browser tab):** "Pain — Culadasa"  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 6)
@@ -6667,132 +5007,46 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 36), under "Pain"
 - [ ] **Paragraph:** "Physical and emotional pain in practice, and how to meet it."  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 36), under "Pain"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa April 2021 #2 Patreon Q&A"  
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 #1 Patreon Q&A"  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 41), under "Start with this video"
-- [ ] **Sub-heading:** "Culadasa April 2021 #2 Patreon Q&A"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 42), under "Culadasa April 2021 #2 Patreon Q&A"
-- [ ] **Paragraph:** "2:31 It starts where he talks about pain. Open the video page →"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 44), under "Culadasa April 2021 #2 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 2:31"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 44), under "Culadasa April 2021 #2 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: physical pain, pain. 641 mentions in all."  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 47), under "Culadasa April 2021 #2 Patreon Q&A"
+- [ ] **Sub-heading:** "Culadasa September 2020 #1 Patreon Q&A"  
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 42), under "Culadasa September 2020 #1 Patreon Q&A"
+- [ ] **Paragraph:** "24:56 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 44), under "Culadasa September 2020 #1 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play from 24:56"  
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 44), under "Culadasa September 2020 #1 Patreon Q&A"
+- [ ] **Paragraph:** "628 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 47), under "Culadasa September 2020 #1 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Four"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 47), under "Culadasa April 2021 #2 Patreon Q&A"
-- [ ] **Sub-heading:** "Videos 10"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Videos 10"
-- [ ] **Expandable heading:** "Engaged Compassion, Part 1; Gloucester MA, July 1, 2016 20 mentions · 2017-01-25"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Videos 10"
-- [ ] **Expandable heading:** "My Journey: Episode 1 - The path of the lay practitioner, commitment, and the early years 9 mentions · 2021-02-12"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Videos 10"
-- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 8 mentions · 2017-02-01"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Videos 10"
-- [ ] **Expandable heading:** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it 4 mentions · 2021-01-29"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Videos 10"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "My Journey: Episode 2 - A Series of Miracles 1 mention · 2021-03-03"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Videos 10"
-- [ ] **Button:** "Show all 10 in Videos"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Videos 10"
-- [ ] **Sub-heading:** "AMA videos 51"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 49 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 47), under "Culadasa September 2020 #1 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play from 2:33"  
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 48:02"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 54:29"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa September 2020 #1 Patreon Q&A 31 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 1:24:12"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa January 2019 Patreon Q&A 26 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 26:12"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 25 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Screen-reader label (hidden):** "Play from 0:00"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"; also on 4 more places (5 pages)
-- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 22 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 1:34:05"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 20 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 15 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 15 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 0:13"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 13 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 13:39"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 10 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 10 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 10 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 8 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 8 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 8 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 7 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 6 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 6 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa August 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 27:49"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 5 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 5 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 5 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 5 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 4 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 4 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 4 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
 - [ ] **Screen-reader label (hidden):** "Play from 1:37:46"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 2 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 1 mention"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"; also on 2 more places (3 pages)
-- [ ] **Button:** "Show all 51 in AMA videos"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 51"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 39 mentions"  
+  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "AMA videos 50"
+- [ ] **Paragraph:** "and 31 more in it"  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 38 mentions"  
+- [ ] **Paragraph:** "and 30 more in it"  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "The Path to Awakening in Daily Life 34 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "Introduction to What the Buddha Thought 5 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "An Introduction to the Practice of the Ten Stages of Samatha 4 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "What Is Enlightenment and Why Should I Care? 4 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Writings 16"
-- [ ] **Expandable heading:** "Instructions for Entering Jhāna by Leigh Brasington 3 mentions"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Writings 16"; also on 1 more place (2 pages)
 - [ ] **Sub-heading:** "Audio 3"  
   learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "Audio 3"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "The Mind Illuminated 110 places · first edition, 2015"  
-  learn/topics/pain/ (`redesign-2/learn/topics/pain/index.html` line 48), under "The Book 1"
 
-## learn/topics/piti/ (55)
+## learn/topics/piti/ (22)
 
 - [ ] **Page title (browser tab):** "Pīti and meditative joy — Culadasa"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 6)
@@ -6802,110 +5056,44 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 36), under "Pīti and meditative joy"
 - [ ] **Paragraph:** "Joy, energy currents and the calming of meditative joy."  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 36), under "Pīti and meditative joy"
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2020 #2 Patreon Q&A"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 41), under "Start with this video"
-- [ ] **Sub-heading:** "Culadasa December 2020 #2 Patreon Q&A"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 42), under "Culadasa December 2020 #2 Patreon Q&A"
-- [ ] **Paragraph:** "52:27 It starts where he talks about Pīti and meditative joy. Open the video page →"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 44), under "Culadasa December 2020 #2 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 52:27"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 44), under "Culadasa December 2020 #2 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: piti, meditative joy, energy currents. 342 mentions in all."  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 47), under "Culadasa December 2020 #2 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2018 Patreon Q&A"  
+  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
+- [ ] **Paragraph:** "12:34 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 44), under "Culadasa May 2018 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play from 12:34"  
+  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 44), under "Culadasa May 2018 Patreon Q&A"
+- [ ] **Paragraph:** "338 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 47), under "Culadasa May 2018 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Eight · Stage Nine"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 47), under "Culadasa December 2020 #2 Patreon Q&A"
+  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 47), under "Culadasa May 2018 Patreon Q&A"
 - [ ] **Sub-heading:** "Videos 1"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Videos 1"; also on 5 more places (6 pages)
 - [ ] **Sub-heading:** "AMA videos 30"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 24 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
 - [ ] **Screen-reader label (hidden):** "Play from 1:42:36"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 19 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 18 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 15 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
 - [ ] **Screen-reader label (hidden):** "Play from 50:00"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa August 2020 #2 Patreon Q&A 13 mentions"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
 - [ ] **Screen-reader label (hidden):** "Play from 41:16"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 11 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 9 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 26:33"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 8 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 7 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 7 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
+- [ ] **Screen-reader label (hidden):** "Play from 9:55"  
+  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:16:32"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
 - [ ] **Screen-reader label (hidden):** "Play from 1:29:24"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 5 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 4 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 3 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 3 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 2 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 2 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"; also on 4 more places (5 pages)
 - [ ] **Button:** "Show all 30 in AMA videos"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "AMA videos 30"
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 63 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Writings 8"
-- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 20 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Writings 8"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 10 mentions"  
+- [ ] **Paragraph:** "and 55 more in it"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Writings 8"
 - [ ] **Sub-heading:** "Audio 21"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Piti (Joy) - Culadasa 4 mentions"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 1, Introduction - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 2, Meditation - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 3 - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 4, Guided-Meditation - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 5 - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 6 - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 7, Guided-Meditation - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 8 - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 9 - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 10, Guided-Meditation - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 11 - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 12 - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "Joy & Meditation, Part 13, Closing Meditation - Culadasa 1 mention"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
 - [ ] **Button:** "Show all 21 in Audio"  
   learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "Audio 21"
-- [ ] **Expandable heading:** "The Mind Illuminated 171 places · first edition, 2015"  
-  learn/topics/piti/ (`redesign-2/learn/topics/piti/index.html` line 48), under "The Book 1"
 
-## learn/topics/purification/ (33)
+## learn/topics/purification/ (16)
 
 - [ ] **Page title (browser tab):** "Purification — Culadasa"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 6)
@@ -6917,64 +5105,30 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 41), under "Start with this video"
 - [ ] **Sub-heading:** "Culadasa February 2021 #2 Patreon Q&A"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 42), under "Culadasa February 2021 #2 Patreon Q&A"
-- [ ] **Paragraph:** "1:41 It starts where he talks about purification. Open the video page →"  
+- [ ] **Paragraph:** "0:01 It starts where he turns to this topic. Open the video page →"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 44), under "Culadasa February 2021 #2 Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 1:41"  
+- [ ] **Screen-reader label (hidden):** "Play from 0:01"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 44), under "Culadasa February 2021 #2 Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: purification, purifications, purifying. 215 mentions in all."  
+- [ ] **Paragraph:** "214 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 47), under "Culadasa February 2021 #2 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Four · Stage Seven · Stage Eight"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 47), under "Culadasa February 2021 #2 Patreon Q&A"
-- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 39 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 21 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
 - [ ] **Screen-reader label (hidden):** "Play from 4:36"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 15 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 14 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 11 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 6 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 6 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 5 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
 - [ ] **Screen-reader label (hidden):** "Play from 1:00"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 4 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 2 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 55:42"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 2 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 1 mention"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"; also on 3 more places (4 pages)
-- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 1 mention"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "AMA videos 31"; also on 2 more places (3 pages)
-- [ ] **Expandable heading:** "Meditation and Insight III 17 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Writings 7"
-- [ ] **Expandable heading:** "Meditation and Insight I 10 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Writings 7"
-- [ ] **Expandable heading:** "Meditation and Insight – Slides 5 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Writings 7"
-- [ ] **Expandable heading:** "Commentary on the Satipaṭṭhāna Sutta 2 mentions"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Writings 7"
+- [ ] **Sub-heading:** "Writings 6"  
+  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Writings 6"
+- [ ] **Button:** "Show all 6 in Writings"  
+  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Writings 6"
 - [ ] **Sub-heading:** "Audio 5"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Audio 5"
-- [ ] **Expandable heading:** "Levels After the First Nine Meditation Stages - Culadasa 3 mentions"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Audio 5"
 - [ ] **Button:** "Show all 5 in Audio"  
   learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "Audio 5"
-- [ ] **Expandable heading:** "The Mind Illuminated 32 places · first edition, 2015"  
-  learn/topics/purification/ (`redesign-2/learn/topics/purification/index.html` line 48), under "The Book 1"
 
-## learn/topics/unification/ (23)
+## learn/topics/unification/ (14)
 
 - [ ] **Page title (browser tab):** "Unification of mind — Culadasa"  
   learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 6)
@@ -6982,46 +5136,28 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 7)
 - [ ] **Paragraph:** "Sub-minds coming together behind one intention."  
   learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 36), under "Unification of mind"
-- [ ] **Paragraph:** "41:17 It starts where he talks about unification of mind. Open the video page →"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 44), under "Culadasa April 2018 Catch-Up Patreon Q&A"
-- [ ] **Screen-reader label (hidden):** "Play from 41:17"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 44), under "Culadasa April 2018 Catch-Up Patreon Q&A"
-- [ ] **Paragraph:** "Found by the words: unification, unified mind, unifying the mind. 156 mentions in all."  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 47), under "Culadasa April 2018 Catch-Up Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2018 Patreon Q&A"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
+- [ ] **Paragraph:** "45:18 It starts where he turns to this topic. Open the video page →"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 44), under "Culadasa November 2018 Patreon Q&A"
+- [ ] **Screen-reader label (hidden):** "Play from 45:18"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 44), under "Culadasa November 2018 Patreon Q&A"
+- [ ] **Paragraph:** "165 mentions in all. This topic and its introduction are a first draft, for the teachers to confirm."  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 47), under "Culadasa November 2018 Patreon Q&A"
 - [ ] **Paragraph:** "Belongs with: Stage Seven · Stage Eight"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 47), under "Culadasa April 2018 Catch-Up Patreon Q&A"
-- [ ] **Sub-heading:** "AMA videos 35"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 10 mentions"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 47), under "Culadasa November 2018 Patreon Q&A"
+- [ ] **Sub-heading:** "AMA videos 36"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 36"
 - [ ] **Screen-reader label (hidden):** "Play from 41:24"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"
-- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 9 mentions"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"
-- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 8 mentions"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"
-- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 6 mentions"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"
-- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 6 mentions"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 6 mentions"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 3 mentions"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 1 mention"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"
-- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 1 mention"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"
-- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 1 mention"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"; also on 1 more place (2 pages)
-- [ ] **Button:** "Show all 35 in AMA videos"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 35"; also on 1 more place (2 pages)
-- [ ] **Expandable heading:** "Joy & Meditation – More Than Just a Happy Feeling 29 mentions"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 36"
+- [ ] **Button:** "Show all 36 in AMA videos"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "AMA videos 36"
+- [ ] **Sub-heading:** "Writings 3"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "Writings 3"; also on 2 more places (3 pages)
+- [ ] **Paragraph:** "and 21 more in it"  
   learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "Writings 3"
-- [ ] **Expandable heading:** "Mind Unification - Culadasa 1 mention"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "Audio 1"
-- [ ] **Expandable heading:** "The Mind Illuminated 167 places · first edition, 2015"  
-  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "The Book 1"
+- [ ] **Paragraph:** "and 19 more in it"  
+  learn/topics/unification/ (`redesign-2/learn/topics/unification/index.html` line 48), under "Writings 3"
 
 ## library/ (10)
 
@@ -7083,7 +5219,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "About The Mind Illuminated and its method →"  
   ten-stages/ (`redesign-2/ten-stages/index.html` line 43), under "The ten stages"; also on 10 more places (11 pages)
 
-## ten-stages/stage-1/ (22)
+## ten-stages/stage-1/ (45)
 
 - [ ] **Page title (browser tab):** "Stage One: Establishing a practice — Culadasa"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 6)
@@ -7113,16 +5249,62 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Where he talks about Stage One"
 - [ ] **Expandable heading:** "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!) 4 mentions · 2021-07-27"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Videos 4"
+- [ ] **Expandable heading:** "How do you know whats true? - Culadasa at NY Insight 1 mention · 2017-02-01"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Videos 4"
+- [ ] **Expandable heading:** "Mind-Wandering in Meditation -- Buddhist Wisdom meets Brain Science - Culadasa 1 mention · 2011-03-31"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Videos 4"
+- [ ] **Expandable heading:** "Positivity and Awareness in Meditation - Buddhist Wisdom meets Brain Science - C 1 mention · 2011-03-25"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Videos 4"
 - [ ] **Sub-heading:** "AMA videos 19"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 4 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 3 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 3 mentions"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 3 mentions"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 3 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 2 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 2 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 2 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Screen-reader label (hidden):** "Play from 0:06"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 2 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
 - [ ] **Screen-reader label (hidden):** "Play from 15:14"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa August 2020 #2 Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"; also on 5 more places (6 pages)
 - [ ] **Button:** "Show all 19 in AMA videos"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "AMA videos 19"
+- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 7 mentions"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Writings 1"
+- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A Catch-Up 1 mention"  
+  ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Audio 2"
 - [ ] **Expandable heading:** "First Stage of Meditation Tips - Culadasa 1 mention"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 50), under "Audio 2"
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage One pages 42–65 · first edition, 2015"  
@@ -7130,7 +5312,7 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Screen-reader label (hidden):** "Stages"  
   ten-stages/stage-1/ (`redesign-2/ten-stages/stage-1/index.html` line 51), under "The Book 1"; also on 9 more places (10 pages)
 
-## ten-stages/stage-10/ (20)
+## ten-stages/stage-10/ (36)
 
 - [ ] **Page title (browser tab):** "Stage Ten: Tranquility and equanimity — Culadasa"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 6)
@@ -7156,12 +5338,40 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "Where he talks about Stage Ten"
 - [ ] **Expandable heading:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 4 mentions · 2021-01-28"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "Videos 2"
+- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 1 mention · 2017-02-01"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "Videos 2"; also on 2 more places (3 pages)
 - [ ] **Sub-heading:** "AMA videos 16"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"
 - [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 12 mentions"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"
 - [ ] **Expandable heading:** "Culadasa September 2020 #1 Patreon Q&A 8 mentions"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"
+- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 4 mentions"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 4 mentions"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 2 mentions"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa July 2020 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"
+- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 1:21:13"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "AMA videos 16"; also on 3 more places (4 pages)
 - [ ] **Button:** "Show all 16 in AMA videos"  
@@ -7170,10 +5380,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "Writings 4"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 3 mentions"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "Writings 4"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "An Introduction to the Practice of the Ten Stages of Samatha 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "Writings 4"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Meditation and Insight III 1 mention"  
+  ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "Writings 4"
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Ten pages 338–341 · first edition, 2015"  
   ten-stages/stage-10/ (`redesign-2/ten-stages/stage-10/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-2/ (23)
+## ten-stages/stage-2/ (39)
 
 - [ ] **Page title (browser tab):** "Stage Two: Overcoming mind-wandering — Culadasa"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 6)
@@ -7207,22 +5421,54 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
 - [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 6 mentions"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 6 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 4 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 4 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 4 mentions"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
 - [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 4 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 3 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 2 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 2 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 2 mentions"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
 - [ ] **Screen-reader label (hidden):** "Play from 32:00"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 2 mentions"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 2 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 2 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 1 mention"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 1 mention"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 4 more places (5 pages)
 - [ ] **Button:** "Show all 27 in AMA videos"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 6 mentions"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "Writings 3"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 1 mention"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "Writings 3"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa July 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "Audio 2"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa May 2019 Patreon Q&A 1 mention"  
+  ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "Audio 2"
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Two pages 80–95 · first edition, 2015"  
   ten-stages/stage-2/ (`redesign-2/ten-stages/stage-2/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-3/ (20)
+## ten-stages/stage-3/ (40)
 
 - [ ] **Page title (browser tab):** "Stage Three: Overcoming forgetting — Culadasa"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 6)
@@ -7246,26 +5492,66 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 48), under "Culadasa November 2020 #2 Patreon Q&A"
 - [ ] **Section heading:** "Where he talks about Stage Three"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "Where he talks about Stage Three"
+- [ ] **Expandable heading:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 2 mentions · 2021-01-28"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "Videos 3"
+- [ ] **Expandable heading:** "Introduction to "My Journey" discussion series 1 mention · 2021-02-12"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "Videos 3"
+- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 10 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
 - [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 10 mentions"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
 - [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 9 mentions"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 7 mentions"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa April 2021 #1 Patreon Q&A 6 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 6 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
 - [ ] **Screen-reader label (hidden):** "Play from 1:11:12"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 5 mentions"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa April 2020 Patreon Q&A 5 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 5 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 4 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
 - [ ] **Screen-reader label (hidden):** "Play from 57:41"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 3 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 3 mentions"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 3 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 2 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 2 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 2 more places (3 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 9:27"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 2 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"
+- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 1 mention"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 1 mention"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "AMA videos 27"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 2 mentions"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "Writings 3"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "When Buddhadharma Comes to the West – Part II & III: What the Buddha Taught & Wisdom and Virtue 1 mention"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "Writings 3"
+- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A Catch-Up 1 mention"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "Audio 3"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "DM Retreat - Culadasa 1 mention"  
+  ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "Audio 3"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Three pages 96–113 · first edition, 2015"  
   ten-stages/stage-3/ (`redesign-2/ten-stages/stage-3/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-4/ (32)
+## ten-stages/stage-4/ (66)
 
 - [ ] **Page title (browser tab):** "Stage Four: Overcoming gross distraction and strong dullness — Culadasa"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 6)
@@ -7289,31 +5575,87 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Videos 1"
 - [ ] **Sub-heading:** "AMA videos 47"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 14 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 14 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 12 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 11 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 11 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 9 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 9 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 9 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Screen-reader label (hidden):** "Play from 1:14:03"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 8 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 8 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Screen-reader label (hidden):** "Play from 51:35"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 8 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 7 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 7 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 7 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 6 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 6 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 5 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 5 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Screen-reader label (hidden):** "Play from 30:12"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 5 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 5 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 5 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 4 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa April 2021 #2 Patreon Q&A 4 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 4 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 3 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 3 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 3 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 2 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa January 2021 #2 Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
+- [ ] **Expandable heading:** "Culadasa November 2019 - Friday the 29th Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa March 2019 Catch-Up Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 3 more places (4 pages)
+- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 2 more places (3 pages)
+- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa February 2020 #2 - Sunday Patreon Q&A 1 mention"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
 - [ ] **Button:** "Show all 47 in AMA videos"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "AMA videos 47"
@@ -7327,12 +5669,24 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"
 - [ ] **Expandable heading:** "Focus on Sensations vs Absorption at Stage 4 - Culadasa 3 mentions"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"
+- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"
+- [ ] **Expandable heading:** "Culadasa October 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa April 2019 Patreon Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa February 2019 Pateron Q&A 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A Catch-Up 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"
+- [ ] **Expandable heading:** "Subtle Distractions and Gross Dullness - Culadasa 1 mention"  
+  ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"
 - [ ] **Button:** "Show all 15 in Audio"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "Audio 15"
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Four pages 122–147 · first edition, 2015"  
   ten-stages/stage-4/ (`redesign-2/ten-stages/stage-4/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-5/ (22)
+## ten-stages/stage-5/ (43)
 
 - [ ] **Page title (browser tab):** "Stage Five: Overcoming subtle dullness and increasing mindfulness — Culadasa"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 6)
@@ -7354,7 +5708,11 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 48), under "Culadasa December 2018 Patreon Q&A"
 - [ ] **Section heading:** "Where he talks about Stage Five"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Where he talks about Stage Five"
+- [ ] **Sub-heading:** "AMA videos 35"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
 - [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 16 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 15 mentions"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
 - [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 14 mentions"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
@@ -7364,22 +5722,60 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 11 mentions"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 9 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
 - [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 8 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 6 mentions"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
 - [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 6 mentions"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 5 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa 20190517 Patreon Q&A 5 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 5 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
 - [ ] **Expandable heading:** "Culadasa February 2019 Catch-Up Patreon Q&A 4 mentions"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 3 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 3 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa July 2020 #2 Patreon Q&A 3 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 3 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 3 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 1 mention"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa November 2019 - Sunday Patreon Q&A 1 mention"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 1 mention"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Culadasa November 2019 - Monday Patreon Q&A 1 mention"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Button:** "Show all 35 in AMA videos"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "AMA videos 35"
+- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 8 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Writings 2"
 - [ ] **Sub-heading:** "Audio 9"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Audio 9"
+- [ ] **Expandable heading:** "Culadasa February 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Audio 9"; also on 3 more places (4 pages)
 - [ ] **Expandable heading:** "Culadasa May 2019 Patreon Q&A 2 mentions"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Audio 9"
+- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Audio 9"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Tips on Developing Full-minded Awareness with Concentration (Stage 5) - Culadasa 1 mention"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Audio 9"
 - [ ] **Button:** "Show all 9 in Audio"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "Audio 9"
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Five pages 168–181 · first edition, 2015"  
   ten-stages/stage-5/ (`redesign-2/ten-stages/stage-5/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-6/ (24)
+## ten-stages/stage-6/ (47)
 
 - [ ] **Page title (browser tab):** "Stage Six: Subduing subtle distractions — Culadasa"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 6)
@@ -7389,6 +5785,8 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 36), under "Stage Six: Subduing subtle distractions"
 - [ ] **Paragraph:** "In the book: Subduing Subtle Distractions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 36), under "Stage Six: Subduing subtle distractions"
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa October 2017 Patreon Q&A"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 41), under "Start with this video"; also on 1 more place (2 pages)
 - [ ] **Paragraph:** "15:56 It starts where he talks about Stage Six. Open the video page →"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 44), under "Culadasa October 2017 Patreon Q&A"
 - [ ] **Screen-reader label (hidden):** "Play from 15:56"  
@@ -7411,26 +5809,70 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
 - [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 10 mentions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa January 2020 #1 - Sunday Patreon Q&A 6 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 6 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
 - [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 6 mentions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa March 2018 Patreon Q&A 6 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa May 2020 #2 Patreon Q&A 4 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa November 2020 #1 - Sunday the 1st Patreon Q&A 4 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
 - [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 4 mentions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa June 2018 Patreon Q&A 4 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 27:53"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa April 2018 Patreon Q&A 4 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa August 2020 #1 Patreon Q&A 3 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa December 2020 #2 Patreon Q&A 3 mentions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
 - [ ] **Screen-reader label (hidden):** "Play from 22:36"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa April 2018 Catch-Up Patreon Q&A 3 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 3 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Screen-reader label (hidden):** "Play from 53:07"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 2 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 2 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 2 mentions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
 - [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 2 mentions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 2 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa March 2019 Patreon Q&A 2 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa November 23, 2018 Catch-Up Patreon Q&A 2 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
+- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"; also on 1 more place (2 pages)
 - [ ] **Button:** "Show all 41 in AMA videos"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "AMA videos 41"
 - [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 5 mentions"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "Writings 4"
+- [ ] **Expandable heading:** "The Magic of Mindfulness – Seeing Things as They Really Are 3 mentions"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "Writings 4"
+- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 1 mention"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "Writings 4"
+- [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "Audio 4"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Six pages 216–235 · first edition, 2015"  
   ten-stages/stage-6/ (`redesign-2/ten-stages/stage-6/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-7/ (21)
+## ten-stages/stage-7/ (40)
 
 - [ ] **Page title (browser tab):** "Stage Seven: Unifying the mind — Culadasa"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 6)
@@ -7452,30 +5894,68 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 48), under "Culadasa October 2020 #1 Patreon Q&A"
 - [ ] **Section heading:** "Where he talks about Stage Seven"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "Where he talks about Stage Seven"
+- [ ] **Expandable heading:** "Nihilism vs Eternalism; Meaning in life; Is Awakening worth it? How long does it take? 1 mention · 2021-01-28"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "Videos 3"
 - [ ] **Sub-heading:** "AMA videos 40"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
 - [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 13 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 10 mentions"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
 - [ ] **Expandable heading:** "Culadasa October 29, 2018 Patreon Q&A 9 mentions"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"; also on 1 more place (2 pages)
 - [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 8 mentions"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa February 2021 #2 Patreon Q&A 7 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
 - [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 6 mentions"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 6 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 5 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa November 2018 Patreon Q&A 5 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa December 2020 #1 Patreon Q&A 3 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa March 2021 #1 Patreon Q&A 3 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa December 2017 Patreon Q&A 3 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa March 2021 #2 Patreon Q&A 2 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 2 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 2 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
 - [ ] **Expandable heading:** "Culadasa October 2020 #2 Patreon Q&A 2 mentions"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
 - [ ] **Expandable heading:** "Culadasa July 2019 Patreon Q&A 2 mentions"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
-- [ ] **Screen-reader label (hidden):** "Play from 1:04"  
+- [ ] **Expandable heading:** "Culadasa November 2020 #2 Patreon Q&A 1 mention"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa May 2021 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa June 2019 Patreon Q&A 1 mention"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa February 2019 Patreon Q&A 1 mention"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa September 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "Culadasa July 25, 2018 Patreon Q&A 1 mention"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"; also on 2 more places (3 pages)
 - [ ] **Button:** "Show all 40 in AMA videos"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "AMA videos 40"
+- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 2 mentions"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "Writings 4"
 - [ ] **Expandable heading:** "Meditation and Insight III 2 mentions"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "Writings 4"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Meditation Manual for Tranquility and Insight 1 mention"  
+  ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "Writings 4"
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Seven pages 262–279 · first edition, 2015"  
   ten-stages/stage-7/ (`redesign-2/ten-stages/stage-7/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-8/ (17)
+## ten-stages/stage-8/ (30)
 
 - [ ] **Page title (browser tab):** "Stage Eight: Pacifying the senses — Culadasa"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 6)
@@ -7499,20 +5979,46 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 48), under "Culadasa August 2018 Patreon Q&A"
 - [ ] **Section heading:** "Where he talks about Stage Eight"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "Where he talks about Stage Eight"
+- [ ] **Expandable heading:** "Culadasa -The 5 ultimate insights that lead to direct awakening. 2 mentions · 2017-02-01"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "Videos 2"
 - [ ] **Sub-heading:** "AMA videos 34"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 10 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
 - [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 7 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 6 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 6 mentions"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
 - [ ] **Expandable heading:** "Culadasa January 2018 Patreon Q&A 4 mentions"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
 - [ ] **Expandable heading:** "Culadasa June 2020 #1 Patreon Q&A 3 mentions"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa February 2020 #1 - Saturday Patreon Q&A 3 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa December 2019 - Monday the 16th Patreon Q&A 3 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa December 2018 Patreon Q&A 3 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 3 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa November 2020 #3 Patreon Q&A 2 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa January 2020 #2 - Monday Patreon Q&A 2 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"; also on 1 more place (2 pages)
+- [ ] **Expandable heading:** "Culadasa January 2021 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "Culadasa May 2020 #1 Patreon Q&A 1 mention"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
 - [ ] **Button:** "Show all 34 in AMA videos"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "AMA videos 34"
+- [ ] **Expandable heading:** "The Jhānas – The Original Practice of Mindfulness and Insight 4 mentions"  
+  ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "Writings 4"
 - [ ] **Expandable heading:** "The Mind Illuminated: Stage Eight pages 300–327 · first edition, 2015"  
   ten-stages/stage-8/ (`redesign-2/ten-stages/stage-8/index.html` line 50), under "The Book 1"
 
-## ten-stages/stage-9/ (14)
+## ten-stages/stage-9/ (21)
 
 - [ ] **Page title (browser tab):** "Stage Nine: Calming the intensity of meditative joy — Culadasa"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 6)
@@ -7522,6 +6028,10 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 36), under "Stage Nine: Calming the intensity of meditative joy"
 - [ ] **Paragraph:** "In the book: Mental and Physical Pliancy and Calming the Intensity of Meditative Joy"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 36), under "Stage Nine: Calming the intensity of meditative joy"
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa September 2020 #2 Patreon Q&A"  
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 41), under "Start with this video"
+- [ ] **Sub-heading:** "Culadasa September 2020 #2 Patreon Q&A"  
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 42), under "Culadasa September 2020 #2 Patreon Q&A"
 - [ ] **Paragraph:** "32:42 It starts where he talks about Stage Nine. Open the video page →"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 44), under "Culadasa September 2020 #2 Patreon Q&A"
 - [ ] **Screen-reader label (hidden):** "Play from 32:42"  
@@ -7534,9 +6044,19 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "Where he talks about Stage Nine"
 - [ ] **Sub-heading:** "AMA videos 21"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
+- [ ] **Expandable heading:** "Culadasa September 2020 #2 Patreon Q&A 11 mentions"  
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
 - [ ] **Expandable heading:** "Culadasa August 2018 Patreon Q&A 5 mentions"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
+- [ ] **Expandable heading:** "Culadasa February 2021 #1 Patreon Q&A 4 mentions"  
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
+- [ ] **Expandable heading:** "Culadasa December 2019 - Sunday the 15th Patreon Q&A 3 mentions"  
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
 - [ ] **Expandable heading:** "Culadasa October 2020 #1 Patreon Q&A 2 mentions"  
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
+- [ ] **Expandable heading:** "Culadasa May 2018 Patreon Q&A 2 mentions"  
+  ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
+- [ ] **Expandable heading:** "Culadasa October 2017 Patreon Q&A 2 mentions"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
 - [ ] **Button:** "Show all 21 in AMA videos"  
   ten-stages/stage-9/ (`redesign-2/ten-stages/stage-9/index.html` line 50), under "AMA videos 21"
@@ -7831,16 +6351,12 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (4) · Stage Two (1) · Stage Three (1) · Stage Five (1) · Stage Six (5) · Stage Seven (5) · Stage Eight (1) · Stage Nine (1)"  
   videos/AdiW7_HcjiE/ (`redesign-2/videos/AdiW7_HcjiE/index.html` line 43), under "My Journey: Episode 6 - The Ups and Downs of Practice (and Life!)"
 
-## videos/B00XPYTvCRY/ (4)
+## videos/B00XPYTvCRY/ (2)
 
 - [ ] **Page title (browser tab):** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu — Culadasa"  
   videos/B00XPYTvCRY/ (`redesign-2/videos/B00XPYTvCRY/index.html` line 6)
 - [ ] **Search description (hidden):** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu: Culadasa on video, with the full transcript."  
   videos/B00XPYTvCRY/ (`redesign-2/videos/B00XPYTvCRY/index.html` line 7)
-- [ ] **Page heading:** "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"  
-  videos/B00XPYTvCRY/ (`redesign-2/videos/B00XPYTvCRY/index.html` line 36), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"
-- [ ] **Screen-reader label (hidden):** "Play: Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"  
-  videos/B00XPYTvCRY/ (`redesign-2/videos/B00XPYTvCRY/index.html` line 40), under "Introspective Awareness in Meditation - Buddhist Wisdom meets Brain Science - Cu"
 
 ## videos/BAWrOls6I8U/ (5)
 
@@ -8031,16 +6547,12 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Five (1) · Stage Six (1) · Stage Seven (2) · Stage Eight (6) · Stage Nine (11) · Stage Ten (12)"  
   videos/GWThVC6FEzA/ (`redesign-2/videos/GWThVC6FEzA/index.html` line 43), under "Culadasa September 2020 Patreon Q&A N°2 Recording"
 
-## videos/HSv2dindx7o/ (4)
+## videos/HSv2dindx7o/ (2)
 
 - [ ] **Page title (browser tab):** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa — Culadasa"  
   videos/HSv2dindx7o/ (`redesign-2/videos/HSv2dindx7o/index.html` line 6)
 - [ ] **Search description (hidden):** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa: Culadasa on video, with the full transcript."  
   videos/HSv2dindx7o/ (`redesign-2/videos/HSv2dindx7o/index.html` line 7)
-- [ ] **Page heading:** "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"  
-  videos/HSv2dindx7o/ (`redesign-2/videos/HSv2dindx7o/index.html` line 36), under "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"
-- [ ] **Screen-reader label (hidden):** "Play: What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"  
-  videos/HSv2dindx7o/ (`redesign-2/videos/HSv2dindx7o/index.html` line 40), under "What is Equanimity? - Buddhist Wisdom meets Brain Science - Culadasa"
 
 ## videos/IamWcgYWKcw/ (6)
 
@@ -8107,12 +6619,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "22 September 2014 · 4 min · Open on YouTube ↗ · Transcript ↓"  
   videos/MAY3lh-4xIE/ (`redesign-2/videos/MAY3lh-4xIE/index.html` line 43), under "Attention, Awareness & Mindfulness - Buddhist Wisdom meets Brain Science - Culad"
 
-## videos/MapEQWUQakY/ (4)
+## videos/MapEQWUQakY/ (5)
 
 - [ ] **Page title (browser tab):** "Culadasa June 2019 Patreon Q&A — Culadasa"  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa June 2019 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 7)
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa June 2019 Patreon Q&A"  
+  videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 40), under "Culadasa June 2019 Patreon Q&A"
 - [ ] **Paragraph:** "AMA session: June 2019 · 1 h 34 min · Open on YouTube ↗ · Transcript ↓"  
   videos/MapEQWUQakY/ (`redesign-2/videos/MapEQWUQakY/index.html` line 43), under "Culadasa June 2019 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (3) · Stage Three (5) · Stage Four (14) · Stage Five (11) · Stage Six (17) · Stage Seven (1) · Stage Eight (1)"  
@@ -8170,12 +6684,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "31 March 2011 · 2 min · Open on YouTube ↗ · Transcript ↓"  
   videos/R9dqNii3Vmc/ (`redesign-2/videos/R9dqNii3Vmc/index.html` line 43), under "A Higher Level of Consciousness -- Buddhist Wisdom meets Brain Science - Culadas"
 
-## videos/RarJIUBrysw/ (5)
+## videos/RarJIUBrysw/ (6)
 
 - [ ] **Page title (browser tab):** "Culadasa January 2018 Patreon Q&A — Culadasa"  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa January 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 7)
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa January 2018 Patreon Q&A"  
+  videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 40), under "Culadasa January 2018 Patreon Q&A"
 - [ ] **Paragraph:** "AMA session: January 2018 · 1 h 31 min · Open on YouTube ↗ · Transcript ↓"  
   videos/RarJIUBrysw/ (`redesign-2/videos/RarJIUBrysw/index.html` line 43), under "Culadasa January 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Six (3) · Stage Seven (1) · Stage Eight (4) · Stage Nine (2) · Stage Ten (2)"  
@@ -8209,14 +6725,12 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "On the ten stages pages: Stage Three (1)"  
   videos/Uf_su1wDk94/ (`redesign-2/videos/Uf_su1wDk94/index.html` line 43), under "Introduction to "My Journey" discussion series"
 
-## videos/UjBXtI1Q2as/ (5)
+## videos/UjBXtI1Q2as/ (4)
 
 - [ ] **Page title (browser tab):** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it — Culadasa"  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it: Culadasa on video, with the full transcript."  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 7)
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"  
-  videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 40), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
 - [ ] **Paragraph:** "29 January 2021 · 1 h 4 min · Open on YouTube ↗ · Transcript ↓"  
   videos/UjBXtI1Q2as/ (`redesign-2/videos/UjBXtI1Q2as/index.html` line 43), under "Culadasa discusses meditation and the "Dark Night": What it is, what it isn't, and how to avoid it"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (1)"  
@@ -8235,12 +6749,14 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Seven (1)"  
   videos/Wmg-SOl9Sk4/ (`redesign-2/videos/Wmg-SOl9Sk4/index.html` line 43), under "Culadasa November 2019 Patreon Q&A Video - Friday the 29th"
 
-## videos/X7brJ8qrLBo/ (4)
+## videos/X7brJ8qrLBo/ (5)
 
 - [ ] **Page title (browser tab):** "Culadasa July 2019 Patreon Q&A — Culadasa"  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa July 2019 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 7)
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa July 2019 Patreon Q&A"  
+  videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 40), under "Culadasa July 2019 Patreon Q&A"
 - [ ] **Paragraph:** "AMA session: July 2019 · 1 h 35 min · Open on YouTube ↗ · Transcript ↓"  
   videos/X7brJ8qrLBo/ (`redesign-2/videos/X7brJ8qrLBo/index.html` line 43), under "Culadasa July 2019 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Six (1) · Stage Seven (2) · Stage Eight (1)"  
@@ -8665,14 +7181,12 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (2) · Stage Three (5) · Stage Four (2) · Stage Seven (1)"  
   videos/omNF2wQYVxs/ (`redesign-2/videos/omNF2wQYVxs/index.html` line 43), under "Culadasa April 2020 Patreon Q&A Recording"
 
-## videos/pYZ7kiIbLWs/ (5)
+## videos/pYZ7kiIbLWs/ (4)
 
 - [ ] **Page title (browser tab):** "Culadasa May 2018 Patreon Q&A — Culadasa"  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa May 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 7)
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa May 2018 Patreon Q&A"  
-  videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 40), under "Culadasa May 2018 Patreon Q&A"
 - [ ] **Paragraph:** "AMA session: May 2018 · 1 h 28 min · Open on YouTube ↗ · Transcript ↓"  
   videos/pYZ7kiIbLWs/ (`redesign-2/videos/pYZ7kiIbLWs/index.html` line 43), under "Culadasa May 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Four (1) · Stage Six (4) · Stage Seven (13) · Stage Eight (10) · Stage Nine (2) · Stage Ten (4)"  
@@ -8756,25 +7270,25 @@ Where the text came from, when it is not Claude's own writing: Q&A questions and
 - [ ] **Paragraph:** "31 March 2014 · 2 min · Open on YouTube ↗ · Transcript ↓"  
   videos/u5He0q5u5yY/ (`redesign-2/videos/u5He0q5u5yY/index.html` line 43), under "Here Comes the Sun: Achieving Awakening Without the Dark Night"
 
-## videos/urCb5Ryp8SU/ (5)
+## videos/urCb5Ryp8SU/ (4)
 
 - [ ] **Page title (browser tab):** "Culadasa November 2018 Patreon Q&A — Culadasa"  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa November 2018 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 7)
-- [ ] **Screen-reader label (hidden):** "Play: Culadasa November 2018 Patreon Q&A"  
-  videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 40), under "Culadasa November 2018 Patreon Q&A"
 - [ ] **Paragraph:** "AMA session: November 2018 · 1 h 42 min · Open on YouTube ↗ · Transcript ↓"  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 43), under "Culadasa November 2018 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage Two (2) · Stage Three (2) · Stage Four (8) · Stage Five (16) · Stage Six (17) · Stage Seven (5) · Stage Ten (1)"  
   videos/urCb5Ryp8SU/ (`redesign-2/videos/urCb5Ryp8SU/index.html` line 43), under "Culadasa November 2018 Patreon Q&A"
 
-## videos/uuBr-5G0zoE/ (4)
+## videos/uuBr-5G0zoE/ (5)
 
 - [ ] **Page title (browser tab):** "Culadasa December 2017 Patreon Q&A — Culadasa"  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 6)
 - [ ] **Search description (hidden):** "Culadasa December 2017 Patreon Q&A: Culadasa on video, with the questions asked and the full transcript."  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 7)
+- [ ] **Screen-reader label (hidden):** "Play: Culadasa December 2017 Patreon Q&A"  
+  videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 40), under "Culadasa December 2017 Patreon Q&A"
 - [ ] **Paragraph:** "AMA session: December 2017 · 1 h 59 min · Open on YouTube ↗ · Transcript ↓"  
   videos/uuBr-5G0zoE/ (`redesign-2/videos/uuBr-5G0zoE/index.html` line 43), under "Culadasa December 2017 Patreon Q&A"
 - [ ] **Paragraph:** "On the ten stages pages: Stage One (1) · Stage Two (4) · Stage Three (2) · Stage Four (11) · Stage Six (1) · Stage Seven (3) · Stage Eight (1) · Stage Nine (1) · Stage Ten (4)"  
@@ -8965,19 +7479,19 @@ These appear while using Topics search and the Teachers map; they are not in the
 - [ ] "— a video to start with and everything he said about this stage →"  
   `redesign-2/assets/topics.js` line 269
 - [ ] "— a video to start with and everything he said about it →"  
-  `redesign-2/assets/topics.js` line 272
-- [ ] "ten-stages/"> The ten stages  — each stage with a video to start with and everything he said about it →"  
   `redesign-2/assets/topics.js` line 273
+- [ ] "ten-stages/"> The ten stages  — each stage with a video to start with and everything he said about it →"  
+  `redesign-2/assets/topics.js` line 274
 - [ ] "The Mind Illuminated — in the book"  
-  `redesign-2/assets/topics.js` line 310
+  `redesign-2/assets/topics.js` line 311
 - [ ] "Not on this site: find it in your copy ·"  
-  `redesign-2/assets/topics.js` line 310
+  `redesign-2/assets/topics.js` line 311
 - [ ] "first edition, 2015"  
-  `redesign-2/assets/topics.js` line 310
+  `redesign-2/assets/topics.js` line 311
 - [ ] "places, by page:"  
-  `redesign-2/assets/topics.js` line 318
+  `redesign-2/assets/topics.js` line 319
 - [ ] "The teachings could not be loaded. Please reload the page."  
-  `redesign-2/assets/topics.js` line 414
+  `redesign-2/assets/topics.js` line 415
 - [ ] "sample teacher"  
   `redesign-2/assets/teachers.js` line 34
 - [ ] "teachers shown."  

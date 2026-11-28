@@ -382,3 +382,5 @@ main p.small{max-width:var(--measure)}
 .gl-also{font:400 15px var(--text);color:var(--muted);margin-left:8px}
 .glossary dd{margin:6px 0 0}
 .gl-links{display:block;margin-top:6px;font-size:15px;color:var(--muted)}
+/* small inline links on topic, stage and glossary pages are easier to tap (28 Nov 2026) */
+.gl-links a,.book-link a,p.related a,.vmeta p.small a{display:inline-block;padding:10px 0}

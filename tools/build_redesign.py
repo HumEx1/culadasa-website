@@ -450,7 +450,7 @@ def related_topics(n, rr):
     if not f_.exists():
         return ''
     ts = [t for t in json.loads(f_.read_text())['topics'] if n in t['stages']]
-    return ('<p class="small">Related topics: ' + ' · '.join(f'<a href="{rr}learn/topics/{t["slug"]}/">{esc(t["title"])}</a>' for t in ts) + '</p>') if ts else ''
+    return ('<p class="small related">Related topics: ' + ' · '.join(f'<a href="{rr}learn/topics/{t["slug"]}/">{esc(t["title"])}</a>' for t in ts) + '</p>') if ts else ''
 
 
 def stage_pages(r):
@@ -535,14 +535,15 @@ def stage_pages(r):
 GLOSSARY = [
     ('ānāpānasati', 'anapanasati', 'Mindfulness of breathing: the meditation the ten stages are built on.', 'mindfulness'),
     ('anattā', 'anatta, no-self', 'Not-self: no lasting, separate self is found in experience.', 'insight'),
-    ('anicca', 'anicca, impermanence', 'Impermanence: everything that arises passes away.', 'insight'),
+    ('anicca', 'impermanence', 'Impermanence: everything that arises passes away.', 'insight'),
     ('attention', '', 'Focusing on one part of experience, picking it out from everything else.', 'attention-and-awareness'),
     ('bhāvanā', 'bhavana', 'Cultivation: meditation as the steady development of the mind.', ''),
     ('brahmavihāras', 'brahmaviharas', 'The four "divine abodes": loving-kindness, compassion, sympathetic joy and equanimity.', 'metta'),
-    ('Dark Night', 'dukkha ñāṇas', 'The difficult stages of insight that can follow an early breakthrough.', 'dark-night'),
+    ('Dark Night', '', 'A period of distress that can follow an insight breakthrough; he distinguished it from the dukkha ñāṇas.', 'dark-night'),
+    ('dukkha ñāṇas', 'dukkha nanas', 'The insight knowledges of suffering: the stages of insight in the Theravāda map that follow the arising and passing away.', 'insight'),
     ('dukkha', 'dukkha', 'Suffering, unsatisfactoriness: the first of the Four Noble Truths.', 'craving'),
     ('dullness', 'strong dullness, subtle dullness', 'A drop in the mind’s energy and clarity, from drowsiness to a pleasant haze.', 'dullness'),
-    ('ekaggatā', 'ekaggata', 'One-pointedness: attention gathered and stable on one object.', 'unification'),
+    ('ekaggatā', 'ekaggata', 'Unification of mind: he notes it is often mistranslated as "one-pointedness".', 'unification'),
     ('equanimity', 'upekkhā', 'Balance that is not pushed or pulled by pleasant or unpleasant experience.', 'equanimity'),
     ('forgetting', '', 'Losing track of the meditation object altogether, without noticing.', 'forgetting'),
     ('gross distraction', '', 'A distraction that takes over attention while the meditation object fades to the background.', 'distraction'),
@@ -552,7 +553,7 @@ GLOSSARY = [
     ('mettā', 'metta, loving-kindness', 'Loving-kindness: warm goodwill toward oneself and all beings.', 'metta'),
     ('metacognitive introspective awareness', '', 'Clear, continuous awareness of the state and activity of the mind.', 'metacognition'),
     ('mind-system', 'sub-minds', 'His model of the mind as many sub-minds that share a common space of consciousness.', 'mind-system'),
-    ('mind-wandering', '', 'Attention drifting from the meditation object to something else.', 'mind-wandering'),
+    ('mind-wandering', '', 'Forgetting the meditation object and following other thoughts, sometimes for a long time.', 'mind-wandering'),
     ('muditā', 'mudita', 'Sympathetic joy: gladness at the happiness of others.', 'metta'),
     ('nibbāna', 'nirvana', 'The end of craving and suffering: the goal of the path.', 'awakening'),
     ('nimitta', 'nimitta', 'A sign: a mental image or light that can appear in deep concentration.', 'jhana'),
@@ -561,11 +562,11 @@ GLOSSARY = [
     ('pīti', 'piti, meditative joy', 'Meditative joy: an energising delight of body and mind.', 'piti'),
     ('pliancy', 'mental pliancy, physical pliancy', 'A mind and body that work together without resistance, as attention becomes effortless.', 'unification'),
     ('purification', '', 'Old mental material surfacing and being released as the mind unifies.', 'purification'),
-    ('samādhi', 'samadhi', 'Concentration: stable attention combined with strong mindfulness.', 'jhana'),
-    ('samatha', 'shamatha, śamatha', 'Tranquility: a calm, stable and joyful mind, the goal of the ten stages.', 'equanimity'),
+    ('samādhi', 'samadhi', 'Concentration: stable attention, which the ten stages develop alongside mindfulness.', 'jhana'),
+    ('samatha', 'shamatha, śamatha', 'Tranquility: a calm, stable and joyful mind, the goal of the ten stages.', ''),
     ('sampajañña', 'sampajanna', 'Clear comprehension: knowing what one is doing while doing it.', 'mindfulness'),
     ('sati', 'mindfulness', 'Mindfulness: the optimal working together of attention and awareness.', 'mindfulness'),
-    ('stream entry', 'sotāpanna', 'The first stage of awakening.', 'awakening'),
+    ('stream entry', 'sotāpatti', 'The first stage of awakening; one who has reached it is a sotāpanna, a stream-enterer.', 'awakening'),
     ('subtle distraction', '', 'Other thoughts and sensations at the edge of attention while the object stays in focus.', 'distraction'),
     ('sukha', 'sukha', 'Happiness: the deep contentment that comes with meditative joy.', 'piti'),
     ('taṇhā', 'tanha, craving', 'Craving: wanting and not-wanting, the cause of suffering.', 'craving'),
@@ -573,6 +574,20 @@ GLOSSARY = [
     ('upekkhā', 'upekkha, equanimity', 'Equanimity: balance and evenness in the face of every kind of experience.', 'equanimity'),
     ('vipassanā', 'vipassana, insight', 'Insight: seeing clearly how things really are.', 'insight'),
 ]
+
+
+def nice_date_(d_):
+    try:
+        y_, m_, dd_ = map(int, d_.split('-'))
+        return f'{dd_} {datetime.date(y_, m_, 1).strftime("%B")} {y_}'
+    except Exception:
+        return d_
+
+
+def azkey(t):
+    """A–Z order that ignores accents and a leading "The"."""
+    t = unicodedata.normalize('NFD', t.lower()).encode('ascii', 'ignore').decode()
+    return t[4:] if t.startswith('the ') else t
 
 
 def topic_pages(r):
@@ -589,7 +604,7 @@ def topic_pages(r):
     titles = {t['slug']: t['title'] for t in data}
     for st in data:
         moments = lambda ms, vid: ''.join(f'<p class="tline">{play(yt(vid, t), hms_(t))} {sn}</p>' for t, sn in ms)
-        vrows = [row(v['title'], f"{mentions(v['n'])} · {v['date']}", moments(v['moments'], v['id']) + f'<p class="rr-open"><a href="{yt(v["id"])}">Open the video page →</a></p>') for v in st['videos']]
+        vrows = [row(v['title'], f"{mentions(v['n'])} · {nice_date_(v['date'])}", moments(v['moments'], v['id']) + f'<p class="rr-open"><a href="{yt(v["id"])}">Open the video page →</a></p>') for v in st['videos']]
         arows = []
         for a in st['ama']:
             body = ''
@@ -604,7 +619,8 @@ def topic_pages(r):
             for d in items:
                 u = d['url'] if d['url'].startswith('http') else '../../' + d['url']
                 nt_ = ' target="_blank" rel="noopener"' if u.startswith('http') or u.endswith('.pdf') else ''
-                out.append(row(d['title'], mentions(d['n']), ''.join(f'<p>{sn}</p>' for sn in d['snips'][:8]) + f'<p class="rr-open"><a href="{esc(u)}"{nt_}>{label} →</a></p>'))
+                more = f'<p class="small muted">and {d["n"] - len(d["snips"][:8])} more in it</p>' if d['n'] > len(d['snips'][:8]) else ''
+                out.append(row(d['title'], mentions(d['n']), ''.join(f'<p>{sn}</p>' for sn in d['snips'][:8]) + more + f'<p class="rr-open"><a href="{esc(u)}"{nt_}>{label} →</a></p>'))
             return out
         groups = [(g, rows_) for g, rows_ in (('Videos', vrows), ('AMA videos', arows), ('Writings', drows(st['writings'], 'Open')), ('Audio', drows(st['audio'], 'Open the recording'))) if rows_]
         b = st.get('book')
@@ -618,11 +634,11 @@ def topic_pages(r):
             pin_html = f'''<section class="section tight"><div class="wrap"><div class="stage-pin">
   <h2 class="label">Start with this video</h2>
   {video_tile({'id': pin['id'], 'title': pin['title']}, rr).replace('<div class="video" data-id=', f'<div class="video" data-start="{pin["start"]}" data-id=', 1)}
-  <p class="small">{play(yt(pin['id'], pin['start']), hms_(pin['start']))} It starts where he talks about {esc(st['title'].lower() if st['title'][0].isupper() and not st['title'].startswith(('The ', 'Pīti', 'Jhāna')) else st['title'])}. <a href="{yt(pin['id'], pin['start'])}">Open the video page →</a></p>
-  <p class="small muted">Chosen for now as the stretch where he talks about this longest. The teachers will choose the video to start with.</p>
+  <p class="small">{play(yt(pin['id'], pin['start']), hms_(pin['start']))} It starts where he turns to this topic. <a href="{yt(pin['id'], pin['start'])}">Open the video page →</a></p>
+  <p class="small muted">{'Chosen for now as the talk named for this topic that mentions it most.' if pin.get('titled') else 'Chosen for now as the ten minutes where he mentions it most.'} The teachers will choose the video to start with.</p>
 </div></div></section>'''
         stage_links = ' · '.join(f'<a href="{rr}ten-stages/stage-{n}/">Stage {NUMW[n - 1]}</a>' for n in st['stages'])
-        intro = (f'<p class="small muted">Found by the words: {esc(", ".join(st["words"]))}. {st["total"]} mentions in all.</p>'
+        intro = (f'<p class="small muted">{st["total"]} mentions in all. This topic and its introduction are a first draft, for the teachers to confirm.</p>'
                  + (f'<p class="small">Belongs with: {stage_links}</p>' if stage_links else '')
                  + f'<p class="book-link"><a href="{rr}learn/glossary/">Glossary →</a> · <a href="{rr}learn/topics/">All topics →</a></p>')
         body = banner(f'<a href="{rr}learn/topics/">Topics</a>', esc(st['title']), esc(st['lead']), 'gold') + f'''
@@ -631,26 +647,16 @@ def topic_pages(r):
 <section class="section"><div class="wrap"><h2>Where he talks about it</h2><p class="rr-hint">Select a title to see where it’s mentioned.</p>{row_groups(groups)}</div></section>'''
         page(f'learn/topics/{st["slug"]}/', st['title'], body, description=f'{st["title"]}: everything Culadasa said about it, in his talks, AMA videos, writings and recordings.')
     # the list of topics
-    items = ''.join(f'<li><a href="{t["slug"]}/"><span class="tl-name">{esc(t["title"])}</span><span class="tl-lead">{esc(t["lead"])}</span><span class="tl-n">{t["total"]} mentions</span></a></li>' for t in sorted(data, key=lambda x: x['title']))
-    body = banner('<a href="../">Learn</a>', 'Topics', 'The questions students bring, in his own words: one page for each.', 'gold') + f'''
+    items = ''.join(f'<li><a href="{t["slug"]}/"><span class="tl-name">{esc(t["title"])}</span><span class="tl-lead">{esc(t["lead"])}</span><span class="tl-n">{t["total"]} mentions</span></a></li>' for t in sorted(data, key=lambda x: azkey(x['title'])))
+    body = banner('<a href="../">Learn</a>', 'Topics', 'The questions students bring, each with what he said about it.', 'gold') + f'''
 <section class="section"><div class="wrap">
 <p class="measure">Each topic gathers what he said about it in his talks, AMA videos, writings and recordings, with a video to start with. The list is a first draft for the teachers to confirm. The <a href="../glossary/">glossary</a> gives a short meaning for each Pāli and method term.</p>
 <ul class="topic-list">{items}</ul>
 </div></section>'''
     page('learn/topics/', 'Topics', body, description='The teaching topics of The Mind Illuminated Path, each with everything Culadasa said about it.')
     # the glossary
-    def gloss_page(term):
-        if not book:
-            return ''
-        w = re.sub(r'[^a-z]', '', unicodedata.normalize('NFD', term.split()[0].lower()).encode('ascii', 'ignore').decode())
-        for pnum in book['words'].get(w, []):
-            p_ = book['pages'][pnum]
-            if p_[1] == 'Glossary':
-                return p_[0]
-        return ''
     rows_ = ''
-    for term, also, meaning, slug in sorted(GLOSSARY, key=lambda g: unicodedata.normalize('NFD', g[0].lower())):
-        gp = gloss_page(term)
+    for term, also, meaning, slug in sorted(GLOSSARY, key=lambda g: azkey(g[0])):
         links = ([f'<a href="../topics/{slug}/">{esc(titles.get(slug, slug))} →</a>'] if slug else []) + [f'<a href="../../topics/?q={quote_plus(term)}">Search →</a>']
         rows_ += (f'<div class="gl-row" id="{esc(re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFD", term.lower()).encode("ascii", "ignore").decode()).strip("-"))}">'
                   f'<dt>{esc(term)}' + (f' <span class="gl-also">{esc(also)}</span>' if also and also.lower() != term.lower() else '') + '</dt>'
@@ -769,7 +775,7 @@ def build():
         ('The basics', 'teal', [
             ('What meditation trains', 'Attention and peripheral awareness, and how they work together.', qlink('peripheral awareness')),
             ('Posture and preparation', 'Sitting comfortably and the six preparations.', f'{r}{UP}preparation-for-practice.pdf'),
-            ('Mind-wandering', 'Why the mind wanders, and why noticing it is a success, not a failure.', qlink('mind-wandering')),
+            ('Mind-wandering', 'Why the mind wanders, and why noticing it is a success, not a failure.', f'{r}learn/topics/mind-wandering/'),
             ('Dullness', 'Mindful awareness versus dullness: his essay.', f'{r}mindful-awareness-vs-dullness/'),
         ]),
         ('The method', 'gold', [
@@ -779,7 +785,7 @@ def build():
             ('Jhāna', 'The original practice of mindfulness and insight.', f'{r}{UP}jhanas-and-mindfulness-handout.pdf'),
         ]),
         ('The science of mind', 'ink', [
-            ('The mind-system model', 'His model of the mind as many sub-minds, from the book and the AMA videos.', qlink('mind-system')),
+            ('The mind-system model', 'His model of the mind as many sub-minds, from the book and the AMA videos.', f'{r}learn/topics/mind-system/'),
             ('Consciousness', 'What consciousness is, discussed across his talks and handouts.', qlink('consciousness')),
             ('Meditation and insight', 'Three handouts and slides on how insight arises.', f'{r}{UP}Meditation-and-Insight-I.pdf'),
             ('What the Buddha thought', 'An introduction to the Buddha’s teaching, with slides.', f'{r}{UP}20130322-what-the-buddha-thought-handout.pdf'),
@@ -793,7 +799,7 @@ def build():
         ('Daily life', 'gold', [
             ('The path to awakening in daily life', 'His handout on practice off the cushion.', f'{r}{UP}Awakening-in-Daily-Life-Handout.pdf'),
             ('Cultivating mindfulness in daily life', 'An essay from the discussion board.', f'{r}cultivating-mindfulness-in-daily-life/'),
-            ('Craving', 'Recognising craving and what to do next.', qlink('craving')),
+            ('Craving', 'Recognising craving and what to do next.', f'{r}learn/topics/craving/'),
             ('Compassion', 'Compassion in his talks and answers.', qlink('compassion')),
         ]),
     ]
@@ -806,8 +812,8 @@ def build():
     # Topics and the glossary follow the ten stages (D, 28 Nov 2026)
     _tp = json.loads((D / 'topic_pages.json').read_text())['topics'] if (D / 'topic_pages.json').exists() else []
     learn_topics = (f'<section class="section tight learn-topics"><div class="wrap"><p class="label">Topics</p><h2>The questions students bring</h2>'
-                    f'<p class="measure">Each topic gathers what he said about it, with a video to start with.</p><p class="topic-chips">'
-                    + ''.join(f'<a href="{r}learn/topics/{t["slug"]}/">{esc(t["title"])}</a>' for t in sorted(_tp, key=lambda x: x['title']))
+                    f'<p class="measure">Each topic gathers what he said about it, with a video to start with. The list is a first draft for the teachers to confirm.</p><p class="topic-chips">'
+                    + ''.join(f'<a href="{r}learn/topics/{t["slug"]}/">{esc(t["title"])}</a>' for t in sorted(_tp, key=lambda x: azkey(x['title'])))
                     + f'</p><p class="actions"><a class="btn ghost" href="{r}learn/topics/">All topics →</a><a class="btn ghost" href="{r}learn/glossary/">Glossary →</a></p></div></section>') if _tp else ''
     # The ten stages first (D, 25 Nov 2026): the foundation of the method, so they open Learn
     learn_stages = (f'<section class="section tight learn-stages"><div class="wrap"><p class="label">The foundation of the method</p>'
@@ -1179,6 +1185,11 @@ def build():
     for t in (json.loads((D / 'topic_pages.json').read_text())['topics'] if (D / 'topic_pages.json').exists() else []):
         for w in [t['title']] + t['words']:
             _tlinks[unicodedata.normalize('NFD', w.lower()).encode('ascii', 'ignore').decode().replace('-', ' ')] = [t['slug'], t['title']]
+    _titles = {t['slug']: t['title'] for t in (json.loads((D / 'topic_pages.json').read_text())['topics'] if (D / 'topic_pages.json').exists() else [])}
+    for term, also, _m, slug in GLOSSARY:   # the glossary's words lead to their topic too
+        if slug in _titles:
+            for w in [term] + [a.strip() for a in also.split(',') if a.strip()]:
+                _tlinks.setdefault(unicodedata.normalize('NFD', w.lower()).encode('ascii', 'ignore').decode().replace('-', ' '), [slug, _titles[slug]])
     page('topics/', 'Search', body, description='Search every Culadasa teaching by topic, ranked by mentions, with a word cloud.',
          extra_js=f'<script>window.CULADASA_TOPICS={json.dumps(_tlinks, ensure_ascii=False)};</script>\n<script src="{r}assets/topics.js" defer></script>\n')
 
@@ -1315,6 +1326,7 @@ def build():
         shutil.copytree(D, OUT / 'data', dirs_exist_ok=True)
         pub = dict(teachers, teachers=[t for t in teachers['teachers'] if t.get('profile') != 'sample'])   # samples stay private (D, 27 Nov 2026)
         pub['note'] = teachers['note'].split(' The twelve')[0]
+        (OUT / 'data' / 'topic_pages.json').unlink(missing_ok=True)   # used only by the build
         (OUT / 'data' / 'teachers.json').write_text(json.dumps(pub, ensure_ascii=False, indent=1))
     # ---------------------------------------------------------------- Library front page (D, 27 Nov 2026: "let's try it")
     n_talks = sum(1 for i in {v['id'] for v in _tr} | {v['id'] for v in videos} if i not in {s_['video'] for s_ in qna if s_.get('video')})
